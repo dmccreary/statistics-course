@@ -157,6 +157,8 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Chapter Content Generation: learning-graph/chapter-content-generation-report.md
+    - Glossary Quality Report: learning-graph/glossary-quality-report.md
+    - FAQ Quality Report: learning-graph/faq-quality-report.md
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md
