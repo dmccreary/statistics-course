@@ -29,11 +29,29 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students construct bar graphs from categorical data by entering category names and frequencies, with options for vertical/horizontal orientation.
 
+-   **[Boxplot Builder](./boxplot-builder/index.md)**
+
+    ![Boxplot Builder](./boxplot-builder/boxplot-builder.png)
+
+    An interactive MicroSim for constructing and interpreting boxplots by connecting numerical summary statistics to their visual representation with step-by-step animation.
+
+-   **[Boxplot Comparison](./boxplot-comparison/index.md)**
+
+    ![Boxplot Comparison](./boxplot-comparison/boxplot-comparison.png)
+
+    Side-by-side boxplot comparison tool for analyzing distributions across 2-4 groups with pre-loaded datasets and summary statistics.
+
 -   **[Chapter 2 Concept Map](./chapter-2-concept-map/index.md)**
 
     ![Chapter 2 Concept Map](./chapter-2-concept-map/chapter-2-concept-map.png)
 
     An interactive concept map showing the hierarchy of key concepts in Chapter 2, including Organizing Data, Single Variable Displays, Two Variable Analysis, and Association.
+
+-   **[Density Curve Area Explorer](./density-curve-area/index.md)**
+
+    ![Density Curve Area Explorer](./density-curve-area/density-curve-area.png)
+
+    Interactive visualization showing that area under a density curve represents probability, with draggable boundary lines and multiple curve types.
 
 -   **[Discrete vs Continuous Number Line](./discrete-continuous-numberline/index.md)**
 
@@ -47,17 +65,17 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive infographic showing three types of distribution shapes - unimodal, bimodal, and uniform - with real-world examples, hover tooltips, and a quiz mode.
 
+-   **[Empirical Rule (68-95-99.7)](./empirical-rule/index.md)**
+
+    ![Empirical Rule](./empirical-rule/empirical-rule.png)
+
+    Interactive demonstration of the 68-95-99.7 rule for normal distributions with animated regions and real-world examples.
+
 -   **[Frequency Table Explorer](./frequency-table-explorer/index.md)**
 
     ![Frequency Table Explorer](./frequency-table-explorer/frequency-table-explorer.png)
 
     An interactive MicroSim where students practice calculating relative frequencies and percentages from raw frequency data using adjustable sliders.
-
--   **[Interactive Dotplot Builder](./interactive-dotplot-builder/index.md)**
-
-    ![Interactive Dotplot Builder](./interactive-dotplot-builder/interactive-dotplot-builder.png)
-
-    An interactive MicroSim where students click on a number line to add data points and construct a dotplot, demonstrating how dotplots visualize quantitative data.
 
 -   **[Interactive Histogram Explorer](./histogram-explorer/index.md)**
 
@@ -71,11 +89,47 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive MicroSim that uses a boxplot to summarize household incomes and highlight right-skew.
 
--   **[Test Scores Boxplot Explorer](./test-scores-boxplot/index.md)**
+-   **[Interactive Dotplot Builder](./interactive-dotplot-builder/index.md)**
 
-    ![Test Scores Boxplot Explorer](./test-scores-boxplot/test-scores-boxplot.png)
+    ![Interactive Dotplot Builder](./interactive-dotplot-builder/interactive-dotplot-builder.png)
 
-    Interactive MicroSim that uses boxplots to summarize exam scores and compare two class sections.
+    An interactive MicroSim where students click on a number line to add data points and construct a dotplot, demonstrating how dotplots visualize quantitative data.
+
+-   **[Mean as Balance Point](./mean-balance-point/index.md)**
+
+    ![Mean as Balance Point](./mean-balance-point/mean-balance-point.png)
+
+    Interactive visualization showing the mean as the balance point of a distribution, with draggable data points and real-time mean calculation.
+
+-   **[Mean vs Median Skewness](./mean-median-skewness/index.md)**
+
+    ![Mean vs Median Skewness](./mean-median-skewness/mean-median-skewness.png)
+
+    Interactive visualization showing how mean and median positions differ based on distribution shape, with outlier buttons to demonstrate resistance.
+
+-   **[Normal Distribution Explorer](./normal-distribution-explorer/index.md)**
+
+    ![Normal Distribution Explorer](./normal-distribution-explorer/normal-distribution-explorer.png)
+
+    Interactive visualization showing how mean (μ) and standard deviation (σ) affect the shape and position of a normal distribution curve.
+
+-   **[Normal Probability Calculator](./normal-probability-calc/index.md)**
+
+    ![Normal Probability Calculator](./normal-probability-calc/normal-probability-calc.png)
+
+    Interactive calculator for computing probabilities from normal distributions with draggable boundary markers and step-by-step solutions.
+
+-   **[Normal Probability Plot Explorer](./normal-probability-plot/index.md)**
+
+    ![Normal Probability Plot Explorer](./normal-probability-plot/normal-probability-plot.png)
+
+    Interactive visualization for assessing normality using histograms and QQ plots with multiple distribution types and sample sizes.
+
+-   **[Outlier Detection](./outlier-detection/index.md)**
+
+    ![Outlier Detection](./outlier-detection/outlier-detection.png)
+
+    Interactive visualization of the 1.5 × IQR rule for identifying outliers with adjustable multiplier and fence calculations.
 
 -   **[Outlier Detective Game](./outlier-detective/index.md)**
 
@@ -101,6 +155,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim that demonstrates the relationship between a population and a sample by letting students select individuals from a population.
 
+-   **[Quartile Visualization](./quartile-visualization/index.md)**
+
+    ![Quartile Visualization](./quartile-visualization/quartile-visualization.png)
+
+    Interactive visualization showing how quartiles divide data into four equal parts with color-coded regions and adjustable sample size.
+
 -   **[Skewness Explorer](./skewness-explorer/index.md)**
 
     ![Skewness Explorer](./skewness-explorer/skewness-explorer.png)
@@ -112,6 +172,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![SOCS Description Builder](./socs-description-builder/socs-description-builder.png)
 
     An interactive MicroSim where students compose complete distribution descriptions using the SOCS framework (Shape, Outliers, Center, Spread).
+
+-   **[Standard Deviation Calculator](./std-dev-calculator/index.md)**
+
+    ![Standard Deviation Calculator](./std-dev-calculator/std-dev-calculator.png)
+
+    Step-by-step variance and standard deviation calculator showing the complete calculation process with visual representation.
 
 -   **[Stemplot Constructor](./stemplot-constructor/index.md)**
 
@@ -131,6 +197,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive quiz MicroSim where students learn to recognize symmetric and asymmetric distributions by comparing histogram shapes.
 
+-   **[Test Scores Boxplot Explorer](./test-scores-boxplot/index.md)**
+
+    ![Test Scores Boxplot Explorer](./test-scores-boxplot/test-scores-boxplot.png)
+
+    Interactive MicroSim that uses boxplots to summarize exam scores and compare two class sections.
+
 -   **[Two-Way Table Calculator](./two-way-table-calculator/index.md)**
 
     ![Two-Way Table Calculator](./two-way-table-calculator/two-way-table-calculator.png)
@@ -142,5 +214,11 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Variable Types Concept Map](./variable-types-concept-map/variable-types-concept-map.png)
 
     An interactive concept map showing the hierarchy of variable types in statistics, including categorical and quantitative variables.
+
+-   **[Z-Score Calculator](./z-score-calculator/index.md)**
+
+    ![Z-Score Calculator](./z-score-calculator/z-score-calculator.png)
+
+    Interactive z-score calculator and visualizer showing value position on a normal distribution curve with real-world presets.
 
 </div>

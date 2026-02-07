@@ -36,19 +36,31 @@ nav:
     - Association Detector: sims/association-detector/index.md
     - Association Strength Spectrum: sims/association-strength-spectrum/index.md
     - Bar Graph Builder: sims/bar-graph-builder/index.md
+    - Boxplot Builder: sims/boxplot-builder/index.md
+    - Boxplot Comparison: sims/boxplot-comparison/index.md
     - Chapter 2 Concept Map: sims/chapter-2-concept-map/index.md
+    - Density Curve Area Explorer: sims/density-curve-area/index.md
     - Discrete vs Continuous Number Line: sims/discrete-continuous-numberline/index.md
     - Distribution Shape Gallery: sims/distribution-shape-gallery/index.md
+    - Empirical Rule (68-95-99.7): sims/empirical-rule/index.md
     - Frequency Table Explorer: sims/frequency-table-explorer/index.md
     - Histogram Explorer: sims/histogram-explorer/index.md
-    - Interactive Dotplot Builder: sims/interactive-dotplot-builder/index.md
     - Household Income Boxplot: sims/household-income-boxplot/index.md
+    - Interactive Dotplot Builder: sims/interactive-dotplot-builder/index.md
+    - Mean as Balance Point: sims/mean-balance-point/index.md
+    - Mean vs Median Skewness: sims/mean-median-skewness/index.md
+    - Normal Distribution Explorer: sims/normal-distribution-explorer/index.md
+    - Normal Probability Calculator: sims/normal-probability-calc/index.md
+    - Normal Probability Plot Explorer: sims/normal-probability-plot/index.md
+    - Outlier Detection: sims/outlier-detection/index.md
     - Outlier Detective Game: sims/outlier-detective/index.md
     - Parameter vs Statistic: sims/parameter-statistic-compare/index.md
     - Pie vs Bar Comparison: sims/pie-vs-bar-comparison/index.md
     - Population and Sample: sims/population-sample-visual/index.md
+    - Quartile Visualization: sims/quartile-visualization/index.md
     - Skewness Explorer: sims/skewness-explorer/index.md
     - SOCS Description Builder: sims/socs-description-builder/index.md
+    - Standard Deviation Calculator: sims/std-dev-calculator/index.md
     - Stemplot Constructor: sims/stemplot-constructor/index.md
     - Study Design Concept Map: sims/study-design-map/index.md
     - Symmetric Distribution Identifier: sims/symmetric-distribution/index.md
@@ -56,6 +68,7 @@ nav:
     - Token Prediction: sims/token-prediction/index.md
     - Two-Way Table Calculator: sims/two-way-table-calculator/index.md
     - Variable Types Concept Map: sims/variable-types-concept-map/index.md
+    - Z-Score Calculator: sims/z-score-calculator/index.md
 
   - Appendices:
     - List of Appendices: appendices/index.md

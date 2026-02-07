@@ -89,6 +89,11 @@ For example, if the area under a density curve between 60 and 80 is 0.45, that m
 
 #### Diagram: Density Curve Area Explorer
 
+<iframe src="../../sims/density-curve-area/main.html" height="352px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/density-curve-area/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
 <details markdown="1">
 <summary>Interactive Area Under Curve Visualization</summary>
 Type: MicroSim
@@ -178,6 +183,11 @@ Z-scores have intuitive interpretations:
 "Here's a pro tip," Sylvia whispers. "When I'm comparing my acorn collections across different seasons, z-scores let me identify my truly exceptional days. Any day with a z-score above 2? That's a day I remember fondly. Below -2? Let's just say I treated myself to extra seeds that evening."
 
 #### Diagram: Z-Score Calculator and Visualizer
+
+<iframe src="../../sims/z-score-calculator/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/z-score-calculator/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
 
 <details markdown="1">
 <summary>Interactive Z-Score Calculator</summary>
@@ -290,6 +300,11 @@ The spread is controlled entirely by σ:
 
 #### Diagram: Normal Distribution Parameter Explorer
 
+<iframe src="../../sims/normal-distribution-explorer/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/normal-distribution-explorer/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
 <details markdown="1">
 <summary>Interactive Normal Curve Visualization</summary>
 Type: MicroSim
@@ -359,6 +374,11 @@ Since 95% fall between 670 and 1450, the remaining 5% are in the two tails. By s
 "Time to squirrel away a memory trick," Sylvia suggests. "I remember 68-95-99.7 by thinking: 68 is like 'six-eight,' which reminds me of one standard deviation. Then 95 for two, and 99.7 (almost all!) for three. It's not perfect, but it works for me!"
 
 #### Diagram: Empirical Rule Interactive Demonstration
+
+<iframe src="../../sims/empirical-rule/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/empirical-rule/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
 
 <details markdown="1">
 <summary>68-95-99.7 Rule Visualization</summary>
@@ -491,6 +511,11 @@ z_{67} = \frac{67 - 64.5}{2.5} = \frac{2.5}{2.5} = +1.0
 
 #### Diagram: Normal Probability Calculator
 
+<iframe src="../../sims/normal-probability-calc/main.html" height="432px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/normal-probability-calc/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
 <details markdown="1">
 <summary>Step-by-Step Normal Probability Finder</summary>
 Type: MicroSim
@@ -614,6 +639,11 @@ A **normal probability plot** (also called a QQ plot) graphs each data value aga
 - **Scattered points:** Data may not follow any standard distribution
 
 #### Diagram: Normal Probability Plot Explorer
+
+<iframe src="../../sims/normal-probability-plot/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/normal-probability-plot/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
 
 <details markdown="1">
 <summary>Interactive Normality Assessment Tool</summary>

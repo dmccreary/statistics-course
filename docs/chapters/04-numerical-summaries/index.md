@@ -88,6 +88,11 @@ Here's a helpful way to think about the mean: imagine your data values are weigh
 
 #### Diagram: Mean as Balance Point
 
+<iframe src="../../sims/mean-balance-point/main.html" height="302px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/mean-balance-point/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
 <details markdown="1">
 <summary>Interactive Balance Point Visualization</summary>
 Type: MicroSim
@@ -220,6 +225,11 @@ The IQR tells us that the middle 50% of values spans 16 units. This is far more 
 
 #### Diagram: Understanding Quartiles
 
+<iframe src="../../sims/quartile-visualization/main.html" height="302px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/quartile-visualization/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
 <details markdown="1">
 <summary>Quartile Division Visualization</summary>
 Type: Interactive Infographic
@@ -309,6 +319,11 @@ A **boxplot** (also called a box-and-whisker plot) turns the five-number summary
 
 #### Diagram: Anatomy of a Boxplot
 
+<iframe src="../../sims/boxplot-builder/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/boxplot-builder/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
 <details markdown="1">
 <summary>Interactive Boxplot Builder</summary>
 Type: MicroSim
@@ -376,6 +391,11 @@ Why 1.5 × IQR? Statistician John Tukey chose this multiplier because it works w
 
 #### Diagram: Modified Boxplot Outlier Detection
 
+<iframe src="../../sims/outlier-detection/main.html" height="352px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/outlier-detection/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
 <details markdown="1">
 <summary>Outlier Detection Visualization</summary>
 Type: MicroSim
@@ -431,6 +451,11 @@ One of the greatest strengths of boxplots is comparing multiple groups side by s
 Period 2 has both the highest center and the smallest spread—a high-performing, consistent class. Period 3 has the most variability, suggesting a wider range of preparation levels.
 
 #### Diagram: Side-by-Side Boxplot Comparison
+
+<iframe src="../../sims/boxplot-comparison/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/boxplot-comparison/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
 
 <details markdown="1">
 <summary>Multi-Group Boxplot Comparison Tool</summary>
@@ -556,6 +581,11 @@ The standard deviation is about 3.16 points. This means quiz scores typically di
 
 #### Diagram: Standard Deviation Calculator
 
+<iframe src="../../sims/std-dev-calculator/main.html" height="452px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/std-dev-calculator/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
 <details markdown="1">
 <summary>Step-by-Step Variance and Standard Deviation Calculator</summary>
 Type: MicroSim
@@ -659,6 +689,11 @@ The relationship between the mean and median reveals information about a distrib
 Income is famously right-skewed. Most people earn modest incomes, but a few earn enormous amounts. Those high earners pull the mean up, so the mean income is typically higher than the median income. That's why reports often use median household income—it better represents the "typical" household.
 
 #### Diagram: Mean vs Median in Different Distributions
+
+<iframe src="../../sims/mean-median-skewness/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/mean-median-skewness/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
 
 <details markdown="1">
 <summary>Skewness and Center Comparison</summary>
