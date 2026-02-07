@@ -257,7 +257,7 @@ For our season data:
 
 #### Diagram: Pie Chart vs Bar Graph Comparison
 
-<iframe src="../../sims/pie-vs-bar-comparison/main.html" width="100%" height="480px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/pie-vs-bar-comparison/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Pie Chart vs Bar Graph Comparison MicroSim</summary>
@@ -576,7 +576,7 @@ Think of it like this: if knowing someone's grade level lets you predict their s
 
 #### Diagram: Strength of Association Spectrum
 
-<iframe src="../../sims/association-strength-spectrum/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/association-strength-spectrum/main.html" width="100%" height="490px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Strength of Association Spectrum MicroSim</summary>
