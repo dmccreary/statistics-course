@@ -289,6 +289,6 @@ extra:
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
   textbook_name: AP Statistics
   textbook_version: "1.0"
-  #analytics:
-  #  provider: google
-  #  property: G-XXXXX
+  analytics:
+    provider: google
+    property: G-C606P8PGV0
