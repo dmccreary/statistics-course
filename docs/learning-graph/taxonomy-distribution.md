@@ -10,38 +10,38 @@
 
 | Category | TaxonomyID | Count | Percentage | Status |
 |----------|-----------|-------|------------|--------|
-| Univariate Analysis | EDA1 | 68 | 22.7% | ✅ |
-| Foundations | FOUND | 51 | 17.0% | ✅ |
+| Exploratory Data Analysis I | EDA1 | 68 | 22.7% | ✅ |
+| Foundation Concepts | FOUND | 51 | 17.0% | ✅ |
 | Study Design | STUDY | 35 | 11.7% | ✅ |
-| Regression | REG | 30 | 10.0% | ✅ |
+| Regression & Correlation | REG | 30 | 10.0% | ✅ |
 | Probability | PROB | 24 | 8.0% | ✅ |
-| HT for Proportions | HTPR | 20 | 6.7% | ✅ |
-| CI for Proportions | CIPR | 17 | 5.7% | ✅ |
-| Bivariate Analysis | EDA2 | 11 | 3.7% | ✅ |
+| Hypothesis Testing | HTPR | 20 | 6.7% | ✅ |
+| Confidence Intervals | CIPR | 17 | 5.7% | ✅ |
+| Exploratory Data Analysis II | EDA2 | 11 | 3.7% | ✅ |
 | Chi-Square Tests | CHISQ | 11 | 3.7% | ✅ |
 | Random Variables | RAND | 9 | 3.0% | ✅ |
 | Sampling Distributions | SAMP | 7 | 2.3% | ℹ️ Under |
-| Communication | COMM | 7 | 2.3% | ℹ️ Under |
-| T-Procedures for Means | TMEA | 6 | 2.0% | ℹ️ Under |
+| Communication & Synthesis | COMM | 7 | 2.3% | ℹ️ Under |
+| Inference for Means | TMEA | 6 | 2.0% | ℹ️ Under |
 | Regression Inference | REGF | 4 | 1.3% | ℹ️ Under |
 
 ## Visual Distribution
 
 ```
-EDA1   ███████████  68 ( 22.7%)
-FOUND  ████████  51 ( 17.0%)
-STUDY  █████  35 ( 11.7%)
-REG    █████  30 ( 10.0%)
-PROB   ████  24 (  8.0%)
-HTPR   ███  20 (  6.7%)
-CIPR   ██  17 (  5.7%)
-EDA2   █  11 (  3.7%)
-CHISQ  █  11 (  3.7%)
-RAND   █   9 (  3.0%)
-SAMP   █   7 (  2.3%)
-COMM   █   7 (  2.3%)
-TMEA   █   6 (  2.0%)
-REGF      4 (  1.3%)
+Exploratory Data Analysis ███████████  68 ( 22.7%)
+Foundation Concepts       ████████  51 ( 17.0%)
+Study Design              █████  35 ( 11.7%)
+Regression & Correlation  █████  30 ( 10.0%)
+Probability               ████  24 (  8.0%)
+Hypothesis Testing        ███  20 (  6.7%)
+Confidence Intervals      ██  17 (  5.7%)
+Exploratory Data Analysis █  11 (  3.7%)
+Chi-Square Tests          █  11 (  3.7%)
+Random Variables          █   9 (  3.0%)
+Sampling Distributions    █   7 (  2.3%)
+Communication & Synthesis █   7 (  2.3%)
+Inference for Means       █   6 (  2.0%)
+Regression Inference         4 (  1.3%)
 ```
 
 ## Balance Analysis
@@ -54,16 +54,16 @@ All categories are under the 30% threshold. Good balance!
 
 - **Sampling Distributions** (SAMP): 7 concepts (2.3%)
   - *Note*: Small categories are acceptable for specialized topics
-- **Communication** (COMM): 7 concepts (2.3%)
+- **Communication & Synthesis** (COMM): 7 concepts (2.3%)
   - *Note*: Small categories are acceptable for specialized topics
-- **T-Procedures for Means** (TMEA): 6 concepts (2.0%)
+- **Inference for Means** (TMEA): 6 concepts (2.0%)
   - *Note*: Small categories are acceptable for specialized topics
 - **Regression Inference** (REGF): 4 concepts (1.3%)
   - *Note*: Small categories are acceptable for specialized topics
 
 ## Category Details
 
-### Univariate Analysis (EDA1)
+### Exploratory Data Analysis I (EDA1)
 
 **Count**: 68 concepts (22.7%)
 
@@ -86,7 +86,7 @@ All categories are under the 30% threshold. Good balance!
 - 29. Bimodal Distribution
 - *...and 53 more*
 
-### Foundations (FOUND)
+### Foundation Concepts (FOUND)
 
 **Count**: 51 concepts (17.0%)
 
@@ -132,7 +132,7 @@ All categories are under the 30% threshold. Good balance!
 - 124. Random Assignment
 - *...and 20 more*
 
-### Regression (REG)
+### Regression & Correlation (REG)
 
 **Count**: 30 concepts (10.0%)
 
@@ -178,7 +178,7 @@ All categories are under the 30% threshold. Good balance!
 - 165. Tree Diagram
 - *...and 9 more*
 
-### HT for Proportions (HTPR)
+### Hypothesis Testing (HTPR)
 
 **Count**: 20 concepts (6.7%)
 
@@ -201,7 +201,7 @@ All categories are under the 30% threshold. Good balance!
 - 245. Error Tradeoffs
 - *...and 5 more*
 
-### CI for Proportions (CIPR)
+### Confidence Intervals (CIPR)
 
 **Count**: 17 concepts (5.7%)
 
@@ -224,7 +224,7 @@ All categories are under the 30% threshold. Good balance!
 - 248. Test for One Proportion
 - *...and 2 more*
 
-### Bivariate Analysis (EDA2)
+### Exploratory Data Analysis II (EDA2)
 
 **Count**: 11 concepts (3.7%)
 
@@ -290,7 +290,7 @@ All categories are under the 30% threshold. Good balance!
 - 209. Central Limit Theorem
 - 210. CLT Conditions
 
-### Communication (COMM)
+### Communication & Synthesis (COMM)
 
 **Count**: 7 concepts (2.3%)
 
@@ -304,7 +304,7 @@ All categories are under the 30% threshold. Good balance!
 - 299. Four-Step Process
 - 300. AP Exam Strategies
 
-### T-Procedures for Means (TMEA)
+### Inference for Means (TMEA)
 
 **Count**: 6 concepts (2.0%)
 

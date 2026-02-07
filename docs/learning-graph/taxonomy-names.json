@@ -1,16 +1,16 @@
 {
-  "FOUND": "Foundations",
-  "EDA1": "Univariate Analysis",
-  "EDA2": "Bivariate Analysis",
-  "REG": "Regression",
+  "FOUND": "Foundation Concepts",
+  "EDA1": "Exploratory Data Analysis I",
+  "EDA2": "Exploratory Data Analysis II",
+  "REG": "Regression & Correlation",
   "STUDY": "Study Design",
   "PROB": "Probability",
   "RAND": "Random Variables",
   "SAMP": "Sampling Distributions",
-  "CIPR": "CI for Proportions",
-  "HTPR": "HT for Proportions",
-  "TMEA": "T-Procedures for Means",
+  "CIPR": "Confidence Intervals",
+  "HTPR": "Hypothesis Testing",
+  "TMEA": "Inference for Means",
   "CHISQ": "Chi-Square Tests",
   "REGF": "Regression Inference",
-  "COMM": "Communication"
+  "COMM": "Communication & Synthesis"
 }
