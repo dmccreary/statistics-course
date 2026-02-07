@@ -1,0 +1,16 @@
+{
+  "FOUND": "Foundations",
+  "EDA1": "Univariate Analysis",
+  "EDA2": "Bivariate Analysis",
+  "REG": "Regression",
+  "STUDY": "Study Design",
+  "PROB": "Probability",
+  "RAND": "Random Variables",
+  "SAMP": "Sampling Distributions",
+  "CIPR": "CI for Proportions",
+  "HTPR": "HT for Proportions",
+  "TMEA": "T-Procedures for Means",
+  "CHISQ": "Chi-Square Tests",
+  "REGF": "Regression Inference",
+  "COMM": "Communication"
+}

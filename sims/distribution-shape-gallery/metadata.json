@@ -1,0 +1,53 @@
+{
+  "title": "Distribution Shape Gallery",
+  "description": "An interactive infographic showing three types of distribution shapes (unimodal, bimodal, and uniform) with real-world examples, hover tooltips, click-to-enlarge views, and a quiz mode for self-assessment. Students learn to identify key characteristics of each distribution type.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": ["Statistics", "Data Visualization", "Distribution Shapes", "AP Statistics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "distribution-shape-gallery-v1",
+  "educational": {
+    "gradeLevel": "9-12, College",
+    "bloomsLevel": "Remember",
+    "bloomsVerb": "identify",
+    "learningObjective": "Students will identify characteristics of unimodal, bimodal, and uniform distributions",
+    "prerequisites": ["Basic histogram understanding", "Familiarity with data distributions"],
+    "duration": "10-15 minutes",
+    "concepts": ["unimodal distribution", "bimodal distribution", "uniform distribution", "distribution shape", "histogram interpretation"]
+  },
+  "technical": {
+    "library": "p5.js",
+    "version": "1.11.10",
+    "responsive": true,
+    "canvasHeight": 450,
+    "drawHeight": 400,
+    "controlHeight": 50
+  },
+  "controls": [
+    {
+      "type": "button",
+      "name": "Shuffle Examples",
+      "description": "Randomly selects different real-world examples for each distribution type and regenerates histogram visualizations"
+    },
+    {
+      "type": "button",
+      "name": "Quiz Mode",
+      "description": "Toggles quiz mode where students identify which distribution type matches a given real-world example"
+    }
+  ],
+  "interactions": [
+    {
+      "type": "hover",
+      "element": "distribution column",
+      "description": "Shows tooltip with 2-3 additional real-world examples"
+    },
+    {
+      "type": "click",
+      "element": "distribution column",
+      "description": "Opens enlarged view with larger histogram and all 5 examples listed"
+    }
+  ]
+}

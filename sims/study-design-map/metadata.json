@@ -1,0 +1,37 @@
+{
+    "title": "Study Design Concept Map",
+    "description": "Interactive concept map showing how foundational statistics concepts (population, sample, variables, parameters, statistics) connect in the context of a real research study about sleep and academic performance.",
+    "creator": "Dan McCreary",
+    "created": "2026-02-06",
+    "modified": "2026-02-06",
+    "subject": [
+        "Statistics",
+        "Study Design",
+        "Research Methods",
+        "Data Science"
+    ],
+    "type": "InteractiveResource",
+    "format": "text/html",
+    "language": "en",
+    "educationLevel": "High School, Undergraduate",
+    "bloomLevel": "Analyze",
+    "bloomVerb": "organize",
+    "learningObjective": "Students will organize all chapter concepts into a coherent mental framework by seeing how population, sample, variables, parameters, and statistics relate in a real study.",
+    "estimatedTime": "10-15 minutes",
+    "interactivity": "active",
+    "keywords": [
+        "concept map",
+        "population",
+        "sample",
+        "parameter",
+        "statistic",
+        "variables",
+        "quantitative",
+        "categorical",
+        "distribution",
+        "explanatory variable",
+        "response variable"
+    ],
+    "library": "vis-network",
+    "version": "1.0.0"
+}

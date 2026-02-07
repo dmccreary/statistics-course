@@ -1,0 +1,87 @@
+{
+  "title": "SOCS Description Builder",
+  "description": "An interactive MicroSim where students compose complete distribution descriptions using the SOCS framework (Shape, Outliers, Center, Spread) by analyzing histograms and selecting appropriate characteristics from dropdowns, then comparing their descriptions to expert responses.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": ["Statistics", "Data Analysis", "Distribution Description", "SOCS Framework", "Histograms"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "bloomLevel": "Create",
+  "bloomVerb": "compose",
+  "learningObjective": "Students will compose complete distribution descriptions using the SOCS framework by analyzing histograms and selecting appropriate shape, outlier, center, and spread characteristics.",
+  "prerequisites": [
+    "Reading and interpreting histograms",
+    "Understanding of mean vs median",
+    "Basic concepts of variability (range, IQR)",
+    "Definition and identification of outliers"
+  ],
+  "concepts": [
+    "distribution-shape",
+    "skewness",
+    "modality",
+    "outliers",
+    "measures-of-center",
+    "measures-of-spread",
+    "histogram-interpretation",
+    "data-description"
+  ],
+  "estimatedDuration": "15-25 minutes",
+  "gradeLevel": "High School (9-12), Undergraduate",
+  "interactivityLevel": "High",
+  "controls": {
+    "dropdowns": [
+      {
+        "name": "Shape",
+        "options": ["Symmetric", "Skewed left", "Skewed right"],
+        "purpose": "Select the overall shape of the distribution"
+      },
+      {
+        "name": "Modality",
+        "options": ["Unimodal", "Bimodal", "Uniform"],
+        "purpose": "Select the number of peaks in the distribution"
+      },
+      {
+        "name": "Outliers",
+        "options": ["None", "Low", "High", "Both"],
+        "purpose": "Identify the presence and location of outliers"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "Center",
+        "type": "numeric",
+        "purpose": "Enter an estimate for the center (median) of the distribution"
+      },
+      {
+        "name": "Spread",
+        "type": "numeric",
+        "purpose": "Enter an estimate for the spread (IQR) of the distribution"
+      }
+    ],
+    "buttons": [
+      {
+        "name": "New Dataset",
+        "action": "Generates a new random dataset with context"
+      },
+      {
+        "name": "Generate Description",
+        "action": "Validates selections and shows the composed description"
+      },
+      {
+        "name": "Compare to Expert",
+        "action": "Shows expert description and scores the student response"
+      }
+    ]
+  },
+  "sampleContexts": [
+    "Coffee wait times (skewed right)",
+    "Easy exam scores (skewed left)",
+    "Mixed heights (bimodal)",
+    "Commute times (skewed right)",
+    "Product ratings (skewed left)",
+    "Uniform random values"
+  ]
+}

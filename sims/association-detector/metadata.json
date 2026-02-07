@@ -1,0 +1,68 @@
+{
+    "title": "Association Detector Visualization",
+    "description": "Interactive MicroSim for comparing conditional distributions using side-by-side 100% stacked bar charts. Students edit a two-way table and observe how differences in conditional distributions indicate association between categorical variables.",
+    "creator": "Dan McCreary",
+    "date": "2026-02-06",
+    "subject": ["Statistics", "Categorical Data", "Association", "Conditional Distribution", "Two-Way Tables"],
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY-NC-SA 4.0",
+    "contributor": ["Claude AI Assistant"],
+    "educational": {
+        "gradeLevel": "10-12, Undergraduate",
+        "bloomLevel": "Analyze",
+        "bloomVerb": "Compare, differentiate",
+        "learningObjective": "Students will compare conditional distributions visually and describe evidence for association between categorical variables.",
+        "prerequisites": ["Two-way tables", "Percentages", "Categorical variables", "Bar charts"],
+        "concepts": ["Association", "Conditional distribution", "Independence", "Contingency table", "Stacked bar chart"],
+        "duration": "20-30 minutes"
+    },
+    "technical": {
+        "library": "p5.js",
+        "version": "1.11.10",
+        "responsive": true,
+        "canvasHeight": 520,
+        "drawHeight": 380,
+        "controlHeight": 140
+    },
+    "controls": [
+        {
+            "type": "button",
+            "name": "Preset: Strong",
+            "description": "Load example data showing strong association between variables"
+        },
+        {
+            "type": "button",
+            "name": "Preset: None",
+            "description": "Load example data showing no association (identical distributions)"
+        },
+        {
+            "type": "button",
+            "name": "Preset: Moderate",
+            "description": "Load example data showing moderate association"
+        },
+        {
+            "type": "button",
+            "name": "Preset: Custom",
+            "description": "Reset to allow custom data entry"
+        },
+        {
+            "type": "toggle",
+            "name": "Show %",
+            "description": "Toggle display of percentage labels on bar segments",
+            "default": true
+        },
+        {
+            "type": "toggle",
+            "name": "Highlight",
+            "description": "Toggle difference highlighting between distributions",
+            "default": true
+        },
+        {
+            "type": "editable",
+            "name": "Two-way table cells",
+            "description": "Click to edit frequency counts in the 2x4 data table"
+        }
+    ]
+}

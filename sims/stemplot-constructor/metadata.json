@@ -1,0 +1,80 @@
+{
+  "title": "Stemplot Constructor",
+  "description": "Interactive simulation demonstrating how data values decompose into stems and leaves to build a stemplot visualization. Features step-through animation, sample datasets, and adjustable animation speed.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": [
+    "Statistics",
+    "Data Visualization",
+    "Stemplot",
+    "Stem-and-Leaf Plot",
+    "Quantitative Data Display"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/stemplot-constructor/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Statistics",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": "interpret",
+  "learningObjective": "Students will interpret how data values decompose into stems and leaves",
+  "concepts": [
+    "Stemplot",
+    "Stem-and-leaf plot",
+    "Data decomposition",
+    "Place value",
+    "Ordered data",
+    "Distribution visualization"
+  ],
+  "prerequisites": [
+    "Understanding of place value (tens and ones)",
+    "Basic number sense"
+  ],
+  "library": "p5.js",
+  "chapter": 3,
+  "chapterTitle": "Displaying Quantitative Data",
+  "controls": {
+    "inputBox": {
+      "type": "text input",
+      "description": "Enter a two-digit number (0-99) to add to the stemplot"
+    },
+    "addValue": {
+      "type": "button",
+      "description": "Add the entered value to the pending queue and begin decomposition animation"
+    },
+    "stepThrough": {
+      "type": "button",
+      "description": "Process one value at a time from the sample dataset queue"
+    },
+    "autoBuild": {
+      "type": "button",
+      "description": "Automatically animate the entire sample dataset construction"
+    },
+    "clear": {
+      "type": "button",
+      "description": "Reset the stemplot and clear all data"
+    },
+    "datasetDropdown": {
+      "type": "dropdown",
+      "description": "Select from sample datasets: Quiz Scores, Ages, or Heights"
+    },
+    "speedSlider": {
+      "type": "slider",
+      "min": 500,
+      "max": 2000,
+      "default": 1000,
+      "unit": "ms",
+      "description": "Adjust animation speed for decomposition and placement"
+    }
+  }
+}

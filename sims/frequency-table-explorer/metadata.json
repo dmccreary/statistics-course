@@ -1,0 +1,44 @@
+{
+  "title": "Frequency Table Explorer",
+  "description": "Interactive simulation where students practice calculating relative frequencies and percentages from raw frequency data. Features adjustable sliders for each category, real-time calculations, visual proportion bars, step-by-step calculation display, and multiple categorical datasets.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": [
+    "Statistics",
+    "Categorical Data",
+    "Frequency Tables",
+    "Relative Frequency",
+    "Percentages",
+    "Data Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/frequency-table-explorer/",
+  "publisher": "AP Statistics Intelligent Textbook",
+  "educationalLevel": "High School, AP Statistics, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Frequency",
+    "Relative Frequency",
+    "Percentage",
+    "Categorical Data",
+    "Frequency Distribution",
+    "Proportion"
+  ],
+  "prerequisites": [
+    "Basic division and fraction concepts",
+    "Understanding of percentages",
+    "Familiarity with categorical variables"
+  ],
+  "library": "p5.js"
+}

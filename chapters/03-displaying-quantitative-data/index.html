@@ -1,0 +1,2942 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learn to create and interpret dotplots, stemplots, and histograms while understanding distribution shapes and identifying outliers">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/statistics-course/chapters/03-displaying-quantitative-data/">
+      
+      
+        <link rel="prev" href="../02-displaying-categorical-data/">
+      
+      
+        <link rel="next" href="../04-numerical-summaries/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Displaying Quantitative Data - AP Statistics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Displaying Quantitative Data - AP Statistics" >
+      
+        <meta  property="og:description"  content="Learn to create and interpret dotplots, stemplots, and histograms while understanding distribution shapes and identifying outliers" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/03-displaying-quantitative-data/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/statistics-course/chapters/03-displaying-quantitative-data/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Displaying Quantitative Data - AP Statistics" >
+      
+        <meta  name="twitter:description"  content="Learn to create and interpret dotplots, stemplots, and histograms while understanding distribution shapes and identifying outliers" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/03-displaying-quantitative-data/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#displaying-quantitative-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AP Statistics" class="md-header__button md-logo" aria-label="AP Statistics" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AP Statistics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Displaying Quantitative Data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/statistics-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AP Statistics" class="md-nav__button md-logo" aria-label="AP Statistics" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    AP Statistics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/statistics-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-introduction-to-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Introduction to Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-displaying-categorical-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Displaying Categorical Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3. Displaying Quantitative Data
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    3. Displaying Quantitative Data
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-visualize-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Visualize Data?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dotplots-your-first-data-portrait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dotplots: Your First Data Portrait
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dotplots: Your First Data Portrait">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-dotplot-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Dotplot Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stemplots-data-with-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stemplots: Data with Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stemplots: Data with Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-stemplot-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Stemplot Constructor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#histograms-the-workhorse-of-data-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histograms: The Workhorse of Data Display
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Histograms: The Workhorse of Data Display">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-histogram-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Histogram Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-bin-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing Bin Width
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-shape-of-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Shape of Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Shape of Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#symmetric-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetric Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Symmetric Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-symmetric-distribution-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Symmetric Distribution Identifier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewed-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skewed Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Skewed Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-skewness-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Skewness Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unimodal-bimodal-and-uniform-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unimodal, Bimodal, and Uniform Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unimodal, Bimodal, and Uniform Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-distribution-shape-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Distribution Shape Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outliers-the-unusual-suspects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outliers: The Unusual Suspects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Outliers: The Unusual Suspects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-outliers-visually" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying Outliers Visually
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifying Outliers Visually">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-outlier-detective-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Outlier Detective Game
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-outliers-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Outliers Matter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-describing-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Describing Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Describing Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-socs-description-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: SOCS Description Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-right-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing the Right Display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-numerical-summaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Numerical Summaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-standardization-and-normal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Standardization and Normal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-scatterplots-and-association/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Scatterplots and Association
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-linear-regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Linear Regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-causation-and-study-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Causation and Study Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-probability-fundamentals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Probability Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-conditional-probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Conditional Probability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-sampling-and-bias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Sampling and Bias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-experimental-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Experimental Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-random-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Random Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-sampling-distributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Sampling Distributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-confidence-intervals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. Confidence Intervals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-hypothesis-testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. Hypothesis Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-inference-for-means/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Inference for Means
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-chi-square-and-regression-inference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Chi-Square and Regression Inference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-communication-and-synthesis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. Communication and Synthesis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendices/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-visualize-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Visualize Data?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dotplots-your-first-data-portrait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dotplots: Your First Data Portrait
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dotplots: Your First Data Portrait">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-dotplot-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Dotplot Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stemplots-data-with-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stemplots: Data with Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stemplots: Data with Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-stemplot-constructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Stemplot Constructor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#histograms-the-workhorse-of-data-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histograms: The Workhorse of Data Display
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Histograms: The Workhorse of Data Display">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-histogram-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Histogram Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-bin-width" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing Bin Width
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-shape-of-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Shape of Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Shape of Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#symmetric-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Symmetric Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Symmetric Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-symmetric-distribution-identifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Symmetric Distribution Identifier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewed-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skewed Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Skewed Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-skewness-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Skewness Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unimodal-bimodal-and-uniform-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unimodal, Bimodal, and Uniform Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Unimodal, Bimodal, and Uniform Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-distribution-shape-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Distribution Shape Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outliers-the-unusual-suspects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outliers: The Unusual Suspects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Outliers: The Unusual Suspects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-outliers-visually" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying Outliers Visually
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifying Outliers Visually">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-outlier-detective-game" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Outlier Detective Game
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-outliers-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Outliers Matter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-describing-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Describing Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Describing Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-socs-description-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: SOCS Description Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-right-display" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing the Right Display
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/statistics-course/edit/master/docs/chapters/03-displaying-quantitative-data/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="displaying-quantitative-data">Displaying Quantitative Data</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter teaches students how to display quantitative data using various graphical methods including dotplots, stemplots, and histograms. Students will learn to describe the shape of distributions, identify symmetric and skewed patterns, and recognize outliers. These visualization skills are fundamental for exploratory data analysis.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 13 concepts from the learning graph:</p>
+<ol>
+<li>Dotplot</li>
+<li>Stemplot</li>
+<li>Histogram</li>
+<li>Choosing Bin Width</li>
+<li>Shape of Distribution</li>
+<li>Symmetric Distribution</li>
+<li>Skewed Left</li>
+<li>Skewed Right</li>
+<li>Unimodal Distribution</li>
+<li>Bimodal Distribution</li>
+<li>Uniform Distribution</li>
+<li>Outlier</li>
+<li>Identifying Outliers</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-introduction-to-statistics/">Chapter 1: Introduction to Statistics</a></li>
+</ul>
+<hr />
+<h2 id="why-visualize-data">Why Visualize Data?</h2>
+<p>Welcome back! In Chapter 1, you learned about the difference between categorical and quantitative variables. Now we're going to roll up our sleeves and actually <em>see</em> what quantitative data looks like. Because here's a little secret that statisticians know: numbers in a table are just... numbers. But put those same numbers into a graph, and suddenly patterns jump out at you like a squirrel spotting an acorn across the park.</p>
+<p>Sylvia here has a confession: "When I first started tracking my acorn collection data, I just stared at lists of numbers. How many acorns did I find each day? 23, 18, 45, 12, 31, 28... It meant nothing to me! Then I made my first dotplot, and suddenly I could <em>see</em> that most days I found between 15 and 35 acorns, with a few exceptional days on either end. That's when I fell in love with data visualization."</p>
+<p>In this chapter, you'll learn three powerful ways to display quantitative data:</p>
+<ul>
+<li><strong>Dotplots</strong> - Simple and precise</li>
+<li><strong>Stemplots</strong> - Quick and shows actual values</li>
+<li><strong>Histograms</strong> - Great for larger datasets</li>
+</ul>
+<p>More importantly, you'll learn to <em>describe</em> what you see. Is the data symmetric or skewed? Does it have one peak or two? Are there any unusual values lurking at the edges? Let's crack this nut!</p>
+<hr />
+<h2 id="dotplots-your-first-data-portrait">Dotplots: Your First Data Portrait</h2>
+<p>A <strong>dotplot</strong> is exactly what it sounds like: you put a dot above a number line for each value in your dataset. If you have repeated values, you stack the dots on top of each other. Simple, right?</p>
+<p>Let's say your AP Statistics class of 15 students measured how many hours they studied last week. The data looks like this:</p>
+<table>
+<thead>
+<tr>
+<th>Student</th>
+<th>Hours Studied</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>7</td>
+<td>5</td>
+</tr>
+<tr>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr>
+<td>9</td>
+<td>3</td>
+</tr>
+<tr>
+<td>10</td>
+<td>6</td>
+</tr>
+<tr>
+<td>11</td>
+<td>5</td>
+</tr>
+<tr>
+<td>12</td>
+<td>9</td>
+</tr>
+<tr>
+<td>13</td>
+<td>6</td>
+</tr>
+<tr>
+<td>14</td>
+<td>5</td>
+</tr>
+<tr>
+<td>15</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>To create a dotplot, you draw a horizontal number line covering your range of values (3 to 9 hours), then place a dot above the appropriate value for each observation. When multiple students studied the same number of hours, you stack the dots vertically.</p>
+<h4 id="diagram-interactive-dotplot-builder">Diagram: Interactive Dotplot Builder</h4>
+<iframe src="../../sims/interactive-dotplot-builder/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+<details>
+<summary>Interactive Dotplot Builder MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: demonstrate</p>
+<p>Learning Objective: Students will demonstrate how to construct a dotplot by clicking to add data points and observing how the visual representation changes.</p>
+<p>Instructional Rationale: An Apply-level objective requires students to actively construct rather than passively observe. Clicking to add dots reinforces the one-to-one correspondence between data values and visual elements.</p>
+<p>Canvas Layout:
+- Width: 100% of container (responsive)
+- Height: 450px
+- Top section (350px): Dotplot visualization area with number line
+- Bottom section (100px): Controls and data entry</p>
+<p>Visual Elements:
+- Horizontal number line from 0 to 15 (adjustable scale)
+- Grid lines at each integer value
+- Dots as filled circles (radius 12px) in blue
+- Dots stack vertically with 2px gap when values repeat
+- Current dataset displayed as comma-separated values
+- Count of total observations shown</p>
+<p>Interactive Controls:
+- Click anywhere on the number line to add a dot at that value
+- "Clear All" button to reset the dotplot
+- "Load Sample Data" button to populate with study hours example
+- "Random Dataset" button to generate 10-20 random values
+- Radio buttons to select dot size (small/medium/large)</p>
+<p>Default Parameters:
+- Empty dotplot on load
+- Number line range: 0-15
+- Dot color: #4A90D9 (blue)
+- Medium dot size selected</p>
+<p>Behavior:
+- When user clicks on number line, snap to nearest integer and add dot
+- Dots stack automatically when values repeat
+- Display running count of observations
+- Show data values as text below the visualization
+- Highlight the most recently added dot with a brief animation</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<p><strong>Why use a dotplot?</strong> Dotplots are fantastic when you have a small to moderate amount of data (usually fewer than 50 observations) and you want to see every individual value. You can spot patterns, gaps, and clusters at a glance.</p>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia Says</p>
+<p>"I use dotplots for my weekly acorn counts because I can see exactly which days were bonanza days and which were duds. When you can see every data point, nothing hides from you!"</p>
+</div>
+<hr />
+<h2 id="stemplots-data-with-structure">Stemplots: Data with Structure</h2>
+<p>A <strong>stemplot</strong> (also called a stem-and-leaf plot) is a clever way to organize data that gives you the best of both worlds: you get a visual shape <em>and</em> you keep the actual values. Think of it as a dotplot that tells you exactly what each dot represents.</p>
+<p>In a stemplot, each data value is split into a <strong>stem</strong> (typically all digits except the last one) and a <strong>leaf</strong> (typically the last digit). The stems are listed vertically, and the leaves are written horizontally next to their stem.</p>
+<p>Let's use test scores from a recent quiz (out of 100 points):</p>
+<p>67, 72, 74, 78, 81, 82, 85, 85, 86, 89, 91, 93, 94, 97</p>
+<p>Here's the stemplot:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Stem | Leaf
+  6  | 7
+  7  | 2 4 8
+  8  | 1 2 5 5 6 9
+  9  | 1 3 4 7
+
+Key: 7|2 means 72 points
+</code></pre></div></td></tr></table></div>
+<p>Notice how the stemplot looks like a histogram turned on its side! You can see that most scores clustered in the 80s, with a lone score in the 60s.</p>
+<p><strong>Important conventions for stemplots:</strong></p>
+<ul>
+<li>Always include a key that explains how to read the values</li>
+<li>List leaves in order from smallest to largest (left to right)</li>
+<li>Every stem should be listed, even if it has no leaves (to show gaps)</li>
+<li>Use equal spacing between leaves for accurate visual comparison</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Dotplot</th>
+<th>Stemplot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shows individual values</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Good for comparing two groups</td>
+<td>Possible</td>
+<td>Yes (back-to-back)</td>
+</tr>
+<tr>
+<td>Best data size</td>
+<td>10-50 values</td>
+<td>15-100 values</td>
+</tr>
+<tr>
+<td>Easy to construct by hand</td>
+<td>Very easy</td>
+<td>Easy</td>
+</tr>
+<tr>
+<td>Preserves exact data</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-stemplot-constructor">Diagram: Stemplot Constructor</h4>
+<iframe src="../../sims/stemplot-constructor/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Stemplot Constructor MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: interpret</p>
+<p>Learning Objective: Students will interpret how data values are decomposed into stems and leaves, understanding the organizational structure of a stemplot.</p>
+<p>Instructional Rationale: Step-through visualization with concrete data is appropriate because the Understand/interpret objective requires learners to see exactly how each value maps to its stem-leaf representation. Animation would obscure the digit-splitting process.</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show raw data value (e.g., "85")
+- Stage 2: Show decomposition arrow: 85 → stem: 8, leaf: 5
+- Stage 3: Show stem column with "8" highlighted
+- Stage 4: Show leaf "5" being placed next to stem "8"
+- Stage 5: Show complete stemplot with new value integrated</p>
+<p>Canvas Layout:
+- Width: 100% of container (responsive)
+- Height: 500px
+- Left panel (60%): Stemplot display area
+- Right panel (40%): Data entry and controls</p>
+<p>Visual Elements:
+- Vertical stem column with dividing line
+- Horizontal leaf rows extending from each stem
+- Current data value being processed highlighted in yellow
+- Stem-leaf decomposition shown with arrow animation
+- Key displayed at bottom of stemplot
+- Sample dataset shown in right panel</p>
+<p>Interactive Controls:
+- Text input field to enter new data values (two or three digits)
+- "Add Value" button
+- "Step Through" button to watch decomposition process
+- "Auto-Build" button to animate full construction
+- "Clear Stemplot" button
+- Dropdown for sample datasets: Quiz Scores, Ages, Heights (cm)</p>
+<p>Default Parameters:
+- Empty stemplot on load
+- Speed slider for auto-build: 500ms-2000ms per value
+- Show decomposition animation by default</p>
+<p>Behavior:
+- When value entered, highlight it and show stem-leaf split
+- Animate leaf placement in correct sorted position
+- If leaf position requires shifting existing leaves, show this
+- Display running statistics: count, min, max
+- Key updates automatically based on data range</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<p><strong>Back-to-back stemplots</strong> are a powerful variation when you want to compare two groups. The stems go in the middle, and leaves extend to both sides. For example, comparing quiz scores between two class periods:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Period 1 | Stem | Period 2
+         |   6  | 7
+    8  2 |   7  | 4 8 9
+9 7 5 2  |   8  | 1 5 5 6
+    4 1  |   9  | 1 3
+
+Key: Period 1: 2|7 means 72    Period 2: 7|4 means 74
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="histograms-the-workhorse-of-data-display">Histograms: The Workhorse of Data Display</h2>
+<p>When you have lots of data, dotplots and stemplots become unwieldy. Imagine trying to draw 500 dots or organize 500 leaves! This is where <strong>histograms</strong> come to the rescue.</p>
+<p>A histogram divides the data into <strong>bins</strong> (also called intervals or classes) and displays the count or frequency of observations in each bin as a bar. Unlike bar graphs for categorical data, histogram bars touch each other because the quantitative variable is continuous.</p>
+<p>Consider this dataset of 40 test scores:</p>
+<p>52, 55, 58, 61, 63, 65, 67, 68, 69, 70, 71, 72, 72, 73, 74, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 99</p>
+<p>If we use bins of width 10 (50-59, 60-69, 70-79, etc.), we count how many values fall in each bin:</p>
+<table>
+<thead>
+<tr>
+<th>Bin</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50-59</td>
+<td>3</td>
+</tr>
+<tr>
+<td>60-69</td>
+<td>6</td>
+</tr>
+<tr>
+<td>70-79</td>
+<td>10</td>
+</tr>
+<tr>
+<td>80-89</td>
+<td>10</td>
+</tr>
+<tr>
+<td>90-99</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<p>Then we draw bars with heights equal to these counts. The bars touch because there's no gap between 59 and 60, or between 69 and 70.</p>
+<h4 id="diagram-interactive-histogram-explorer">Diagram: Interactive Histogram Explorer</h4>
+<iframe src="../../sims/histogram-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Interactive Histogram Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: examine</p>
+<p>Learning Objective: Students will examine how changing bin width affects the appearance and interpretation of a histogram, understanding the tradeoffs between detail and pattern visibility.</p>
+<p>Instructional Rationale: An Analyze-level objective requires students to explore parameter changes and observe effects. Interactive exploration with immediate visual feedback allows students to discover the relationship between bin width and histogram appearance.</p>
+<p>Canvas Layout:
+- Width: 100% of container (responsive)
+- Height: 550px
+- Main area (400px): Histogram visualization
+- Control area (150px): Sliders and buttons</p>
+<p>Visual Elements:
+- Histogram with bars touching (no gaps)
+- X-axis with bin labels and tick marks
+- Y-axis with frequency count
+- Bin edges shown as vertical lines
+- Current bin width displayed prominently
+- Summary statistics panel: n, min, max, range</p>
+<p>Interactive Controls:
+- Bin width slider: range from 2 to 20 (for typical 0-100 data)
+- Number of bins display (calculated from width)
+- Dropdown to select dataset:
+  - Test Scores (n=40, range 50-100)
+  - Heights in inches (n=100, range 58-78)
+  - Daily Temperatures (n=365, range 20-95)
+  - Custom (enter comma-separated values)
+- Checkbox: Show frequency vs relative frequency
+- Checkbox: Show data points as dots above histogram
+- "Reset to Default" button</p>
+<p>Default Parameters:
+- Test Scores dataset loaded
+- Bin width: 10
+- Show frequency (not relative frequency)
+- Hide individual data points</p>
+<p>Behavior:
+- When bin width changes, histogram redraws smoothly
+- Display warning when bins too narrow: "Too many bins may show noise"
+- Display warning when bins too wide: "Too few bins may hide patterns"
+- Highlight the current bin when hovering
+- Show count and percentage for hovered bin
+- Bars colored with gradient from light to dark blue</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h3 id="choosing-bin-width">Choosing Bin Width</h3>
+<p>Here's a genuine puzzle in statistics: there's no single "correct" bin width for a histogram. <strong>Choosing bin width</strong> involves balancing two competing goals:</p>
+<ul>
+<li><strong>Too narrow bins:</strong> You see too much detail, including random noise that doesn't represent real patterns</li>
+<li><strong>Too wide bins:</strong> You lose important features and everything looks too smooth</li>
+</ul>
+<p>A common starting rule is to use between 5 and 15 bins for most datasets. Some textbooks suggest using the square root of the sample size as a starting point. But honestly? The best approach is to try several different bin widths and see which one tells the clearest story about your data.</p>
+<div class="admonition warning">
+<p class="admonition-title">Watch Out!</p>
+<p>Two histograms of the same data can look completely different if they use different bin widths. Always check the x-axis scale and bin width before comparing histograms!</p>
+</div>
+<p>Sylvia's advice: "When I'm choosing bin width for my seasonal acorn data, I always ask myself: 'Does this histogram help me see the pattern, or is it confusing me?' If it looks like a jagged mountain range, my bins are probably too narrow. If it looks like a flat mesa, they're probably too wide. I'm looking for gentle rolling hills that reveal the true shape."</p>
+<hr />
+<h2 id="the-shape-of-distributions">The Shape of Distributions</h2>
+<p>Now comes the really fun part: learning to describe what you see! When statisticians look at a distribution (the overall pattern of data in a graph), they describe three key features:</p>
+<ol>
+<li><strong>Shape</strong> - The overall form of the distribution</li>
+<li><strong>Center</strong> - Where the "middle" of the data is located</li>
+<li><strong>Spread</strong> - How variable or spread out the data is</li>
+</ol>
+<p>We'll focus on shape in this chapter (center and spread are coming in Chapter 4!). The <strong>shape of distribution</strong> tells us about the overall pattern in our data.</p>
+<h3 id="symmetric-distributions">Symmetric Distributions</h3>
+<p>A distribution is <strong>symmetric</strong> if the left side is roughly a mirror image of the right side. If you could fold the histogram down the middle, both sides would match up. Many natural phenomena produce symmetric distributions, including heights of adults, standardized test scores, and the number of petals on daisies.</p>
+<h4 id="diagram-symmetric-distribution-identifier">Diagram: Symmetric Distribution Identifier</h4>
+<iframe src="../../sims/symmetric-distribution/main.html" width="100%" height="400px" scrolling="no"></iframe>
+
+<details>
+<summary>Symmetric Distribution Identifier</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Taxonomy Verb: recognize</p>
+<p>Learning Objective: Students will recognize symmetric distributions by comparing the visual appearance of the left and right sides of histograms.</p>
+<p>Instructional Rationale: A Remember-level objective is best served by clear examples with immediate feedback. Students need to build mental models of what symmetry looks like before analyzing more complex shapes.</p>
+<p>Canvas Layout:
+- Width: 100% of container (responsive)
+- Height: 400px
+- Main area (300px): Histogram display
+- Bottom area (100px): Classification buttons and feedback</p>
+<p>Visual Elements:
+- Histogram with 10-15 bars
+- Vertical dashed line at center
+- Fold animation showing left side flipping to right
+- Green checkmark or red X for feedback
+- Score counter: Correct / Total</p>
+<p>Interactive Controls:
+- "Symmetric" button
+- "Not Symmetric" button
+- "Next Distribution" button
+- "Show Fold" button to animate folding
+- Difficulty selector: Easy (obvious), Medium (subtle), Hard (close calls)</p>
+<p>Default Parameters:
+- Easy difficulty selected
+- Score starts at 0/0
+- Random symmetric or asymmetric distribution generated</p>
+<p>Behavior:
+- Display random histogram (50% chance symmetric)
+- When student clicks button, show immediate feedback
+- "Show Fold" animates left side folding over center line
+- Track correct responses and display running score
+- After 10 questions, show summary with commonly missed cases</p>
+<p>Sample Distributions to Include:
+- Normal-shaped (symmetric)
+- Slightly skewed (not symmetric)
+- Bimodal symmetric
+- Bimodal asymmetric
+- Uniform (symmetric)</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h3 id="skewed-distributions">Skewed Distributions</h3>
+<p>Many real-world datasets are <em>not</em> symmetric. Instead, they have a <strong>tail</strong> that stretches out in one direction more than the other. We call these distributions <strong>skewed</strong>.</p>
+<p><strong>Skewed right</strong> (also called positively skewed): The tail stretches toward the higher values (to the right). Common examples include:</p>
+<ul>
+<li>Income and wealth data (most people earn modest amounts, but a few earn millions)</li>
+<li>Home prices (most homes are affordable, but some mansions cost millions)</li>
+<li>Time to complete a task (most finish quickly, some take much longer)</li>
+</ul>
+<p><strong>Skewed left</strong> (also called negatively skewed): The tail stretches toward the lower values (to the left). Examples include:</p>
+<ul>
+<li>Age at retirement (most retire around 65, but some retire much earlier)</li>
+<li>Test scores on an easy exam (most score high, but a few score very low)</li>
+<li>Age at death for adults (most live to old age, but some die young)</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Memory Trick</p>
+<p>"The skew is where the tail flies to!" If the tail goes right, it's skewed right. If the tail goes left, it's skewed left. Picture a bird with a long tail feather pointing in the direction of the skew.</p>
+</div>
+<h4 id="diagram-skewness-explorer">Diagram: Skewness Explorer</h4>
+<iframe src="../../sims/skewness-explorer/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
+<details>
+<summary>Skewness Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: classify</p>
+<p>Learning Objective: Students will classify distributions as symmetric, skewed left, or skewed right by identifying the direction of the longer tail.</p>
+<p>Instructional Rationale: Understanding skewness requires seeing multiple examples with varying degrees of asymmetry. Interactive classification with immediate feedback builds recognition skills before formal analysis.</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show histogram of dataset
+- Stage 2: Highlight the "peak" region
+- Stage 3: Show arrows pointing to each tail
+- Stage 4: Compare tail lengths visually
+- Stage 5: Reveal classification with explanation</p>
+<p>Canvas Layout:
+- Width: 100% of container (responsive)
+- Height: 480px
+- Left side (70%): Histogram display with annotations
+- Right side (30%): Classification panel and context</p>
+<p>Visual Elements:
+- Histogram with clear bars
+- Arrows showing tail directions
+- Highlighted peak region
+- Tail length comparison overlay
+- Real-world context label (e.g., "Income Data", "Test Scores")
+- Visual aid showing direction of skew</p>
+<p>Interactive Controls:
+- Three classification buttons: "Skewed Left", "Symmetric", "Skewed Right"
+- "Show Hint" button (highlights tails)
+- "Show Answer" button
+- "Next Example" button
+- Slider to adjust skewness of a sample distribution
+- Toggle: "Show real-world examples" vs "Random shapes"</p>
+<p>Default Parameters:
+- Start with random distribution
+- Hints hidden
+- Real-world context mode</p>
+<p>Behavior:
+- Display distribution with context (income, ages, scores, etc.)
+- When student classifies, show correct answer with explanation
+- "Show Hint" draws arrows on the tails
+- Slider mode: adjust skewness from -2 to +2 and watch shape change
+- Track accuracy across examples</p>
+<p>Sample Contexts:
+- Household Income (skewed right)
+- Easy Exam Scores (skewed left)
+- Heights of Adults (symmetric)
+- Waiting Time at DMV (skewed right)
+- Age at Retirement (skewed left)
+- Weights of Newborns (symmetric)</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<p>Here's a comparison of the three main shapes:</p>
+<table>
+<thead>
+<tr>
+<th>Shape</th>
+<th>Left Tail</th>
+<th>Right Tail</th>
+<th>Peak Location</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Symmetric</td>
+<td>Short</td>
+<td>Short (equal)</td>
+<td>Center</td>
+<td>Heights, IQ scores</td>
+</tr>
+<tr>
+<td>Skewed Right</td>
+<td>Short</td>
+<td>Long</td>
+<td>Left side</td>
+<td>Income, home prices</td>
+</tr>
+<tr>
+<td>Skewed Left</td>
+<td>Long</td>
+<td>Short</td>
+<td>Right side</td>
+<td>Easy test scores, retirement age</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unimodal-bimodal-and-uniform-distributions">Unimodal, Bimodal, and Uniform Distributions</h3>
+<p>The <strong>mode</strong> of a distribution refers to its peak or peaks. Describing the number of modes is another important aspect of shape.</p>
+<p>A <strong>unimodal distribution</strong> has a single clear peak. Most of the distributions you'll encounter are unimodal. Think of test scores in a class, heights of students, or Sylvia's daily acorn counts.</p>
+<p>A <strong>bimodal distribution</strong> has two distinct peaks. This often suggests that your data comes from two different groups! Examples include:</p>
+<ul>
+<li>Heights of adults (separate peaks for males and females)</li>
+<li>Eruption times at Old Faithful (short eruptions around 2 minutes, long ones around 4.5 minutes)</li>
+<li>Ages at a community center event (kids and grandparents, but few middle-aged adults)</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Why Two Peaks?</p>
+<p>When you see a bimodal distribution, your first thought should be: "Is this actually two groups mixed together?" If so, you might want to analyze them separately!</p>
+</div>
+<p>A <strong>uniform distribution</strong> has no peaks at all; every value (or range of values) occurs with roughly equal frequency. Examples include:</p>
+<ul>
+<li>Rolling a fair die (each number 1-6 appears equally often)</li>
+<li>Birthdays throughout the year (roughly equal in each month)</li>
+<li>Random number generators (designed to be uniform)</li>
+</ul>
+<h4 id="diagram-distribution-shape-gallery">Diagram: Distribution Shape Gallery</h4>
+<iframe src="../../sims/distribution-shape-gallery/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+<details>
+<summary>Distribution Shape Gallery</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Taxonomy Verb: identify</p>
+<p>Learning Objective: Students will identify the key characteristics of unimodal, bimodal, and uniform distributions through visual comparison.</p>
+<p>Purpose: Provide a reference gallery showing the visual characteristics of each distribution type with interactive exploration.</p>
+<p>Layout:
+- Width: 100% of container (responsive)
+- Height: 450px
+- Three columns, one for each distribution type
+- Each column shows example histogram with labels</p>
+<p>Visual Elements:
+- Three histograms side by side: Unimodal, Bimodal, Uniform
+- Each histogram labeled with:
+  - Distribution name
+  - Key visual feature (peak count)
+  - Real-world example
+- Hover over each to see additional examples
+- Peak regions highlighted with subtle shading</p>
+<p>Interactive Features:
+- Click on any histogram to see larger version with more detail
+- Hover shows tooltip with 2-3 additional real-world examples
+- "Shuffle Examples" button to see different datasets with same shapes
+- Quiz mode: "Which type is this?" with random distribution</p>
+<p>Color Scheme:
+- Unimodal: Blue gradient
+- Bimodal: Purple gradient
+- Uniform: Green gradient
+- Consistent styling for visual learning</p>
+<p>Content for Each Type:
+Unimodal:
+- Visual: Clear single peak in center
+- Examples: Test scores, heights, weights
+- Key phrase: "One main cluster"</p>
+<p>Bimodal:
+- Visual: Two distinct peaks with valley between
+- Examples: Old Faithful eruptions, mixed populations
+- Key phrase: "Two separate groups"</p>
+<p>Uniform:
+- Visual: Flat across all values
+- Examples: Dice rolls, random numbers
+- Key phrase: "All values equally likely"</p>
+<p>Implementation: p5.js with hover effects and click handling</p>
+</details>
+<hr />
+<h2 id="outliers-the-unusual-suspects">Outliers: The Unusual Suspects</h2>
+<p>An <strong>outlier</strong> is an observation that falls notably far from the main pattern of the data. Outliers are important because they can:</p>
+<ul>
+<li>Represent genuine unusual cases worth investigating</li>
+<li>Result from measurement or recording errors</li>
+<li>Dramatically affect statistical calculations</li>
+</ul>
+<p>Sylvia shares a story: "One autumn, I recorded collecting 247 acorns in a single day. That was WAY more than my usual 20-40. At first, I thought I'd made a counting error. But then I remembered, that was the day the old oak tree by the library finally dropped all its acorns at once! The outlier was real, and it had a fascinating story behind it."</p>
+<p>When you spot an outlier, don't automatically throw it out! Instead, investigate:</p>
+<ol>
+<li>Is the value a typo or recording error?</li>
+<li>Is there a special explanation for this unusual value?</li>
+<li>Does the outlier represent a different population?</li>
+</ol>
+<h3 id="identifying-outliers-visually">Identifying Outliers Visually</h3>
+<p><strong>Identifying outliers</strong> starts with looking at your graphs. On a dotplot, stemplot, or histogram, outliers appear as:</p>
+<ul>
+<li>Isolated dots separated from the main cluster</li>
+<li>Leaves standing alone on a stem far from others</li>
+<li>Bars separated by empty bins from the main group</li>
+</ul>
+<p>Later in this course, you'll learn a mathematical method called the <strong>1.5 IQR rule</strong> for formally identifying outliers. For now, focus on visual identification: if a value stands apart from the crowd, it deserves attention.</p>
+<h4 id="diagram-outlier-detective-game">Diagram: Outlier Detective Game</h4>
+<iframe src="../../sims/outlier-detective/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Outlier Detective Game MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: distinguish</p>
+<p>Learning Objective: Students will distinguish between outliers and non-outliers by examining visual separation from the main distribution and considering context.</p>
+<p>Instructional Rationale: Identifying outliers requires analytical judgment. Interactive practice with varying degrees of separation helps students develop intuition for what constitutes "notably far" from the main pattern.</p>
+<p>Canvas Layout:
+- Width: 100% of container (responsive)
+- Height: 500px
+- Main area (380px): Interactive dotplot or histogram
+- Control area (120px): Game interface</p>
+<p>Visual Elements:
+- Dotplot or histogram of dataset
+- Points that can be clicked to select as outliers
+- Selected points highlighted in red
+- Score panel showing current round and total score
+- Context description for each dataset
+- "Reveal Answer" overlay showing correct outliers</p>
+<p>Interactive Controls:
+- Click on points/bars to select/deselect as outliers
+- "Submit Answer" button
+- "Reveal Correct Answer" button (after submission)
+- "Next Challenge" button
+- Difficulty slider: Easy (obvious gaps), Medium (moderate separation), Hard (borderline cases)
+- Toggle between dotplot and histogram view</p>
+<p>Default Parameters:
+- Medium difficulty
+- Dotplot view
+- Round 1 of 10</p>
+<p>Behavior:
+- Generate dataset with 0-3 outliers
+- Display context (e.g., "Heights of basketball players")
+- Player clicks to select suspected outliers
+- On submit: compare to correct answer, show feedback
+- Award points: +10 for each correct identification, -5 for false positives
+- After 10 rounds, show final score and common mistakes</p>
+<p>Sample Datasets with Context:
+- Test scores (outlier: absent student scored 0)
+- Ages at birthday party (outlier: parent among children)
+- Monthly rainfall (outlier: hurricane month)
+- Commute times (outlier: car broke down)
+- Heights (outlier: measurement error in wrong units)</p>
+<p>Scoring Feedback Messages:
+- Perfect: "Sharp eye! You spotted all outliers."
+- Missed some: "Look for values far from the main cluster."
+- False positive: "That value is unusual but not separated enough."</p>
+<p>Implementation: p5.js with click detection and game state management</p>
+</details>
+<h3 id="why-outliers-matter">Why Outliers Matter</h3>
+<p>Outliers aren't just statistical curiosities; they can have profound effects on your analysis:</p>
+<ul>
+<li><strong>Mean:</strong> Extremely sensitive to outliers. One millionaire in a room of minimum-wage workers dramatically increases the average income.</li>
+<li><strong>Standard deviation:</strong> Also very sensitive to outliers.</li>
+<li><strong>Median:</strong> Resistant to outliers. The middle value stays stable even with extreme values at the ends.</li>
+</ul>
+<p>This sensitivity is one reason why describing the shape of your distribution matters so much. For skewed distributions with outliers, the median often tells a more representative story than the mean.</p>
+<p>Consider these two datasets of home prices in a neighborhood:</p>
+<table>
+<thead>
+<tr>
+<th>Dataset A</th>
+<th>Dataset B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$250,000</td>
+<td>$250,000</td>
+</tr>
+<tr>
+<td>$275,000</td>
+<td>$275,000</td>
+</tr>
+<tr>
+<td>$280,000</td>
+<td>$280,000</td>
+</tr>
+<tr>
+<td>$290,000</td>
+<td>$290,000</td>
+</tr>
+<tr>
+<td>$300,000</td>
+<td>$2,500,000</td>
+</tr>
+</tbody>
+</table>
+<p>Dataset A Mean: $279,000 (reasonable "typical" value)
+Dataset B Mean: $719,000 (misleading due to mansion!)</p>
+<p>The mansion in Dataset B is an outlier that pulls the mean way up, making it a poor representation of what a "typical" house costs in that neighborhood.</p>
+<hr />
+<h2 id="putting-it-all-together-describing-distributions">Putting It All Together: Describing Distributions</h2>
+<p>When you describe a distribution, you should address the "Big Three" characteristics. We use the acronym <strong>SOCS</strong> to remember them (with an extra S for unusual features):</p>
+<ul>
+<li><strong>S</strong>hape: Is it symmetric, skewed left, or skewed right? Unimodal, bimodal, or uniform?</li>
+<li><strong>O</strong>utliers: Are there any unusual values separated from the main pattern?</li>
+<li><strong>C</strong>enter: Where is the "typical" value? (We'll calculate this precisely in Chapter 4)</li>
+<li><strong>S</strong>pread: How variable are the data? Are values tightly clustered or widely dispersed? (Also coming in Chapter 4)</li>
+</ul>
+<p>Always describe distributions <strong>in context</strong>. Don't just say "The distribution is skewed right"; say "The distribution of household incomes is skewed right, with most households earning between $40,000 and $80,000, but a long tail stretching up to $200,000 or more."</p>
+<h4 id="diagram-socs-description-builder">Diagram: SOCS Description Builder</h4>
+<iframe src="../../sims/socs-description-builder/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>SOCS Description Builder MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Create (L6)
+Bloom Taxonomy Verb: compose</p>
+<p>Learning Objective: Students will compose complete distribution descriptions using the SOCS framework, selecting appropriate terminology and writing contextual interpretations.</p>
+<p>Instructional Rationale: A Create-level objective requires students to produce original descriptions. Building descriptions from components scaffolds the process while still requiring synthesis and contextual interpretation.</p>
+<p>Canvas Layout:
+- Width: 100% of container (responsive)
+- Height: 520px
+- Left panel (55%): Histogram display with context
+- Right panel (45%): Description builder interface</p>
+<p>Visual Elements:
+- Histogram of dataset with context label
+- SOCS checklist with dropdown menus
+- Text preview area showing composed description
+- Example descriptions for reference
+- Progress indicator (which SOCS elements completed)</p>
+<p>Interactive Controls:
+- Dropdown: Shape (Symmetric / Skewed Left / Skewed Right)
+- Dropdown: Modality (Unimodal / Bimodal / Uniform)
+- Dropdown: Outliers (None / Low outliers / High outliers / Both)
+- Slider or text input: Approximate center value
+- Slider or text input: Approximate spread description
+- Text area for additional context notes
+- "Generate Description" button
+- "Compare to Expert" button
+- "New Dataset" button</p>
+<p>Default Parameters:
+- Random dataset with context loaded
+- All dropdowns unselected
+- Empty text preview</p>
+<p>Behavior:
+- Display histogram with context (e.g., "Waiting times at coffee shop")
+- As student makes selections, preview text updates in real-time
+- Description template: "The distribution of [context] is [shape] and [modality]. [Outlier statement]. The center appears to be around [value] with [spread description]."
+- "Compare to Expert" shows model answer for feedback
+- Track which SOCS elements are addressed</p>
+<p>Sample Contexts and Expected Descriptions:
+- Coffee shop wait times: Skewed right, unimodal, one high outlier
+- Test scores (easy exam): Skewed left, unimodal, low outlier
+- Heights of mixed group: Symmetric (or bimodal), unimodal, no outliers
+- Random die rolls: Uniform, no outliers</p>
+<p>Expert Description Examples:
+"The distribution of wait times at the coffee shop is skewed right and unimodal, with most customers waiting between 2 and 5 minutes. There is one outlier at 15 minutes, which may represent a complex order or staffing issue. The center appears to be around 3 minutes."</p>
+<p>Implementation: p5.js with text composition and real-time preview</p>
+</details>
+<hr />
+<h2 id="choosing-the-right-display">Choosing the Right Display</h2>
+<p>With three display types to choose from, how do you decide which one to use? Here's a handy guide:</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Best Choice</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small dataset (&lt; 25 values)</td>
+<td>Dotplot</td>
+<td>See every individual value</td>
+</tr>
+<tr>
+<td>Need exact values preserved</td>
+<td>Stemplot</td>
+<td>Shows actual data, not just shape</td>
+</tr>
+<tr>
+<td>Moderate dataset (20-100 values)</td>
+<td>Stemplot or Histogram</td>
+<td>Both work well</td>
+</tr>
+<tr>
+<td>Large dataset (&gt; 50 values)</td>
+<td>Histogram</td>
+<td>Dotplots get too crowded</td>
+</tr>
+<tr>
+<td>Comparing two groups</td>
+<td>Back-to-back stemplot</td>
+<td>Easy side-by-side comparison</td>
+</tr>
+<tr>
+<td>Quick sketch by hand</td>
+<td>Stemplot</td>
+<td>Fastest to draw accurately</td>
+</tr>
+<tr>
+<td>Presenting to an audience</td>
+<td>Histogram</td>
+<td>Most people can read it easily</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia's Rule of Thumb</p>
+<p>"When in doubt, try more than one! I often make both a stemplot and a histogram of the same data. Sometimes one reveals patterns that the other misses. Different perspectives, different insights!"</p>
+</div>
+<hr />
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<p>As you practice creating and interpreting graphs, watch out for these common pitfalls:</p>
+<p><strong>When creating histograms:</strong></p>
+<ul>
+<li>Don't leave gaps between bars (histogram bars should touch)</li>
+<li>Don't use unequal bin widths unless you have a specific reason</li>
+<li>Always label your axes and include a title</li>
+</ul>
+<p><strong>When reading distributions:</strong></p>
+<ul>
+<li>Don't confuse "skewed right" with having more values on the right. Skewness describes the TAIL direction, not where most values are!</li>
+<li>Don't forget to consider the context when identifying outliers</li>
+<li>Don't assume every unusual value is an error; some are genuine</li>
+</ul>
+<p><strong>When describing distributions:</strong></p>
+<ul>
+<li>Don't forget to describe in context (use the variable name and units)</li>
+<li>Don't skip any of the SOCS elements</li>
+<li>Don't just list numbers; interpret what they mean</li>
+</ul>
+<hr />
+<h2 id="chapter-summary">Chapter Summary</h2>
+<p>Let's squirrel away the key ideas from this chapter:</p>
+<p><strong>Three ways to display quantitative data:</strong></p>
+<ul>
+<li><strong>Dotplots:</strong> Simple, show every value, best for small datasets</li>
+<li><strong>Stemplots:</strong> Preserve exact values while showing shape, great for moderate datasets</li>
+<li><strong>Histograms:</strong> Use bins to group data, essential for large datasets</li>
+</ul>
+<p><strong>Describing shape:</strong></p>
+<ul>
+<li><strong>Symmetric:</strong> Left and right sides mirror each other</li>
+<li><strong>Skewed right:</strong> Long tail stretches toward higher values</li>
+<li><strong>Skewed left:</strong> Long tail stretches toward lower values</li>
+<li><strong>Unimodal:</strong> One peak</li>
+<li><strong>Bimodal:</strong> Two peaks (often indicates two groups)</li>
+<li><strong>Uniform:</strong> Flat, all values equally likely</li>
+</ul>
+<p><strong>Outliers:</strong></p>
+<ul>
+<li>Values that fall notably far from the main pattern</li>
+<li>Can be errors OR genuine unusual cases</li>
+<li>Always investigate before removing</li>
+<li>Strongly affect mean and standard deviation</li>
+</ul>
+<p><strong>The SOCS framework:</strong></p>
+<ul>
+<li><strong>S</strong>hape: Symmetric or skewed? Unimodal or bimodal?</li>
+<li><strong>O</strong>utliers: Any unusual values?</li>
+<li><strong>C</strong>enter: Where's the typical value?</li>
+<li><strong>S</strong>pread: How variable are the data?</li>
+</ul>
+<p>Sylvia's parting words: "You've learned to see data in a whole new way! A list of numbers is now a story waiting to be told. Is it symmetric or does it lean one way? Is there a lonely outlier with a tale to tell? Next chapter, we'll add numbers to our descriptions and learn to measure center and spread precisely. But for now, practice your graphing skills. Every acorn I count becomes part of a distribution, and now you can see the patterns too!"</p>
+<hr />
+<h2 id="practice-problems">Practice Problems</h2>
+<details class="question">
+<summary>Question 1: Which display would you choose?</summary>
+<p>You have test scores for 200 students on a standardized exam. Which display type would be most appropriate?</p>
+<p><strong>Answer:</strong> A histogram would be most appropriate. With 200 observations, a dotplot would be too crowded (200 stacked dots!) and a stemplot would have too many leaves. A histogram efficiently summarizes this larger dataset while still showing the overall shape.</p>
+</details>
+<details class="question">
+<summary>Question 2: Identify the skewness</summary>
+<p>A dataset of annual income for residents of a city shows most people earning between $35,000 and $75,000, with a small number of residents earning over $500,000. What is the likely shape of this distribution?</p>
+<p><strong>Answer:</strong> This distribution is skewed right (positively skewed). The main cluster of values is at the lower end (<span class="arithmatex">\(35,000-\)</span>75,000), with a long tail stretching toward the high-income outliers above $500,000. Remember: the skew direction matches where the tail goes, not where most values are.</p>
+</details>
+<details class="question">
+<summary>Question 3: Is this an outlier?</summary>
+<p>In a dataset of marathon finish times, most runners complete the race between 3.5 and 5.5 hours. One runner finished in 2.1 hours. Is this an outlier? Should it be removed?</p>
+<p><strong>Answer:</strong> Yes, 2.1 hours is an outlier because it's notably separated from the main cluster of finish times. However, it should NOT be removed! This is likely a legitimate value, an elite runner who finished much faster than recreational runners. This outlier tells us something important about the composition of the race participants.</p>
+</details>
+<details class="question">
+<summary>Question 4: Bimodal or not?</summary>
+<p>A histogram of heights for a co-ed volleyball team shows two peaks: one around 5'6" and another around 6'2". Is this bimodal distribution surprising? What might explain it?</p>
+<p><strong>Answer:</strong> This bimodal distribution is not surprising at all! The two peaks likely represent the two different populations mixed in the dataset: female players (clustering around 5'6") and male players (clustering around 6'2"). When you see a bimodal distribution, ask yourself: "Could this be two groups combined?" In this case, it clearly is.</p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../02-displaying-categorical-data/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Displaying Categorical Data">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                2. Displaying Categorical Data
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../04-numerical-summaries/" class="md-footer__link md-footer__link--next" aria-label="Next: 4. Numerical Summaries">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                4. Numerical Summaries
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

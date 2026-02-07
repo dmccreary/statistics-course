@@ -1,0 +1,47 @@
+{
+  "title": "Parameter vs Statistic Comparison",
+  "description": "Interactive simulation demonstrating the fundamental distinction between population parameters and sample statistics. Students draw random samples from a population and observe how sample means vary around the fixed population mean, building intuition for sampling variability and the importance of sample size.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": [
+    "Statistics",
+    "Sampling",
+    "Parameters",
+    "Statistics vs Parameters",
+    "Sampling Distribution",
+    "Sample Mean",
+    "Population Mean",
+    "Statistical Inference"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/parameter-statistic-compare/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Parameter",
+    "Statistic",
+    "Population Mean",
+    "Sample Mean",
+    "Sampling Variability",
+    "Sample Size Effect",
+    "Random Sampling"
+  ],
+  "prerequisites": [
+    "Understanding of mean (average)",
+    "Basic histogram interpretation",
+    "Concept of population vs sample"
+  ],
+  "library": "p5.js"
+}

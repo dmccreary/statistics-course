@@ -1,0 +1,79 @@
+{
+  "title": "Two-Way Table Distribution Calculator",
+  "description": "Interactive calculator for computing marginal and conditional distributions from a two-way contingency table. Features editable cells, step-by-step formula display, and highlighted cells showing which values are used in each calculation.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": [
+    "Statistics",
+    "Categorical Data",
+    "Two-Way Tables",
+    "Marginal Distribution",
+    "Conditional Distribution",
+    "Contingency Tables"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/two-way-table-calculator/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, AP Statistics",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "bloomVerb": "Calculate",
+  "concepts": [
+    "Two-Way Table",
+    "Marginal Distribution",
+    "Conditional Distribution",
+    "Proportion",
+    "Categorical Variables",
+    "Contingency Table"
+  ],
+  "prerequisites": [
+    "Understanding of proportions and percentages",
+    "Basic knowledge of categorical variables",
+    "Familiarity with frequency tables"
+  ],
+  "library": "p5.js",
+  "controls": {
+    "buttons": [
+      {
+        "name": "Example",
+        "description": "Reset to default example data"
+      },
+      {
+        "name": "Marginal Row",
+        "description": "Calculate marginal distribution of row variable"
+      },
+      {
+        "name": "Marginal Col",
+        "description": "Calculate marginal distribution of column variable"
+      },
+      {
+        "name": "Cond|Row1",
+        "description": "Calculate conditional distribution given Row 1 (Freshman)"
+      },
+      {
+        "name": "Cond|Row2",
+        "description": "Calculate conditional distribution given Row 2 (Sophomore)"
+      },
+      {
+        "name": "Steps On/Off",
+        "description": "Toggle display of calculation formulas"
+      }
+    ],
+    "editableCells": {
+      "description": "Click on any data cell to edit its value (0-100)",
+      "range": "0-100"
+    }
+  },
+  "chapter": 2,
+  "chapterTitle": "Displaying Categorical Data"
+}

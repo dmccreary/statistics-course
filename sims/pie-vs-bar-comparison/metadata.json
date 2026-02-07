@@ -1,0 +1,83 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+  "microsim_name": "pie-vs-bar-comparison",
+  "title": "Pie Chart vs Bar Graph Comparison",
+  "description": "An interactive MicroSim that displays the same data as both a pie chart and bar graph, helping students analyze when each visualization type is most effective for different data distributions.",
+  "keywords": ["pie chart", "bar graph", "data visualization", "categorical data", "chart comparison", "statistics", "AP Statistics"],
+  "subject": "Statistics",
+  "topic": "Displaying Categorical Data",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students will compare effectiveness of pie charts vs bar graphs for different data scenarios",
+  "grade_level": "High School",
+  "duration": "15-20 minutes",
+  "prerequisites": ["Understanding of categorical data", "Basic chart reading skills"],
+  "framework": "p5.js",
+  "version": "1.11.10",
+  "canvas_dimensions": {
+    "width": "responsive",
+    "draw_height": 350,
+    "control_height": 190,
+    "total_height": 540
+  },
+  "controls": [
+    {
+      "type": "dropdown",
+      "label": "Preset",
+      "options": ["Custom", "Easy to compare", "Similar values", "Many categories", "One dominant"],
+      "description": "Select predefined data scenarios to compare chart effectiveness"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show %",
+      "default": true,
+      "description": "Toggle percentage display on both charts"
+    },
+    {
+      "type": "checkbox",
+      "label": "Values",
+      "default": false,
+      "description": "Toggle raw value display on both charts"
+    },
+    {
+      "type": "slider",
+      "label": "Cat A",
+      "min": 0,
+      "max": 50,
+      "default": 30,
+      "step": 1,
+      "description": "Value for Category A"
+    },
+    {
+      "type": "slider",
+      "label": "Cat B",
+      "min": 0,
+      "max": 50,
+      "default": 25,
+      "step": 1,
+      "description": "Value for Category B"
+    },
+    {
+      "type": "slider",
+      "label": "Cat C",
+      "min": 0,
+      "max": 50,
+      "default": 15,
+      "step": 1,
+      "description": "Value for Category C"
+    },
+    {
+      "type": "slider",
+      "label": "Cat D",
+      "min": 0,
+      "max": 50,
+      "default": 20,
+      "step": 1,
+      "description": "Value for Category D"
+    }
+  ],
+  "creator": "Dan McCreary",
+  "date_created": "2026-02-06",
+  "license": "CC BY-NC-SA 4.0",
+  "language": "en"
+}

@@ -1,0 +1,3085 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learn to organize and visualize categorical data using frequency tables, bar graphs, pie charts, and two-way tables while exploring association between variables.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/statistics-course/chapters/02-displaying-categorical-data/">
+      
+      
+        <link rel="prev" href="../01-introduction-to-statistics/">
+      
+      
+        <link rel="next" href="../03-displaying-quantitative-data/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Displaying Categorical Data - AP Statistics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Displaying Categorical Data - AP Statistics" >
+      
+        <meta  property="og:description"  content="Learn to organize and visualize categorical data using frequency tables, bar graphs, pie charts, and two-way tables while exploring association between variables." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/02-displaying-categorical-data/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/statistics-course/chapters/02-displaying-categorical-data/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Displaying Categorical Data - AP Statistics" >
+      
+        <meta  name="twitter:description"  content="Learn to organize and visualize categorical data using frequency tables, bar graphs, pie charts, and two-way tables while exploring association between variables." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/02-displaying-categorical-data/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#displaying-categorical-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AP Statistics" class="md-header__button md-logo" aria-label="AP Statistics" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AP Statistics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Displaying Categorical Data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/statistics-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AP Statistics" class="md-nav__button md-logo" aria-label="AP Statistics" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    AP Statistics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/statistics-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-introduction-to-statistics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Introduction to Statistics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2. Displaying Categorical Data
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2. Displaying Categorical Data
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizing-data-with-frequency-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing Data with Frequency Tables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizing Data with Frequency Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relative-frequency-thinking-in-proportions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relative Frequency: Thinking in Proportions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relative Frequency: Thinking in Proportions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-frequency-table-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Frequency Table Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cumulative-frequency-running-totals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cumulative Frequency: Running Totals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizing-categorical-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualizing Categorical Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualizing Categorical Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bar-graphs-comparing-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bar Graphs: Comparing Categories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bar Graphs: Comparing Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-bar-graph-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Bar Graph Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-charts-showing-parts-of-a-whole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pie Charts: Showing Parts of a Whole
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pie Charts: Showing Parts of a Whole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-pie-chart-vs-bar-graph-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Pie Chart vs Bar Graph Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-which-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Which Graph?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-way-tables-exploring-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Way Tables: Exploring Relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two-Way Tables: Exploring Relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marginal-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marginal Distributions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-two-way-table-distribution-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Two-Way Table Distribution Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculating-conditional-probabilities-a-step-by-step-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Conditional Probabilities: A Step-by-Step Approach
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#association-between-categorical-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Association Between Categorical Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Association Between Categorical Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detecting-association" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecting Association
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detecting Association">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-association-detector-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Association Detector Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direction-of-association" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction of Association
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strength-of-association" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strength of Association
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strength of Association">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-strength-of-association-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Strength of Association Spectrum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-complete-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Complete Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chapter-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chapter Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-displaying-quantitative-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Displaying Quantitative Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-numerical-summaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Numerical Summaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-standardization-and-normal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Standardization and Normal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-scatterplots-and-association/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Scatterplots and Association
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-linear-regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Linear Regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-causation-and-study-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Causation and Study Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-probability-fundamentals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Probability Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-conditional-probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Conditional Probability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-sampling-and-bias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Sampling and Bias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-experimental-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Experimental Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-random-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Random Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-sampling-distributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Sampling Distributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-confidence-intervals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. Confidence Intervals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-hypothesis-testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. Hypothesis Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-inference-for-means/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Inference for Means
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-chi-square-and-regression-inference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Chi-Square and Regression Inference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-communication-and-synthesis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. Communication and Synthesis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendices/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizing-data-with-frequency-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing Data with Frequency Tables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizing Data with Frequency Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#relative-frequency-thinking-in-proportions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relative Frequency: Thinking in Proportions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relative Frequency: Thinking in Proportions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-frequency-table-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Frequency Table Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cumulative-frequency-running-totals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cumulative Frequency: Running Totals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualizing-categorical-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualizing Categorical Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visualizing Categorical Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bar-graphs-comparing-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bar Graphs: Comparing Categories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bar Graphs: Comparing Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-bar-graph-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Bar Graph Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-charts-showing-parts-of-a-whole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pie Charts: Showing Parts of a Whole
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pie Charts: Showing Parts of a Whole">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-pie-chart-vs-bar-graph-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Pie Chart vs Bar Graph Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-which-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Which Graph?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-way-tables-exploring-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Way Tables: Exploring Relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two-Way Tables: Exploring Relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marginal-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marginal Distributions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-two-way-table-distribution-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Two-Way Table Distribution Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculating-conditional-probabilities-a-step-by-step-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Conditional Probabilities: A Step-by-Step Approach
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#association-between-categorical-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Association Between Categorical Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Association Between Categorical Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detecting-association" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecting Association
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detecting Association">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-association-detector-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Association Detector Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direction-of-association" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction of Association
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strength-of-association" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strength of Association
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strength of Association">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-strength-of-association-spectrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Strength of Association Spectrum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-complete-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Complete Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chapter-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chapter Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/statistics-course/edit/master/docs/chapters/02-displaying-categorical-data/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="displaying-categorical-data">Displaying Categorical Data</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter focuses on methods for displaying and analyzing categorical data. Students will learn how to create and interpret frequency tables, bar graphs, pie charts, and two-way tables. The chapter also introduces the concept of association between categorical variables, preparing students for more advanced analysis later in the course.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 14 concepts from the learning graph:</p>
+<ol>
+<li>Frequency Table</li>
+<li>Relative Frequency</li>
+<li>Cumulative Frequency</li>
+<li>Bar Graph</li>
+<li>Pie Chart</li>
+<li>Two-Way Table</li>
+<li>Marginal Distribution</li>
+<li>Conditional Distribution</li>
+<li>Calculating Conditionals</li>
+<li>Association</li>
+<li>Direction of Association</li>
+<li>Positive Association</li>
+<li>Negative Association</li>
+<li>Strength of Association</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-introduction-to-statistics/">Chapter 1: Introduction to Statistics</a></li>
+</ul>
+<hr />
+<p>Welcome back! In Chapter 1, you learned the difference between categorical and quantitative variables. Now we're going to put that knowledge to work. This chapter is all about categorical data---the kind of data that puts things into groups or categories, like favorite pizza topping, eye color, or whether someone prefers cats or dogs.</p>
+<p>"Let's crack this nut!" Sylvia adjusts her glasses excitedly. "Categorical data is everywhere, and once you know how to organize and display it, you'll start seeing patterns you never noticed before. Trust me---my whole acorn classification system is based on these ideas!"</p>
+<h2 id="organizing-data-with-frequency-tables">Organizing Data with Frequency Tables</h2>
+<p>When you collect categorical data, you often end up with a long list of responses. Imagine asking 50 classmates about their favorite season. You'd get answers like "Summer, Winter, Fall, Summer, Spring, Summer, Fall..." and so on. Not exactly easy to make sense of, right?</p>
+<p>A <strong>frequency table</strong> organizes this chaos by listing each category and counting how many times it appears. The count for each category is called its <strong>frequency</strong>.</p>
+<p>Here's what a frequency table might look like for our favorite season survey:</p>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>50</strong></td>
+</tr>
+</tbody>
+</table>
+<p>That's much cleaner! At a glance, you can see that Summer is the crowd favorite (no surprise there), and Winter has the fewest fans.</p>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia's Data Tip</p>
+<p>Always include the total at the bottom of your frequency table. It serves as a quick check---if your frequencies don't add up to the total number of observations, something went wrong in your counting!</p>
+</div>
+<h3 id="relative-frequency-thinking-in-proportions">Relative Frequency: Thinking in Proportions</h3>
+<p>Frequencies are helpful, but sometimes raw counts don't tell the whole story. If I told you 22 students picked Summer, you might wonder: "Is that a lot?" The answer depends on how many students were surveyed.</p>
+<p><strong>Relative frequency</strong> expresses each category's count as a proportion or percentage of the total. To calculate it, divide each frequency by the total:</p>
+<div class="arithmatex">\[\text{Relative Frequency} = \frac{\text{Frequency}}{\text{Total}}\]</div>
+<p>Let's add relative frequencies to our season table:</p>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Frequency</th>
+<th>Relative Frequency</th>
+<th>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring</td>
+<td>8</td>
+<td>8/50 = 0.16</td>
+<td>16%</td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>22</td>
+<td>22/50 = 0.44</td>
+<td>44%</td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>14</td>
+<td>14/50 = 0.28</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>6</td>
+<td>6/50 = 0.12</td>
+<td>12%</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>50</strong></td>
+<td><strong>1.00</strong></td>
+<td><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Now we can say that 44% of students prefer Summer. That percentage means the same thing whether we surveyed 50 students or 5,000---it's the proportion that matters.</p>
+<h4 id="diagram-frequency-table-explorer">Diagram: Frequency Table Explorer</h4>
+<iframe src="../../sims/frequency-table-explorer/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Frequency Table Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: Calculate, practice</p>
+<p>Learning Objective: Students will practice calculating relative frequencies and percentages from raw frequency data, reinforcing the connection between counts and proportions.</p>
+<p>Instructional Rationale: This Apply-level objective requires students to actively calculate values rather than passively observe. Interactive sliders allow students to modify frequencies and see how relative frequencies change in real-time, building procedural fluency.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Drawing area showing an interactive frequency table</li>
+<li>Category labels on the left (4-5 categories)</li>
+<li>Frequency sliders for each category (range 0-50)</li>
+<li>Display columns for: Frequency, Relative Frequency (decimal), Percentage</li>
+</ul>
+<p>Visual Elements:</p>
+<ul>
+<li>Clean table layout with alternating row colors (light gray/white)</li>
+<li>Sliders next to each frequency cell</li>
+<li>Running total displayed at bottom</li>
+<li>Visual bar extending from each row proportional to relative frequency</li>
+<li>"Check" indicator showing if percentages sum to 100%</li>
+</ul>
+<p>Interactive Controls:</p>
+<ul>
+<li>Sliders to adjust frequency for each category (0-50)</li>
+<li>Dropdown to select different example datasets (Favorite Season, Pet Preference, Transportation Mode)</li>
+<li>Toggle button: Show/Hide calculation steps</li>
+<li>Reset button to restore default values</li>
+</ul>
+<p>Default Parameters:</p>
+<ul>
+<li>4 categories with frequencies: 8, 22, 14, 6</li>
+<li>Decimal places: 2</li>
+<li>Show percentages: Yes</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>When slider moves, frequency updates instantly</li>
+<li>Relative frequency and percentage recalculate automatically</li>
+<li>Visual bars resize to reflect proportions</li>
+<li>Total row updates dynamically</li>
+<li>If frequencies all equal zero, display "No data" message</li>
+</ul>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h3 id="cumulative-frequency-running-totals">Cumulative Frequency: Running Totals</h3>
+<p>Sometimes you want to know how many observations fall at or below a certain category. This is where <strong>cumulative frequency</strong> comes in handy. It's a running total that adds up frequencies as you move through the categories.</p>
+<p>Cumulative frequency works best when your categories have a natural order. For our seasons example, there isn't really a natural order (is Spring "before" Summer in any meaningful way?), but consider this example of student grades:</p>
+<table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Frequency</th>
+<th>Cumulative Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>B</td>
+<td>18</td>
+<td>12 + 18 = 30</td>
+</tr>
+<tr>
+<td>C</td>
+<td>15</td>
+<td>30 + 15 = 45</td>
+</tr>
+<tr>
+<td>D</td>
+<td>4</td>
+<td>45 + 4 = 49</td>
+</tr>
+<tr>
+<td>F</td>
+<td>1</td>
+<td>49 + 1 = 50</td>
+</tr>
+</tbody>
+</table>
+<p>The cumulative frequency tells us that 30 students earned a B or higher, and 45 students earned a C or higher. This information can be really useful when you want to know things like "How many students passed?" or "What proportion of students earned at least a B?"</p>
+<p>You can also calculate <strong>cumulative relative frequency</strong> by dividing cumulative frequency by the total, giving you the proportion at or below each category.</p>
+<h2 id="visualizing-categorical-data">Visualizing Categorical Data</h2>
+<p>Tables are great for precision, but pictures often communicate patterns more quickly. Let's explore two popular ways to visualize categorical data: bar graphs and pie charts.</p>
+<h3 id="bar-graphs-comparing-categories">Bar Graphs: Comparing Categories</h3>
+<p>A <strong>bar graph</strong> displays each category as a bar, with the height (or length) of the bar representing the frequency or relative frequency of that category. The bars should be separated by gaps to emphasize that categories are distinct, not continuous.</p>
+<p>Here's what makes a good bar graph:</p>
+<ul>
+<li>Each category gets its own bar</li>
+<li>Bars don't touch (gaps between them)</li>
+<li>Bar heights represent frequencies or relative frequencies</li>
+<li>Clear labels on both axes</li>
+<li>Descriptive title</li>
+</ul>
+<h4 id="diagram-interactive-bar-graph-builder">Diagram: Interactive Bar Graph Builder</h4>
+<iframe src="../../sims/bar-graph-builder/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Interactive Bar Graph Builder MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: Construct, demonstrate</p>
+<p>Learning Objective: Students will construct bar graphs from categorical data and explore how changes in data affect the visual representation.</p>
+<p>Instructional Rationale: Building bar graphs reinforces the Apply level of Bloom's taxonomy by having students actively create visual representations. The interactive nature allows immediate feedback on proper bar graph construction.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Left side (60%): Bar graph display area</li>
+<li>Right side (40%): Data input panel and controls</li>
+</ul>
+<p>Visual Elements:</p>
+<ul>
+<li>Horizontal or vertical bars with customizable colors</li>
+<li>X-axis with category labels</li>
+<li>Y-axis with frequency or relative frequency scale</li>
+<li>Grid lines for easier reading</li>
+<li>Title area at top</li>
+</ul>
+<p>Interactive Controls:</p>
+<ul>
+<li>Text inputs for category names (up to 6 categories)</li>
+<li>Number inputs or sliders for frequencies (0-100)</li>
+<li>Radio buttons: Frequency vs. Relative Frequency display</li>
+<li>Radio buttons: Vertical vs. Horizontal bars</li>
+<li>Color picker for bar color</li>
+<li>Button: Add Category / Remove Category</li>
+<li>Reset button</li>
+</ul>
+<p>Default Parameters:</p>
+<ul>
+<li>4 categories: Spring (8), Summer (22), Fall (14), Winter (6)</li>
+<li>Vertical bars</li>
+<li>Bar color: steelblue</li>
+<li>Display mode: Frequency</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Bars update in real-time as data changes</li>
+<li>Y-axis rescales automatically to fit data</li>
+<li>When switching to relative frequency, values convert to proportions</li>
+<li>Category labels rotate if too long</li>
+<li>Hover over bar shows exact value</li>
+</ul>
+<p>Implementation: p5.js with canvas-based UI elements</p>
+</details>
+<p>"Here's something I learned the hard way," Sylvia confesses. "The order of bars in a bar graph usually doesn't matter for categorical data---unless there's a natural ordering like grades or age groups. But it often helps to put bars in order from tallest to shortest. That makes patterns pop!"</p>
+<p>A bar graph ordered from most frequent to least frequent is sometimes called a <strong>Pareto chart</strong>. It helps you quickly identify the most common categories.</p>
+<h3 id="pie-charts-showing-parts-of-a-whole">Pie Charts: Showing Parts of a Whole</h3>
+<p>A <strong>pie chart</strong> is a circle divided into wedges, where each wedge represents a category. The size of each wedge is proportional to the relative frequency of that category.</p>
+<p>Pie charts emphasize how categories relate to the whole. They work well when:</p>
+<ul>
+<li>You have a small number of categories (ideally 5 or fewer)</li>
+<li>You want to show proportions of a whole</li>
+<li>The total is meaningful (like 100% of survey respondents)</li>
+</ul>
+<p>To create a pie chart, multiply each relative frequency by 360 degrees to find the angle for each wedge:</p>
+<div class="arithmatex">\[\text{Angle} = \text{Relative Frequency} \times 360°\]</div>
+<p>For our season data:</p>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Relative Frequency</th>
+<th>Angle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring</td>
+<td>0.16</td>
+<td>57.6°</td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>0.44</td>
+<td>158.4°</td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>0.28</td>
+<td>100.8°</td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>0.12</td>
+<td>43.2°</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-pie-chart-vs-bar-graph-comparison">Diagram: Pie Chart vs Bar Graph Comparison</h4>
+<iframe src="../../sims/pie-vs-bar-comparison/main.html" width="100%" height="480px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Pie Chart vs Bar Graph Comparison MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: Compare, contrast</p>
+<p>Learning Objective: Students will compare the effectiveness of pie charts versus bar graphs for displaying categorical data and determine when each visualization is most appropriate.</p>
+<p>Instructional Rationale: Comparing two visualization types develops analytical thinking (Bloom Level 4). Students need to evaluate trade-offs rather than just create visualizations.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Top half: Side-by-side display of pie chart (left) and bar graph (right)</li>
+<li>Bottom area: Data controls and comparison questions</li>
+</ul>
+<p>Visual Elements:</p>
+<ul>
+<li>Pie chart with labeled wedges and percentages</li>
+<li>Bar graph with matching colors to pie wedges</li>
+<li>Legend showing category-color mapping</li>
+<li>Comparison prompts below visualizations</li>
+</ul>
+<p>Interactive Controls:</p>
+<ul>
+<li>Data sliders for 4-6 categories (0-50 each)</li>
+<li>Dropdown to select preset datasets:</li>
+<li>"Easy to compare" (2 categories dominate)</li>
+<li>"Similar values" (all categories close to equal)</li>
+<li>"Many categories" (6 small categories)</li>
+<li>"One dominant" (one category over 60%)</li>
+<li>Toggle: Show/Hide percentages on pie chart</li>
+<li>Toggle: Show/Hide values on bar graph</li>
+</ul>
+<p>Default Parameters:</p>
+<ul>
+<li>4 categories with varied frequencies</li>
+<li>Percentages shown on pie chart</li>
+<li>Values shown on bar graph</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Both visualizations update simultaneously when data changes</li>
+<li>When categories have similar sizes, pie becomes harder to read</li>
+<li>When one category dominates, pie shows it clearly</li>
+<li>Six or more categories make pie chart cluttered</li>
+<li>Reveal discussion prompt: "Which visualization makes comparison easier for this data?"</li>
+</ul>
+<p>Implementation: p5.js with dual visualization canvas</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Pie Chart Pitfalls</p>
+<p>Pie charts can be tricky to read when categories have similar sizes. It's hard to tell if a 23% wedge is bigger than a 21% wedge. For precise comparisons, bar graphs are usually better. Also, avoid 3D pie charts---they distort proportions and make accurate reading nearly impossible!</p>
+</div>
+<h3 id="when-to-use-which-graph">When to Use Which Graph?</h3>
+<p>Here's a quick guide for choosing between bar graphs and pie charts:</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Best Choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Comparing sizes across categories</td>
+<td>Bar graph</td>
+</tr>
+<tr>
+<td>Showing parts of a whole</td>
+<td>Pie chart</td>
+</tr>
+<tr>
+<td>More than 5 categories</td>
+<td>Bar graph</td>
+</tr>
+<tr>
+<td>Categories with similar frequencies</td>
+<td>Bar graph</td>
+</tr>
+<tr>
+<td>One category dominates</td>
+<td>Either works</td>
+</tr>
+<tr>
+<td>Need precise comparison</td>
+<td>Bar graph</td>
+</tr>
+</tbody>
+</table>
+<h2 id="two-way-tables-exploring-relationships">Two-Way Tables: Exploring Relationships</h2>
+<p>So far, we've looked at one categorical variable at a time. But what happens when we have two categorical variables and want to explore the relationship between them?</p>
+<p>Enter the <strong>two-way table</strong> (also called a contingency table). A two-way table displays counts for two categorical variables simultaneously, with one variable defining the rows and another defining the columns.</p>
+<p>Let's say we surveyed students about their favorite season AND their grade level (underclassmen vs. upperclassmen). Here's what a two-way table might look like:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Spring</th>
+<th>Summer</th>
+<th>Fall</th>
+<th>Winter</th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Underclassmen</td>
+<td>5</td>
+<td>12</td>
+<td>6</td>
+<td>4</td>
+<td><strong>27</strong></td>
+</tr>
+<tr>
+<td>Upperclassmen</td>
+<td>3</td>
+<td>10</td>
+<td>8</td>
+<td>2</td>
+<td><strong>23</strong></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>8</strong></td>
+<td><strong>22</strong></td>
+<td><strong>14</strong></td>
+<td><strong>6</strong></td>
+<td><strong>50</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This table shows us both how each group answered AND allows us to compare preferences between groups.</p>
+<p>"Acorn for your thoughts?" Sylvia asks. "Notice those totals on the edges? Those are special---they tell us about each variable separately, as if the other variable didn't exist. We have a fancy name for them!"</p>
+<h3 id="marginal-distributions">Marginal Distributions</h3>
+<p>The <strong>marginal distribution</strong> is the distribution of one variable alone, found in the margins (edges) of a two-way table. Looking at our table:</p>
+<ul>
+<li>The marginal distribution of <strong>Season</strong> is: Spring (8), Summer (22), Fall (14), Winter (6)</li>
+<li>The marginal distribution of <strong>Grade Level</strong> is: Underclassmen (27), Upperclassmen (23)</li>
+</ul>
+<p>These marginals are exactly what we'd get if we only asked about one variable. They're called "marginal" because they appear in the margins of the table.</p>
+<p>You can express marginal distributions as:</p>
+<ul>
+<li>Raw frequencies (the counts)</li>
+<li>Relative frequencies (proportions of the total)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Marginal Frequency</th>
+<th>Marginal Relative Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring</td>
+<td>8</td>
+<td>8/50 = 0.16 = 16%</td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>22</td>
+<td>22/50 = 0.44 = 44%</td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>14</td>
+<td>14/50 = 0.28 = 28%</td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>6</td>
+<td>6/50 = 0.12 = 12%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="conditional-distributions">Conditional Distributions</h3>
+<p>Here's where things get really interesting. What if we want to know the distribution of season preference for just underclassmen? Or just upperclassmen? These are <strong>conditional distributions</strong>---the distribution of one variable given a specific value of the other variable.</p>
+<p>To find a conditional distribution, we focus on one row (or column) and calculate relative frequencies within that row (or column).</p>
+<p><strong>Conditional distribution of Season given Underclassmen:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Frequency</th>
+<th>Conditional Relative Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring</td>
+<td>5</td>
+<td>5/27 = 0.185 = 18.5%</td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>12</td>
+<td>12/27 = 0.444 = 44.4%</td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>6</td>
+<td>6/27 = 0.222 = 22.2%</td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>4</td>
+<td>4/27 = 0.148 = 14.8%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conditional distribution of Season given Upperclassmen:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Frequency</th>
+<th>Conditional Relative Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring</td>
+<td>3</td>
+<td>3/23 = 0.130 = 13.0%</td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>10</td>
+<td>10/23 = 0.435 = 43.5%</td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>8</td>
+<td>8/23 = 0.348 = 34.8%</td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>2</td>
+<td>2/23 = 0.087 = 8.7%</td>
+</tr>
+</tbody>
+</table>
+<p>Notice the key difference: for marginal distributions, we divide by the <strong>grand total</strong> (50). For conditional distributions, we divide by the <strong>row or column total</strong> (27 for underclassmen, 23 for upperclassmen).</p>
+<h4 id="diagram-two-way-table-distribution-calculator">Diagram: Two-Way Table Distribution Calculator</h4>
+<iframe src="../../sims/two-way-table-calculator/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Two-Way Table Distribution Calculator MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: Calculate, execute</p>
+<p>Learning Objective: Students will calculate marginal and conditional distributions from a two-way table, distinguishing between dividing by grand total versus row/column totals.</p>
+<p>Instructional Rationale: Calculating different distribution types requires procedural application (Bloom Level 3). The step-by-step display shows the calculation process explicitly.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Top (40%): Editable two-way table with row/column totals</li>
+<li>Middle (30%): Calculation display area showing formulas and results</li>
+<li>Bottom (30%): Result table with selected distribution</li>
+</ul>
+<p>Visual Elements:</p>
+<ul>
+<li>2x4 two-way table with editable cells</li>
+<li>Row and column totals auto-calculated</li>
+<li>Grand total in bottom-right corner</li>
+<li>Highlighted cells showing which values are used in current calculation</li>
+<li>Formula display: "5/27 = 0.185 = 18.5%"</li>
+<li>Result table formatted as distribution</li>
+</ul>
+<p>Interactive Controls:</p>
+<ul>
+<li>Number inputs for each cell in the two-way table (0-100)</li>
+<li>Radio button group: "What distribution do you want?"</li>
+<li>Marginal distribution of Row Variable</li>
+<li>Marginal distribution of Column Variable</li>
+<li>Conditional distribution of Columns given Row 1</li>
+<li>Conditional distribution of Columns given Row 2</li>
+<li>Toggle: Show calculation steps</li>
+<li>Button: Use example data (Season/Grade Level)</li>
+<li>Reset button</li>
+</ul>
+<p>Default Parameters:</p>
+<ul>
+<li>2 rows (Underclassmen, Upperclassmen) x 4 columns (Spring, Summer, Fall, Winter)</li>
+<li>Default values from chapter example</li>
+<li>Show calculation steps: On</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Cells in use for current calculation are highlighted (yellow background)</li>
+<li>Denominator (total) is highlighted in blue</li>
+<li>Formula appears showing: value/total = decimal = percentage</li>
+<li>Result table updates when data or distribution type changes</li>
+<li>Error message if all cells are zero</li>
+</ul>
+<p>Implementation: p5.js with canvas-based table interface</p>
+</details>
+<h3 id="calculating-conditional-probabilities-a-step-by-step-approach">Calculating Conditional Probabilities: A Step-by-Step Approach</h3>
+<p>Let's practice calculating a conditional distribution systematically. We'll find the conditional distribution of grade level given that a student's favorite season is Fall.</p>
+<p><strong>Step 1:</strong> Identify the condition. We're given that Season = Fall, so we look at the Fall column.</p>
+<p><strong>Step 2:</strong> Find the relevant counts.</p>
+<ul>
+<li>Fall total: 14</li>
+<li>Underclassmen who prefer Fall: 6</li>
+<li>Upperclassmen who prefer Fall: 8</li>
+</ul>
+<p><strong>Step 3:</strong> Calculate relative frequencies within that column.</p>
+<ul>
+<li>P(Underclassmen | Fall) = 6/14 = 0.429 = 42.9%</li>
+<li>P(Upperclassmen | Fall) = 8/14 = 0.571 = 57.1%</li>
+</ul>
+<p><strong>Step 4:</strong> Verify they sum to 1 (or 100%).</p>
+<ul>
+<li>0.429 + 0.571 = 1.000 (Check!)</li>
+</ul>
+<p>"Don't worry---every statistician drops an acorn sometimes," Sylvia reassures you. "If your conditional percentages don't add up to 100%, go back and check your denominator. You should be dividing by the row or column total, not the grand total!"</p>
+<h2 id="association-between-categorical-variables">Association Between Categorical Variables</h2>
+<p>Now comes the big question: Is there a relationship between our two variables? Do underclassmen and upperclassmen have <em>different</em> preferences for seasons, or do both groups follow roughly the same pattern?</p>
+<p>When two categorical variables are related, we say there is an <strong>association</strong> between them. When there's no relationship---when knowing one variable doesn't help predict the other---we say the variables are <strong>independent</strong>.</p>
+<h3 id="detecting-association">Detecting Association</h3>
+<p>To detect association, we compare conditional distributions. If the conditional distributions are different, there's evidence of association. If they're the same (or very similar), the variables appear to be independent.</p>
+<p>Let's compare our conditional distributions:</p>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Underclassmen</th>
+<th>Upperclassmen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring</td>
+<td>18.5%</td>
+<td>13.0%</td>
+</tr>
+<tr>
+<td>Summer</td>
+<td>44.4%</td>
+<td>43.5%</td>
+</tr>
+<tr>
+<td>Fall</td>
+<td>22.2%</td>
+<td>34.8%</td>
+</tr>
+<tr>
+<td>Winter</td>
+<td>14.8%</td>
+<td>8.7%</td>
+</tr>
+</tbody>
+</table>
+<p>Looking at this comparison, we see some differences. Upperclassmen seem to prefer Fall more than underclassmen do (34.8% vs. 22.2%), and underclassmen have a slightly higher preference for Winter (14.8% vs. 8.7%). These differences suggest there might be some association between grade level and season preference.</p>
+<p>But here's an important caution: we need to ask whether these differences are big enough to be meaningful or whether they could just be due to random variation. We'll develop formal methods to answer this question later in the course (spoiler: it involves something called a chi-square test!).</p>
+<h4 id="diagram-association-detector-visualization">Diagram: Association Detector Visualization</h4>
+<iframe src="../../sims/association-detector/main.html" width="100%" height="520px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Association Detector Visualization MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: Compare, differentiate, examine</p>
+<p>Learning Objective: Students will compare conditional distributions visually and verbally describe evidence for or against association between two categorical variables.</p>
+<p>Instructional Rationale: Analyzing association requires comparing patterns (Bloom Level 4). Side-by-side visual comparison makes differences more apparent and prompts analytical thinking.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Top (60%): Side-by-side segmented bar charts showing conditional distributions</li>
+<li>Bottom (40%): Comparison summary and interpretation guidance</li>
+</ul>
+<p>Visual Elements:</p>
+<ul>
+<li>Two horizontal segmented bar charts (100% stacked bars)</li>
+<li>Each bar represents one level of the row variable</li>
+<li>Segments colored by column variable categories</li>
+<li>Legend showing color-category mapping</li>
+<li>Difference indicators showing where bars differ most</li>
+<li>Text summary: "The conditional distributions appear [similar/different]"</li>
+</ul>
+<p>Interactive Controls:</p>
+<ul>
+<li>Editable 2x4 two-way table (number inputs)</li>
+<li>Dropdown: Select preset examples</li>
+<li>"Strong association" (very different distributions)</li>
+<li>"No association" (identical distributions)</li>
+<li>"Moderate association" (somewhat different)</li>
+<li>"Custom data" (user enters own values)</li>
+<li>Toggle: Show percentage labels on segments</li>
+<li>Toggle: Show difference highlighting</li>
+</ul>
+<p>Default Parameters:</p>
+<ul>
+<li>Season/Grade Level example data</li>
+<li>Percentage labels shown</li>
+<li>Difference highlighting on</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Segmented bars update when data changes</li>
+<li>Segments with biggest differences highlighted with indicator</li>
+<li>Summary text describes whether distributions look similar or different</li>
+<li>If distributions are identical, displays "No evidence of association"</li>
+<li>Tooltip on hover shows exact percentage for each segment</li>
+</ul>
+<p>Implementation: p5.js with canvas-based visualization</p>
+</details>
+<h3 id="direction-of-association">Direction of Association</h3>
+<p>When we find evidence of association, we often want to describe its <strong>direction</strong>. For categorical variables, direction refers to how the categories tend to pair up.</p>
+<p><strong>Positive association</strong> occurs when increases in one variable tend to go with increases in another (or when certain categories tend to occur together). For example, if people who exercise frequently also tend to eat healthy food, there's a positive association between exercise and diet quality.</p>
+<p><strong>Negative association</strong> occurs when high values of one variable tend to go with low values of another (or when certain categories tend to <em>not</em> occur together). For example, if people who smoke heavily tend to exercise less, there's a negative association between smoking and exercise.</p>
+<p>"My tail's tingling---we're onto something important!" Sylvia exclaims. "But here's the tricky part: with truly categorical data (like favorite color or type of pet), direction doesn't always make sense. Direction is most meaningful when categories have a natural ordering, like education level (high school, some college, bachelor's, graduate) or satisfaction (very dissatisfied to very satisfied)."</p>
+<h3 id="strength-of-association">Strength of Association</h3>
+<p>Beyond direction, we can describe the <strong>strength of association</strong>---how closely the variables are related.</p>
+<ul>
+<li><strong>Strong association:</strong> Conditional distributions are very different from each other. Knowing one variable tells you a lot about the other.</li>
+<li><strong>Moderate association:</strong> Some noticeable differences in conditional distributions.</li>
+<li><strong>Weak association:</strong> Small differences that might just be random variation.</li>
+<li><strong>No association:</strong> Conditional distributions are essentially identical.</li>
+</ul>
+<p>Think of it like this: if knowing someone's grade level lets you predict their season preference with high accuracy, the association is strong. If it barely helps at all, the association is weak.</p>
+<h4 id="diagram-strength-of-association-spectrum">Diagram: Strength of Association Spectrum</h4>
+<iframe src="../../sims/association-strength-spectrum/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Strength of Association Spectrum MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: Classify, interpret, exemplify</p>
+<p>Learning Objective: Students will interpret and classify associations as strong, moderate, weak, or none by examining visual representations of different two-way tables.</p>
+<p>Instructional Rationale: Understanding strength of association requires recognizing patterns across examples (Bloom Level 2). Multiple examples with clear labels help students build intuition.</p>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show two-way table with raw counts</li>
+<li>Stage 2: Show conditional distributions as percentages</li>
+<li>Stage 3: Show visual comparison (segmented bars)</li>
+<li>Stage 4: Show strength classification with explanation</li>
+</ul>
+<p>Canvas Layout:</p>
+<ul>
+<li>Left side (55%): Two-way table and segmented bar visualization</li>
+<li>Right side (45%): Strength indicator scale and description</li>
+</ul>
+<p>Visual Elements:</p>
+<ul>
+<li>2x3 or 2x4 two-way table</li>
+<li>Segmented bar chart showing conditional distributions</li>
+<li>Vertical "strength meter" scale from "None" to "Strong"</li>
+<li>Arrow pointing to current position on strength scale</li>
+<li>Text description explaining why this level of association</li>
+</ul>
+<p>Interactive Controls:</p>
+<ul>
+<li>Dropdown: Select example dataset</li>
+<li>"Perfect association" (each row has only one column with counts)</li>
+<li>"Strong association" (very different distributions)</li>
+<li>"Moderate association" (noticeable differences)</li>
+<li>"Weak association" (slight differences)</li>
+<li>"No association" (identical distributions)</li>
+<li>Slider: Gradually transform from "No association" to "Strong association"</li>
+<li>Button: Randomize data</li>
+</ul>
+<p>Default Parameters:</p>
+<ul>
+<li>Moderate association example</li>
+<li>Transformation slider at 50%</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>When slider moves, data smoothly transforms between independence and strong association</li>
+<li>Strength meter updates to reflect current state</li>
+<li>Description text changes based on strength level</li>
+<li>Segmented bars animate smoothly during transitions</li>
+</ul>
+<p>Implementation: p5.js with animated transitions</p>
+</details>
+<h2 id="putting-it-all-together-a-complete-analysis">Putting It All Together: A Complete Analysis</h2>
+<p>Let's work through a complete example that uses all the concepts from this chapter. Imagine we surveyed 200 high school students about their preferred study location (Library, Home, Coffee Shop) and whether they consider themselves morning people or night owls.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Library</th>
+<th>Home</th>
+<th>Coffee Shop</th>
+<th><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Morning Person</td>
+<td>45</td>
+<td>30</td>
+<td>15</td>
+<td><strong>90</strong></td>
+</tr>
+<tr>
+<td>Night Owl</td>
+<td>25</td>
+<td>55</td>
+<td>30</td>
+<td><strong>110</strong></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>70</strong></td>
+<td><strong>85</strong></td>
+<td><strong>45</strong></td>
+<td><strong>200</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 1: Examine the marginal distributions</strong></p>
+<p>Marginal distribution of Study Location:</p>
+<ul>
+<li>Library: 70/200 = 35%</li>
+<li>Home: 85/200 = 42.5%</li>
+<li>Coffee Shop: 45/200 = 22.5%</li>
+</ul>
+<p>Overall, Home is the most popular study location, followed by Library, then Coffee Shop.</p>
+<p>Marginal distribution of Sleep Preference:</p>
+<ul>
+<li>Morning Person: 90/200 = 45%</li>
+<li>Night Owl: 110/200 = 55%</li>
+</ul>
+<p>There are slightly more night owls than morning people in our sample.</p>
+<p><strong>Step 2: Calculate conditional distributions</strong></p>
+<p>Conditional distribution of Location given Morning Person:</p>
+<ul>
+<li>Library: 45/90 = 50%</li>
+<li>Home: 30/90 = 33.3%</li>
+<li>Coffee Shop: 15/90 = 16.7%</li>
+</ul>
+<p>Conditional distribution of Location given Night Owl:</p>
+<ul>
+<li>Library: 25/110 = 22.7%</li>
+<li>Home: 55/110 = 50%</li>
+<li>Coffee Shop: 30/110 = 27.3%</li>
+</ul>
+<p><strong>Step 3: Compare and look for association</strong></p>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Morning People</th>
+<th>Night Owls</th>
+<th>Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Library</td>
+<td>50%</td>
+<td>22.7%</td>
+<td>27.3 percentage points</td>
+</tr>
+<tr>
+<td>Home</td>
+<td>33.3%</td>
+<td>50%</td>
+<td>16.7 percentage points</td>
+</tr>
+<tr>
+<td>Coffee Shop</td>
+<td>16.7%</td>
+<td>27.3%</td>
+<td>10.6 percentage points</td>
+</tr>
+</tbody>
+</table>
+<p>There are substantial differences! Morning people prefer the library much more (50% vs. 22.7%), while night owls prefer studying at home (50% vs. 33.3%). This suggests a moderate to strong association between sleep preference and study location.</p>
+<p><strong>Step 4: Describe the association</strong></p>
+<p>We would describe this as: "There appears to be a moderate association between sleep preference and preferred study location. Morning people are more likely to prefer studying at the library, while night owls are more likely to prefer studying at home or at a coffee shop."</p>
+<div class="admonition note">
+<p class="admonition-title">Sylvia's Summary</p>
+<p>"Time to squirrel away this knowledge! When analyzing two categorical variables:</p>
+<ol>
+<li>Start with the marginal distributions to understand each variable separately</li>
+<li>Calculate conditional distributions to see how one variable behaves within levels of the other</li>
+<li>Compare conditional distributions to detect association</li>
+<li>If distributions differ, describe the direction and strength of association</li>
+</ol>
+<p>Remember: association doesn't mean causation! Just because morning people prefer the library doesn't mean being a morning person <em>causes</em> library preference. There could be other factors at play!"</p>
+</div>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<p>Let's summarize the main ideas from this chapter:</p>
+<ul>
+<li>A <strong>frequency table</strong> organizes categorical data by counting occurrences of each category</li>
+<li><strong>Relative frequency</strong> expresses counts as proportions of the total, enabling fair comparisons</li>
+<li><strong>Cumulative frequency</strong> provides running totals, useful for ordered categories</li>
+<li><strong>Bar graphs</strong> display categories as separated bars and work well for comparing frequencies</li>
+<li><strong>Pie charts</strong> show parts of a whole but become hard to read with many categories or similar values</li>
+<li><strong>Two-way tables</strong> display the relationship between two categorical variables</li>
+<li><strong>Marginal distributions</strong> show each variable separately (divide by grand total)</li>
+<li><strong>Conditional distributions</strong> show one variable within levels of another (divide by row or column total)</li>
+<li><strong>Association</strong> exists when conditional distributions differ across levels</li>
+<li><strong>Direction</strong> describes how categories tend to pair up (positive or negative)</li>
+<li><strong>Strength</strong> describes how different the conditional distributions are</li>
+</ul>
+<h4 id="diagram-chapter-concept-map">Diagram: Chapter Concept Map</h4>
+<iframe src="../../sims/chapter-2-concept-map/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Chapter Concept Map</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Verb: Recognize, identify</p>
+<p>Learning Objective: Students will identify and recall the key concepts from this chapter and their relationships.</p>
+<p>Purpose: Visual summary showing how all chapter concepts connect to each other.</p>
+<p>Layout: Hierarchical concept map with main topic at top branching down</p>
+<p>Nodes:</p>
+<ul>
+<li>Root: "Displaying Categorical Data"</li>
+<li>Level 1 branches:</li>
+<li>"Organizing Data" (connects to Frequency Table, Relative Frequency, Cumulative Frequency)</li>
+<li>"Single Variable Displays" (connects to Bar Graph, Pie Chart)</li>
+<li>"Two Variable Analysis" (connects to Two-Way Table)</li>
+<li>
+<p>"Association" (connects to Direction, Strength)</p>
+</li>
+<li>
+<p>Level 2 connections:</p>
+</li>
+<li>Frequency Table → Relative Frequency → Cumulative Frequency (sequential)</li>
+<li>Two-Way Table → Marginal Distribution, Conditional Distribution</li>
+<li>Conditional Distribution → Association</li>
+<li>Direction → Positive Association, Negative Association</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Concept nodes as rounded rectangles with concept name</li>
+<li>Color coding by theme (blue for organization, green for displays, orange for two-variable, purple for association)</li>
+<li>Arrows showing prerequisite relationships</li>
+<li>Hover reveals brief definition</li>
+</ul>
+<p>Interactive Features:</p>
+<ul>
+<li>Hover over node: Show definition tooltip</li>
+<li>Click node: Highlight all connected concepts</li>
+<li>Toggle: Show/Hide definitions</li>
+<li>Navigation: Link to section within chapter</li>
+</ul>
+<p>Implementation: vis-network or custom p5.js graph visualization</p>
+</details>
+<h2 id="practice-problems">Practice Problems</h2>
+<details class="question">
+<summary>Practice 1: Creating a Frequency Table</summary>
+<p>A survey asked 40 students about their favorite school subject. The responses were:
+Math (12), English (8), Science (11), History (5), Art (4)</p>
+<p>a) Create a frequency table with relative frequencies.
+b) What percentage of students prefer Math or Science?
+c) Create a bar graph representing this data.</p>
+</details>
+<details class="question">
+<summary>Practice 2: Working with Two-Way Tables</summary>
+<p>A two-way table shows music preference by age group:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Pop</th>
+<th>Rock</th>
+<th>Classical</th>
+<th>Hip-Hop</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Under 30</td>
+<td>45</td>
+<td>20</td>
+<td>5</td>
+<td>30</td>
+<td>100</td>
+</tr>
+<tr>
+<td>30 and Over</td>
+<td>15</td>
+<td>35</td>
+<td>25</td>
+<td>25</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>60</td>
+<td>55</td>
+<td>30</td>
+<td>55</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<p>a) What is the marginal distribution of music preference?
+b) What is the conditional distribution of music preference for people under 30?
+c) Is there evidence of association between age and music preference? Explain.</p>
+</details>
+<details class="question">
+<summary>Practice 3: Describing Association</summary>
+<p>Researchers surveyed 150 pet owners about their pet type (Dog or Cat) and living situation (Apartment or House):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Apartment</th>
+<th>House</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dog</td>
+<td>20</td>
+<td>55</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Cat</td>
+<td>50</td>
+<td>25</td>
+<td>75</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>70</td>
+<td>80</td>
+<td>150</td>
+</tr>
+</tbody>
+</table>
+<p>a) Calculate the conditional distribution of living situation for dog owners.
+b) Calculate the conditional distribution of living situation for cat owners.
+c) Describe the association between pet type and living situation. Include direction and strength.</p>
+</details>
+<hr />
+<p>Congratulations on completing Chapter 2! You've learned powerful tools for organizing and visualizing categorical data. In the next chapter, we'll shift our focus to quantitative data and explore different ways to display and describe numerical distributions.</p>
+<p>"See you in Chapter 3!" Sylvia waves, tucking her pencil behind her ear. "We'll be exploring histograms, stemplots, and all sorts of ways to visualize numbers. It's going to be great!"</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01-introduction-to-statistics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Introduction to Statistics">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                1. Introduction to Statistics
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03-displaying-quantitative-data/" class="md-footer__link md-footer__link--next" aria-label="Next: 3. Displaying Quantitative Data">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                3. Displaying Quantitative Data
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

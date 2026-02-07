@@ -1,0 +1,2519 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learn the foundational concepts of statistics including data, variables, populations, samples, and the distinction between parameters and statistics">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/statistics-course/chapters/01-introduction-to-statistics/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02-displaying-categorical-data/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Introduction to Statistics - AP Statistics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Introduction to Statistics - AP Statistics" >
+      
+        <meta  property="og:description"  content="Learn the foundational concepts of statistics including data, variables, populations, samples, and the distinction between parameters and statistics" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/01-introduction-to-statistics/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/statistics-course/chapters/01-introduction-to-statistics/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Introduction to Statistics - AP Statistics" >
+      
+        <meta  name="twitter:description"  content="Learn the foundational concepts of statistics including data, variables, populations, samples, and the distinction between parameters and statistics" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/01-introduction-to-statistics/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-statistics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AP Statistics" class="md-header__button md-logo" aria-label="AP Statistics" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AP Statistics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction to Statistics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/statistics-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AP Statistics" class="md-nav__button md-logo" aria-label="AP Statistics" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    AP Statistics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/statistics-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Introduction to Statistics
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Introduction to Statistics
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-to-the-world-of-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome to the World of Statistics!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Statistics?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-the-raw-material-of-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data: The Raw Material of Statistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-the-characteristics-we-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables: The Characteristics We Measure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables: The Characteristics We Measure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-variable-types-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Variable Types Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observations-and-datasets-organizing-our-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observations and Datasets: Organizing Our Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorical-variables-when-values-are-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Categorical Variables: When Values Are Categories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discrete-vs-continuous-splitting-quantitative-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discrete vs. Continuous: Splitting Quantitative Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discrete vs. Continuous: Splitting Quantitative Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-discrete-vs-continuous-number-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Discrete vs Continuous Number Line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#populations-and-samples-who-are-we-studying" class="md-nav__link">
+    <span class="md-ellipsis">
+      Populations and Samples: Who Are We Studying?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Populations and Samples: Who Are We Studying?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-population-and-sample-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Population and Sample Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-sampling-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Sampling Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters-vs-statistics-numbers-that-describe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters vs. Statistics: Numbers That Describe
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters vs. Statistics: Numbers That Describe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-parameter-vs-statistic-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Parameter vs Statistic Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Distribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanatory-and-response-variables-exploring-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanatory and Response Variables: Exploring Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-study-design-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Study Design Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-displaying-categorical-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Displaying Categorical Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-displaying-quantitative-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Displaying Quantitative Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-numerical-summaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Numerical Summaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-standardization-and-normal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Standardization and Normal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-scatterplots-and-association/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Scatterplots and Association
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-linear-regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Linear Regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-causation-and-study-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Causation and Study Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-probability-fundamentals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Probability Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-conditional-probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Conditional Probability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-sampling-and-bias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Sampling and Bias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-experimental-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Experimental Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-random-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Random Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-sampling-distributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Sampling Distributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-confidence-intervals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. Confidence Intervals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-hypothesis-testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. Hypothesis Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-inference-for-means/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Inference for Means
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-chi-square-and-regression-inference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Chi-Square and Regression Inference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-communication-and-synthesis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. Communication and Synthesis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendices/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-to-the-world-of-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome to the World of Statistics!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Statistics?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-the-raw-material-of-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data: The Raw Material of Statistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables-the-characteristics-we-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables: The Characteristics We Measure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables: The Characteristics We Measure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-variable-types-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Variable Types Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observations-and-datasets-organizing-our-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observations and Datasets: Organizing Our Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categorical-variables-when-values-are-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Categorical Variables: When Values Are Categories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discrete-vs-continuous-splitting-quantitative-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discrete vs. Continuous: Splitting Quantitative Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discrete vs. Continuous: Splitting Quantitative Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-discrete-vs-continuous-number-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Discrete vs Continuous Number Line
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#populations-and-samples-who-are-we-studying" class="md-nav__link">
+    <span class="md-ellipsis">
+      Populations and Samples: Who Are We Studying?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Populations and Samples: Who Are We Studying?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-population-and-sample-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Population and Sample Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-sampling-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Sampling Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameters-vs-statistics-numbers-that-describe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parameters vs. Statistics: Numbers That Describe
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters vs. Statistics: Numbers That Describe">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-parameter-vs-statistic-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Parameter vs Statistic Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Distribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explanatory-and-response-variables-exploring-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanatory and Response Variables: Exploring Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-study-design-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Study Design Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/statistics-course/edit/master/docs/chapters/01-introduction-to-statistics/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="introduction-to-statistics">Introduction to Statistics</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces the foundational concepts of statistics that form the basis for all subsequent learning. Students will learn about data, variables, populations, samples, and the key distinction between parameters and statistics. These concepts are essential building blocks for understanding how we collect, organize, and analyze data.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 16 concepts from the learning graph:</p>
+<ol>
+<li>Statistics</li>
+<li>Data</li>
+<li>Variable</li>
+<li>Observation</li>
+<li>Dataset</li>
+<li>Categorical Variable</li>
+<li>Quantitative Variable</li>
+<li>Discrete Variable</li>
+<li>Continuous Variable</li>
+<li>Population</li>
+<li>Sample</li>
+<li>Parameter</li>
+<li>Statistic</li>
+<li>Distribution</li>
+<li>Explanatory Variable</li>
+<li>Response Variable</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>. No prior statistics knowledge is required.</p>
+<hr />
+<h2 id="welcome-to-the-world-of-statistics">Welcome to the World of Statistics!</h2>
+<p>Hey there, future data detective! I'm Sylvia, and I'll be your guide through the wonderful world of statistics. Before you roll your eyes and wonder if this is going to be all numbers and formulas, let me tell you a secret: statistics is actually about telling stories with data. And who doesn't love a good story?</p>
+<p>Think about it. Every time you check the weather forecast, scroll through social media analytics, or wonder why your favorite team keeps losing despite having the "best players," you're brushing up against statistics. It's the superpower that helps us make sense of a messy, complicated world full of information.</p>
+<p>My tail's tingling already because we're about to crack open the toolbox that professional researchers, doctors, sports analysts, and even your school administrators use every single day. By the end of this course, you'll see the world differently. Trust me on this one.</p>
+<h2 id="what-is-statistics">What Is Statistics?</h2>
+<p>Let's start with the big question: what exactly is <strong>statistics</strong>? At its core, statistics is the science of collecting, organizing, analyzing, and interpreting data to make decisions or predictions. That's a mouthful, so let's break it down.</p>
+<p>Statistics helps us answer questions like:</p>
+<ul>
+<li>Does a new medication actually work better than the old one?</li>
+<li>Are teenagers really spending more time on their phones than they did five years ago?</li>
+<li>What's the chance that it will rain on your outdoor graduation ceremony?</li>
+</ul>
+<p>Every one of these questions involves uncertainty. We can't know everything about the world, but statistics gives us the tools to draw reasonable conclusions from the information we can gather. Pretty cool, right?</p>
+<table>
+<thead>
+<tr>
+<th>Statistical Task</th>
+<th>What It Means</th>
+<th>Real-World Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Collecting</td>
+<td>Gathering information systematically</td>
+<td>Conducting a survey about lunch preferences</td>
+</tr>
+<tr>
+<td>Organizing</td>
+<td>Arranging information for easy analysis</td>
+<td>Creating a spreadsheet of survey responses</td>
+</tr>
+<tr>
+<td>Analyzing</td>
+<td>Finding patterns and relationships</td>
+<td>Calculating what percentage prefer pizza</td>
+</tr>
+<tr>
+<td>Interpreting</td>
+<td>Drawing meaningful conclusions</td>
+<td>Deciding whether to change the lunch menu</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-the-raw-material-of-statistics">Data: The Raw Material of Statistics</h2>
+<p>Now let's talk about <strong>data</strong>, the stuff that statistics runs on. Data are pieces of information collected about individuals, events, or objects. Notice I said "data are" not "data is." Technically, data is plural (the singular is datum), though you'll hear people use it both ways.</p>
+<p>Here's a way to think about it: if statistics is baking, data are your ingredients. You can't make a cake without flour and eggs, and you can't do statistics without data. The quality of your conclusions depends entirely on the quality of your data, just like the quality of your cake depends on fresh ingredients.</p>
+<p>Data can come from anywhere:</p>
+<ul>
+<li>Survey responses from your classmates</li>
+<li>Measurements from a science experiment</li>
+<li>Records from a hospital database</li>
+<li>Numbers from a fitness tracker</li>
+<li>Social media engagement metrics</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Acorn for your thoughts?</p>
+<p>Sylvia says: "Data is everywhere once you start looking for it! I track data about my acorn collection every autumn: which trees produce the most, what time of day is best for gathering, even weather conditions. That's right, I'm basically a tiny, fluffy data scientist."</p>
+</div>
+<h2 id="variables-the-characteristics-we-measure">Variables: The Characteristics We Measure</h2>
+<p>When we collect data, we're measuring <strong>variables</strong>. A variable is any characteristic that can take on different values. Height is a variable because different people have different heights. Eye color is a variable because people have blue, brown, green, hazel, or other colored eyes.</p>
+<p>Think of variables as the questions you're asking about each individual in your study. If you're studying students at your school, you might ask:</p>
+<ul>
+<li>How old are you? (Age is a variable)</li>
+<li>What's your favorite subject? (Favorite subject is a variable)</li>
+<li>How many hours did you sleep last night? (Sleep hours is a variable)</li>
+<li>Do you participate in sports? (Sports participation is a variable)</li>
+</ul>
+<p>The name "variable" makes sense when you think about it: the values vary from person to person, from object to object, or from time to time.</p>
+<h4 id="diagram-variable-types-concept-map">Diagram: Variable Types Concept Map</h4>
+<iframe src="../../sims/variable-types-concept-map/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Variable Types Concept Map</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: classify</p>
+<p>Learning Objective: Students will be able to classify variables into categorical and quantitative types, and further subdivide quantitative variables into discrete and continuous.</p>
+<p>Purpose: Create an interactive concept map showing the hierarchy of variable types with examples</p>
+<p>Layout: Hierarchical tree structure starting from "Variable" at the top, branching into Categorical and Quantitative, with Quantitative further branching into Discrete and Continuous</p>
+<p>Interactive elements:
+- Hover over each node to see definition and 3-4 examples
+- Click on a node to highlight its branch and dim others
+- Nodes should expand/contract on click to show/hide examples</p>
+<p>Node content:
+1. Variable (root): "Any characteristic that can take different values"
+   - Examples appear on hover: height, favorite color, age, political party</p>
+<ol>
+<li>Categorical Variable: "Variable whose values are category names or labels"</li>
+<li>
+<p>Examples: hair color, zip code, blood type, brand preference, yes/no responses</p>
+</li>
+<li>
+<p>Quantitative Variable: "Variable whose values are numerical measurements or counts"</p>
+</li>
+<li>
+<p>Examples: height, weight, temperature, test scores, income</p>
+</li>
+<li>
+<p>Discrete Variable: "Quantitative variable that can only take specific values, usually counts"</p>
+</li>
+<li>
+<p>Examples: number of siblings, cars owned, text messages sent, goals scored</p>
+</li>
+<li>
+<p>Continuous Variable: "Quantitative variable that can take any value within a range"</p>
+</li>
+<li>Examples: height, weight, time, temperature, blood pressure</li>
+</ol>
+<p>Visual styling:
+- Root node: purple/blue
+- Categorical branch: green
+- Quantitative branch: orange
+- Discrete: light orange
+- Continuous: darker orange
+- Connecting lines with arrows showing hierarchy</p>
+<p>Canvas size: Responsive, approximately 600x400px
+Implementation: p5.js with hover detection and click handlers</p>
+</details>
+<h2 id="observations-and-datasets-organizing-our-information">Observations and Datasets: Organizing Our Information</h2>
+<p>When we collect data, each individual thing we measure is called an <strong>observation</strong> (also called a case or a record). If you survey 30 students about their study habits, each student represents one observation.</p>
+<p>An <strong>observation</strong> contains the values of all variables for one individual. Think of it like a row in a spreadsheet: everything we know about one person, one event, or one object.</p>
+<p>When we put all our observations together, we get a <strong>dataset</strong>. A dataset is an organized collection of data, typically arranged in rows (observations) and columns (variables). Here's what a simple dataset might look like:</p>
+<table>
+<thead>
+<tr>
+<th>Student</th>
+<th>Hours of Sleep</th>
+<th>Favorite Subject</th>
+<th>GPA</th>
+<th>Plays Sports</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maria</td>
+<td>7.5</td>
+<td>Math</td>
+<td>3.8</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>James</td>
+<td>6.0</td>
+<td>History</td>
+<td>3.2</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Aisha</td>
+<td>8.0</td>
+<td>Science</td>
+<td>3.9</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Tyler</td>
+<td>5.5</td>
+<td>Art</td>
+<td>2.8</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Lin</td>
+<td>7.0</td>
+<td>Math</td>
+<td>3.6</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>In this dataset:</p>
+<ul>
+<li>Each row is one observation (one student)</li>
+<li>Each column is one variable (Sleep, Subject, GPA, Sports)</li>
+<li>We have 5 observations and 4 variables</li>
+<li>The values are the actual data points (7.5 hours, Math, 3.8, Yes)</li>
+</ul>
+<h2 id="categorical-variables-when-values-are-categories">Categorical Variables: When Values Are Categories</h2>
+<p>Not all variables involve numbers. A <strong>categorical variable</strong> (also called a qualitative variable) places individuals into groups or categories. The values are labels or names, not numbers that you'd want to calculate with.</p>
+<p>Examples of categorical variables include:</p>
+<ul>
+<li>Gender (male, female, non-binary)</li>
+<li>Blood type (A, B, AB, O)</li>
+<li>Favorite music genre (pop, rock, hip-hop, country, classical)</li>
+<li>State of residence (California <strong>Quantitative variables</strong> (also called numerical variables) take on numerical values that have meaning. You can do math with them. It makes sense to calculate an average height or a total number of points scored.</li>
+</ul>
+<p>Here's a quick comparison:</p>
+<table>
+<thead>
+<tr>
+<th>Categorical Variables</th>
+<th>Quantitative Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eye color</td>
+<td>Height in inches</td>
+</tr>
+<tr>
+<td>Political party</td>
+<td>Annual income</td>
+</tr>
+<tr>
+<td>Car brand</td>
+<td>Temperature</td>
+</tr>
+<tr>
+<td>Zip code</td>
+<td>Number of pets</td>
+</tr>
+<tr>
+<td>Grade level (A, B, C)</td>
+<td>Grade percentage (87%, 92%)</td>
+</tr>
+</tbody>
+</table>
+<p>Wait, did you notice that zip code is categorical even though it's made of numbers? Good catch! Here's the thing: zip codes are labels, not quantities. You wouldn't average two zip codes or say that zip code 90210 is "greater than" zip code 10001 in any meaningful way. If the numbers are just labels, the variable is categorical.</p>
+<div class="admonition note">
+<p class="admonition-title">The Number Trap</p>
+<p>Just because something looks like a number doesn't mean it's quantitative! Jersey numbers, social security numbers, phone numbers, and zip codes are all categorical because the numbers serve as labels, not measurements. Ask yourself: "Does it make sense to calculate an average of these values?" If not, it's probably categorical.</p>
+</div>
+<h2 id="discrete-vs-continuous-splitting-quantitative-variables">Discrete vs. Continuous: Splitting Quantitative Variables</h2>
+<p>Quantitative variables come in two flavors: <strong>discrete</strong> and <strong>continuous</strong>.</p>
+<p><strong>Discrete variables</strong> can only take on specific, separated values, usually whole numbers or counts. You can list all possible values (at least in theory). Between any two values, there are only a limited number of possibilities, or sometimes none at all.</p>
+<p>Examples of discrete variables:</p>
+<ul>
+<li>Number of siblings (0, 1, 2, 3, ...)</li>
+<li>Number of cars in a parking lot</li>
+<li>Number of text messages sent today</li>
+<li>Points scored in a game</li>
+<li>Number of AP classes taken</li>
+</ul>
+<p><strong>Continuous variables</strong> can take on any value within a range. Between any two values, there are infinitely many possible values. These typically arise from measurements rather than counts.</p>
+<p>Examples of continuous variables:</p>
+<ul>
+<li>Height (you could be 67.3 inches, 67.31 inches, 67.314 inches...)</li>
+<li>Weight</li>
+<li>Temperature</li>
+<li>Time to run a mile</li>
+<li>Blood pressure</li>
+</ul>
+<p>Here's a helpful tip: if you're counting things, the variable is usually discrete. If you're measuring things, it's usually continuous.</p>
+<h4 id="diagram-discrete-vs-continuous-number-line">Diagram: Discrete vs Continuous Number Line</h4>
+<iframe src="../../sims/discrete-continuous-numberline/main.html" width="100%" height="350px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Discrete vs Continuous Number Line Interactive</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: compare</p>
+<p>Learning Objective: Students will distinguish between discrete and continuous variables by visualizing how values can be plotted on a number line.</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show two parallel number lines, one for discrete and one for continuous
+- Stage 2: For discrete, show only specific points (integers) that can be selected
+- Stage 3: For continuous, show that any point can be selected including decimals</p>
+<p>Instructional Rationale: Comparison visualization is appropriate because the Understand/compare objective requires learners to see the fundamental difference between variables that have gaps versus those that don't. Side-by-side display enables direct visual comparison.</p>
+<p>Visual elements:
+- Two horizontal number lines, stacked vertically
+- Top line labeled "Discrete: Number of Pets" (range 0-10)
+- Bottom line labeled "Continuous: Height in Inches" (range 60-72)
+- Discrete line shows only integer points as clickable dots
+- Continuous line shows a smooth gradient bar</p>
+<p>Interactive controls:
+- On discrete line: click to place markers only on integer values
+- On continuous line: click anywhere to place a marker at exact position
+- Display shows the exact value where user clicked
+- Reset button clears all markers
+- Toggle to show/hide example values</p>
+<p>Default parameters:
+- Both lines start empty
+- Example mode shows 3-4 sample points on each</p>
+<p>Behavior:
+- When user clicks on discrete line between integers, snap to nearest integer with visual feedback
+- When user clicks on continuous line, display value to 2 decimal places
+- Highlight that continuous line accepts any value, discrete only specific values</p>
+<p>Canvas size: Responsive, approximately 600x300px
+Implementation: p5.js with mouse click detection</p>
+</details>
+<h2 id="populations-and-samples-who-are-we-studying">Populations and Samples: Who Are We Studying?</h2>
+<p>Now let's talk about one of the most important distinctions in statistics: the difference between a <strong>population</strong> and a <strong>sample</strong>.</p>
+<p>A <strong>population</strong> is the entire group of individuals that you want to study or make conclusions about. It includes everyone or everything that fits your criteria. Notice the word "entire" there; populations can be huge!</p>
+<p>Examples of populations:</p>
+<ul>
+<li>All students currently enrolled in U.S. high schools</li>
+<li>Every car manufactured by Toyota in 2024</li>
+<li>All adults in California with diabetes</li>
+<li>Every tweet posted in the last 24 hours</li>
+</ul>
+<p>Here's the challenge: we almost never can study an entire population. It would take too long, cost too much, or be physically impossible. Imagine trying to survey every single high school student in America. That's millions of people!</p>
+<p>This is where <strong>samples</strong> come to the rescue. A <strong>sample</strong> is a subset of the population that we actually collect data from. We study the sample and use what we learn to make conclusions about the larger population.</p>
+<p>Think of it like taste-testing soup. You don't drink the whole pot to know if it needs more salt. You take a small spoonful (a sample) and use that to judge the whole pot (the population). Statistics works the same way.</p>
+<h4 id="diagram-population-and-sample-visualization">Diagram: Population and Sample Visualization</h4>
+<iframe src="../../sims/population-sample-visual/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Population and Sample Visualization</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: explain</p>
+<p>Learning Objective: Students will explain the relationship between a population and a sample by interactively selecting sample members from a population.</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show a large group of individuals representing a population (50-100 icons)
+- Stage 2: User selects individuals to form a sample
+- Stage 3: Show the sample highlighted and separated, with count statistics</p>
+<p>Instructional Rationale: Interactive selection enables learners to experience the sampling process directly, making the abstract concept concrete. Seeing both population and sample simultaneously reinforces their relationship.</p>
+<p>Visual elements:
+- Large rectangular area representing the population (labeled "Population: All Students at Lincoln High School")
+- 80-100 small person icons scattered in the population area
+- Icons have random but realistic height and shirt color variation
+- Selected icons become highlighted/circled
+- Side panel shows current sample with selected individuals</p>
+<p>Interactive controls:
+- Click individual icons to add/remove from sample
+- "Random Sample" button selects 10 random individuals
+- "Clear Sample" button resets selection
+- Slider to adjust sample size for random selection (5-25)
+- Display shows: Population size, Sample size, Sample percentage</p>
+<p>Behavior:
+- Population icons subtly different to represent variability
+- Selected icons move to a "Sample" area on right side or become highlighted
+- Statistics update in real-time as sample changes
+- Animation when random sample is selected</p>
+<p>Color scheme:
+- Unselected individuals: muted blue/gray
+- Selected individuals: bright orange with glow effect
+- Population area: light blue background
+- Sample area: light orange background</p>
+<p>Canvas size: Responsive, approximately 700x450px
+Implementation: p5.js</p>
+</details>
+<h2 id="why-sampling-matters">Why Sampling Matters</h2>
+<p>You might wonder why we can't just study the whole population. There are several practical reasons:</p>
+<ol>
+<li><strong>Time</strong>: Surveying millions of people takes forever</li>
+<li><strong>Money</strong>: Data collection is expensive</li>
+<li><strong>Impossibility</strong>: Some populations are infinite or inaccessible</li>
+<li><strong>Destruction</strong>: Testing all light bulbs until they burn out destroys your inventory!</li>
+</ol>
+<p>The goal of statistics is to learn about the population by studying a sample. But here's the catch: for our conclusions to be valid, the sample needs to represent the population well. A good sample is like a miniature version of the population. We'll learn much more about sampling methods in a later chapter.</p>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia's Sampling Story</p>
+<p>"I once tried to figure out which trees in Oak Valley produced the most acorns. Checking every single tree would have taken all autumn! So I picked 20 trees spread across different parts of the valley. My sample told me where to focus my collection efforts, and I had the best-stocked winter den in squirrel history. That's the power of sampling!"</p>
+</div>
+<h2 id="parameters-vs-statistics-numbers-that-describe">Parameters vs. Statistics: Numbers That Describe</h2>
+<p>Now we arrive at a distinction that trips up a lot of students, but once you get it, it'll stick with you forever. Ready? Let's crack this nut!</p>
+<p>A <strong>parameter</strong> is a number that describes something about the <strong>population</strong>. A <strong>statistic</strong> is a number that describes something about the <strong>sample</strong>.</p>
+<p>Both parameters and statistics are numerical summaries, but they describe different groups:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Describes</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parameter</td>
+<td>Population</td>
+<td>The average height of ALL adults in the U.S.</td>
+</tr>
+<tr>
+<td>Statistic</td>
+<td>Sample</td>
+<td>The average height of 500 adults we measured</td>
+</tr>
+</tbody>
+</table>
+<p>Here's the key insight: we usually don't know the true population parameter because we can't study everyone. What we can calculate is the sample statistic. Then we use that statistic to estimate or make inferences about the unknown parameter.</p>
+<p>The reason this matters is that statistics come with uncertainty. If you survey a different sample of 500 people, you'll likely get a slightly different average. The sample statistic is our best guess at the population parameter, but it's still just a guess based on incomplete information.</p>
+<h4 id="diagram-parameter-vs-statistic-comparison">Diagram: Parameter vs Statistic Comparison</h4>
+<iframe src="../../sims/parameter-statistic-compare/main.html" width="100%" height="400px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Parameter vs Statistic Interactive Comparison</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: calculate</p>
+<p>Learning Objective: Students will calculate sample statistics and compare them to population parameters, understanding why statistics vary but parameters are fixed.</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show a population of 200 values with the true parameter displayed
+- Stage 2: Draw a sample and calculate its statistic
+- Stage 3: Compare the statistic to the parameter, show the difference</p>
+<p>Instructional Rationale: Calculation and comparison is appropriate because the Apply objective requires learners to actively compute statistics and observe how they differ from the fixed parameter. Multiple samples reinforce variability.</p>
+<p>Visual elements:
+- Left side: Population visualization as a histogram or dot plot
+- Population parameter (mean) shown as a vertical line
+- Right side: Sample visualization (same type of plot)
+- Sample statistic shown as a vertical line
+- Comparison panel showing both values and the difference</p>
+<p>Interactive controls:
+- "Draw New Sample" button to randomly select sample from population
+- Sample size slider (10, 25, 50, 100)
+- Counter showing number of samples drawn
+- Running display of all statistics from previous samples
+- Reset button</p>
+<p>Default parameters:
+- Population: 200 values with mean = 70 (perhaps representing heights)
+- Initial sample size: 25
+- Show population mean = 70 (parameter, marked with Greek letter mu)</p>
+<p>Behavior:
+- Each click generates new random sample
+- Calculate and display sample mean (statistic, marked with x-bar)
+- Show difference between statistic and parameter
+- Build up history of sample means to see variability
+- Larger samples tend to give statistics closer to parameter</p>
+<p>Canvas size: Responsive, approximately 700x350px
+Implementation: p5.js with random sampling from predefined population</p>
+</details>
+<h2 id="understanding-distribution">Understanding Distribution</h2>
+<p>The word <strong>distribution</strong> is one you'll hear constantly in statistics, so let's make sure you understand it from the start. A distribution describes the pattern of values that a variable takes on. It tells us what values are possible and how often each value occurs.</p>
+<p>Think about the heights of students in your school. The distribution would show:</p>
+<ul>
+<li>What's the shortest height?</li>
+<li>What's the tallest height?</li>
+<li>What's the most common height?</li>
+<li>Are heights clustered together or spread out?</li>
+<li>Is the pattern symmetric or lopsided?</li>
+</ul>
+<p>We can display distributions using tables, graphs, or mathematical formulas. For now, just know that when statisticians talk about "the distribution of a variable," they're talking about the overall pattern or shape of that variable across all individuals.</p>
+<p>Some key questions a distribution answers:</p>
+<ul>
+<li><strong>Where is the center?</strong> What's typical or average?</li>
+<li><strong>How spread out are the values?</strong> Are they tightly clustered or widely scattered?</li>
+<li><strong>What shape does the pattern make?</strong> Is it symmetric, skewed, or something else?</li>
+<li><strong>Are there unusual values?</strong> Any outliers or surprises?</li>
+</ul>
+<p>We'll explore distributions in much more depth in the next chapter when we start graphing and summarizing data.</p>
+<h2 id="explanatory-and-response-variables-exploring-relationships">Explanatory and Response Variables: Exploring Relationships</h2>
+<p>When statisticians investigate relationships between two variables, they often think about cause and effect, or at least which variable might influence which. This leads to two important roles that variables can play.</p>
+<p>The <strong>explanatory variable</strong> (also called the independent variable or predictor) is the variable we think might explain or influence changes in another variable. It's the potential cause or the variable we might manipulate.</p>
+<p>The <strong>response variable</strong> (also called the dependent variable or outcome) is the variable we think might be affected or influenced. It's the potential effect or the variable we measure as an outcome.</p>
+<p>Here are some examples:</p>
+<table>
+<thead>
+<tr>
+<th>Research Question</th>
+<th>Explanatory Variable</th>
+<th>Response Variable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Does studying more improve test scores?</td>
+<td>Hours studied</td>
+<td>Test score</td>
+</tr>
+<tr>
+<td>Does exercise affect heart rate?</td>
+<td>Minutes of exercise</td>
+<td>Heart rate</td>
+</tr>
+<tr>
+<td>Does temperature affect ice cream sales?</td>
+<td>Temperature</td>
+<td>Ice cream sales</td>
+</tr>
+<tr>
+<td>Does fertilizer affect plant growth?</td>
+<td>Amount of fertilizer</td>
+<td>Plant height</td>
+</tr>
+</tbody>
+</table>
+<p>When you set up a scatterplot (which we'll learn about later), the explanatory variable typically goes on the x-axis (horizontal) and the response variable goes on the y-axis (vertical).</p>
+<p>A word of caution: just because we call something an "explanatory variable" doesn't mean it actually causes changes in the response. Finding an association between two variables is not the same as proving causation. We'll explore this crucial distinction later in the course.</p>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's consolidate everything with a comprehensive example. Imagine a researcher wants to study whether sleep affects academic performance in high school students.</p>
+<p><strong>Population</strong>: All high school students in the United States (approximately 15 million students)</p>
+<p><strong>Sample</strong>: 500 randomly selected high school students from across the country</p>
+<p><strong>Variables collected for each student</strong>:</p>
+<ul>
+<li>Hours of sleep per night (quantitative, continuous)</li>
+<li>GPA (quantitative, continuous)</li>
+<li>Grade level (categorical: freshman, sophomore, junior, senior)</li>
+<li>Number of AP classes (quantitative, discrete)</li>
+<li>Gender (categorical)</li>
+<li>Do they play sports? (categorical: yes/no)</li>
+</ul>
+<p><strong>Observations</strong>: Each of the 500 students is one observation</p>
+<p><strong>Dataset</strong>: The spreadsheet containing all 500 students and their values for each variable</p>
+<p><strong>Parameter</strong>: The true average sleep hours for ALL U.S. high school students (unknown)</p>
+<p><strong>Statistic</strong>: The average sleep hours calculated from our 500-student sample (known, calculated)</p>
+<p><strong>Distribution</strong>: The pattern of sleep hours across our sample (most students cluster around 6-7 hours, some get more, some get less)</p>
+<p><strong>Explanatory variable</strong>: Hours of sleep (we think it might influence performance)</p>
+<p><strong>Response variable</strong>: GPA (we're measuring this as the outcome)</p>
+<h4 id="diagram-complete-study-design-map">Diagram: Complete Study Design Map</h4>
+<iframe src="../../sims/study-design-map/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Interactive Study Design Concept Map</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: organize</p>
+<p>Learning Objective: Students will organize all chapter concepts into a coherent mental framework by seeing how population, sample, variables, parameters, and statistics relate in a real study.</p>
+<p>Purpose: Create an interactive concept map that shows how all the foundational statistics concepts connect in the context of a real research study</p>
+<p>Layout: Central hub-and-spoke design with the "Study" at center, branching to major concepts, with sub-branches for details</p>
+<p>Interactive elements:
+- Click on any concept to see its definition and example from the sleep study
+- Hover to highlight related concepts and connections
+- Expandable nodes that reveal deeper information
+- Connection lines that animate to show information flow</p>
+<p>Concept nodes:
+1. Population (center-left): "All U.S. high school students"
+   - Shows an icon representing millions of students</p>
+<ol>
+<li>Sample (below Population): "500 randomly selected students"</li>
+<li>
+<p>Arrow from Population to Sample labeled "Select from"</p>
+</li>
+<li>
+<p>Variables (center-right): Branches to:</p>
+</li>
+<li>Categorical: Grade level, Gender, Sports participation</li>
+<li>Quantitative: GPA, Sleep hours, AP classes</li>
+<li>
+<p>Further branches to Discrete and Continuous</p>
+</li>
+<li>
+<p>Parameter (connected to Population): "True average sleep = ?"</p>
+</li>
+<li>
+<p>Shows mystery/unknown symbol</p>
+</li>
+<li>
+<p>Statistic (connected to Sample): "Sample average sleep = 6.8 hours"</p>
+</li>
+<li>
+<p>Shows calculated value</p>
+</li>
+<li>
+<p>Distribution (connected to both): "Pattern of sleep hours"</p>
+</li>
+<li>
+<p>Small histogram preview</p>
+</li>
+<li>
+<p>Explanatory/Response (bottom):</p>
+</li>
+<li>Sleep hours (explanatory) arrow pointing to GPA (response)</li>
+</ol>
+<p>Color scheme:
+- Population/Parameter: Blue tones
+- Sample/Statistic: Orange tones
+- Variables: Green tones
+- Relationships: Purple connections</p>
+<p>Animation:
+- On load, nodes appear sequentially with connections drawing in
+- Pulse effect on related nodes when one is selected</p>
+<p>Canvas size: Responsive, approximately 750x500px
+Implementation: p5.js with vis-network-style interaction</p>
+</details>
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<p>Before we wrap up, let's tackle some common pitfalls that students encounter with these foundational concepts:</p>
+<p><strong>Mistake 1: Confusing parameter and statistic</strong>
+Remember: Parameters describe Populations (both start with P), and Statistics describe Samples (both start with S).</p>
+<p><strong>Mistake 2: Thinking numerical means quantitative</strong>
+Numbers that serve as labels (like zip codes, jersey numbers, or phone numbers) are categorical, not quantitative. Ask yourself: "Does averaging make sense?"</p>
+<p><strong>Mistake 3: Forgetting that samples vary</strong>
+Different samples give different statistics. That's not a bug in statistics; it's a feature we learn to work with!</p>
+<p><strong>Mistake 4: Assuming explanatory means causal</strong>
+Just because we call a variable "explanatory" doesn't mean it actually causes changes in the response. Correlation is not causation!</p>
+<p><strong>Mistake 5: Mixing up discrete and continuous</strong>
+Discrete = counting (0, 1, 2, 3...), Continuous = measuring (can be any value, including fractions/decimals)</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<p>Let's squirrel away the big ideas from this chapter:</p>
+<ol>
+<li>
+<p><strong>Statistics</strong> is the science of learning from data through collection, organization, analysis, and interpretation.</p>
+</li>
+<li>
+<p><strong>Data</strong> are pieces of information collected about individuals or things.</p>
+</li>
+<li>
+<p><strong>Variables</strong> are characteristics that can take different values. They can be:</p>
+</li>
+<li>Categorical (categories/labels) or Quantitative (numbers with meaning)</li>
+<li>
+<p>If quantitative: Discrete (counts) or Continuous (measurements)</p>
+</li>
+<li>
+<p>An <strong>observation</strong> is the data collected for one individual; a <strong>dataset</strong> is all observations together.</p>
+</li>
+<li>
+<p>A <strong>population</strong> is everyone/everything you want to study; a <strong>sample</strong> is the subset you actually study.</p>
+</li>
+<li>
+<p>A <strong>parameter</strong> describes a population; a <strong>statistic</strong> describes a sample. We use statistics to estimate parameters.</p>
+</li>
+<li>
+<p>A <strong>distribution</strong> describes the pattern of values a variable takes.</p>
+</li>
+<li>
+<p><strong>Explanatory variables</strong> might influence <strong>response variables</strong>, but association is not causation.</p>
+</li>
+</ol>
+<hr />
+<details class="question">
+<summary>Check Your Understanding</summary>
+<p>A researcher surveys 150 customers leaving a grocery store, asking about their age, whether they used coupons (yes/no), and how much they spent. She wants to understand shopping habits of all customers at the store.</p>
+<ol>
+<li>What is the population?</li>
+<li>What is the sample?</li>
+<li>Identify a categorical variable.</li>
+<li>Identify a quantitative variable. Is it discrete or continuous?</li>
+<li>If she calculates the average amount spent by the 150 customers, is that a parameter or statistic?</li>
+</ol>
+<p><strong>Answers:</strong>
+1. Population: All customers at the grocery store
+2. Sample: The 150 customers surveyed
+3. Categorical variable: Coupon use (yes/no)
+4. Quantitative variable: Amount spent (continuous - any dollar amount possible); Age could also work (often treated as discrete when measured in whole years)
+5. Statistic - it describes the sample, not the entire population</p>
+</details>
+<p>You've just learned the vocabulary that statisticians use every day. These aren't just definitions to memorize; they're the foundation for everything that follows. In the next chapter, we'll start exploring data visually with graphs and numerically with summary statistics.</p>
+<p>Now that's a data point worth collecting!</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02-displaying-categorical-data/" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Displaying Categorical Data">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                2. Displaying Categorical Data
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

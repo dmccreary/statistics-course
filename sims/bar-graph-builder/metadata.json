@@ -1,0 +1,86 @@
+{
+  "title": "Bar Graph Builder",
+  "description": "Interactive MicroSim where students construct bar graphs from categorical data by entering category names and frequencies. Supports vertical and horizontal orientations, frequency and relative frequency displays, and customizable bar colors.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": [
+    "Statistics",
+    "Data Visualization",
+    "Bar Graphs",
+    "Categorical Data",
+    "Frequency Distribution"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/bar-graph-builder/",
+  "publisher": "Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "bloomVerb": [
+    "construct",
+    "demonstrate"
+  ],
+  "learningObjective": "Students will construct bar graphs from categorical data",
+  "concepts": [
+    "Bar Graph",
+    "Categorical Variables",
+    "Frequency",
+    "Relative Frequency",
+    "Data Visualization",
+    "Graph Orientation"
+  ],
+  "prerequisites": [
+    "Understanding of categorical vs. quantitative variables",
+    "Basic understanding of fractions and percentages"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "text-input",
+      "label": "Category Names",
+      "description": "Editable text fields for up to 6 category names"
+    },
+    {
+      "type": "number-input",
+      "label": "Frequency Values",
+      "description": "Editable number fields for frequency values (0-100)"
+    },
+    {
+      "type": "radio-button",
+      "label": "Display Mode",
+      "options": ["Frequency", "Relative Frequency"],
+      "default": "Frequency"
+    },
+    {
+      "type": "radio-button",
+      "label": "Orientation",
+      "options": ["Vertical", "Horizontal"],
+      "default": "Vertical"
+    },
+    {
+      "type": "color-picker",
+      "label": "Bar Color",
+      "default": "#4682B4"
+    },
+    {
+      "type": "button",
+      "label": "Add Category",
+      "description": "Add a new category (max 6)"
+    },
+    {
+      "type": "button",
+      "label": "Remove",
+      "description": "Remove the last category (min 1)"
+    }
+  ]
+}

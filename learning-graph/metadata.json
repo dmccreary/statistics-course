@@ -1,0 +1,10 @@
+{
+  "title": "AP Statistics Learning Graph",
+  "description": "A comprehensive learning graph for AP Statistics covering exploratory data analysis, study design, probability, and statistical inference. Designed for high school students preparing for the AP Statistics examination.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}
