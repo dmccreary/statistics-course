@@ -1,0 +1,39 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+  "microsim_name": "view-task-graph",
+  "title": "Task Graph Viewer",
+  "description": "Interactive MicroSim that visualizes the book task graph and highlights remaining work using a dependency network.",
+  "keywords": ["task graph", "dependencies", "project tracking", "micro sims", "AP Statistics"],
+  "subject": "Statistics",
+  "topic": "Project Workflow",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Interpret",
+  "learning_objective": "Students will interpret a task dependency graph by identifying prerequisites, progress status, and remaining tasks.",
+  "grade_level": "High School",
+  "duration": "5-10 minutes",
+  "prerequisites": ["Understanding of directed graphs", "Familiarity with project workflows"],
+  "framework": "vis-network.js",
+  "version": "9.x",
+  "canvas_dimensions": {
+    "width": "responsive",
+    "draw_height": 600,
+    "control_height": 0,
+    "total_height": 600
+  },
+  "controls": [
+    {
+      "type": "search",
+      "label": "Search Tasks",
+      "description": "Find tasks by name"
+    },
+    {
+      "type": "checkbox",
+      "label": "Status Filters",
+      "description": "Show or hide tasks by status"
+    }
+  ],
+  "creator": "Dan McCreary",
+  "date_created": "2026-02-07",
+  "license": "CC BY-NC-SA 4.0",
+  "language": "en"
+}

@@ -1,0 +1,2030 @@
+{
+  "meta": {
+    "version": "1.0"
+  },
+  "nodes": [
+    {
+      "id": "t-course-description",
+      "label": "Create Course Description",
+      "type": "root",
+      "status": "done"
+    },
+    {
+      "id": "t-learning-graph",
+      "label": "Generate Learning Graph",
+      "type": "system",
+      "status": "done"
+    },
+    {
+      "id": "t-book-structure",
+      "label": "Generate Book Chapter Structure",
+      "type": "system",
+      "status": "done"
+    },
+    {
+      "id": "t-ch-01",
+      "label": "Introduction to Statistics",
+      "type": "chapter",
+      "status": "done",
+      "chapter": 1
+    },
+    {
+      "id": "t-ch-01-content",
+      "label": "Generate Introduction to Statistics Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 1
+    },
+    {
+      "id": "t-ch-01-microsims",
+      "label": "Generate Introduction to Statistics MicroSims",
+      "type": "chapter-microsims",
+      "status": "done",
+      "chapter": 1
+    },
+    {
+      "id": "t-ch-01-ms-discrete-continuous-numberline",
+      "label": "MicroSim: discrete-continuous-numberline",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 1,
+      "microsim": "discrete-continuous-numberline"
+    },
+    {
+      "id": "t-ch-01-ms-parameter-statistic-compare",
+      "label": "MicroSim: parameter-statistic-compare",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 1,
+      "microsim": "parameter-statistic-compare"
+    },
+    {
+      "id": "t-ch-01-ms-population-sample-visual",
+      "label": "MicroSim: population-sample-visual",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 1,
+      "microsim": "population-sample-visual"
+    },
+    {
+      "id": "t-ch-01-ms-study-design-map",
+      "label": "MicroSim: study-design-map",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 1,
+      "microsim": "study-design-map"
+    },
+    {
+      "id": "t-ch-01-ms-variable-types-concept-map",
+      "label": "MicroSim: variable-types-concept-map",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 1,
+      "microsim": "variable-types-concept-map"
+    },
+    {
+      "id": "t-ch-02",
+      "label": "Displaying Categorical Data",
+      "type": "chapter",
+      "status": "done",
+      "chapter": 2
+    },
+    {
+      "id": "t-ch-02-content",
+      "label": "Generate Displaying Categorical Data Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 2
+    },
+    {
+      "id": "t-ch-02-microsims",
+      "label": "Generate Displaying Categorical Data MicroSims",
+      "type": "chapter-microsims",
+      "status": "done",
+      "chapter": 2
+    },
+    {
+      "id": "t-ch-02-ms-association-detector",
+      "label": "MicroSim: association-detector",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 2,
+      "microsim": "association-detector"
+    },
+    {
+      "id": "t-ch-02-ms-association-strength-spectrum",
+      "label": "MicroSim: association-strength-spectrum",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 2,
+      "microsim": "association-strength-spectrum"
+    },
+    {
+      "id": "t-ch-02-ms-bar-graph-builder",
+      "label": "MicroSim: bar-graph-builder",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 2,
+      "microsim": "bar-graph-builder"
+    },
+    {
+      "id": "t-ch-02-ms-chapter-2-concept-map",
+      "label": "MicroSim: chapter-2-concept-map",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 2,
+      "microsim": "chapter-2-concept-map"
+    },
+    {
+      "id": "t-ch-02-ms-frequency-table-explorer",
+      "label": "MicroSim: frequency-table-explorer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 2,
+      "microsim": "frequency-table-explorer"
+    },
+    {
+      "id": "t-ch-02-ms-pie-vs-bar-comparison",
+      "label": "MicroSim: pie-vs-bar-comparison",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 2,
+      "microsim": "pie-vs-bar-comparison"
+    },
+    {
+      "id": "t-ch-02-ms-two-way-table-calculator",
+      "label": "MicroSim: two-way-table-calculator",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 2,
+      "microsim": "two-way-table-calculator"
+    },
+    {
+      "id": "t-ch-03",
+      "label": "Displaying Quantitative Data",
+      "type": "chapter",
+      "status": "done",
+      "chapter": 3
+    },
+    {
+      "id": "t-ch-03-content",
+      "label": "Generate Displaying Quantitative Data Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 3
+    },
+    {
+      "id": "t-ch-03-microsims",
+      "label": "Generate Displaying Quantitative Data MicroSims",
+      "type": "chapter-microsims",
+      "status": "done",
+      "chapter": 3
+    },
+    {
+      "id": "t-ch-03-ms-distribution-shape-gallery",
+      "label": "MicroSim: distribution-shape-gallery",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 3,
+      "microsim": "distribution-shape-gallery"
+    },
+    {
+      "id": "t-ch-03-ms-histogram-explorer",
+      "label": "MicroSim: histogram-explorer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 3,
+      "microsim": "histogram-explorer"
+    },
+    {
+      "id": "t-ch-03-ms-interactive-dotplot-builder",
+      "label": "MicroSim: interactive-dotplot-builder",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 3,
+      "microsim": "interactive-dotplot-builder"
+    },
+    {
+      "id": "t-ch-03-ms-outlier-detective",
+      "label": "MicroSim: outlier-detective",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 3,
+      "microsim": "outlier-detective"
+    },
+    {
+      "id": "t-ch-03-ms-skewness-explorer",
+      "label": "MicroSim: skewness-explorer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 3,
+      "microsim": "skewness-explorer"
+    },
+    {
+      "id": "t-ch-03-ms-socs-description-builder",
+      "label": "MicroSim: socs-description-builder",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 3,
+      "microsim": "socs-description-builder"
+    },
+    {
+      "id": "t-ch-03-ms-stemplot-constructor",
+      "label": "MicroSim: stemplot-constructor",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 3,
+      "microsim": "stemplot-constructor"
+    },
+    {
+      "id": "t-ch-03-ms-symmetric-distribution",
+      "label": "MicroSim: symmetric-distribution",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 3,
+      "microsim": "symmetric-distribution"
+    },
+    {
+      "id": "t-ch-04",
+      "label": "Numerical Summaries",
+      "type": "chapter",
+      "status": "done",
+      "chapter": 4
+    },
+    {
+      "id": "t-ch-04-content",
+      "label": "Generate Numerical Summaries Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 4
+    },
+    {
+      "id": "t-ch-04-microsims",
+      "label": "Generate Numerical Summaries MicroSims",
+      "type": "chapter-microsims",
+      "status": "done",
+      "chapter": 4
+    },
+    {
+      "id": "t-ch-04-ms-boxplot-builder",
+      "label": "MicroSim: boxplot-builder",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 4,
+      "microsim": "boxplot-builder"
+    },
+    {
+      "id": "t-ch-04-ms-boxplot-comparison",
+      "label": "MicroSim: boxplot-comparison",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 4,
+      "microsim": "boxplot-comparison"
+    },
+    {
+      "id": "t-ch-04-ms-mean-balance-point",
+      "label": "MicroSim: mean-balance-point",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 4,
+      "microsim": "mean-balance-point"
+    },
+    {
+      "id": "t-ch-04-ms-mean-median-skewness",
+      "label": "MicroSim: mean-median-skewness",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 4,
+      "microsim": "mean-median-skewness"
+    },
+    {
+      "id": "t-ch-04-ms-outlier-detection",
+      "label": "MicroSim: outlier-detection",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 4,
+      "microsim": "outlier-detection"
+    },
+    {
+      "id": "t-ch-04-ms-quartile-visualization",
+      "label": "MicroSim: quartile-visualization",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 4,
+      "microsim": "quartile-visualization"
+    },
+    {
+      "id": "t-ch-04-ms-std-dev-calculator",
+      "label": "MicroSim: std-dev-calculator",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 4,
+      "microsim": "std-dev-calculator"
+    },
+    {
+      "id": "t-ch-05",
+      "label": "Standardization and Normal Distributions",
+      "type": "chapter",
+      "status": "done",
+      "chapter": 5
+    },
+    {
+      "id": "t-ch-05-content",
+      "label": "Generate Standardization and Normal Distributions Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 5
+    },
+    {
+      "id": "t-ch-05-microsims",
+      "label": "Generate Standardization and Normal Distributions MicroSims",
+      "type": "chapter-microsims",
+      "status": "done",
+      "chapter": 5
+    },
+    {
+      "id": "t-ch-05-ms-density-curve-area",
+      "label": "MicroSim: density-curve-area",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 5,
+      "microsim": "density-curve-area"
+    },
+    {
+      "id": "t-ch-05-ms-empirical-rule",
+      "label": "MicroSim: empirical-rule",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 5,
+      "microsim": "empirical-rule"
+    },
+    {
+      "id": "t-ch-05-ms-normal-distribution-explorer",
+      "label": "MicroSim: normal-distribution-explorer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 5,
+      "microsim": "normal-distribution-explorer"
+    },
+    {
+      "id": "t-ch-05-ms-normal-probability-calc",
+      "label": "MicroSim: normal-probability-calc",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 5,
+      "microsim": "normal-probability-calc"
+    },
+    {
+      "id": "t-ch-05-ms-normal-probability-plot",
+      "label": "MicroSim: normal-probability-plot",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 5,
+      "microsim": "normal-probability-plot"
+    },
+    {
+      "id": "t-ch-05-ms-z-score-calculator",
+      "label": "MicroSim: z-score-calculator",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 5,
+      "microsim": "z-score-calculator"
+    },
+    {
+      "id": "t-ch-06",
+      "label": "Scatterplots and Association",
+      "type": "chapter",
+      "status": "done",
+      "chapter": 6
+    },
+    {
+      "id": "t-ch-06-content",
+      "label": "Generate Scatterplots and Association Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 6
+    },
+    {
+      "id": "t-ch-06-microsims",
+      "label": "Generate Scatterplots and Association MicroSims",
+      "type": "chapter-microsims",
+      "status": "done",
+      "chapter": 6
+    },
+    {
+      "id": "t-ch-06-ms-correlation-calculator",
+      "label": "MicroSim: correlation-calculator",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 6,
+      "microsim": "correlation-calculator"
+    },
+    {
+      "id": "t-ch-06-ms-correlation-pitfalls",
+      "label": "MicroSim: correlation-pitfalls",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 6,
+      "microsim": "correlation-pitfalls"
+    },
+    {
+      "id": "t-ch-06-ms-correlation-properties",
+      "label": "MicroSim: correlation-properties",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 6,
+      "microsim": "correlation-properties"
+    },
+    {
+      "id": "t-ch-06-ms-guess-correlation",
+      "label": "MicroSim: guess-correlation",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 6,
+      "microsim": "guess-correlation"
+    },
+    {
+      "id": "t-ch-06-ms-pattern-recognition-gallery",
+      "label": "MicroSim: pattern-recognition-gallery",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 6,
+      "microsim": "pattern-recognition-gallery"
+    },
+    {
+      "id": "t-ch-06-ms-scatterplot-builder",
+      "label": "MicroSim: scatterplot-builder",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 6,
+      "microsim": "scatterplot-builder"
+    },
+    {
+      "id": "t-ch-07",
+      "label": "Linear Regression",
+      "type": "chapter",
+      "status": "done",
+      "chapter": 7
+    },
+    {
+      "id": "t-ch-07-content",
+      "label": "Generate Linear Regression Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 7
+    },
+    {
+      "id": "t-ch-07-microsims",
+      "label": "Generate Linear Regression MicroSims",
+      "type": "chapter-microsims",
+      "status": "done",
+      "chapter": 7
+    },
+    {
+      "id": "t-ch-07-ms-influential-points-explorer",
+      "label": "MicroSim: influential-points-explorer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 7,
+      "microsim": "influential-points-explorer"
+    },
+    {
+      "id": "t-ch-07-ms-least-squares-explorer",
+      "label": "MicroSim: least-squares-explorer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 7,
+      "microsim": "least-squares-explorer"
+    },
+    {
+      "id": "t-ch-07-ms-regression-analysis-tool",
+      "label": "MicroSim: regression-analysis-tool",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 7,
+      "microsim": "regression-analysis-tool"
+    },
+    {
+      "id": "t-ch-07-ms-residual-calculator",
+      "label": "MicroSim: residual-calculator",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 7,
+      "microsim": "residual-calculator"
+    },
+    {
+      "id": "t-ch-07-ms-residual-plot-analyzer",
+      "label": "MicroSim: residual-plot-analyzer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 7,
+      "microsim": "residual-plot-analyzer"
+    },
+    {
+      "id": "t-ch-07-ms-slope-intercept-explorer",
+      "label": "MicroSim: slope-intercept-explorer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 7,
+      "microsim": "slope-intercept-explorer"
+    },
+    {
+      "id": "t-ch-08",
+      "label": "Causation and Study Design",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 8
+    },
+    {
+      "id": "t-ch-08-content",
+      "label": "Generate Causation and Study Design Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 8
+    },
+    {
+      "id": "t-ch-08-microsims",
+      "label": "Generate Causation and Study Design MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 8
+    },
+    {
+      "id": "t-ch-08-ms-confounding-variable-diagram",
+      "label": "MicroSim: confounding-variable-diagram",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 8,
+      "microsim": "confounding-variable-diagram"
+    },
+    {
+      "id": "t-ch-08-ms-correlation-causation-scenarios",
+      "label": "MicroSim: correlation-causation-scenarios",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 8,
+      "microsim": "correlation-causation-scenarios"
+    },
+    {
+      "id": "t-ch-08-ms-randomization-balance-sim",
+      "label": "MicroSim: randomization-balance-sim",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 8,
+      "microsim": "randomization-balance-sim"
+    },
+    {
+      "id": "t-ch-08-ms-simpsons-paradox-explorer",
+      "label": "MicroSim: simpsons-paradox-explorer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 8,
+      "microsim": "simpsons-paradox-explorer"
+    },
+    {
+      "id": "t-ch-08-ms-study-type-comparison",
+      "label": "MicroSim: study-type-comparison",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 8,
+      "microsim": "study-type-comparison"
+    },
+    {
+      "id": "t-ch-09",
+      "label": "Probability Fundamentals",
+      "type": "chapter",
+      "status": "done",
+      "chapter": 9
+    },
+    {
+      "id": "t-ch-09-content",
+      "label": "Generate Probability Fundamentals Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 9
+    },
+    {
+      "id": "t-ch-09-microsims",
+      "label": "Generate Probability Fundamentals MicroSims",
+      "type": "chapter-microsims",
+      "status": "done",
+      "chapter": 9
+    },
+    {
+      "id": "t-ch-09-ms-addition-rule-visualizer",
+      "label": "MicroSim: addition-rule-visualizer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 9,
+      "microsim": "addition-rule-visualizer"
+    },
+    {
+      "id": "t-ch-09-ms-law-large-numbers",
+      "label": "MicroSim: law-large-numbers",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 9,
+      "microsim": "law-large-numbers"
+    },
+    {
+      "id": "t-ch-09-ms-probability-simulation-lab",
+      "label": "MicroSim: probability-simulation-lab",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 9,
+      "microsim": "probability-simulation-lab"
+    },
+    {
+      "id": "t-ch-09-ms-sample-space-explorer",
+      "label": "MicroSim: sample-space-explorer",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 9,
+      "microsim": "sample-space-explorer"
+    },
+    {
+      "id": "t-ch-09-ms-venn-diagram-solver",
+      "label": "MicroSim: venn-diagram-solver",
+      "type": "microsim",
+      "status": "done",
+      "chapter": 9,
+      "microsim": "venn-diagram-solver"
+    },
+    {
+      "id": "t-ch-10",
+      "label": "Conditional Probability and Independence",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 10
+    },
+    {
+      "id": "t-ch-10-content",
+      "label": "Generate Conditional Probability and Independence Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 10
+    },
+    {
+      "id": "t-ch-10-microsims",
+      "label": "Generate Conditional Probability and Independence MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 10
+    },
+    {
+      "id": "t-ch-10-ms-bayes-theorem-visualizer",
+      "label": "MicroSim: bayes-theorem-visualizer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 10,
+      "microsim": "bayes-theorem-visualizer"
+    },
+    {
+      "id": "t-ch-10-ms-conditional-probability-calculator",
+      "label": "MicroSim: conditional-probability-calculator",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 10,
+      "microsim": "conditional-probability-calculator"
+    },
+    {
+      "id": "t-ch-10-ms-conditional-probability-table",
+      "label": "MicroSim: conditional-probability-table",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 10,
+      "microsim": "conditional-probability-table"
+    },
+    {
+      "id": "t-ch-10-ms-tree-diagram-builder",
+      "label": "MicroSim: tree-diagram-builder",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 10,
+      "microsim": "tree-diagram-builder"
+    },
+    {
+      "id": "t-ch-11",
+      "label": "Sampling and Bias",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 11
+    },
+    {
+      "id": "t-ch-11-content",
+      "label": "Generate Sampling and Bias Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 11
+    },
+    {
+      "id": "t-ch-11-microsims",
+      "label": "Generate Sampling and Bias MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 11
+    },
+    {
+      "id": "t-ch-11-ms-bias-variability-target",
+      "label": "MicroSim: bias-variability-target",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 11,
+      "microsim": "bias-variability-target"
+    },
+    {
+      "id": "t-ch-11-ms-question-wording-effects",
+      "label": "MicroSim: question-wording-effects",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 11,
+      "microsim": "question-wording-effects"
+    },
+    {
+      "id": "t-ch-11-ms-random-digit-table",
+      "label": "MicroSim: random-digit-table",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 11,
+      "microsim": "random-digit-table"
+    },
+    {
+      "id": "t-ch-11-ms-stratified-cluster-compare",
+      "label": "MicroSim: stratified-cluster-compare",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 11,
+      "microsim": "stratified-cluster-compare"
+    },
+    {
+      "id": "t-ch-11-ms-survey-design-checklist",
+      "label": "MicroSim: survey-design-checklist",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 11,
+      "microsim": "survey-design-checklist"
+    },
+    {
+      "id": "t-ch-11-ms-undercoverage-viz",
+      "label": "MicroSim: undercoverage-viz",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 11,
+      "microsim": "undercoverage-viz"
+    },
+    {
+      "id": "t-ch-12",
+      "label": "Experimental Design",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 12
+    },
+    {
+      "id": "t-ch-12-content",
+      "label": "Generate Experimental Design Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 12
+    },
+    {
+      "id": "t-ch-12-microsims",
+      "label": "Generate Experimental Design MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 12
+    },
+    {
+      "id": "t-ch-12-ms-blinding-flowchart",
+      "label": "MicroSim: blinding-flowchart",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 12,
+      "microsim": "blinding-flowchart"
+    },
+    {
+      "id": "t-ch-12-ms-experiment-planning-flowchart",
+      "label": "MicroSim: experiment-planning-flowchart",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 12,
+      "microsim": "experiment-planning-flowchart"
+    },
+    {
+      "id": "t-ch-12-ms-experimental-designs-compare",
+      "label": "MicroSim: experimental-designs-compare",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 12,
+      "microsim": "experimental-designs-compare"
+    },
+    {
+      "id": "t-ch-12-ms-factors-levels-tree",
+      "label": "MicroSim: factors-levels-tree",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 12,
+      "microsim": "factors-levels-tree"
+    },
+    {
+      "id": "t-ch-12-ms-random-assignment-simulator",
+      "label": "MicroSim: random-assignment-simulator",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 12,
+      "microsim": "random-assignment-simulator"
+    },
+    {
+      "id": "t-ch-12-ms-three-principles-experiment",
+      "label": "MicroSim: three-principles-experiment",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 12,
+      "microsim": "three-principles-experiment"
+    },
+    {
+      "id": "t-ch-12-ms-treatment-control-comparison",
+      "label": "MicroSim: treatment-control-comparison",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 12,
+      "microsim": "treatment-control-comparison"
+    },
+    {
+      "id": "t-ch-13",
+      "label": "Random Variables",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 13
+    },
+    {
+      "id": "t-ch-13-content",
+      "label": "Generate Random Variables Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 13
+    },
+    {
+      "id": "t-ch-13-microsims",
+      "label": "Generate Random Variables MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 13
+    },
+    {
+      "id": "t-ch-13-ms-binomial-probability-explorer",
+      "label": "MicroSim: binomial-probability-explorer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 13,
+      "microsim": "binomial-probability-explorer"
+    },
+    {
+      "id": "t-ch-13-ms-combining-random-variables",
+      "label": "MicroSim: combining-random-variables",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 13,
+      "microsim": "combining-random-variables"
+    },
+    {
+      "id": "t-ch-13-ms-expected-value-calculator",
+      "label": "MicroSim: expected-value-calculator",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 13,
+      "microsim": "expected-value-calculator"
+    },
+    {
+      "id": "t-ch-13-ms-geometric-distribution-sim",
+      "label": "MicroSim: geometric-distribution-sim",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 13,
+      "microsim": "geometric-distribution-sim"
+    },
+    {
+      "id": "t-ch-13-ms-probability-distribution-bar",
+      "label": "MicroSim: probability-distribution-bar",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 13,
+      "microsim": "probability-distribution-bar"
+    },
+    {
+      "id": "t-ch-13-ms-random-variable-concept-map",
+      "label": "MicroSim: random-variable-concept-map",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 13,
+      "microsim": "random-variable-concept-map"
+    },
+    {
+      "id": "t-ch-14",
+      "label": "Sampling Distributions",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 14
+    },
+    {
+      "id": "t-ch-14-content",
+      "label": "Generate Sampling Distributions Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 14
+    },
+    {
+      "id": "t-ch-14-microsims",
+      "label": "Generate Sampling Distributions MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 14
+    },
+    {
+      "id": "t-ch-14-ms-clt-demonstration",
+      "label": "MicroSim: clt-demonstration",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 14,
+      "microsim": "clt-demonstration"
+    },
+    {
+      "id": "t-ch-14-ms-inference-workflow",
+      "label": "MicroSim: inference-workflow",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 14,
+      "microsim": "inference-workflow"
+    },
+    {
+      "id": "t-ch-14-ms-sampling-distribution-calculator",
+      "label": "MicroSim: sampling-distribution-calculator",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 14,
+      "microsim": "sampling-distribution-calculator"
+    },
+    {
+      "id": "t-ch-14-ms-sampling-distribution-concept",
+      "label": "MicroSim: sampling-distribution-concept",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 14,
+      "microsim": "sampling-distribution-concept"
+    },
+    {
+      "id": "t-ch-14-ms-standard-error-explorer",
+      "label": "MicroSim: standard-error-explorer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 14,
+      "microsim": "standard-error-explorer"
+    },
+    {
+      "id": "t-ch-15",
+      "label": "Confidence Intervals",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 15
+    },
+    {
+      "id": "t-ch-15-content",
+      "label": "Generate Confidence Intervals Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 15
+    },
+    {
+      "id": "t-ch-15-microsims",
+      "label": "Generate Confidence Intervals MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 15
+    },
+    {
+      "id": "t-ch-15-ms-ci-construction-walkthrough",
+      "label": "MicroSim: ci-construction-walkthrough",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 15,
+      "microsim": "ci-construction-walkthrough"
+    },
+    {
+      "id": "t-ch-15-ms-confidence-level-simulator",
+      "label": "MicroSim: confidence-level-simulator",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 15,
+      "microsim": "confidence-level-simulator"
+    },
+    {
+      "id": "t-ch-15-ms-critical-value-visualizer",
+      "label": "MicroSim: critical-value-visualizer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 15,
+      "microsim": "critical-value-visualizer"
+    },
+    {
+      "id": "t-ch-15-ms-margin-of-error-explorer",
+      "label": "MicroSim: margin-of-error-explorer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 15,
+      "microsim": "margin-of-error-explorer"
+    },
+    {
+      "id": "t-ch-15-ms-point-vs-interval-estimate",
+      "label": "MicroSim: point-vs-interval-estimate",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 15,
+      "microsim": "point-vs-interval-estimate"
+    },
+    {
+      "id": "t-ch-15-ms-sample-size-calculator",
+      "label": "MicroSim: sample-size-calculator",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 15,
+      "microsim": "sample-size-calculator"
+    },
+    {
+      "id": "t-ch-16",
+      "label": "Hypothesis Testing",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 16
+    },
+    {
+      "id": "t-ch-16-content",
+      "label": "Generate Hypothesis Testing Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 16
+    },
+    {
+      "id": "t-ch-16-microsims",
+      "label": "Generate Hypothesis Testing MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 16
+    },
+    {
+      "id": "t-ch-16-ms-hypothesis-testing-flowchart",
+      "label": "MicroSim: hypothesis-testing-flowchart",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 16,
+      "microsim": "hypothesis-testing-flowchart"
+    },
+    {
+      "id": "t-ch-16-ms-p-value-visualizer",
+      "label": "MicroSim: p-value-visualizer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 16,
+      "microsim": "p-value-visualizer"
+    },
+    {
+      "id": "t-ch-16-ms-test-statistic-calculator",
+      "label": "MicroSim: test-statistic-calculator",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 16,
+      "microsim": "test-statistic-calculator"
+    },
+    {
+      "id": "t-ch-16-ms-two-proportion-test",
+      "label": "MicroSim: two-proportion-test",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 16,
+      "microsim": "two-proportion-test"
+    },
+    {
+      "id": "t-ch-16-ms-type-error-visualizer",
+      "label": "MicroSim: type-error-visualizer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 16,
+      "microsim": "type-error-visualizer"
+    },
+    {
+      "id": "t-ch-17",
+      "label": "Inference for Means",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 17
+    },
+    {
+      "id": "t-ch-17-content",
+      "label": "Generate Inference for Means Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 17
+    },
+    {
+      "id": "t-ch-17-microsims",
+      "label": "Generate Inference for Means MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 17
+    },
+    {
+      "id": "t-ch-17-ms-one-sample-t-interval",
+      "label": "MicroSim: one-sample-t-interval",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 17,
+      "microsim": "one-sample-t-interval"
+    },
+    {
+      "id": "t-ch-17-ms-paired-vs-independent",
+      "label": "MicroSim: paired-vs-independent",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 17,
+      "microsim": "paired-vs-independent"
+    },
+    {
+      "id": "t-ch-17-ms-t-critical-value-finder",
+      "label": "MicroSim: t-critical-value-finder",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 17,
+      "microsim": "t-critical-value-finder"
+    },
+    {
+      "id": "t-ch-17-ms-t-procedure-robustness",
+      "label": "MicroSim: t-procedure-robustness",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 17,
+      "microsim": "t-procedure-robustness"
+    },
+    {
+      "id": "t-ch-17-ms-t-vs-normal-comparison",
+      "label": "MicroSim: t-vs-normal-comparison",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 17,
+      "microsim": "t-vs-normal-comparison"
+    },
+    {
+      "id": "t-ch-17-ms-two-sample-t-test",
+      "label": "MicroSim: two-sample-t-test",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 17,
+      "microsim": "two-sample-t-test"
+    },
+    {
+      "id": "t-ch-18",
+      "label": "Chi-Square and Regression Inference",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 18
+    },
+    {
+      "id": "t-ch-18-content",
+      "label": "Generate Chi-Square and Regression Inference Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 18
+    },
+    {
+      "id": "t-ch-18-microsims",
+      "label": "Generate Chi-Square and Regression Inference MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 18
+    },
+    {
+      "id": "t-ch-18-ms-chi-square-calculation",
+      "label": "MicroSim: chi-square-calculation",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 18,
+      "microsim": "chi-square-calculation"
+    },
+    {
+      "id": "t-ch-18-ms-chi-square-distribution-shapes",
+      "label": "MicroSim: chi-square-distribution-shapes",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 18,
+      "microsim": "chi-square-distribution-shapes"
+    },
+    {
+      "id": "t-ch-18-ms-gof-test-simulator",
+      "label": "MicroSim: gof-test-simulator",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 18,
+      "microsim": "gof-test-simulator"
+    },
+    {
+      "id": "t-ch-18-ms-homogeneity-vs-independence",
+      "label": "MicroSim: homogeneity-vs-independence",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 18,
+      "microsim": "homogeneity-vs-independence"
+    },
+    {
+      "id": "t-ch-18-ms-regression-conditions-checker",
+      "label": "MicroSim: regression-conditions-checker",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 18,
+      "microsim": "regression-conditions-checker"
+    },
+    {
+      "id": "t-ch-18-ms-slope-confidence-interval",
+      "label": "MicroSim: slope-confidence-interval",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 18,
+      "microsim": "slope-confidence-interval"
+    },
+    {
+      "id": "t-ch-18-ms-slope-sampling-distribution",
+      "label": "MicroSim: slope-sampling-distribution",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 18,
+      "microsim": "slope-sampling-distribution"
+    },
+    {
+      "id": "t-ch-19",
+      "label": "Communication and Synthesis",
+      "type": "chapter",
+      "status": "in_progress",
+      "chapter": 19
+    },
+    {
+      "id": "t-ch-19-content",
+      "label": "Generate Communication and Synthesis Content",
+      "type": "chapter-content",
+      "status": "done",
+      "chapter": 19
+    },
+    {
+      "id": "t-ch-19-microsims",
+      "label": "Generate Communication and Synthesis MicroSims",
+      "type": "chapter-microsims",
+      "status": "todo",
+      "chapter": 19
+    },
+    {
+      "id": "t-ch-19-ms-ap-exam-checklist",
+      "label": "MicroSim: ap-exam-checklist",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 19,
+      "microsim": "ap-exam-checklist"
+    },
+    {
+      "id": "t-ch-19-ms-audience-communication-matcher",
+      "label": "MicroSim: audience-communication-matcher",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 19,
+      "microsim": "audience-communication-matcher"
+    },
+    {
+      "id": "t-ch-19-ms-effect-size-visualizer",
+      "label": "MicroSim: effect-size-visualizer",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 19,
+      "microsim": "effect-size-visualizer"
+    },
+    {
+      "id": "t-ch-19-ms-four-step-process-flowchart",
+      "label": "MicroSim: four-step-process-flowchart",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 19,
+      "microsim": "four-step-process-flowchart"
+    },
+    {
+      "id": "t-ch-19-ms-generalizability-target",
+      "label": "MicroSim: generalizability-target",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 19,
+      "microsim": "generalizability-target"
+    },
+    {
+      "id": "t-ch-19-ms-sample-size-margin-error",
+      "label": "MicroSim: sample-size-margin-error",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 19,
+      "microsim": "sample-size-margin-error"
+    },
+    {
+      "id": "t-ch-19-ms-stat-practical-sig-matrix",
+      "label": "MicroSim: stat-practical-sig-matrix",
+      "type": "microsim",
+      "status": "todo",
+      "chapter": 19,
+      "microsim": "stat-practical-sig-matrix"
+    }
+  ],
+  "edges": [
+    {
+      "from": "t-course-description",
+      "to": "t-learning-graph"
+    },
+    {
+      "from": "t-learning-graph",
+      "to": "t-book-structure"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-01"
+    },
+    {
+      "from": "t-ch-01",
+      "to": "t-ch-01-content"
+    },
+    {
+      "from": "t-ch-01",
+      "to": "t-ch-01-microsims"
+    },
+    {
+      "from": "t-ch-01-microsims",
+      "to": "t-ch-01-ms-discrete-continuous-numberline"
+    },
+    {
+      "from": "t-ch-01-microsims",
+      "to": "t-ch-01-ms-parameter-statistic-compare"
+    },
+    {
+      "from": "t-ch-01-microsims",
+      "to": "t-ch-01-ms-population-sample-visual"
+    },
+    {
+      "from": "t-ch-01-microsims",
+      "to": "t-ch-01-ms-study-design-map"
+    },
+    {
+      "from": "t-ch-01-microsims",
+      "to": "t-ch-01-ms-variable-types-concept-map"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-02"
+    },
+    {
+      "from": "t-ch-02",
+      "to": "t-ch-02-content"
+    },
+    {
+      "from": "t-ch-02",
+      "to": "t-ch-02-microsims"
+    },
+    {
+      "from": "t-ch-02-microsims",
+      "to": "t-ch-02-ms-association-detector"
+    },
+    {
+      "from": "t-ch-02-microsims",
+      "to": "t-ch-02-ms-association-strength-spectrum"
+    },
+    {
+      "from": "t-ch-02-microsims",
+      "to": "t-ch-02-ms-bar-graph-builder"
+    },
+    {
+      "from": "t-ch-02-microsims",
+      "to": "t-ch-02-ms-chapter-2-concept-map"
+    },
+    {
+      "from": "t-ch-02-microsims",
+      "to": "t-ch-02-ms-frequency-table-explorer"
+    },
+    {
+      "from": "t-ch-02-microsims",
+      "to": "t-ch-02-ms-pie-vs-bar-comparison"
+    },
+    {
+      "from": "t-ch-02-microsims",
+      "to": "t-ch-02-ms-two-way-table-calculator"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-03"
+    },
+    {
+      "from": "t-ch-03",
+      "to": "t-ch-03-content"
+    },
+    {
+      "from": "t-ch-03",
+      "to": "t-ch-03-microsims"
+    },
+    {
+      "from": "t-ch-03-microsims",
+      "to": "t-ch-03-ms-distribution-shape-gallery"
+    },
+    {
+      "from": "t-ch-03-microsims",
+      "to": "t-ch-03-ms-histogram-explorer"
+    },
+    {
+      "from": "t-ch-03-microsims",
+      "to": "t-ch-03-ms-interactive-dotplot-builder"
+    },
+    {
+      "from": "t-ch-03-microsims",
+      "to": "t-ch-03-ms-outlier-detective"
+    },
+    {
+      "from": "t-ch-03-microsims",
+      "to": "t-ch-03-ms-skewness-explorer"
+    },
+    {
+      "from": "t-ch-03-microsims",
+      "to": "t-ch-03-ms-socs-description-builder"
+    },
+    {
+      "from": "t-ch-03-microsims",
+      "to": "t-ch-03-ms-stemplot-constructor"
+    },
+    {
+      "from": "t-ch-03-microsims",
+      "to": "t-ch-03-ms-symmetric-distribution"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-04"
+    },
+    {
+      "from": "t-ch-04",
+      "to": "t-ch-04-content"
+    },
+    {
+      "from": "t-ch-04",
+      "to": "t-ch-04-microsims"
+    },
+    {
+      "from": "t-ch-04-microsims",
+      "to": "t-ch-04-ms-boxplot-builder"
+    },
+    {
+      "from": "t-ch-04-microsims",
+      "to": "t-ch-04-ms-boxplot-comparison"
+    },
+    {
+      "from": "t-ch-04-microsims",
+      "to": "t-ch-04-ms-mean-balance-point"
+    },
+    {
+      "from": "t-ch-04-microsims",
+      "to": "t-ch-04-ms-mean-median-skewness"
+    },
+    {
+      "from": "t-ch-04-microsims",
+      "to": "t-ch-04-ms-outlier-detection"
+    },
+    {
+      "from": "t-ch-04-microsims",
+      "to": "t-ch-04-ms-quartile-visualization"
+    },
+    {
+      "from": "t-ch-04-microsims",
+      "to": "t-ch-04-ms-std-dev-calculator"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-05"
+    },
+    {
+      "from": "t-ch-05",
+      "to": "t-ch-05-content"
+    },
+    {
+      "from": "t-ch-05",
+      "to": "t-ch-05-microsims"
+    },
+    {
+      "from": "t-ch-05-microsims",
+      "to": "t-ch-05-ms-density-curve-area"
+    },
+    {
+      "from": "t-ch-05-microsims",
+      "to": "t-ch-05-ms-empirical-rule"
+    },
+    {
+      "from": "t-ch-05-microsims",
+      "to": "t-ch-05-ms-normal-distribution-explorer"
+    },
+    {
+      "from": "t-ch-05-microsims",
+      "to": "t-ch-05-ms-normal-probability-calc"
+    },
+    {
+      "from": "t-ch-05-microsims",
+      "to": "t-ch-05-ms-normal-probability-plot"
+    },
+    {
+      "from": "t-ch-05-microsims",
+      "to": "t-ch-05-ms-z-score-calculator"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-06"
+    },
+    {
+      "from": "t-ch-06",
+      "to": "t-ch-06-content"
+    },
+    {
+      "from": "t-ch-06",
+      "to": "t-ch-06-microsims"
+    },
+    {
+      "from": "t-ch-06-microsims",
+      "to": "t-ch-06-ms-correlation-calculator"
+    },
+    {
+      "from": "t-ch-06-microsims",
+      "to": "t-ch-06-ms-correlation-pitfalls"
+    },
+    {
+      "from": "t-ch-06-microsims",
+      "to": "t-ch-06-ms-correlation-properties"
+    },
+    {
+      "from": "t-ch-06-microsims",
+      "to": "t-ch-06-ms-guess-correlation"
+    },
+    {
+      "from": "t-ch-06-microsims",
+      "to": "t-ch-06-ms-pattern-recognition-gallery"
+    },
+    {
+      "from": "t-ch-06-microsims",
+      "to": "t-ch-06-ms-scatterplot-builder"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-07"
+    },
+    {
+      "from": "t-ch-07",
+      "to": "t-ch-07-content"
+    },
+    {
+      "from": "t-ch-07",
+      "to": "t-ch-07-microsims"
+    },
+    {
+      "from": "t-ch-07-microsims",
+      "to": "t-ch-07-ms-influential-points-explorer"
+    },
+    {
+      "from": "t-ch-07-microsims",
+      "to": "t-ch-07-ms-least-squares-explorer"
+    },
+    {
+      "from": "t-ch-07-microsims",
+      "to": "t-ch-07-ms-regression-analysis-tool"
+    },
+    {
+      "from": "t-ch-07-microsims",
+      "to": "t-ch-07-ms-residual-calculator"
+    },
+    {
+      "from": "t-ch-07-microsims",
+      "to": "t-ch-07-ms-residual-plot-analyzer"
+    },
+    {
+      "from": "t-ch-07-microsims",
+      "to": "t-ch-07-ms-slope-intercept-explorer"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-08"
+    },
+    {
+      "from": "t-ch-08",
+      "to": "t-ch-08-content"
+    },
+    {
+      "from": "t-ch-08",
+      "to": "t-ch-08-microsims"
+    },
+    {
+      "from": "t-ch-08-microsims",
+      "to": "t-ch-08-ms-confounding-variable-diagram"
+    },
+    {
+      "from": "t-ch-08-microsims",
+      "to": "t-ch-08-ms-correlation-causation-scenarios"
+    },
+    {
+      "from": "t-ch-08-microsims",
+      "to": "t-ch-08-ms-randomization-balance-sim"
+    },
+    {
+      "from": "t-ch-08-microsims",
+      "to": "t-ch-08-ms-simpsons-paradox-explorer"
+    },
+    {
+      "from": "t-ch-08-microsims",
+      "to": "t-ch-08-ms-study-type-comparison"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-09"
+    },
+    {
+      "from": "t-ch-09",
+      "to": "t-ch-09-content"
+    },
+    {
+      "from": "t-ch-09",
+      "to": "t-ch-09-microsims"
+    },
+    {
+      "from": "t-ch-09-microsims",
+      "to": "t-ch-09-ms-addition-rule-visualizer"
+    },
+    {
+      "from": "t-ch-09-microsims",
+      "to": "t-ch-09-ms-law-large-numbers"
+    },
+    {
+      "from": "t-ch-09-microsims",
+      "to": "t-ch-09-ms-probability-simulation-lab"
+    },
+    {
+      "from": "t-ch-09-microsims",
+      "to": "t-ch-09-ms-sample-space-explorer"
+    },
+    {
+      "from": "t-ch-09-microsims",
+      "to": "t-ch-09-ms-venn-diagram-solver"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-10"
+    },
+    {
+      "from": "t-ch-10",
+      "to": "t-ch-10-content"
+    },
+    {
+      "from": "t-ch-10",
+      "to": "t-ch-10-microsims"
+    },
+    {
+      "from": "t-ch-10-microsims",
+      "to": "t-ch-10-ms-bayes-theorem-visualizer"
+    },
+    {
+      "from": "t-ch-10-microsims",
+      "to": "t-ch-10-ms-conditional-probability-calculator"
+    },
+    {
+      "from": "t-ch-10-microsims",
+      "to": "t-ch-10-ms-conditional-probability-table"
+    },
+    {
+      "from": "t-ch-10-microsims",
+      "to": "t-ch-10-ms-tree-diagram-builder"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-11"
+    },
+    {
+      "from": "t-ch-11",
+      "to": "t-ch-11-content"
+    },
+    {
+      "from": "t-ch-11",
+      "to": "t-ch-11-microsims"
+    },
+    {
+      "from": "t-ch-11-microsims",
+      "to": "t-ch-11-ms-bias-variability-target"
+    },
+    {
+      "from": "t-ch-11-microsims",
+      "to": "t-ch-11-ms-question-wording-effects"
+    },
+    {
+      "from": "t-ch-11-microsims",
+      "to": "t-ch-11-ms-random-digit-table"
+    },
+    {
+      "from": "t-ch-11-microsims",
+      "to": "t-ch-11-ms-stratified-cluster-compare"
+    },
+    {
+      "from": "t-ch-11-microsims",
+      "to": "t-ch-11-ms-survey-design-checklist"
+    },
+    {
+      "from": "t-ch-11-microsims",
+      "to": "t-ch-11-ms-undercoverage-viz"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-12"
+    },
+    {
+      "from": "t-ch-12",
+      "to": "t-ch-12-content"
+    },
+    {
+      "from": "t-ch-12",
+      "to": "t-ch-12-microsims"
+    },
+    {
+      "from": "t-ch-12-microsims",
+      "to": "t-ch-12-ms-blinding-flowchart"
+    },
+    {
+      "from": "t-ch-12-microsims",
+      "to": "t-ch-12-ms-experiment-planning-flowchart"
+    },
+    {
+      "from": "t-ch-12-microsims",
+      "to": "t-ch-12-ms-experimental-designs-compare"
+    },
+    {
+      "from": "t-ch-12-microsims",
+      "to": "t-ch-12-ms-factors-levels-tree"
+    },
+    {
+      "from": "t-ch-12-microsims",
+      "to": "t-ch-12-ms-random-assignment-simulator"
+    },
+    {
+      "from": "t-ch-12-microsims",
+      "to": "t-ch-12-ms-three-principles-experiment"
+    },
+    {
+      "from": "t-ch-12-microsims",
+      "to": "t-ch-12-ms-treatment-control-comparison"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-13"
+    },
+    {
+      "from": "t-ch-13",
+      "to": "t-ch-13-content"
+    },
+    {
+      "from": "t-ch-13",
+      "to": "t-ch-13-microsims"
+    },
+    {
+      "from": "t-ch-13-microsims",
+      "to": "t-ch-13-ms-binomial-probability-explorer"
+    },
+    {
+      "from": "t-ch-13-microsims",
+      "to": "t-ch-13-ms-combining-random-variables"
+    },
+    {
+      "from": "t-ch-13-microsims",
+      "to": "t-ch-13-ms-expected-value-calculator"
+    },
+    {
+      "from": "t-ch-13-microsims",
+      "to": "t-ch-13-ms-geometric-distribution-sim"
+    },
+    {
+      "from": "t-ch-13-microsims",
+      "to": "t-ch-13-ms-probability-distribution-bar"
+    },
+    {
+      "from": "t-ch-13-microsims",
+      "to": "t-ch-13-ms-random-variable-concept-map"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-14"
+    },
+    {
+      "from": "t-ch-14",
+      "to": "t-ch-14-content"
+    },
+    {
+      "from": "t-ch-14",
+      "to": "t-ch-14-microsims"
+    },
+    {
+      "from": "t-ch-14-microsims",
+      "to": "t-ch-14-ms-clt-demonstration"
+    },
+    {
+      "from": "t-ch-14-microsims",
+      "to": "t-ch-14-ms-inference-workflow"
+    },
+    {
+      "from": "t-ch-14-microsims",
+      "to": "t-ch-14-ms-sampling-distribution-calculator"
+    },
+    {
+      "from": "t-ch-14-microsims",
+      "to": "t-ch-14-ms-sampling-distribution-concept"
+    },
+    {
+      "from": "t-ch-14-microsims",
+      "to": "t-ch-14-ms-standard-error-explorer"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-15"
+    },
+    {
+      "from": "t-ch-15",
+      "to": "t-ch-15-content"
+    },
+    {
+      "from": "t-ch-15",
+      "to": "t-ch-15-microsims"
+    },
+    {
+      "from": "t-ch-15-microsims",
+      "to": "t-ch-15-ms-ci-construction-walkthrough"
+    },
+    {
+      "from": "t-ch-15-microsims",
+      "to": "t-ch-15-ms-confidence-level-simulator"
+    },
+    {
+      "from": "t-ch-15-microsims",
+      "to": "t-ch-15-ms-critical-value-visualizer"
+    },
+    {
+      "from": "t-ch-15-microsims",
+      "to": "t-ch-15-ms-margin-of-error-explorer"
+    },
+    {
+      "from": "t-ch-15-microsims",
+      "to": "t-ch-15-ms-point-vs-interval-estimate"
+    },
+    {
+      "from": "t-ch-15-microsims",
+      "to": "t-ch-15-ms-sample-size-calculator"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-16"
+    },
+    {
+      "from": "t-ch-16",
+      "to": "t-ch-16-content"
+    },
+    {
+      "from": "t-ch-16",
+      "to": "t-ch-16-microsims"
+    },
+    {
+      "from": "t-ch-16-microsims",
+      "to": "t-ch-16-ms-hypothesis-testing-flowchart"
+    },
+    {
+      "from": "t-ch-16-microsims",
+      "to": "t-ch-16-ms-p-value-visualizer"
+    },
+    {
+      "from": "t-ch-16-microsims",
+      "to": "t-ch-16-ms-test-statistic-calculator"
+    },
+    {
+      "from": "t-ch-16-microsims",
+      "to": "t-ch-16-ms-two-proportion-test"
+    },
+    {
+      "from": "t-ch-16-microsims",
+      "to": "t-ch-16-ms-type-error-visualizer"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-17"
+    },
+    {
+      "from": "t-ch-17",
+      "to": "t-ch-17-content"
+    },
+    {
+      "from": "t-ch-17",
+      "to": "t-ch-17-microsims"
+    },
+    {
+      "from": "t-ch-17-microsims",
+      "to": "t-ch-17-ms-one-sample-t-interval"
+    },
+    {
+      "from": "t-ch-17-microsims",
+      "to": "t-ch-17-ms-paired-vs-independent"
+    },
+    {
+      "from": "t-ch-17-microsims",
+      "to": "t-ch-17-ms-t-critical-value-finder"
+    },
+    {
+      "from": "t-ch-17-microsims",
+      "to": "t-ch-17-ms-t-procedure-robustness"
+    },
+    {
+      "from": "t-ch-17-microsims",
+      "to": "t-ch-17-ms-t-vs-normal-comparison"
+    },
+    {
+      "from": "t-ch-17-microsims",
+      "to": "t-ch-17-ms-two-sample-t-test"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-18"
+    },
+    {
+      "from": "t-ch-18",
+      "to": "t-ch-18-content"
+    },
+    {
+      "from": "t-ch-18",
+      "to": "t-ch-18-microsims"
+    },
+    {
+      "from": "t-ch-18-microsims",
+      "to": "t-ch-18-ms-chi-square-calculation"
+    },
+    {
+      "from": "t-ch-18-microsims",
+      "to": "t-ch-18-ms-chi-square-distribution-shapes"
+    },
+    {
+      "from": "t-ch-18-microsims",
+      "to": "t-ch-18-ms-gof-test-simulator"
+    },
+    {
+      "from": "t-ch-18-microsims",
+      "to": "t-ch-18-ms-homogeneity-vs-independence"
+    },
+    {
+      "from": "t-ch-18-microsims",
+      "to": "t-ch-18-ms-regression-conditions-checker"
+    },
+    {
+      "from": "t-ch-18-microsims",
+      "to": "t-ch-18-ms-slope-confidence-interval"
+    },
+    {
+      "from": "t-ch-18-microsims",
+      "to": "t-ch-18-ms-slope-sampling-distribution"
+    },
+    {
+      "from": "t-book-structure",
+      "to": "t-ch-19"
+    },
+    {
+      "from": "t-ch-19",
+      "to": "t-ch-19-content"
+    },
+    {
+      "from": "t-ch-19",
+      "to": "t-ch-19-microsims"
+    },
+    {
+      "from": "t-ch-19-microsims",
+      "to": "t-ch-19-ms-ap-exam-checklist"
+    },
+    {
+      "from": "t-ch-19-microsims",
+      "to": "t-ch-19-ms-audience-communication-matcher"
+    },
+    {
+      "from": "t-ch-19-microsims",
+      "to": "t-ch-19-ms-effect-size-visualizer"
+    },
+    {
+      "from": "t-ch-19-microsims",
+      "to": "t-ch-19-ms-four-step-process-flowchart"
+    },
+    {
+      "from": "t-ch-19-microsims",
+      "to": "t-ch-19-ms-generalizability-target"
+    },
+    {
+      "from": "t-ch-19-microsims",
+      "to": "t-ch-19-ms-sample-size-margin-error"
+    },
+    {
+      "from": "t-ch-19-microsims",
+      "to": "t-ch-19-ms-stat-practical-sig-matrix"
+    }
+  ]
+}
