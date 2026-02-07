@@ -1,0 +1,44 @@
+{
+  "title": "Slope Confidence Interval",
+  "description": "Interactive visualization for constructing and interpreting confidence intervals for regression slopes, with coverage simulation showing interval capture rates.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Regression",
+    "Confidence Intervals",
+    "Inference for Slope",
+    "T-Interval"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/slope-confidence-interval/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply",
+    "Analyze"
+  ],
+  "concepts": [
+    "Confidence Interval for Slope",
+    "Standard Error of Slope",
+    "T-Interval",
+    "Margin of Error",
+    "Coverage Probability"
+  ],
+  "prerequisites": [
+    "Confidence interval concept",
+    "Standard error concept",
+    "T-distribution",
+    "Linear regression basics"
+  ],
+  "library": "p5.js"
+}

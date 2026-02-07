@@ -1,0 +1,40 @@
+{
+  "title": "Combining Random Variables Visualizer",
+  "description": "Interactive visualization showing how means and variances combine when adding or subtracting independent random variables. Demonstrates the key insight that variances always add.",
+  "creator": "Statistics Course Team",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Probability",
+    "Random Variables",
+    "Variance"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/combining-random-variables/",
+  "publisher": "Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Combining Random Variables",
+    "Sum of Random Variables",
+    "Difference of RVs",
+    "Variance of Random Variable",
+    "Standard Deviation of RV"
+  ],
+  "prerequisites": [
+    "Understanding of expected value",
+    "Understanding of variance and standard deviation"
+  ],
+  "library": "p5.js"
+}

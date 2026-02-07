@@ -133,58 +133,6 @@ Notice how the critical values decrease as degrees of freedom increase, approach
 
 <iframe src="../../sims/t-vs-normal-comparison/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>T-Distribution vs Normal Distribution Comparison</summary>
-Type: microsim
-
-Bloom Level: Understand (L2)
-Bloom Verb: Compare, contrast
-
-Learning Objective: Students will compare the shapes of t-distributions with different degrees of freedom to the standard normal distribution, understanding how heavier tails affect inference.
-
-Data Visibility Requirements:
-- Stage 1: Show standard normal distribution (Z) as baseline curve in blue
-- Stage 2: Overlay t-distribution with user-selected df in orange/red
-- Stage 3: Show critical values for both distributions at 95% confidence level
-- Stage 4: Display area in tails for both distributions
-
-Visual Elements:
-- Two overlapping distribution curves on same axes
-- Standard normal curve (blue, solid line)
-- T-distribution curve (orange, dashed line initially)
-- Shaded tail areas showing 2.5% in each tail
-- Vertical lines marking critical values
-- Legend showing which curve is which
-
-Interactive Controls:
-- Slider: Degrees of freedom (df) from 1 to 100
-- Radio buttons: Show 90%, 95%, or 99% confidence level
-- Checkbox: Show/hide shaded tail areas
-- Checkbox: Show/hide critical value lines
-
-Display Panel (right side):
-- Current df value
-- t critical value for selected confidence level
-- z critical value for comparison
-- Difference between t* and z*
-
-Default Parameters:
-- df = 5
-- Confidence level = 95%
-- Tail areas shown
-- Critical values shown
-
-Behavior:
-- As df slider moves, t-distribution curve smoothly transitions
-- Critical value lines and tail areas update in real-time
-- At high df (100+), curves should nearly overlap
-- At low df (1-5), t-distribution should have noticeably heavier tails
-
-Instructional Rationale: Slider exploration is appropriate because the Apply/compare objective requires learners to see how the parameter (df) affects the distribution shape. Real-time visual feedback helps build intuition about why small samples produce wider intervals.
-
-Implementation: p5.js with canvas-based controls
-</details>
-
 ---
 
 ## Degrees of Freedom
@@ -242,43 +190,6 @@ Most statistics courses use t-tables, calculators, or statistical software to fi
 #### Diagram: Interactive T Critical Value Finder
 
 <iframe src="../../sims/t-critical-value-finder/main.html" width="100%" height="400px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Interactive T Critical Value Finder</summary>
-Type: microsim
-
-Bloom Level: Apply (L3)
-Bloom Verb: Calculate, use
-
-Learning Objective: Students will find t critical values for different degrees of freedom and confidence levels, connecting the visual representation to the numerical values used in formulas.
-
-Visual Elements:
-- T-distribution curve centered on canvas
-- Shaded regions showing tail areas or central area
-- Vertical lines at critical values
-- Labels showing t* values on the axis
-
-Interactive Controls:
-- Slider: Degrees of freedom (1 to 100)
-- Dropdown: Select test type (Two-sided, Right-tailed, Left-tailed)
-- Dropdown: Select confidence/significance level (90%, 95%, 99%)
-- Toggle: Show confidence interval view vs. hypothesis test view
-
-Display Panel:
-- Current df
-- t* critical value(s)
-- Shaded area percentage
-- Comparison to z* (when df > 30)
-
-Behavior:
-- Curve shape updates smoothly with df changes
-- Shaded areas and critical value lines update in real-time
-- For two-sided: shade both tails
-- For one-sided: shade appropriate tail
-- Display exact t* value rounded to 3 decimal places
-
-Implementation: p5.js with canvas-based controls
-</details>
 
 ---
 
@@ -386,59 +297,6 @@ We are 95% confident that the true mean weekly homework time for all high school
 #### Diagram: One-Sample T-Interval Calculator
 
 <iframe src="../../sims/one-sample-t-interval/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>One-Sample T-Interval Calculator</summary>
-Type: microsim
-
-Bloom Level: Apply (L3)
-Bloom Verb: Calculate, demonstrate
-
-Learning Objective: Students will construct and interpret one-sample t-intervals for a population mean by entering sample statistics and seeing the step-by-step calculation process.
-
-Data Visibility Requirements:
-- Stage 1: Show input values (x̄, s, n, confidence level)
-- Stage 2: Show df calculation (n - 1)
-- Stage 3: Show t* lookup with visual on distribution
-- Stage 4: Show SE calculation (s / √n)
-- Stage 5: Show margin of error (t* × SE)
-- Stage 6: Show final interval (x̄ ± ME)
-
-Visual Elements:
-- Input form for sample statistics
-- Step-by-step calculation display
-- T-distribution curve with shaded confidence region
-- Number line showing the confidence interval
-- Written interpretation in proper statistical language
-
-Interactive Controls:
-- Number input: Sample mean (x̄)
-- Number input: Sample standard deviation (s)
-- Number input: Sample size (n)
-- Dropdown: Confidence level (90%, 95%, 99%)
-- Button: Calculate
-
-Display Areas:
-- Left: Calculation steps with formulas and values
-- Right: T-distribution visualization
-- Bottom: Number line with interval marked
-- Below: Written interpretation template
-
-Behavior:
-- Validate inputs (n ≥ 2, s > 0)
-- Display df warning if n < 15 (check normality)
-- Show each calculation step when Calculate is pressed
-- Animate the interval appearing on the number line
-- Generate proper interpretation sentence
-
-Default Values:
-- x̄ = 8.2
-- s = 3.1
-- n = 25
-- Confidence = 95%
-
-Implementation: p5.js with canvas-based input fields
-</details>
 
 ---
 
@@ -597,55 +455,6 @@ With df = \( n_1 + n_2 - 2 \).
 
 <iframe src="../../sims/two-sample-t-test/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Two-Sample T-Test Visualization</summary>
-Type: microsim
-
-Bloom Level: Analyze (L4)
-Bloom Verb: Compare, differentiate
-
-Learning Objective: Students will compare two group means visually and statistically, understanding when the difference is statistically significant versus when overlap makes conclusions uncertain.
-
-Visual Elements:
-- Two dotplots or histograms showing sample data (side by side or stacked)
-- Vertical lines at each sample mean
-- Display of sample statistics for each group
-- Number line showing confidence interval for μ₁ - μ₂
-- T-distribution with test statistic marked
-
-Interactive Controls:
-- Input fields for: n₁, x̄₁, s₁, n₂, x̄₂, s₂
-- OR ability to generate random samples with specified parameters
-- Dropdown: Confidence level / significance level
-- Radio buttons: Alternative hypothesis direction
-- Button: Perform test
-
-Display Areas:
-- Top: Visual comparison of two groups
-- Middle: Summary statistics table
-- Bottom-left: Confidence interval for difference
-- Bottom-right: Hypothesis test results (t-statistic, df, p-value)
-
-Data Visibility:
-- Show both sample distributions
-- Mark means with clear visual indicators
-- Display difference between means prominently
-- Show whether CI for difference includes 0
-
-Behavior:
-- When user changes inputs, visualizations update
-- Highlight when p < α (statistically significant)
-- Show connection: if 0 is not in CI, test rejects H₀
-- Display interpretation in words
-
-Default Values:
-- Group 1: n₁ = 30, x̄₁ = 78, s₁ = 10
-- Group 2: n₂ = 32, x̄₂ = 72, s₂ = 12
-- α = 0.05
-
-Implementation: p5.js with canvas-based controls
-</details>
-
 ---
 
 ## Paired Data and the Paired T-Test
@@ -743,55 +552,6 @@ There is convincing statistical evidence that the new study technique improves t
 
 <iframe src="../../sims/paired-vs-independent/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Paired vs Independent Data Decision Flowchart</summary>
-Type: infographic
-
-Bloom Level: Analyze (L4)
-Bloom Verb: Differentiate, distinguish
-
-Learning Objective: Students will correctly identify whether a given scenario calls for paired or independent samples t-procedures by following a decision flowchart.
-
-Layout: Decision tree flowchart with yes/no branches
-
-Starting Question: "Comparing two groups?"
-
-Branch 1: "Are the same individuals measured twice?"
-- Yes → Paired data
-- No → Continue to Branch 2
-
-Branch 2: "Are individuals deliberately matched into pairs?"
-- Yes → Paired data
-- No → Continue to Branch 3
-
-Branch 3: "Is there any natural one-to-one connection between observations?"
-- Yes → Paired data
-- No → Independent samples
-
-End Nodes:
-- "Paired data → Use paired t-test (analyze differences)"
-- "Independent samples → Use two-sample t-test"
-
-Visual Style:
-- Diamond shapes for decision points
-- Rectangular boxes for conclusions
-- Green arrows for "Yes"
-- Orange arrows for "No"
-- Sylvia illustration at start with speech bubble
-
-Interactive Features:
-- Hover over each node for example scenario
-- Click end nodes for summary of appropriate procedure
-- Optional: Quiz mode where students classify scenarios
-
-Color Scheme:
-- Sylvia green for decision diamonds
-- Auburn accent for conclusion boxes
-- Cream background
-
-Implementation: HTML/CSS/JavaScript or p5.js
-</details>
-
 ---
 
 ## Why Pairing Matters: The Advantage of Paired Design
@@ -874,57 +634,6 @@ A procedure is **robust** if it gives reasonably accurate results even when some
 #### Diagram: Robustness Exploration MicroSim
 
 <iframe src="../../sims/t-procedure-robustness/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Robustness Exploration MicroSim</summary>
-Type: microsim
-
-Bloom Level: Evaluate (L5)
-Bloom Verb: Judge, assess
-
-Learning Objective: Students will assess how violations of the normality condition affect the reliability of t-procedures by simulating many samples from populations with different shapes and observing the actual confidence interval coverage rates.
-
-Data Visibility Requirements:
-- Show population distribution shape
-- Generate many (100+) samples of specified size
-- Calculate confidence interval for each sample
-- Track what percentage of intervals contain the true μ
-- Compare to nominal confidence level
-
-Visual Elements:
-- Population distribution display (normal, skewed, uniform, with outliers)
-- Animation of sample CIs being generated
-- Running count of "hits" (CI contains μ) vs "misses"
-- Bar chart comparing actual coverage to nominal level
-- Final summary statistics
-
-Interactive Controls:
-- Dropdown: Population shape (Normal, Right-skewed, Left-skewed, Uniform, With outliers)
-- Slider: Sample size (5, 10, 15, 20, 30, 50, 100)
-- Slider: Number of simulations (100, 500, 1000)
-- Button: Run simulation
-- Radio: Confidence level (90%, 95%, 99%)
-
-Display Areas:
-- Top: Population distribution visualization
-- Middle: Animation of samples and CIs
-- Bottom: Summary comparing actual vs. expected coverage
-
-Key Metrics Shown:
-- Nominal confidence level (e.g., 95%)
-- Actual coverage rate (e.g., 93.4%)
-- Whether the difference is concerning
-
-Expected Behavior:
-- Normal population: coverage ≈ nominal at all sample sizes
-- Skewed population, small n: coverage < nominal
-- Skewed population, large n: coverage ≈ nominal (robustness!)
-- Outliers: coverage varies depending on severity
-
-Instructional Rationale: Simulation is appropriate for the Evaluate objective because students need to see empirical evidence of how robustness works. Seeing actual coverage rates helps them judge when to trust t-procedures.
-
-Implementation: p5.js with canvas-based controls
-</details>
 
 ---
 

@@ -1,0 +1,43 @@
+{
+  "title": "Slope Sampling Distribution",
+  "description": "Interactive visualization demonstrating how sample regression slopes vary under repeated sampling, building intuition for why inference procedures are needed for regression analysis.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Regression",
+    "Sampling Distribution",
+    "Standard Error",
+    "Inference for Slope"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/slope-sampling-distribution/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Sampling Distribution",
+    "Standard Error of Slope",
+    "Sample Variability",
+    "Regression Inference",
+    "Unbiased Estimator"
+  ],
+  "prerequisites": [
+    "Linear regression basics",
+    "Sampling distributions concept",
+    "Standard error concept"
+  ],
+  "library": "p5.js"
+}

@@ -42,36 +42,11 @@ Here's the crucial distinction:
 - **Unbiased Estimator**: A sampling method where, on average, the sample statistic equals the population parameter. If you repeated the sampling process many times, the results would center on the true value.
 - **Biased Estimator**: A sampling method that consistently overestimates or underestimates the population parameter. No matter how many samples you take, your results systematically miss the mark.
 
-<details markdown="1">
-<summary>Show/Hide</summary>
+### Bias vs. Variability: The Target Metaphor
 
-#### Diagram: Bias vs. Variability Target Visualization
+<iframe src="../../sims/bias-variability-target/main.html" height="452px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
 
-Create an interactive MicroSim showing the classic "target" diagram illustrating bias and variability.
-
-**Learning Objective**: Students will understand the difference between bias (systematic error) and variability (random error) through a visual target metaphor.
-
-**Inputs**:
-
-- Dropdown selector: "Low Bias/Low Variability", "Low Bias/High Variability", "High Bias/Low Variability", "High Bias/High Variability"
-- Button to generate new random sample points
-
-**Outputs**:
-
-- Target with bullseye representing the true population parameter
-- Dots representing sample estimates scattered according to the selected bias/variability combination
-- Visual explanation text updating based on selection
-
-**Behavior**:
-
-- Low Bias/Low Variability: Dots cluster tightly around the bullseye center
-- Low Bias/High Variability: Dots spread widely but centered on bullseye
-- High Bias/Low Variability: Dots cluster tightly but away from center
-- High Bias/High Variability: Dots spread widely and off-center
-
-**Size**: 600 x 450 pixels
-
-</details>
+[Open Bias vs. Variability Target Fullscreen](../../sims/bias-variability-target/main.html){ .md-button .md-button--primary }
 
 The target diagram helps visualize this concept:
 
@@ -119,40 +94,11 @@ Suppose you have 50 students numbered 01-50, and you want to select 5 for your s
 
 Your sample: Students 07, 12, 29, 33, 41
 
-<details markdown="1">
-<summary>Show/Hide</summary>
+### Try It: Random Digit Table Simulator
 
-#### Diagram: Random Digit Table Simulator
+<iframe src="../../sims/random-digit-table/main.html" height="502px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
 
-Create an interactive MicroSim demonstrating how to use a random digit table for sampling.
-
-**Learning Objective**: Students will practice using a random digit table to select a simple random sample.
-
-**Inputs**:
-
-- Population size input (1-999)
-- Sample size input (1-50)
-- Starting row and column position in the table
-- "Generate New Table" button
-- "Step Through Selection" button
-
-**Outputs**:
-
-- Displayed random digit table (10 rows x 20 digits)
-- Highlighted digits as user steps through
-- Running list of selected sample members
-- Explanation of why each number was accepted/rejected
-
-**Behavior**:
-
-- Determines how many digits to read based on population size
-- Highlights current position in table
-- Shows skip reasons (out of range, already selected)
-- Counts until sample is complete
-
-**Size**: 700 x 500 pixels
-
-</details>
+[Open Random Digit Table Simulator Fullscreen](../../sims/random-digit-table/main.html){ .md-button .md-button--primary }
 
 **Advantages of SRS**:
 
@@ -213,36 +159,11 @@ A **cluster sample** divides the population into groups called clusters, randoml
 
 This is much cheaper than creating a list of all U.S. high school students and sampling from it directly.
 
-<details markdown="1">
-<summary>Show/Hide</summary>
+### Stratified vs. Cluster: See the Difference
 
-#### Diagram: Stratified vs. Cluster Sampling Comparison
+<iframe src="../../sims/stratified-cluster-compare/main.html" height="502px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
 
-Create an interactive MicroSim comparing stratified and cluster sampling visually.
-
-**Learning Objective**: Students will distinguish between stratified and cluster sampling approaches.
-
-**Inputs**:
-
-- Toggle between "Stratified" and "Cluster" sampling mode
-- Population displayed as a grid of colored dots (colors represent strata/clusters)
-- "Select Sample" button
-
-**Outputs**:
-
-- Visual highlighting of selected individuals
-- Count of individuals selected from each group
-- Text explanation of the sampling process used
-
-**Behavior**:
-
-- Stratified mode: Shows population divided into horizontal strata; randomly selects from EACH stratum
-- Cluster mode: Shows population divided into vertical clusters; selects entire clusters randomly
-- Clear visual distinction between the two approaches
-
-**Size**: 650 x 500 pixels
-
-</details>
+[Open Stratified vs. Cluster Comparison Fullscreen](../../sims/stratified-cluster-compare/main.html){ .md-button .md-button--primary }
 
 **When to use cluster sampling**:
 
@@ -330,39 +251,11 @@ Even with good sampling methods, bias can sneak in through other doors. Let's ex
 
 **Historical example**: The 1936 Literary Digest poll predicted Alf Landon would defeat Franklin Roosevelt in a landslide. They surveyed people from phone directories and automobile registrations—but during the Great Depression, many Roosevelt supporters couldn't afford phones or cars. The poll suffered from severe undercoverage of lower-income voters.
 
-<details markdown="1">
-<summary>Show/Hide</summary>
+### Explore Undercoverage
 
-#### Diagram: Undercoverage Visualization
+<iframe src="../../sims/undercoverage-viz/main.html" height="472px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
 
-Create an interactive MicroSim demonstrating how undercoverage affects sample estimates.
-
-**Learning Objective**: Students will understand how incomplete sampling frames lead to biased estimates.
-
-**Inputs**:
-
-- Population with two groups: "covered" and "undercovered"
-- Slider: percentage of population undercovered (0-50%)
-- Slider: difference in response between covered/undercovered groups
-- "Take Sample" button
-
-**Outputs**:
-
-- Visual representation of population and sample
-- True population proportion
-- Sample estimate
-- Bias = (sample estimate) - (true proportion)
-- Explanation of how undercoverage affected the result
-
-**Behavior**:
-
-- Shows grayed-out undercovered individuals who cannot be sampled
-- Sample taken only from covered portion
-- Demonstrates how different values in the undercovered group lead to biased estimates
-
-**Size**: 600 x 450 pixels
-
-</details>
+[Open Undercoverage Visualization Fullscreen](../../sims/undercoverage-viz/main.html){ .md-button .md-button--primary }
 
 ### Nonresponse Bias
 
@@ -423,36 +316,11 @@ The **wording of questions** can dramatically influence responses. Even small ch
 
 All three ask about limits on speech, but the framing dramatically affects answers.
 
-<details markdown="1">
-<summary>Show/Hide</summary>
+### See Question Wording in Action
 
-#### Diagram: Question Wording Effects Simulator
+<iframe src="../../sims/question-wording-effects/main.html" height="502px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
 
-Create an interactive MicroSim demonstrating how question wording affects survey responses.
-
-**Learning Objective**: Students will recognize how subtle changes in question wording can produce different response patterns.
-
-**Inputs**:
-
-- Topic selector (e.g., environmental policy, school rules, technology use)
-- Three versions of a question on the same topic with different wording (neutral, positively framed, negatively framed)
-- Radio button to select which version to "send"
-
-**Outputs**:
-
-- Simulated response distribution for each question version
-- Bar chart comparing support levels across different wordings
-- Highlighted words that create the framing effect
-
-**Behavior**:
-
-- Shows how the same underlying topic yields different apparent "public opinion" based on wording
-- Identifies specific word choices that trigger bias
-- Explains the psychological mechanism behind each bias
-
-**Size**: 650 x 500 pixels
-
-</details>
+[Open Question Wording Effects Simulator Fullscreen](../../sims/question-wording-effects/main.html){ .md-button .md-button--primary }
 
 ## Designing Surveys: Putting It All Together
 
@@ -510,38 +378,11 @@ Before full deployment:
 - Check how long the survey takes
 - Revise based on feedback
 
-<details markdown="1">
-<summary>Show/Hide</summary>
+### Practice: Survey Design Checklist
 
-#### Diagram: Survey Design Checklist Interactive
+<iframe src="../../sims/survey-design-checklist/main.html" height="552px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
 
-Create an interactive MicroSim that walks students through evaluating survey quality.
-
-**Learning Objective**: Students will apply survey design principles to evaluate and improve sample surveys.
-
-**Inputs**:
-
-- Display a sample survey scenario with potential problems
-- Checklist of survey quality criteria
-- Text field for student suggestions
-
-**Outputs**:
-
-- Highlighted problems in the survey
-- Score based on criteria met
-- Suggested improvements
-- "Before and After" comparison when fixes are applied
-
-**Behavior**:
-
-- Present 3-4 different survey scenarios with various flaws
-- Allow students to identify problems using the checklist
-- Show improved version when student correctly identifies issues
-- Track which types of problems are hardest to spot
-
-**Size**: 700 x 550 pixels
-
-</details>
+[Open Survey Design Checklist Fullscreen](../../sims/survey-design-checklist/main.html){ .md-button .md-button--primary }
 
 *"Time to squirrel away this knowledge!"* Sylvia summarizes. *"Good surveys don't just happen—they're carefully designed. Every choice you make, from who you sample to how you phrase questions, affects the quality of your data."*
 

@@ -1,0 +1,43 @@
+{
+  "title": "P-Value Visualizer",
+  "description": "Interactive visualization of p-values as shaded areas under the standard normal distribution. Students can adjust z-scores and toggle between one-sided and two-sided tests to understand how p-values represent probability of extreme results.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Hypothesis Testing",
+    "P-Value",
+    "Normal Distribution",
+    "Statistical Significance"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/p-value-visualizer/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "P-Value",
+    "Test Statistic",
+    "One-Sided Test",
+    "Two-Sided Test",
+    "Statistical Significance",
+    "Significance Level"
+  ],
+  "prerequisites": [
+    "Standard normal distribution",
+    "Z-scores",
+    "Area under a curve"
+  ],
+  "library": "p5.js"
+}

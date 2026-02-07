@@ -1,0 +1,44 @@
+{
+  "title": "Two-Proportion Z-Test Calculator",
+  "description": "Interactive calculator for conducting two-sample z-tests comparing proportions between two independent groups. Features visual comparison, step-by-step calculations, pooled proportion computation, and automatic hypothesis test conclusions.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Hypothesis Testing",
+    "Two-Proportion Test",
+    "Z-Test",
+    "Comparing Proportions",
+    "Pooled Proportion"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/two-proportion-test/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Test for Two Proportions",
+    "Pooled Proportion",
+    "Standard Error",
+    "Test Statistic",
+    "P-Value",
+    "Making Conclusions"
+  ],
+  "prerequisites": [
+    "One-proportion z-test",
+    "Hypothesis testing framework",
+    "P-values and significance levels"
+  ],
+  "library": "p5.js"
+}

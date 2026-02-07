@@ -1,0 +1,45 @@
+{
+  "title": "Central Limit Theorem Demonstration",
+  "description": "Interactive visualization demonstrating the Central Limit Theorem by showing how sampling distributions of means become approximately normal regardless of the population shape. Students can choose from various population distributions and observe the transformation as sample size increases.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Central Limit Theorem",
+    "Sampling Distributions",
+    "Normal Distribution",
+    "Sample Mean"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/clt-demonstration/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Central Limit Theorem",
+    "Sampling Distribution",
+    "Sample Mean",
+    "Normal Distribution",
+    "Standard Error",
+    "Population Shape"
+  ],
+  "prerequisites": [
+    "Population and sample concepts",
+    "Mean calculation",
+    "Normal distribution basics",
+    "Histograms"
+  ],
+  "library": "p5.js"
+}

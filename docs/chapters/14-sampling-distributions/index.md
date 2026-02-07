@@ -100,51 +100,6 @@ Now, in reality, we only take *one* sample. But understanding the theoretical sa
 
 <iframe src="../../sims/sampling-distribution-concept/main.html" width="100%" height="550px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Sampling Distribution Concept Visualization</summary>
-Type: microsim
-
-Learning Objective: Understand (L2) how individual samples combine to form a sampling distribution; explain how the distribution of sample statistics differs from the distribution of individual data points
-
-Bloom Taxonomy Level: Understand (L2)
-Bloom Taxonomy Verb: explain, demonstrate
-
-Purpose: Demonstrate visually how taking many samples and calculating a statistic from each creates a predictable sampling distribution, even when individual samples vary
-
-Canvas layout:
-- Drawing area (full width): Population visualization at top, samples in middle, sampling distribution histogram at bottom
-
-Visual elements:
-- Top section: A large population represented as colored dots (blue and orange for a proportion, or a distribution for means)
-- Middle section: Animation showing samples being drawn, with sample statistic calculated
-- Bottom section: Histogram building as each sample statistic is added
-- Counter showing number of samples taken
-- Display of current sample statistic
-
-Interactive controls:
-- Button: "Take 1 Sample" - draws one sample and adds statistic to histogram
-- Button: "Take 10 Samples" - rapidly draws 10 samples
-- Button: "Take 100 Samples" - rapidly draws 100 samples
-- Button: "Reset" - clears the histogram and starts over
-- Slider: Sample size n (10, 25, 50, 100)
-- Display: Mean and standard deviation of the sampling distribution
-
-Default parameters:
-- Population proportion: 0.6 (or mean = 100, SD = 15 for means)
-- Sample size: 25
-- Animation speed: moderate
-
-Behavior:
-- When sample is taken, show dots being selected from population
-- Calculate sample statistic and briefly display it
-- Add statistic to histogram with animation
-- Update running mean and SD of sampling distribution
-- As more samples accumulate, show histogram becoming smoother and more normal-shaped
-
-Instructional Rationale: Step-through demonstration is appropriate because students need to see the process of sampling and statistic calculation repeatedly to understand that the sampling distribution emerges from aggregating many sample statistics. The ability to control pace (1, 10, or 100 samples) lets students observe both individual variation and the overall pattern.
-
-Implementation: p5.js with responsive canvas sizing
-</details>
 
 ---
 
@@ -249,50 +204,6 @@ With one person, your "sample mean" is just their score—wildly variable. But w
 
 <iframe src="../../sims/standard-error-explorer/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Standard Error and Sample Size Explorer</summary>
-Type: microsim
-
-Learning Objective: Apply (L3) the relationship between sample size and standard error; demonstrate how increasing sample size reduces the variability of the sampling distribution
-
-Bloom Taxonomy Level: Apply (L3)
-Bloom Taxonomy Verb: demonstrate, calculate, apply
-
-Purpose: Allow students to interactively explore how sample size affects the spread of sampling distributions for both proportions and means
-
-Canvas layout:
-- Left side (60%): Graph showing sampling distribution curve
-- Right side (40%): Control panel and calculations
-
-Visual elements:
-- Normal curve representing the sampling distribution
-- Shaded region showing one standard error on each side of the mean
-- Numerical display of standard error calculation
-- Formula display with current values substituted
-
-Interactive controls:
-- Radio buttons: Choose "Proportion" or "Mean"
-- Slider: Sample size n (10 to 500)
-- For Proportion mode: Slider for p (0.1 to 0.9)
-- For Mean mode: Input for population standard deviation sigma (1 to 100)
-- Display: Current standard error with calculation breakdown
-
-Default parameters:
-- Mode: Proportion
-- p = 0.5
-- n = 50
-- sigma = 15 (for mean mode)
-
-Behavior:
-- As sample size increases, curve becomes narrower (less spread)
-- Standard error calculation updates in real-time
-- Show the formula with actual numbers substituted
-- Highlight that quadrupling n halves the standard error
-
-Instructional Rationale: This apply-level simulation lets students manipulate parameters and immediately see the effect on the sampling distribution. The focus on the formula with substituted values helps connect the abstract formula to concrete calculations.
-
-Implementation: p5.js with responsive canvas sizing
-</details>
 
 ---
 
@@ -344,61 +255,6 @@ The more skewed or unusual the population, the larger the sample you need for th
 
 <iframe src="../../sims/clt-demonstration/main.html" width="100%" height="600px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Central Limit Theorem Demonstration</summary>
-Type: microsim
-
-Learning Objective: Analyze (L4) how the Central Limit Theorem transforms non-normal population distributions into normal sampling distributions as sample size increases; compare sampling distributions across different population shapes
-
-Bloom Taxonomy Level: Analyze (L4)
-Bloom Taxonomy Verb: compare, examine, differentiate
-
-Purpose: Provide visual, interactive proof of the Central Limit Theorem by showing how sampling distributions become normal regardless of the population shape
-
-Canvas layout:
-- Top section (30%): Population distribution display
-- Middle section (50%): Sampling distribution histogram that builds dynamically
-- Bottom section (20%): Controls and statistics
-
-Visual elements:
-- Population distribution shown as histogram or smooth curve
-- Building histogram of sample means
-- Overlaid normal curve on sampling distribution for comparison
-- Statistics panel showing mean and SD of sampling distribution
-- Comparison of theoretical vs observed values
-
-Interactive controls:
-- Dropdown: Population shape (Uniform, Skewed Right, Skewed Left, Bimodal, Normal, U-shaped)
-- Slider: Sample size n (1, 2, 5, 10, 25, 50, 100)
-- Button: "Take 1 Sample"
-- Button: "Take 100 Samples"
-- Button: "Take 1000 Samples"
-- Button: "Reset"
-- Toggle: Show/hide normal overlay curve
-
-Default parameters:
-- Population: Skewed Right
-- Sample size: n = 1
-- Show normal overlay: On
-
-Behavior:
-- When n = 1, sampling distribution matches population shape
-- As n increases, sampling distribution becomes more bell-shaped
-- Normal overlay helps students see how close to normal the distribution is
-- Display theoretical mean and SD alongside observed values
-- Color coding: population in one color, sampling distribution in another
-
-Data Visibility Requirements:
-- Stage 1: Show population distribution clearly labeled
-- Stage 2: Show individual sample being drawn (highlight selected values)
-- Stage 3: Show calculation of sample mean for that sample
-- Stage 4: Show sample mean being added to histogram
-- Stage 5: As samples accumulate, show histogram converging to normal
-
-Instructional Rationale: The power of this simulation is letting students see the CLT in action. Starting with n=1 (where sampling distribution matches population) and gradually increasing n shows the transformation process. The analyze-level objective is supported by comparing different population shapes and sample sizes.
-
-Implementation: p5.js with responsive canvas sizing; pre-defined population distributions
-</details>
 
 ### The CLT for Proportions
 
@@ -498,54 +354,6 @@ The sampling distribution is the bridge between our single sample and the popula
 
 <iframe src="../../sims/inference-workflow/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Statistical Inference Workflow</summary>
-Type: infographic
-
-Learning Objective: Understand (L2) how sampling distributions enable statistical inference; explain the connection between sample statistics, sampling distributions, and population parameters
-
-Bloom Taxonomy Level: Understand (L2)
-Bloom Taxonomy Verb: explain, summarize
-
-Purpose: Provide a visual roadmap showing how sample data, sampling distributions, and population parameters connect in the inference process
-
-Layout: Flowchart style with three main stages arranged vertically or horizontally
-
-Components:
-1. Population box (top or left):
-   - Label: "Population"
-   - Contains parameter symbols (p or mu)
-   - Text: "Unknown - what we want to learn about"
-   - Color: Green (Sylvia's cardigan color)
-
-2. Sample box (middle):
-   - Label: "Sample (n)"
-   - Shows data collection arrow from population
-   - Contains statistic symbols (p-hat or x-bar)
-   - Text: "Observed - what we can measure"
-   - Color: Auburn (Sylvia's fur color)
-
-3. Sampling Distribution box (central, larger):
-   - Shows normal curve
-   - Labels for mean and standard error
-   - Text: "Theoretical - describes how statistics vary"
-   - Connects sample to population via CLT
-   - Color: Light green background
-
-4. Inference arrows:
-   - Confidence Interval arrow: points from sample toward population
-   - Hypothesis Test arrow: compares sample to claimed population value
-
-Interactive elements:
-- Hover over each component to reveal detailed explanation
-- Click on "Confidence Interval" to highlight that path
-- Click on "Hypothesis Test" to highlight that path
-- Tooltips explain each concept
-
-Color scheme: Use Sylvia color palette (green, auburn, cream)
-
-Implementation: HTML/CSS/JavaScript with SVG elements and interactive hover/click events
-</details>
 
 ---
 
@@ -650,53 +458,6 @@ Only about a 2.3% chance! If the sample mean actually came out this low, quality
 
 <iframe src="../../sims/sampling-distribution-calculator/main.html" width="100%" height="520px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Sampling Distribution Calculator</summary>
-Type: microsim
-
-Learning Objective: Apply (L3) sampling distribution concepts to calculate probabilities; practice using z-scores with sampling distributions
-
-Bloom Taxonomy Level: Apply (L3)
-Bloom Taxonomy Verb: calculate, solve, apply
-
-Purpose: Interactive calculator for finding probabilities involving sample means or proportions, with visual feedback
-
-Canvas layout:
-- Top section (30%): Input parameters
-- Middle section (50%): Normal curve with shaded region
-- Bottom section (20%): Results and calculations
-
-Visual elements:
-- Normal distribution curve representing the sampling distribution
-- Shaded region showing the probability being calculated
-- Labels for mean and standard error on the curve
-- Step-by-step calculation display
-
-Interactive controls:
-- Radio buttons: "Sample Mean" or "Sample Proportion"
-- For Mean: Inputs for population mean (mu), population SD (sigma), sample size (n)
-- For Proportion: Inputs for population proportion (p), sample size (n)
-- Dropdown: Probability type (less than, greater than, between)
-- Input fields: Cutoff value(s)
-- Button: "Calculate"
-
-Default parameters:
-- Mode: Sample Mean
-- mu = 1200
-- sigma = 100
-- n = 64
-- Probability: less than 1175
-
-Behavior:
-- Display calculation steps: "Step 1: Find standard error", "Step 2: Calculate z-score", "Step 3: Find probability"
-- Show the formula with values substituted
-- Animate the shaded region on the curve
-- Display final probability prominently
-
-Instructional Rationale: This apply-level tool provides scaffolded practice for probability calculations. Showing each step explicitly helps students learn the process while getting immediate feedback on their understanding.
-
-Implementation: p5.js with responsive canvas sizing
-</details>
 
 ---
 

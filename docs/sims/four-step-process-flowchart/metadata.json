@@ -1,0 +1,44 @@
+{
+  "title": "Four-Step Process Interactive Flowchart",
+  "description": "Interactive flowchart guiding students through the STATE, PLAN, DO, CONCLUDE process for statistical inference. Toggle between hypothesis test and confidence interval modes to see specific requirements for each step.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Inference",
+    "Hypothesis Testing",
+    "Confidence Intervals",
+    "AP Statistics",
+    "Four-Step Process"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/four-step-process-flowchart/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply",
+    "Understand"
+  ],
+  "concepts": [
+    "Four-Step Process",
+    "Hypothesis Testing",
+    "Confidence Intervals",
+    "Inference Procedures",
+    "Condition Checking"
+  ],
+  "prerequisites": [
+    "Hypothesis testing concepts",
+    "Confidence interval concepts",
+    "Condition checking for inference"
+  ],
+  "library": "p5.js"
+}

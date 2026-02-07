@@ -1,0 +1,45 @@
+{
+  "title": "Point Estimate vs Interval Estimate Visualization",
+  "description": "Interactive visualization comparing point estimates (single values) and interval estimates (confidence intervals) for population proportions. Students generate samples to see how point estimates vary and how confidence intervals usually capture the true parameter.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Inference",
+    "Confidence Intervals",
+    "Point Estimate",
+    "Interval Estimate",
+    "Sampling"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/point-vs-interval-estimate/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Compare"
+  ],
+  "concepts": [
+    "Point Estimate",
+    "Interval Estimate",
+    "Confidence Interval",
+    "Sample Proportion",
+    "Confidence Level",
+    "Sampling Variability"
+  ],
+  "prerequisites": [
+    "Population vs sample distinction",
+    "Sample proportion concept",
+    "Basic probability"
+  ],
+  "library": "p5.js"
+}

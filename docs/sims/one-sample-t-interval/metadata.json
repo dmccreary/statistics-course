@@ -1,0 +1,43 @@
+{
+  "title": "One-Sample T-Interval Calculator",
+  "description": "Step-by-step calculator for constructing one-sample t confidence intervals for a population mean, with visual representation and proper interpretation.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Confidence Intervals",
+    "T-Distribution",
+    "Inference for Means",
+    "Sample Statistics"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/one-sample-t-interval/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply",
+    "Understand"
+  ],
+  "concepts": [
+    "One-Sample T-Interval",
+    "Confidence Intervals",
+    "Standard Error",
+    "Margin of Error",
+    "T Critical Values"
+  ],
+  "prerequisites": [
+    "T-distribution",
+    "Sample mean and standard deviation",
+    "Degrees of freedom"
+  ],
+  "library": "p5.js"
+}

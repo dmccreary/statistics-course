@@ -1,0 +1,44 @@
+{
+  "title": "T-Procedure Robustness Exploration",
+  "description": "Simulation-based exploration of how well t-procedure confidence intervals perform with different population shapes and sample sizes, measuring actual vs. nominal coverage rates.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "T-Procedures",
+    "Robustness",
+    "Confidence Intervals",
+    "Simulation",
+    "Central Limit Theorem"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/t-procedure-robustness/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Evaluate",
+    "Analyze"
+  ],
+  "concepts": [
+    "Robustness",
+    "Conditions for T-Procedures",
+    "Central Limit Theorem",
+    "Coverage Rate",
+    "Sample Size Effects"
+  ],
+  "prerequisites": [
+    "Confidence intervals",
+    "T-distribution",
+    "Normal distribution assumption"
+  ],
+  "library": "p5.js"
+}

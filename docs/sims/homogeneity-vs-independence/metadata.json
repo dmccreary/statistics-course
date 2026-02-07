@@ -1,0 +1,43 @@
+{
+  "title": "Homogeneity vs Independence Comparison",
+  "description": "Interactive side-by-side comparison of chi-square tests for homogeneity and independence, featuring visual sampling diagrams and a practice quiz with real-world scenarios.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Chi-Square Tests",
+    "Test for Homogeneity",
+    "Test for Independence",
+    "Categorical Data Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/homogeneity-vs-independence/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Test for Homogeneity",
+    "Test for Independence",
+    "Sampling Design",
+    "Two-Way Tables",
+    "Study Design"
+  ],
+  "prerequisites": [
+    "Chi-square statistic",
+    "Expected counts",
+    "Two-way tables"
+  ],
+  "library": "p5.js"
+}

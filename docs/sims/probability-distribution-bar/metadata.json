@@ -1,0 +1,39 @@
+{
+  "title": "Probability Distribution Bar Chart",
+  "description": "Interactive bar chart showing the probability distribution for rolling a fair six-sided die, demonstrating that each outcome has equal probability of 1/6.",
+  "creator": "Statistics Course Team",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Probability",
+    "Random Variables",
+    "Probability Distributions"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/probability-distribution-bar/",
+  "publisher": "Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Discrete Random Variable",
+    "Probability Distribution",
+    "Valid Distribution",
+    "Uniform Distribution"
+  ],
+  "prerequisites": [
+    "Basic probability concepts",
+    "Understanding of fractions and decimals"
+  ],
+  "library": "p5.js"
+}

@@ -1,0 +1,45 @@
+{
+  "title": "CI Construction Walkthrough",
+  "description": "Step-by-step interactive calculator for constructing confidence intervals for proportions. Guides students through all six steps: checking conditions, calculating point estimate, finding critical value, computing standard error, calculating margin of error, and constructing the final interval with visualization.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Inference",
+    "Confidence Intervals",
+    "Proportions",
+    "Standard Error",
+    "Margin of Error"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/ci-construction-walkthrough/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply",
+    "Calculate"
+  ],
+  "concepts": [
+    "CI for One Proportion",
+    "Conditions for CI Proportion",
+    "Point Estimate",
+    "Standard Error",
+    "Margin of Error",
+    "Critical Value"
+  ],
+  "prerequisites": [
+    "Proportions and percentages",
+    "Standard error concept",
+    "Z* critical values"
+  ],
+  "library": "p5.js"
+}

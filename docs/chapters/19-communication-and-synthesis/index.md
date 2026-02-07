@@ -96,39 +96,6 @@ The relationship between these two types of significance creates four possible s
 
 <iframe src="../../sims/stat-practical-sig-matrix/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Statistical vs. Practical Significance Decision Matrix</summary>
-Type: infographic
-
-Bloom Level: Analyze (L4)
-Bloom Verb: Distinguish
-
-Purpose: Help students distinguish between statistical and practical significance using a 2x2 decision matrix with real-world examples
-
-Learning Objective: Students will be able to classify study results into one of four categories based on their statistical and practical significance, and explain the implications of each classification.
-
-Layout: A 2x2 matrix grid in the center with four quadrants
-
-Matrix Structure:
-- X-axis: "Practically Significant?" (No | Yes)
-- Y-axis: "Statistically Significant?" (Yes on top | No on bottom)
-
-Quadrant Content:
-- Top-Left (Stat Yes, Practical No): "Trivial Effect" - Example: "Diet pill: 0.5 lb loss, p < 0.001, n=10,000"
-- Top-Right (Stat Yes, Practical Yes): "Meaningful Discovery!" - Example: "New treatment: 40% reduction in symptoms, p = 0.02"
-- Bottom-Left (Stat No, Practical No): "Nothing Here" - Example: "No effect detected, n=50"
-- Bottom-Right (Stat No, Practical Yes): "Need More Data" - Example: "Promising 25% improvement, p = 0.12, n=30"
-
-Interactive Features:
-- Click each quadrant to reveal detailed explanation
-- Hover over examples to see more context
-- Color coding: Green for top-right (ideal), Yellow for bottom-right (promising), Orange for top-left (misleading), Gray for bottom-left
-
-Color Scheme: Green (#4CAF50), Yellow (#FFC107), Orange (#FF9800), Gray (#9E9E9E)
-
-Implementation: HTML/CSS/JavaScript with click and hover interactions
-</details>
-
 !!! warning "Common Mistake Alert"
     Don't confuse "statistically significant" with "important" or "large." A tiny effect can be statistically significant with a large enough sample, and a large effect might not be statistically significant with a small sample.
 
@@ -164,56 +131,6 @@ Here are general guidelines for interpreting effect sizes:
 #### Diagram: Effect Size Visualization MicroSim
 
 <iframe src="../../sims/effect-size-visualizer/main.html" width="100%" height="520px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Effect Size Visualization MicroSim</summary>
-Type: microsim
-
-Bloom Level: Understand (L2)
-Bloom Verb: Compare
-
-Purpose: Allow students to visually compare two distributions and see how effect size (Cohen's d) relates to the overlap between groups
-
-Learning Objective: Students will be able to explain what effect size means by manipulating the separation between two distributions and observing changes in both visual overlap and the Cohen's d value.
-
-Data Visibility Requirements:
-Stage 1: Show two overlapping normal distribution curves with the same mean
-Stage 2: As slider moves, show the second distribution shifting right
-Stage 3: Display Cohen's d calculation with actual values
-Stage 4: Show percentage overlap between distributions
-Stage 5: Label the effect size interpretation (small, medium, large)
-
-Instructional Rationale: Step-through exploration with visible calculations is appropriate because the Understand objective requires learners to see the connection between the numerical effect size and the visual separation of groups.
-
-Canvas Layout:
-- Main area: Two overlapping normal curves (different colors)
-- Control panel below the curves
-- Statistics display on the right side
-
-Visual Elements:
-- Group 1 distribution: Blue filled curve, mean = 100, SD = 15
-- Group 2 distribution: Orange filled curve, mean adjustable, SD = 15
-- Shaded overlap region
-- Vertical lines marking each mean
-- Labels showing mean values
-
-Interactive Controls:
-- Slider: "Effect Size (Cohen's d)" ranging from 0 to 2.0, step 0.1
-- Display showing: Cohen's d value, percent overlap, interpretation label
-
-Default Parameters:
-- Both means start at 100 (d = 0)
-- Standard deviation = 15 for both groups
-- Canvas shows x-axis from 40 to 160
-
-Behavior:
-- Moving slider shifts Group 2 mean: mean_2 = 100 + (d * 15)
-- Overlap region updates in real-time
-- Interpretation label changes: d < 0.3 = "Small", 0.3 <= d < 0.7 = "Medium", d >= 0.7 = "Large"
-- Show calculation breakdown: d = (mean_2 - mean_1) / pooled_SD
-
-Implementation: p5.js with smooth animation for distribution movement
-</details>
 
 ## The Impact of Sample Size
 
@@ -253,62 +170,6 @@ Notice that margin of error decreases as \( n \) increases—specifically, you n
 #### Diagram: Sample Size and Margin of Error Explorer
 
 <iframe src="../../sims/sample-size-margin-error/main.html" width="100%" height="480px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Sample Size and Margin of Error Explorer</summary>
-Type: microsim
-
-Bloom Level: Apply (L3)
-Bloom Verb: Calculate
-
-Purpose: Demonstrate the relationship between sample size and margin of error, showing the diminishing returns of larger samples
-
-Learning Objective: Students will be able to predict how margin of error changes with sample size and calculate the sample size needed for a desired margin of error.
-
-Data Visibility Requirements:
-Stage 1: Show initial sample size and calculated margin of error
-Stage 2: Display the formula with current values substituted
-Stage 3: Show the resulting confidence interval graphically
-Stage 4: Track changes as user adjusts sample size
-
-Instructional Rationale: An interactive calculator is appropriate for the Apply level because students need to manipulate inputs and observe outputs to build intuition about the mathematical relationship.
-
-Canvas Layout:
-- Top section: Formula display with live values
-- Middle: Visual confidence interval representation
-- Bottom: Controls and results display
-
-Visual Elements:
-- Horizontal bar showing confidence interval centered on sample proportion
-- Margin of error shown as distance from center to edge
-- Curve showing ME vs n relationship
-- Current point highlighted on the curve
-
-Interactive Controls:
-- Slider: Sample size n (10 to 2000, logarithmic scale)
-- Slider: Sample proportion p-hat (0.1 to 0.9)
-- Dropdown: Confidence level (90%, 95%, 99%)
-- Display: Margin of error, confidence interval bounds
-
-Default Parameters:
-- n = 100
-- p-hat = 0.5
-- Confidence level = 95%
-
-Behavior:
-- Formula updates with current values in real-time
-- Confidence interval bar width changes with margin of error
-- Curve plot updates to show current position
-- Display message when sample size is insufficient for normal approximation
-
-Calculations to Display:
-- z* value for selected confidence level
-- Margin of error = z* * sqrt(p-hat*(1-p-hat)/n)
-- Lower bound = p-hat - ME
-- Upper bound = p-hat + ME
-
-Implementation: p5.js with canvas-based controls
-</details>
 
 ## Recognizing Study Limitations
 
@@ -380,47 +241,6 @@ Consider this example: A researcher studies the effect of a new teaching method 
 #### Diagram: Generalizability Target Diagram
 
 <iframe src="../../sims/generalizability-target/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Generalizability Target Diagram</summary>
-Type: infographic
-
-Bloom Level: Evaluate (L5)
-Bloom Verb: Assess
-
-Purpose: Visualize the levels of generalizability from a specific sample outward to broader populations
-
-Learning Objective: Students will be able to assess how far beyond their sample they can reasonably generalize their findings based on their sampling method.
-
-Layout: Concentric circles (target diagram) representing levels of generalization
-
-Circles (inside to outside):
-1. Center: "Your Sample" (e.g., "50 students in Mr. Johnson's AP Stats class")
-2. Ring 1: "Sampling Frame" (e.g., "Students in local school district")
-3. Ring 2: "Target Population" (e.g., "All AP Statistics students")
-4. Ring 3: "Broader Population" (e.g., "All high school students")
-5. Outer Ring: "Universal Claims" (e.g., "All students everywhere")
-
-Visual Features:
-- Color gradient from strong (center, green) to weak (outer, red)
-- Arrows showing which rings random sampling allows you to reach
-- Dashed lines indicating uncertain generalization
-- Warning icons at outer rings
-
-Interactive Features:
-- Click each ring to see examples of valid and invalid generalizations
-- Toggle between different study scenarios to see how generalizability changes
-- Hover for detailed explanations of why each ring is/isn't reachable
-
-Scenarios to Toggle:
-1. Random sample from district → Can generalize to district
-2. Convenience sample from one class → Can only describe that class
-3. National random sample → Can generalize nationally
-
-Color Scheme: Green (strong evidence) to Yellow (moderate) to Red (weak/no evidence)
-
-Implementation: SVG with JavaScript click and hover handlers
-</details>
 
 ## Writing Effective Statistical Reports
 
@@ -494,55 +314,6 @@ Graphs and charts can communicate results more effectively than tables of number
 #### Diagram: Audience Communication Matcher
 
 <iframe src="../../sims/audience-communication-matcher/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Audience Communication Matcher</summary>
-Type: microsim
-
-Bloom Level: Analyze (L4)
-Bloom Verb: Differentiate
-
-Purpose: Help students learn to tailor statistical communication to different audiences by matching explanations to audiences
-
-Learning Objective: Students will be able to differentiate between appropriate and inappropriate ways to communicate statistical findings to various audiences.
-
-Data Visibility Requirements:
-Stage 1: Present a statistical finding (e.g., "Study found p = 0.02 for difference in means")
-Stage 2: Show four different ways to communicate this finding
-Stage 3: Reveal which explanation matches which audience
-Stage 4: Provide feedback on correct/incorrect matches
-
-Instructional Rationale: A matching/classification activity is appropriate for the Analyze level because students must examine the characteristics of different explanations and determine which fits each audience.
-
-Canvas Layout:
-- Left side: List of 4 audience types as drop zones
-- Right side: Draggable explanation cards
-- Bottom: Score display and feedback area
-
-Audiences:
-1. Statistics professor
-2. Business manager
-3. Newspaper reader
-4. AP exam grader
-
-Example Finding: "A study comparing two teaching methods found a mean difference of 8 points (p = 0.02, 95% CI: 2.1 to 13.9 points)"
-
-Explanation Cards:
-1. "We rejected H0: μ1 = μ2 at α = 0.05 using a two-sample t-test. The 95% CI for μ1 - μ2 is (2.1, 13.9)."
-2. "Students using the new method scored 8 points higher on average. We're 95% confident the true improvement is between 2 and 14 points."
-3. "New teaching method boosts test scores! Students improved by about 8 points."
-4. "Since p = 0.02 < 0.05, we reject H0 and conclude there is convincing evidence of a difference in mean scores. The new method produced scores averaging 8 points higher."
-
-Interactive Features:
-- Drag and drop explanation cards to audience drop zones
-- Check button to verify answers
-- Feedback explains why each match is correct or incorrect
-- Score tracking across multiple rounds
-
-New scenarios generated after each round with different statistical contexts
-
-Implementation: p5.js with drag-and-drop functionality
-</details>
 
 ## The Four-Step Process for Inference
 

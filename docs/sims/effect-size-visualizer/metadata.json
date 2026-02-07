@@ -1,0 +1,44 @@
+{
+  "title": "Effect Size Visualization",
+  "description": "Interactive visualization showing how Cohen's d effect size relates to the visual separation and overlap between two normal distributions. Students adjust a slider to see how different effect sizes appear visually.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Effect Size",
+    "Cohen's d",
+    "Normal Distribution",
+    "Research Methods",
+    "Practical Significance"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/effect-size-visualizer/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Effect Size",
+    "Cohen's d",
+    "Practical Significance",
+    "Distribution Overlap",
+    "Standardized Mean Difference"
+  ],
+  "prerequisites": [
+    "Normal distribution concepts",
+    "Understanding of mean and standard deviation",
+    "Basic hypothesis testing"
+  ],
+  "library": "p5.js"
+}

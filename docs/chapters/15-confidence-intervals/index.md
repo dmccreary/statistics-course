@@ -91,45 +91,6 @@ Think of it like estimating your arrival time for a road trip. You could say "I'
 
 <iframe src="../../sims/point-vs-interval-estimate/main.html" width="100%" height="400px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Point Estimate vs Interval Estimate Visualization</summary>
-Type: microsim
-
-Bloom Level: Understand (L2)
-Bloom Verb: Compare, contrast
-
-Learning Objective: Help students visualize the difference between a point estimate (single value) and an interval estimate (range of values) for a population parameter.
-
-Visual Elements:
-- A horizontal number line representing possible values of a population proportion (0 to 1)
-- A vertical line marking the "true" population parameter (hidden initially, revealed on toggle)
-- A single dot representing the point estimate (sample proportion)
-- A horizontal bar/bracket representing the interval estimate (confidence interval)
-- Multiple sample scenarios to cycle through
-
-Interactive Controls:
-- "New Sample" button: generates a new random sample, showing new point estimate and interval
-- Toggle: "Show True Parameter" to reveal where the true value actually is
-- Counter showing: "X out of Y intervals captured the true parameter"
-
-Default Parameters:
-- True population proportion: 0.65 (hidden initially)
-- Sample size: n = 100
-- Confidence level: 95%
-
-Behavior:
-- Each "New Sample" generates a new sample proportion and corresponding interval
-- Point estimate appears as a single colored dot
-- Interval appears as a horizontal bracket extending from the point estimate
-- When true parameter is shown, intervals that capture it turn green, those that miss turn red
-- Running count tracks the capture rate
-
-Instructional Rationale: Visual comparison helps students understand why intervals provide more useful information than point estimates alone. The reveal feature demonstrates that intervals usually (but not always) capture the true value.
-
-Implementation: p5.js with canvas-based controls
-Canvas size: 600 x 400 (responsive)
-</details>
-
 ---
 
 ## Confidence Intervals: The Complete Package
@@ -188,56 +149,6 @@ When you hear poll results like "The candidate has 48% support with a margin of 
 
 <iframe src="../../sims/margin-of-error-explorer/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Margin of Error Explorer MicroSim</summary>
-Type: microsim
-
-Bloom Level: Analyze (L4)
-Bloom Verb: Examine, differentiate
-
-Learning Objective: Students will analyze how changes in confidence level, sample size, and sample proportion affect the margin of error and resulting confidence interval width.
-
-Visual Elements:
-- Central display showing a confidence interval on a number line (0 to 1)
-- Point estimate marked as a dot
-- Margin of error shown as brackets extending from the point estimate
-- Real-time calculation display showing the formula with current values highlighted
-- Visual indicators of what's changing (pulsing effect on modified components)
-
-Interactive Controls (canvas-based):
-- Slider: Confidence Level (80% to 99%, default 95%)
-- Slider: Sample Size n (20 to 500, default 100)
-- Slider: Sample Proportion (0.1 to 0.9, default 0.50)
-- Display panel showing:
-  - Current ME value
-  - Current CI bounds
-  - z* value for selected confidence level
-
-Default Parameters:
-- Confidence level: 95% (z* = 1.96)
-- Sample size: n = 100
-- Sample proportion: 0.50
-
-Behavior:
-- As confidence level increases, z* increases, ME increases, interval widens
-- As sample size increases, standard error decreases, ME decreases, interval narrows
-- As sample proportion moves toward 0.5, standard error increases (maximum variability)
-- As sample proportion moves toward 0 or 1, standard error decreases
-- Formula display updates in real-time with current values
-
-Data Visibility Requirements:
-- Stage 1: Show current parameter values
-- Stage 2: Show z* value and how it relates to confidence level
-- Stage 3: Show standard error calculation with current values
-- Stage 4: Show margin of error calculation
-- Stage 5: Show final confidence interval bounds
-
-Instructional Rationale: Interactive sliders allow students to develop intuition about the relationships between components through experimentation rather than memorization.
-
-Implementation: p5.js with canvas-based sliders and displays
-Canvas size: 650 x 450 (responsive)
-</details>
-
 ---
 
 ## Confidence Level: What Does 95% Really Mean?
@@ -268,50 +179,6 @@ Here's an analogy: Imagine a basketball player who makes 95% of their free throw
 
 <iframe src="../../sims/confidence-level-simulator/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Confidence Level Simulator MicroSim</summary>
-Type: microsim
-
-Bloom Level: Understand (L2)
-Bloom Verb: Interpret, explain
-
-Learning Objective: Students will understand the true meaning of confidence level by observing that approximately X% of confidence intervals capture the true parameter when many samples are taken.
-
-Visual Elements:
-- A vertical line on the left representing the true population parameter (p = 0.60)
-- Multiple horizontal confidence intervals stacked vertically (up to 100)
-- Green intervals: those that capture the true parameter
-- Red intervals: those that miss the true parameter
-- Running counter: "X of Y intervals contain the true parameter (Z%)"
-- Distribution of sample proportions shown at bottom (optional toggle)
-
-Interactive Controls (canvas-based):
-- "Generate 1 Sample" button: adds one confidence interval
-- "Generate 10 Samples" button: adds 10 confidence intervals
-- "Generate 100 Samples" button: shows all 100 intervals
-- "Reset" button: clears all intervals
-- Slider: Confidence Level (90%, 95%, 99%)
-- Display showing current capture rate vs expected rate
-
-Default Parameters:
-- True population proportion: p = 0.60
-- Sample size: n = 50
-- Confidence level: 95%
-- Starting intervals: 0
-
-Behavior:
-- Each new sample generates a random sample from the population
-- Calculate sample proportion and confidence interval
-- Display interval horizontally, green if it contains 0.60, red if not
-- Update running counter
-- After many samples, capture rate should approach the confidence level
-
-Instructional Rationale: Simulation makes the abstract concept of "long-run frequency" concrete. Students see that individual intervals either hit or miss, but the proportion of hits matches the confidence level.
-
-Implementation: p5.js with canvas-based controls
-Canvas size: 700 x 500 (responsive)
-</details>
-
 !!! note "Sylvia Says"
     "Acorn for your thoughts? Here's the key insight: once you've calculated a specific confidence interval, the true parameter is either in there or it isn't - we just don't know which! The confidence level tells us about the reliability of our interval-building process, not the probability for any single interval. Every statistician drops an acorn sometimes, and about 5% of 95% confidence intervals miss the mark!"
 
@@ -340,50 +207,6 @@ You can find critical values using a z-table (looking for the z-score with the a
 #### Diagram: Critical Values on the Normal Curve
 
 <iframe src="../../sims/critical-value-visualizer/main.html" width="100%" height="420px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Critical Value Visualizer MicroSim</summary>
-Type: microsim
-
-Bloom Level: Remember (L1)
-Bloom Verb: Identify, locate
-
-Learning Objective: Students will identify how critical values correspond to areas under the standard normal curve for different confidence levels.
-
-Visual Elements:
-- Standard normal distribution curve (bell curve)
-- Shaded middle region representing the confidence level
-- Unshaded tail regions
-- Vertical lines at -z* and +z* marking the critical values
-- Labels showing:
-  - z* values on x-axis
-  - Confidence level percentage in middle region
-  - Tail area percentages (alpha/2) in each tail
-- Area calculations displayed
-
-Interactive Controls (canvas-based):
-- Dropdown or buttons: Select confidence level (90%, 95%, 99%, or custom)
-- Slider for custom confidence level (80% to 99.9%)
-- Toggle: Show/hide exact area values
-
-Default Parameters:
-- Confidence level: 95%
-- z* = 1.96
-- Middle area = 0.95, each tail = 0.025
-
-Behavior:
-- When confidence level changes:
-  - Critical values move inward (lower confidence) or outward (higher confidence)
-  - Shaded region expands or contracts
-  - Tail areas update
-  - z* value display updates
-- Animation shows smooth transition between confidence levels
-
-Instructional Rationale: Visual connection between the abstract critical value number and the actual area under the normal curve helps students remember and understand why we use these specific values.
-
-Implementation: p5.js with canvas-based controls
-Canvas size: 650 x 420 (responsive)
-</details>
 
 ---
 
@@ -461,56 +284,6 @@ We are 95% confident that between 55.3% and 68.7% of all registered voters suppo
 #### Diagram: CI Construction Step-by-Step
 
 <iframe src="../../sims/ci-construction-walkthrough/main.html" width="100%" height="520px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Confidence Interval Construction Walkthrough MicroSim</summary>
-Type: microsim
-
-Bloom Level: Apply (L3)
-Bloom Verb: Calculate, execute
-
-Learning Objective: Students will practice constructing confidence intervals by working through each step of the calculation process with guided feedback.
-
-Visual Elements:
-- Step-by-step display panel showing all 6 steps
-- Input fields for sample data (x = successes, n = sample size)
-- Dropdown for confidence level selection
-- Calculation workspace showing formulas and values
-- Final confidence interval displayed on a number line
-- Progress indicator showing current step
-
-Interactive Controls (canvas-based):
-- Input: Number of successes (x)
-- Input: Sample size (n)
-- Dropdown: Confidence level (90%, 95%, 99%)
-- "Calculate Step" button to advance through each calculation
-- "Show All Steps" button to see complete solution
-- "New Problem" button to generate practice problems
-- Toggle: "Check My Work" mode for practice
-
-Default Parameters:
-- x = 124, n = 200
-- Confidence level: 95%
-- Start at Step 1
-
-Behavior:
-- Step 1: Verify conditions (display success/failure counts)
-- Step 2: Calculate and display p-hat
-- Step 3: Look up and display z*
-- Step 4: Calculate and display SE with formula filled in
-- Step 5: Calculate and display ME
-- Step 6: Calculate and display final interval with number line visualization
-
-Data Visibility Requirements:
-- Each step shows the formula, substituted values, and result
-- Previous steps remain visible as new steps are revealed
-- Final summary shows all values together
-
-Instructional Rationale: Step-by-step scaffolding helps students learn the process before attempting calculations independently.
-
-Implementation: p5.js with canvas-based inputs and displays
-Canvas size: 700 x 520 (responsive)
-</details>
 
 ---
 
@@ -662,48 +435,6 @@ The pollster should survey at least 1,067 people.
 #### Diagram: Sample Size Calculator
 
 <iframe src="../../sims/sample-size-calculator/main.html" width="100%" height="400px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Sample Size Calculator MicroSim</summary>
-Type: microsim
-
-Bloom Level: Apply (L3)
-Bloom Verb: Calculate, solve
-
-Learning Objective: Students will determine the required sample size to achieve a desired margin of error for a given confidence level.
-
-Visual Elements:
-- Input panel for desired margin of error and confidence level
-- Option to use p = 0.5 (conservative) or enter an estimated proportion
-- Step-by-step calculation display showing formula and substitution
-- Result display with the required sample size (rounded up)
-- Visual comparison showing how different ME goals require different sample sizes
-- Cost/effort indicator (informal visual showing "more effort" for larger samples)
-
-Interactive Controls (canvas-based):
-- Slider or input: Desired margin of error (1% to 10%, default 3%)
-- Dropdown: Confidence level (90%, 95%, 99%)
-- Toggle: Use conservative p = 0.5 vs. enter estimate
-- Input: Prior estimate of p (if not using conservative)
-- "Calculate" button
-
-Default Parameters:
-- Desired ME: 3% (0.03)
-- Confidence level: 95%
-- Use conservative p = 0.5
-
-Behavior:
-- Shows formula and calculation steps
-- Displays intermediate values (z*, p(1-p), etc.)
-- Shows final n, always rounded UP
-- If using estimated p, shows both the result and what conservative would give
-- Displays note about why we round up
-
-Instructional Rationale: Interactive calculator reinforces the process while handling the arithmetic, allowing students to focus on understanding the relationships.
-
-Implementation: p5.js with canvas-based inputs
-Canvas size: 600 x 400 (responsive)
-</details>
 
 ---
 

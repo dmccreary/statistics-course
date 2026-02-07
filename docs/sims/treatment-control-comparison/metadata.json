@@ -1,0 +1,43 @@
+{
+  "title": "Treatment vs Control Comparison",
+  "description": "Interactive step-through visualization demonstrating why control groups are essential for valid experimental conclusions by comparing before/after changes in treatment and control groups.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Experimental Design",
+    "Control Groups",
+    "Research Methods",
+    "Confounding Variables"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/treatment-control-comparison/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Control Group",
+    "Treatment",
+    "Comparison in Experiments",
+    "Confounding Variables",
+    "Placebo Effect",
+    "True Treatment Effect"
+  ],
+  "prerequisites": [
+    "Understanding of experimental design basics",
+    "Concept of treatment and control groups"
+  ],
+  "library": "p5.js"
+}

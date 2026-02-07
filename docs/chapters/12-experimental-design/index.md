@@ -102,43 +102,6 @@ That's 3 levels times 2 levels = 6 treatments total!
 
 <iframe src="../../sims/factors-levels-tree/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Factors and Levels Tree Diagram</summary>
-Type: diagram
-
-Purpose: Visualize how factors and levels combine to create treatments in a 2-factor experiment
-
-Bloom Level: Understand (L2)
-Bloom Verb: classify, explain
-
-Learning Objective: Students will be able to explain how factors and levels combine to create distinct treatments in a multi-factor experiment.
-
-Components to show:
-- Root node: "Experiment: Study Methods"
-- First branch level: Factor 1 (Study Technique) with 3 levels as child nodes
-- Second branch level: Factor 2 (Duration) with 2 levels branching from each technique
-- Leaf nodes: The 6 resulting treatments, each showing the combination
-
-Visual Layout:
-- Hierarchical tree structure flowing left to right or top to bottom
-- Factor labels on connecting lines
-- Level labels in oval nodes
-- Treatment boxes at the bottom with treatment number and description
-
-Interactive features:
-- Hover over any treatment box to highlight the path (factors and levels) that created it
-- Click a treatment to see a description of what that experimental condition involves
-
-Color scheme:
-- Root node: Sylvia green (#2E7D32)
-- Factor 1 nodes: Light blue
-- Factor 2 nodes: Light orange
-- Treatment boxes: Sylvia auburn (#B5651D)
-
-Implementation: p5.js with interactive hover states
-Canvas size: Responsive, approximately 700x400px
-</details>
-
 ## The Placebo Effect: Why We Need Controls
 
 Here's a fascinating quirk of human psychology: sometimes people get better just because they *believe* they're receiving treatment, even when they're not receiving anything at all. This is called the **placebo effect**.
@@ -171,40 +134,6 @@ A proper experiment would randomly assign runners to either receive the energy d
 #### Diagram: Treatment vs Control Comparison
 
 <iframe src="../../sims/treatment-control-comparison/main.html" width="100%" height="400px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Treatment vs Control Group Comparison</summary>
-Type: microsim
-
-Purpose: Demonstrate why control groups are necessary by showing the difference between comparing before/after within a group versus comparing treatment to control
-
-Bloom Level: Understand (L2)
-Bloom Verb: explain, compare
-
-Learning Objective: Students will be able to explain why comparing treatment and control groups is more reliable than comparing before and after measurements within a single group.
-
-Data Visibility Requirements:
-  Stage 1: Show a single group's before scores (e.g., test scores around 70)
-  Stage 2: Show the same group's after scores (improved to around 78)
-  Stage 3: Reveal a parallel control group that also improved (from 70 to 76)
-  Stage 4: Show the true treatment effect is only 2 points (78-76), not 8 points
-
-Visual Elements:
-- Two parallel timelines (Treatment Group and Control Group)
-- Bar charts showing scores at each time point
-- Animated reveal of control group results
-- Calculation showing: True Effect = Treatment Improvement - Control Improvement
-
-Interactive Controls:
-- Button: "Step Through" to progress through stages
-- Button: "Reset" to start over
-- Toggle: "Show/Hide Confounds" to reveal factors like natural improvement, practice effects
-
-Instructional Rationale: Step-through with concrete data is appropriate because the Understand/explain objective requires learners to trace the logic of why control groups matter. Showing the reveal progressively helps students experience the "aha" moment.
-
-Implementation: p5.js with step-through controls
-Canvas size: Responsive, approximately 650x350px
-</details>
 
 ## The Three Principles of Good Experimental Design
 
@@ -262,56 +191,6 @@ The more experimental units you have, the more likely you are to detect a true t
 #### Diagram: Three Principles of Experimental Design
 
 <iframe src="../../sims/three-principles-experiment/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Three Principles of Experimental Design Interactive</summary>
-Type: infographic
-
-Purpose: Create an interactive visualization showing how control, randomization, and replication work together in experimental design
-
-Bloom Level: Understand (L2)
-Bloom Verb: explain, summarize
-
-Learning Objective: Students will be able to summarize the three principles of good experimental design and explain the purpose of each.
-
-Visual Layout:
-- Three large circular or card-based sections arranged horizontally
-- Each section represents one principle: Control, Randomization, Replication
-- Center area shows a mini experimental setup that changes based on which principle is selected
-
-Content for each principle:
-1. Control section:
-   - Icon: Lock or equal sign
-   - Definition: "Hold variables constant"
-   - Visual: Side-by-side groups with identical conditions except treatment
-   - Hover reveals: List of variables to control (time, location, instructions, etc.)
-
-2. Randomization section:
-   - Icon: Dice or shuffle symbol
-   - Definition: "Use chance to assign treatments"
-   - Visual: Animation of shuffling/random assignment
-   - Hover reveals: "Balances known AND unknown variables"
-
-3. Replication section:
-   - Icon: Multiple figures or stacked symbols
-   - Definition: "Use enough experimental units"
-   - Visual: Single unit vs. many units comparison
-   - Hover reveals: "Reduces impact of individual variation"
-
-Interactive Features:
-- Click each principle card to see it demonstrated in the central experiment visualization
-- Hover over elements for detailed explanations
-- Toggle showing "What goes wrong without this principle?"
-
-Color Scheme:
-- Control: Blue
-- Randomization: Sylvia green (#2E7D32)
-- Replication: Sylvia auburn (#B5651D)
-- Background: Sylvia cream (#FFF8E1)
-
-Implementation: HTML/CSS/JavaScript with SVG icons and p5.js for animations
-Canvas size: Responsive, approximately 800x450px
-</details>
 
 ## Blinding: Protecting Against Bias
 

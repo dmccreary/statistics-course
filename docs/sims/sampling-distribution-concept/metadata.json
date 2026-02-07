@@ -1,0 +1,45 @@
+{
+  "title": "Sampling Distribution Concept Visualization",
+  "description": "Interactive visualization demonstrating how taking many samples and calculating a statistic from each creates a predictable sampling distribution. Students observe the process of sampling and see the histogram of sample proportions build dynamically.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Sampling Distributions",
+    "Sample Proportion",
+    "Sampling Variability",
+    "Statistical Inference"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/sampling-distribution-concept/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Sampling Distribution",
+    "Sample Proportion",
+    "Sampling Variability",
+    "Unbiased Estimator",
+    "Standard Error",
+    "Central Limit Theorem"
+  ],
+  "prerequisites": [
+    "Population and sample concepts",
+    "Proportion calculations",
+    "Basic probability",
+    "Histograms"
+  ],
+  "library": "p5.js"
+}

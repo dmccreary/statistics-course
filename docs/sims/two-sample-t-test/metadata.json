@@ -1,0 +1,43 @@
+{
+  "title": "Two-Sample T-Test Visualization",
+  "description": "Compare two group means with visual dotplots, confidence interval for the difference, and complete hypothesis test results using Welch's unpooled t-test.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Two-Sample T-Test",
+    "Hypothesis Testing",
+    "Confidence Intervals",
+    "Comparing Means"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/two-sample-t-test/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Two-Sample T-Test",
+    "Two-Sample T-Interval",
+    "Pooled vs Unpooled",
+    "Welch's T-Test",
+    "Comparing Two Means"
+  ],
+  "prerequisites": [
+    "One-sample t-test",
+    "Confidence intervals",
+    "Hypothesis testing basics"
+  ],
+  "library": "p5.js"
+}
