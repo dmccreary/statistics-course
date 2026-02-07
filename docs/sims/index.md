@@ -29,6 +29,14 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim that helps students classify associations between categorical variables as strong, moderate, weak, or none by visualizing two-way tables and segmented bar charts.
 
+-   **[AP Exam Preparation Checklist](./ap-exam-checklist/index.md)**
+
+    Interactive checklist of essential formulas, condition checks, key phrases, calculator skills, and common mistakes for AP Statistics exam preparation with progress tracking and localStorage persistence.
+
+-   **[Audience Communication Matcher](./audience-communication-matcher/index.md)**
+
+    Drag-and-drop matching game where students learn to tailor statistical explanations to different audiences: professors, business managers, newspaper readers, and AP exam graders.
+
 -   **[Bar Graph Builder](./bar-graph-builder/index.md)**
 
     ![Bar Graph Builder](./bar-graph-builder/bar-graph-builder.png)
@@ -44,6 +52,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 -   **[Binomial Probability Explorer](./binomial-probability-explorer/index.md)**
 
     Interactive exploration of the binomial distribution showing how n and p affect shape, center, and spread, with step-by-step formula calculation.
+
+-   **[Blinding Flowchart](./blinding-flowchart/index.md)**
+
+    Interactive comparison of no blinding, single-blind, and double-blind experimental designs showing information flow and bias risk for each approach.
 
 -   **[Boxplot Builder](./boxplot-builder/index.md)**
 
@@ -63,13 +75,29 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
 -   **[Chapter 2 Concept Map](./chapter-2-concept-map/index.md)**
 
+-   **[Chi-Square Calculation Step-by-Step](./chi-square-calculation/index.md)**
+
+    Interactive step-by-step visualization of chi-square statistic calculation with editable data, showing how each category contributes to the final statistic.
+
+-   **[Chi-Square Distribution Shapes](./chi-square-distribution-shapes/index.md)**
+
+    Interactive visualization comparing how the chi-square distribution's shape changes with different degrees of freedom, with critical region shading.
+
     ![Chapter 2 Concept Map](./chapter-2-concept-map/chapter-2-concept-map.png)
 
     An interactive concept map showing the hierarchy of key concepts in Chapter 2, including Organizing Data, Single Variable Displays, Two Variable Analysis, and Association.
 
+-   **[CI Construction Walkthrough](./ci-construction-walkthrough/index.md)**
+
+    Step-by-step interactive calculator for constructing confidence intervals for proportions, guiding students through all six steps from checking conditions to visualizing the final interval.
+
 -   **[Combining Random Variables Visualizer](./combining-random-variables/index.md)**
 
     Interactive visualization showing how means and variances combine when adding or subtracting independent random variables, demonstrating that variances always add.
+
+-   **[Confidence Level Simulator](./confidence-level-simulator/index.md)**
+
+    Interactive demonstration showing that the confidence level represents the long-run proportion of intervals that capture the true parameter through repeated sampling.
 
 -   **[Correlation Calculator](./correlation-calculator/index.md)**
 
@@ -88,6 +116,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Correlation Properties Explorer](./correlation-properties/correlation-properties.png)
 
     Explore correlation properties by dragging points, toggling outliers, swapping axes, and changing units to see how the correlation coefficient responds.
+
+-   **[Critical Value Visualizer](./critical-value-visualizer/index.md)**
+
+    Interactive visualization showing how z* critical values correspond to areas under the standard normal curve for different confidence levels.
 
 -   **[Density Curve Area Explorer](./density-curve-area/index.md)**
 
@@ -113,9 +145,25 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive demonstration of the 68-95-99.7 rule for normal distributions with animated regions and real-world examples.
 
+-   **[Experiment Planning Flowchart](./experiment-planning-flowchart/index.md)**
+
+    Interactive decision flowchart guiding students through the process of designing a complete experiment from research question to final design.
+
+-   **[Experimental Designs Comparison](./experimental-designs-compare/index.md)**
+
+    Interactive comparison of completely randomized, randomized block, and matched pairs experimental designs with animated random assignment.
+
+-   **[Effect Size Visualizer](./effect-size-visualizer/index.md)**
+
+    Interactive visualization showing how Cohen's d effect size relates to the visual separation and overlap between two normal distributions with adjustable slider.
+
 -   **[Expected Value Calculator](./expected-value-calculator/index.md)**
 
     Interactive calculator for computing the expected value of discrete random variables with step-by-step calculation display and real-time validation.
+
+-   **[Factors and Levels Tree](./factors-levels-tree/index.md)**
+
+    Interactive tree diagram showing how factors and levels combine to create experimental treatments in a 2-factor experiment design.
 
 -   **[Frequency Table Explorer](./frequency-table-explorer/index.md)**
 
@@ -123,9 +171,21 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students practice calculating relative frequencies and percentages from raw frequency data using adjustable sliders.
 
+-   **[Four-Step Process Flowchart](./four-step-process-flowchart/index.md)**
+
+    Interactive flowchart guiding students through the STATE, PLAN, DO, CONCLUDE process for statistical inference with mode toggle for hypothesis tests and confidence intervals.
+
+-   **[Generalizability Target](./generalizability-target/index.md)**
+
+    Interactive concentric circle diagram visualizing levels of generalizability from a specific sample outward to broader populations, with scenario toggling.
+
 -   **[Geometric Distribution Simulator](./geometric-distribution-sim/index.md)**
 
     Interactive simulation that runs trials until first success, building up the geometric distribution empirically and comparing to theoretical probabilities.
+
+-   **[GOF Test Simulator](./gof-test-simulator/index.md)**
+
+    Complete interactive chi-square goodness-of-fit test simulator with editable data, preset examples, automatic calculations, and visual results interpretation.
 
 -   **[Guess the Correlation](./guess-correlation/index.md)**
 
@@ -138,6 +198,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Interactive Histogram Explorer](./histogram-explorer/histogram-explorer.png)
 
     An interactive MicroSim where students examine how changing bin width affects histogram appearance, with multiple datasets and display options.
+
+-   **[Homogeneity vs Independence Comparison](./homogeneity-vs-independence/index.md)**
+
+    Side-by-side comparison of chi-square tests for homogeneity and independence with visual sampling diagrams and an interactive quiz with real-world scenarios.
 
 -   **[Household Income Boxplot Explorer](./household-income-boxplot/index.md)**
 
@@ -191,6 +255,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive visualization showing how mean and median positions differ based on distribution shape, with outlier buttons to demonstrate resistance.
 
+-   **[Margin of Error Explorer](./margin-of-error-explorer/index.md)**
+
+    Interactive visualization showing how confidence level, sample size, and sample proportion affect the margin of error and confidence interval width.
+
 -   **[Normal Distribution Explorer](./normal-distribution-explorer/index.md)**
 
     ![Normal Distribution Explorer](./normal-distribution-explorer/normal-distribution-explorer.png)
@@ -209,6 +277,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive visualization for assessing normality using histograms and QQ plots with multiple distribution types and sample sizes.
 
+-   **[One-Sample T-Interval Calculator](./one-sample-t-interval/index.md)**
+
+    Step-by-step calculator for constructing one-sample t confidence intervals for a population mean, with visual representation and proper interpretation.
+
 -   **[Outlier Detection](./outlier-detection/index.md)**
 
     ![Outlier Detection](./outlier-detection/outlier-detection.png)
@@ -226,6 +298,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![P-Value Visualizer](./p-value-visualizer/p-value-visualizer.png)
 
     Interactive visualization of p-values as shaded areas under the standard normal distribution for one-sided and two-sided hypothesis tests.
+
+-   **[Paired vs Independent Data Guide](./paired-vs-independent/index.md)**
+
+    Interactive flowchart and practice quiz to help students determine whether data requires paired or independent samples t-procedures.
 
 -   **[Parameter vs Statistic Comparison](./parameter-statistic-compare/index.md)**
 
@@ -251,6 +327,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim that demonstrates the relationship between a population and a sample by letting students select individuals from a population.
 
+-   **[Point vs Interval Estimate](./point-vs-interval-estimate/index.md)**
+
+    Interactive visualization comparing point estimates (single values) and interval estimates (confidence intervals) for population proportions through repeated sampling.
+
 -   **[Probability Distribution Bar Chart](./probability-distribution-bar/index.md)**
 
     Interactive bar chart showing the probability distribution for rolling a fair six-sided die, demonstrating that each outcome has equal probability of 1/6.
@@ -273,6 +353,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive simulation demonstrating how question wording dramatically affects survey responses through neutral, positive, and negative framings.
 
+-   **[Random Assignment Simulator](./random-assignment-simulator/index.md)**
+
+    Interactive simulation for practicing random assignment of experimental units to treatment groups using a chance mechanism.
+
 -   **[Random Digit Table Simulator](./random-digit-table/index.md)**
 
     ![Random Digit Table Simulator](./random-digit-table/random-digit-table.png)
@@ -288,6 +372,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Regression Analysis Tool](./regression-analysis-tool/regression-analysis-tool.png)
 
     Complete regression analysis dashboard with scatterplot, residual plot, statistics panel, and prediction calculator for comprehensive data analysis.
+
+-   **[Regression Conditions Checker](./regression-conditions-checker/index.md)**
+
+    Interactive tool for evaluating LINE conditions for regression inference by analyzing scatterplots, residual plots, and histograms with immediate feedback.
 
 -   **[Residual Calculator](./residual-calculator/index.md)**
 
@@ -307,7 +395,15 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive MicroSim where students classify distributions as symmetric, skewed left, or skewed right by examining histograms with real-world contexts.
 
+-   **[Slope Confidence Interval](./slope-confidence-interval/index.md)**
+
+    Interactive visualization for constructing and interpreting confidence intervals for regression slopes with coverage simulation showing interval capture rates.
+
 -   **[Slope Intercept Explorer](./slope-intercept-explorer/index.md)**
+
+-   **[Slope Sampling Distribution](./slope-sampling-distribution/index.md)**
+
+    Interactive visualization showing how sample regression slopes vary under repeated sampling and form a distribution around the true population slope.
 
     ![Slope Intercept Explorer](./slope-intercept-explorer/slope-intercept-explorer.png)
 
@@ -319,11 +415,19 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students compose complete distribution descriptions using the SOCS framework (Shape, Outliers, Center, Spread).
 
+-   **[Sample Size Calculator](./sample-size-calculator/index.md)**
+
+    Interactive calculator for determining the sample size needed to achieve a desired margin of error for confidence intervals about proportions.
+
 -   **[Sample Space Explorer](./sample-space-explorer/index.md)**
 
     ![Sample Space Explorer](./sample-space-explorer/sample-space-explorer.png)
 
     Interactive visualization for exploring sample spaces of common probability experiments including dice rolls, coin flips, and card draws.
+
+-   **[Sample Size and Margin of Error Explorer](./sample-size-margin-error/index.md)**
+
+    Interactive visualization demonstrating the relationship between sample size and margin of error for proportions, showing the diminishing returns of larger samples.
 
 -   **[Sampling Distribution Calculator](./sampling-distribution-calculator/index.md)**
 
@@ -348,6 +452,10 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 -   **[Standard Error Explorer](./standard-error-explorer/index.md)**
 
     Interactive visualization showing how sample size affects the standard error of sampling distributions for both proportions and means, with real-time formula calculations.
+
+-   **[Statistical vs Practical Significance Matrix](./stat-practical-sig-matrix/index.md)**
+
+    Interactive 2x2 decision matrix helping students distinguish between statistical and practical significance by clicking quadrants to explore examples of trivial effects, meaningful discoveries, and more.
 
 -   **[Stemplot Constructor](./stemplot-constructor/index.md)**
 
@@ -391,11 +499,35 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive calculator for computing z-test statistics in one-proportion hypothesis tests with step-by-step calculations and conditions checking.
 
+-   **[Three Principles of Experiment](./three-principles-experiment/index.md)**
+
+    Interactive infographic showing Control, Randomization, and Replication as foundational principles of experimental design with visual demonstrations.
+
+-   **[Treatment Control Comparison](./treatment-control-comparison/index.md)**
+
+    Step-through visualization demonstrating why control groups are essential for valid conclusions in experimental research.
+
+-   **[T Critical Value Finder](./t-critical-value-finder/index.md)**
+
+    Find t critical values for different degrees of freedom and confidence levels, with visualizations for both confidence intervals and hypothesis tests.
+
+-   **[T-Procedure Robustness Exploration](./t-procedure-robustness/index.md)**
+
+    Simulation-based exploration of how well t-procedure confidence intervals perform with different population shapes and sample sizes.
+
+-   **[T vs Normal Distribution Comparison](./t-vs-normal-comparison/index.md)**
+
+    Interactive visualization comparing t-distributions with different degrees of freedom to the standard normal distribution.
+
 -   **[Two-Proportion Z-Test Calculator](./two-proportion-test/index.md)**
 
     ![Two-Proportion Z-Test Calculator](./two-proportion-test/two-proportion-test.png)
 
     Complete two-sample z-test calculator for comparing proportions between independent groups with visual comparison and conclusion generator.
+
+-   **[Two-Sample T-Test Visualization](./two-sample-t-test/index.md)**
+
+    Compare two group means with visual dotplots, confidence interval for the difference, and complete hypothesis test results using Welch's unpooled t-test.
 
 -   **[Two-Way Table Calculator](./two-way-table-calculator/index.md)**
 

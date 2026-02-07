@@ -229,43 +229,6 @@ Here's a comparison of blinding approaches:
 
 <iframe src="../../sims/blinding-flowchart/main.html" width="100%" height="400px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Blinding Types Flowchart</summary>
-Type: workflow
-
-Purpose: Show decision process for determining appropriate level of blinding and illustrate information flow in different blinding scenarios
-
-Bloom Level: Analyze (L4)
-Bloom Verb: differentiate, compare
-
-Learning Objective: Students will be able to differentiate between single-blind and double-blind experiments and identify which type of blinding is appropriate for different research scenarios.
-
-Visual Layout: Split view showing three parallel experimental setups
-- Left: No blinding (everyone knows everything)
-- Center: Single-blind (subjects don't know, researchers do)
-- Right: Double-blind (neither knows)
-
-Elements in each setup:
-- Subject figures (labeled)
-- Researcher figures (labeled)
-- Treatment assignment arrow (visible/hidden based on blinding)
-- "Knowledge bubbles" showing what each party knows
-- Bias risk indicators (high/medium/low)
-
-Interactive Features:
-- Hover over each setup to see advantages and disadvantages
-- Click "Show Information Flow" to animate what each party knows
-- Toggle examples for each scenario (drug trial, exercise study, therapy study)
-
-Color coding:
-- "Knows assignment": Red/Orange
-- "Doesn't know": Green
-- Arrows: Sylvia auburn for visible information, gray dotted for hidden
-
-Implementation: p5.js with hover and toggle interactions
-Canvas size: Responsive, approximately 750x380px
-</details>
-
 ## Types of Experimental Designs
 
 Now that you understand the principles, let's explore different ways to structure experiments. The design you choose depends on your research question, available resources, and the nature of your experimental units.
@@ -333,52 +296,6 @@ This eliminates individual differences entirely because each person serves as th
 #### Diagram: Experimental Design Types Comparison
 
 <iframe src="../../sims/experimental-designs-compare/main.html" width="100%" height="550px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Experimental Design Types Comparison MicroSim</summary>
-Type: microsim
-
-Purpose: Allow students to explore and compare the three main experimental designs (completely randomized, randomized block, matched pairs) through interactive visualization
-
-Bloom Level: Analyze (L4)
-Bloom Verb: compare, differentiate, organize
-
-Learning Objective: Students will be able to compare the three main experimental designs and analyze which design is most appropriate for different research scenarios.
-
-Visual Elements:
-- Top section: Design selector (three buttons/tabs)
-- Main area: Visual representation of the selected design
-  - Completely Randomized: Pool of units randomly divided into treatment groups
-  - Randomized Block: Units grouped into blocks, then randomly assigned within blocks
-  - Matched Pairs: Units paired and one from each pair assigned to each treatment
-- Bottom section: Key characteristics and "Best for..." summary
-
-Data Visibility Requirements:
-- Show the actual units (represented as circles or figures)
-- Color-code treatment assignment
-- For block design, show blocking variable
-- For matched pairs, show pairing connections
-
-Interactive Controls:
-- Design selector: Completely Randomized | Randomized Block | Matched Pairs
-- "Animate Assignment" button: Shows the random assignment process
-- "Show Advantages" toggle: Reveals when each design is preferred
-- Scenario dropdown: "Drug trial", "Agricultural study", "Educational intervention" to see how design changes
-
-Default view: Completely Randomized Design
-
-Color Scheme:
-- Treatment A: Sylvia green (#2E7D32)
-- Treatment B: Sylvia auburn (#B5651D)
-- Block boundaries: Gray dashed lines
-- Matched pair connections: Blue lines
-- Unassigned units: Light gray
-
-Instructional Rationale: Interactive comparison allows students to directly observe the structural differences between designs and reason about when each is appropriate.
-
-Implementation: p5.js with tabbed interface and animations
-Canvas size: Responsive, approximately 750x500px
-</details>
 
 ## Putting It All Together: Designing an Experiment
 
@@ -449,62 +366,6 @@ Here's a summary of our experimental design:
 #### Diagram: Complete Experiment Planning Flowchart
 
 <iframe src="../../sims/experiment-planning-flowchart/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Experiment Planning Decision Flowchart</summary>
-Type: workflow
-
-Purpose: Guide students through the decision-making process when designing an experiment, from research question to final design
-
-Bloom Level: Create (L6)
-Bloom Verb: design, formulate
-
-Learning Objective: Students will be able to design a complete experiment by following a structured decision-making process.
-
-Visual Layout: Flowchart with decision points and process boxes
-
-Flow Structure:
-1. Start: "Define Research Question"
-   - Output: Identify response variable, factors, levels
-
-2. Decision: "Is there significant unit variability?"
-   - No → Completely Randomized Design
-   - Yes → Continue
-
-3. Decision: "Can you measure the source of variability?"
-   - No → Consider increasing sample size
-   - Yes → Continue
-
-4. Decision: "Comparing exactly 2 treatments?"
-   - Yes → Consider Matched Pairs
-   - No → Randomized Block Design
-
-5. Process: "Apply Three Principles"
-   - Control: List variables to hold constant
-   - Randomization: Method for random assignment
-   - Replication: Calculate needed sample size
-
-6. Decision: "Is blinding possible?"
-   - Yes → Determine single or double blind
-   - No → Document limitation
-
-7. End: "Final Design Summary"
-
-Interactive Features:
-- Click each node to see detailed explanation and examples
-- Hover for quick tips at each decision point
-- Input your own scenario and follow the flowchart to see recommended design
-- "Show Example" button that walks through the classical music study
-
-Color Scheme:
-- Decision diamonds: Sylvia auburn (#B5651D)
-- Process rectangles: Sylvia green (#2E7D32)
-- Start/End: Sylvia hazel (#8B7355)
-- Arrows: Dark gray
-
-Implementation: p5.js or vis-network with interactive node exploration
-Canvas size: Responsive, approximately 700x480px
-</details>
 
 ## Common Pitfalls in Experimental Design
 
@@ -580,59 +441,6 @@ On the AP Statistics exam, you'll often need to describe how to design an experi
 #### Diagram: Random Assignment Simulator
 
 <iframe src="../../sims/random-assignment-simulator/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>Random Assignment Simulator MicroSim</summary>
-Type: microsim
-
-Purpose: Allow students to practice random assignment by simulating the process of assigning experimental units to treatment groups
-
-Bloom Level: Apply (L3)
-Bloom Verb: use, execute, implement
-
-Learning Objective: Students will be able to execute random assignment using a chance mechanism and verify that the assignment process is truly random.
-
-Visual Elements:
-- Left panel: Pool of experimental units (represented as numbered circles)
-- Right panel: Treatment group containers (Treatment A, Treatment B, Control)
-- Center: Random number generator display
-- Bottom: Statistics showing current distribution
-
-Interactive Controls:
-- Number input: "Number of units" (default: 20)
-- Number input: "Number of groups" (default: 2)
-- Button: "Assign One Unit" (step through one at a time)
-- Button: "Assign All" (animate full assignment)
-- Button: "Reset"
-- Toggle: "Show assignment method" (random numbers, coin flip simulation, etc.)
-
-Behavior:
-- When "Assign One Unit" clicked:
-  1. Highlight next unassigned unit
-  2. Show random number generation
-  3. Animate unit moving to assigned group
-  4. Update group counts
-
-- When "Assign All" clicked:
-  - Rapidly animate all assignments with brief pauses
-
-- Statistics displayed:
-  - Count in each group
-  - Percentage in each group
-  - Whether groups are balanced (within acceptable range)
-
-Visual Style:
-- Units: Circles with numbers
-- Treatment A: Sylvia green (#2E7D32)
-- Treatment B: Sylvia auburn (#B5651D)
-- Control (if 3 groups): Blue
-- Unassigned: Gray
-
-Instructional Rationale: Hands-on practice with random assignment helps students understand both the procedure and why it tends to create balanced groups.
-
-Implementation: p5.js with canvas-based controls
-Canvas size: Responsive, approximately 700x400px
-</details>
 
 ## Summary: Key Takeaways
 

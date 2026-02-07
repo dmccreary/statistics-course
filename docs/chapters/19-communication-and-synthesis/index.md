@@ -374,54 +374,6 @@ Since the p-value (0.198) is greater than α = 0.05, we fail to reject the null 
 
 <iframe src="../../sims/four-step-process-flowchart/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details markdown="1">
-<summary>Four-Step Process Interactive Flowchart</summary>
-Type: workflow
-
-Bloom Level: Apply (L3)
-Bloom Verb: Execute
-
-Purpose: Guide students through the four-step process with prompts and examples for each step
-
-Learning Objective: Students will be able to execute the complete four-step process for inference problems by following the structured workflow.
-
-Visual Layout: Vertical flowchart with four main boxes connected by arrows
-
-Steps with Hover Content:
-1. STATE (Green box)
- - Hover: "Define parameters, state hypotheses (H₀ and Hₐ), or specify confidence level"
- - Checklist: Parameter defined? Hypotheses stated? Procedure named?
-
-2. PLAN (Blue box)
- - Hover: "Identify procedure and verify conditions"
- - Sub-boxes: Random, Independent, Normal
- - Checklist for each condition with example language
-
-3. DO (Orange box)
- - Hover: "Perform calculations with all work shown"
- - Show formulas for test statistic and p-value
- - Branching paths for different procedure types
-
-4. CONCLUDE (Purple box)
- - Hover: "State decision in context of the problem"
- - Decision diamond: Is p-value < α?
- - Template phrases for each outcome
-
-Interactive Features:
-- Click each step to expand with detailed guidance
-- Toggle between "Hypothesis Test" and "Confidence Interval" modes
-- Practice mode: Enter values and get feedback on conclusion wording
-- Highlight which conditions apply to different procedures
-
-Color Scheme: Each step has distinct color for easy reference
-- State: Sylvia Green (#2E7D32)
-- Plan: Blue (#1976D2)
-- Do: Orange (#F57C00)
-- Conclude: Purple (#7B1FA2)
-
-Implementation: HTML/CSS/JavaScript with expandable sections
-</details>
-
 !!! tip "Sylvia's Four-Step Reminder"
     "I remember the four steps with the mnemonic: 'Some People Don't Care'—State, Plan, Do, Conclude. But trust me, AP graders DEFINITELY care if you skip a step! My tail gets all puffy just thinking about losing points for forgetting to check conditions."
 
@@ -476,61 +428,6 @@ You've learned the content—now let's make sure you can show what you know on e
 #### Diagram: AP Exam Preparation Checklist
 
 <iframe src="../../sims/ap-exam-checklist/main.html" width="100%" height="480px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
-
-<details markdown="1">
-<summary>AP Exam Preparation Checklist</summary>
-Type: infographic
-
-Bloom Level: Remember (L1)
-Bloom Verb: Recall
-
-Purpose: Provide an interactive checklist of essential formulas, concepts, and strategies for AP exam preparation
-
-Learning Objective: Students will be able to recall the essential elements needed for AP Statistics success by working through an organized checklist.
-
-Layout: Categorized accordion-style checklist with progress tracking
-
-Categories:
-1. Essential Formulas
- - Mean, standard deviation
- - z-score, t-statistic
- - Confidence interval format
- - Margin of error formulas
-
-2. Condition Checks (with mnemonics)
- - Random (how to verify)
- - Independent (10% rule)
- - Normal (np ≥ 10, n(1-p) ≥ 10, n ≥ 30)
-
-3. Key Phrases to Memorize
- - Confidence interval interpretation
- - Hypothesis test conclusion language
- - P-value interpretation
-
-4. Calculator Skills
- - 1-PropZTest, 2-PropZTest
- - T-Test, 2-SampTTest
- - LinRegTTest
- - normalcdf, invNorm, tcdf, invT
-
-5. Common Mistakes to Avoid
- - List of frequent errors with correct alternatives
-
-Interactive Features:
-- Check boxes to track completion
-- Progress bar showing overall readiness
-- Click category to expand/collapse
-- Star items for personal focus areas
-- Export checklist as PDF for offline study
-
-Visual Style:
-- Clean, organized layout
-- Color-coded categories matching the four-step process colors
-- Check mark animations when completing items
-- Percentage complete displayed prominently
-
-Implementation: HTML/CSS/JavaScript with localStorage for progress persistence
-</details>
 
 ## Putting It All Together: A Complete Statistical Investigation
 

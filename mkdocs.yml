@@ -36,9 +36,12 @@ nav:
     - Addition Rule Visualizer: sims/addition-rule-visualizer/index.md
     - Association Detector: sims/association-detector/index.md
     - Association Strength Spectrum: sims/association-strength-spectrum/index.md
+    - AP Exam Checklist: sims/ap-exam-checklist/index.md
+    - Audience Communication Matcher: sims/audience-communication-matcher/index.md
     - Bar Graph Builder: sims/bar-graph-builder/index.md
     - Bias vs. Variability Target: sims/bias-variability-target/index.md
     - Binomial Probability Explorer: sims/binomial-probability-explorer/index.md
+    - Blinding Flowchart: sims/blinding-flowchart/index.md
     - Boxplot Builder: sims/boxplot-builder/index.md
     - Boxplot Comparison: sims/boxplot-comparison/index.md
     - Central Limit Theorem Demo: sims/clt-demonstration/index.md
@@ -55,9 +58,15 @@ nav:
     - Density Curve Area Explorer: sims/density-curve-area/index.md
     - Discrete vs Continuous Number Line: sims/discrete-continuous-numberline/index.md
     - Distribution Shape Gallery: sims/distribution-shape-gallery/index.md
+    - Effect Size Visualizer: sims/effect-size-visualizer/index.md
     - Empirical Rule (68-95-99.7): sims/empirical-rule/index.md
+    - Experiment Planning Flowchart: sims/experiment-planning-flowchart/index.md
+    - Experimental Designs Comparison: sims/experimental-designs-compare/index.md
     - Expected Value Calculator: sims/expected-value-calculator/index.md
+    - Factors and Levels Tree: sims/factors-levels-tree/index.md
+    - Four-Step Process Flowchart: sims/four-step-process-flowchart/index.md
     - Frequency Table Explorer: sims/frequency-table-explorer/index.md
+    - Generalizability Target: sims/generalizability-target/index.md
     - Geometric Distribution Simulator: sims/geometric-distribution-sim/index.md
     - GOF Test Simulator: sims/gof-test-simulator/index.md
     - Guess the Correlation: sims/guess-correlation/index.md
@@ -80,6 +89,7 @@ nav:
     - Outlier Detection: sims/outlier-detection/index.md
     - Outlier Detective Game: sims/outlier-detective/index.md
     - P-Value Visualizer: sims/p-value-visualizer/index.md
+    - Paired vs Independent Data Guide: sims/paired-vs-independent/index.md
     - Parameter vs Statistic: sims/parameter-statistic-compare/index.md
     - Pattern Recognition Gallery: sims/pattern-recognition-gallery/index.md
     - Pie vs Bar Comparison: sims/pie-vs-bar-comparison/index.md
@@ -89,6 +99,7 @@ nav:
     - Probability Simulation Lab: sims/probability-simulation-lab/index.md
     - Quartile Visualization: sims/quartile-visualization/index.md
     - Question Wording Effects: sims/question-wording-effects/index.md
+    - Random Assignment Simulator: sims/random-assignment-simulator/index.md
     - Random Digit Table: sims/random-digit-table/index.md
     - Random Variable Concept Map: sims/random-variable-concept-map/index.md
     - Regression Analysis Tool: sims/regression-analysis-tool/index.md
@@ -102,11 +113,13 @@ nav:
     - SOCS Description Builder: sims/socs-description-builder/index.md
     - Sample Space Explorer: sims/sample-space-explorer/index.md
     - Sample Size Calculator: sims/sample-size-calculator/index.md
+    - Sample Size Margin Error: sims/sample-size-margin-error/index.md
     - Sampling Distribution Calculator: sims/sampling-distribution-calculator/index.md
     - Sampling Distribution Concept: sims/sampling-distribution-concept/index.md
     - Scatterplot Builder: sims/scatterplot-builder/index.md
     - Standard Deviation Calculator: sims/std-dev-calculator/index.md
     - Standard Error Explorer: sims/standard-error-explorer/index.md
+    - Stat vs Practical Significance: sims/stat-practical-sig-matrix/index.md
     - Stemplot Constructor: sims/stemplot-constructor/index.md
     - Stratified vs Cluster Compare: sims/stratified-cluster-compare/index.md
     - Study Design Concept Map: sims/study-design-map/index.md
@@ -114,8 +127,14 @@ nav:
     - Symmetric Distribution Identifier: sims/symmetric-distribution/index.md
     - Test Scores Box Plot: sims/test-scores-boxplot/index.md
     - Test Statistic Calculator: sims/test-statistic-calculator/index.md
+    - Three Principles of Experiment: sims/three-principles-experiment/index.md
+    - T Critical Value Finder: sims/t-critical-value-finder/index.md
+    - T-Procedure Robustness: sims/t-procedure-robustness/index.md
+    - T vs Normal Distribution: sims/t-vs-normal-comparison/index.md
     - Token Prediction: sims/token-prediction/index.md
+    - Treatment Control Comparison: sims/treatment-control-comparison/index.md
     - Two-Proportion Z-Test: sims/two-proportion-test/index.md
+    - Two-Sample T-Test Visualization: sims/two-sample-t-test/index.md
     - Two-Way Table Calculator: sims/two-way-table-calculator/index.md
     - Type Error Visualizer: sims/type-error-visualizer/index.md
     - Undercoverage Visualization: sims/undercoverage-viz/index.md
