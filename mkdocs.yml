@@ -90,6 +90,7 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
     - Addition Rule Visualizer: sims/addition-rule-visualizer/index.md
     - Association Detector: sims/association-detector/index.md
     - Association Strength Spectrum: sims/association-strength-spectrum/index.md

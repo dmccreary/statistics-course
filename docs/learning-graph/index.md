@@ -1,6 +1,11 @@
 # Learning Graph for AP Statistics
 
-This section contains the learning graph for this textbook. A learning graph is
+[View the Learning Graph](../sims/graph-viewer/main.html){ .md-button .md-button--primary }
+
+[View the Intelligent Textbook Generator Task Graph](../sims/view-task-graph/index.md)
+
+This section contains the learning graph for this textbook and the tasks
+list related to creating the intelligent textbook from a course description. A learning graph is
 a graph of concepts used in this textbook. Each concept is represented by a
 node in a network graph. Concepts are connected by directed edges that indicate
 what concepts each node depends on before that concept is understood by the student.

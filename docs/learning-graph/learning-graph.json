@@ -18,91 +18,91 @@
       }
     },
     "EDA1": {
-      "classifierName": "EDA1",
+      "classifierName": "Exploratory Data Analysis I",
       "color": "PeachPuff",
       "font": {
         "color": "black"
       }
     },
     "EDA2": {
-      "classifierName": "EDA2",
+      "classifierName": "Exploratory Data Analysis II",
       "color": "LightYellow",
       "font": {
         "color": "black"
       }
     },
     "REG": {
-      "classifierName": "REG",
+      "classifierName": "Regression & Correlation",
       "color": "Honeydew",
       "font": {
         "color": "black"
       }
     },
     "STUDY": {
-      "classifierName": "STUDY",
+      "classifierName": "Study Design",
       "color": "PaleTurquoise",
       "font": {
         "color": "black"
       }
     },
     "PROB": {
-      "classifierName": "PROB",
+      "classifierName": "Probability",
       "color": "Lavender",
       "font": {
         "color": "black"
       }
     },
     "RAND": {
-      "classifierName": "RAND",
+      "classifierName": "Random Variables",
       "color": "LavenderBlush",
       "font": {
         "color": "black"
       }
     },
     "SAMP": {
-      "classifierName": "SAMP",
+      "classifierName": "Sampling Distributions",
       "color": "Thistle",
       "font": {
         "color": "black"
       }
     },
     "CIPR": {
-      "classifierName": "CIPR",
+      "classifierName": "Confidence Intervals",
       "color": "PowderBlue",
       "font": {
         "color": "black"
       }
     },
     "HTPR": {
-      "classifierName": "HTPR",
+      "classifierName": "Hypothesis Testing",
       "color": "PaleGreen",
       "font": {
         "color": "black"
       }
     },
     "TMEA": {
-      "classifierName": "TMEA",
+      "classifierName": "Inference for Means",
       "color": "Aquamarine",
       "font": {
         "color": "black"
       }
     },
     "CHISQ": {
-      "classifierName": "CHISQ",
+      "classifierName": "Chi-Square Tests",
       "color": "LightPink",
       "font": {
         "color": "black"
       }
     },
     "REGF": {
-      "classifierName": "REGF",
+      "classifierName": "Regression Inference",
       "color": "Plum",
       "font": {
         "color": "white"
       }
     },
     "COMM": {
-      "classifierName": "COMM",
+      "classifierName": "Communication & Synthesis",
       "color": "Gainsboro",
       "font": {
         "color": "black"
