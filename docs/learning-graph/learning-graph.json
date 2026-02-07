@@ -1,0 +1,3634 @@
+{
+  "metadata": {
+    "title": "AP Statistics Learning Graph",
+    "description": "A comprehensive learning graph for AP Statistics covering exploratory data analysis, study design, probability, and statistical inference. Designed for high school students preparing for the AP Statistics examination.",
+    "creator": "Dan McCreary",
+    "date": "2026-02-06",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "EDA1": {
+      "classifierName": "EDA1",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "EDA2": {
+      "classifierName": "EDA2",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "REG": {
+      "classifierName": "REG",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "STUDY": {
+      "classifierName": "STUDY",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "PROB": {
+      "classifierName": "PROB",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "RAND": {
+      "classifierName": "RAND",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SAMP": {
+      "classifierName": "SAMP",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CIPR": {
+      "classifierName": "CIPR",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "HTPR": {
+      "classifierName": "HTPR",
+      "color": "PaleGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TMEA": {
+      "classifierName": "TMEA",
+      "color": "Aquamarine",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CHISQ": {
+      "classifierName": "CHISQ",
+      "color": "LightPink",
+      "font": {
+        "color": "black"
+      }
+    },
+    "REGF": {
+      "classifierName": "REGF",
+      "color": "Plum",
+      "font": {
+        "color": "white"
+      }
+    },
+    "COMM": {
+      "classifierName": "COMM",
+      "color": "Gainsboro",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Statistics",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Data",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Observation",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Dataset",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Categorical Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Quantitative Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Discrete Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Continuous Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Population",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Sample",
+      "group": "FOUND"
+    },
+    {
+      "id": 12,
+      "label": "Parameter",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Statistic",
+      "group": "FOUND"
+    },
+    {
+      "id": 14,
+      "label": "Distribution",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Frequency Table",
+      "group": "EDA1"
+    },
+    {
+      "id": 16,
+      "label": "Relative Frequency",
+      "group": "EDA1"
+    },
+    {
+      "id": 17,
+      "label": "Cumulative Frequency",
+      "group": "EDA1"
+    },
+    {
+      "id": 18,
+      "label": "Bar Graph",
+      "group": "EDA1"
+    },
+    {
+      "id": 19,
+      "label": "Pie Chart",
+      "group": "EDA1"
+    },
+    {
+      "id": 20,
+      "label": "Dotplot",
+      "group": "EDA1"
+    },
+    {
+      "id": 21,
+      "label": "Stemplot",
+      "group": "EDA1"
+    },
+    {
+      "id": 22,
+      "label": "Histogram",
+      "group": "EDA1"
+    },
+    {
+      "id": 23,
+      "label": "Choosing Bin Width",
+      "group": "EDA1"
+    },
+    {
+      "id": 24,
+      "label": "Shape of Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 25,
+      "label": "Symmetric Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 26,
+      "label": "Skewed Left",
+      "group": "EDA1"
+    },
+    {
+      "id": 27,
+      "label": "Skewed Right",
+      "group": "EDA1"
+    },
+    {
+      "id": 28,
+      "label": "Unimodal Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 29,
+      "label": "Bimodal Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 30,
+      "label": "Uniform Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 31,
+      "label": "Outlier",
+      "group": "EDA1"
+    },
+    {
+      "id": 32,
+      "label": "Identifying Outliers",
+      "group": "EDA1"
+    },
+    {
+      "id": 33,
+      "label": "Center of Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 34,
+      "label": "Spread of Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 35,
+      "label": "Mean",
+      "group": "EDA1"
+    },
+    {
+      "id": 36,
+      "label": "Median",
+      "group": "EDA1"
+    },
+    {
+      "id": 37,
+      "label": "Mode",
+      "group": "EDA1"
+    },
+    {
+      "id": 38,
+      "label": "Resistant Measure",
+      "group": "EDA1"
+    },
+    {
+      "id": 39,
+      "label": "Comparing Mean and Median",
+      "group": "EDA1"
+    },
+    {
+      "id": 40,
+      "label": "Range",
+      "group": "EDA1"
+    },
+    {
+      "id": 41,
+      "label": "Interquartile Range",
+      "group": "EDA1"
+    },
+    {
+      "id": 42,
+      "label": "Quartiles",
+      "group": "EDA1"
+    },
+    {
+      "id": 43,
+      "label": "Five-Number Summary",
+      "group": "EDA1"
+    },
+    {
+      "id": 44,
+      "label": "Boxplot",
+      "group": "EDA1"
+    },
+    {
+      "id": 45,
+      "label": "Modified Boxplot",
+      "group": "EDA1"
+    },
+    {
+      "id": 46,
+      "label": "Comparing Distributions",
+      "group": "EDA1"
+    },
+    {
+      "id": 47,
+      "label": "Standard Deviation",
+      "group": "EDA1"
+    },
+    {
+      "id": 48,
+      "label": "Variance",
+      "group": "EDA1"
+    },
+    {
+      "id": 49,
+      "label": "Calculating Variance",
+      "group": "EDA1"
+    },
+    {
+      "id": 50,
+      "label": "Percentile",
+      "group": "EDA1"
+    },
+    {
+      "id": 51,
+      "label": "Z-Score",
+      "group": "EDA1"
+    },
+    {
+      "id": 52,
+      "label": "Calculating Z-Scores",
+      "group": "EDA1"
+    },
+    {
+      "id": 53,
+      "label": "Interpreting Z-Scores",
+      "group": "EDA1"
+    },
+    {
+      "id": 54,
+      "label": "Standardization",
+      "group": "EDA1"
+    },
+    {
+      "id": 55,
+      "label": "Comparing with Z-Scores",
+      "group": "EDA1"
+    },
+    {
+      "id": 56,
+      "label": "Normal Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 57,
+      "label": "Parameters of Normal",
+      "group": "FOUND"
+    },
+    {
+      "id": 58,
+      "label": "Empirical Rule",
+      "group": "EDA1"
+    },
+    {
+      "id": 59,
+      "label": "68-95-99.7 Rule",
+      "group": "EDA1"
+    },
+    {
+      "id": 60,
+      "label": "Standard Normal Curve",
+      "group": "EDA1"
+    },
+    {
+      "id": 61,
+      "label": "Normal Table",
+      "group": "EDA1"
+    },
+    {
+      "id": 62,
+      "label": "Finding Normal Probs",
+      "group": "EDA1"
+    },
+    {
+      "id": 63,
+      "label": "Inverse Normal Calcs",
+      "group": "EDA1"
+    },
+    {
+      "id": 64,
+      "label": "Normal Probability Plot",
+      "group": "EDA1"
+    },
+    {
+      "id": 65,
+      "label": "Assessing Normality",
+      "group": "EDA1"
+    },
+    {
+      "id": 66,
+      "label": "Density Curve",
+      "group": "EDA1"
+    },
+    {
+      "id": 67,
+      "label": "Area Under Curve",
+      "group": "EDA1"
+    },
+    {
+      "id": 68,
+      "label": "Technology for Normal",
+      "group": "EDA1"
+    },
+    {
+      "id": 69,
+      "label": "Two-Way Table",
+      "group": "EDA2"
+    },
+    {
+      "id": 70,
+      "label": "Marginal Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 71,
+      "label": "Conditional Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 72,
+      "label": "Calculating Conditionals",
+      "group": "EDA2"
+    },
+    {
+      "id": 73,
+      "label": "Association",
+      "group": "EDA2"
+    },
+    {
+      "id": 74,
+      "label": "Simpson's Paradox",
+      "group": "EDA2"
+    },
+    {
+      "id": 75,
+      "label": "Scatterplot",
+      "group": "REG"
+    },
+    {
+      "id": 76,
+      "label": "Describing Scatterplots",
+      "group": "REG"
+    },
+    {
+      "id": 77,
+      "label": "Explanatory Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 78,
+      "label": "Response Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 79,
+      "label": "Direction of Association",
+      "group": "EDA2"
+    },
+    {
+      "id": 80,
+      "label": "Positive Association",
+      "group": "EDA2"
+    },
+    {
+      "id": 81,
+      "label": "Negative Association",
+      "group": "EDA2"
+    },
+    {
+      "id": 82,
+      "label": "Form of Association",
+      "group": "EDA2"
+    },
+    {
+      "id": 83,
+      "label": "Linear Form",
+      "group": "REG"
+    },
+    {
+      "id": 84,
+      "label": "Nonlinear Form",
+      "group": "REG"
+    },
+    {
+      "id": 85,
+      "label": "Strength of Association",
+      "group": "EDA2"
+    },
+    {
+      "id": 86,
+      "label": "Correlation Coefficient",
+      "group": "REG"
+    },
+    {
+      "id": 87,
+      "label": "Calculating Correlation",
+      "group": "REG"
+    },
+    {
+      "id": 88,
+      "label": "Properties of Correlation",
+      "group": "REG"
+    },
+    {
+      "id": 89,
+      "label": "Correlation Limitations",
+      "group": "REG"
+    },
+    {
+      "id": 90,
+      "label": "Least Squares Regression",
+      "group": "REG"
+    },
+    {
+      "id": 91,
+      "label": "Regression Line",
+      "group": "REG"
+    },
+    {
+      "id": 92,
+      "label": "Regression Equation",
+      "group": "REG"
+    },
+    {
+      "id": 93,
+      "label": "Slope Interpretation",
+      "group": "REG"
+    },
+    {
+      "id": 94,
+      "label": "Y-Intercept Interpretation",
+      "group": "REG"
+    },
+    {
+      "id": 95,
+      "label": "Making Predictions",
+      "group": "REG"
+    },
+    {
+      "id": 96,
+      "label": "Extrapolation Dangers",
+      "group": "REG"
+    },
+    {
+      "id": 97,
+      "label": "Residual",
+      "group": "REG"
+    },
+    {
+      "id": 98,
+      "label": "Calculating Residuals",
+      "group": "REG"
+    },
+    {
+      "id": 99,
+      "label": "Residual Plot",
+      "group": "REG"
+    },
+    {
+      "id": 100,
+      "label": "Interpreting Residuals",
+      "group": "REG"
+    },
+    {
+      "id": 101,
+      "label": "Coefficient of Determination",
+      "group": "REG"
+    },
+    {
+      "id": 102,
+      "label": "R-Squared Interpretation",
+      "group": "REG"
+    },
+    {
+      "id": 103,
+      "label": "Influential Point",
+      "group": "REG"
+    },
+    {
+      "id": 104,
+      "label": "Leverage",
+      "group": "REG"
+    },
+    {
+      "id": 105,
+      "label": "Outliers in Regression",
+      "group": "REG"
+    },
+    {
+      "id": 106,
+      "label": "Lurking Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 107,
+      "label": "Causation",
+      "group": "REG"
+    },
+    {
+      "id": 108,
+      "label": "Correlation vs Causation",
+      "group": "REG"
+    },
+    {
+      "id": 109,
+      "label": "Observational Study",
+      "group": "FOUND"
+    },
+    {
+      "id": 110,
+      "label": "Experiment",
+      "group": "STUDY"
+    },
+    {
+      "id": 111,
+      "label": "Comparing Studies",
+      "group": "STUDY"
+    },
+    {
+      "id": 112,
+      "label": "Experimental Units",
+      "group": "STUDY"
+    },
+    {
+      "id": 113,
+      "label": "Subjects",
+      "group": "STUDY"
+    },
+    {
+      "id": 114,
+      "label": "Treatment",
+      "group": "STUDY"
+    },
+    {
+      "id": 115,
+      "label": "Factor",
+      "group": "STUDY"
+    },
+    {
+      "id": 116,
+      "label": "Levels of a Factor",
+      "group": "STUDY"
+    },
+    {
+      "id": 117,
+      "label": "Placebo",
+      "group": "STUDY"
+    },
+    {
+      "id": 118,
+      "label": "Placebo Effect",
+      "group": "STUDY"
+    },
+    {
+      "id": 119,
+      "label": "Control Group",
+      "group": "STUDY"
+    },
+    {
+      "id": 120,
+      "label": "Comparison in Experiments",
+      "group": "STUDY"
+    },
+    {
+      "id": 121,
+      "label": "Blinding",
+      "group": "STUDY"
+    },
+    {
+      "id": 122,
+      "label": "Single-Blind Experiment",
+      "group": "STUDY"
+    },
+    {
+      "id": 123,
+      "label": "Double-Blind Experiment",
+      "group": "STUDY"
+    },
+    {
+      "id": 124,
+      "label": "Random Assignment",
+      "group": "STUDY"
+    },
+    {
+      "id": 125,
+      "label": "Why Randomize",
+      "group": "STUDY"
+    },
+    {
+      "id": 126,
+      "label": "Randomized Block Design",
+      "group": "STUDY"
+    },
+    {
+      "id": 127,
+      "label": "Matched Pairs Design",
+      "group": "STUDY"
+    },
+    {
+      "id": 128,
+      "label": "Completely Randomized Design",
+      "group": "STUDY"
+    },
+    {
+      "id": 129,
+      "label": "Replication",
+      "group": "STUDY"
+    },
+    {
+      "id": 130,
+      "label": "Confounding Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 131,
+      "label": "Identifying Confounding",
+      "group": "STUDY"
+    },
+    {
+      "id": 132,
+      "label": "Bias",
+      "group": "STUDY"
+    },
+    {
+      "id": 133,
+      "label": "Sources of Bias",
+      "group": "STUDY"
+    },
+    {
+      "id": 134,
+      "label": "Census",
+      "group": "STUDY"
+    },
+    {
+      "id": 135,
+      "label": "Simple Random Sample",
+      "group": "FOUND"
+    },
+    {
+      "id": 136,
+      "label": "Random Number Generator",
+      "group": "STUDY"
+    },
+    {
+      "id": 137,
+      "label": "Stratified Random Sample",
+      "group": "FOUND"
+    },
+    {
+      "id": 138,
+      "label": "When to Stratify",
+      "group": "STUDY"
+    },
+    {
+      "id": 139,
+      "label": "Cluster Sample",
+      "group": "FOUND"
+    },
+    {
+      "id": 140,
+      "label": "Systematic Sample",
+      "group": "FOUND"
+    },
+    {
+      "id": 141,
+      "label": "Convenience Sample",
+      "group": "FOUND"
+    },
+    {
+      "id": 142,
+      "label": "Voluntary Response Sample",
+      "group": "FOUND"
+    },
+    {
+      "id": 143,
+      "label": "Undercoverage",
+      "group": "STUDY"
+    },
+    {
+      "id": 144,
+      "label": "Nonresponse Bias",
+      "group": "STUDY"
+    },
+    {
+      "id": 145,
+      "label": "Response Bias",
+      "group": "STUDY"
+    },
+    {
+      "id": 146,
+      "label": "Wording of Questions",
+      "group": "STUDY"
+    },
+    {
+      "id": 147,
+      "label": "Designing Surveys",
+      "group": "STUDY"
+    },
+    {
+      "id": 148,
+      "label": "Random Phenomenon",
+      "group": "PROB",
+      "shape": "box"
+    },
+    {
+      "id": 149,
+      "label": "Probability",
+      "group": "PROB"
+    },
+    {
+      "id": 150,
+      "label": "Probability Rules",
+      "group": "PROB"
+    },
+    {
+      "id": 151,
+      "label": "Sample Space",
+      "group": "FOUND"
+    },
+    {
+      "id": 152,
+      "label": "Event",
+      "group": "PROB"
+    },
+    {
+      "id": 153,
+      "label": "Complement of Event",
+      "group": "PROB"
+    },
+    {
+      "id": 154,
+      "label": "Mutually Exclusive Events",
+      "group": "PROB"
+    },
+    {
+      "id": 155,
+      "label": "Disjoint Events",
+      "group": "PROB"
+    },
+    {
+      "id": 156,
+      "label": "Independent Events",
+      "group": "PROB"
+    },
+    {
+      "id": 157,
+      "label": "Dependent Events",
+      "group": "PROB"
+    },
+    {
+      "id": 158,
+      "label": "Addition Rule",
+      "group": "PROB"
+    },
+    {
+      "id": 159,
+      "label": "General Addition Rule",
+      "group": "PROB"
+    },
+    {
+      "id": 160,
+      "label": "Multiplication Rule",
+      "group": "PROB"
+    },
+    {
+      "id": 161,
+      "label": "General Multiplication Rule",
+      "group": "PROB"
+    },
+    {
+      "id": 162,
+      "label": "Conditional Probability",
+      "group": "EDA2"
+    },
+    {
+      "id": 163,
+      "label": "Calculating Conditionals",
+      "group": "EDA2"
+    },
+    {
+      "id": 164,
+      "label": "Bayes Intuition",
+      "group": "PROB"
+    },
+    {
+      "id": 165,
+      "label": "Tree Diagram",
+      "group": "PROB"
+    },
+    {
+      "id": 166,
+      "label": "Using Tree Diagrams",
+      "group": "PROB"
+    },
+    {
+      "id": 167,
+      "label": "Venn Diagram",
+      "group": "PROB"
+    },
+    {
+      "id": 168,
+      "label": "Using Venn Diagrams",
+      "group": "PROB"
+    },
+    {
+      "id": 169,
+      "label": "Simulation",
+      "group": "PROB"
+    },
+    {
+      "id": 170,
+      "label": "Designing Simulations",
+      "group": "PROB"
+    },
+    {
+      "id": 171,
+      "label": "Random Digit Table",
+      "group": "PROB"
+    },
+    {
+      "id": 172,
+      "label": "Law of Large Numbers",
+      "group": "PROB"
+    },
+    {
+      "id": 173,
+      "label": "Random Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 174,
+      "label": "Discrete Random Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 175,
+      "label": "Probability Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 176,
+      "label": "Valid Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 177,
+      "label": "Expected Value",
+      "group": "RAND"
+    },
+    {
+      "id": 178,
+      "label": "Calculating Expected Value",
+      "group": "RAND"
+    },
+    {
+      "id": 179,
+      "label": "Variance of Random Variable",
+      "group": "FOUND"
+    },
+    {
+      "id": 180,
+      "label": "Standard Deviation of RV",
+      "group": "EDA1"
+    },
+    {
+      "id": 181,
+      "label": "Linear Transformation",
+      "group": "RAND"
+    },
+    {
+      "id": 182,
+      "label": "Combining Random Variables",
+      "group": "FOUND"
+    },
+    {
+      "id": 183,
+      "label": "Sum of Random Variables",
+      "group": "FOUND"
+    },
+    {
+      "id": 184,
+      "label": "Difference of RVs",
+      "group": "RAND"
+    },
+    {
+      "id": 185,
+      "label": "Binomial Setting",
+      "group": "RAND"
+    },
+    {
+      "id": 186,
+      "label": "Binomial Conditions",
+      "group": "RAND"
+    },
+    {
+      "id": 187,
+      "label": "Binomial Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 188,
+      "label": "Binomial Probability",
+      "group": "PROB"
+    },
+    {
+      "id": 189,
+      "label": "Binomial Formula",
+      "group": "RAND"
+    },
+    {
+      "id": 190,
+      "label": "Binomial Mean",
+      "group": "EDA1"
+    },
+    {
+      "id": 191,
+      "label": "Binomial Standard Dev",
+      "group": "RAND"
+    },
+    {
+      "id": 192,
+      "label": "Geometric Setting",
+      "group": "RAND"
+    },
+    {
+      "id": 193,
+      "label": "Geometric Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 194,
+      "label": "Geometric Probability",
+      "group": "PROB"
+    },
+    {
+      "id": 195,
+      "label": "Geometric Mean",
+      "group": "EDA1"
+    },
+    {
+      "id": 196,
+      "label": "Sampling Variability",
+      "group": "SAMP"
+    },
+    {
+      "id": 197,
+      "label": "Sampling Distribution",
+      "group": "SAMP"
+    },
+    {
+      "id": 198,
+      "label": "Unbiased Estimator",
+      "group": "STUDY"
+    },
+    {
+      "id": 199,
+      "label": "Biased Estimator",
+      "group": "STUDY"
+    },
+    {
+      "id": 200,
+      "label": "Sample Proportion",
+      "group": "FOUND"
+    },
+    {
+      "id": 201,
+      "label": "Sampling Dist of Proportion",
+      "group": "SAMP"
+    },
+    {
+      "id": 202,
+      "label": "Mean of Sample Proportion",
+      "group": "FOUND"
+    },
+    {
+      "id": 203,
+      "label": "SD of Sample Proportion",
+      "group": "FOUND"
+    },
+    {
+      "id": 204,
+      "label": "Conditions for Proportion SD",
+      "group": "SAMP"
+    },
+    {
+      "id": 205,
+      "label": "Sample Mean",
+      "group": "FOUND"
+    },
+    {
+      "id": 206,
+      "label": "Sampling Dist of Mean",
+      "group": "SAMP"
+    },
+    {
+      "id": 207,
+      "label": "Mean of Sample Mean",
+      "group": "FOUND"
+    },
+    {
+      "id": 208,
+      "label": "SD of Sample Mean",
+      "group": "FOUND"
+    },
+    {
+      "id": 209,
+      "label": "Central Limit Theorem",
+      "group": "SAMP"
+    },
+    {
+      "id": 210,
+      "label": "CLT Conditions",
+      "group": "SAMP"
+    },
+    {
+      "id": 211,
+      "label": "Normal Approximation",
+      "group": "EDA1"
+    },
+    {
+      "id": 212,
+      "label": "Statistical Inference",
+      "group": "FOUND"
+    },
+    {
+      "id": 213,
+      "label": "Point Estimate",
+      "group": "CIPR"
+    },
+    {
+      "id": 214,
+      "label": "Interval Estimate",
+      "group": "CIPR"
+    },
+    {
+      "id": 215,
+      "label": "Confidence Interval",
+      "group": "CIPR"
+    },
+    {
+      "id": 216,
+      "label": "Margin of Error",
+      "group": "CIPR"
+    },
+    {
+      "id": 217,
+      "label": "Confidence Level",
+      "group": "CIPR"
+    },
+    {
+      "id": 218,
+      "label": "Interpreting Confidence",
+      "group": "CIPR"
+    },
+    {
+      "id": 219,
+      "label": "Critical Value",
+      "group": "CIPR"
+    },
+    {
+      "id": 220,
+      "label": "Z Critical Values",
+      "group": "CIPR"
+    },
+    {
+      "id": 221,
+      "label": "Standard Error",
+      "group": "CIPR"
+    },
+    {
+      "id": 222,
+      "label": "CI for One Proportion",
+      "group": "CIPR"
+    },
+    {
+      "id": 223,
+      "label": "Conditions for CI Proportion",
+      "group": "CIPR"
+    },
+    {
+      "id": 224,
+      "label": "Interpreting CI",
+      "group": "CIPR"
+    },
+    {
+      "id": 225,
+      "label": "CI Width Factors",
+      "group": "STUDY"
+    },
+    {
+      "id": 226,
+      "label": "Sample Size for CI",
+      "group": "FOUND"
+    },
+    {
+      "id": 227,
+      "label": "CI for Difference in Props",
+      "group": "CIPR"
+    },
+    {
+      "id": 228,
+      "label": "Pooled Proportion",
+      "group": "CIPR"
+    },
+    {
+      "id": 229,
+      "label": "Hypothesis Test",
+      "group": "HTPR"
+    },
+    {
+      "id": 230,
+      "label": "Null Hypothesis",
+      "group": "HTPR"
+    },
+    {
+      "id": 231,
+      "label": "Alternative Hypothesis",
+      "group": "HTPR"
+    },
+    {
+      "id": 232,
+      "label": "Writing Hypotheses",
+      "group": "HTPR"
+    },
+    {
+      "id": 233,
+      "label": "One-Sided Test",
+      "group": "HTPR"
+    },
+    {
+      "id": 234,
+      "label": "Two-Sided Test",
+      "group": "HTPR"
+    },
+    {
+      "id": 235,
+      "label": "Test Statistic",
+      "group": "FOUND"
+    },
+    {
+      "id": 236,
+      "label": "P-Value",
+      "group": "HTPR"
+    },
+    {
+      "id": 237,
+      "label": "Calculating P-Values",
+      "group": "HTPR"
+    },
+    {
+      "id": 238,
+      "label": "Interpreting P-Values",
+      "group": "HTPR"
+    },
+    {
+      "id": 239,
+      "label": "Significance Level",
+      "group": "HTPR"
+    },
+    {
+      "id": 240,
+      "label": "Choosing Alpha",
+      "group": "HTPR"
+    },
+    {
+      "id": 241,
+      "label": "Statistical Significance",
+      "group": "FOUND"
+    },
+    {
+      "id": 242,
+      "label": "Making Conclusions",
+      "group": "HTPR"
+    },
+    {
+      "id": 243,
+      "label": "Type I Error",
+      "group": "HTPR"
+    },
+    {
+      "id": 244,
+      "label": "Type II Error",
+      "group": "HTPR"
+    },
+    {
+      "id": 245,
+      "label": "Error Tradeoffs",
+      "group": "HTPR"
+    },
+    {
+      "id": 246,
+      "label": "Power of a Test",
+      "group": "HTPR"
+    },
+    {
+      "id": 247,
+      "label": "Factors Affecting Power",
+      "group": "STUDY"
+    },
+    {
+      "id": 248,
+      "label": "Test for One Proportion",
+      "group": "CIPR"
+    },
+    {
+      "id": 249,
+      "label": "Conditions for Z-Test",
+      "group": "HTPR"
+    },
+    {
+      "id": 250,
+      "label": "Test for Two Proportions",
+      "group": "CIPR"
+    },
+    {
+      "id": 251,
+      "label": "T-Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 252,
+      "label": "T vs Z Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 253,
+      "label": "Degrees of Freedom",
+      "group": "TMEA"
+    },
+    {
+      "id": 254,
+      "label": "T Critical Values",
+      "group": "CIPR"
+    },
+    {
+      "id": 255,
+      "label": "One-Sample T-Interval",
+      "group": "FOUND"
+    },
+    {
+      "id": 256,
+      "label": "Conditions for T-Procedures",
+      "group": "TMEA"
+    },
+    {
+      "id": 257,
+      "label": "One-Sample T-Test",
+      "group": "FOUND"
+    },
+    {
+      "id": 258,
+      "label": "Two-Sample T-Interval",
+      "group": "FOUND"
+    },
+    {
+      "id": 259,
+      "label": "Two-Sample T-Test",
+      "group": "FOUND"
+    },
+    {
+      "id": 260,
+      "label": "Pooled vs Unpooled",
+      "group": "TMEA"
+    },
+    {
+      "id": 261,
+      "label": "Paired T-Test",
+      "group": "TMEA"
+    },
+    {
+      "id": 262,
+      "label": "Paired Data",
+      "group": "FOUND"
+    },
+    {
+      "id": 263,
+      "label": "When to Pair",
+      "group": "TMEA"
+    },
+    {
+      "id": 264,
+      "label": "Robustness",
+      "group": "TMEA"
+    },
+    {
+      "id": 265,
+      "label": "Chi-Square Distribution",
+      "group": "EDA1"
+    },
+    {
+      "id": 266,
+      "label": "Chi-Square Statistic",
+      "group": "FOUND"
+    },
+    {
+      "id": 267,
+      "label": "Goodness-of-Fit Test",
+      "group": "CHISQ"
+    },
+    {
+      "id": 268,
+      "label": "GOF Hypotheses",
+      "group": "CHISQ"
+    },
+    {
+      "id": 269,
+      "label": "Expected Counts",
+      "group": "CHISQ"
+    },
+    {
+      "id": 270,
+      "label": "Observed Counts",
+      "group": "CHISQ"
+    },
+    {
+      "id": 271,
+      "label": "Calculating Chi-Square",
+      "group": "CHISQ"
+    },
+    {
+      "id": 272,
+      "label": "Conditions for Chi-Square",
+      "group": "CHISQ"
+    },
+    {
+      "id": 273,
+      "label": "GOF Conclusion",
+      "group": "CHISQ"
+    },
+    {
+      "id": 274,
+      "label": "Test for Homogeneity",
+      "group": "HTPR"
+    },
+    {
+      "id": 275,
+      "label": "Homogeneity Setup",
+      "group": "CHISQ"
+    },
+    {
+      "id": 276,
+      "label": "Test for Independence",
+      "group": "HTPR"
+    },
+    {
+      "id": 277,
+      "label": "Independence Setup",
+      "group": "CHISQ"
+    },
+    {
+      "id": 278,
+      "label": "Chi-Square Conclusion",
+      "group": "CHISQ"
+    },
+    {
+      "id": 279,
+      "label": "Inference for Slope",
+      "group": "REGF"
+    },
+    {
+      "id": 280,
+      "label": "Regression Model",
+      "group": "REG"
+    },
+    {
+      "id": 281,
+      "label": "Slope Parameter",
+      "group": "FOUND"
+    },
+    {
+      "id": 282,
+      "label": "T-Interval for Slope",
+      "group": "REGF"
+    },
+    {
+      "id": 283,
+      "label": "T-Test for Slope",
+      "group": "REGF"
+    },
+    {
+      "id": 284,
+      "label": "Standard Error of Slope",
+      "group": "REG"
+    },
+    {
+      "id": 285,
+      "label": "Conditions for Regression",
+      "group": "REG"
+    },
+    {
+      "id": 286,
+      "label": "Linearity Condition",
+      "group": "REGF"
+    },
+    {
+      "id": 287,
+      "label": "Independence Condition",
+      "group": "CHISQ"
+    },
+    {
+      "id": 288,
+      "label": "Normality of Residuals",
+      "group": "EDA1"
+    },
+    {
+      "id": 289,
+      "label": "Equal Variance Condition",
+      "group": "EDA1"
+    },
+    {
+      "id": 290,
+      "label": "Regression Conclusion",
+      "group": "REG"
+    },
+    {
+      "id": 291,
+      "label": "Practical Significance",
+      "group": "HTPR"
+    },
+    {
+      "id": 292,
+      "label": "Stat vs Practical Sig",
+      "group": "COMM"
+    },
+    {
+      "id": 293,
+      "label": "Effect Size",
+      "group": "COMM"
+    },
+    {
+      "id": 294,
+      "label": "Sample Size Impact",
+      "group": "FOUND"
+    },
+    {
+      "id": 295,
+      "label": "Study Limitations",
+      "group": "COMM"
+    },
+    {
+      "id": 296,
+      "label": "Generalizability",
+      "group": "COMM"
+    },
+    {
+      "id": 297,
+      "label": "Statistical Report Writing",
+      "group": "FOUND"
+    },
+    {
+      "id": 298,
+      "label": "Communicating Results",
+      "group": "COMM"
+    },
+    {
+      "id": 299,
+      "label": "Four-Step Process",
+      "group": "COMM"
+    },
+    {
+      "id": 300,
+      "label": "AP Exam Strategies",
+      "group": "COMM"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 3
+    },
+    {
+      "from": 7,
+      "to": 3
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 7
+    },
+    {
+      "from": 10,
+      "to": 1
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 10
+    },
+    {
+      "from": 13,
+      "to": 11
+    },
+    {
+      "from": 14,
+      "to": 2
+    },
+    {
+      "from": 14,
+      "to": 3
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 6
+    },
+    {
+      "from": 18,
+      "to": 14
+    },
+    {
+      "from": 19,
+      "to": 6
+    },
+    {
+      "from": 19,
+      "to": 16
+    },
+    {
+      "from": 20,
+      "to": 7
+    },
+    {
+      "from": 20,
+      "to": 14
+    },
+    {
+      "from": 21,
+      "to": 7
+    },
+    {
+      "from": 21,
+      "to": 14
+    },
+    {
+      "from": 22,
+      "to": 7
+    },
+    {
+      "from": 22,
+      "to": 14
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 14
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 26,
+      "to": 24
+    },
+    {
+      "from": 27,
+      "to": 24
+    },
+    {
+      "from": 28,
+      "to": 24
+    },
+    {
+      "from": 29,
+      "to": 24
+    },
+    {
+      "from": 30,
+      "to": 24
+    },
+    {
+      "from": 31,
+      "to": 14
+    },
+    {
+      "from": 31,
+      "to": 24
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 32,
+      "to": 41
+    },
+    {
+      "from": 33,
+      "to": 14
+    },
+    {
+      "from": 34,
+      "to": 14
+    },
+    {
+      "from": 35,
+      "to": 7
+    },
+    {
+      "from": 35,
+      "to": 33
+    },
+    {
+      "from": 36,
+      "to": 7
+    },
+    {
+      "from": 36,
+      "to": 33
+    },
+    {
+      "from": 37,
+      "to": 33
+    },
+    {
+      "from": 38,
+      "to": 35
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 31
+    },
+    {
+      "from": 39,
+      "to": 35
+    },
+    {
+      "from": 39,
+      "to": 36
+    },
+    {
+      "from": 39,
+      "to": 24
+    },
+    {
+      "from": 40,
+      "to": 34
+    },
+    {
+      "from": 41,
+      "to": 34
+    },
+    {
+      "from": 41,
+      "to": 42
+    },
+    {
+      "from": 42,
+      "to": 36
+    },
+    {
+      "from": 42,
+      "to": 50
+    },
+    {
+      "from": 43,
+      "to": 36
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 43,
+      "to": 40
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 45,
+      "to": 32
+    },
+    {
+      "from": 46,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 22
+    },
+    {
+      "from": 46,
+      "to": 35
+    },
+    {
+      "from": 46,
+      "to": 47
+    },
+    {
+      "from": 47,
+      "to": 34
+    },
+    {
+      "from": 47,
+      "to": 35
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 16
+    },
+    {
+      "from": 50,
+      "to": 36
+    },
+    {
+      "from": 51,
+      "to": 35
+    },
+    {
+      "from": 51,
+      "to": 47
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 51
+    },
+    {
+      "from": 55,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 54
+    },
+    {
+      "from": 56,
+      "to": 25
+    },
+    {
+      "from": 56,
+      "to": 35
+    },
+    {
+      "from": 56,
+      "to": 47
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 47
+    },
+    {
+      "from": 59,
+      "to": 58
+    },
+    {
+      "from": 60,
+      "to": 56
+    },
+    {
+      "from": 60,
+      "to": 54
+    },
+    {
+      "from": 61,
+      "to": 60
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 56
+    },
+    {
+      "from": 64,
+      "to": 65
+    },
+    {
+      "from": 65,
+      "to": 56
+    },
+    {
+      "from": 65,
+      "to": 22
+    },
+    {
+      "from": 65,
+      "to": 24
+    },
+    {
+      "from": 66,
+      "to": 14
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 62
+    },
+    {
+      "from": 68,
+      "to": 63
+    },
+    {
+      "from": 69,
+      "to": 6
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 73,
+      "to": 69
+    },
+    {
+      "from": 73,
+      "to": 71
+    },
+    {
+      "from": 74,
+      "to": 73
+    },
+    {
+      "from": 74,
+      "to": 106
+    },
+    {
+      "from": 75,
+      "to": 7
+    },
+    {
+      "from": 75,
+      "to": 77
+    },
+    {
+      "from": 75,
+      "to": 78
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 76,
+      "to": 79
+    },
+    {
+      "from": 76,
+      "to": 82
+    },
+    {
+      "from": 76,
+      "to": 85
+    },
+    {
+      "from": 77,
+      "to": 3
+    },
+    {
+      "from": 78,
+      "to": 3
+    },
+    {
+      "from": 79,
+      "to": 73
+    },
+    {
+      "from": 79,
+      "to": 75
+    },
+    {
+      "from": 80,
+      "to": 79
+    },
+    {
+      "from": 81,
+      "to": 79
+    },
+    {
+      "from": 82,
+      "to": 75
+    },
+    {
+      "from": 83,
+      "to": 82
+    },
+    {
+      "from": 84,
+      "to": 82
+    },
+    {
+      "from": 85,
+      "to": 73
+    },
+    {
+      "from": 85,
+      "to": 75
+    },
+    {
+      "from": 86,
+      "to": 83
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 87,
+      "to": 51
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 89,
+      "to": 88
+    },
+    {
+      "from": 89,
+      "to": 31
+    },
+    {
+      "from": 90,
+      "to": 83
+    },
+    {
+      "from": 90,
+      "to": 86
+    },
+    {
+      "from": 91,
+      "to": 90
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 93,
+      "to": 77
+    },
+    {
+      "from": 93,
+      "to": 78
+    },
+    {
+      "from": 94,
+      "to": 92
+    },
+    {
+      "from": 95,
+      "to": 92
+    },
+    {
+      "from": 96,
+      "to": 95
+    },
+    {
+      "from": 97,
+      "to": 91
+    },
+    {
+      "from": 97,
+      "to": 95
+    },
+    {
+      "from": 98,
+      "to": 97
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 99
+    },
+    {
+      "from": 100,
+      "to": 83
+    },
+    {
+      "from": 101,
+      "to": 86
+    },
+    {
+      "from": 101,
+      "to": 97
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 103,
+      "to": 91
+    },
+    {
+      "from": 103,
+      "to": 97
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 31
+    },
+    {
+      "from": 106,
+      "to": 73
+    },
+    {
+      "from": 107,
+      "to": 73
+    },
+    {
+      "from": 108,
+      "to": 86
+    },
+    {
+      "from": 108,
+      "to": 107
+    },
+    {
+      "from": 108,
+      "to": 106
+    },
+    {
+      "from": 109,
+      "to": 11
+    },
+    {
+      "from": 109,
+      "to": 107
+    },
+    {
+      "from": 110,
+      "to": 107
+    },
+    {
+      "from": 111,
+      "to": 109
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 110
+    },
+    {
+      "from": 113,
+      "to": 112
+    },
+    {
+      "from": 114,
+      "to": 110
+    },
+    {
+      "from": 115,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 117,
+      "to": 114
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 110
+    },
+    {
+      "from": 119,
+      "to": 117
+    },
+    {
+      "from": 120,
+      "to": 119
+    },
+    {
+      "from": 120,
+      "to": 114
+    },
+    {
+      "from": 121,
+      "to": 118
+    },
+    {
+      "from": 121,
+      "to": 132
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 122
+    },
+    {
+      "from": 124,
+      "to": 110
+    },
+    {
+      "from": 125,
+      "to": 130
+    },
+    {
+      "from": 125,
+      "to": 132
+    },
+    {
+      "from": 126,
+      "to": 124
+    },
+    {
+      "from": 126,
+      "to": 137
+    },
+    {
+      "from": 127,
+      "to": 124
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 124
+    },
+    {
+      "from": 129,
+      "to": 110
+    },
+    {
+      "from": 130,
+      "to": 110
+    },
+    {
+      "from": 130,
+      "to": 106
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 11
+    },
+    {
+      "from": 132,
+      "to": 109
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 10
+    },
+    {
+      "from": 135,
+      "to": 11
+    },
+    {
+      "from": 136,
+      "to": 148
+    },
+    {
+      "from": 137,
+      "to": 135
+    },
+    {
+      "from": 138,
+      "to": 137
+    },
+    {
+      "from": 139,
+      "to": 135
+    },
+    {
+      "from": 140,
+      "to": 135
+    },
+    {
+      "from": 141,
+      "to": 132
+    },
+    {
+      "from": 141,
+      "to": 11
+    },
+    {
+      "from": 142,
+      "to": 132
+    },
+    {
+      "from": 142,
+      "to": 11
+    },
+    {
+      "from": 143,
+      "to": 132
+    },
+    {
+      "from": 143,
+      "to": 10
+    },
+    {
+      "from": 144,
+      "to": 132
+    },
+    {
+      "from": 145,
+      "to": 132
+    },
+    {
+      "from": 146,
+      "to": 145
+    },
+    {
+      "from": 147,
+      "to": 135
+    },
+    {
+      "from": 147,
+      "to": 143
+    },
+    {
+      "from": 147,
+      "to": 144
+    },
+    {
+      "from": 147,
+      "to": 145
+    },
+    {
+      "from": 149,
+      "to": 1
+    },
+    {
+      "from": 150,
+      "to": 149
+    },
+    {
+      "from": 151,
+      "to": 148
+    },
+    {
+      "from": 151,
+      "to": 152
+    },
+    {
+      "from": 152,
+      "to": 148
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 153,
+      "to": 150
+    },
+    {
+      "from": 154,
+      "to": 152
+    },
+    {
+      "from": 155,
+      "to": 154
+    },
+    {
+      "from": 156,
+      "to": 152
+    },
+    {
+      "from": 157,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 154
+    },
+    {
+      "from": 158,
+      "to": 150
+    },
+    {
+      "from": 159,
+      "to": 158
+    },
+    {
+      "from": 159,
+      "to": 167
+    },
+    {
+      "from": 160,
+      "to": 156
+    },
+    {
+      "from": 160,
+      "to": 150
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 149
+    },
+    {
+      "from": 162,
+      "to": 157
+    },
+    {
+      "from": 163,
+      "to": 162
+    },
+    {
+      "from": 163,
+      "to": 69
+    },
+    {
+      "from": 164,
+      "to": 162
+    },
+    {
+      "from": 164,
+      "to": 161
+    },
+    {
+      "from": 165,
+      "to": 161
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 166,
+      "to": 162
+    },
+    {
+      "from": 167,
+      "to": 152
+    },
+    {
+      "from": 167,
+      "to": 153
+    },
+    {
+      "from": 168,
+      "to": 167
+    },
+    {
+      "from": 168,
+      "to": 158
+    },
+    {
+      "from": 169,
+      "to": 148
+    },
+    {
+      "from": 169,
+      "to": 149
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 171,
+      "to": 169
+    },
+    {
+      "from": 171,
+      "to": 136
+    },
+    {
+      "from": 172,
+      "to": 149
+    },
+    {
+      "from": 172,
+      "to": 169
+    },
+    {
+      "from": 173,
+      "to": 148
+    },
+    {
+      "from": 173,
+      "to": 3
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 174,
+      "to": 8
+    },
+    {
+      "from": 175,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 150
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 177,
+      "to": 175
+    },
+    {
+      "from": 177,
+      "to": 35
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 179,
+      "to": 175
+    },
+    {
+      "from": 179,
+      "to": 48
+    },
+    {
+      "from": 180,
+      "to": 179
+    },
+    {
+      "from": 181,
+      "to": 177
+    },
+    {
+      "from": 181,
+      "to": 179
+    },
+    {
+      "from": 182,
+      "to": 173
+    },
+    {
+      "from": 183,
+      "to": 182
+    },
+    {
+      "from": 183,
+      "to": 177
+    },
+    {
+      "from": 183,
+      "to": 179
+    },
+    {
+      "from": 184,
+      "to": 183
+    },
+    {
+      "from": 185,
+      "to": 156
+    },
+    {
+      "from": 185,
+      "to": 174
+    },
+    {
+      "from": 186,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 175
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 187
+    },
+    {
+      "from": 190,
+      "to": 177
+    },
+    {
+      "from": 191,
+      "to": 187
+    },
+    {
+      "from": 191,
+      "to": 180
+    },
+    {
+      "from": 192,
+      "to": 156
+    },
+    {
+      "from": 192,
+      "to": 174
+    },
+    {
+      "from": 193,
+      "to": 192
+    },
+    {
+      "from": 193,
+      "to": 175
+    },
+    {
+      "from": 194,
+      "to": 193
+    },
+    {
+      "from": 195,
+      "to": 193
+    },
+    {
+      "from": 195,
+      "to": 177
+    },
+    {
+      "from": 196,
+      "to": 11
+    },
+    {
+      "from": 196,
+      "to": 13
+    },
+    {
+      "from": 197,
+      "to": 196
+    },
+    {
+      "from": 197,
+      "to": 175
+    },
+    {
+      "from": 198,
+      "to": 197
+    },
+    {
+      "from": 198,
+      "to": 12
+    },
+    {
+      "from": 199,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 11
+    },
+    {
+      "from": 200,
+      "to": 6
+    },
+    {
+      "from": 200,
+      "to": 13
+    },
+    {
+      "from": 201,
+      "to": 200
+    },
+    {
+      "from": 201,
+      "to": 197
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 202,
+      "to": 198
+    },
+    {
+      "from": 203,
+      "to": 201
+    },
+    {
+      "from": 203,
+      "to": 180
+    },
+    {
+      "from": 204,
+      "to": 203
+    },
+    {
+      "from": 205,
+      "to": 11
+    },
+    {
+      "from": 205,
+      "to": 35
+    },
+    {
+      "from": 205,
+      "to": 13
+    },
+    {
+      "from": 206,
+      "to": 205
+    },
+    {
+      "from": 206,
+      "to": 197
+    },
+    {
+      "from": 207,
+      "to": 206
+    },
+    {
+      "from": 207,
+      "to": 198
+    },
+    {
+      "from": 208,
+      "to": 206
+    },
+    {
+      "from": 208,
+      "to": 180
+    },
+    {
+      "from": 209,
+      "to": 206
+    },
+    {
+      "from": 209,
+      "to": 56
+    },
+    {
+      "from": 210,
+      "to": 209
+    },
+    {
+      "from": 211,
+      "to": 209
+    },
+    {
+      "from": 211,
+      "to": 201
+    },
+    {
+      "from": 211,
+      "to": 62
+    },
+    {
+      "from": 212,
+      "to": 13
+    },
+    {
+      "from": 212,
+      "to": 12
+    },
+    {
+      "from": 212,
+      "to": 197
+    },
+    {
+      "from": 213,
+      "to": 212
+    },
+    {
+      "from": 213,
+      "to": 13
+    },
+    {
+      "from": 214,
+      "to": 212
+    },
+    {
+      "from": 215,
+      "to": 214
+    },
+    {
+      "from": 215,
+      "to": 216
+    },
+    {
+      "from": 216,
+      "to": 197
+    },
+    {
+      "from": 216,
+      "to": 221
+    },
+    {
+      "from": 217,
+      "to": 215
+    },
+    {
+      "from": 218,
+      "to": 217
+    },
+    {
+      "from": 219,
+      "to": 60
+    },
+    {
+      "from": 219,
+      "to": 217
+    },
+    {
+      "from": 220,
+      "to": 219
+    },
+    {
+      "from": 220,
+      "to": 61
+    },
+    {
+      "from": 221,
+      "to": 203
+    },
+    {
+      "from": 221,
+      "to": 208
+    },
+    {
+      "from": 222,
+      "to": 215
+    },
+    {
+      "from": 222,
+      "to": 200
+    },
+    {
+      "from": 222,
+      "to": 220
+    },
+    {
+      "from": 222,
+      "to": 221
+    },
+    {
+      "from": 223,
+      "to": 222
+    },
+    {
+      "from": 223,
+      "to": 204
+    },
+    {
+      "from": 224,
+      "to": 222
+    },
+    {
+      "from": 224,
+      "to": 218
+    },
+    {
+      "from": 225,
+      "to": 216
+    },
+    {
+      "from": 226,
+      "to": 225
+    },
+    {
+      "from": 227,
+      "to": 222
+    },
+    {
+      "from": 227,
+      "to": 184
+    },
+    {
+      "from": 228,
+      "to": 227
+    },
+    {
+      "from": 229,
+      "to": 212
+    },
+    {
+      "from": 230,
+      "to": 229
+    },
+    {
+      "from": 230,
+      "to": 12
+    },
+    {
+      "from": 231,
+      "to": 229
+    },
+    {
+      "from": 232,
+      "to": 230
+    },
+    {
+      "from": 232,
+      "to": 231
+    },
+    {
+      "from": 233,
+      "to": 231
+    },
+    {
+      "from": 234,
+      "to": 231
+    },
+    {
+      "from": 235,
+      "to": 229
+    },
+    {
+      "from": 235,
+      "to": 51
+    },
+    {
+      "from": 236,
+      "to": 235
+    },
+    {
+      "from": 236,
+      "to": 62
+    },
+    {
+      "from": 237,
+      "to": 236
+    },
+    {
+      "from": 238,
+      "to": 236
+    },
+    {
+      "from": 239,
+      "to": 229
+    },
+    {
+      "from": 240,
+      "to": 239
+    },
+    {
+      "from": 240,
+      "to": 244
+    },
+    {
+      "from": 241,
+      "to": 236
+    },
+    {
+      "from": 241,
+      "to": 239
+    },
+    {
+      "from": 242,
+      "to": 241
+    },
+    {
+      "from": 242,
+      "to": 238
+    },
+    {
+      "from": 243,
+      "to": 230
+    },
+    {
+      "from": 243,
+      "to": 241
+    },
+    {
+      "from": 244,
+      "to": 230
+    },
+    {
+      "from": 244,
+      "to": 231
+    },
+    {
+      "from": 245,
+      "to": 243
+    },
+    {
+      "from": 245,
+      "to": 244
+    },
+    {
+      "from": 246,
+      "to": 244
+    },
+    {
+      "from": 247,
+      "to": 246
+    },
+    {
+      "from": 247,
+      "to": 226
+    },
+    {
+      "from": 248,
+      "to": 229
+    },
+    {
+      "from": 248,
+      "to": 200
+    },
+    {
+      "from": 248,
+      "to": 235
+    },
+    {
+      "from": 249,
+      "to": 248
+    },
+    {
+      "from": 249,
+      "to": 204
+    },
+    {
+      "from": 250,
+      "to": 248
+    },
+    {
+      "from": 250,
+      "to": 227
+    },
+    {
+      "from": 251,
+      "to": 56
+    },
+    {
+      "from": 251,
+      "to": 253
+    },
+    {
+      "from": 252,
+      "to": 251
+    },
+    {
+      "from": 252,
+      "to": 60
+    },
+    {
+      "from": 253,
+      "to": 11
+    },
+    {
+      "from": 254,
+      "to": 251
+    },
+    {
+      "from": 254,
+      "to": 219
+    },
+    {
+      "from": 255,
+      "to": 215
+    },
+    {
+      "from": 255,
+      "to": 205
+    },
+    {
+      "from": 255,
+      "to": 254
+    },
+    {
+      "from": 255,
+      "to": 221
+    },
+    {
+      "from": 256,
+      "to": 255
+    },
+    {
+      "from": 256,
+      "to": 65
+    },
+    {
+      "from": 257,
+      "to": 229
+    },
+    {
+      "from": 257,
+      "to": 205
+    },
+    {
+      "from": 257,
+      "to": 251
+    },
+    {
+      "from": 258,
+      "to": 255
+    },
+    {
+      "from": 258,
+      "to": 184
+    },
+    {
+      "from": 259,
+      "to": 257
+    },
+    {
+      "from": 259,
+      "to": 258
+    },
+    {
+      "from": 260,
+      "to": 259
+    },
+    {
+      "from": 261,
+      "to": 257
+    },
+    {
+      "from": 261,
+      "to": 262
+    },
+    {
+      "from": 262,
+      "to": 127
+    },
+    {
+      "from": 262,
+      "to": 205
+    },
+    {
+      "from": 263,
+      "to": 262
+    },
+    {
+      "from": 263,
+      "to": 261
+    },
+    {
+      "from": 264,
+      "to": 256
+    },
+    {
+      "from": 264,
+      "to": 31
+    },
+    {
+      "from": 265,
+      "to": 253
+    },
+    {
+      "from": 266,
+      "to": 265
+    },
+    {
+      "from": 267,
+      "to": 266
+    },
+    {
+      "from": 267,
+      "to": 229
+    },
+    {
+      "from": 268,
+      "to": 267
+    },
+    {
+      "from": 268,
+      "to": 232
+    },
+    {
+      "from": 269,
+      "to": 175
+    },
+    {
+      "from": 270,
+      "to": 15
+    },
+    {
+      "from": 271,
+      "to": 266
+    },
+    {
+      "from": 271,
+      "to": 269
+    },
+    {
+      "from": 271,
+      "to": 270
+    },
+    {
+      "from": 272,
+      "to": 267
+    },
+    {
+      "from": 272,
+      "to": 269
+    },
+    {
+      "from": 273,
+      "to": 267
+    },
+    {
+      "from": 273,
+      "to": 242
+    },
+    {
+      "from": 274,
+      "to": 266
+    },
+    {
+      "from": 274,
+      "to": 69
+    },
+    {
+      "from": 275,
+      "to": 274
+    },
+    {
+      "from": 275,
+      "to": 232
+    },
+    {
+      "from": 276,
+      "to": 266
+    },
+    {
+      "from": 276,
+      "to": 73
+    },
+    {
+      "from": 277,
+      "to": 276
+    },
+    {
+      "from": 277,
+      "to": 232
+    },
+    {
+      "from": 278,
+      "to": 274
+    },
+    {
+      "from": 278,
+      "to": 276
+    },
+    {
+      "from": 278,
+      "to": 242
+    },
+    {
+      "from": 279,
+      "to": 212
+    },
+    {
+      "from": 279,
+      "to": 91
+    },
+    {
+      "from": 280,
+      "to": 91
+    },
+    {
+      "from": 280,
+      "to": 173
+    },
+    {
+      "from": 281,
+      "to": 280
+    },
+    {
+      "from": 281,
+      "to": 12
+    },
+    {
+      "from": 282,
+      "to": 279
+    },
+    {
+      "from": 282,
+      "to": 254
+    },
+    {
+      "from": 282,
+      "to": 284
+    },
+    {
+      "from": 283,
+      "to": 279
+    },
+    {
+      "from": 283,
+      "to": 257
+    },
+    {
+      "from": 283,
+      "to": 281
+    },
+    {
+      "from": 284,
+      "to": 221
+    },
+    {
+      "from": 284,
+      "to": 97
+    },
+    {
+      "from": 285,
+      "to": 279
+    },
+    {
+      "from": 285,
+      "to": 286
+    },
+    {
+      "from": 285,
+      "to": 287
+    },
+    {
+      "from": 285,
+      "to": 288
+    },
+    {
+      "from": 285,
+      "to": 289
+    },
+    {
+      "from": 286,
+      "to": 99
+    },
+    {
+      "from": 286,
+      "to": 100
+    },
+    {
+      "from": 287,
+      "to": 109
+    },
+    {
+      "from": 287,
+      "to": 124
+    },
+    {
+      "from": 288,
+      "to": 97
+    },
+    {
+      "from": 288,
+      "to": 65
+    },
+    {
+      "from": 289,
+      "to": 99
+    },
+    {
+      "from": 289,
+      "to": 48
+    },
+    {
+      "from": 290,
+      "to": 283
+    },
+    {
+      "from": 290,
+      "to": 242
+    },
+    {
+      "from": 291,
+      "to": 241
+    },
+    {
+      "from": 291,
+      "to": 293
+    },
+    {
+      "from": 292,
+      "to": 291
+    },
+    {
+      "from": 293,
+      "to": 47
+    },
+    {
+      "from": 293,
+      "to": 101
+    },
+    {
+      "from": 294,
+      "to": 226
+    },
+    {
+      "from": 294,
+      "to": 247
+    },
+    {
+      "from": 294,
+      "to": 293
+    },
+    {
+      "from": 295,
+      "to": 109
+    },
+    {
+      "from": 295,
+      "to": 132
+    },
+    {
+      "from": 296,
+      "to": 11
+    },
+    {
+      "from": 296,
+      "to": 10
+    },
+    {
+      "from": 296,
+      "to": 295
+    },
+    {
+      "from": 297,
+      "to": 242
+    },
+    {
+      "from": 298,
+      "to": 224
+    },
+    {
+      "from": 298,
+      "to": 242
+    },
+    {
+      "from": 298,
+      "to": 278
+    },
+    {
+      "from": 298,
+      "to": 290
+    },
+    {
+      "from": 299,
+      "to": 232
+    },
+    {
+      "from": 299,
+      "to": 242
+    },
+    {
+      "from": 299,
+      "to": 298
+    },
+    {
+      "from": 300,
+      "to": 299
+    },
+    {
+      "from": 300,
+      "to": 297
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "Discrete vs Continuous Number Line",
+  "description": "An interactive visualization that helps students distinguish between discrete and continuous variables by comparing how values can be plotted on two different number lines. The discrete line snaps to integers while the continuous line accepts any value.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": [
+    "Statistics",
+    "Data Types",
+    "Variables",
+    "Number Lines",
+    "Discrete Variables",
+    "Continuous Variables"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/discrete-continuous-numberline/",
+  "publisher": "AP Statistics Intelligent Textbook",
+  "educationalLevel": "High School, AP Statistics",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": "compare",
+  "concepts": [
+    "Discrete Variables",
+    "Continuous Variables",
+    "Number Lines",
+    "Data Types",
+    "Variable Classification"
+  ],
+  "prerequisites": [
+    "Basic understanding of number lines",
+    "Familiarity with integers and decimals"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "name": "Reset",
+      "description": "Clears all placed markers from both number lines"
+    },
+    {
+      "type": "checkbox",
+      "name": "Show Examples",
+      "description": "Toggles display of pre-placed example values on each number line"
+    }
+  ],
+  "interactions": [
+    {
+      "type": "click",
+      "target": "Discrete Number Line",
+      "description": "Places a marker that snaps to the nearest integer value (0-10)"
+    },
+    {
+      "type": "click",
+      "target": "Continuous Number Line",
+      "description": "Places a marker at the exact click position, displaying value to 2 decimal places (60-72)"
+    }
+  ]
+}

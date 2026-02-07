@@ -1,0 +1,56 @@
+{
+  "title": "Population and Sample Visualization",
+  "description": "An interactive educational simulation that demonstrates the relationship between a population and a sample. Students can click on individuals to manually select sample members or use random sampling to understand how samples are drawn from populations.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": ["statistics", "sampling", "population", "sample", "random sampling", "AP Statistics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude AI"],
+  "identifier": "population-sample-visual-v1",
+  "educational": {
+    "bloomLevel": "Understand",
+    "bloomVerb": "explain",
+    "gradeLevel": "9-12",
+    "prerequisites": ["basic percentages", "data collection concepts"],
+    "duration": "15-20 minutes",
+    "concepts": ["population", "sample", "random sampling", "sample size", "sampling bias", "sample percentage"]
+  },
+  "technical": {
+    "library": "p5.js",
+    "version": "1.11.10",
+    "responsive": true,
+    "accessibility": {
+      "describe": true,
+      "keyboardNav": false
+    }
+  },
+  "controls": [
+    {
+      "type": "button",
+      "label": "Random Sample",
+      "description": "Randomly selects individuals based on the sample size slider setting"
+    },
+    {
+      "type": "button",
+      "label": "Clear Sample",
+      "description": "Removes all individuals from the current sample"
+    },
+    {
+      "type": "slider",
+      "label": "Sample Size",
+      "min": 5,
+      "max": 25,
+      "default": 10,
+      "step": 1,
+      "description": "Controls how many individuals are selected when using Random Sample"
+    },
+    {
+      "type": "click",
+      "label": "Individual Selection",
+      "description": "Click on any person icon in the population area to toggle their selection"
+    }
+  ]
+}

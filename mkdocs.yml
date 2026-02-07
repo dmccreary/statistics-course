@@ -1,0 +1,137 @@
+site_name: AP Statistics
+repo_url: https://github.com/dmccreary/statistics-course
+site_url: https://dmccreary.github.io/statistics-course/
+site_description: An interactive intelligent textbook for AP statistics designed for college credit.
+site_author: Dan McCreary
+
+nav:
+  - Home: index.md
+  - About the Course: about.md
+  - Course Description: course-description.md
+
+  - Chapters:
+    - Overview: chapters/index.md
+    - 1. Introduction to Statistics: chapters/01-introduction-to-statistics/index.md
+    - 2. Displaying Categorical Data: chapters/02-displaying-categorical-data/index.md
+    - 3. Displaying Quantitative Data: chapters/03-displaying-quantitative-data/index.md
+    - 4. Numerical Summaries: chapters/04-numerical-summaries/index.md
+    - 5. Standardization and Normal: chapters/05-standardization-and-normal/index.md
+    - 6. Scatterplots and Association: chapters/06-scatterplots-and-association/index.md
+    - 7. Linear Regression: chapters/07-linear-regression/index.md
+    - 8. Causation and Study Design: chapters/08-causation-and-study-design/index.md
+    - 9. Probability Fundamentals: chapters/09-probability-fundamentals/index.md
+    - 10. Conditional Probability: chapters/10-conditional-probability/index.md
+    - 11. Sampling and Bias: chapters/11-sampling-and-bias/index.md
+    - 12. Experimental Design: chapters/12-experimental-design/index.md
+    - 13. Random Variables: chapters/13-random-variables/index.md
+    - 14. Sampling Distributions: chapters/14-sampling-distributions/index.md
+    - 15. Confidence Intervals: chapters/15-confidence-intervals/index.md
+    - 16. Hypothesis Testing: chapters/16-hypothesis-testing/index.md
+    - 17. Inference for Means: chapters/17-inference-for-means/index.md
+    - 18. Chi-Square and Regression Inference: chapters/18-chi-square-and-regression-inference/index.md
+    - 19. Communication and Synthesis: chapters/19-communication-and-synthesis/index.md
+
+  - MicroSims:
+    - List of MicroSims: sims/index.md
+    - Association Detector: sims/association-detector/index.md
+    - Association Strength Spectrum: sims/association-strength-spectrum/index.md
+    - Bar Graph Builder: sims/bar-graph-builder/index.md
+    - Chapter 2 Concept Map: sims/chapter-2-concept-map/index.md
+    - Discrete vs Continuous Number Line: sims/discrete-continuous-numberline/index.md
+    - Distribution Shape Gallery: sims/distribution-shape-gallery/index.md
+    - Frequency Table Explorer: sims/frequency-table-explorer/index.md
+    - Histogram Explorer: sims/histogram-explorer/index.md
+    - Interactive Dotplot Builder: sims/interactive-dotplot-builder/index.md
+    - Outlier Detective Game: sims/outlier-detective/index.md
+    - Parameter vs Statistic: sims/parameter-statistic-compare/index.md
+    - Pie vs Bar Comparison: sims/pie-vs-bar-comparison/index.md
+    - Population and Sample: sims/population-sample-visual/index.md
+    - Skewness Explorer: sims/skewness-explorer/index.md
+    - SOCS Description Builder: sims/socs-description-builder/index.md
+    - Stemplot Constructor: sims/stemplot-constructor/index.md
+    - Study Design Concept Map: sims/study-design-map/index.md
+    - Symmetric Distribution Identifier: sims/symmetric-distribution/index.md
+    - Two-Way Table Calculator: sims/two-way-table-calculator/index.md
+    - Variable Types Concept Map: sims/variable-types-concept-map/index.md
+
+  - Appendices:
+    - List of Appendices: appendices/index.md
+    - College Credit: appendices/college-credit.md
+    - Meet Delta: appendices/delta.md
+    - Timeline of Statistics: appendices/timeline-of-statistics.md
+  
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+    - Course Description Assessment: learning-graph/course-description-assessment.md
+    - Concept List: learning-graph/concept-list.md
+    - Quality Metrics: learning-graph/quality-metrics.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+
+  - Sample Prompts:
+    - List of Prompts: prompts/index.md
+  
+  - Glossary: glossary.md
+  - FAQ: faq.md
+
+  - License: license.md
+  - Contact: contact.md
+
+theme:
+  name: material
+  logo: img/logo-192.png
+  favicon: img/favicon.ico
+  palette:
+    primary: 'blue'
+    accent: 'white'
+  include_sidebar: true
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+
+plugins:
+  - search
+  - social
+  - social_override
+
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - js/extra.js
+  - js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+# Watch these files for changes to trigger a rebuild
+watch:
+  - docs
+  - mkdocs.yml
+
+copyright: Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+
+extra:
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: AP Statistics
+  textbook_version: "1.0"
+  #analytics:
+  #  provider: google
+  #  property: G-XXXXX

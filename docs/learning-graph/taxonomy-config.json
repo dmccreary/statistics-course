@@ -1,0 +1,72 @@
+{
+  "FOUND": {
+    "range": [1, 14],
+    "keywords": ["statistics", "data", "variable", "observation", "dataset", "population", "sample", "parameter", "statistic"],
+    "exclude": []
+  },
+  "EDA1": {
+    "range": [15, 68],
+    "keywords": ["histogram", "boxplot", "stemplot", "dotplot", "distribution", "mean", "median", "mode", "standard deviation", "variance", "z-score", "normal", "percentile", "quartile", "outlier", "skewed", "symmetric", "spread", "center", "shape", "frequency", "density"],
+    "exclude": ["scatterplot", "two-way", "regression", "sampling"]
+  },
+  "EDA2": {
+    "range": [69, 74],
+    "keywords": ["two-way", "marginal", "conditional", "association", "simpson"],
+    "exclude": ["regression", "sampling"]
+  },
+  "REG": {
+    "range": [75, 108],
+    "keywords": ["scatterplot", "correlation", "regression", "slope", "intercept", "residual", "r-squared", "prediction", "extrapolation", "influential", "leverage", "lurking", "causation"],
+    "exclude": ["inference for slope", "t-test for slope", "t-interval for slope"]
+  },
+  "STUDY": {
+    "range": [109, 147],
+    "keywords": ["experiment", "observational", "treatment", "factor", "placebo", "control", "blinding", "random assignment", "randomized", "matched pairs", "confounding", "bias", "sample", "stratified", "cluster", "systematic", "convenience", "voluntary", "undercoverage", "nonresponse", "response bias", "survey", "census"],
+    "exclude": ["sampling distribution", "sample proportion", "sample mean"]
+  },
+  "PROB": {
+    "range": [148, 172],
+    "keywords": ["probability", "event", "complement", "mutually exclusive", "disjoint", "independent", "dependent", "addition rule", "multiplication rule", "conditional probability", "tree diagram", "venn diagram", "simulation", "law of large numbers", "sample space"],
+    "exclude": ["sampling"]
+  },
+  "RAND": {
+    "range": [173, 195],
+    "keywords": ["random variable", "expected value", "binomial", "geometric", "probability distribution", "combining random"],
+    "exclude": []
+  },
+  "SAMP": {
+    "range": [196, 211],
+    "keywords": ["sampling distribution", "sampling variability", "unbiased estimator", "sample proportion", "sample mean", "central limit theorem", "normal approximation"],
+    "exclude": []
+  },
+  "CIPR": {
+    "range": [212, 228],
+    "keywords": ["confidence interval", "margin of error", "confidence level", "critical value", "standard error", "ci for", "proportion"],
+    "exclude": ["hypothesis", "t-interval", "chi-square", "slope"]
+  },
+  "HTPR": {
+    "range": [229, 250],
+    "keywords": ["hypothesis", "null", "alternative", "p-value", "significance", "type i", "type ii", "power", "test for", "z-test"],
+    "exclude": ["t-test", "chi-square", "slope"]
+  },
+  "TMEA": {
+    "range": [251, 264],
+    "keywords": ["t-distribution", "t-interval", "t-test", "degrees of freedom", "paired", "robustness", "t-procedure", "two-sample t"],
+    "exclude": ["chi-square", "slope"]
+  },
+  "CHISQ": {
+    "range": [265, 278],
+    "keywords": ["chi-square", "goodness-of-fit", "homogeneity", "independence", "expected count", "observed count"],
+    "exclude": []
+  },
+  "REGF": {
+    "range": [279, 290],
+    "keywords": ["inference for slope", "t-interval for slope", "t-test for slope", "standard error of slope", "regression condition", "linearity condition", "normality of residuals", "equal variance"],
+    "exclude": []
+  },
+  "COMM": {
+    "range": [291, 300],
+    "keywords": ["practical significance", "effect size", "study limitations", "generalizability", "report writing", "communicating", "four-step", "ap exam"],
+    "exclude": []
+  }
+}

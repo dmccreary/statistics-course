@@ -1,0 +1,99 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+  "title": "Strength of Association Spectrum",
+  "description": "An interactive MicroSim that helps students classify associations between categorical variables as strong, moderate, weak, or none by visualizing two-way tables, segmented bar charts, and a strength meter.",
+  "creator": "Dan McCreary",
+  "subject": ["Statistics", "Data Analysis", "Categorical Data"],
+  "date": "2026-02-06",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "gradeLevel": "9-12, Undergraduate",
+  "topic": "Association Between Categorical Variables",
+  "learningObjectives": [
+    "Classify associations as strong, moderate, weak, or none",
+    "Interpret two-way tables to identify patterns",
+    "Read segmented bar charts to compare conditional distributions",
+    "Understand that equal conditional distributions indicate independence"
+  ],
+  "bloomsTaxonomy": {
+    "level": "Understand",
+    "verb": "Classify"
+  },
+  "duration": "15-20 minutes",
+  "prerequisites": [
+    "Understanding of categorical variables",
+    "Basic knowledge of percentages and proportions",
+    "Familiarity with two-way tables"
+  ],
+  "framework": "p5.js",
+  "version": "1.11.10",
+  "canvasDimensions": {
+    "drawHeight": 420,
+    "controlHeight": 60,
+    "totalHeight": 480,
+    "responsive": true
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "name": "strengthSlider",
+      "label": "Strength",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "step": 1,
+      "description": "Adjusts the strength of association from 0% (none) to 100% (perfect)"
+    },
+    {
+      "type": "button",
+      "name": "randomizeButton",
+      "label": "Randomize",
+      "description": "Sets a random association strength"
+    },
+    {
+      "type": "presetButtons",
+      "name": "presetButtons",
+      "options": ["No Association", "Weak", "Moderate", "Strong", "Perfect"],
+      "description": "Quick access to common association strength levels"
+    }
+  ],
+  "modelType": "Statistical Visualization",
+  "variables": [
+    {
+      "name": "associationStrength",
+      "description": "Current strength of association (0-100)",
+      "range": [0, 100]
+    },
+    {
+      "name": "tableData",
+      "description": "2x2 contingency table counts based on association strength"
+    }
+  ],
+  "assumptions": [
+    "Each treatment group has exactly 100 observations",
+    "Base success rate is 50% when there is no association",
+    "Association is modeled as symmetric deviation from base rate"
+  ],
+  "limitations": [
+    "Simplified to 2x2 tables only",
+    "Does not include statistical significance testing",
+    "Perfect association is presented as achievable for illustration purposes"
+  ],
+  "accessibility": {
+    "describe": "Interactive visualization showing the spectrum of association strength from none to perfect. Students can adjust a slider or select presets to see how two-way tables and segmented bar charts change, learning to classify associations by strength.",
+    "keyboardNavigation": true,
+    "screenReaderSupport": true
+  },
+  "keywords": [
+    "association",
+    "categorical variables",
+    "two-way table",
+    "contingency table",
+    "segmented bar chart",
+    "conditional distribution",
+    "independence",
+    "AP Statistics"
+  ]
+}

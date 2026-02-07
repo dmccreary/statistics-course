@@ -1,0 +1,91 @@
+{
+  "title": "Outlier Detective Game",
+  "description": "Interactive game where students identify outliers in real-world datasets by examining visual separation in dotplots and histograms. Features 10 rounds of challenges with scoring, three difficulty levels, and contextual scenarios like test scores, birthday party ages, and marathon times.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-06",
+  "subject": [
+    "Statistics",
+    "Data Analysis",
+    "Outlier Detection",
+    "Data Visualization",
+    "Descriptive Statistics"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/outlier-detective/",
+  "publisher": "AP Statistics Intelligent Textbook",
+  "educationalLevel": "High School, AP Statistics",
+  "learningResourceType": "game",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "bloomVerb": "distinguish",
+  "concepts": [
+    "Outliers",
+    "Dotplot",
+    "Histogram",
+    "Data Distribution",
+    "Visual Data Analysis",
+    "Data Context"
+  ],
+  "prerequisites": [
+    "Understanding of dotplots and histograms",
+    "Basic concept of data distribution",
+    "Familiarity with center and spread"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "Dotplot/Histogram",
+      "description": "Toggle between dotplot and histogram visualizations"
+    },
+    {
+      "type": "slider",
+      "label": "Difficulty",
+      "min": 0,
+      "max": 2,
+      "default": 1,
+      "description": "Easy (1-2 outliers), Medium (0-2 outliers), Hard (0-3 outliers, sometimes none)"
+    },
+    {
+      "type": "button",
+      "label": "Submit Answer",
+      "description": "Submit selected points for scoring"
+    },
+    {
+      "type": "button",
+      "label": "Reveal Correct",
+      "description": "Show the actual outliers without affecting score"
+    },
+    {
+      "type": "button",
+      "label": "Next Challenge",
+      "description": "Move to the next round"
+    }
+  ],
+  "gameElements": {
+    "rounds": 10,
+    "scoring": {
+      "correct": 10,
+      "falsePositive": -5
+    },
+    "contexts": [
+      "Test Scores (absent student)",
+      "Birthday Party Ages (parent chaperone)",
+      "Marathon Times (elite runner)",
+      "Daily Rainfall (hurricane)",
+      "Student Heights (wrong units)",
+      "Coffee Prices (specialty reserve)",
+      "Commute Times (traffic accident)",
+      "Restaurant Tips (generous tipper)"
+    ]
+  }
+}
