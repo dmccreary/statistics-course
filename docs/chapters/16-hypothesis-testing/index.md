@@ -254,7 +254,42 @@ The sample proportion is about 1.94 standard errors below the claimed value. Is 
 
 #### Diagram: Test Statistic Calculator
 
-<iframe src="../../sims/test-statistic-calculator/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+<details markdown="1">
+<summary>Interactive Test Statistic Calculator</summary>
+Type: MicroSim
+
+Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: Calculate
+
+Learning objective: Students will calculate z-test statistics for one-proportion hypothesis tests by inputting sample data and hypothesized values, understanding how the test statistic measures deviation from the null hypothesis.
+
+Visual elements:
+- Input fields for sample size (n), number of successes (x), and hypothesized proportion (p₀)
+- Automatic calculation of sample proportion (p-hat = x/n)
+- Visual display of the z-formula with current values substituted
+- Number line showing the z-score position relative to 0
+- Standard normal curve with the z-score marked
+- Color-coded output: green for small z (close to expected), yellow for moderate z, red for extreme z
+
+Interactive controls:
+- Number input for sample size n (range: 10 to 1000)
+- Number input for number of successes x (range: 0 to n)
+- Slider or input for hypothesized proportion p₀ (range: 0.01 to 0.99)
+- "Calculate" button to compute test statistic
+- "Clear" button to reset all fields
+- Toggle to show/hide calculation steps
+
+Behavior:
+- As inputs change, live updates show intermediate calculations
+- Standard error calculation displayed step-by-step
+- Test statistic updates automatically
+- Visual position on normal curve updates in real-time
+- Warning message if conditions not met (np₀ < 10 or n(1-p₀) < 10)
+- Display interpretation: "The sample proportion is ___ standard errors [above/below] the hypothesized value"
+
+Canvas size: 800 x 500 pixels, responsive design
+Implementation: p5.js with canvas-based controls
+</details>
 
 ---
 
@@ -335,7 +370,50 @@ The p-value tells us that if the true satisfaction rate were really 60%, we'd se
 
 #### Diagram: P-Value Visualizer
 
-<iframe src="../../sims/p-value-visualizer/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+<details markdown="1">
+<summary>Interactive P-Value Visualization</summary>
+Type: MicroSim
+
+Bloom Taxonomy: Understand (L2)
+Bloom Taxonomy Verb: Interpret
+
+Learning objective: Students will interpret p-values by visualizing the area under the normal curve corresponding to the probability of obtaining results as extreme as the test statistic, distinguishing between one-sided and two-sided tests.
+
+Data Visibility Requirements:
+- Stage 1: Show the standard normal curve with test statistic marked
+- Stage 2: Highlight the tail area(s) corresponding to the p-value
+- Stage 3: Display the calculated probability as a decimal and percentage
+- Stage 4: Show interpretation sentence explaining what the p-value means
+
+Visual elements:
+- Standard normal distribution curve (bell curve)
+- Vertical line at z = 0 (center)
+- Movable marker showing test statistic position
+- Shaded region(s) representing the p-value
+- Numerical display of z-value and corresponding p-value
+- Toggle between one-sided (left/right) and two-sided views
+
+Interactive controls:
+- Slider for z-statistic (range: -4 to +4)
+- Radio buttons: "Two-sided", "One-sided (left)", "One-sided (right)"
+- "Show/Hide" toggle for each tail region
+- Display mode: "Show area" or "Show probability"
+- Input field to enter a specific z-value
+- Reset button
+
+Behavior:
+- As z-slider moves, shaded region updates in real-time
+- P-value display updates continuously
+- For two-sided test, both tails shade symmetrically
+- For one-sided test, only relevant tail shades
+- When p-value < 0.05, region turns red; otherwise blue
+- Interpretation text updates: "If H₀ is true, results this extreme occur ___% of the time"
+
+Instructional Rationale: Step-through visualization with explicit data visibility is appropriate because the Understanding/interpret objective requires learners to connect the visual area representation to the numerical probability, building intuition about what p-values mean.
+
+Canvas size: 800 x 450 pixels, responsive design
+Implementation: p5.js with canvas-based controls
+</details>
 
 ---
 
@@ -480,7 +558,61 @@ When p-value \( \geq \alpha \):
 
 #### Diagram: Hypothesis Testing Decision Flowchart
 
-<iframe src="../../sims/hypothesis-testing-flowchart/main.html" width="100%" height="602px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+<details markdown="1">
+<summary>Hypothesis Testing Decision Guide</summary>
+Type: workflow
+
+Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: Implement
+
+Learning objective: Students will follow the complete hypothesis testing procedure, making correct conclusions based on p-values and significance levels.
+
+Visual elements:
+- Flowchart with decision diamonds and process boxes
+- Color-coded paths for different outcomes
+- Summary boxes for each type of conclusion
+- Examples embedded at each decision point
+
+Steps in workflow:
+1. Start: "State hypotheses (H₀ and Hₐ)"
+   Hover text: "H₀ contains =, Hₐ contains ≠, <, or >"
+
+2. Process: "Check conditions"
+   Hover text: "Verify np₀ ≥ 10 and n(1-p₀) ≥ 10 for z-test"
+
+3. Decision: "Conditions met?"
+   Hover text: "If not, cannot proceed with z-test"
+
+4. Process: "Calculate test statistic z"
+   Hover text: "z = (p̂ - p₀) / √(p₀(1-p₀)/n)"
+
+5. Process: "Find p-value"
+   Hover text: "One-sided or two-sided based on Hₐ"
+
+6. Decision: "p-value < α?"
+   Hover text: "Compare to chosen significance level"
+
+7a. (If Yes) Result: "Reject H₀"
+    Hover text: "Statistically significant evidence for Hₐ"
+    Color: Green
+
+7b. (If No) Result: "Fail to Reject H₀"
+    Hover text: "Insufficient evidence for Hₐ"
+    Color: Orange
+
+8. End: "State conclusion in context"
+   Hover text: "Always relate back to the original question"
+
+Visual style: Modern flowchart with rounded rectangles
+Color coding:
+- Blue: Process steps
+- Yellow: Decision points
+- Green: Reject H₀ path
+- Orange: Fail to reject path
+
+Canvas size: 800 x 600 pixels, responsive design
+Implementation: p5.js with canvas-based hover interactions
+</details>
 
 ---
 
@@ -534,7 +666,53 @@ The probability \( \beta \) depends on sample size, the true parameter value, an
 
 #### Diagram: Type I and Type II Error Visualizer
 
-<iframe src="../../sims/type-error-visualizer/main.html" width="100%" height="552px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+<details markdown="1">
+<summary>Interactive Error Type Demonstration</summary>
+Type: MicroSim
+
+Bloom Taxonomy: Analyze (L4)
+Bloom Taxonomy Verb: Distinguish
+
+Learning objective: Students will distinguish between Type I and Type II errors by exploring scenarios where the null hypothesis is either true or false, observing how different sample outcomes lead to correct decisions or errors.
+
+Data Visibility Requirements:
+- Stage 1: Show the true state of reality (H₀ true or false)
+- Stage 2: Show the sample data collected
+- Stage 3: Show the test statistic and p-value calculated
+- Stage 4: Show the decision made (reject or fail to reject)
+- Stage 5: Show the outcome (correct decision, Type I error, or Type II error)
+
+Visual elements:
+- Two parallel tracks: "Reality" track and "Our Decision" track
+- Reality track shows true population parameter (controlled by user)
+- Decision track shows sample, test statistic, p-value, and conclusion
+- Outcome box shows whether we made correct decision or error type
+- Color coding: green for correct, red for Type I, orange for Type II
+- Counter tracking cumulative error rates over many trials
+
+Interactive controls:
+- Toggle: "H₀ is actually true" vs "H₀ is actually false"
+- Slider for true population proportion (when H₀ is false)
+- Slider for sample size n
+- Input for significance level α
+- "Draw One Sample" button
+- "Run 100 Samples" button to see error rates accumulate
+- Reset button
+
+Behavior:
+- When H₀ is true and we reject → Type I Error (red highlight)
+- When H₀ is true and we fail to reject → Correct (green)
+- When H₀ is false and we reject → Correct (green)
+- When H₀ is false and we fail to reject → Type II Error (orange)
+- Running counters show: "Type I Errors: X/Y trials when H₀ true"
+- Running counters show: "Type II Errors: X/Y trials when H₀ false"
+- Demonstrates that Type I rate ≈ α when H₀ is true
+
+Instructional Rationale: Interactive exploration with explicit state visibility is appropriate because the Analyze/distinguish objective requires learners to compare outcomes across different scenarios, building understanding of when each error type occurs.
+
+Canvas size: 850 x 550 pixels, responsive design
+Implementation: p5.js with canvas-based controls
+</details>
 
 ---
 
@@ -762,7 +940,43 @@ Since p-value (0.0192) < \( \alpha \) (0.05), we reject \( H_0 \).
 
 #### Diagram: Two-Proportion Test Comparison
 
-<iframe src="../../sims/two-proportion-test/main.html" width="100%" height="602px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+<details markdown="1">
+<summary>Interactive Two-Proportion Test Calculator</summary>
+Type: MicroSim
+
+Bloom Taxonomy: Apply (L3)
+Bloom Taxonomy Verb: Execute
+
+Learning objective: Students will conduct a complete two-proportion z-test by entering data from two groups, calculating the pooled proportion and test statistic, and interpreting the results.
+
+Visual elements:
+- Two side-by-side input panels for each group's data
+- Visual comparison bar chart showing the two sample proportions
+- Pooled proportion calculation display
+- Test statistic formula with substituted values
+- Normal curve with z-score marked and p-value shaded
+- Conclusion statement generator
+
+Interactive controls:
+- Group 1: Input fields for n₁ (sample size) and x₁ (successes)
+- Group 2: Input fields for n₂ (sample size) and x₂ (successes)
+- Radio buttons for test type: two-sided, p₁ > p₂, p₁ < p₂
+- Slider for significance level α (0.01, 0.05, 0.10)
+- "Calculate" button
+- "Check Conditions" button (highlights which conditions pass/fail)
+- "Show Steps" toggle for detailed calculation breakdown
+
+Behavior:
+- Automatically calculates p̂₁, p̂₂, pooled p̂
+- Displays step-by-step calculation of standard error and z-statistic
+- Shows p-value with visual representation on normal curve
+- Compares p-value to α and states conclusion
+- Generates properly worded conclusion statement
+- Warning messages for condition violations
+
+Canvas size: 900 x 600 pixels, responsive design
+Implementation: p5.js with canvas-based controls
+</details>
 
 ---
 
