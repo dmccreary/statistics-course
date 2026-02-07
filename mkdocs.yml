@@ -37,6 +37,7 @@ nav:
     - Association Detector: sims/association-detector/index.md
     - Association Strength Spectrum: sims/association-strength-spectrum/index.md
     - Bar Graph Builder: sims/bar-graph-builder/index.md
+    - Bias vs. Variability Target: sims/bias-variability-target/index.md
     - Boxplot Builder: sims/boxplot-builder/index.md
     - Boxplot Comparison: sims/boxplot-comparison/index.md
     - Chapter 2 Concept Map: sims/chapter-2-concept-map/index.md
@@ -68,6 +69,8 @@ nav:
     - Population and Sample: sims/population-sample-visual/index.md
     - Probability Simulation Lab: sims/probability-simulation-lab/index.md
     - Quartile Visualization: sims/quartile-visualization/index.md
+    - Question Wording Effects: sims/question-wording-effects/index.md
+    - Random Digit Table: sims/random-digit-table/index.md
     - Regression Analysis Tool: sims/regression-analysis-tool/index.md
     - Residual Calculator: sims/residual-calculator/index.md
     - Residual Plot Analyzer: sims/residual-plot-analyzer/index.md
@@ -78,11 +81,14 @@ nav:
     - Scatterplot Builder: sims/scatterplot-builder/index.md
     - Standard Deviation Calculator: sims/std-dev-calculator/index.md
     - Stemplot Constructor: sims/stemplot-constructor/index.md
+    - Stratified vs Cluster Compare: sims/stratified-cluster-compare/index.md
     - Study Design Concept Map: sims/study-design-map/index.md
+    - Survey Design Checklist: sims/survey-design-checklist/index.md
     - Symmetric Distribution Identifier: sims/symmetric-distribution/index.md
     - Test Scores Box Plot: sims/test-scores-boxplot/index.md
     - Token Prediction: sims/token-prediction/index.md
     - Two-Way Table Calculator: sims/two-way-table-calculator/index.md
+    - Undercoverage Visualization: sims/undercoverage-viz/index.md
     - Variable Types Concept Map: sims/variable-types-concept-map/index.md
     - Venn Diagram Problem Solver: sims/venn-diagram-solver/index.md
     - Z-Score Calculator: sims/z-score-calculator/index.md

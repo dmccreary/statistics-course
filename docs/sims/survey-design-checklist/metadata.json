@@ -1,0 +1,47 @@
+{
+  "title": "Survey Design Checklist Interactive",
+  "description": "Interactive tool for evaluating survey quality by identifying sampling and question design problems. Students analyze real-world scenarios and check off issues from a comprehensive checklist.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Survey Design",
+    "Sampling Methods",
+    "Bias Detection",
+    "Critical Thinking",
+    "Research Methods"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/survey-design-checklist/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply",
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Designing Surveys",
+    "Convenience Sample",
+    "Voluntary Response Sample",
+    "Undercoverage",
+    "Nonresponse Bias",
+    "Response Bias",
+    "Wording of Questions"
+  ],
+  "prerequisites": [
+    "All Chapter 11 sampling concepts",
+    "Understanding of bias types",
+    "Question wording principles"
+  ],
+  "library": "p5.js"
+}

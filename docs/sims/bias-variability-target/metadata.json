@@ -1,0 +1,47 @@
+{
+  "title": "Bias vs. Variability Target Visualization",
+  "description": "Interactive target diagram demonstrating the difference between bias (systematic error) and variability (random error) in sampling. Students explore four scenarios showing combinations of high/low bias and variability to understand accuracy vs. precision.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Sampling",
+    "Bias",
+    "Variability",
+    "Accuracy",
+    "Precision",
+    "Sampling Error"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/bias-variability-target/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "concepts": [
+    "Bias",
+    "Variability",
+    "Sampling Error",
+    "Accuracy",
+    "Precision",
+    "Unbiased Estimator",
+    "Biased Estimator"
+  ],
+  "prerequisites": [
+    "Population vs sample distinction",
+    "Sample estimates",
+    "Basic understanding of averages"
+  ],
+  "library": "p5.js"
+}

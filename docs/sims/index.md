@@ -35,6 +35,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students construct bar graphs from categorical data by entering category names and frequencies, with options for vertical/horizontal orientation.
 
+-   **[Bias vs. Variability Target](./bias-variability-target/index.md)**
+
+    ![Bias vs. Variability Target](./bias-variability-target/bias-variability-target.png)
+
+    Interactive target diagram illustrating the difference between bias (systematic error) and variability (random error) in sampling with four scenarios.
+
 -   **[Boxplot Builder](./boxplot-builder/index.md)**
 
     ![Boxplot Builder](./boxplot-builder/boxplot-builder.png)
@@ -221,6 +227,18 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive visualization showing how quartiles divide data into four equal parts with color-coded regions and adjustable sample size.
 
+-   **[Question Wording Effects](./question-wording-effects/index.md)**
+
+    ![Question Wording Effects](./question-wording-effects/question-wording-effects.png)
+
+    Interactive simulation demonstrating how question wording dramatically affects survey responses through neutral, positive, and negative framings.
+
+-   **[Random Digit Table Simulator](./random-digit-table/index.md)**
+
+    ![Random Digit Table Simulator](./random-digit-table/random-digit-table.png)
+
+    Interactive simulation for practicing simple random sampling using a random digit table with step-by-step selection process.
+
 -   **[Regression Analysis Tool](./regression-analysis-tool/index.md)**
 
     ![Regression Analysis Tool](./regression-analysis-tool/regression-analysis-tool.png)
@@ -281,11 +299,23 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students interpret how data values decompose into stems and leaves to build a stemplot visualization.
 
+-   **[Stratified vs. Cluster Sampling](./stratified-cluster-compare/index.md)**
+
+    ![Stratified vs. Cluster Sampling](./stratified-cluster-compare/stratified-cluster-compare.png)
+
+    Interactive visualization comparing stratified and cluster sampling methods, showing how each selects individuals from groups differently.
+
 -   **[Study Design Concept Map](./study-design-map/index.md)**
 
     ![Study Design Concept Map](./study-design-map/study-design-map.png)
 
     Interactive concept map showing how foundational statistics concepts connect in the context of a real research study about sleep and academic performance.
+
+-   **[Survey Design Checklist](./survey-design-checklist/index.md)**
+
+    ![Survey Design Checklist](./survey-design-checklist/survey-design-checklist.png)
+
+    Interactive tool for evaluating survey quality by identifying sampling and question design problems in real-world scenarios.
 
 -   **[Symmetric Distribution Identifier](./symmetric-distribution/index.md)**
 
@@ -304,6 +334,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Two-Way Table Calculator](./two-way-table-calculator/two-way-table-calculator.png)
 
     An interactive calculator for computing marginal and conditional distributions from a two-way (contingency) table with editable cells.
+
+-   **[Undercoverage Visualization](./undercoverage-viz/index.md)**
+
+    ![Undercoverage Visualization](./undercoverage-viz/undercoverage-viz.png)
+
+    Interactive visualization showing how incomplete sampling frames lead to biased estimates with adjustable undercoverage and group differences.
 
 -   **[Variable Types Concept Map](./variable-types-concept-map/index.md)**
 

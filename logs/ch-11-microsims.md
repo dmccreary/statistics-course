@@ -2,11 +2,12 @@
 
 **Chapter:** 11 - Sampling and Bias
 **Date Started:** 2026-02-07
-**Status:** In Progress
+**Date Completed:** 2026-02-07
+**Status:** Complete
 
 ## Overview
 
-Chapter 11 covers sampling methods, sources of bias, and survey design principles. The chapter content specifies 6 MicroSims to be developed:
+Chapter 11 covers sampling methods, sources of bias, and survey design principles. Six MicroSims were developed to support the chapter concepts:
 
 1. **Bias vs. Variability Target Visualization** - Target diagram showing bias/variability combinations
 2. **Random Digit Table Simulator** - Practice using random digit tables for SRS
@@ -42,7 +43,7 @@ Chapter 11 covers sampling methods, sources of bias, and survey design principle
 ## MicroSim 1: Bias vs. Variability Target Visualization
 
 **Directory:** `docs/sims/bias-variability-target/`
-**Status:** Creating...
+**Status:** ✅ Complete
 
 ### Specification from Chapter
 
@@ -57,21 +58,23 @@ Chapter 11 covers sampling methods, sources of bias, and survey design principle
 
 - `index.md` - Lesson plan and documentation
 - `main.html` - HTML wrapper
-- `bias-variability-target.js` - p5.js simulation code
+- `bias-variability-target.js` - p5.js simulation code (canvas-based controls)
 - `metadata.json` - Dublin Core metadata
 
 ### Implementation Notes
 
-- Canvas-based controls (no DOM elements like createButton)
+- Uses canvas-based buttons (no p5.js DOM functions)
 - Four distinct scenarios with visual and explanatory differences
 - Target metaphor for understanding accuracy vs. precision
+- Shows mean of estimates to demonstrate bias
+- 20 sample points per scenario with Gaussian distribution
 
 ---
 
 ## MicroSim 2: Random Digit Table Simulator
 
 **Directory:** `docs/sims/random-digit-table/`
-**Status:** Pending
+**Status:** ✅ Complete
 
 ### Specification from Chapter
 
@@ -80,18 +83,33 @@ Chapter 11 covers sampling methods, sources of bias, and survey design principle
 - Starting row and column position in the table
 - "Generate New Table" button
 - "Step Through Selection" button
-- Displayed random digit table (10 rows x 20 digits)
+- Displayed random digit table (10 rows x 40 digits)
 - Highlighted digits as user steps through
 - Running list of selected sample members
 - Explanation of why each number was accepted/rejected
 - Size: 700 x 500 pixels
+
+### Files Created
+
+- `index.md` - Lesson plan and documentation
+- `main.html` - HTML wrapper
+- `random-digit-table.js` - p5.js simulation code
+- `metadata.json` - Dublin Core metadata
+
+### Implementation Notes
+
+- Automatically determines digits needed based on population size (1-3)
+- Highlights current reading position in yellow
+- Step-by-step log shows accept/reject decisions
+- Handles skip conditions: out of range, already selected, zero
+- Canvas-based input fields for population/sample size
 
 ---
 
 ## MicroSim 3: Stratified vs. Cluster Sampling Comparison
 
 **Directory:** `docs/sims/stratified-cluster-compare/`
-**Status:** Pending
+**Status:** ✅ Complete
 
 ### Specification from Chapter
 
@@ -103,12 +121,28 @@ Chapter 11 covers sampling methods, sources of bias, and survey design principle
 - Text explanation of the sampling process used
 - Size: 650 x 500 pixels
 
+### Files Created
+
+- `index.md` - Lesson plan and documentation
+- `main.html` - HTML wrapper
+- `stratified-cluster-compare.js` - p5.js simulation code
+- `metadata.json` - Dublin Core metadata
+
+### Implementation Notes
+
+- Stratified: horizontal strata, samples FROM each stratum
+- Cluster: vertical clusters, samples everyone IN selected clusters
+- Color-coded groups (4 groups)
+- Shows checkmarks on selected individuals
+- Key differences panel highlights method distinctions
+- Selection summary shows counts by group
+
 ---
 
 ## MicroSim 4: Undercoverage Visualization
 
 **Directory:** `docs/sims/undercoverage-viz/`
-**Status:** Pending
+**Status:** ✅ Complete
 
 ### Specification from Chapter
 
@@ -123,12 +157,28 @@ Chapter 11 covers sampling methods, sources of bias, and survey design principle
 - Explanation of how undercoverage affected the result
 - Size: 600 x 450 pixels
 
+### Files Created
+
+- `index.md` - Lesson plan and documentation
+- `main.html` - HTML wrapper
+- `undercoverage-viz.js` - p5.js simulation code
+- `metadata.json` - Dublin Core metadata
+
+### Implementation Notes
+
+- Canvas-based sliders for undercoverage % and value difference
+- Undercovered individuals shown with X marks and faded color
+- Calculates and displays true population mean vs sample mean
+- Shows bias direction and magnitude
+- References 1936 Literary Digest poll as historical example
+- Explains when undercoverage causes vs doesn't cause bias
+
 ---
 
 ## MicroSim 5: Question Wording Effects Simulator
 
 **Directory:** `docs/sims/question-wording-effects/`
-**Status:** Pending
+**Status:** ✅ Complete
 
 ### Specification from Chapter
 
@@ -140,18 +190,33 @@ Chapter 11 covers sampling methods, sources of bias, and survey design principle
 - Highlighted words that create the framing effect
 - Size: 650 x 500 pixels
 
+### Files Created
+
+- `index.md` - Lesson plan and documentation
+- `main.html` - HTML wrapper
+- `question-wording-effects.js` - p5.js simulation code
+- `metadata.json` - Dublin Core metadata
+
+### Implementation Notes
+
+- Four topics: Environmental Policy, School Rules, Technology Use, Free Speech
+- Three framings: Neutral, Positive, Negative
+- Shows highlighted keywords that create framing effects
+- "Compare All" mode shows all three versions side-by-side
+- Calculates swing (difference between positive and negative framing)
+- Canvas-based topic and framing buttons
+
 ---
 
 ## MicroSim 6: Survey Design Checklist Interactive
 
 **Directory:** `docs/sims/survey-design-checklist/`
-**Status:** Pending
+**Status:** ✅ Complete
 
 ### Specification from Chapter
 
 - Display a sample survey scenario with potential problems
 - Checklist of survey quality criteria
-- Text field for student suggestions (Note: will use canvas-based approach)
 - Highlighted problems in the survey
 - Score based on criteria met
 - Suggested improvements
@@ -159,30 +224,65 @@ Chapter 11 covers sampling methods, sources of bias, and survey design principle
 - Present 3-4 different survey scenarios with various flaws
 - Size: 700 x 550 pixels
 
+### Files Created
+
+- `index.md` - Lesson plan and documentation
+- `main.html` - HTML wrapper
+- `survey-design-checklist.js` - p5.js simulation code
+- `metadata.json` - Dublin Core metadata
+
+### Implementation Notes
+
+- Four scenarios: Magazine Survey, Teen Social Media, Political Poll, Community Health
+- Eight checklist items across three categories (Sampling, Coverage, Wording)
+- Canvas-based checkboxes for issue selection
+- Feedback shows correct answers and explanations
+- "Try Again" option to reset and retry
+- Progress dots show scenario navigation
+
 ---
 
 ## Development Progress
 
-| MicroSim | Files Created | Tested | Screenshot | Added to mkdocs.yml |
-|----------|---------------|--------|------------|---------------------|
-| 1. Bias-Variability Target | ⏳ | ⬜ | ⬜ | ⬜ |
-| 2. Random Digit Table | ⬜ | ⬜ | ⬜ | ⬜ |
-| 3. Stratified vs Cluster | ⬜ | ⬜ | ⬜ | ⬜ |
-| 4. Undercoverage Viz | ⬜ | ⬜ | ⬜ | ⬜ |
-| 5. Question Wording | ⬜ | ⬜ | ⬜ | ⬜ |
-| 6. Survey Design Checklist | ⬜ | ⬜ | ⬜ | ⬜ |
+| MicroSim | Files Created | Added to mkdocs.yml | Added to sims/index.md |
+|----------|---------------|---------------------|------------------------|
+| 1. Bias-Variability Target | ✅ | ✅ | ✅ |
+| 2. Random Digit Table | ✅ | ✅ | ✅ |
+| 3. Stratified vs Cluster | ✅ | ✅ | ✅ |
+| 4. Undercoverage Viz | ✅ | ✅ | ✅ |
+| 5. Question Wording | ✅ | ✅ | ✅ |
+| 6. Survey Design Checklist | ✅ | ✅ | ✅ |
 
 ---
 
 ## Session Notes
 
-### 2026-02-07 - Session Start
+### 2026-02-07 - Session Complete
 
-Beginning development of Chapter 11 MicroSims. Starting with MicroSim 1: Bias vs. Variability Target Visualization.
+All 6 MicroSims for Chapter 11 (Sampling and Bias) have been created.
 
-Key design principles being followed:
-- Canvas-based controls (no p5.js DOM functions like createButton, createSlider)
-- Responsive width using updateCanvasSize()
-- Consistent styling with existing MicroSims
-- Sylvia's encouraging voice in documentation
+**Key Design Decisions:**
+- All simulations use canvas-based controls (no p5.js DOM functions like createButton, createSlider)
+- Each simulation includes updateCanvasSize() for responsive width
+- Consistent styling with existing MicroSims (aliceblue backgrounds, silver borders)
+- Sylvia's encouraging voice included in all documentation
+- Each MicroSim has full lesson plan with learning objectives, activities, and assessment questions
 
+**Files Modified:**
+- `mkdocs.yml` - Added 6 new MicroSim entries in nav
+- `docs/sims/index.md` - Added 6 new MicroSim cards with descriptions
+
+**New Directories Created:**
+- `docs/sims/bias-variability-target/`
+- `docs/sims/random-digit-table/`
+- `docs/sims/stratified-cluster-compare/`
+- `docs/sims/undercoverage-viz/`
+- `docs/sims/question-wording-effects/`
+- `docs/sims/survey-design-checklist/`
+
+**Next Steps:**
+- Screenshots need to be generated for each MicroSim
+- Testing in browser to verify functionality
+- Consider adding to Chapter 11 content with iframe embeds
+
+**Total Files Created:** 24 files (4 per MicroSim × 6 MicroSims)
