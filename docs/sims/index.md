@@ -199,6 +199,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students examine how changing bin width affects histogram appearance, with multiple datasets and display options.
 
+-   **[Task Graph Viewer](./view-task-graph/index.md)**
+
+    ![Task Graph Viewer](./view-task-graph/view-task-graph.png)
+
+    Interactive MicroSim that visualizes the book task graph and highlights remaining work.
+
 -   **[Homogeneity vs Independence Comparison](./homogeneity-vs-independence/index.md)**
 
     Side-by-side comparison of chi-square tests for homogeneity and independence with visual sampling diagrams and an interactive quiz with real-world scenarios.

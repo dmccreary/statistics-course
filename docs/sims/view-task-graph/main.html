@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Task Graph Viewer for AP Statistics</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="local.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h4>Task Graph</h4>
+                <button id="toggle-sidebar" class="toggle-btn" title="Toggle Sidebar">&#9776;</button>
+            </div>
+
+            <div class="sidebar-content" id="sidebar-content">
+                <div class="search-container">
+                    <label for="search">Search Tasks:</label>
+                    <input type="text" id="search" placeholder="Type to search...">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+
+                <div class="legend-container">
+                    <h5>Status Filters</h5>
+                    <div class="legend-controls">
+                        <button id="check-all" class="legend-btn">Check All</button>
+                        <button id="uncheck-all" class="legend-btn">Uncheck All</button>
+                    </div>
+                    <div id="legend"></div>
+                </div>
+
+                <div class="stats-container">
+                    <h5>Statistics</h5>
+                    <div id="stats">
+                        <p>Visible Tasks: <span id="visible-nodes">0</span></p>
+                        <p>Visible Dependencies: <span id="visible-edges">0</span></p>
+                        <p>Remaining Tasks: <span id="remaining-nodes">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="graph-container" id="graph-container">
+            <div id="network"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

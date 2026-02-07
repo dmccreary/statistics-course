@@ -127,6 +127,7 @@ nav:
     - Symmetric Distribution Identifier: sims/symmetric-distribution/index.md
     - Test Scores Box Plot: sims/test-scores-boxplot/index.md
     - Test Statistic Calculator: sims/test-statistic-calculator/index.md
+    - Task Graph Viewer: sims/view-task-graph/index.md
     - Three Principles of Experiment: sims/three-principles-experiment/index.md
     - T Critical Value Finder: sims/t-critical-value-finder/index.md
     - T-Procedure Robustness: sims/t-procedure-robustness/index.md
