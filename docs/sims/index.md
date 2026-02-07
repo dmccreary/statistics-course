@@ -53,6 +53,24 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive concept map showing the hierarchy of key concepts in Chapter 2, including Organizing Data, Single Variable Displays, Two Variable Analysis, and Association.
 
+-   **[Correlation Calculator](./correlation-calculator/index.md)**
+
+    ![Correlation Calculator](./correlation-calculator/correlation-calculator.png)
+
+    Step-by-step correlation coefficient calculator showing intermediate values, z-scores, and the complete calculation process with real-time scatterplot updates.
+
+-   **[Correlation Pitfalls Demo](./correlation-pitfalls/index.md)**
+
+    ![Correlation Pitfalls Demo](./correlation-pitfalls/correlation-pitfalls.png)
+
+    Interactive demonstration of common correlation mistakes including nonlinear data, outlier effects, restricted range, and confounding variables.
+
+-   **[Correlation Properties Explorer](./correlation-properties/index.md)**
+
+    ![Correlation Properties Explorer](./correlation-properties/correlation-properties.png)
+
+    Explore correlation properties by dragging points, toggling outliers, swapping axes, and changing units to see how the correlation coefficient responds.
+
 -   **[Density Curve Area Explorer](./density-curve-area/index.md)**
 
     ![Density Curve Area Explorer](./density-curve-area/density-curve-area.png)
@@ -82,6 +100,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Frequency Table Explorer](./frequency-table-explorer/frequency-table-explorer.png)
 
     An interactive MicroSim where students practice calculating relative frequencies and percentages from raw frequency data using adjustable sliders.
+
+-   **[Guess the Correlation](./guess-correlation/index.md)**
+
+    ![Guess the Correlation](./guess-correlation/guess-correlation.png)
+
+    Correlation estimation game where students guess r-values from scatterplots, building intuition for what different correlation strengths look like.
 
 -   **[Interactive Histogram Explorer](./histogram-explorer/index.md)**
 
@@ -155,6 +179,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim demonstrating the difference between population parameters and sample statistics, showing how statistics vary while parameters remain fixed.
 
+-   **[Pattern Recognition Gallery](./pattern-recognition-gallery/index.md)**
+
+    ![Pattern Recognition Gallery](./pattern-recognition-gallery/pattern-recognition-gallery.png)
+
+    Classify scatterplots by their form: linear positive, linear negative, nonlinear, or no association. Features a gallery of thumbnails with instant feedback.
+
 -   **[Pie Chart vs Bar Graph Comparison](./pie-vs-bar-comparison/index.md)**
 
     ![Pie Chart vs Bar Graph Comparison](./pie-vs-bar-comparison/pie-vs-bar-comparison.png)
@@ -196,6 +226,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Sample Space Explorer](./sample-space-explorer/sample-space-explorer.png)
 
     Interactive visualization for exploring sample spaces of common probability experiments including dice rolls, coin flips, and card draws.
+
+-   **[Scatterplot Builder](./scatterplot-builder/index.md)**
+
+    ![Scatterplot Builder](./scatterplot-builder/scatterplot-builder.png)
+
+    Build scatterplots interactively by clicking data rows to plot points. Features multiple datasets and customizable axis labels.
 
 -   **[Standard Deviation Calculator](./std-dev-calculator/index.md)**
 

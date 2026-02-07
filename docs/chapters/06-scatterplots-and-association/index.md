@@ -79,6 +79,10 @@ To create a scatterplot:
 
 #### MicroSim: Scatterplot Builder
 
+<iframe src="../../sims/scatterplot-builder/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
+
 <details markdown="1">
 <summary>Interactive Scatterplot Builder</summary>
 Type: MicroSim
@@ -186,6 +190,10 @@ The key insight is this: when you see a curved pattern, a straight line won't ac
 
 #### MicroSim: Pattern Recognition Gallery
 
+<iframe src="../../sims/pattern-recognition-gallery/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
+
 <details markdown="1">
 <summary>Identify the Form of Association</summary>
 Type: MicroSim
@@ -252,6 +260,10 @@ The sign of \( r \) tells you the direction:
 > — *Sylvia*
 
 #### MicroSim: Guess the Correlation
+
+<iframe src="../../sims/guess-correlation/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
 
 <details markdown="1">
 <summary>Correlation Estimation Game</summary>
@@ -368,6 +380,10 @@ Wait—that's greater than 1! Due to rounding in our intermediate steps, we got 
 
 #### MicroSim: Correlation Calculator
 
+<iframe src="../../sims/correlation-calculator/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
+
 <details markdown="1">
 <summary>Step-by-Step Correlation Computation</summary>
 Type: MicroSim
@@ -447,6 +463,10 @@ Understanding what correlation cannot tell you is just as important as understan
 > — *Sylvia*
 
 #### MicroSim: Correlation Properties Explorer
+
+<iframe src="../../sims/correlation-properties/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
 
 <details markdown="1">
 <summary>Explore What Affects Correlation</summary>
@@ -530,6 +550,10 @@ If you only look at part of the data range, you may miss or misrepresent the tru
 > — *Sylvia*
 
 #### MicroSim: Correlation Pitfalls Demo
+
+<iframe src="../../sims/correlation-pitfalls/main.html" width="100%" height="552px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
 
 <details markdown="1">
 <summary>Explore Common Correlation Mistakes</summary>
