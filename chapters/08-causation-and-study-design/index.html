@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP statistics designed for college credit.">
+        <meta name="description" content="Learn the critical distinction between correlation and causation, understand lurking and confounding variables, explore Simpson's Paradox, and compare observational studies with experiments">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>8. Causation and Study Design - AP Statistics</title>
+        <title>Causation and Study Design - AP Statistics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="8. Causation and Study Design - AP Statistics" >
+        <meta  property="og:title"  content="Causation and Study Design - AP Statistics" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  property="og:description"  content="Learn the critical distinction between correlation and causation, understand lurking and confounding variables, explore Simpson's Paradox, and compare observational studies with experiments" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/08-causation-and-study-design/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="8. Causation and Study Design - AP Statistics" >
+        <meta  name="twitter:title"  content="Causation and Study Design - AP Statistics" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  name="twitter:description"  content="Learn the critical distinction between correlation and causation, understand lurking and confounding variables, explore Simpson's Paradox, and compare observational studies with experiments" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/08-causation-and-study-design/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              8. Causation and Study Design
+              Causation and Study Design
             
           </span>
         </div>
@@ -665,6 +665,225 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-causation-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Causation Question
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causation-what-does-it-really-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Causation: What Does It Really Mean?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correlation-vs-causation-the-classic-trap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correlation vs. Causation: The Classic Trap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Correlation vs. Causation: The Classic Trap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-correlation-vs-causation-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Correlation vs Causation Scenarios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lurking-variables-the-hidden-troublemakers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lurking Variables: The Hidden Troublemakers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confounding-variables-when-variables-get-tangled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confounding Variables: When Variables Get Tangled
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Confounding Variables: When Variables Get Tangled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-confounding-variable-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Confounding Variable Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifying-confounding-a-systematic-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying Confounding: A Systematic Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simpsons-paradox-when-data-plays-tricks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simpson's Paradox: When Data Plays Tricks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simpson's Paradox: When Data Plays Tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-simpsons-paradox-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Simpson's Paradox Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observational-studies-watching-without-interfering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observational Studies: Watching Without Interfering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments-taking-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experiments: Taking Control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiments: Taking Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-study-type-comparison-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Study Type Comparison Tool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-studies-strengths-and-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing Studies: Strengths and Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#randomization-the-great-equalizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomization: The Great Equalizer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Randomization: The Great Equalizer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-randomization-balance-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Randomization Balance Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-critical-thinking-about-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Critical Thinking About Research
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1005,6 +1224,70 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -1097,6 +1380,8 @@
       
         
           
+        
+      
         
       
         
@@ -1317,6 +1602,225 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-causation-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Causation Question
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#causation-what-does-it-really-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Causation: What Does It Really Mean?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#correlation-vs-causation-the-classic-trap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Correlation vs. Causation: The Classic Trap
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Correlation vs. Causation: The Classic Trap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-correlation-vs-causation-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Correlation vs Causation Scenarios
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lurking-variables-the-hidden-troublemakers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lurking Variables: The Hidden Troublemakers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#confounding-variables-when-variables-get-tangled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confounding Variables: When Variables Get Tangled
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Confounding Variables: When Variables Get Tangled">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-confounding-variable-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Confounding Variable Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifying-confounding-a-systematic-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying Confounding: A Systematic Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simpsons-paradox-when-data-plays-tricks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simpson's Paradox: When Data Plays Tricks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simpson's Paradox: When Data Plays Tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-simpsons-paradox-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Simpson's Paradox Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observational-studies-watching-without-interfering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observational Studies: Watching Without Interfering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments-taking-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experiments: Taking Control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiments: Taking Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-study-type-comparison-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Study Type Comparison Tool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-studies-strengths-and-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing Studies: Strengths and Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#randomization-the-great-equalizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomization: The Great Equalizer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Randomization: The Great Equalizer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-randomization-balance-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Randomization Balance Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-critical-thinking-about-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Critical Thinking About Research
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1363,7 +1867,688 @@
 <li><a href="../06-scatterplots-and-association/">Chapter 6: Scatterplots and Association</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="the-causation-question">The Causation Question</h2>
+<p>Welcome back, data detectives! In the last few chapters, you've become skilled at spotting relationships between variables using scatterplots and correlation. But here's the thing: just because two variables move together doesn't mean one is causing the other. And that distinction? It's absolutely crucial.</p>
+<p>Let me tell you about my cousin Acorn Archie. He noticed that on days when he collected more acorns, he also spotted more birds in the trees. "Birds must love watching me work!" he declared proudly. But Sylvia, being the data-savvy squirrel I am, pointed out the obvious: sunny days bring out both the acorns and the birds. The weather was hiding behind the scenes, making both things happen. Archie wasn't attracting birds. He was just observing them on nice days.</p>
+<p>This chapter is all about avoiding Archie's mistake. We'll explore why correlation doesn't equal causation, learn about sneaky variables that hide in our data, and discover how study design determines what conclusions we can actually draw. My tail's tingling already because we're about to crack one of the biggest nuts in all of statistics!</p>
+<h2 id="causation-what-does-it-really-mean">Causation: What Does It Really Mean?</h2>
+<p><strong>Causation</strong> means that changes in one variable directly produce changes in another variable. When we say X causes Y, we mean that if you manipulate X (and nothing else), Y will change as a result. It's a strong claim that requires strong evidence.</p>
+<p>Think about it this way:</p>
+<ul>
+<li>Flipping a light switch <strong>causes</strong> the light to turn on</li>
+<li>Dropping a ball <strong>causes</strong> it to fall to the ground</li>
+<li>Taking a medication <strong>causes</strong> your symptoms to improve (hopefully!)</li>
+</ul>
+<p>In each case, there's a direct mechanism connecting the action to the outcome. The switch completes an electrical circuit. Gravity pulls the ball down. The medication's active ingredients interact with your body's chemistry.</p>
+<p>Establishing causation in real-world situations is surprisingly difficult. Here's why: in the messy world outside laboratory conditions, many things happen simultaneously. When you observe that two variables are related, you need to rule out every other possible explanation before you can claim causation.</p>
+<table>
+<thead>
+<tr>
+<th>Evidence Level</th>
+<th>What It Tells Us</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Correlation</td>
+<td>Two variables are associated</td>
+<td>Ice cream sales and drowning deaths both increase in summer</td>
+</tr>
+<tr>
+<td>Temporal precedence</td>
+<td>One thing happens before another</td>
+<td>Exercise happens before improved mood</td>
+</tr>
+<tr>
+<td>Mechanism</td>
+<td>There's a plausible explanation for how X affects Y</td>
+<td>Exercise releases endorphins that improve mood</td>
+</tr>
+<tr>
+<td>Causation</td>
+<td>X actually produces changes in Y</td>
+<td>Controlled experiment shows exercise causes mood improvement</td>
+</tr>
+</tbody>
+</table>
+<h2 id="correlation-vs-causation-the-classic-trap">Correlation vs. Causation: The Classic Trap</h2>
+<p>The phrase <strong>"correlation does not imply causation"</strong> might be the most important sentence in statistics. Correlation tells us that two variables tend to move together. When one goes up, the other goes up (positive correlation) or down (negative correlation). But this co-movement could happen for several reasons:</p>
+<ol>
+<li><strong>X causes Y</strong>: The relationship is exactly what it seems</li>
+<li><strong>Y causes X</strong>: The causation runs backward from what you assumed</li>
+<li><strong>Z causes both X and Y</strong>: A third variable is the real culprit</li>
+<li><strong>Coincidence</strong>: Pure chance created an apparent pattern</li>
+</ol>
+<p>Let's look at some famously silly correlations to drive this home:</p>
+<ul>
+<li>Nicholas Cage films and swimming pool drownings are correlated. (Do Cage's movies inspire reckless swimming? Obviously not!)</li>
+<li>Per capita cheese consumption correlates with death by bedsheet tangling. (Is cheese making people thrash in their sleep? Come on.)</li>
+<li>The number of pirates in the world correlates negatively with global temperature. (Are pirates cooling the planet? Unlikely, matey.)</li>
+</ul>
+<p>These examples are absurd, which makes the lesson obvious. But in real research, the relationships are often more plausible-sounding, making the trap more dangerous.</p>
+<div class="admonition tip">
+<p class="admonition-title">Acorn for your thoughts?</p>
+<p>Sylvia says: "Here's my favorite way to spot the correlation-causation trap: ask yourself, 'If I magically changed just one variable, would the other one have to change?' If you're not sure, you might just have correlation on your paws."</p>
+</div>
+<h4 id="diagram-correlation-vs-causation-scenarios">Diagram: Correlation vs Causation Scenarios</h4>
+<iframe src="../../sims/correlation-causation-scenarios/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Correlation vs Causation Scenarios Interactive</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Apply (L3) - Students will classify relationship scenarios as correlation only, possible causation, or third variable explanation.</p>
+<p>Visual elements:
+- Central area showing two variables connected by a line
+- Three possible relationship patterns displayed: X causes Y, Y causes X, Z causes both
+- Scenario cards that slide in from the side
+- Color-coded feedback for correct/incorrect classifications</p>
+<p>Interactive controls:
+- "Next Scenario" button to load a new real-world example
+- Three buttons to classify the relationship: "X causes Y", "Y causes X", "Third Variable"
+- Reveal button to show the correct answer with explanation
+- Score tracker for practice mode
+- Reset button to start over</p>
+<p>Behavior:
+- Each scenario presents two correlated variables (e.g., "Coffee consumption" and "Heart disease")
+- Student selects which relationship type best explains the correlation
+- Feedback explains why the answer is correct or what alternative explanation exists
+- Visual diagram updates to show the selected causal pathway
+- At least 10 different scenarios covering common misconceptions</p>
+<p>Canvas size: 700x450px, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="lurking-variables-the-hidden-troublemakers">Lurking Variables: The Hidden Troublemakers</h2>
+<p>A <strong>lurking variable</strong> is a variable that is not included in your analysis but affects the relationship you're studying. It lurks in the background, influencing your results without you even measuring it. Lurking variables are one of the main reasons why correlation can masquerade as causation.</p>
+<p>Here's a classic example: Studies show that people who own more books tend to have higher incomes. Does buying books make you richer? Probably not. A lurking variable—education level—likely explains both. More educated people tend to both own more books AND earn higher incomes. Education is lurking behind the scenes, creating an apparent relationship between books and income.</p>
+<p>Lurking variables are sneaky because:</p>
+<ul>
+<li>You might not think to measure them</li>
+<li>They might be difficult or impossible to measure</li>
+<li>Multiple lurking variables might be at play simultaneously</li>
+</ul>
+<p>Common lurking variables to watch for:</p>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th>Potential Lurking Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Health studies</td>
+<td>Age, socioeconomic status, diet, exercise, genetics</td>
+</tr>
+<tr>
+<td>Education research</td>
+<td>Parent education, school resources, prior achievement</td>
+</tr>
+<tr>
+<td>Economics</td>
+<td>Geographic region, time period, policy changes</td>
+</tr>
+<tr>
+<td>Technology</td>
+<td>User demographics, device type, time of day</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Lurking Variable Alert</p>
+<p>Whenever you see a surprising or convenient correlation, your first question should be: "What lurking variable might explain this relationship?" The more you practice asking this question, the better statistical thinker you'll become.</p>
+</div>
+<h2 id="confounding-variables-when-variables-get-tangled">Confounding Variables: When Variables Get Tangled</h2>
+<p>A <strong>confounding variable</strong> is a specific type of lurking variable that's associated with BOTH the explanatory variable and the response variable. This creates a tangled web where you can't tell which variable is actually responsible for the effect you observe.</p>
+<p>Here's the formal definition: A confounding variable is related to both the explanatory variable and the response variable, making it impossible to determine whether the explanatory variable, the confounding variable, or both are affecting the response.</p>
+<p>Let's walk through an example. Suppose you're studying whether drinking coffee is associated with heart disease. You find that coffee drinkers have higher rates of heart disease. Should coffee lovers be worried?</p>
+<p>Not so fast! Consider smoking as a potential confounding variable:</p>
+<ul>
+<li>Smokers are more likely to drink coffee (smoking and coffee are associated)</li>
+<li>Smoking causes heart disease (smoking affects the response)</li>
+<li>If we don't account for smoking, we might falsely blame coffee</li>
+</ul>
+<p>In this case, the effect of coffee and the effect of smoking are <strong>confounded</strong>—tangled up together in a way that makes them impossible to separate without careful study design.</p>
+<h4 id="diagram-confounding-variable-visualizer">Diagram: Confounding Variable Visualizer</h4>
+<iframe src="../../sims/confounding-variable-diagram/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Confounding Variable Visualizer</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Analyze (L4) - Students will analyze how confounding variables create alternative explanations for observed associations.</p>
+<p>Visual elements:
+- Three nodes representing explanatory variable (X), response variable (Y), and confounding variable (C)
+- Arrows showing relationships between variables
+- Toggle to show/hide the confounding pathway
+- Color coding: observed relationship in blue, confounded pathway in red</p>
+<p>Interactive controls:
+- Dropdown to select from preset scenarios (coffee/heart disease, ice cream/drowning, etc.)
+- Toggle to "reveal confounding" that shows the hidden variable
+- Sliders to adjust strength of each relationship (X-Y, C-X, C-Y)
+- Animation showing how removing confounding changes the apparent relationship
+- Reset button to restore defaults</p>
+<p>Behavior:
+- Initially shows only X and Y with a strong apparent relationship
+- Revealing confounding adds node C and shows arrows to both X and Y
+- Adjusting C's relationships visually shows how much of X-Y is explained by C
+- Text updates explaining the current confounding situation
+- Simulation mode: generate fake data showing confounded vs true relationship</p>
+<p>Canvas size: 650x400px, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="identifying-confounding-a-systematic-approach">Identifying Confounding: A Systematic Approach</h2>
+<p><strong>Identifying confounding</strong> requires thinking carefully about what variables might be related to both your explanatory and response variables. Here's a systematic approach:</p>
+<p><strong>Step 1: List potential confounders</strong></p>
+<p>For any relationship you're studying, brainstorm variables that might be associated with both the explanatory and response variables. Consider:</p>
+<ul>
+<li>Demographics (age, gender, income, education)</li>
+<li>Behaviors (diet, exercise, sleep)</li>
+<li>Environmental factors (location, season, time period)</li>
+<li>Pre-existing conditions or characteristics</li>
+</ul>
+<p><strong>Step 2: Check the two requirements</strong></p>
+<p>For each potential confounder, ask:</p>
+<ul>
+<li>Is it associated with the explanatory variable?</li>
+<li>Is it associated with the response variable?</li>
+</ul>
+<p>If the answer is yes to BOTH questions, you've identified a potential confounder.</p>
+<p><strong>Step 3: Consider the direction</strong></p>
+<p>A true confounder can't be on the causal pathway between your explanatory and response variables. If X causes C and C causes Y, then C is a <strong>mediator</strong>, not a confounder. Confounders are causes of both X and Y, not effects of X.</p>
+<p>Let's practice with an example. A study finds that students who eat breakfast have higher test scores. Is this causation?</p>
+<p>Potential confounders:</p>
+<ul>
+<li>
+<p><strong>Socioeconomic status</strong>: Wealthier families can afford breakfast AND provide other educational advantages. SES is associated with breakfast eating. SES is associated with test scores. Possible confounder!</p>
+</li>
+<li>
+<p><strong>Sleep habits</strong>: Students who sleep well are more likely to wake up with time for breakfast AND to perform well on tests. Sleep is associated with breakfast eating. Sleep is associated with test scores. Possible confounder!</p>
+</li>
+<li>
+<p><strong>Parental involvement</strong>: Parents who ensure their kids eat breakfast might also ensure homework gets done. Parent involvement is associated with breakfast eating. Parent involvement is associated with test scores. Possible confounder!</p>
+</li>
+</ul>
+<p>See how many alternative explanations exist? Without accounting for confounders, we can't conclude that breakfast itself causes better performance.</p>
+<h2 id="simpsons-paradox-when-data-plays-tricks">Simpson's Paradox: When Data Plays Tricks</h2>
+<p>Here's where things get really interesting. <strong>Simpson's Paradox</strong> occurs when a trend that appears in several groups of data reverses or disappears when the groups are combined. It's one of the most counterintuitive phenomena in statistics.</p>
+<p>Let me illustrate with a famous example. Imagine two hospitals treating patients for a serious condition:</p>
+<p><strong>Hospital A:</strong>
+- Treated 900 patients in good condition: 870 survived (97%)
+- Treated 100 patients in poor condition: 30 survived (30%)
+- Overall: 900 of 1000 survived (90%)</p>
+<p><strong>Hospital B:</strong>
+- Treated 100 patients in good condition: 95 survived (95%)
+- Treated 900 patients in poor condition: 405 survived (45%)
+- Overall: 500 of 1000 survived (50%)</p>
+<p>Which hospital is better? If you look at the combined data, Hospital A looks amazing (90% vs 50% survival). But look at the subgroups:</p>
+<ul>
+<li>For good-condition patients: Hospital B is better (95% vs 97%)</li>
+<li>Wait, that should say Hospital A is better. Let me recalculate...</li>
+</ul>
+<p>Actually, let's use clearer numbers:</p>
+<p><strong>Hospital A:</strong>
+- Easy cases: 90 of 100 survived (90%)
+- Hard cases: 10 of 100 survived (10%)
+- Overall: 100 of 200 survived (50%)</p>
+<p><strong>Hospital B:</strong>
+- Easy cases: 95 of 100 survived (95%)
+- Hard cases: 15 of 100 survived (15%)
+- Overall: 110 of 200 survived (55%)</p>
+<p>Wait, now B looks better overall too. Simpson's Paradox needs the group sizes to be unequal. Let me give you the classic structure:</p>
+<p><strong>Hospital A:</strong>
+- Easy cases: 900 patients, 870 survived (96.7%)
+- Hard cases: 100 patients, 10 survived (10%)
+- Overall: 880 of 1000 (88%)</p>
+<p><strong>Hospital B:</strong>
+- Easy cases: 100 patients, 99 survived (99%)
+- Hard cases: 900 patients, 180 survived (20%)
+- Overall: 279 of 1000 (27.9%)</p>
+<p>Now look: Hospital A appears better overall (88% vs 28%), but Hospital B actually has HIGHER survival rates in BOTH subgroups (99% vs 96.7% for easy cases, 20% vs 10% for hard cases)!</p>
+<p>The paradox occurs because Hospital B takes on more hard cases. When we aggregate, the hard cases drag down Hospital B's overall rate, even though it performs better in each category.</p>
+<p>The lurking variable here is case severity, which affects both the hospital choice (hard cases go to B) and the outcome (hard cases die more often). It's Simpson's Paradox in action!</p>
+<h4 id="diagram-simpsons-paradox-explorer">Diagram: Simpson's Paradox Explorer</h4>
+<iframe src="../../sims/simpsons-paradox-explorer/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Simpson's Paradox Explorer</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Evaluate (L5) - Students will evaluate aggregated vs. disaggregated data to identify when Simpson's Paradox occurs and determine which analysis is more appropriate.</p>
+<p>Visual elements:
+- Bar charts showing success rates for two groups
+- Toggle between "Combined" view and "Separated by subgroup" view
+- Animated transition between views to show the reversal
+- Clear labels showing percentages for each bar
+- Indicator highlighting when paradox is present</p>
+<p>Interactive controls:
+- Preset scenario selector (hospitals, universities, treatments, etc.)
+- Sliders to adjust sample sizes in each subgroup
+- Sliders to adjust success rates in each subgroup
+- "Reveal Paradox" button that switches from combined to separated view
+- Text explanation that updates based on current data
+- Reset to classic example button</p>
+<p>Behavior:
+- Default shows a classic Simpson's Paradox example
+- Adjusting sliders shows when paradox appears/disappears
+- Color coding: green for higher rate, red for lower rate
+- When paradox is active, show warning indicator
+- Calculate and display whether the combined conclusion contradicts subgroup conclusions</p>
+<p>Canvas size: 700x500px, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">Let's crack this nut!</p>
+<p>Sylvia says: "Simpson's Paradox teaches us to always ask: 'What happens when I look at subgroups?' Aggregated data can hide important patterns. And hidden patterns? That's when a statistician's tail really starts to poof up!"</p>
+</div>
+<h2 id="observational-studies-watching-without-interfering">Observational Studies: Watching Without Interfering</h2>
+<p>Now that we understand the challenges of establishing causation, let's talk about how data is collected. An <strong>observational study</strong> is a study in which researchers observe and measure variables but do not attempt to influence the responses. They simply watch what happens naturally.</p>
+<p>In an observational study:</p>
+<ul>
+<li>Researchers collect data on existing groups</li>
+<li>No treatments are assigned</li>
+<li>People or things are measured as they naturally exist</li>
+<li>The goal is often to discover associations</li>
+</ul>
+<p>Examples of observational studies:</p>
+<ul>
+<li>Surveying students about their study habits and grades</li>
+<li>Tracking health outcomes for people who choose to exercise vs. those who don't</li>
+<li>Comparing accident rates for people who use hands-free devices vs. handheld phones</li>
+<li>Measuring pollution levels in cities with different traffic patterns</li>
+</ul>
+<p>Observational studies are valuable because:</p>
+<ul>
+<li>They're often the only ethical option (you can't force people to smoke to study cancer)</li>
+<li>They can study rare conditions or behaviors</li>
+<li>They can examine long-term outcomes</li>
+<li>They're often less expensive than experiments</li>
+</ul>
+<p>However, observational studies have a fundamental limitation: <strong>they cannot establish causation</strong>. Why not? Because the groups being compared might differ in ways other than the variable of interest. Those differences (confounding variables) might be the real cause of any observed effect.</p>
+<p>Consider studying whether drinking wine is associated with heart health. Wine drinkers might also:</p>
+<ul>
+<li>Have higher incomes</li>
+<li>Eat Mediterranean diets</li>
+<li>Have better access to healthcare</li>
+<li>Exercise more regularly</li>
+</ul>
+<p>Any of these factors, not the wine itself, could explain better heart health.</p>
+<h2 id="experiments-taking-control">Experiments: Taking Control</h2>
+<p>An <strong>experiment</strong> deliberately imposes a treatment on individuals to observe their responses. The defining feature of an experiment is that the researcher decides who gets what treatment.</p>
+<p>Key features of experiments:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Treatment</td>
+<td>Something done to subjects (medication, teaching method, etc.)</td>
+</tr>
+<tr>
+<td>Control group</td>
+<td>Subjects who don't receive the treatment (or receive a placebo)</td>
+</tr>
+<tr>
+<td>Random assignment</td>
+<td>Subjects are randomly placed into treatment or control groups</td>
+</tr>
+<tr>
+<td>Comparison</td>
+<td>Response is measured and compared between groups</td>
+</tr>
+</tbody>
+</table>
+<p>The power of experiments comes from <strong>random assignment</strong>. When subjects are randomly assigned to groups, all those lurking and confounding variables get distributed approximately equally across groups. Smart people end up in both groups. Healthy people end up in both groups. Morning people, night owls, coffee drinkers, vegetarians—they all get randomly mixed.</p>
+<p>After random assignment, the only systematic difference between groups is the treatment itself. So if we observe a difference in the response, we can attribute it to the treatment. That's causation!</p>
+<p>Here's an example of a well-designed experiment:</p>
+<p><strong>Research question</strong>: Does listening to classical music improve test performance?</p>
+<p><strong>Experimental design</strong>:
+1. Recruit 200 students
+2. Randomly assign 100 to listen to Mozart for 10 minutes before a test
+3. Assign the other 100 to sit in silence for 10 minutes
+4. All students take the same test under identical conditions
+5. Compare average scores between groups</p>
+<p>Because of random assignment, any difference in test scores can be attributed to the music (assuming the experiment was properly controlled).</p>
+<h4 id="diagram-study-type-comparison-tool">Diagram: Study Type Comparison Tool</h4>
+<iframe src="../../sims/study-type-comparison/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Study Type Comparison Tool</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Analyze (L4) - Students will analyze study descriptions to classify them as observational studies or experiments and evaluate what conclusions can be drawn.</p>
+<p>Visual elements:
+- Side-by-side comparison of observational study and experiment
+- Animated flowchart showing data collection process for each type
+- Icons representing subjects, treatments, and measurements
+- "Conclusion strength meter" showing what each study type can claim</p>
+<p>Interactive controls:
+- Study scenario input or selection from preset examples
+- Classification buttons: "Observational" or "Experiment"
+- Checklist for identifying key features (random assignment, treatment, control)
+- Feedback area showing correct classification and explanation
+- Toggle to see same research question as both study types</p>
+<p>Behavior:
+- Present study descriptions one at a time
+- Student identifies whether it's observational or experimental
+- Feedback explains key features that determine classification
+- Show how conclusions differ based on study type
+- Side-by-side simulation showing how same question could be studied both ways</p>
+<p>Canvas size: 700x450px, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="comparing-studies-strengths-and-limitations">Comparing Studies: Strengths and Limitations</h2>
+<p>Let's directly <strong>compare observational studies and experiments</strong> to understand when each is appropriate.</p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Observational Study</th>
+<th>Experiment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Who decides treatment</strong></td>
+<td>Subjects self-select</td>
+<td>Researcher assigns randomly</td>
+</tr>
+<tr>
+<td><strong>Confounding</strong></td>
+<td>Major concern</td>
+<td>Controlled by randomization</td>
+</tr>
+<tr>
+<td><strong>Causation claims</strong></td>
+<td>Cannot establish causation</td>
+<td>Can establish causation</td>
+</tr>
+<tr>
+<td><strong>Ethics</strong></td>
+<td>Can study harmful exposures</td>
+<td>Cannot expose subjects to harm</td>
+</tr>
+<tr>
+<td><strong>Generalizability</strong></td>
+<td>Often more natural settings</td>
+<td>May be artificial</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Often less expensive</td>
+<td>Can be very costly</td>
+</tr>
+<tr>
+<td><strong>Time</strong></td>
+<td>Can study long-term outcomes</td>
+<td>Often shorter duration</td>
+</tr>
+</tbody>
+</table>
+<p>When should you use each?</p>
+<p><strong>Use observational studies when:</strong></p>
+<ul>
+<li>Randomly assigning treatments would be unethical (smoking, pollution exposure)</li>
+<li>You want to study naturally occurring phenomena</li>
+<li>Long-term follow-up is needed</li>
+<li>Resources for experiments are unavailable</li>
+<li>You're exploring relationships before designing an experiment</li>
+</ul>
+<p><strong>Use experiments when:</strong></p>
+<ul>
+<li>You need to establish causation</li>
+<li>Random assignment is ethically possible</li>
+<li>You can control the environment</li>
+<li>The treatment is well-defined</li>
+<li>The outcome can be measured in a reasonable timeframe</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">The Ethics of Experimentation</p>
+<p>Even if an experiment would give us cleaner data, we can't run it if it would be unethical. We can't randomly assign people to smoke to study lung cancer. We can't randomly assign children to be neglected to study child development. When experimentation is impossible, well-designed observational studies become our best option—and we must interpret their results with appropriate caution.</p>
+</div>
+<h2 id="randomization-the-great-equalizer">Randomization: The Great Equalizer</h2>
+<p>The secret sauce that makes experiments so powerful is <strong>random assignment</strong>. When we randomly assign subjects to treatment groups, we're letting chance decide who gets what. This might seem arbitrary, but it has a profound effect: it tends to equalize all variables—both the ones we know about and the ones we don't—across groups.</p>
+<p>Here's why this matters. Imagine you're testing a new tutoring program on 100 students. Without random assignment, you might:</p>
+<ul>
+<li>Let students choose (motivated students might choose tutoring, skewing results)</li>
+<li>Assign the first 50 who sign up to tutoring (early signers might be more eager)</li>
+<li>Put struggling students in tutoring (they'd improve less than average anyway)</li>
+</ul>
+<p>Any of these approaches creates a <strong>selection bias</strong> where the groups differ before the treatment even starts.</p>
+<p>With random assignment:</p>
+<ul>
+<li>Each student has an equal chance of being in either group</li>
+<li>Motivated and unmotivated students end up in both groups</li>
+<li>High and low achievers end up in both groups</li>
+<li>All lurking variables get balanced out, on average</li>
+</ul>
+<p>The result? Any difference we observe between groups at the end can be attributed to the treatment, not to pre-existing differences.</p>
+<p>Of course, random assignment doesn't guarantee perfectly balanced groups. By chance, one group might end up slightly smarter or more motivated. But with large enough samples, these random imbalances become negligible. And even with small samples, random differences are equally likely to favor either group—they don't systematically bias our results in one direction.</p>
+<h4 id="diagram-randomization-balance-simulator">Diagram: Randomization Balance Simulator</h4>
+<iframe src="../../sims/randomization-balance-sim/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<details>
+<summary>Randomization Balance Simulator</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Apply (L3) - Students will apply random assignment to groups and observe how it balances known and unknown variables across treatment and control groups.</p>
+<p>Visual elements:
+- Population of subjects with visible characteristics (icons with varying heights, colors)
+- Hidden characteristic indicator (shown after randomization)
+- Two boxes for Treatment and Control groups
+- Statistics panel showing balance of characteristics in each group</p>
+<p>Interactive controls:
+- "Randomize" button to randomly assign subjects to groups
+- Sample size slider (20, 50, 100, 200 subjects)
+- Multiple visible characteristics toggles (age, gender, prior experience)
+- "Reveal hidden variable" toggle
+- Run multiple randomizations to see distribution of imbalances
+- Reset button</p>
+<p>Behavior:
+- Initial state shows mixed population with visible characteristics
+- Clicking randomize animates subjects moving to treatment/control
+- Statistics update showing percentage of each characteristic in each group
+- Multiple randomizations show that balance improves with sample size
+- Hidden variable demonstration shows randomization balances even unknown factors</p>
+<p>Canvas size: 700x450px, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="putting-it-all-together-critical-thinking-about-research">Putting It All Together: Critical Thinking About Research</h2>
+<p>Now you have the tools to critically evaluate statistical claims. Let's practice with a systematic approach.</p>
+<p><strong>When you encounter a claim that X causes Y, ask:</strong></p>
+<ol>
+<li><strong>How was the data collected?</strong></li>
+<li>Observational study? Be skeptical of causal claims.</li>
+<li>
+<p>Experiment with random assignment? Causation is possible.</p>
+</li>
+<li>
+<p><strong>What are potential confounding variables?</strong></p>
+</li>
+<li>What else might explain this relationship?</li>
+<li>
+<p>Were these variables measured and controlled for?</p>
+</li>
+<li>
+<p><strong>Is there a plausible mechanism?</strong></p>
+</li>
+<li>Can you explain HOW X might cause Y?</li>
+<li>
+<p>Does the mechanism make scientific sense?</p>
+</li>
+<li>
+<p><strong>Does the evidence support the strength of the claim?</strong></p>
+</li>
+<li>Correlation only? Say "is associated with."</li>
+<li>
+<p>Causation established? Say "causes."</p>
+</li>
+<li>
+<p><strong>Would looking at subgroups change the conclusion?</strong></p>
+</li>
+<li>Could Simpson's Paradox be at play?</li>
+<li>Are important groups being combined?</li>
+</ol>
+<p>Here's an example of critical analysis:</p>
+<p><strong>Claim</strong>: "Studies show that people who eat organic food live longer."</p>
+<p><strong>Analysis</strong>:</p>
+<ul>
+<li>This is likely an observational study (researchers didn't randomly assign people to eat organic)</li>
+<li>Confounders: People who buy organic food tend to be wealthier, more educated, more health-conscious, and may exercise more and smoke less</li>
+<li>Without random assignment, we can't separate the effect of organic food from these confounders</li>
+<li>Better claim: "Eating organic food is associated with longer life, though this may reflect other lifestyle factors common among organic food consumers."</li>
+</ul>
+<p>Time to squirrel away this knowledge! Being a critical consumer of statistical claims is one of the most valuable skills you'll develop.</p>
+<h2 id="real-world-applications">Real-World Applications</h2>
+<p>Let's look at how these concepts apply in important real-world contexts.</p>
+<p><strong>Medical Research</strong></p>
+<p>The gold standard for testing medical treatments is the <strong>randomized controlled trial (RCT)</strong>. Patients are randomly assigned to receive either the new treatment or a placebo (or standard care). This allows researchers to determine if the treatment actually works.</p>
+<p>The placebo control is important because of the <strong>placebo effect</strong>—people often feel better just from believing they're receiving treatment. By comparing to a placebo, researchers isolate the drug's true effect from the psychological effect of taking a pill.</p>
+<p><strong>Social Science</strong></p>
+<p>Many social science questions can't be studied experimentally for ethical reasons. Researchers use sophisticated statistical techniques to try to control for confounders in observational data, but these methods have limitations. When you read that "poverty causes crime" or "video games cause violence," be skeptical and ask about study design.</p>
+<p><strong>Policy Decisions</strong></p>
+<p>Policymakers often face decisions where experiments would be ideal but aren't feasible. Does raising the minimum wage reduce employment? Does stricter gun control reduce violence? These questions involve comparing states or countries with different policies—observational comparisons where many variables differ between groups.</p>
+<p>Some clever approaches exist:</p>
+<ul>
+<li><strong>Natural experiments</strong>: When a policy change or event creates something like random assignment</li>
+<li><strong>Regression discontinuity</strong>: Comparing people just above and below a threshold</li>
+<li><strong>Difference-in-differences</strong>: Comparing changes before and after a policy in places with and without the policy</li>
+</ul>
+<p>These methods try to approximate the power of experiments using observational data, but they require careful assumptions.</p>
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<p>Before we wrap up, let's tackle some common pitfalls:</p>
+<p><strong>Mistake 1: Assuming correlation implies causation</strong>
+Just because two variables are related doesn't mean one causes the other. Always consider alternative explanations.</p>
+<p><strong>Mistake 2: Ignoring confounding variables</strong>
+Before accepting a causal claim, identify what other variables might explain the relationship. Were they measured and controlled?</p>
+<p><strong>Mistake 3: Thinking experiments are always better</strong>
+Experiments establish causation, but observational studies are sometimes more ethical, practical, and generalizable. Each has its place.</p>
+<p><strong>Mistake 4: Forgetting about Simpson's Paradox</strong>
+Combined data can tell a different story than subgroup data. When possible, look at both levels of analysis.</p>
+<p><strong>Mistake 5: Assuming random assignment eliminates all problems</strong>
+Random assignment balances confounders on average, but experiments can still have other problems (people drop out, the setting is artificial, etc.).</p>
+<p><strong>Mistake 6: Confusing statistical association with practical importance</strong>
+Even a causal relationship might be tiny in effect size. "Causes" doesn't mean "is a major factor."</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<p>Let's squirrel away the big ideas from this chapter:</p>
+<ol>
+<li>
+<p><strong>Causation</strong> means that changes in one variable directly produce changes in another. It's a strong claim requiring strong evidence.</p>
+</li>
+<li>
+<p><strong>Correlation does not imply causation</strong>. Associated variables might both be caused by a third variable, or the apparent relationship might be coincidental.</p>
+</li>
+<li>
+<p><strong>Lurking variables</strong> affect the relationship being studied but aren't measured. They can create misleading associations.</p>
+</li>
+<li>
+<p><strong>Confounding variables</strong> are associated with both the explanatory and response variables, making it impossible to separate their effects from the treatment effect.</p>
+</li>
+<li>
+<p><strong>Simpson's Paradox</strong> occurs when trends in subgroups reverse when data is combined. Always consider whether aggregation might hide important patterns.</p>
+</li>
+<li>
+<p><strong>Observational studies</strong> measure variables without imposing treatments. They can find associations but cannot establish causation.</p>
+</li>
+<li>
+<p><strong>Experiments</strong> randomly assign subjects to treatments. Random assignment balances confounders, allowing causal conclusions.</p>
+</li>
+<li>
+<p><strong>Random assignment</strong> is the key that makes experiments powerful. By letting chance decide who gets what, it equalizes groups on all variables.</p>
+</li>
+<li>
+<p><strong>Critical evaluation</strong> of research requires asking about study design, potential confounders, and whether conclusions match the evidence.</p>
+</li>
+</ol>
+<hr />
+<h2 id="practice-problems">Practice Problems</h2>
+<details class="question">
+<summary>Problem 1: Identifying Confounders</summary>
+<p>A study finds that children who eat dinner with their families have higher grades than children who don't. A researcher claims that family dinners cause better academic performance.</p>
+<p>a) What type of study is this (observational or experiment)?
+b) Identify at least two potential confounding variables.
+c) Explain how one of these confounders could create the observed association without family dinners actually causing better grades.</p>
+<p><strong>Answers:</strong>
+a) This is an observational study—researchers observed existing behavior, they didn't randomly assign families to eat together or apart.</p>
+<p>b) Potential confounders include:
+- Parental involvement (parents who prioritize family dinners might also help with homework)
+- Socioeconomic status (wealthier families might have more time for dinners and resources for education)
+- Family stability (stable families might have more regular dinners and less stress affecting grades)
+- Parent work schedules (parents with flexible jobs enabling dinners might also have more time for educational support)</p>
+<p>c) Example: Parental involvement could be the real cause. Parents who are highly involved in their children's lives are more likely to organize family dinners AND more likely to help with homework, check on school progress, and encourage academic success. The family dinners don't cause the better grades—both are effects of parental involvement.</p>
+</details>
+<details class="question">
+<summary>Problem 2: Simpson's Paradox</summary>
+<p>Two tutoring companies advertise their success rates:</p>
+<p><strong>Company A</strong>: 600 students total, 480 passed their exams (80%)
+<strong>Company B</strong>: 600 students total, 420 passed their exams (70%)</p>
+<p>But here's the breakdown by student type:</p>
+<p>Company A:
+- 500 well-prepared students: 450 passed (90%)
+- 100 struggling students: 30 passed (30%)</p>
+<p>Company B:
+- 100 well-prepared students: 95 passed (95%)
+- 500 struggling students: 325 passed (65%)</p>
+<p>a) Which company has the higher overall pass rate?
+b) Which company has the higher pass rate for well-prepared students?
+c) Which company has the higher pass rate for struggling students?
+d) Explain why this is Simpson's Paradox and which company is actually better.</p>
+<p><strong>Answers:</strong>
+a) Company A has the higher overall pass rate (80% vs 70%).</p>
+<p>b) Company B has the higher pass rate for well-prepared students (95% vs 90%).</p>
+<p>c) Company B has the higher pass rate for struggling students (65% vs 30%).</p>
+<p>d) This is Simpson's Paradox because Company B performs better in BOTH subgroups, yet appears worse overall. The paradox occurs because Company A mostly tutors well-prepared students (who pass at high rates anyway), while Company B takes on mostly struggling students (who pass at lower rates). The aggregated data makes Company A look better only because it tutors easier cases. Company B is actually better—it achieves higher success rates regardless of which type of student you consider.</p>
+</details>
+<details class="question">
+<summary>Problem 3: Study Design</summary>
+<p>A researcher wants to determine whether a new energy drink improves athletic performance.</p>
+<p>a) Design an observational study that could investigate this question. What conclusions could you draw?
+b) Design an experiment that could investigate this question. What conclusions could you draw?
+c) Why would the experiment give stronger evidence for causation?</p>
+<p><strong>Answers:</strong>
+a) Observational study: Survey 200 athletes about their energy drink consumption and measure their performance metrics (sprint times, strength tests, etc.). Compare performance between those who regularly use energy drinks and those who don't.</p>
+<p>Conclusions: Can only say energy drink use is "associated with" better or worse performance. Cannot claim causation because athletes who choose energy drinks might differ in training intensity, health consciousness, age, or other factors.</p>
+<p>b) Experiment: Recruit 100 athletes, randomly assign 50 to consume the energy drink before testing and 50 to consume a placebo drink (identical taste, no active ingredients). Measure their performance on standardized athletic tests. Compare average performance between groups.</p>
+<p>Conclusions: If the energy drink group performs significantly better, can conclude the drink causes improved performance. The placebo controls for the psychological effect of taking something.</p>
+<p>c) The experiment provides stronger evidence because random assignment ensures that, on average, the two groups are equivalent in all ways (training, motivation, genetics, experience) except for the drink they consumed. Any difference in performance can therefore be attributed to the drink. In the observational study, differences might reflect pre-existing differences between people who choose to use energy drinks.</p>
+</details>
+<details class="question">
+<summary>Problem 4: Critical Analysis</summary>
+<p>A news article reports: "New study proves that getting more sleep causes better memory. Researchers found that people who slept 8+ hours performed 20% better on memory tests than those who slept less than 6 hours."</p>
+<p>Critically analyze this claim:
+a) Is the word "proves" appropriate? Why or why not?
+b) What information would you need to evaluate this claim properly?
+c) Identify at least two potential confounding variables.
+d) Rewrite the headline to accurately reflect what the study likely showed.</p>
+<p><strong>Answers:</strong>
+a) "Proves" is not appropriate. This appears to be an observational study (researchers observed existing sleep patterns rather than randomly assigning people to sleep amounts). Observational studies cannot prove causation—they can only show association.</p>
+<p>b) Information needed:
+- Was this an experiment or observational study?
+- If observational, what confounders were controlled for?
+- How were sleep hours measured (self-report vs. objective)?
+- Sample size and how participants were selected
+- Details of the memory tests used</p>
+<p>c) Potential confounders:
+- Overall health (healthier people may both sleep better and have better memory)
+- Age (older people may sleep less and have worse memory)
+- Stress level (stressed people may sleep poorly and have impaired memory)
+- Lifestyle factors (exercise, diet, alcohol use)
+- Mental health conditions (depression affects both sleep and cognition)</p>
+<p>d) Better headline: "Study finds association between longer sleep and better memory performance" or "People who sleep 8+ hours score higher on memory tests, study suggests"</p>
+</details>
+<details class="question">
+<summary>Problem 5: Identifying Study Types</summary>
+<p>For each scenario, identify whether it's an observational study or an experiment, and explain what conclusions can be drawn:</p>
+<p>a) Researchers randomly assign some classrooms to use a new math curriculum while others continue with the standard curriculum. They compare test scores at the end of the year.</p>
+<p>b) A hospital records which patients choose to have surgery versus medication for back pain, then follows up on their outcomes.</p>
+<p>c) Scientists compare cancer rates between people who live near power lines and those who don't.</p>
+<p>d) A tech company randomly shows half its users a new interface design and the other half the old design, then measures engagement.</p>
+<p><strong>Answers:</strong>
+a) This is an experiment (random assignment to curricula). Conclusion: If the new curriculum group scores higher, we can conclude the curriculum caused better learning—the random assignment of classrooms balances other factors.</p>
+<p>b) This is an observational study (patients chose their treatment). Conclusion: We can only say treatment choice is associated with outcomes. Patients who choose surgery may differ from those who choose medication in severity, overall health, or willingness to take risks. These differences, not the treatment itself, might explain different outcomes.</p>
+<p>c) This is an observational study (researchers observed existing locations). Conclusion: We can only find associations between location and cancer rates. People living near power lines might differ in socioeconomic status, housing quality, or other factors that affect health. We cannot conclude power lines cause cancer from this study.</p>
+<p>d) This is an experiment (random assignment to interface). Conclusion: If the new interface group shows higher engagement, we can conclude the new design causes better engagement. Random assignment ensures the groups are comparable, so differences must be due to the interface.</p>
+</details>
 
 
 

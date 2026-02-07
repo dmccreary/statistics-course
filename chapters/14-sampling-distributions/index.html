@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP statistics designed for college credit.">
+        <meta name="description" content="Understanding the theoretical foundation for statistical inference through sampling variability, sampling distributions of proportions and means, and the Central Limit Theorem">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>14. Sampling Distributions - AP Statistics</title>
+        <title>Sampling Distributions - AP Statistics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="14. Sampling Distributions - AP Statistics" >
+        <meta  property="og:title"  content="Sampling Distributions - AP Statistics" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  property="og:description"  content="Understanding the theoretical foundation for statistical inference through sampling variability, sampling distributions of proportions and means, and the Central Limit Theorem" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/14-sampling-distributions/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="14. Sampling Distributions - AP Statistics" >
+        <meta  name="twitter:title"  content="Sampling Distributions - AP Statistics" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  name="twitter:description"  content="Understanding the theoretical foundation for statistical inference through sampling variability, sampling distributions of proportions and means, and the Central Limit Theorem" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/14-sampling-distributions/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              14. Sampling Distributions
+              Sampling Distributions
             
           </span>
         </div>
@@ -791,6 +791,327 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-from-sample-to-population" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: From Sample to Population
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sampling-variability-why-samples-differ" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sampling Variability: Why Samples Differ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-sampling-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Sampling Distribution?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is a Sampling Distribution?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sampling-distribution-concept-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sampling Distribution Concept Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-proportion-and-its-sampling-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Proportion and Its Sampling Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample Proportion and Its Sampling Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-sampling-distribution-of-the-sample-proportion" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sampling Distribution of the Sample Proportion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditions-for-using-the-proportion-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions for Using the Proportion Formula
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-mean-and-its-sampling-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Mean and Its Sampling Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample Mean and Its Sampling Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties-of-the-sampling-distribution-of-the-sample-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of the Sampling Distribution of the Sample Mean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties of the Sampling Distribution of the Sample Mean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-standard-error-and-sample-size-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Standard Error and Sample Size Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-central-limit-theorem-the-crown-jewel-of-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Central Limit Theorem: The Crown Jewel of Statistics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Central Limit Theorem: The Crown Jewel of Statistics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-the-clt-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why the CLT Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clt-conditions-when-does-it-apply" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLT Conditions: When Does It Apply?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CLT Conditions: When Does It Apply?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-central-limit-theorem-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Central Limit Theorem Demonstration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-clt-for-proportions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The CLT for Proportions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normal-approximation-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal Approximation in Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Normal Approximation in Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-sample-proportions" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Sample Proportions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-sample-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Sample Means
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-polling-for-an-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worked Example: Polling for an Election
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistical-inference-connecting-samples-to-populations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical Inference: Connecting Samples to Populations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statistical Inference: Connecting Samples to Populations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-statistical-inference-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Statistical Inference Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-size-determination-for-confidence-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Size Determination for Confidence Intervals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample Size Determination for Confidence Intervals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-size-formula-for-proportions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Size Formula for Proportions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Complete Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: A Complete Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-light-bulb-sampling-distribution-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Light Bulb Sampling Distribution Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-misconceptions-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Misconceptions to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-time-to-squirrel-away-this-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Time to Squirrel Away This Knowledge!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1005,6 +1326,70 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -1097,6 +1482,8 @@
       
         
           
+        
+      
         
       
         
@@ -1317,6 +1704,327 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-from-sample-to-population" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: From Sample to Population
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sampling-variability-why-samples-differ" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sampling Variability: Why Samples Differ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-sampling-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Sampling Distribution?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is a Sampling Distribution?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sampling-distribution-concept-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sampling Distribution Concept Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-proportion-and-its-sampling-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Proportion and Its Sampling Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample Proportion and Its Sampling Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-sampling-distribution-of-the-sample-proportion" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sampling Distribution of the Sample Proportion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditions-for-using-the-proportion-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditions for Using the Proportion Formula
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-mean-and-its-sampling-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Mean and Its Sampling Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample Mean and Its Sampling Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties-of-the-sampling-distribution-of-the-sample-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of the Sampling Distribution of the Sample Mean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties of the Sampling Distribution of the Sample Mean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-standard-error-and-sample-size-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Standard Error and Sample Size Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-central-limit-theorem-the-crown-jewel-of-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Central Limit Theorem: The Crown Jewel of Statistics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Central Limit Theorem: The Crown Jewel of Statistics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-the-clt-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why the CLT Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clt-conditions-when-does-it-apply" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLT Conditions: When Does It Apply?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CLT Conditions: When Does It Apply?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-central-limit-theorem-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Central Limit Theorem Demonstration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-clt-for-proportions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The CLT for Proportions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normal-approximation-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal Approximation in Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Normal Approximation in Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-sample-proportions" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Sample Proportions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-sample-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Sample Means
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example-polling-for-an-election" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worked Example: Polling for an Election
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistical-inference-connecting-samples-to-populations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical Inference: Connecting Samples to Populations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statistical Inference: Connecting Samples to Populations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-statistical-inference-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Statistical Inference Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-size-determination-for-confidence-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Size Determination for Confidence Intervals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sample Size Determination for Confidence Intervals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-size-formula-for-proportions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Size Formula for Proportions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-complete-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Complete Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: A Complete Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-light-bulb-sampling-distribution-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Light Bulb Sampling Distribution Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-misconceptions-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Misconceptions to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-time-to-squirrel-away-this-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Time to Squirrel Away This Knowledge!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1371,7 +2079,703 @@
 <li><a href="../13-random-variables/">Chapter 13: Random Variables</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-from-sample-to-population">Introduction: From Sample to Population</h2>
+<p>Welcome back! Sylvia here, and I have to tell you—this chapter contains some of the most beautiful ideas in all of statistics. I know, I know, you might think I say that about every chapter. But sampling distributions? These are the mathematical bridge that lets us make claims about millions of people based on just a few hundred responses. That's pretty amazing when you think about it!</p>
+<p>Here's the big question we're tackling: If you take a sample from a population and calculate a statistic (like a mean or proportion), how confident can you be that your sample statistic is close to the true population parameter? After all, different samples give different results—that's just the nature of randomness.</p>
+<p>Think about it this way: I've spent years tracking acorn production in Oak Valley. Every autumn, I can't possibly count every acorn on every tree (trust me, I've tried—it made me a little nutty). Instead, I sample a few trees and use those results to estimate the whole forest's production. But here's what kept me up at night: how much can my estimate vary from sample to sample? And can I trust my estimate?</p>
+<p>That's exactly what sampling distributions help us understand. They're the key to unlocking statistical inference—the process of using sample data to draw conclusions about populations.</p>
+<hr />
+<h2 id="sampling-variability-why-samples-differ">Sampling Variability: Why Samples Differ</h2>
+<p>Let's start with a fundamental truth that every statistician must embrace: <strong>sampling variability</strong> is unavoidable. Different random samples from the same population will yield different statistics.</p>
+<p>Imagine we want to know the proportion of students at your school who prefer online learning over in-person classes. If you randomly surveyed 50 students, you might find that 62% prefer online learning. But if your friend surveyed a different random sample of 50 students, they might find 58%. A third sample might give 65%.</p>
+<p>None of these samples are "wrong"—they're just different. This natural fluctuation in sample statistics from one sample to another is called <strong>sampling variability</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Sample</th>
+<th>Number Surveyed</th>
+<th>Proportion Preferring Online</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sample 1</td>
+<td>50</td>
+<td>0.62</td>
+</tr>
+<tr>
+<td>Sample 2</td>
+<td>50</td>
+<td>0.58</td>
+</tr>
+<tr>
+<td>Sample 3</td>
+<td>50</td>
+<td>0.65</td>
+</tr>
+<tr>
+<td>Sample 4</td>
+<td>50</td>
+<td>0.60</td>
+</tr>
+<tr>
+<td>Sample 5</td>
+<td>50</td>
+<td>0.56</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia Says</p>
+<p>Don't worry—every statistician drops an acorn sometimes. Sampling variability isn't a problem to fix; it's a reality to understand and quantify. Once we know how much our estimates typically vary, we can account for that uncertainty in our conclusions.</p>
+</div>
+<p>The key insight is that while individual samples vary, the <em>pattern</em> of this variation is predictable. If we could take thousands of samples and calculate a statistic from each one, the distribution of those statistics would follow a recognizable pattern. This pattern is called a <strong>sampling distribution</strong>.</p>
+<hr />
+<h2 id="what-is-a-sampling-distribution">What Is a Sampling Distribution?</h2>
+<p>A <strong>sampling distribution</strong> is the distribution of a statistic (like the sample mean or sample proportion) calculated from all possible samples of the same size from a population.</p>
+<p>Here's how to think about it conceptually:</p>
+<ol>
+<li>Imagine taking <em>every possible</em> random sample of size <span class="arithmatex">\( n \)</span> from a population</li>
+<li>Calculate your statistic (mean, proportion, etc.) for each sample</li>
+<li>Create a distribution of all those statistics</li>
+</ol>
+<p>The resulting distribution shows us:</p>
+<ul>
+<li>The <strong>center</strong>: What value does the statistic typically cluster around?</li>
+<li>The <strong>spread</strong>: How much do sample statistics vary?</li>
+<li>The <strong>shape</strong>: Is the distribution normal, skewed, or something else?</li>
+</ul>
+<p>Now, in reality, we only take <em>one</em> sample. But understanding the theoretical sampling distribution helps us know how reliable our single sample is likely to be.</p>
+<h4 id="diagram-sampling-distribution-concept-visualization">Diagram: Sampling Distribution Concept Visualization</h4>
+<iframe src="../../sims/sampling-distribution-concept/main.html" width="100%" height="550px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Sampling Distribution Concept Visualization</summary>
+<p>Type: microsim</p>
+<p>Learning Objective: Understand (L2) how individual samples combine to form a sampling distribution; explain how the distribution of sample statistics differs from the distribution of individual data points</p>
+<p>Bloom Taxonomy Level: Understand (L2)
+Bloom Taxonomy Verb: explain, demonstrate</p>
+<p>Purpose: Demonstrate visually how taking many samples and calculating a statistic from each creates a predictable sampling distribution, even when individual samples vary</p>
+<p>Canvas layout:
+- Drawing area (full width): Population visualization at top, samples in middle, sampling distribution histogram at bottom</p>
+<p>Visual elements:
+- Top section: A large population represented as colored dots (blue and orange for a proportion, or a distribution for means)
+- Middle section: Animation showing samples being drawn, with sample statistic calculated
+- Bottom section: Histogram building as each sample statistic is added
+- Counter showing number of samples taken
+- Display of current sample statistic</p>
+<p>Interactive controls:
+- Button: "Take 1 Sample" - draws one sample and adds statistic to histogram
+- Button: "Take 10 Samples" - rapidly draws 10 samples
+- Button: "Take 100 Samples" - rapidly draws 100 samples
+- Button: "Reset" - clears the histogram and starts over
+- Slider: Sample size n (10, 25, 50, 100)
+- Display: Mean and standard deviation of the sampling distribution</p>
+<p>Default parameters:
+- Population proportion: 0.6 (or mean = 100, SD = 15 for means)
+- Sample size: 25
+- Animation speed: moderate</p>
+<p>Behavior:
+- When sample is taken, show dots being selected from population
+- Calculate sample statistic and briefly display it
+- Add statistic to histogram with animation
+- Update running mean and SD of sampling distribution
+- As more samples accumulate, show histogram becoming smoother and more normal-shaped</p>
+<p>Instructional Rationale: Step-through demonstration is appropriate because students need to see the process of sampling and statistic calculation repeatedly to understand that the sampling distribution emerges from aggregating many sample statistics. The ability to control pace (1, 10, or 100 samples) lets students observe both individual variation and the overall pattern.</p>
+<p>Implementation: p5.js with responsive canvas sizing</p>
+</details>
+<hr />
+<h2 id="sample-proportion-and-its-sampling-distribution">Sample Proportion and Its Sampling Distribution</h2>
+<p>When we're dealing with categorical data, we often want to estimate the proportion of a population that has a certain characteristic. The <strong>sample proportion</strong>, denoted <span class="arithmatex">\( \hat{p} \)</span> (read as "p-hat"), is calculated as:</p>
+<div class="arithmatex">\[
+\hat{p} = \frac{\text{number of successes}}{n}
+\]</div>
+<p>where <span class="arithmatex">\( n \)</span> is the sample size and "success" refers to the outcome we're counting.</p>
+<p>For example, if you survey 200 students and 124 say they prefer morning classes, then:</p>
+<div class="arithmatex">\[
+\hat{p} = \frac{124}{200} = 0.62
+\]</div>
+<h3 id="the-sampling-distribution-of-the-sample-proportion">The Sampling Distribution of the Sample Proportion</h3>
+<p>Now here's where it gets exciting! If we could take many, many samples of size <span class="arithmatex">\( n \)</span> from a population with true proportion <span class="arithmatex">\( p \)</span>, the sampling distribution of <span class="arithmatex">\( \hat{p} \)</span> has these remarkable properties:</p>
+<p><strong>Center (Mean of <span class="arithmatex">\( \hat{p} \)</span>):</strong></p>
+<div class="arithmatex">\[
+\mu_{\hat{p}} = p
+\]</div>
+<p>The mean of the sampling distribution equals the population proportion! This tells us that <span class="arithmatex">\( \hat{p} \)</span> is an <em>unbiased estimator</em> of <span class="arithmatex">\( p \)</span>—on average, our sample proportion hits the target.</p>
+<p><strong>Spread (Standard Deviation of <span class="arithmatex">\( \hat{p} \)</span>):</strong></p>
+<div class="arithmatex">\[
+\sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}
+\]</div>
+<p>This formula reveals something profound: larger samples have smaller standard deviations, meaning less variability in our estimates. This is why pollsters survey 1,000 people instead of 100!</p>
+<table>
+<thead>
+<tr>
+<th>Sample Size <span class="arithmatex">\( n \)</span></th>
+<th>Standard Deviation (when <span class="arithmatex">\( p = 0.5 \)</span>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25</td>
+<td>0.100</td>
+</tr>
+<tr>
+<td>100</td>
+<td>0.050</td>
+</tr>
+<tr>
+<td>400</td>
+<td>0.025</td>
+</tr>
+<tr>
+<td>1,600</td>
+<td>0.0125</td>
+</tr>
+</tbody>
+</table>
+<p>Notice the pattern: to cut the standard deviation in half, you need to <em>quadruple</em> the sample size. This is because of the square root in the formula.</p>
+<h3 id="conditions-for-using-the-proportion-formula">Conditions for Using the Proportion Formula</h3>
+<p>The standard deviation formula works when these conditions are met:</p>
+<ol>
+<li>
+<p><strong>Independence Condition</strong>: Individual observations must be independent. This is satisfied when sampling is random and, if sampling without replacement, the sample size is less than 10% of the population (the "10% condition").</p>
+</li>
+<li>
+<p><strong>Large Counts Condition</strong>: Both <span class="arithmatex">\( np \geq 10 \)</span> and <span class="arithmatex">\( n(1-p) \geq 10 \)</span>. This ensures enough successes and failures for the normal approximation to work.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Why the 10% Rule?</p>
+<p>When we sample without replacement, each selection affects the probability of subsequent selections. However, when the sample is less than 10% of the population, this effect is negligible, and we can treat selections as approximately independent.</p>
+</div>
+<hr />
+<h2 id="sample-mean-and-its-sampling-distribution">Sample Mean and Its Sampling Distribution</h2>
+<p>When working with quantitative data, we often focus on the <strong>sample mean</strong>, denoted <span class="arithmatex">\( \bar{x} \)</span> (read as "x-bar"):</p>
+<div class="arithmatex">\[
+\bar{x} = \frac{\sum x_i}{n}
+\]</div>
+<p>Just like the sample proportion, the sample mean has a sampling distribution with predictable properties.</p>
+<h3 id="properties-of-the-sampling-distribution-of-the-sample-mean">Properties of the Sampling Distribution of the Sample Mean</h3>
+<p><strong>Center (Mean of <span class="arithmatex">\( \bar{x} \)</span>):</strong></p>
+<div class="arithmatex">\[
+\mu_{\bar{x}} = \mu
+\]</div>
+<p>The mean of the sampling distribution equals the population mean. Like <span class="arithmatex">\( \hat{p} \)</span>, the sample mean <span class="arithmatex">\( \bar{x} \)</span> is an unbiased estimator.</p>
+<p><strong>Spread (Standard Deviation of <span class="arithmatex">\( \bar{x} \)</span>):</strong></p>
+<div class="arithmatex">\[
+\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}
+\]</div>
+<p>This quantity is sometimes called the <strong>standard error of the mean</strong>. Again, we see that larger samples lead to less variability—the square root of <span class="arithmatex">\( n \)</span> appears in the denominator.</p>
+<p>Let me give you a concrete example. Suppose SAT math scores have a population mean <span class="arithmatex">\( \mu = 500 \)</span> and standard deviation <span class="arithmatex">\( \sigma = 100 \)</span>.</p>
+<table>
+<thead>
+<tr>
+<th>Sample Size</th>
+<th>Standard Deviation of <span class="arithmatex">\( \bar{x} \)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>100</td>
+</tr>
+<tr>
+<td>25</td>
+<td>20</td>
+</tr>
+<tr>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr>
+<td>400</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>With one person, your "sample mean" is just their score—wildly variable. But with 400 people, your sample mean will typically be within about 10 points (two standard errors) of the true mean.</p>
+<h4 id="diagram-standard-error-and-sample-size-explorer">Diagram: Standard Error and Sample Size Explorer</h4>
+<iframe src="../../sims/standard-error-explorer/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Standard Error and Sample Size Explorer</summary>
+<p>Type: microsim</p>
+<p>Learning Objective: Apply (L3) the relationship between sample size and standard error; demonstrate how increasing sample size reduces the variability of the sampling distribution</p>
+<p>Bloom Taxonomy Level: Apply (L3)
+Bloom Taxonomy Verb: demonstrate, calculate, apply</p>
+<p>Purpose: Allow students to interactively explore how sample size affects the spread of sampling distributions for both proportions and means</p>
+<p>Canvas layout:
+- Left side (60%): Graph showing sampling distribution curve
+- Right side (40%): Control panel and calculations</p>
+<p>Visual elements:
+- Normal curve representing the sampling distribution
+- Shaded region showing one standard error on each side of the mean
+- Numerical display of standard error calculation
+- Formula display with current values substituted</p>
+<p>Interactive controls:
+- Radio buttons: Choose "Proportion" or "Mean"
+- Slider: Sample size n (10 to 500)
+- For Proportion mode: Slider for p (0.1 to 0.9)
+- For Mean mode: Input for population standard deviation sigma (1 to 100)
+- Display: Current standard error with calculation breakdown</p>
+<p>Default parameters:
+- Mode: Proportion
+- p = 0.5
+- n = 50
+- sigma = 15 (for mean mode)</p>
+<p>Behavior:
+- As sample size increases, curve becomes narrower (less spread)
+- Standard error calculation updates in real-time
+- Show the formula with actual numbers substituted
+- Highlight that quadrupling n halves the standard error</p>
+<p>Instructional Rationale: This apply-level simulation lets students manipulate parameters and immediately see the effect on the sampling distribution. The focus on the formula with substituted values helps connect the abstract formula to concrete calculations.</p>
+<p>Implementation: p5.js with responsive canvas sizing</p>
+</details>
+<hr />
+<h2 id="the-central-limit-theorem-the-crown-jewel-of-statistics">The Central Limit Theorem: The Crown Jewel of Statistics</h2>
+<p>And now, my tail is absolutely tingling because we've arrived at the most important theorem in statistics: the <strong>Central Limit Theorem</strong> (CLT).</p>
+<p>Here's the amazing claim:</p>
+<div class="admonition abstract">
+<p class="admonition-title">The Central Limit Theorem</p>
+<p>For a random sample of size <span class="arithmatex">\( n \)</span> from <em>any</em> population with mean <span class="arithmatex">\( \mu \)</span> and standard deviation <span class="arithmatex">\( \sigma \)</span>, the sampling distribution of the sample mean <span class="arithmatex">\( \bar{x} \)</span> becomes approximately normal as <span class="arithmatex">\( n \)</span> gets larger, regardless of the shape of the population distribution.</p>
+</div>
+<p>Let that sink in. The population could be skewed, bimodal, uniform, or any shape whatsoever. It doesn't matter! If you take large enough samples, the distribution of sample means will be approximately normal.</p>
+<p>This is genuinely remarkable. It's like saying, "No matter how chaotic the ingredients, the cake always comes out the same shape."</p>
+<h3 id="why-the-clt-matters">Why the CLT Matters</h3>
+<p>The Central Limit Theorem is why we can:</p>
+<ul>
+<li>Use normal probability calculations for inference</li>
+<li>Construct confidence intervals</li>
+<li>Perform hypothesis tests</li>
+<li>Make predictions about sample statistics</li>
+</ul>
+<p>Without the CLT, we'd need to know the exact shape of every population we study—an impossible task!</p>
+<h3 id="clt-conditions-when-does-it-apply">CLT Conditions: When Does It Apply?</h3>
+<p>The Central Limit Theorem works when:</p>
+<ol>
+<li><strong>Random sampling</strong>: Data must come from a random sample or randomized experiment</li>
+<li><strong>Independence</strong>: Observations must be independent (10% condition for sampling without replacement)</li>
+<li><strong>Sample size</strong>: <span class="arithmatex">\( n \)</span> must be "large enough"</li>
+</ol>
+<p>What counts as "large enough"? Here's a practical guide:</p>
+<table>
+<thead>
+<tr>
+<th>Population Shape</th>
+<th>Minimum Sample Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Already normal</td>
+<td>Any size works</td>
+</tr>
+<tr>
+<td>Slightly skewed</td>
+<td><span class="arithmatex">\( n \geq 15 \)</span></td>
+</tr>
+<tr>
+<td>Moderately skewed</td>
+<td><span class="arithmatex">\( n \geq 25 \)</span></td>
+</tr>
+<tr>
+<td>Heavily skewed</td>
+<td><span class="arithmatex">\( n \geq 40 \)</span></td>
+</tr>
+<tr>
+<td>Extremely skewed or outliers</td>
+<td>May need <span class="arithmatex">\( n \geq 100 \)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The more skewed or unusual the population, the larger the sample you need for the sampling distribution to become approximately normal.</p>
+<h4 id="diagram-central-limit-theorem-demonstration">Diagram: Central Limit Theorem Demonstration</h4>
+<iframe src="../../sims/clt-demonstration/main.html" width="100%" height="600px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Central Limit Theorem Demonstration</summary>
+<p>Type: microsim</p>
+<p>Learning Objective: Analyze (L4) how the Central Limit Theorem transforms non-normal population distributions into normal sampling distributions as sample size increases; compare sampling distributions across different population shapes</p>
+<p>Bloom Taxonomy Level: Analyze (L4)
+Bloom Taxonomy Verb: compare, examine, differentiate</p>
+<p>Purpose: Provide visual, interactive proof of the Central Limit Theorem by showing how sampling distributions become normal regardless of the population shape</p>
+<p>Canvas layout:
+- Top section (30%): Population distribution display
+- Middle section (50%): Sampling distribution histogram that builds dynamically
+- Bottom section (20%): Controls and statistics</p>
+<p>Visual elements:
+- Population distribution shown as histogram or smooth curve
+- Building histogram of sample means
+- Overlaid normal curve on sampling distribution for comparison
+- Statistics panel showing mean and SD of sampling distribution
+- Comparison of theoretical vs observed values</p>
+<p>Interactive controls:
+- Dropdown: Population shape (Uniform, Skewed Right, Skewed Left, Bimodal, Normal, U-shaped)
+- Slider: Sample size n (1, 2, 5, 10, 25, 50, 100)
+- Button: "Take 1 Sample"
+- Button: "Take 100 Samples"
+- Button: "Take 1000 Samples"
+- Button: "Reset"
+- Toggle: Show/hide normal overlay curve</p>
+<p>Default parameters:
+- Population: Skewed Right
+- Sample size: n = 1
+- Show normal overlay: On</p>
+<p>Behavior:
+- When n = 1, sampling distribution matches population shape
+- As n increases, sampling distribution becomes more bell-shaped
+- Normal overlay helps students see how close to normal the distribution is
+- Display theoretical mean and SD alongside observed values
+- Color coding: population in one color, sampling distribution in another</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show population distribution clearly labeled
+- Stage 2: Show individual sample being drawn (highlight selected values)
+- Stage 3: Show calculation of sample mean for that sample
+- Stage 4: Show sample mean being added to histogram
+- Stage 5: As samples accumulate, show histogram converging to normal</p>
+<p>Instructional Rationale: The power of this simulation is letting students see the CLT in action. Starting with n=1 (where sampling distribution matches population) and gradually increasing n shows the transformation process. The analyze-level objective is supported by comparing different population shapes and sample sizes.</p>
+<p>Implementation: p5.js with responsive canvas sizing; pre-defined population distributions</p>
+</details>
+<h3 id="the-clt-for-proportions">The CLT for Proportions</h3>
+<p>The Central Limit Theorem also applies to sample proportions! When the conditions are met, the sampling distribution of <span class="arithmatex">\( \hat{p} \)</span> is approximately normal with:</p>
+<ul>
+<li>Mean: <span class="arithmatex">\( \mu_{\hat{p}} = p \)</span></li>
+<li>Standard deviation: <span class="arithmatex">\( \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} \)</span></li>
+</ul>
+<p>The conditions for the normal approximation for proportions are:</p>
+<ol>
+<li>Random sample</li>
+<li>Independence (10% condition)</li>
+<li><strong>Large counts</strong>: <span class="arithmatex">\( np \geq 10 \)</span> and <span class="arithmatex">\( n(1-p) \geq 10 \)</span></li>
+</ol>
+<p>The large counts condition ensures we have enough "successes" and "failures" for the normal approximation to work well.</p>
+<hr />
+<h2 id="normal-approximation-in-practice">Normal Approximation in Practice</h2>
+<p>Once we know a sampling distribution is approximately normal, we can use z-scores to find probabilities! This is called the <strong>normal approximation</strong>.</p>
+<h3 id="for-sample-proportions">For Sample Proportions</h3>
+<p>If the conditions are met, we can calculate:</p>
+<div class="arithmatex">\[
+z = \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}}
+\]</div>
+<p>This z-score tells us how many standard errors our sample proportion is from the population proportion.</p>
+<h3 id="for-sample-means">For Sample Means</h3>
+<p>Similarly, for sample means:</p>
+<div class="arithmatex">\[
+z = \frac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}
+\]</div>
+<h3 id="worked-example-polling-for-an-election">Worked Example: Polling for an Election</h3>
+<p>Let's work through a realistic example. Suppose 52% of voters in a large city support a ballot measure. A polling organization surveys a random sample of 400 voters.</p>
+<p><strong>Question</strong>: What's the probability that the sample proportion supporting the measure is less than 50%?</p>
+<p><strong>Step 1</strong>: Check conditions</p>
+<ul>
+<li>Random sample: Given</li>
+<li>Independence: 400 is less than 10% of the city's voters</li>
+<li>Large counts: <span class="arithmatex">\( np = 400(0.52) = 208 \geq 10 \)</span> and <span class="arithmatex">\( n(1-p) = 400(0.48) = 192 \geq 10 \)</span></li>
+</ul>
+<p><strong>Step 2</strong>: Find mean and standard deviation of sampling distribution</p>
+<div class="arithmatex">\[
+\mu_{\hat{p}} = 0.52
+\]</div>
+<div class="arithmatex">\[
+\sigma_{\hat{p}} = \sqrt{\frac{0.52(0.48)}{400}} = \sqrt{\frac{0.2496}{400}} = 0.025
+\]</div>
+<p><strong>Step 3</strong>: Calculate z-score</p>
+<div class="arithmatex">\[
+z = \frac{0.50 - 0.52}{0.025} = \frac{-0.02}{0.025} = -0.80
+\]</div>
+<p><strong>Step 4</strong>: Find probability using normal distribution</p>
+<p>Using a z-table or calculator: <span class="arithmatex">\( P(Z &lt; -0.80) \approx 0.212 \)</span></p>
+<p><strong>Interpretation</strong>: Even though the true proportion is 52%, there's about a 21% chance that a random sample of 400 voters will show less than 50% support. This illustrates why close elections are so hard to predict!</p>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia Says</p>
+<p>Acorn for your thoughts? This example shows why sample size matters. If the pollster surveyed 1,600 voters instead of 400, the standard error would be half as large (0.0125 instead of 0.025), making it much less likely to get a misleading result.</p>
+</div>
+<hr />
+<h2 id="statistical-inference-connecting-samples-to-populations">Statistical Inference: Connecting Samples to Populations</h2>
+<p>Everything we've learned in this chapter builds toward <strong>statistical inference</strong>—the process of using sample data to make conclusions about population parameters.</p>
+<p>There are two main types of statistical inference:</p>
+<ol>
+<li><strong>Confidence Intervals</strong>: Estimating a parameter with a range of plausible values</li>
+<li><strong>Hypothesis Testing</strong>: Evaluating claims about a parameter</li>
+</ol>
+<p>Both rely critically on understanding sampling distributions! Here's why:</p>
+<ul>
+<li>When we construct a confidence interval, we need to know how much sample statistics typically vary (the standard error)</li>
+<li>When we perform a hypothesis test, we need to know how likely our observed result would be if the null hypothesis were true (requires knowing the sampling distribution)</li>
+</ul>
+<p>The sampling distribution is the bridge between our single sample and the population we're trying to understand.</p>
+<h4 id="diagram-statistical-inference-workflow">Diagram: Statistical Inference Workflow</h4>
+<iframe src="../../sims/inference-workflow/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Statistical Inference Workflow</summary>
+<p>Type: infographic</p>
+<p>Learning Objective: Understand (L2) how sampling distributions enable statistical inference; explain the connection between sample statistics, sampling distributions, and population parameters</p>
+<p>Bloom Taxonomy Level: Understand (L2)
+Bloom Taxonomy Verb: explain, summarize</p>
+<p>Purpose: Provide a visual roadmap showing how sample data, sampling distributions, and population parameters connect in the inference process</p>
+<p>Layout: Flowchart style with three main stages arranged vertically or horizontally</p>
+<p>Components:
+1. Population box (top or left):
+   - Label: "Population"
+   - Contains parameter symbols (p or mu)
+   - Text: "Unknown - what we want to learn about"
+   - Color: Green (Sylvia's cardigan color)</p>
+<ol>
+<li>Sample box (middle):</li>
+<li>Label: "Sample (n)"</li>
+<li>Shows data collection arrow from population</li>
+<li>Contains statistic symbols (p-hat or x-bar)</li>
+<li>Text: "Observed - what we can measure"</li>
+<li>
+<p>Color: Auburn (Sylvia's fur color)</p>
+</li>
+<li>
+<p>Sampling Distribution box (central, larger):</p>
+</li>
+<li>Shows normal curve</li>
+<li>Labels for mean and standard error</li>
+<li>Text: "Theoretical - describes how statistics vary"</li>
+<li>Connects sample to population via CLT</li>
+<li>
+<p>Color: Light green background</p>
+</li>
+<li>
+<p>Inference arrows:</p>
+</li>
+<li>Confidence Interval arrow: points from sample toward population</li>
+<li>Hypothesis Test arrow: compares sample to claimed population value</li>
+</ol>
+<p>Interactive elements:
+- Hover over each component to reveal detailed explanation
+- Click on "Confidence Interval" to highlight that path
+- Click on "Hypothesis Test" to highlight that path
+- Tooltips explain each concept</p>
+<p>Color scheme: Use Sylvia color palette (green, auburn, cream)</p>
+<p>Implementation: HTML/CSS/JavaScript with SVG elements and interactive hover/click events</p>
+</details>
+<hr />
+<h2 id="sample-size-determination-for-confidence-intervals">Sample Size Determination for Confidence Intervals</h2>
+<p>Looking ahead to confidence intervals (coming up in the next chapter!), the sample size directly affects how precise our estimates can be. The <strong>margin of error</strong> in a confidence interval depends on:</p>
+<div class="arithmatex">\[
+\text{Margin of Error} = z^* \times \text{Standard Error}
+\]</div>
+<p>Since the standard error decreases as <span class="arithmatex">\( n \)</span> increases, larger samples give smaller margins of error and more precise estimates.</p>
+<h3 id="sample-size-formula-for-proportions">Sample Size Formula for Proportions</h3>
+<p>If you want a specific margin of error <span class="arithmatex">\( E \)</span> for a proportion at a given confidence level, you can solve for the required sample size:</p>
+<div class="arithmatex">\[
+n = \left( \frac{z^*}{E} \right)^2 \times p(1-p)
+\]</div>
+<p>If you don't know <span class="arithmatex">\( p \)</span> in advance, use <span class="arithmatex">\( p = 0.5 \)</span> (which maximizes the sample size, giving a conservative estimate).</p>
+<p><strong>Example</strong>: How many people should you survey to estimate a proportion within 3 percentage points (E = 0.03) with 95% confidence?</p>
+<p>Using <span class="arithmatex">\( z^* = 1.96 \)</span> for 95% confidence and <span class="arithmatex">\( p = 0.5 \)</span>:</p>
+<div class="arithmatex">\[
+n = \left( \frac{1.96}{0.03} \right)^2 \times 0.5(0.5) = (65.33)^2 \times 0.25 = 4268.4(0.25) \approx 1067
+\]</div>
+<p>You'd need about 1,067 people to achieve that precision.</p>
+<table>
+<thead>
+<tr>
+<th>Desired Margin of Error</th>
+<th>Sample Size Needed (95% confidence)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5% (0.05)</td>
+<td>385</td>
+</tr>
+<tr>
+<td>4% (0.04)</td>
+<td>601</td>
+</tr>
+<tr>
+<td>3% (0.03)</td>
+<td>1,068</td>
+</tr>
+<tr>
+<td>2% (0.02)</td>
+<td>2,401</td>
+</tr>
+<tr>
+<td>1% (0.01)</td>
+<td>9,604</td>
+</tr>
+</tbody>
+</table>
+<p>This table explains why national polls typically survey around 1,000-1,500 people—that's enough for a margin of error around 3%, which is acceptable for most purposes.</p>
+<div class="admonition warning">
+<p class="admonition-title">Cost-Benefit of Larger Samples</p>
+<p>Notice the diminishing returns: going from 3% to 2% margin of error requires more than doubling your sample size (from ~1,000 to ~2,400). At some point, the extra precision isn't worth the extra cost!</p>
+</div>
+<hr />
+<h2 id="putting-it-all-together-a-complete-example">Putting It All Together: A Complete Example</h2>
+<p>Let's work through a comprehensive example that uses everything from this chapter.</p>
+<p><strong>Scenario</strong>: A factory produces light bulbs with a mean lifetime of 1,200 hours and standard deviation of 100 hours. Quality control randomly selects 64 bulbs to test.</p>
+<p><strong>Question 1</strong>: What are the mean and standard deviation of the sampling distribution of the sample mean lifetime?</p>
+<div class="arithmatex">\[
+\mu_{\bar{x}} = \mu = 1200 \text{ hours}
+\]</div>
+<div class="arithmatex">\[
+\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} = \frac{100}{\sqrt{64}} = \frac{100}{8} = 12.5 \text{ hours}
+\]</div>
+<p><strong>Question 2</strong>: Can we assume the sampling distribution is approximately normal? Why?</p>
+<p>Yes! By the Central Limit Theorem, with <span class="arithmatex">\( n = 64 \)</span>, the sampling distribution of <span class="arithmatex">\( \bar{x} \)</span> will be approximately normal regardless of the population shape. Even if individual bulb lifetimes aren't normally distributed, the mean of 64 bulbs will be.</p>
+<p><strong>Question 3</strong>: What's the probability that the sample mean is between 1,190 and 1,210 hours?</p>
+<p>First, calculate z-scores:</p>
+<div class="arithmatex">\[
+z_1 = \frac{1190 - 1200}{12.5} = \frac{-10}{12.5} = -0.80
+\]</div>
+<div class="arithmatex">\[
+z_2 = \frac{1210 - 1200}{12.5} = \frac{10}{12.5} = 0.80
+\]</div>
+<p>Using normal probability:</p>
+<div class="arithmatex">\[
+P(-0.80 &lt; Z &lt; 0.80) = P(Z &lt; 0.80) - P(Z &lt; -0.80) \approx 0.788 - 0.212 = 0.576
+\]</div>
+<p>There's about a 58% chance the sample mean falls within 10 hours of the true mean.</p>
+<p><strong>Question 4</strong>: What's the probability that the sample mean is less than 1,175 hours?</p>
+<div class="arithmatex">\[
+z = \frac{1175 - 1200}{12.5} = \frac{-25}{12.5} = -2.00
+\]</div>
+<div class="arithmatex">\[
+P(Z &lt; -2.00) \approx 0.023
+\]</div>
+<p>Only about a 2.3% chance! If the sample mean actually came out this low, quality control might suspect a problem with the production process.</p>
+<h4 id="diagram-light-bulb-sampling-distribution-calculator">Diagram: Light Bulb Sampling Distribution Calculator</h4>
+<iframe src="../../sims/sampling-distribution-calculator/main.html" width="100%" height="520px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Sampling Distribution Calculator</summary>
+<p>Type: microsim</p>
+<p>Learning Objective: Apply (L3) sampling distribution concepts to calculate probabilities; practice using z-scores with sampling distributions</p>
+<p>Bloom Taxonomy Level: Apply (L3)
+Bloom Taxonomy Verb: calculate, solve, apply</p>
+<p>Purpose: Interactive calculator for finding probabilities involving sample means or proportions, with visual feedback</p>
+<p>Canvas layout:
+- Top section (30%): Input parameters
+- Middle section (50%): Normal curve with shaded region
+- Bottom section (20%): Results and calculations</p>
+<p>Visual elements:
+- Normal distribution curve representing the sampling distribution
+- Shaded region showing the probability being calculated
+- Labels for mean and standard error on the curve
+- Step-by-step calculation display</p>
+<p>Interactive controls:
+- Radio buttons: "Sample Mean" or "Sample Proportion"
+- For Mean: Inputs for population mean (mu), population SD (sigma), sample size (n)
+- For Proportion: Inputs for population proportion (p), sample size (n)
+- Dropdown: Probability type (less than, greater than, between)
+- Input fields: Cutoff value(s)
+- Button: "Calculate"</p>
+<p>Default parameters:
+- Mode: Sample Mean
+- mu = 1200
+- sigma = 100
+- n = 64
+- Probability: less than 1175</p>
+<p>Behavior:
+- Display calculation steps: "Step 1: Find standard error", "Step 2: Calculate z-score", "Step 3: Find probability"
+- Show the formula with values substituted
+- Animate the shaded region on the curve
+- Display final probability prominently</p>
+<p>Instructional Rationale: This apply-level tool provides scaffolded practice for probability calculations. Showing each step explicitly helps students learn the process while getting immediate feedback on their understanding.</p>
+<p>Implementation: p5.js with responsive canvas sizing</p>
+</details>
+<hr />
+<h2 id="common-misconceptions-to-avoid">Common Misconceptions to Avoid</h2>
+<p>Before we wrap up, let's address some common mistakes students make with sampling distributions. Even experienced squirrels slip up sometimes!</p>
+<p><strong>Misconception 1</strong>: "A larger sample means a larger standard deviation."</p>
+<p><strong>Reality</strong>: It's the opposite! Larger samples give <em>smaller</em> standard errors because there's less variability in the sampling distribution.</p>
+<p><strong>Misconception 2</strong>: "The Central Limit Theorem says the population becomes normal."</p>
+<p><strong>Reality</strong>: The CLT says the <em>sampling distribution</em> of the mean becomes normal. The population's shape doesn't change at all.</p>
+<p><strong>Misconception 3</strong>: "We need the population to be normal for inference to work."</p>
+<p><strong>Reality</strong>: Thanks to the CLT, we only need a large enough sample. The population can be any shape.</p>
+<p><strong>Misconception 4</strong>: "The standard deviation and standard error are the same thing."</p>
+<p><strong>Reality</strong>: The standard deviation measures spread of individual values. The standard error measures spread of sample statistics. They're related but different:</p>
+<div class="arithmatex">\[
+\text{Standard Error} = \frac{\text{Standard Deviation}}{\sqrt{n}}
+\]</div>
+<p><strong>Misconception 5</strong>: "A sample proportion of 0.60 means the population proportion is 0.60."</p>
+<p><strong>Reality</strong>: The sample proportion is an <em>estimate</em> of the population proportion. Due to sampling variability, it may not equal the true value exactly.</p>
+<hr />
+<h2 id="summary-time-to-squirrel-away-this-knowledge">Summary: Time to Squirrel Away This Knowledge!</h2>
+<p>Congratulations! You've just learned some of the most foundational concepts in statistical inference. Let's recap the big ideas:</p>
+<p><strong>Key Concepts</strong>:</p>
+<ul>
+<li><strong>Sampling variability</strong> is the natural variation in statistics from sample to sample</li>
+<li>A <strong>sampling distribution</strong> shows the pattern of how a statistic varies across all possible samples</li>
+<li>The sample proportion <span class="arithmatex">\( \hat{p} \)</span> and sample mean <span class="arithmatex">\( \bar{x} \)</span> are <strong>unbiased estimators</strong> of their population parameters</li>
+<li>The <strong>standard error</strong> measures variability in the sampling distribution and decreases as sample size increases</li>
+<li>The <strong>Central Limit Theorem</strong> states that sampling distributions of means become approximately normal for large samples, regardless of population shape</li>
+<li>For proportions, the normal approximation requires the <strong>large counts condition</strong> (<span class="arithmatex">\( np \geq 10 \)</span> and <span class="arithmatex">\( n(1-p) \geq 10 \)</span>)</li>
+<li>Sampling distributions are the foundation for <strong>statistical inference</strong>—confidence intervals and hypothesis tests</li>
+</ul>
+<p><strong>Key Formulas</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Statistic</th>
+<th>Mean of Sampling Distribution</th>
+<th>Standard Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\( \hat{p} \)</span></td>
+<td><span class="arithmatex">\( \mu_{\hat{p}} = p \)</span></td>
+<td><span class="arithmatex">\( \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} \)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\( \bar{x} \)</span></td>
+<td><span class="arithmatex">\( \mu_{\bar{x}} = \mu \)</span></td>
+<td><span class="arithmatex">\( \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}} \)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>The Big Picture</strong>:</p>
+<p>Sampling distributions connect what we observe (sample statistics) to what we want to know (population parameters). The CLT guarantees that with large enough samples, we can use normal probability calculations to quantify our uncertainty and make inferences about populations.</p>
+<div class="admonition success">
+<p class="admonition-title">You've Got This!</p>
+<p>Look at you go! You just learned something that took statisticians centuries to figure out. The Central Limit Theorem is one of the most beautiful results in mathematics, and now you understand why it's so powerful. My tail's puffing up with pride!</p>
+</div>
+<hr />
+<h2 id="practice-problems">Practice Problems</h2>
+<details class="question">
+<summary>Problem 1: Checking Conditions</summary>
+<p>A researcher wants to estimate the proportion of households in a city that have solar panels. She plans to survey 150 randomly selected households.</p>
+<p>a) If the true proportion is 0.08, can she use the normal approximation for the sampling distribution of <span class="arithmatex">\( \hat{p} \)</span>?</p>
+<p>b) What if the true proportion were 0.15?</p>
+<p><strong>Click to reveal answer</strong></p>
+<p>a) Check: <span class="arithmatex">\( np = 150(0.08) = 12 \geq 10 \)</span> ✓, but <span class="arithmatex">\( n(1-p) = 150(0.92) = 138 \geq 10 \)</span> ✓. Yes, conditions are met!</p>
+<p>b) <span class="arithmatex">\( np = 150(0.15) = 22.5 \geq 10 \)</span> ✓ and <span class="arithmatex">\( n(1-p) = 150(0.85) = 127.5 \geq 10 \)</span> ✓. Yes, conditions are also met.</p>
+</details>
+<details class="question">
+<summary>Problem 2: Sample Mean Probabilities</summary>
+<p>The weights of apples from an orchard have a mean of 150 grams and standard deviation of 25 grams. A sample of 100 apples is selected.</p>
+<p>a) What are the mean and standard error of the sampling distribution of <span class="arithmatex">\( \bar{x} \)</span>?</p>
+<p>b) What is the probability that the sample mean weight is greater than 155 grams?</p>
+<p><strong>Click to reveal answer</strong></p>
+<p>a) Mean: <span class="arithmatex">\( \mu_{\bar{x}} = 150 \)</span> grams; Standard error: <span class="arithmatex">\( \sigma_{\bar{x}} = \frac{25}{\sqrt{100}} = 2.5 \)</span> grams</p>
+<p>b) <span class="arithmatex">\( z = \frac{155 - 150}{2.5} = 2.0 \)</span>; <span class="arithmatex">\( P(Z &gt; 2.0) = 1 - 0.977 = 0.023 \)</span>, or about 2.3%</p>
+</details>
+<details class="question">
+<summary>Problem 3: Sample Size Calculation</summary>
+<p>A political campaign wants to estimate support for their candidate within 2 percentage points (margin of error) with 95% confidence. How many voters should they survey? (Use <span class="arithmatex">\( p = 0.5 \)</span> for planning.)</p>
+<p><strong>Click to reveal answer</strong></p>
+<p>Using the formula: <span class="arithmatex">\( n = \left(\frac{1.96}{0.02}\right)^2 \times 0.5(0.5) = (98)^2 \times 0.25 = 9604 \times 0.25 = 2401 \)</span></p>
+<p>They need to survey about 2,401 voters.</p>
+</details>
+<details class="question">
+<summary>Problem 4: Understanding the CLT</summary>
+<p>Explain why a marketing researcher can use normal probability calculations to find the probability that the sample mean income of 50 randomly selected customers exceeds $60,000, even though income distributions are typically right-skewed.</p>
+<p><strong>Click to reveal answer</strong></p>
+<p>By the Central Limit Theorem, the sampling distribution of the sample mean becomes approximately normal for sufficiently large samples (typically n ≥ 30 for moderately skewed populations), regardless of the shape of the population distribution. Since n = 50, the sampling distribution of the sample mean income will be approximately normal, even though individual incomes are right-skewed. This allows us to use z-scores and the normal distribution to calculate probabilities.</p>
+</details>
+<hr />
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In the next chapter, we'll put sampling distributions to work! We'll learn how to construct <strong>confidence intervals</strong>—ranges of plausible values for population parameters based on sample data. Everything we learned about standard errors and the normal approximation will be essential.</p>
+<p>Until then, keep collecting those data points, and remember—every sample tells a story about the population it came from!</p>
 
 
 

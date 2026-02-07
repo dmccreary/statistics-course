@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP statistics designed for college credit.">
+        <meta name="description" content="Master least squares regression to model linear relationships, interpret slope and intercept, make predictions, analyze residuals, and identify influential points.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>7. Linear Regression - AP Statistics</title>
+        <title>Linear Regression - AP Statistics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="7. Linear Regression - AP Statistics" >
+        <meta  property="og:title"  content="Linear Regression - AP Statistics" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  property="og:description"  content="Master least squares regression to model linear relationships, interpret slope and intercept, make predictions, analyze residuals, and identify influential points." >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/07-linear-regression/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="7. Linear Regression - AP Statistics" >
+        <meta  name="twitter:title"  content="Linear Regression - AP Statistics" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  name="twitter:description"  content="Master least squares regression to model linear relationships, interpret slope and intercept, make predictions, analyze residuals, and identify influential points." >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/07-linear-regression/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7. Linear Regression
+              Linear Regression
             
           </span>
         </div>
@@ -644,6 +644,465 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-from-patterns-to-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: From Patterns to Predictions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-least-squares-regression-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Least Squares Regression Line
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Least Squares Regression Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-least-squares-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Least Squares Regression?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-regression-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Regression Equation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Regression Equation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-least-squares-regression-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Least Squares Regression Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculating-slope-and-intercept" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Slope and Intercept
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpreting-slope-and-y-intercept" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting Slope and Y-Intercept
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpreting Slope and Y-Intercept">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slope-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slope Interpretation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#y-intercept-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Y-Intercept Interpretation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Y-Intercept Interpretation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-slope-and-intercept-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Slope and Intercept Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making Predictions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Making Predictions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-prediction-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Prediction Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-dangers-of-extrapolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Dangers of Extrapolation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-residuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Residuals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Residuals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-residual" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Residual?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculating-residuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Residuals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculating Residuals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-residual-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Residual Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residual-plots-your-diagnostic-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Residual Plots: Your Diagnostic Tool
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Residual Plots: Your Diagnostic Tool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-residual-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Residual Plots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-residual-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting Residual Plots
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpreting Residual Plots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-residual-plot-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Residual Plot Analyzer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-coefficient-of-determination-r2" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Coefficient of Determination (R²)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Coefficient of Determination (R²)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-r-squared" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is R-Squared?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-r-squared" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting R-Squared
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#influential-points-and-outliers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Influential Points and Outliers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Influential Points and Outliers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#influential-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Influential Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leverage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outliers-in-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outliers in Regression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Outliers in Regression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-influential-points-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Influential Points Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-complete-regression-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Complete Regression Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Complete Regression Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-regression-analysis-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Regression Analysis Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Regression Analysis Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-complete-regression-analysis-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Complete Regression Analysis Tool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-and-misconceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes and Misconceptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-1-basic-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 1: Basic Calculations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-2-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 2: Interpretation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-3-extrapolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 3: Extrapolation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-4-residual-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 4: Residual Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-5-influential-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 5: Influential Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-6-complete-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 6: Complete Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1005,6 +1464,70 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -1097,6 +1620,8 @@
       
         
           
+        
+      
         
       
         
@@ -1317,6 +1842,465 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-from-patterns-to-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: From Patterns to Predictions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-least-squares-regression-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Least Squares Regression Line
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Least Squares Regression Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-least-squares-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Least Squares Regression?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-regression-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Regression Equation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Regression Equation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-least-squares-regression-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Least Squares Regression Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculating-slope-and-intercept" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Slope and Intercept
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interpreting-slope-and-y-intercept" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting Slope and Y-Intercept
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpreting Slope and Y-Intercept">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slope-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slope Interpretation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#y-intercept-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Y-Intercept Interpretation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Y-Intercept Interpretation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-slope-and-intercept-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Slope and Intercept Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making Predictions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Making Predictions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-prediction-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Prediction Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-dangers-of-extrapolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Dangers of Extrapolation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-residuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Residuals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Residuals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-residual" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Residual?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculating-residuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Residuals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculating Residuals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-residual-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Residual Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residual-plots-your-diagnostic-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Residual Plots: Your Diagnostic Tool
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Residual Plots: Your Diagnostic Tool">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-residual-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Residual Plots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-residual-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting Residual Plots
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpreting Residual Plots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-residual-plot-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Residual Plot Analyzer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-coefficient-of-determination-r2" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Coefficient of Determination (R²)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Coefficient of Determination (R²)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-r-squared" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is R-Squared?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-r-squared" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting R-Squared
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#influential-points-and-outliers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Influential Points and Outliers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Influential Points and Outliers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#influential-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Influential Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leverage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outliers-in-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outliers in Regression
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Outliers in Regression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-influential-points-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Influential Points Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-complete-regression-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Complete Regression Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Complete Regression Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-regression-analysis-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Regression Analysis Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Regression Analysis Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsim-complete-regression-analysis-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      MicroSim: Complete Regression Analysis Tool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-and-misconceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes and Misconceptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-1-basic-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 1: Basic Calculations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-2-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 2: Interpretation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-3-extrapolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 3: Extrapolation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-4-residual-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 4: Residual Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-5-influential-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 5: Influential Points
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-6-complete-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem 6: Complete Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1344,7 +2328,7 @@
 <h2 id="summary">Summary</h2>
 <p>This chapter covers least squares regression, the most important technique for modeling linear relationships between variables. Students will learn to interpret slope and y-intercept, make predictions, calculate and analyze residuals, understand the coefficient of determination (R²), and identify influential points and outliers in regression.</p>
 <h2 id="concepts-covered">Concepts Covered</h2>
-<p>This chapter covers the following 17 concepts from the learning graph:</p>
+<p>This chapter covers the following 16 concepts from the learning graph:</p>
 <ol>
 <li>Least Squares Regression</li>
 <li>Regression Line</li>
@@ -1369,7 +2353,694 @@
 <li><a href="../06-scatterplots-and-association/">Chapter 6: Scatterplots and Association</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-from-patterns-to-predictions">Introduction: From Patterns to Predictions</h2>
+<p>Welcome back! In Chapter 6, you learned to spot linear relationships in scatterplots and measure their strength with correlation. But here's the thing—knowing that height and shoe size are correlated is interesting, but wouldn't it be more useful to actually <em>predict</em> someone's shoe size from their height? That's exactly where regression comes in.</p>
+<p>Regression is one of the most powerful tools in statistics. It lets you draw a line through your data and use that line to make predictions about new observations. Doctors use it to predict health outcomes, economists use it to forecast trends, and yes, Sylvia uses it to estimate acorn yields from tree measurements.</p>
+<blockquote>
+<p>🐿️ <em>"Let's crack this nut! Regression is where statistics gets really practical—we're not just describing data anymore, we're predicting the future!"</em></p>
+</blockquote>
+<h2 id="the-least-squares-regression-line">The Least Squares Regression Line</h2>
+<p>When you have a scatterplot showing a linear relationship, you want to draw a line that best captures the pattern. But what makes one line "better" than another? The answer involves minimizing errors—specifically, we want to minimize how far our data points fall from the line.</p>
+<h3 id="what-is-least-squares-regression">What Is Least Squares Regression?</h3>
+<p><strong>Least squares regression</strong> is a method for finding the line that minimizes the sum of the squared vertical distances from each data point to the line. These vertical distances are called residuals (more on those soon), and by squaring them before adding, we accomplish two things:</p>
+<ol>
+<li>Negative and positive distances don't cancel out</li>
+<li>Large errors are penalized more heavily than small ones</li>
+</ol>
+<p>The result is called the <strong>regression line</strong> or <strong>least squares regression line (LSRL)</strong>—the single best-fitting straight line for your data.</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Least Squares Regression</td>
+<td>Method that minimizes the sum of squared residuals</td>
+</tr>
+<tr>
+<td>Regression Line</td>
+<td>The best-fit line through a scatterplot</td>
+</tr>
+<tr>
+<td>Predicted Value</td>
+<td>The y-value on the regression line for a given x</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-regression-equation">The Regression Equation</h3>
+<p>The <strong>regression equation</strong> describes the relationship between your explanatory variable <span class="arithmatex">\( x \)</span> and your response variable <span class="arithmatex">\( y \)</span>. It takes this familiar form:</p>
+<div class="arithmatex">\[
+\hat{y} = a + bx
+\]</div>
+<p>Here's what each piece means:</p>
+<ul>
+<li><span class="arithmatex">\( \hat{y} \)</span> (read "y-hat") is the <strong>predicted value</strong> of y</li>
+<li><span class="arithmatex">\( a \)</span> is the <strong>y-intercept</strong>—the predicted y-value when <span class="arithmatex">\( x = 0 \)</span></li>
+<li><span class="arithmatex">\( b \)</span> is the <strong>slope</strong>—how much <span class="arithmatex">\( \hat{y} \)</span> changes for each one-unit increase in <span class="arithmatex">\( x \)</span></li>
+<li><span class="arithmatex">\( x \)</span> is the value of the explanatory variable</li>
+</ul>
+<p>Notice that little hat symbol over the y. It's crucial! Regular <span class="arithmatex">\( y \)</span> represents actual observed values, while <span class="arithmatex">\( \hat{y} \)</span> represents predicted values from your regression line. Keeping these straight will save you many headaches on the AP exam.</p>
+<h4 id="microsim-least-squares-regression-explorer">MicroSim: Least Squares Regression Explorer</h4>
+<details>
+<summary>Interactive Least Squares Visualization</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Understand (Bloom Level 2) how the least squares method finds the best-fit line by minimizing squared residuals</p>
+<p>Visual elements:
+- Coordinate plane with grid (400x400 pixels)
+- 8-12 draggable data points displayed as circles
+- Regression line that updates dynamically as points move
+- Vertical lines from each point to regression line (residuals) in light red
+- Squares drawn at each residual to visualize "squared" distances
+- Display of sum of squared residuals, updating in real-time</p>
+<p>Interactive controls:
+- Draggable data points (click and drag to reposition)
+- "Reset Points" button to restore default configuration
+- "Random Points" button to generate new dataset
+- Toggle to show/hide residual squares</p>
+<p>Behavior:
+- As user drags points, regression line recalculates instantly
+- Sum of squared residuals updates in real-time
+- Residual squares resize dynamically to show their contribution
+- Line always passes through the point <span class="arithmatex">\( (\bar{x}, \bar{y}) \)</span></p>
+<p>Canvas size: 500x450, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h3 id="calculating-slope-and-intercept">Calculating Slope and Intercept</h3>
+<p>While you'll typically use technology to find regression equations, understanding the formulas helps you grasp what's happening:</p>
+<p>The slope <span class="arithmatex">\( b \)</span> is calculated as:</p>
+<div class="arithmatex">\[
+b = r \cdot \frac{s_y}{s_x}
+\]</div>
+<p>Where:
+- <span class="arithmatex">\( r \)</span> is the correlation coefficient
+- <span class="arithmatex">\( s_y \)</span> is the standard deviation of y
+- <span class="arithmatex">\( s_x \)</span> is the standard deviation of x</p>
+<p>The y-intercept <span class="arithmatex">\( a \)</span> is:</p>
+<div class="arithmatex">\[
+a = \bar{y} - b\bar{x}
+\]</div>
+<p>These formulas reveal something beautiful: the regression line always passes through the point <span class="arithmatex">\( (\bar{x}, \bar{y}) \)</span>. It's like the line is anchored at the center of your data.</p>
+<h2 id="interpreting-slope-and-y-intercept">Interpreting Slope and Y-Intercept</h2>
+<p>Finding the regression equation is just the beginning. The real skill lies in interpreting what the slope and y-intercept tell us about the relationship between variables.</p>
+<h3 id="slope-interpretation">Slope Interpretation</h3>
+<p>The <strong>slope</strong> tells you the rate of change—specifically, how much the predicted y-value changes for each one-unit increase in x. Here's the template for interpretation:</p>
+<blockquote>
+<p>"For each additional [one unit of x], the predicted [y variable] increases/decreases by [slope value] [units of y]."</p>
+</blockquote>
+<p><strong>Example:</strong> Suppose you're studying the relationship between hours of study and exam score, and you find <span class="arithmatex">\( \hat{y} = 45 + 5.2x \)</span>.</p>
+<p>Interpretation: "For each additional hour of studying, the predicted exam score increases by 5.2 points."</p>
+<p>Notice we say "predicted" because regression gives us estimates, not guarantees. We also say "increases by" because the slope (5.2) is positive. If the slope were negative, we'd say "decreases by."</p>
+<blockquote>
+<p>🐿️ <em>"Acorn for your thoughts? When I measured tree circumference (x) and acorn yield (y), my slope was 12.3. That means for every additional inch of circumference, I predicted 12.3 more acorns. Now THAT'S data worth collecting!"</em></p>
+</blockquote>
+<h3 id="y-intercept-interpretation">Y-Intercept Interpretation</h3>
+<p>The <strong>y-intercept</strong> is the predicted value of y when x equals zero. Here's the interpretation template:</p>
+<blockquote>
+<p>"When [x variable] is zero, the predicted [y variable] is [intercept value] [units of y]."</p>
+</blockquote>
+<p><strong>Example:</strong> Using the same equation <span class="arithmatex">\( \hat{y} = 45 + 5.2x \)</span>:</p>
+<p>Interpretation: "When study time is zero hours, the predicted exam score is 45 points."</p>
+<p><strong>Important caveat:</strong> The y-intercept often doesn't make practical sense! In our example, students who study zero hours still have some baseline knowledge, so a score of 45 might be reasonable. But if you're predicting weight from height and get a negative y-intercept, that's meaningless—people can't have negative weight.</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Y-Intercept Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x = 0 is within data range</td>
+<td>Interpret literally</td>
+</tr>
+<tr>
+<td>x = 0 is outside data range</td>
+<td>Often has no practical meaning</td>
+</tr>
+<tr>
+<td>x = 0 is impossible</td>
+<td>State that interpretation isn't meaningful</td>
+</tr>
+</tbody>
+</table>
+<p>Always ask yourself: "Does x = 0 make sense in this context?" If not, acknowledge that the y-intercept is just the mathematical starting point of your line, not a meaningful prediction.</p>
+<h4 id="microsim-slope-and-intercept-explorer">MicroSim: Slope and Intercept Explorer</h4>
+<details>
+<summary>Interactive Slope and Intercept Manipulation</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Analyze (Bloom Level 4) how changes to slope and y-intercept affect the regression line and predictions</p>
+<p>Visual elements:
+- Coordinate plane with labeled axes (400x400 pixels)
+- Regression line displayed prominently
+- 5-7 static data points for reference context
+- Current equation displayed in form <span class="arithmatex">\( \hat{y} = a + bx \)</span>
+- Predicted value marker that follows mouse x-position on line
+- Annotations showing rise/run for slope visualization</p>
+<p>Interactive controls:
+- Slider for slope (range -3 to 3, step 0.1)
+- Slider for y-intercept (range -50 to 150, step 1)
+- "Show Best Fit" toggle to display actual LSRL
+- Text display showing current prediction at mouse position</p>
+<p>Behavior:
+- Line updates instantly as sliders change
+- Prediction point moves along line following mouse x-coordinate
+- When "Show Best Fit" is on, displays comparison between user line and LSRL
+- Displays sum of squared residuals for current line position</p>
+<p>Canvas size: 550x450, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="making-predictions">Making Predictions</h2>
+<p>One of the primary uses of regression is making predictions. Once you have a regression equation, you can plug in any x-value to predict the corresponding y-value.</p>
+<h3 id="the-prediction-process">The Prediction Process</h3>
+<p><strong>Making predictions</strong> involves substituting values into your regression equation:</p>
+<ol>
+<li>Identify the x-value you want to use for prediction</li>
+<li>Substitute it into the equation <span class="arithmatex">\( \hat{y} = a + bx \)</span></li>
+<li>Calculate to find <span class="arithmatex">\( \hat{y} \)</span></li>
+</ol>
+<p><strong>Example:</strong> Using <span class="arithmatex">\( \hat{y} = 45 + 5.2x \)</span>, predict the exam score for a student who studies 6 hours.</p>
+<div class="arithmatex">\[
+\hat{y} = 45 + 5.2(6) = 45 + 31.2 = 76.2
+\]</div>
+<p>The predicted exam score is 76.2 points.</p>
+<h3 id="the-dangers-of-extrapolation">The Dangers of Extrapolation</h3>
+<p>Here's where things get tricky. <strong>Extrapolation</strong> means making predictions outside the range of your original data—and it's dangerous business.</p>
+<p>Why? Because you have no evidence that the linear pattern continues beyond your data. The relationship might curve, level off, or change direction entirely. Your regression line is only trustworthy within the range of x-values you actually observed.</p>
+<p><strong>Example of extrapolation danger:</strong> Suppose your study time data ranged from 1 to 8 hours. Predicting for 6 hours? Perfectly fine—that's interpolation (within your data range). Predicting for 20 hours? That's extrapolation, and your equation might give you a predicted score of 149 points—which is impossible on a 100-point exam!</p>
+<blockquote>
+<p>🐿️ <em>"Trust me, I learned this the hard way. My regression predicted that a 50-inch circumference tree would yield 600 acorns. The largest tree I'd measured was 20 inches. Turns out, massive trees have other issues—squirrel traffic jams, for instance—and my prediction was way off!"</em></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+<th>Risk Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interpolation</td>
+<td>Predicting within the x-range of data</td>
+<td>Low risk</td>
+</tr>
+<tr>
+<td>Extrapolation</td>
+<td>Predicting outside the x-range of data</td>
+<td>High risk</td>
+</tr>
+<tr>
+<td>Near extrapolation</td>
+<td>Predicting just outside the range</td>
+<td>Moderate risk</td>
+</tr>
+</tbody>
+</table>
+<h2 id="understanding-residuals">Understanding Residuals</h2>
+<p>Now let's dive into one of the most important concepts in regression analysis: residuals. Understanding residuals is key to evaluating whether your regression line is doing a good job.</p>
+<h3 id="what-is-a-residual">What Is a Residual?</h3>
+<p>A <strong>residual</strong> is the difference between an actual observed value and the predicted value from your regression line:</p>
+<div class="arithmatex">\[
+\text{Residual} = y - \hat{y} = \text{Observed} - \text{Predicted}
+\]</div>
+<p>Think of residuals as prediction errors. They tell you how far off your prediction was for each data point.</p>
+<ul>
+<li><strong>Positive residual:</strong> The actual value is <em>above</em> the regression line (you underestimated)</li>
+<li><strong>Negative residual:</strong> The actual value is <em>below</em> the regression line (you overestimated)</li>
+<li><strong>Residual of zero:</strong> The point falls exactly on the line (perfect prediction!)</li>
+</ul>
+<h3 id="calculating-residuals">Calculating Residuals</h3>
+<p><strong>Calculating residuals</strong> is straightforward:</p>
+<ol>
+<li>Use the regression equation to find <span class="arithmatex">\( \hat{y} \)</span> for each x-value</li>
+<li>Subtract the predicted value from the actual observed value</li>
+</ol>
+<p><strong>Example:</strong> Given the equation <span class="arithmatex">\( \hat{y} = 45 + 5.2x \)</span>, calculate the residual for a student who studied 4 hours and scored 68.</p>
+<p>Step 1: Find the predicted value</p>
+<div class="arithmatex">\[
+\hat{y} = 45 + 5.2(4) = 45 + 20.8 = 65.8
+\]</div>
+<p>Step 2: Calculate the residual</p>
+<div class="arithmatex">\[
+\text{Residual} = 68 - 65.8 = 2.2
+\]</div>
+<p>The residual is 2.2, meaning this student scored 2.2 points higher than predicted. The actual point is above the regression line.</p>
+<p>Here's a sample calculation table:</p>
+<table>
+<thead>
+<tr>
+<th>Student</th>
+<th>Hours (x)</th>
+<th>Actual Score (y)</th>
+<th>Predicted <span class="arithmatex">\( \hat{y} \)</span></th>
+<th>Residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>2</td>
+<td>54</td>
+<td>55.4</td>
+<td>-1.4</td>
+</tr>
+<tr>
+<td>B</td>
+<td>4</td>
+<td>68</td>
+<td>65.8</td>
+<td>2.2</td>
+</tr>
+<tr>
+<td>C</td>
+<td>6</td>
+<td>75</td>
+<td>76.2</td>
+<td>-1.2</td>
+</tr>
+<tr>
+<td>D</td>
+<td>7</td>
+<td>85</td>
+<td>81.4</td>
+<td>3.6</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🐿️ <em>"Here's a fun fact: if you add up all your residuals, they'll equal zero (or really close to zero due to rounding). The least squares line is balanced—the overestimates and underestimates cancel out!"</em></p>
+</blockquote>
+<h4 id="microsim-residual-calculator">MicroSim: Residual Calculator</h4>
+<details>
+<summary>Interactive Residual Visualization Tool</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Apply (Bloom Level 3) residual calculations by computing and visualizing residuals for individual data points</p>
+<p>Visual elements:
+- Scatterplot with 8-10 data points (400x400 pixels)
+- Regression line fitted to data
+- Vertical lines from each point to line showing residuals
+- Color-coded residuals (green for positive, red for negative)
+- Selected point highlighted with larger circle
+- Calculation display showing y, ŷ, and residual for selected point</p>
+<p>Interactive controls:
+- Click on any data point to select it
+- Display panel showing detailed calculation for selected point
+- "Show All Residuals" toggle
+- "Add New Point" button allowing user to click to add point</p>
+<p>Behavior:
+- Clicking a point shows detailed residual calculation
+- Residual lines animate when point is selected
+- Adding a new point recalculates regression and all residuals
+- Running sum of residuals displayed (showing it equals zero)</p>
+<p>Canvas size: 550x500, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="residual-plots-your-diagnostic-tool">Residual Plots: Your Diagnostic Tool</h2>
+<p>Calculating individual residuals is useful, but the real power comes from looking at all residuals together in a <strong>residual plot</strong>.</p>
+<h3 id="creating-residual-plots">Creating Residual Plots</h3>
+<p>A <strong>residual plot</strong> displays residuals on the vertical axis versus either:
+- The x-values (explanatory variable), or
+- The predicted values <span class="arithmatex">\( \hat{y} \)</span></p>
+<p>Both approaches work, but plotting against x-values is most common.</p>
+<h3 id="interpreting-residual-plots">Interpreting Residual Plots</h3>
+<p><strong>Interpreting residuals</strong> through a residual plot tells you whether your linear model is appropriate. Here's what to look for:</p>
+<p><strong>Good residual plot (linear model is appropriate):</strong>
+- Points scattered randomly above and below the horizontal line at zero
+- No obvious patterns, curves, or clusters
+- Relatively consistent spread across all x-values</p>
+<p><strong>Problematic residual plot (linear model may be inappropriate):</strong>
+- Curved pattern suggests a nonlinear relationship
+- Funnel shape (residuals fanning out) indicates changing variability
+- Clusters or groups suggest subpopulations in your data</p>
+<table>
+<thead>
+<tr>
+<th>Pattern in Residual Plot</th>
+<th>What It Suggests</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Random scatter</td>
+<td>Linear model is appropriate</td>
+</tr>
+<tr>
+<td>Curved pattern</td>
+<td>Relationship is nonlinear</td>
+</tr>
+<tr>
+<td>Funnel shape</td>
+<td>Variability changes with x</td>
+</tr>
+<tr>
+<td>Distinct clusters</td>
+<td>Possible subgroups in data</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🐿️ <em>"My tail's tingling—we're onto something important here! A good residual plot should look like static on an old TV—just random noise. If you see a pattern, that pattern is telling you something your line missed!"</em></p>
+</blockquote>
+<h4 id="microsim-residual-plot-analyzer">MicroSim: Residual Plot Analyzer</h4>
+<details>
+<summary>Interactive Residual Plot Diagnostic Tool</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Evaluate (Bloom Level 5) whether a linear model is appropriate by analyzing residual plot patterns</p>
+<p>Visual elements:
+- Side-by-side display: scatterplot with line (left) and residual plot (right)
+- Horizontal reference line at y = 0 on residual plot
+- Points connected between both plots (highlighting correspondence)
+- Pattern indicator showing diagnosis (good fit, curved, fan-shaped, etc.)
+- Zoom capability on residual plot</p>
+<p>Interactive controls:
+- Dataset selector dropdown (linear data, quadratic data, heteroscedastic data)
+- "Generate New Data" button for random variations
+- Toggle to show/hide connecting lines between plots
+- Pattern identification quiz mode</p>
+<p>Behavior:
+- Selecting different datasets shows corresponding residual patterns
+- Hovering over point in one plot highlights it in both
+- Quiz mode asks user to identify the pattern before revealing answer
+- Animated transition when switching datasets</p>
+<p>Canvas size: 650x400, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="the-coefficient-of-determination-r2">The Coefficient of Determination (R²)</h2>
+<p>You've already learned about correlation <span class="arithmatex">\( r \)</span>, which measures the strength and direction of a linear relationship. Now meet its close relative: <span class="arithmatex">\( R^2 \)</span>, the <strong>coefficient of determination</strong>.</p>
+<h3 id="what-is-r-squared">What Is R-Squared?</h3>
+<p>The <strong>coefficient of determination</strong>, written as <span class="arithmatex">\( R^2 \)</span>, tells you how much of the variability in y is explained by the linear relationship with x. It's simply the correlation coefficient squared:</p>
+<div class="arithmatex">\[
+R^2 = r^2
+\]</div>
+<p>For example, if <span class="arithmatex">\( r = 0.8 \)</span>, then <span class="arithmatex">\( R^2 = 0.64 \)</span>, meaning 64% of the variability in y is explained by the linear relationship with x.</p>
+<h3 id="interpreting-r-squared">Interpreting R-Squared</h3>
+<p>Here's the template for <strong>R-squared interpretation</strong>:</p>
+<blockquote>
+<p>"R² = [value] means that [percentage]% of the variability in [y variable] can be explained by the linear relationship with [x variable]."</p>
+</blockquote>
+<p><strong>Example:</strong> In our study time and exam score data, suppose <span class="arithmatex">\( r = 0.85 \)</span>. Then <span class="arithmatex">\( R^2 = 0.72 \)</span>.</p>
+<p>Interpretation: "72% of the variability in exam scores can be explained by the linear relationship with study time."</p>
+<p>The remaining 28%? That's variability from other factors—natural ability, test anxiety, sleep quality, whether you had a good breakfast... all things not captured by study time alone.</p>
+<table>
+<thead>
+<tr>
+<th>R² Value</th>
+<th>Strength</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.90 - 1.00</td>
+<td>Very strong</td>
+<td>x explains 90%+ of y's variability</td>
+</tr>
+<tr>
+<td>0.70 - 0.89</td>
+<td>Strong</td>
+<td>x explains most of y's variability</td>
+</tr>
+<tr>
+<td>0.50 - 0.69</td>
+<td>Moderate</td>
+<td>x explains a substantial portion</td>
+</tr>
+<tr>
+<td>0.25 - 0.49</td>
+<td>Weak</td>
+<td>x explains some variability</td>
+</tr>
+<tr>
+<td>0.00 - 0.24</td>
+<td>Very weak</td>
+<td>x explains little variability</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Important notes about R²:</strong></p>
+<ol>
+<li>R² is always between 0 and 1 (or 0% and 100%)</li>
+<li>R² doesn't tell you direction—you lose the sign when you square r</li>
+<li>A high R² doesn't mean the relationship is linear (always check residual plots!)</li>
+<li>R² doesn't prove causation</li>
+</ol>
+<blockquote>
+<p>🐿️ <em>"Time to squirrel away this knowledge: R² is like a grade for your regression line. An R² of 0.80 is like getting a B—your line explains most of what's happening, but there's still room for improvement!"</em></p>
+</blockquote>
+<h2 id="influential-points-and-outliers">Influential Points and Outliers</h2>
+<p>Not all data points are created equal. Some points have an outsized impact on your regression line, and it's crucial to identify them.</p>
+<h3 id="influential-points">Influential Points</h3>
+<p>An <strong>influential point</strong> is a data point that substantially changes the regression line when it's removed from the dataset. Influential points can:</p>
+<ul>
+<li>Change the slope dramatically</li>
+<li>Shift the y-intercept</li>
+<li>Alter the correlation and R²</li>
+</ul>
+<p>How do you know if a point is influential? Remove it, recalculate the regression, and see if the equation changes substantially. If it does, that point is influential.</p>
+<h3 id="leverage">Leverage</h3>
+<p><strong>Leverage</strong> refers to how extreme a point's x-value is compared to the other x-values in your dataset. Points with high leverage are far from <span class="arithmatex">\( \bar{x} \)</span> in the horizontal direction.</p>
+<p>Here's the key insight: points with high leverage <em>have the potential</em> to be influential, but they aren't automatically influential. It depends on whether they follow the pattern of the other data or deviate from it.</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>High Leverage?</th>
+<th>Influential?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Point far from <span class="arithmatex">\( \bar{x} \)</span>, follows pattern</td>
+<td>Yes</td>
+<td>Usually no</td>
+</tr>
+<tr>
+<td>Point far from <span class="arithmatex">\( \bar{x} \)</span>, off pattern</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Point near <span class="arithmatex">\( \bar{x} \)</span>, far from line</td>
+<td>No</td>
+<td>Usually no</td>
+</tr>
+</tbody>
+</table>
+<p>Think of leverage like a seesaw. A person at the end of the seesaw (high leverage) can tip the balance easily, but only if they're on the wrong side of where they "should" be.</p>
+<h3 id="outliers-in-regression">Outliers in Regression</h3>
+<p>An <strong>outlier in regression</strong> is a point with an unusually large residual—it falls far from the regression line vertically. Outliers can be:</p>
+<ul>
+<li><strong>Near the center (low leverage):</strong> These rarely affect the regression much because they're balanced by points on both sides</li>
+<li><strong>At the extremes (high leverage):</strong> These can be highly influential because there's less data to counterbalance them</li>
+</ul>
+<p>When you find an outlier, investigate it:</p>
+<ol>
+<li>Is it a data entry error? (Fix it)</li>
+<li>Is it from a different population? (Consider removing it or analyzing separately)</li>
+<li>Is it a genuine but unusual observation? (Report results with and without it)</li>
+</ol>
+<blockquote>
+<p>🐿️ <em>"One year, I recorded a tree that yielded 847 acorns—way more than any other. Turned out it was actually TWO trees whose branches had grown together! That's an outlier worth investigating. Never just delete outliers without understanding why they're unusual."</em></p>
+</blockquote>
+<h4 id="microsim-influential-points-explorer">MicroSim: Influential Points Explorer</h4>
+<details>
+<summary>Interactive Influential Point Investigation Tool</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Evaluate (Bloom Level 5) how individual points affect regression by manipulating high-leverage and outlier points</p>
+<p>Visual elements:
+- Scatterplot with 10-12 data points and regression line (450x400 pixels)
+- One special point highlighted in different color (the "test" point)
+- Secondary regression line (dashed) showing fit without the special point
+- Display of both equations and R² values (with and without point)
+- Leverage indicator bar showing x-distance from mean</p>
+<p>Interactive controls:
+- Draggable "test" point that can be moved anywhere
+- Toggle to show/hide comparison regression line
+- "Reset to Original" button
+- Slider to adjust number of background points
+- Display showing: current residual, leverage score, influence measure</p>
+<p>Behavior:
+- As test point moves, both regression lines update
+- Color coding indicates influence level (green = low, yellow = moderate, red = high)
+- Moving point far horizontally increases leverage indicator
+- Moving point vertically away from pattern increases residual
+- Comparison statistics update in real-time</p>
+<p>Canvas size: 600x500, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="putting-it-all-together-complete-regression-analysis">Putting It All Together: Complete Regression Analysis</h2>
+<p>Now that you've learned all the components, let's walk through a complete regression analysis from start to finish.</p>
+<h3 id="the-regression-analysis-workflow">The Regression Analysis Workflow</h3>
+<ol>
+<li><strong>Examine the scatterplot</strong> - Verify the relationship appears linear</li>
+<li><strong>Calculate the regression equation</strong> - Find slope and y-intercept</li>
+<li><strong>Interpret the slope</strong> - In context of the problem</li>
+<li><strong>Interpret the y-intercept</strong> - If meaningful</li>
+<li><strong>Check R²</strong> - How much variability is explained?</li>
+<li><strong>Create and analyze the residual plot</strong> - Is the linear model appropriate?</li>
+<li><strong>Look for influential points and outliers</strong> - Any concerns?</li>
+<li><strong>Make predictions</strong> - For x-values within the data range</li>
+</ol>
+<p><strong>Example: Complete Analysis</strong></p>
+<p>A researcher collected data on the relationship between daily temperature (°F) and ice cream sales ($) at a beach stand over 20 summer days. Temperature ranged from 72°F to 94°F.</p>
+<p>Results:
+- Regression equation: <span class="arithmatex">\( \hat{y} = -152.3 + 4.7x \)</span>
+- <span class="arithmatex">\( r = 0.92 \)</span>, so <span class="arithmatex">\( R^2 = 0.85 \)</span></p>
+<p><strong>Interpretation of slope:</strong> For each additional degree Fahrenheit, predicted ice cream sales increase by $4.70.</p>
+<p><strong>Interpretation of y-intercept:</strong> The y-intercept of -$152.30 represents predicted sales when temperature is 0°F. This is extrapolation far outside our data range (and also, no one's buying ice cream when it's 0°F), so this value has no practical meaning.</p>
+<p><strong>R² interpretation:</strong> 85% of the variability in ice cream sales can be explained by the linear relationship with temperature.</p>
+<p><strong>Prediction:</strong> What are predicted sales when the temperature is 85°F?</p>
+<div class="arithmatex">\[
+\hat{y} = -152.3 + 4.7(85) = -152.3 + 399.5 = 247.2
+\]</div>
+<p>Predicted sales are $247.20.</p>
+<h4 id="microsim-complete-regression-analysis-tool">MicroSim: Complete Regression Analysis Tool</h4>
+<details>
+<summary>Full Regression Analysis Dashboard</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Create (Bloom Level 6) a complete regression analysis by integrating all concepts: equation, interpretation, residuals, and predictions</p>
+<p>Visual elements:
+- Main scatterplot with data and regression line (400x350 pixels)
+- Residual plot below scatterplot (400x200 pixels)
+- Statistics panel showing: equation, r, R², mean x, mean y, slope, intercept
+- Prediction calculator panel
+- Interpretation template fills with current values</p>
+<p>Interactive controls:
+- Dataset selector (5+ pre-loaded real-world datasets)
+- Prediction input field with calculate button
+- "Show Residual Plot" toggle
+- "Highlight Influential Points" toggle
+- "Export Analysis" button (generates text summary)</p>
+<p>Behavior:
+- Selecting dataset updates all visualizations and statistics
+- Entering prediction value shows point on line and calculation
+- Influential points automatically identified and flagged
+- Warnings display for extrapolation attempts
+- Text interpretations auto-generate with correct context and values</p>
+<p>Canvas size: 500x650, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="common-mistakes-and-misconceptions">Common Mistakes and Misconceptions</h2>
+<p>Before we wrap up, let's address some common pitfalls:</p>
+<p><strong>Mistake 1: Confusing r and R²</strong>
+Remember: r ranges from -1 to 1 and includes direction; R² ranges from 0 to 1 and doesn't indicate direction. If r = -0.7, then R² = 0.49.</p>
+<p><strong>Mistake 2: Forgetting the hat on ŷ</strong>
+The hat matters! When writing predictions, always write <span class="arithmatex">\( \hat{y} \)</span>, not y. This distinguishes predicted values from actual observed values.</p>
+<p><strong>Mistake 3: Interpreting slope without context</strong>
+Always interpret slope in the units of your variables. "The slope is 4.7" means nothing. "For each additional degree, predicted sales increase by $4.70" tells the whole story.</p>
+<p><strong>Mistake 4: Ignoring extrapolation</strong>
+Just because you can plug numbers into an equation doesn't mean you should. Always note the range of your original data.</p>
+<p><strong>Mistake 5: High R² means good predictions</strong>
+A high R² means your line fits the data well, but it doesn't guarantee accurate predictions for new data, especially if conditions change.</p>
+<p><strong>Mistake 6: Assuming causation</strong>
+Even a perfect R² of 1.0 doesn't prove that x causes y. Correlation and regression describe relationships—they don't establish causation.</p>
+<blockquote>
+<p>🐿️ <em>"Every statistician drops an acorn sometimes. The key is learning to catch yourself before making these mistakes on the AP exam. Read each question carefully and think about what's really being asked!"</em></p>
+</blockquote>
+<hr />
+<h2 id="key-takeaways">Key Takeaways</h2>
+<p>Time to squirrel away the big ideas from this chapter:</p>
+<ol>
+<li>
+<p><strong>Least squares regression</strong> finds the line that minimizes the sum of squared residuals, creating the best-fit line for your data.</p>
+</li>
+<li>
+<p><strong>The regression equation</strong> <span class="arithmatex">\( \hat{y} = a + bx \)</span> allows you to predict y-values from x-values, where <span class="arithmatex">\( a \)</span> is the y-intercept and <span class="arithmatex">\( b \)</span> is the slope.</p>
+</li>
+<li>
+<p><strong>Slope interpretation</strong> describes how much the predicted y changes for each one-unit increase in x—always include units and context.</p>
+</li>
+<li>
+<p><strong>Y-intercept interpretation</strong> gives the predicted y when x = 0, but this often has no practical meaning if 0 is outside your data range.</p>
+</li>
+<li>
+<p><strong>Residuals</strong> measure prediction errors: Residual = Observed - Predicted. Positive means underestimation; negative means overestimation.</p>
+</li>
+<li>
+<p><strong>Residual plots</strong> help diagnose model fit. Random scatter = good; patterns = the linear model may not be appropriate.</p>
+</li>
+<li>
+<p><strong>R² (coefficient of determination)</strong> tells you what percentage of y's variability is explained by the linear relationship with x.</p>
+</li>
+<li>
+<p><strong>Extrapolation</strong> is dangerous—only make predictions within the range of your original x-values.</p>
+</li>
+<li>
+<p><strong>Influential points</strong> substantially change the regression line when removed. They often have high leverage (extreme x-values).</p>
+</li>
+<li>
+<p><strong>Outliers in regression</strong> have unusually large residuals. Investigate them before deciding how to handle them.</p>
+</li>
+</ol>
+<hr />
+<h2 id="practice-problems">Practice Problems</h2>
+<p>Test your understanding with these problems. Try them on your own before checking your work!</p>
+<h3 id="problem-1-basic-calculations">Problem 1: Basic Calculations</h3>
+<p>A researcher finds the regression equation <span class="arithmatex">\( \hat{y} = 23.4 + 1.8x \)</span> for predicting test score (y) from hours of sleep (x).</p>
+<p>a) Predict the test score for someone who slept 7 hours.
+b) Calculate the residual if someone who slept 7 hours actually scored 38.</p>
+<h3 id="problem-2-interpretation">Problem 2: Interpretation</h3>
+<p>The regression equation for predicting weight (in pounds) from height (in inches) is <span class="arithmatex">\( \hat{y} = -150 + 4.5x \)</span>, with <span class="arithmatex">\( r = 0.78 \)</span>.</p>
+<p>a) Interpret the slope in context.
+b) Interpret the y-intercept. Does it make sense?
+c) Calculate and interpret R².</p>
+<h3 id="problem-3-extrapolation">Problem 3: Extrapolation</h3>
+<p>Using data from cars manufactured between 2010-2020, a regression equation predicts fuel efficiency (mpg) from engine size (liters): <span class="arithmatex">\( \hat{y} = 42.3 - 5.1x \)</span>. Engine sizes in the dataset ranged from 1.5 to 4.0 liters.</p>
+<p>a) Predict fuel efficiency for a 2.5 liter engine.
+b) Would it be appropriate to predict for a 6.0 liter engine? Explain.
+c) The model predicts 42.3 mpg for a 0 liter engine. Why is this problematic?</p>
+<h3 id="problem-4-residual-analysis">Problem 4: Residual Analysis</h3>
+<p>Given the data below and regression equation <span class="arithmatex">\( \hat{y} = 10 + 3x \)</span>:</p>
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th>y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>17</td>
+</tr>
+<tr>
+<td>4</td>
+<td>23</td>
+</tr>
+<tr>
+<td>6</td>
+<td>27</td>
+</tr>
+<tr>
+<td>8</td>
+<td>35</td>
+</tr>
+</tbody>
+</table>
+<p>a) Calculate the residual for each point.
+b) What is the sum of the residuals?
+c) Which point has the largest residual?</p>
+<h3 id="problem-5-influential-points">Problem 5: Influential Points</h3>
+<p>A dataset of 50 students shows the relationship between GPA and SAT scores. One student has a GPA of 1.2 (the lowest) but an SAT score of 1580 (near the highest).</p>
+<p>a) Does this point have high leverage? Explain.
+b) Is this point likely to be influential? Why or why not?
+c) What would you recommend doing about this data point?</p>
+<h3 id="problem-6-complete-analysis">Problem 6: Complete Analysis</h3>
+<p>For a dataset examining the relationship between advertising spending (thousands of dollars) and product sales (thousands of units):
+- Equation: <span class="arithmatex">\( \hat{y} = 2.5 + 0.15x \)</span>
+- r = 0.73
+- Advertising ranged from $10,000 to $100,000
+- Residual plot shows random scatter</p>
+<p>a) Interpret the slope.
+b) Interpret R² (you'll need to calculate it first).
+c) Predict sales for $50,000 in advertising spending.
+d) Is the linear model appropriate? How do you know?
+e) Would it be reasonable to predict sales for $150,000 in advertising? Explain.</p>
+<hr />
+<p><em>Great work completing this chapter! Linear regression is one of the most widely used statistical techniques, and you've just built a strong foundation. In the next chapter, we'll explore how to apply these concepts in more complex settings and examine the conditions required for regression inference.</em></p>
 
 
 

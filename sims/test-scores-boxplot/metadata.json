@@ -1,0 +1,97 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+  "microsim_name": "test-scores-boxplot",
+  "title": "Test Scores Boxplot Explorer",
+  "description": "Interactive MicroSim that uses boxplots to summarize exam scores, highlighting the minimum, Q1, median, Q3, and maximum and supporting section comparisons.",
+  "keywords": ["boxplot", "five-number summary", "test scores", "quartiles", "median", "AP Statistics"],
+  "subject": "Statistics",
+  "topic": "Numerical Summaries",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Interpret",
+  "learning_objective": "Students will interpret a boxplot by identifying the minimum, Q1, median, Q3, and maximum and comparing two class sections.",
+  "grade_level": "High School",
+  "duration": "10-15 minutes",
+  "prerequisites": ["Understanding of quartiles", "Basic interpretation of boxplots"],
+  "framework": "Plotly.js",
+  "version": "2.27.0",
+  "canvas_dimensions": {
+    "width": "responsive",
+    "draw_height": 360,
+    "control_height": 220,
+    "total_height": 600
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Class size",
+      "min": 10,
+      "max": 60,
+      "default": 30,
+      "step": 1,
+      "description": "Number of students in the class"
+    },
+    {
+      "type": "slider",
+      "label": "Average score",
+      "min": 55,
+      "max": 95,
+      "default": 78,
+      "step": 1,
+      "description": "Mean exam score for Section A"
+    },
+    {
+      "type": "slider",
+      "label": "Spread (SD)",
+      "min": 4,
+      "max": 20,
+      "default": 10,
+      "step": 1,
+      "description": "Controls variability of Section A"
+    },
+    {
+      "type": "checkbox",
+      "label": "Add a low outlier",
+      "default": true,
+      "description": "Show how the minimum can shift lower"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show individual scores",
+      "default": false,
+      "description": "Display raw student scores on the boxplot"
+    },
+    {
+      "type": "checkbox",
+      "label": "Compare Section B",
+      "default": false,
+      "description": "Add a second boxplot for comparison"
+    },
+    {
+      "type": "slider",
+      "label": "Section B average",
+      "min": 55,
+      "max": 95,
+      "default": 72,
+      "step": 1,
+      "description": "Mean exam score for Section B"
+    },
+    {
+      "type": "slider",
+      "label": "Section B spread",
+      "min": 4,
+      "max": 20,
+      "default": 12,
+      "step": 1,
+      "description": "Controls variability of Section B"
+    },
+    {
+      "type": "button",
+      "label": "New class scores",
+      "description": "Generate a fresh random class"
+    }
+  ],
+  "creator": "Dan McCreary",
+  "date_created": "2026-02-07",
+  "license": "CC BY-NC-SA 4.0",
+  "language": "en"
+}

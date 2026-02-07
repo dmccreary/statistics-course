@@ -101,6 +101,10 @@
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/statistics-course/learning-graph/chapter-content-generation-report/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/statistics-course/learning-graph/concept-list/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
@@ -125,6 +129,14 @@
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/statistics-course/prompts/generate-chapter-content/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/prompts/generate-microsims/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/statistics-course/sims/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
@@ -141,7 +153,19 @@
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/boxplot-builder/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/boxplot-comparison/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/statistics-course/sims/chapter-2-concept-map/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/density-curve-area/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
@@ -153,6 +177,10 @@
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/empirical-rule/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/statistics-course/sims/frequency-table-explorer/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
@@ -161,7 +189,35 @@
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/household-income-boxplot/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/statistics-course/sims/interactive-dotplot-builder/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/mean-balance-point/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/mean-median-skewness/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/normal-distribution-explorer/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/normal-probability-calc/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/normal-probability-plot/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/outlier-detection/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
@@ -181,11 +237,19 @@
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/quartile-visualization/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/statistics-course/sims/skewness-explorer/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/statistics-course/sims/socs-description-builder/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/std-dev-calculator/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
@@ -201,11 +265,23 @@
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/test-scores-boxplot/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/token-prediction/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/statistics-course/sims/two-way-table-calculator/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/statistics-course/sims/variable-types-concept-map/</loc>
+         <lastmod>2026-02-07</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/statistics-course/sims/z-score-calculator/</loc>
          <lastmod>2026-02-07</lastmod>
     </url>
 </urlset>

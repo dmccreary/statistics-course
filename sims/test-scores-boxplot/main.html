@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Test Scores Boxplot Explorer MicroSim using Plotly.js</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        :root {
+            --panel-bg: #f7f4ea;
+            --panel-border: #d9c9a7;
+            --accent: #2e7d32;
+            --accent-dark: #1b5e20;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+            background: #fffef7;
+            color: #2b2b2b;
+        }
+
+        .wrap {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            gap: 12px;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px 14px;
+            align-items: end;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            padding: 10px 12px;
+        }
+
+        .control {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 14px;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        input[type="range"] {
+            accent-color: var(--accent);
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: var(--accent-dark);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            padding: 10px 12px;
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            background: #fff;
+        }
+
+        .stats h3 {
+            margin: 0 0 6px 0;
+            font-size: 15px;
+            color: var(--accent-dark);
+        }
+
+        .stats p {
+            margin: 2px 0;
+            font-size: 14px;
+        }
+
+        #plot {
+            width: 100%;
+            min-height: 360px;
+        }
+
+        .note {
+            font-size: 13px;
+            color: #4a4a4a;
+        }
+
+        @media (max-width: 700px) {
+            .wrap {
+                padding: 8px;
+            }
+        }
+    </style>
+    <script src="test-scores-boxplot.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="controls">
+            <div class="control">
+                <label for="classSize">Class size: <span id="classSizeValue">30</span></label>
+                <input id="classSize" type="range" min="10" max="60" step="1" value="30">
+            </div>
+            <div class="control">
+                <label for="meanScore">Average score: <span id="meanScoreValue">78</span></label>
+                <input id="meanScore" type="range" min="55" max="95" step="1" value="78">
+            </div>
+            <div class="control">
+                <label for="spread">Spread (SD): <span id="spreadValue">10</span></label>
+                <input id="spread" type="range" min="4" max="20" step="1" value="10">
+            </div>
+            <div class="control">
+                <label><input id="lowOutlier" type="checkbox" checked> Add a low outlier</label>
+                <span class="note">Highlights how the minimum can drop.</span>
+            </div>
+            <div class="control">
+                <label><input id="showPoints" type="checkbox"> Show individual scores</label>
+                <span class="note">See every student score.</span>
+            </div>
+            <div class="control">
+                <label><input id="compareSections" type="checkbox"> Compare Section B</label>
+                <span class="note">Add a second boxplot.</span>
+            </div>
+            <div class="control">
+                <label for="meanScoreB">Section B average: <span id="meanScoreBValue">72</span></label>
+                <input id="meanScoreB" type="range" min="55" max="95" step="1" value="72" disabled>
+            </div>
+            <div class="control">
+                <label for="spreadB">Section B spread: <span id="spreadBValue">12</span></label>
+                <input id="spreadB" type="range" min="4" max="20" step="1" value="12" disabled>
+            </div>
+            <div class="control actions">
+                <button id="regenerate">New class scores</button>
+                <span class="note">Every click draws a new class.</span>
+            </div>
+        </div>
+
+        <div id="plot"></div>
+
+        <div class="stats">
+            <div>
+                <h3>Section A summary</h3>
+                <p id="statsA"></p>
+            </div>
+            <div>
+                <h3>Section B summary</h3>
+                <p id="statsB">Enable comparison to see Section B.</p>
+            </div>
+            <div>
+                <h3>Why boxplots rock</h3>
+                <p>Min, Q1, median, Q3, max in one glance.</p>
+                <p>Great for comparing sections or tests.</p>
+                <p>Shows center and spread instantly.</p>
+            </div>
+        </div>
+    </div>
+    <a href=".">Back to Lesson Plan</a>
+</body>
+</html>

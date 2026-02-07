@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP statistics designed for college credit.">
+        <meta name="description" content="Master chi-square tests for categorical data and inference techniques for regression slopes">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>18. Chi-Square and Regression Inference - AP Statistics</title>
+        <title>Chi-Square and Regression Inference - AP Statistics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="18. Chi-Square and Regression Inference - AP Statistics" >
+        <meta  property="og:title"  content="Chi-Square and Regression Inference - AP Statistics" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  property="og:description"  content="Master chi-square tests for categorical data and inference techniques for regression slopes" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/18-chi-square-and-regression-inference/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="18. Chi-Square and Regression Inference - AP Statistics" >
+        <meta  name="twitter:title"  content="Chi-Square and Regression Inference - AP Statistics" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  name="twitter:description"  content="Master chi-square tests for categorical data and inference techniques for regression slopes" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/18-chi-square-and-regression-inference/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              18. Chi-Square and Regression Inference
+              Chi-Square and Regression Inference
             
           </span>
         </div>
@@ -875,6 +875,648 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-two-powerful-inference-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Two Powerful Inference Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-the-chi-square-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1: The Chi-Square Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1: The Chi-Square Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-chi-square-special" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Makes Chi-Square Special?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Makes Chi-Square Special?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chi-square-distribution-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chi-Square Distribution Shapes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-do-we-use-chi-square" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Do We Use Chi-Square?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-observed-and-expected-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2: Observed and Expected Counts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: Observed and Expected Counts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#observed-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observed Counts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expected Counts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-the-chi-square-statistic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3: The Chi-Square Statistic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 3: The Chi-Square Statistic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chi-square-calculation-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chi-Square Calculation Breakdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Worked Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-conditions-for-chi-square-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 4: Conditions for Chi-Square Tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 4: Conditions for Chi-Square Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-three-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Conditions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-if-conditions-arent-met" class="md-nav__link">
+    <span class="md-ellipsis">
+      What If Conditions Aren't Met?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-goodness-of-fit-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 5: Goodness-of-Fit Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 5: Goodness-of-Fit Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-gof-hypotheses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up GOF Hypotheses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#degrees-of-freedom-for-gof" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degrees of Freedom for GOF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completing-the-gof-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completing the GOF Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Completing the GOF Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-goodness-of-fit-test-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Goodness-of-Fit Test Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-tests-for-homogeneity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 6: Tests for Homogeneity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 6: Tests for Homogeneity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homogeneity-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homogeneity Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-two-way-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Two-Way Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hypotheses-for-homogeneity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypotheses for Homogeneity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculating-expected-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Expected Counts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#degrees-of-freedom-for-two-way-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degrees of Freedom for Two-Way Tables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-7-tests-for-independence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 7: Tests for Independence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 7: Tests for Independence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#independence-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Independence Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hypotheses-for-independence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypotheses for Independence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hypotheses for Independence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-homogeneity-vs-independence-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Homogeneity vs Independence Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-8-chi-square-conclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 8: Chi-Square Conclusions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 8: Chi-Square Conclusions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-four-step-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Four-Step Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-conclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Template Conclusions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow-Up Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-9-inference-for-regression-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 9: Inference for Regression Slope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 9: Inference for Regression Slope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-regression-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Regression Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-test-the-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Test the Slope?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Test the Slope?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sample-slope-variability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sample Slope Variability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-10-conditions-for-regression-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 10: Conditions for Regression Inference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 10: Conditions for Regression Inference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#l-linearity-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      L - Linearity Condition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-independence-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      I - Independence Condition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-normality-of-residuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      N - Normality of Residuals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-equal-variance-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      E - Equal Variance Condition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="E - Equal Variance Condition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-checking-regression-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Checking Regression Conditions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-11-t-test-for-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 11: T-Test for Slope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 11: T-Test for Slope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-test-statistic" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Test Statistic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-computer-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Computer Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completing-the-t-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completing the T-Test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-12-t-interval-for-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 12: T-Interval for Slope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 12: T-Interval for Slope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-the-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting the Interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confidence-interval-vs-hypothesis-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confidence Interval vs. Hypothesis Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Confidence Interval vs. Hypothesis Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-confidence-interval-for-slope-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Confidence Interval for Slope Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-13-putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 13: Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 13: Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-regression-inference-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Regression Inference Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary: Key Takeaways
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter Summary: Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chi-square-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chi-Square Tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regression-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regression Inference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -920,6 +1562,70 @@
   
     
     
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
       
         
           
@@ -1097,6 +1803,8 @@
       
         
           
+        
+      
         
       
         
@@ -1317,6 +2025,648 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-two-powerful-inference-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Two Powerful Inference Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-1-the-chi-square-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 1: The Chi-Square Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 1: The Chi-Square Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-chi-square-special" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Makes Chi-Square Special?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Makes Chi-Square Special?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chi-square-distribution-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chi-Square Distribution Shapes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-do-we-use-chi-square" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Do We Use Chi-Square?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-2-observed-and-expected-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 2: Observed and Expected Counts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 2: Observed and Expected Counts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#observed-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observed Counts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expected-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expected Counts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-3-the-chi-square-statistic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 3: The Chi-Square Statistic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 3: The Chi-Square Statistic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-chi-square-calculation-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Chi-Square Calculation Breakdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Worked Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-4-conditions-for-chi-square-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 4: Conditions for Chi-Square Tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 4: Conditions for Chi-Square Tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-three-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Conditions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-if-conditions-arent-met" class="md-nav__link">
+    <span class="md-ellipsis">
+      What If Conditions Aren't Met?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-5-goodness-of-fit-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 5: Goodness-of-Fit Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 5: Goodness-of-Fit Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-gof-hypotheses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up GOF Hypotheses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#degrees-of-freedom-for-gof" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degrees of Freedom for GOF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completing-the-gof-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completing the GOF Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Completing the GOF Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-goodness-of-fit-test-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Goodness-of-Fit Test Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-6-tests-for-homogeneity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 6: Tests for Homogeneity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 6: Tests for Homogeneity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homogeneity-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homogeneity Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-two-way-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Two-Way Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hypotheses-for-homogeneity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypotheses for Homogeneity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculating-expected-counts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Expected Counts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#degrees-of-freedom-for-two-way-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degrees of Freedom for Two-Way Tables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-7-tests-for-independence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 7: Tests for Independence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 7: Tests for Independence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#independence-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Independence Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hypotheses-for-independence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hypotheses for Independence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hypotheses for Independence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-homogeneity-vs-independence-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Homogeneity vs Independence Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-8-chi-square-conclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 8: Chi-Square Conclusions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 8: Chi-Square Conclusions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-four-step-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Four-Step Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-conclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Template Conclusions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow-Up Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-9-inference-for-regression-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 9: Inference for Regression Slope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 9: Inference for Regression Slope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-regression-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Regression Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-test-the-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Test the Slope?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Test the Slope?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sample-slope-variability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sample Slope Variability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-10-conditions-for-regression-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 10: Conditions for Regression Inference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 10: Conditions for Regression Inference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#l-linearity-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      L - Linearity Condition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-independence-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      I - Independence Condition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n-normality-of-residuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      N - Normality of Residuals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-equal-variance-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      E - Equal Variance Condition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="E - Equal Variance Condition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-checking-regression-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Checking Regression Conditions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-11-t-test-for-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 11: T-Test for Slope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 11: T-Test for Slope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-test-statistic" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Test Statistic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reading-computer-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Computer Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completing-the-t-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completing the T-Test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-12-t-interval-for-slope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 12: T-Interval for Slope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 12: T-Interval for Slope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-the-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting the Interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#confidence-interval-vs-hypothesis-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Confidence Interval vs. Hypothesis Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Confidence Interval vs. Hypothesis Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-confidence-interval-for-slope-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Confidence Interval for Slope Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#part-13-putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part 13: Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part 13: Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-regression-inference-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Regression Inference Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary: Key Takeaways
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter Summary: Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chi-square-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chi-Square Tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regression-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regression Inference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1377,7 +2727,924 @@
 <li><a href="../17-inference-for-means/">Chapter 17: Inference for Means</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-two-powerful-inference-tools">Introduction: Two Powerful Inference Tools</h2>
+<p>Welcome to what might be the most versatile chapter in your AP Statistics journey! We're going to explore two incredibly useful inference techniques that you'll encounter constantly in real research: chi-square tests for categorical data and inference for regression slopes. These tools let us answer questions that our previous methods simply couldn't handle.</p>
+<p>Think about it this way: up until now, we've been working with quantitative data and proportions. But what happens when you want to test whether the distribution of M&amp;M colors in a bag matches what the company claims? Or whether there's a relationship between political party affiliation and opinion on climate change? Or whether the slope of a regression line is significantly different from zero? That's where chi-square tests and regression inference come to the rescue.</p>
+<p>As Sylvia likes to say, "My tail's tingling—we're onto something!" These techniques open up a whole new world of statistical analysis. Let's crack this nut!</p>
+<h2 id="part-1-the-chi-square-distribution">Part 1: The Chi-Square Distribution</h2>
+<p>Before we can run chi-square tests, we need to understand the distribution that makes them possible. The <strong>chi-square distribution</strong> (pronounced "ky-square" and written <span class="arithmatex">\(\chi^2\)</span>) is a probability distribution that arises naturally when we work with categorical data.</p>
+<h3 id="what-makes-chi-square-special">What Makes Chi-Square Special?</h3>
+<p>The chi-square distribution has some distinctive properties that set it apart from the normal and t-distributions we've worked with before:</p>
+<ul>
+<li>It only takes non-negative values (you can't have a negative chi-square statistic)</li>
+<li>It's right-skewed, with a long tail extending toward larger values</li>
+<li>Its shape depends on a parameter called <strong>degrees of freedom</strong> (df)</li>
+<li>As degrees of freedom increase, the distribution becomes more symmetric and approaches a normal distribution</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Degrees of Freedom</th>
+<th>Shape</th>
+<th>Mean</th>
+<th>Spread</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Highly right-skewed</td>
+<td>1</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Moderately right-skewed</td>
+<td>5</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Slightly right-skewed</td>
+<td>10</td>
+<td>Wider</td>
+</tr>
+<tr>
+<td>30+</td>
+<td>Nearly symmetric</td>
+<td>df</td>
+<td>Wide</td>
+</tr>
+</tbody>
+</table>
+<p>The mean of a chi-square distribution equals its degrees of freedom, which gives us a handy reference point. If we calculate a chi-square statistic that's much larger than the degrees of freedom, that suggests our observed data differs substantially from what we'd expect.</p>
+<h4 id="diagram-chi-square-distribution-shapes">Diagram: Chi-Square Distribution Shapes</h4>
+<iframe src="../../sims/chi-square-distribution-shapes/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Chi-Square Distribution Shapes Interactive Visualization</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Compare, contrast</p>
+<p>Learning Objective: Students will compare how the chi-square distribution's shape changes with different degrees of freedom, helping them understand why larger chi-square values are more extreme.</p>
+<p>Instructional Rationale: Comparing multiple distributions side-by-side helps students understand the parameter's effect on shape. A slider allows exploration without overwhelming animation.</p>
+<p>Visual Elements:
+- Single coordinate system showing chi-square distributions
+- X-axis: Chi-square values from 0 to 30
+- Y-axis: Probability density
+- Multiple colored curves showing df = 2, 5, 10, 15, 20
+- Vertical dashed line showing the mean for selected df
+- Shaded critical region in the right tail</p>
+<p>Interactive Controls:
+- Slider: Degrees of freedom (1 to 30)
+- Dropdown: Show single distribution or multiple for comparison
+- Checkbox: Show/hide critical value shading (alpha = 0.05)
+- Display: Current mean and critical value</p>
+<p>Canvas Layout:
+- Drawing area: 500px width, 350px height
+- Controls below the graph
+- Legend showing color coding for each df value</p>
+<p>Default Parameters:
+- Degrees of freedom: 5
+- Show multiple distributions: enabled
+- Critical value shading: enabled</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h3 id="when-do-we-use-chi-square">When Do We Use Chi-Square?</h3>
+<p>Chi-square tests are our go-to tools when we're working with <strong>categorical data</strong>—data that falls into distinct groups or categories rather than being measured on a numerical scale. We'll use chi-square tests for three main purposes:</p>
+<ol>
+<li><strong>Goodness-of-fit tests</strong>: Does our observed distribution match an expected distribution?</li>
+<li><strong>Tests for homogeneity</strong>: Are the distributions the same across different populations?</li>
+<li><strong>Tests for independence</strong>: Are two categorical variables related or independent?</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia's Study Tip</p>
+<p>Here's a quick way to remember when to use chi-square: if you're counting things in categories (like M&amp;M colors or survey responses), chi-square is probably your friend!</p>
+</div>
+<h2 id="part-2-observed-and-expected-counts">Part 2: Observed and Expected Counts</h2>
+<p>At the heart of every chi-square test is a comparison between what we <strong>observed</strong> in our data and what we <strong>expected</strong> to observe if some hypothesis were true.</p>
+<h3 id="observed-counts">Observed Counts</h3>
+<p><strong>Observed counts</strong> are simply the actual counts we collect from our data. If you survey 200 students about their favorite pizza topping and count how many chose pepperoni, cheese, veggie, or other, those are your observed counts. Nothing fancy here—just counting what you see.</p>
+<h3 id="expected-counts">Expected Counts</h3>
+<p><strong>Expected counts</strong> are the counts we would expect to see if our null hypothesis were true. This is where things get interesting! The way we calculate expected counts depends on which type of chi-square test we're running:</p>
+<p>For a goodness-of-fit test:</p>
+<div class="arithmatex">\[
+\text{Expected count} = n \times p_i
+\]</div>
+<p>where <span class="arithmatex">\(n\)</span> is the total sample size and <span class="arithmatex">\(p_i\)</span> is the hypothesized proportion for category <span class="arithmatex">\(i\)</span>.</p>
+<p>For tests of homogeneity and independence:</p>
+<div class="arithmatex">\[
+\text{Expected count} = \frac{\text{(row total)} \times \text{(column total)}}{\text{grand total}}
+\]</div>
+<p>Let's look at a concrete example. Suppose a candy company claims their bags contain 20% red, 25% orange, 20% yellow, 15% green, and 20% blue candies. You buy a bag with 100 candies and find: 24 red, 20 orange, 18 yellow, 22 green, and 16 blue.</p>
+<table>
+<thead>
+<tr>
+<th>Color</th>
+<th>Observed</th>
+<th>Expected (100 × proportion)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Red</td>
+<td>24</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>20</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>18</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>22</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>16</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>100</strong></td>
+<td><strong>100</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The expected counts represent what a "perfect" bag would look like if it exactly matched the company's claimed proportions. Our observed counts deviate from these expectations—but is this deviation due to random chance, or is something more going on?</p>
+<h2 id="part-3-the-chi-square-statistic">Part 3: The Chi-Square Statistic</h2>
+<p>The <strong>chi-square statistic</strong> measures how far our observed counts are from our expected counts. The formula is:</p>
+<div class="arithmatex">\[
+\chi^2 = \sum \frac{(O - E)^2}{E}
+\]</div>
+<p>where:
+- <span class="arithmatex">\(O\)</span> = observed count for each category
+- <span class="arithmatex">\(E\)</span> = expected count for each category
+- The sum is taken over all categories</p>
+<p>Let's break down why this formula makes sense:</p>
+<ol>
+<li><strong>(O - E)</strong>: We find the difference between observed and expected</li>
+<li><strong>(O - E)²</strong>: We square it so negative and positive differences don't cancel out</li>
+<li><strong>÷ E</strong>: We divide by expected to standardize (a difference of 5 means more when we expected 10 than when we expected 100)</li>
+<li><strong>∑</strong>: We add up all these standardized squared differences</li>
+</ol>
+<h4 id="diagram-chi-square-calculation-breakdown">Diagram: Chi-Square Calculation Breakdown</h4>
+<iframe src="../../sims/chi-square-calculation/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Chi-Square Calculation Step-by-Step Visualization</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Calculate, demonstrate</p>
+<p>Learning Objective: Students will practice calculating chi-square statistics by working through each component of the formula with visual feedback.</p>
+<p>Instructional Rationale: Breaking down the calculation into visible steps with concrete numbers helps students understand what each part of the formula contributes to the final statistic.</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show observed and expected counts side by side in a table
+- Stage 2: Show (O - E) for each category with color coding (positive = green, negative = red)
+- Stage 3: Show (O - E)² for each category
+- Stage 4: Show (O - E)²/E for each category
+- Stage 5: Show sum of all contributions = final chi-square statistic</p>
+<p>Visual Elements:
+- Bar chart comparing observed (solid) vs expected (striped) counts
+- Calculation table showing each step
+- Running total accumulator for chi-square statistic
+- Color-coded contributions (larger contributions highlighted)</p>
+<p>Interactive Controls:
+- Input fields for observed counts (editable)
+- Button: "Calculate Step by Step"
+- Button: "Reset to Example"
+- Slider: Animation speed for step-through</p>
+<p>Canvas Layout:
+- Top: Bar chart (400px height)
+- Bottom: Calculation table
+- Right: Running total display</p>
+<p>Default Parameters:
+- Pre-loaded with candy color example
+- Animation speed: medium</p>
+<p>Implementation: p5.js with canvas-based controls and step-through animation</p>
+</details>
+<h3 id="a-worked-example">A Worked Example</h3>
+<p>Using our candy data, let's calculate the chi-square statistic:</p>
+<table>
+<thead>
+<tr>
+<th>Color</th>
+<th>O</th>
+<th>E</th>
+<th>O - E</th>
+<th>(O - E)²</th>
+<th>(O - E)²/E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Red</td>
+<td>24</td>
+<td>20</td>
+<td>4</td>
+<td>16</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>20</td>
+<td>25</td>
+<td>-5</td>
+<td>25</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>18</td>
+<td>20</td>
+<td>-2</td>
+<td>4</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>22</td>
+<td>15</td>
+<td>7</td>
+<td>49</td>
+<td>3.27</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>16</td>
+<td>20</td>
+<td>-4</td>
+<td>16</td>
+<td>0.80</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[
+\chi^2 = 0.80 + 1.00 + 0.20 + 3.27 + 0.80 = 6.07
+\]</div>
+<p>Notice that green contributed the most to our chi-square statistic (3.27 out of 6.07). This tells us the green category had the largest departure from expectations—we observed 22 when we expected only 15.</p>
+<h2 id="part-4-conditions-for-chi-square-tests">Part 4: Conditions for Chi-Square Tests</h2>
+<p>Before we can trust the results of any chi-square test, we need to verify that certain conditions are met. These conditions ensure that our chi-square statistic actually follows a chi-square distribution.</p>
+<h3 id="the-three-conditions">The Three Conditions</h3>
+<ol>
+<li><strong>Random</strong>: The data must come from a random sample or randomized experiment</li>
+<li>
+<p>This ensures our sample is representative and results can be generalized</p>
+</li>
+<li>
+<p><strong>Independent</strong>: Observations must be independent of each other</p>
+</li>
+<li>
+<p>For sampling without replacement, check the 10% condition: sample size should be less than 10% of the population</p>
+</li>
+<li>
+<p><strong>Large Counts</strong>: All expected counts must be at least 5</p>
+</li>
+<li>This ensures the chi-square approximation is valid</li>
+<li>Check EVERY expected count, not just the observed counts</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Common Mistake Alert</p>
+<p>Sylvia has seen many students check the observed counts instead of the expected counts for the large counts condition. Don't make this mistake! The condition specifically requires <strong>expected</strong> counts ≥ 5.</p>
+</div>
+<h3 id="what-if-conditions-arent-met">What If Conditions Aren't Met?</h3>
+<p>If the large counts condition isn't satisfied, you have several options:</p>
+<ul>
+<li>Combine categories that are conceptually similar</li>
+<li>Collect more data (if possible)</li>
+<li>Use an alternative test like Fisher's exact test (beyond AP Statistics)</li>
+<li>Acknowledge the limitation in your conclusion</li>
+</ul>
+<h2 id="part-5-goodness-of-fit-test">Part 5: Goodness-of-Fit Test</h2>
+<p>The <strong>goodness-of-fit test</strong> (often abbreviated as GOF test) determines whether a sample distribution matches a claimed or hypothesized distribution. It's called "goodness-of-fit" because we're testing how well our observed data "fits" the expected pattern.</p>
+<h3 id="setting-up-gof-hypotheses">Setting Up GOF Hypotheses</h3>
+<p>The hypotheses for a goodness-of-fit test are:</p>
+<ul>
+<li><strong>H₀</strong>: The population distribution matches the claimed/hypothesized distribution</li>
+<li><strong>Hₐ</strong>: The population distribution does NOT match the claimed/hypothesized distribution</li>
+</ul>
+<p>For our candy example:
+- <strong>H₀</strong>: The color proportions are 20% red, 25% orange, 20% yellow, 15% green, 20% blue
+- <strong>Hₐ</strong>: At least one of these proportions is different</p>
+<p>Notice that the alternative hypothesis is always two-sided in a goodness-of-fit test—we're looking for ANY departure from the expected distribution, not a specific direction of change.</p>
+<h3 id="degrees-of-freedom-for-gof">Degrees of Freedom for GOF</h3>
+<p>For a goodness-of-fit test:</p>
+<div class="arithmatex">\[
+\text{df} = (\text{number of categories}) - 1
+\]</div>
+<p>Why subtract 1? Because once we know the counts for all but one category, the last count is determined (they must sum to n). In our candy example with 5 colors, df = 5 - 1 = 4.</p>
+<h3 id="completing-the-gof-test">Completing the GOF Test</h3>
+<p>Let's finish our candy example. We calculated <span class="arithmatex">\(\chi^2 = 6.07\)</span> with df = 4.</p>
+<p>Using a chi-square table or calculator, we find the p-value:
+- P(<span class="arithmatex">\(\chi^2\)</span> &gt; 6.07 | df = 4) ≈ 0.194</p>
+<p>Since 0.194 &gt; 0.05 (using α = 0.05), we fail to reject the null hypothesis.</p>
+<p><strong>Conclusion</strong>: We do not have convincing evidence that the candy company's claimed color distribution is incorrect. The differences we observed could reasonably be due to random variation.</p>
+<h4 id="diagram-goodness-of-fit-test-simulator">Diagram: Goodness-of-Fit Test Simulator</h4>
+<iframe src="../../sims/gof-test-simulator/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Interactive Goodness-of-Fit Test Simulator</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Execute, practice</p>
+<p>Learning Objective: Students will conduct complete goodness-of-fit tests by entering observed counts and hypothesized proportions, then interpreting the results.</p>
+<p>Instructional Rationale: An interactive simulator allows students to practice the complete GOF test workflow with immediate feedback on their calculations and conclusions.</p>
+<p>Visual Elements:
+- Input table for observed counts (3-8 categories)
+- Input fields for hypothesized proportions
+- Bar chart showing observed vs expected
+- Chi-square distribution with test statistic marked
+- Shaded p-value region
+- Results panel showing chi-square, df, p-value</p>
+<p>Interactive Controls:
+- Dropdown: Number of categories (3 to 8)
+- Text inputs: Category names
+- Number inputs: Observed counts
+- Number inputs: Hypothesized proportions (must sum to 1)
+- Button: "Run Test"
+- Radio buttons: Significance level (0.01, 0.05, 0.10)
+- Button: "Load Example" with preset scenarios</p>
+<p>Canvas Layout:
+- Left panel: Data entry (300px)
+- Right panel: Visualization and results (400px)
+- Bottom: Written conclusion template</p>
+<p>Default Parameters:
+- 5 categories
+- Pre-loaded with candy example
+- Significance level: 0.05</p>
+<p>Example Scenarios to Load:
+1. Candy colors (company claim)
+2. Dice fairness test
+3. Birth day of week distribution
+4. Mendel's pea genetics</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="part-6-tests-for-homogeneity">Part 6: Tests for Homogeneity</h2>
+<p>While goodness-of-fit tests compare one sample to a hypothesized distribution, <strong>tests for homogeneity</strong> compare distributions across multiple populations or groups. The question becomes: "Do these different groups have the same distribution of responses?"</p>
+<h3 id="homogeneity-setup">Homogeneity Setup</h3>
+<p>A homogeneity test typically involves:
+- Multiple populations or groups (the columns)
+- One categorical variable with multiple outcomes (the rows)
+- Independent random samples from each population</p>
+<p>For example, we might survey students from three different high schools and ask whether they plan to attend a 4-year college, community college, vocational school, or not pursue higher education. The test for homogeneity would tell us whether the distribution of educational plans is the same across all three schools.</p>
+<h3 id="the-two-way-table">The Two-Way Table</h3>
+<p>Data for homogeneity tests is organized in a <strong>two-way table</strong> (also called a contingency table):</p>
+<table>
+<thead>
+<tr>
+<th>Educational Plan</th>
+<th>School A</th>
+<th>School B</th>
+<th>School C</th>
+<th>Row Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4-year college</td>
+<td>85</td>
+<td>72</td>
+<td>91</td>
+<td>248</td>
+</tr>
+<tr>
+<td>Community college</td>
+<td>42</td>
+<td>58</td>
+<td>39</td>
+<td>139</td>
+</tr>
+<tr>
+<td>Vocational</td>
+<td>15</td>
+<td>25</td>
+<td>12</td>
+<td>52</td>
+</tr>
+<tr>
+<td>No higher ed</td>
+<td>8</td>
+<td>15</td>
+<td>8</td>
+<td>31</td>
+</tr>
+<tr>
+<td><strong>Column Total</strong></td>
+<td><strong>150</strong></td>
+<td><strong>170</strong></td>
+<td><strong>150</strong></td>
+<td><strong>470</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hypotheses-for-homogeneity">Hypotheses for Homogeneity</h3>
+<ul>
+<li><strong>H₀</strong>: The distribution of [response variable] is the same across all [populations]</li>
+<li><strong>Hₐ</strong>: The distribution of [response variable] is NOT the same across all [populations]</li>
+</ul>
+<p>For our example:
+- <strong>H₀</strong>: The distribution of educational plans is the same for students at all three schools
+- <strong>Hₐ</strong>: The distribution of educational plans differs among the three schools</p>
+<h3 id="calculating-expected-counts">Calculating Expected Counts</h3>
+<p>For each cell in a two-way table:</p>
+<div class="arithmatex">\[
+E = \frac{(\text{row total}) \times (\text{column total})}{\text{grand total}}
+\]</div>
+<p>This formula works because under the null hypothesis (same distribution for all groups), the expected proportion in each row should be the same for every column.</p>
+<p>For the "4-year college, School A" cell:</p>
+<div class="arithmatex">\[
+E = \frac{248 \times 150}{470} = 79.15
+\]</div>
+<h3 id="degrees-of-freedom-for-two-way-tables">Degrees of Freedom for Two-Way Tables</h3>
+<div class="arithmatex">\[
+\text{df} = (\text{rows} - 1) \times (\text{columns} - 1)
+\]</div>
+<p>For our table with 4 rows and 3 columns: df = (4 - 1)(3 - 1) = 3 × 2 = 6</p>
+<h2 id="part-7-tests-for-independence">Part 7: Tests for Independence</h2>
+<p>The <strong>test for independence</strong> looks superficially similar to the homogeneity test—it also uses a two-way table and the same chi-square formula. However, there's a crucial conceptual difference:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Homogeneity Test</th>
+<th>Independence Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sampling</td>
+<td>Separate samples from each population</td>
+<td>One sample, two variables measured</td>
+</tr>
+<tr>
+<td>Question</td>
+<td>Same distribution across groups?</td>
+<td>Are the two variables related?</td>
+</tr>
+<tr>
+<td>Design</td>
+<td>Compare predetermined groups</td>
+<td>Explore relationship</td>
+</tr>
+</tbody>
+</table>
+<h3 id="independence-setup">Independence Setup</h3>
+<p>For an independence test, we take ONE random sample and measure TWO categorical variables on each subject. We then test whether these variables are associated or independent.</p>
+<p>For example, surveying 500 randomly selected adults about:
+- Their exercise frequency (daily, weekly, rarely, never)
+- Their self-reported stress level (low, moderate, high)</p>
+<h3 id="hypotheses-for-independence">Hypotheses for Independence</h3>
+<ul>
+<li><strong>H₀</strong>: There is no association between [Variable 1] and [Variable 2] in the population (the variables are independent)</li>
+<li><strong>Hₐ</strong>: There is an association between [Variable 1] and [Variable 2] in the population</li>
+</ul>
+<p>For our example:
+- <strong>H₀</strong>: Exercise frequency and stress level are independent
+- <strong>Hₐ</strong>: Exercise frequency and stress level are associated</p>
+<p>The calculations for expected counts, chi-square statistic, and degrees of freedom are identical to the homogeneity test. The interpretation, however, focuses on association rather than comparing distributions.</p>
+<h4 id="diagram-homogeneity-vs-independence-comparison">Diagram: Homogeneity vs Independence Comparison</h4>
+<iframe src="../../sims/homogeneity-vs-independence/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Comparing Homogeneity and Independence Tests</summary>
+<p>Type: infographic</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Differentiate, distinguish</p>
+<p>Learning Objective: Students will distinguish between tests for homogeneity and tests for independence by comparing their setups, hypotheses, and interpretations.</p>
+<p>Purpose: Help students understand when to use each test type based on study design</p>
+<p>Layout: Side-by-side comparison with interactive elements</p>
+<p>Left Panel - Homogeneity:
+- Visual: Multiple groups shown as separate boxes, each sampled independently
+- Arrow pointing to same categorical variable measured in each
+- Example: "3 schools, asking each about college plans"
+- Key phrase: "Same distribution across groups?"</p>
+<p>Right Panel - Independence:
+- Visual: One population box, two variables branching out
+- Shows single sample with two questions asked
+- Example: "One sample, asking about exercise AND stress"
+- Key phrase: "Are variables associated?"</p>
+<p>Interactive Elements:
+- Hover over each element for detailed explanations
+- Click examples to see hypothesis statements
+- Toggle between visual and text descriptions
+- Quiz mode: Given a scenario, identify which test applies</p>
+<p>Color Coding:
+- Blue: Homogeneity test elements
+- Green: Independence test elements
+- Orange: Shared elements (chi-square formula, expected count formula)</p>
+<p>Implementation: HTML/CSS/JavaScript with hover interactions</p>
+</details>
+<h2 id="part-8-chi-square-conclusions">Part 8: Chi-Square Conclusions</h2>
+<p>Regardless of which chi-square test you're performing, the conclusion follows the same pattern. Let's walk through how to draw and communicate your conclusions effectively.</p>
+<h3 id="the-four-step-process">The Four-Step Process</h3>
+<ol>
+<li><strong>State the test and check conditions</strong></li>
+<li>Identify: "I will perform a chi-square test for [GOF/homogeneity/independence]"</li>
+<li>
+<p>Verify: Random, Independent, Large Counts (all expected ≥ 5)</p>
+</li>
+<li>
+<p><strong>Calculate the test statistic and p-value</strong></p>
+</li>
+<li>Compute all expected counts</li>
+<li>Calculate <span class="arithmatex">\(\chi^2 = \sum \frac{(O-E)^2}{E}\)</span></li>
+<li>
+<p>Find p-value using df = (k-1) for GOF or df = (r-1)(c-1) for two-way tables</p>
+</li>
+<li>
+<p><strong>Make a decision</strong></p>
+</li>
+<li>If p-value ≤ α: Reject H₀</li>
+<li>
+<p>If p-value &gt; α: Fail to reject H₀</p>
+</li>
+<li>
+<p><strong>State conclusion in context</strong></p>
+</li>
+<li>Use language appropriate to your decision</li>
+<li>Connect back to the original question</li>
+<li>Mention practical implications if relevant</li>
+</ol>
+<h3 id="template-conclusions">Template Conclusions</h3>
+<p><strong>When rejecting H₀ (significant result):</strong></p>
+<blockquote>
+<p>"Because the p-value of [p-value] is less than α = [significance level], we reject the null hypothesis. We have convincing evidence that [restate Hₐ in context]."</p>
+</blockquote>
+<p><strong>When failing to reject H₀:</strong></p>
+<blockquote>
+<p>"Because the p-value of [p-value] is greater than α = [significance level], we fail to reject the null hypothesis. We do not have convincing evidence that [restate Hₐ in context]."</p>
+</blockquote>
+<h3 id="follow-up-analysis">Follow-Up Analysis</h3>
+<p>When you reject H₀ in a chi-square test, it's often helpful to examine which categories contributed most to the chi-square statistic. Calculate the individual components <span class="arithmatex">\(\frac{(O-E)^2}{E}\)</span> and identify the largest contributors—these indicate where the observed data departed most dramatically from expectations.</p>
+<div class="admonition note">
+<p class="admonition-title">Acorn for Your Thoughts</p>
+<p>Sylvia reminds you: "A significant chi-square result tells you THAT something differs, but not exactly WHAT or WHY. Always follow up with exploratory analysis to understand the nature of the difference!"</p>
+</div>
+<h2 id="part-9-inference-for-regression-slope">Part 9: Inference for Regression Slope</h2>
+<p>Now we shift gears from categorical data to regression. In Chapter 7, you learned how to find the least-squares regression line <span class="arithmatex">\(\hat{y} = a + bx\)</span>. But how do we know if the slope <span class="arithmatex">\(b\)</span> we calculated reflects a real relationship in the population, or if it could have occurred by chance?</p>
+<p><strong>Inference for slope</strong> answers this question by constructing confidence intervals and hypothesis tests for the population slope parameter <span class="arithmatex">\(\beta\)</span>.</p>
+<h3 id="the-regression-model">The Regression Model</h3>
+<p>When we perform inference for regression, we assume the following model:</p>
+<div class="arithmatex">\[
+y = \alpha + \beta x + \varepsilon
+\]</div>
+<p>where:
+- <span class="arithmatex">\(\alpha\)</span> = population y-intercept
+- <span class="arithmatex">\(\beta\)</span> = population slope (the true slope we're trying to estimate)
+- <span class="arithmatex">\(\varepsilon\)</span> = random error term (normally distributed with mean 0)</p>
+<p>Our sample statistics <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are estimates of the population parameters <span class="arithmatex">\(\alpha\)</span> and <span class="arithmatex">\(\beta\)</span>.</p>
+<h3 id="why-test-the-slope">Why Test the Slope?</h3>
+<p>The slope <span class="arithmatex">\(b\)</span> tells us how much y changes, on average, for each one-unit increase in x. If <span class="arithmatex">\(\beta = 0\)</span>, that means x has no linear relationship with y—knowing x tells us nothing about y. So our typical hypotheses are:</p>
+<ul>
+<li><strong>H₀</strong>: <span class="arithmatex">\(\beta = 0\)</span> (no linear relationship)</li>
+<li><strong>Hₐ</strong>: <span class="arithmatex">\(\beta \neq 0\)</span> (there IS a linear relationship)</li>
+</ul>
+<p>We can also test one-sided alternatives (<span class="arithmatex">\(\beta &gt; 0\)</span> or <span class="arithmatex">\(\beta &lt; 0\)</span>) when we have directional predictions.</p>
+<h4 id="diagram-sample-slope-variability">Diagram: Sample Slope Variability</h4>
+<iframe src="../../sims/slope-sampling-distribution/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Visualizing Sampling Distribution of the Slope</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain, interpret</p>
+<p>Learning Objective: Students will understand that the sample slope varies from sample to sample and follows a t-distribution under repeated sampling.</p>
+<p>Instructional Rationale: Seeing multiple samples and their regression lines helps students viscerally understand sampling variability and why we need inference procedures.</p>
+<p>Data Visibility Requirements:
+- Stage 1: Show population regression line (true slope β)
+- Stage 2: Draw one random sample, show sample regression line
+- Stage 3: Record sample slope b
+- Stage 4: Repeat many times, build histogram of sample slopes
+- Stage 5: Show t-distribution overlay on histogram</p>
+<p>Visual Elements:
+- Left panel: Scatterplot with population line and current sample
+- Right panel: Histogram of sample slopes accumulating
+- Display: Current sample slope, mean of sample slopes, SE of sample slopes
+- True population slope marked on histogram</p>
+<p>Interactive Controls:
+- Button: "Take One Sample"
+- Button: "Take 100 Samples"
+- Slider: Sample size (10 to 100)
+- Slider: Population slope (-2 to 2)
+- Slider: Error standard deviation (affects scatter)
+- Button: "Reset"</p>
+<p>Canvas Layout:
+- Split view: Scatterplot (left), Histogram (right)
+- Controls at bottom
+- Statistics display at top</p>
+<p>Default Parameters:
+- Sample size: 30
+- Population slope: 0.5
+- Error SD: 2</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="part-10-conditions-for-regression-inference">Part 10: Conditions for Regression Inference</h2>
+<p>Before performing inference on the slope, we must verify four important conditions, often remembered by the acronym <strong>LINE</strong>:</p>
+<h3 id="l-linearity-condition">L - Linearity Condition</h3>
+<p>The relationship between x and y must be linear in the population.</p>
+<p><strong>How to check</strong>: Create a residual plot (residuals vs. x or residuals vs. predicted values). If the relationship is linear, the residuals should scatter randomly around zero with no curved pattern.</p>
+<h3 id="i-independence-condition">I - Independence Condition</h3>
+<p>The observations must be independent of each other.</p>
+<p><strong>How to check</strong>:
+- Know how the data was collected (random sampling or experiment)
+- For time series data, check for patterns in residuals over time
+- When sampling without replacement, verify the 10% condition</p>
+<h3 id="n-normality-of-residuals">N - Normality of Residuals</h3>
+<p>For any given value of x, the y-values should be normally distributed around the regression line.</p>
+<p><strong>How to check</strong>:
+- Create a histogram or normal probability plot of the residuals
+- Look for roughly symmetric, bell-shaped distribution
+- This condition is less critical with larger sample sizes (n ≥ 30) due to the Central Limit Theorem</p>
+<h3 id="e-equal-variance-condition">E - Equal Variance Condition</h3>
+<p>The standard deviation of y should be the same for all values of x (also called homoscedasticity).</p>
+<p><strong>How to check</strong>: In the residual plot, look for consistent vertical spread. Watch out for "fan shapes" or "megaphones" where spread increases or decreases across the x-axis.</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>What to Check</th>
+<th>Red Flags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linearity</td>
+<td>Residual plot</td>
+<td>Curved pattern</td>
+</tr>
+<tr>
+<td>Independence</td>
+<td>Data collection method</td>
+<td>Time order patterns</td>
+</tr>
+<tr>
+<td>Normality</td>
+<td>Histogram of residuals</td>
+<td>Strong skewness, outliers</td>
+</tr>
+<tr>
+<td>Equal Variance</td>
+<td>Residual plot spread</td>
+<td>Fan or megaphone shape</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-checking-regression-conditions">Diagram: Checking Regression Conditions</h4>
+<iframe src="../../sims/regression-conditions-checker/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Interactive Regression Conditions Checker</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Evaluate (L5)
+Bloom Verb: Assess, judge</p>
+<p>Learning Objective: Students will evaluate whether regression conditions are met by analyzing residual plots and histograms, identifying violations.</p>
+<p>Instructional Rationale: Learning to "read" residual plots is a critical skill. This simulator shows good and problematic patterns with immediate classification feedback.</p>
+<p>Visual Elements:
+- Main scatterplot with regression line
+- Residual plot (residuals vs x)
+- Histogram of residuals
+- Normal probability plot of residuals
+- Checklist of conditions with pass/fail indicators</p>
+<p>Interactive Controls:
+- Dropdown: Select scenario type
+  - "Linear relationship, conditions met"
+  - "Curved relationship (nonlinear)"
+  - "Increasing variance (fan shape)"
+  - "Non-normal residuals (skewed)"
+  - "Outliers present"
+  - "Random scatter (good)"
+- Button: "Generate New Data" for selected scenario
+- Checkboxes: Student self-assessment for each condition
+- Button: "Check My Answers"</p>
+<p>Scenario Data:
+Each scenario generates data with specific properties
+- Good: Random normal errors, constant variance
+- Curved: Quadratic relationship
+- Fan: SD proportional to x
+- Skewed: Chi-square errors
+- Outliers: Normal plus 2-3 extreme points</p>
+<p>Canvas Layout:
+- 2x2 grid of diagnostic plots
+- Condition checklist on right side
+- Scenario selector at top</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="part-11-t-test-for-slope">Part 11: T-Test for Slope</h2>
+<p>When conditions are met, we use a <strong>t-test for the slope</strong> to test hypotheses about <span class="arithmatex">\(\beta\)</span>.</p>
+<h3 id="the-test-statistic">The Test Statistic</h3>
+<div class="arithmatex">\[
+t = \frac{b - \beta_0}{SE_b}
+\]</div>
+<p>where:
+- <span class="arithmatex">\(b\)</span> = sample slope (from regression output)
+- <span class="arithmatex">\(\beta_0\)</span> = hypothesized slope (usually 0)
+- <span class="arithmatex">\(SE_b\)</span> = standard error of the slope (from regression output)</p>
+<p>This follows a t-distribution with <strong>df = n - 2</strong> (we subtract 2 because we estimated two parameters: the slope and intercept).</p>
+<h3 id="reading-computer-output">Reading Computer Output</h3>
+<p>Most calculators and software provide the standard error of the slope and often the t-statistic and p-value directly. Here's what typical regression output looks like:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Predictor    Coef     SE Coef    T        P
+Constant    12.43     1.87       6.65    0.000
+Hours        2.31     0.42       5.50    0.000
+
+S = 4.125   R-sq = 73.2%   R-sq(adj) = 71.8%
+</code></pre></div></td></tr></table></div>
+<p>From this output:
+- Sample slope <span class="arithmatex">\(b = 2.31\)</span>
+- Standard error <span class="arithmatex">\(SE_b = 0.42\)</span>
+- t-statistic = 5.50
+- p-value ≈ 0.000 (very small)</p>
+<h3 id="completing-the-t-test">Completing the T-Test</h3>
+<p><strong>Example</strong>: A researcher wants to know if study hours predict exam scores.</p>
+<p><strong>Hypotheses</strong>:
+- H₀: <span class="arithmatex">\(\beta = 0\)</span> (study hours have no linear relationship with exam scores)
+- Hₐ: <span class="arithmatex">\(\beta \neq 0\)</span> (study hours have a linear relationship with exam scores)</p>
+<p><strong>From output</strong>: t = 5.50, p-value ≈ 0.000</p>
+<p><strong>Conclusion</strong>: Because the p-value is essentially 0 (much less than α = 0.05), we reject H₀. We have very strong evidence that there is a linear relationship between study hours and exam scores.</p>
+<h2 id="part-12-t-interval-for-slope">Part 12: T-Interval for Slope</h2>
+<p>We can also construct a <strong>confidence interval for the slope</strong> to estimate the range of plausible values for <span class="arithmatex">\(\beta\)</span>.</p>
+<h3 id="the-formula">The Formula</h3>
+<div class="arithmatex">\[
+b \pm t^* \times SE_b
+\]</div>
+<p>where:
+- <span class="arithmatex">\(b\)</span> = sample slope
+- <span class="arithmatex">\(t^*\)</span> = critical t-value for desired confidence level with df = n - 2
+- <span class="arithmatex">\(SE_b\)</span> = standard error of the slope</p>
+<h3 id="interpreting-the-interval">Interpreting the Interval</h3>
+<p>Using our study hours example with b = 2.31, SE_b = 0.42, and n = 25:</p>
+<p>For a 95% confidence interval with df = 23:
+- <span class="arithmatex">\(t^* = 2.069\)</span>
+- Interval: <span class="arithmatex">\(2.31 \pm 2.069(0.42) = 2.31 \pm 0.87 = (1.44, 3.18)\)</span></p>
+<p><strong>Interpretation</strong>: We are 95% confident that the true slope of the population regression line is between 1.44 and 3.18. This means we're 95% confident that each additional hour of studying is associated with an increase of between 1.44 and 3.18 points on the exam, on average.</p>
+<h3 id="confidence-interval-vs-hypothesis-test">Confidence Interval vs. Hypothesis Test</h3>
+<p>Notice that our 95% confidence interval (1.44, 3.18) does not contain 0. This is consistent with rejecting H₀: <span class="arithmatex">\(\beta = 0\)</span> at α = 0.05. In fact:</p>
+<ul>
+<li>If the CI does NOT contain 0 → Reject H₀ at the corresponding α</li>
+<li>If the CI DOES contain 0 → Fail to reject H₀</li>
+</ul>
+<p>This provides a nice connection between the two inference methods!</p>
+<h4 id="diagram-confidence-interval-for-slope-visualization">Diagram: Confidence Interval for Slope Visualization</h4>
+<iframe src="../../sims/slope-confidence-interval/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Building Confidence Intervals for Slope</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Calculate, construct</p>
+<p>Learning Objective: Students will construct and interpret confidence intervals for the regression slope, understanding how sample size and confidence level affect interval width.</p>
+<p>Instructional Rationale: Manipulating parameters and seeing immediate visual feedback helps students understand the relationships between sample size, confidence level, and interval precision.</p>
+<p>Visual Elements:
+- Scatterplot with regression line
+- "Plausible slopes" shown as a band of possible regression lines
+- Number line below showing confidence interval
+- Marker at 0 on number line (for hypothesis test connection)
+- Display of interval bounds and width</p>
+<p>Interactive Controls:
+- Slider: Sample size (10 to 200)
+- Dropdown: Confidence level (90%, 95%, 99%)
+- Slider: True population slope (for simulation)
+- Button: "Generate New Sample"
+- Button: "Take 100 Samples" (shows coverage)
+- Checkbox: Show individual intervals from repeated sampling</p>
+<p>Data Visibility:
+- Sample slope b
+- Standard error SE_b
+- Critical value t*
+- Margin of error
+- Final interval</p>
+<p>Canvas Layout:
+- Top: Scatterplot with regression line band
+- Bottom: Number line with interval
+- Right panel: Calculations shown step by step</p>
+<p>Default Parameters:
+- Sample size: 30
+- Confidence level: 95%
+- Population slope: 2</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h2 id="part-13-putting-it-all-together">Part 13: Putting It All Together</h2>
+<p>Let's work through a complete example that ties together everything we've learned about regression inference.</p>
+<h3 id="complete-regression-inference-example">Complete Regression Inference Example</h3>
+<p><strong>Context</strong>: A coffee shop owner collects data on daily temperature (°F) and number of iced drinks sold. She wants to know if temperature is a useful predictor of iced drink sales.</p>
+<p><strong>Data Summary</strong> (n = 40 days):
+- Sample slope: b = 3.2 drinks per degree
+- Sample intercept: a = -85
+- Standard error of slope: SE_b = 0.58
+- R² = 0.67</p>
+<p><strong>Step 1: Check Conditions</strong></p>
+<p><em>Linearity</em>: Residual plot shows random scatter around zero—no curved pattern. ✓</p>
+<p><em>Independence</em>: Data collected on 40 randomly selected days over 6 months. The 10% condition is satisfied (40 &lt; 10% of all days). ✓</p>
+<p><em>Normality</em>: Histogram of residuals is approximately bell-shaped and symmetric. ✓</p>
+<p><em>Equal Variance</em>: Residual plot shows consistent spread across all temperature values. ✓</p>
+<p>All conditions for regression inference are met.</p>
+<p><strong>Step 2: State Hypotheses</strong></p>
+<ul>
+<li>H₀: <span class="arithmatex">\(\beta = 0\)</span> (Temperature has no linear relationship with iced drink sales)</li>
+<li>Hₐ: <span class="arithmatex">\(\beta &gt; 0\)</span> (Higher temperatures are associated with more iced drink sales)</li>
+</ul>
+<p>Note: We use a one-sided test because the owner has a clear directional prediction.</p>
+<p><strong>Step 3: Calculate Test Statistic</strong></p>
+<div class="arithmatex">\[
+t = \frac{b - 0}{SE_b} = \frac{3.2 - 0}{0.58} = 5.52
+\]</div>
+<p>With df = 40 - 2 = 38</p>
+<p><strong>Step 4: Find P-Value</strong></p>
+<p>Using technology: P(t &gt; 5.52 | df = 38) ≈ 0.0000015</p>
+<p><strong>Step 5: Conclusion</strong></p>
+<p>Because the p-value (≈ 0.0000015) is much less than α = 0.05, we reject H₀. We have very strong evidence that higher temperatures are associated with increased iced drink sales.</p>
+<p><strong>Step 6: Confidence Interval</strong></p>
+<p>For a 95% CI with df = 38, t* ≈ 2.024:</p>
+<div class="arithmatex">\[
+3.2 \pm 2.024(0.58) = 3.2 \pm 1.17 = (2.03, 4.37)
+\]</div>
+<p>We are 95% confident that for each 1°F increase in temperature, the average number of iced drinks sold increases by between 2.03 and 4.37 drinks.</p>
+<h2 id="chapter-summary-key-takeaways">Chapter Summary: Key Takeaways</h2>
+<p>Let's squirrel away the essential knowledge from this chapter!</p>
+<h3 id="chi-square-tests">Chi-Square Tests</h3>
+<table>
+<thead>
+<tr>
+<th>Test Type</th>
+<th>Purpose</th>
+<th>Hypotheses</th>
+<th>df</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Goodness-of-Fit</td>
+<td>Does data match claimed distribution?</td>
+<td>H₀: Distribution matches</td>
+<td>k - 1</td>
+</tr>
+<tr>
+<td>Homogeneity</td>
+<td>Same distribution across groups?</td>
+<td>H₀: Same distribution</td>
+<td>(r-1)(c-1)</td>
+</tr>
+<tr>
+<td>Independence</td>
+<td>Are two variables associated?</td>
+<td>H₀: Variables independent</td>
+<td>(r-1)(c-1)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Chi-Square Formula</strong>:
+[
+\chi^2 = \sum \frac{(O - E)^2}{E}
+]</p>
+<p><strong>Conditions</strong>: Random, Independent, Large Counts (all expected ≥ 5)</p>
+<h3 id="regression-inference">Regression Inference</h3>
+<p><strong>Conditions (LINE)</strong>:
+- <strong>L</strong>inearity: Check residual plot for no pattern
+- <strong>I</strong>ndependence: Random sample, 10% condition
+- <strong>N</strong>ormality: Residuals approximately normal
+- <strong>E</strong>qual variance: Consistent spread in residual plot</p>
+<p><strong>T-Test for Slope</strong>:
+[
+t = \frac{b - \beta_0}{SE_b}, \quad df = n - 2
+]</p>
+<p><strong>Confidence Interval for Slope</strong>:
+[
+b \pm t^* \times SE_b
+]</p>
+<div class="admonition success">
+<p class="admonition-title">You Did It!</p>
+<p>Congratulations! You've now mastered two of the most powerful tools in inferential statistics. Chi-square tests let you work with categorical data in ways that weren't possible before, and regression inference lets you make formal claims about relationships between quantitative variables. As Sylvia would say, "That's a data point worth collecting!"</p>
+</div>
+<h2 id="practice-problems">Practice Problems</h2>
+<p>Test your understanding with these practice scenarios:</p>
+<details class="question">
+<summary>Practice 1: M&amp;M Colors</summary>
+<p>A student counts 52 brown, 23 red, 20 yellow, 18 orange, 18 blue, and 19 green M&amp;Ms in a large bag. The company claims the percentages should be 13% brown, 13% red, 14% yellow, 20% orange, 24% blue, and 16% green. Is there evidence that the distribution differs from the company's claim?</p>
+<p><strong>Solution</strong>: This is a goodness-of-fit test. Calculate expected counts (n = 150), compute chi-square, find p-value with df = 5. The chi-square statistic is approximately 25.8, giving a p-value &lt; 0.001. Reject H₀—there is convincing evidence the distribution differs from the claim.</p>
+</details>
+<details class="question">
+<summary>Practice 2: Study Design</summary>
+<p>Researchers survey 400 randomly selected adults, asking about their education level (high school, some college, bachelor's, graduate) and their primary news source (TV, online, print, social media). They want to know if education level and news source preference are related.</p>
+<p>Which test should they use: homogeneity or independence?</p>
+<p><strong>Solution</strong>: This is a test for independence. There is ONE sample of 400 adults, and TWO categorical variables (education level and news source) are measured on each person. A homogeneity test would require separate samples from each education level.</p>
+</details>
+<details class="question">
+<summary>Practice 3: Regression Conditions</summary>
+<p>A residual plot shows that residuals have larger spread for larger x-values (a "megaphone" shape). Which condition is violated, and what are the implications?</p>
+<p><strong>Solution</strong>: The Equal Variance (homoscedasticity) condition is violated. This means the standard error of the slope may be incorrect, making our t-tests and confidence intervals unreliable. Consider transforming the response variable (like taking a log) or using weighted least squares regression.</p>
+</details>
+<hr />
+<p><em>"Time to squirrel away this knowledge! You've learned some incredibly powerful tools in this chapter. Chi-square tests and regression inference will serve you well on the AP exam and beyond. Remember: always check your conditions, interpret your results in context, and never let the math obscure the meaning of your analysis."</em> —Sylvia</p>
 
 
 

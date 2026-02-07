@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP statistics designed for college credit.">
+        <meta name="description" content="Learn how to design experiments that can establish cause-and-effect relationships through control, randomization, replication, and blinding">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>12. Experimental Design - AP Statistics</title>
+        <title>Experimental Design - AP Statistics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="12. Experimental Design - AP Statistics" >
+        <meta  property="og:title"  content="Experimental Design - AP Statistics" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  property="og:description"  content="Learn how to design experiments that can establish cause-and-effect relationships through control, randomization, replication, and blinding" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/12-experimental-design/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="12. Experimental Design - AP Statistics" >
+        <meta  name="twitter:title"  content="Experimental Design - AP Statistics" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  name="twitter:description"  content="Learn how to design experiments that can establish cause-and-effect relationships through control, randomization, replication, and blinding" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/12-experimental-design/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              12. Experimental Design
+              Experimental Design
             
           </span>
         </div>
@@ -749,6 +749,459 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-from-observation-to-experimentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: From Observation to Experimentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-language-of-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Language of Experiments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Language of Experiments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experimental-units-and-subjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experimental Units and Subjects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treatments-factors-and-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Treatments, Factors, and Levels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Treatments, Factors, and Levels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-factors-and-levels-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Factors and Levels Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-placebo-effect-why-we-need-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Placebo Effect: Why We Need Controls
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Placebo Effect: Why We Need Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#control-groups-the-foundation-of-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control Groups: The Foundation of Comparison
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Control Groups: The Foundation of Comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-treatment-vs-control-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Treatment vs Control Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-principles-of-good-experimental-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Principles of Good Experimental Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Principles of Good Experimental Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principle-1-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principle 1: Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principle-2-random-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principle 2: Random Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-randomize" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Randomize?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principle-3-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principle 3: Replication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Principle 3: Replication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-principles-of-experimental-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three Principles of Experimental Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blinding-protecting-against-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blinding: Protecting Against Bias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Blinding: Protecting Against Bias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-blind-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Single-Blind Experiments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#double-blind-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Double-Blind Experiments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Double-Blind Experiments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-blinding-comparison-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Blinding Comparison Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-experimental-designs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Experimental Designs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Experimental Designs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#completely-randomized-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completely Randomized Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomized-block-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomized Block Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matched-pairs-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matched Pairs Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matched Pairs Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-experimental-design-types-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Experimental Design Types Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-designing-an-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Designing an Experiment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Designing an Experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-identify-the-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Identify the Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-choose-a-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Choose a Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-apply-the-three-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Apply the Three Principles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-consider-blinding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Consider Blinding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-collect-data-and-analyze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Collect Data and Analyze
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Collect Data and Analyze">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-experiment-planning-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Experiment Planning Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls-in-experimental-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Pitfalls in Experimental Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Pitfalls in Experimental Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-1-confusing-random-sampling-and-random-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 1: Confusing Random Sampling and Random Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-2-inadequate-control-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 2: Inadequate Control Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-3-insufficient-sample-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 3: Insufficient Sample Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-4-ignoring-confounding-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 4: Ignoring Confounding Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-5-demand-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 5: Demand Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-research-critically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Research Critically
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ap-exam-focus-describing-experimental-designs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AP Exam Focus: Describing Experimental Designs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AP Exam Focus: Describing Experimental Designs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-random-assignment-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Random Assignment Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1005,6 +1458,70 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -1097,6 +1614,8 @@
       
         
           
+        
+      
         
       
         
@@ -1317,6 +1836,459 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-from-observation-to-experimentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: From Observation to Experimentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-language-of-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Language of Experiments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Language of Experiments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#experimental-units-and-subjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experimental Units and Subjects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treatments-factors-and-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Treatments, Factors, and Levels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Treatments, Factors, and Levels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-factors-and-levels-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Factors and Levels Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-placebo-effect-why-we-need-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Placebo Effect: Why We Need Controls
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Placebo Effect: Why We Need Controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#control-groups-the-foundation-of-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control Groups: The Foundation of Comparison
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Control Groups: The Foundation of Comparison">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-treatment-vs-control-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Treatment vs Control Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-principles-of-good-experimental-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Principles of Good Experimental Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Principles of Good Experimental Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principle-1-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principle 1: Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principle-2-random-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principle 2: Random Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-randomize" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Randomize?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#principle-3-replication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principle 3: Replication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Principle 3: Replication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-principles-of-experimental-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three Principles of Experimental Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blinding-protecting-against-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blinding: Protecting Against Bias
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Blinding: Protecting Against Bias">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-blind-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Single-Blind Experiments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#double-blind-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Double-Blind Experiments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Double-Blind Experiments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-blinding-comparison-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Blinding Comparison Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-experimental-designs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Experimental Designs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Experimental Designs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#completely-randomized-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Completely Randomized Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#randomized-block-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Randomized Block Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matched-pairs-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matched Pairs Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matched Pairs Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-experimental-design-types-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Experimental Design Types Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-designing-an-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Designing an Experiment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Designing an Experiment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-identify-the-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Identify the Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-choose-a-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Choose a Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-apply-the-three-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Apply the Three Principles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-consider-blinding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Consider Blinding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-collect-data-and-analyze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Collect Data and Analyze
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Collect Data and Analyze">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-experiment-planning-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Experiment Planning Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls-in-experimental-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Pitfalls in Experimental Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Pitfalls in Experimental Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-1-confusing-random-sampling-and-random-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 1: Confusing Random Sampling and Random Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-2-inadequate-control-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 2: Inadequate Control Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-3-insufficient-sample-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 3: Insufficient Sample Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-4-ignoring-confounding-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 4: Ignoring Confounding Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitfall-5-demand-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pitfall 5: Demand Characteristics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-research-critically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Research Critically
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ap-exam-focus-describing-experimental-designs" class="md-nav__link">
+    <span class="md-ellipsis">
+      AP Exam Focus: Describing Experimental Designs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AP Exam Focus: Describing Experimental Designs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-random-assignment-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Random Assignment Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1372,7 +2344,795 @@
 <li><a href="../11-sampling-and-bias/">Chapter 11: Sampling and Bias</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-from-observation-to-experimentation">Introduction: From Observation to Experimentation</h2>
+<p>Welcome back! In earlier chapters, you learned the difference between observational studies and experiments. You discovered that while observational studies can reveal fascinating associations in data, they can't tell us that one thing <em>causes</em> another. That's where experiments come in.</p>
+<p>"Alright, here's where things get really exciting," Sylvia says, adjusting her glasses. "Experiments are how we actually prove cause and effect. It's like being a detective, but with data instead of magnifying glasses. Well, okay, sometimes we use magnifying glasses too."</p>
+<p>Think about it this way: if you notice that students who eat breakfast tend to get better grades, you might wonder whether eating breakfast <em>causes</em> better academic performance. But wait, maybe students who eat breakfast also come from families that emphasize education, or maybe they go to bed earlier, or maybe they're just morning people. These are all <strong>confounding variables</strong> that could explain the relationship without breakfast being the actual cause.</p>
+<p>The only way to truly establish that breakfast causes better grades is to run an experiment. And in this chapter, you're going to learn exactly how to do that.</p>
+<h2 id="the-language-of-experiments">The Language of Experiments</h2>
+<p>Before we dive into experimental design, we need to establish some vocabulary. Every field has its own special terms, and experimental design is no exception. Don't worry though; these terms are pretty intuitive once you see them in action.</p>
+<h3 id="experimental-units-and-subjects">Experimental Units and Subjects</h3>
+<p>An <strong>experimental unit</strong> is the smallest entity to which a treatment is applied. Think of it as the "thing" you're experimenting on. When we're studying people, we typically call experimental units <strong>subjects</strong> or <strong>participants</strong>. But experimental units don't have to be people.</p>
+<p>Here are some examples of experimental units:</p>
+<table>
+<thead>
+<tr>
+<th>Study Focus</th>
+<th>Experimental Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Drug effectiveness</td>
+<td>Individual patients</td>
+</tr>
+<tr>
+<td>Fertilizer impact</td>
+<td>Plots of land</td>
+</tr>
+<tr>
+<td>Teaching method</td>
+<td>Classroom sections</td>
+</tr>
+<tr>
+<td>Battery life</td>
+<td>Individual batteries</td>
+</tr>
+<tr>
+<td>Website design</td>
+<td>Website visitors</td>
+</tr>
+</tbody>
+</table>
+<p>"I once ran an experiment on acorn storage methods," Sylvia notes. "Each storage container was an experimental unit. Not a single acorn was harmed in the making of that study. Well, maybe one got eaten during a data collection break."</p>
+<h3 id="treatments-factors-and-levels">Treatments, Factors, and Levels</h3>
+<p>A <strong>treatment</strong> is the specific experimental condition applied to an experimental unit. It's what we're testing. But here's where it gets interesting: treatments are made up of <strong>factors</strong> and <strong>levels</strong>.</p>
+<p>A <strong>factor</strong> is an explanatory variable whose effect on the response we want to study. The specific values or categories of a factor are called <strong>levels</strong>. When you combine different levels of different factors, you create treatments.</p>
+<p>Let's make this concrete with an example. Suppose you're studying how different study techniques and study durations affect test performance.</p>
+<ul>
+<li><strong>Factor 1:</strong> Study technique (levels: flashcards, practice problems, reading notes)</li>
+<li><strong>Factor 2:</strong> Study duration (levels: 30 minutes, 60 minutes)</li>
+</ul>
+<p>Each combination of levels creates a different treatment:</p>
+<table>
+<thead>
+<tr>
+<th>Treatment</th>
+<th>Study Technique</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Flashcards</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Flashcards</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Practice problems</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Practice problems</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Reading notes</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Reading notes</td>
+<td>60 min</td>
+</tr>
+</tbody>
+</table>
+<p>That's 3 levels times 2 levels = 6 treatments total!</p>
+<h4 id="diagram-factors-and-levels-tree">Diagram: Factors and Levels Tree</h4>
+<iframe src="../../sims/factors-levels-tree/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Factors and Levels Tree Diagram</summary>
+<p>Type: diagram</p>
+<p>Purpose: Visualize how factors and levels combine to create treatments in a 2-factor experiment</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: classify, explain</p>
+<p>Learning Objective: Students will be able to explain how factors and levels combine to create distinct treatments in a multi-factor experiment.</p>
+<p>Components to show:
+- Root node: "Experiment: Study Methods"
+- First branch level: Factor 1 (Study Technique) with 3 levels as child nodes
+- Second branch level: Factor 2 (Duration) with 2 levels branching from each technique
+- Leaf nodes: The 6 resulting treatments, each showing the combination</p>
+<p>Visual Layout:
+- Hierarchical tree structure flowing left to right or top to bottom
+- Factor labels on connecting lines
+- Level labels in oval nodes
+- Treatment boxes at the bottom with treatment number and description</p>
+<p>Interactive features:
+- Hover over any treatment box to highlight the path (factors and levels) that created it
+- Click a treatment to see a description of what that experimental condition involves</p>
+<p>Color scheme:
+- Root node: Sylvia green (#2E7D32)
+- Factor 1 nodes: Light blue
+- Factor 2 nodes: Light orange
+- Treatment boxes: Sylvia auburn (#B5651D)</p>
+<p>Implementation: p5.js with interactive hover states
+Canvas size: Responsive, approximately 700x400px</p>
+</details>
+<h2 id="the-placebo-effect-why-we-need-controls">The Placebo Effect: Why We Need Controls</h2>
+<p>Here's a fascinating quirk of human psychology: sometimes people get better just because they <em>believe</em> they're receiving treatment, even when they're not receiving anything at all. This is called the <strong>placebo effect</strong>.</p>
+<p>A <strong>placebo</strong> is an inactive treatment that looks exactly like the real treatment. In drug studies, it might be a sugar pill that looks identical to the medication being tested. In other contexts, it might be a fake procedure or a dummy intervention.</p>
+<p>"The placebo effect is wild," Sylvia admits. "Imagine if I told you this acorn was a magic energy acorn and you actually felt more energetic. Your brain is incredibly powerful, for better or worse."</p>
+<p>The placebo effect is so powerful that it can produce real, measurable changes in people. Studies have shown that placebo treatments can reduce pain, improve mood, and even affect blood pressure. This is why simply giving people a treatment and watching them improve doesn't prove the treatment works; they might have improved just because they expected to.</p>
+<h3 id="control-groups-the-foundation-of-comparison">Control Groups: The Foundation of Comparison</h3>
+<p>This is why experiments need a <strong>control group</strong>. A control group is a group of experimental units that either receives no treatment, a placebo, or the standard existing treatment. The control group provides a baseline for <strong>comparison in experiments</strong>.</p>
+<p>Without a control group, you can't tell whether:</p>
+<ul>
+<li>The treatment actually caused the improvement</li>
+<li>The improvement was due to the placebo effect</li>
+<li>The improvement would have happened naturally over time</li>
+<li>Some other factor caused the change</li>
+</ul>
+<p>Consider this example: A company claims their new energy drink improves athletic performance because runners who drank it ran faster than before. But wait! Did they run faster because of the drink, or because:</p>
+<ul>
+<li>They had been training and were getting better anyway?</li>
+<li>They were more motivated because they thought the drink would help?</li>
+<li>Weather conditions were better on the second test day?</li>
+</ul>
+<p>A proper experiment would randomly assign runners to either receive the energy drink (treatment group) or a similar-looking drink without the active ingredients (control group). Then we could compare the two groups fairly.</p>
+<h4 id="diagram-treatment-vs-control-comparison">Diagram: Treatment vs Control Comparison</h4>
+<iframe src="../../sims/treatment-control-comparison/main.html" width="100%" height="400px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Treatment vs Control Group Comparison</summary>
+<p>Type: microsim</p>
+<p>Purpose: Demonstrate why control groups are necessary by showing the difference between comparing before/after within a group versus comparing treatment to control</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: explain, compare</p>
+<p>Learning Objective: Students will be able to explain why comparing treatment and control groups is more reliable than comparing before and after measurements within a single group.</p>
+<p>Data Visibility Requirements:
+  Stage 1: Show a single group's before scores (e.g., test scores around 70)
+  Stage 2: Show the same group's after scores (improved to around 78)
+  Stage 3: Reveal a parallel control group that also improved (from 70 to 76)
+  Stage 4: Show the true treatment effect is only 2 points (78-76), not 8 points</p>
+<p>Visual Elements:
+- Two parallel timelines (Treatment Group and Control Group)
+- Bar charts showing scores at each time point
+- Animated reveal of control group results
+- Calculation showing: True Effect = Treatment Improvement - Control Improvement</p>
+<p>Interactive Controls:
+- Button: "Step Through" to progress through stages
+- Button: "Reset" to start over
+- Toggle: "Show/Hide Confounds" to reveal factors like natural improvement, practice effects</p>
+<p>Instructional Rationale: Step-through with concrete data is appropriate because the Understand/explain objective requires learners to trace the logic of why control groups matter. Showing the reveal progressively helps students experience the "aha" moment.</p>
+<p>Implementation: p5.js with step-through controls
+Canvas size: Responsive, approximately 650x350px</p>
+</details>
+<h2 id="the-three-principles-of-good-experimental-design">The Three Principles of Good Experimental Design</h2>
+<p>Now we arrive at the heart of experimental design. There are three fundamental principles that make experiments valid and trustworthy: <strong>control</strong>, <strong>randomization</strong>, and <strong>replication</strong>. Think of them as the three legs of a stool; remove any one, and your experiment falls over.</p>
+<h3 id="principle-1-control">Principle 1: Control</h3>
+<p>Control means holding constant any extraneous variables that might affect the response. When we control for variables, we eliminate them as possible explanations for any differences we observe between treatment groups.</p>
+<p>For example, if you're testing whether a new teaching method improves math scores:</p>
+<ul>
+<li>Give both groups the same amount of instruction time</li>
+<li>Use the same classroom and testing conditions</li>
+<li>Administer tests at the same time of day</li>
+<li>Use the same instructor (or carefully match instructors)</li>
+</ul>
+<p>The only thing that should differ between groups is the treatment itself.</p>
+<h3 id="principle-2-random-assignment">Principle 2: Random Assignment</h3>
+<p><strong>Random assignment</strong> means using a chance mechanism to decide which experimental units receive which treatment. This is different from random sampling (which we covered in Chapter 11). Random sampling determines <em>who</em> is in your study; random assignment determines <em>what treatment</em> each participant receives.</p>
+<p>"Don't mix these up!" Sylvia warns, her tail twitching. "Random sampling helps you generalize to a population. Random assignment helps you establish causation. They're both important, but they do different jobs."</p>
+<p>Here's a quick comparison:</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Purpose</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Random Sampling</td>
+<td>Select representative participants</td>
+<td>Randomly choosing 200 students from all students in the district</td>
+</tr>
+<tr>
+<td>Random Assignment</td>
+<td>Distribute participants to treatment groups</td>
+<td>Randomly assigning those 200 students to treatment or control</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-randomize">Why Randomize?</h3>
+<p>So <strong>why randomize</strong>? Random assignment is powerful because it tends to balance out all variables across treatment groups, including ones you haven't even thought of! When you randomly assign, any differences between groups are due to chance rather than some systematic bias.</p>
+<p>Consider what could go wrong without random assignment. If you let students choose whether they want the new teaching method or the traditional one:</p>
+<ul>
+<li>More motivated students might choose the new method</li>
+<li>Students who struggle might avoid change</li>
+<li>Students with involved parents might be encouraged toward the "better" option</li>
+</ul>
+<p>Any of these factors could create systematic differences between groups that confound your results.</p>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia's Pro Tip</p>
+<p>Random assignment doesn't guarantee that groups are identical; it guarantees that any differences are due to chance. With large enough groups, these chance differences become very small. That's why replication (having many subjects) matters too!</p>
+</div>
+<h3 id="principle-3-replication">Principle 3: Replication</h3>
+<p><strong>Replication</strong> means having enough experimental units in each treatment group to detect real effects and to reduce the impact of individual variation. One data point proves nothing. Even two or three might be coincidence. But when you see the same pattern across dozens or hundreds of experimental units, you can be confident it's real.</p>
+<p>Replication reduces the impact of individual variability. Imagine testing a new fertilizer on just one plant. If that plant grows better, was it the fertilizer, or was that particular plant just healthier to begin with? But if you test 50 plants with fertilizer and 50 without, and the fertilized plants consistently grow better, the pattern is much more convincing.</p>
+<p>The more experimental units you have, the more likely you are to detect a true treatment effect if one exists. We'll learn more about this concept, called <strong>statistical power</strong>, in later chapters on hypothesis testing.</p>
+<h4 id="diagram-three-principles-of-experimental-design">Diagram: Three Principles of Experimental Design</h4>
+<iframe src="../../sims/three-principles-experiment/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Three Principles of Experimental Design Interactive</summary>
+<p>Type: infographic</p>
+<p>Purpose: Create an interactive visualization showing how control, randomization, and replication work together in experimental design</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: explain, summarize</p>
+<p>Learning Objective: Students will be able to summarize the three principles of good experimental design and explain the purpose of each.</p>
+<p>Visual Layout:
+- Three large circular or card-based sections arranged horizontally
+- Each section represents one principle: Control, Randomization, Replication
+- Center area shows a mini experimental setup that changes based on which principle is selected</p>
+<p>Content for each principle:
+1. Control section:
+   - Icon: Lock or equal sign
+   - Definition: "Hold variables constant"
+   - Visual: Side-by-side groups with identical conditions except treatment
+   - Hover reveals: List of variables to control (time, location, instructions, etc.)</p>
+<ol>
+<li>Randomization section:</li>
+<li>Icon: Dice or shuffle symbol</li>
+<li>Definition: "Use chance to assign treatments"</li>
+<li>Visual: Animation of shuffling/random assignment</li>
+<li>
+<p>Hover reveals: "Balances known AND unknown variables"</p>
+</li>
+<li>
+<p>Replication section:</p>
+</li>
+<li>Icon: Multiple figures or stacked symbols</li>
+<li>Definition: "Use enough experimental units"</li>
+<li>Visual: Single unit vs. many units comparison</li>
+<li>Hover reveals: "Reduces impact of individual variation"</li>
+</ol>
+<p>Interactive Features:
+- Click each principle card to see it demonstrated in the central experiment visualization
+- Hover over elements for detailed explanations
+- Toggle showing "What goes wrong without this principle?"</p>
+<p>Color Scheme:
+- Control: Blue
+- Randomization: Sylvia green (#2E7D32)
+- Replication: Sylvia auburn (#B5651D)
+- Background: Sylvia cream (#FFF8E1)</p>
+<p>Implementation: HTML/CSS/JavaScript with SVG icons and p5.js for animations
+Canvas size: Responsive, approximately 800x450px</p>
+</details>
+<h2 id="blinding-protecting-against-bias">Blinding: Protecting Against Bias</h2>
+<p>Even with control groups and random assignment, experiments can be compromised by a subtle form of bias: the expectations of participants and researchers. This is where <strong>blinding</strong> comes in.</p>
+<h3 id="single-blind-experiments">Single-Blind Experiments</h3>
+<p>In a <strong>single-blind experiment</strong>, the experimental units (subjects) don't know which treatment they're receiving, but the researchers do know. This prevents subjects from behaving differently based on their expectations.</p>
+<p>For example, in a drug trial, patients don't know whether they're taking the real medication or a placebo. They can't unconsciously (or consciously!) behave in ways that might affect the outcome based on knowing which group they're in.</p>
+<h3 id="double-blind-experiments">Double-Blind Experiments</h3>
+<p>A <strong>double-blind experiment</strong> goes further: neither the subjects nor the researchers who interact with them know which treatment is being administered. This is even better because it prevents researchers from unconsciously treating participants differently or interpreting results based on their expectations.</p>
+<p>"Think about it," Sylvia says. "If a researcher knows a patient is getting the real drug, they might be more attentive, more encouraging, or more likely to notice positive changes. Even tiny differences in how researchers act can influence results!"</p>
+<p>In a double-blind drug trial:</p>
+<ul>
+<li>Patients don't know if they have the real drug or placebo</li>
+<li>Doctors administering treatments and evaluating patients don't know either</li>
+<li>Only a separate group of researchers who don't interact with patients knows the assignment</li>
+</ul>
+<p>Here's a comparison of blinding approaches:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Who is "blind"?</th>
+<th>What it prevents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No blinding</td>
+<td>No one</td>
+<td>Nothing (most prone to bias)</td>
+</tr>
+<tr>
+<td>Single-blind</td>
+<td>Subjects only</td>
+<td>Subject expectation effects</td>
+</tr>
+<tr>
+<td>Double-blind</td>
+<td>Subjects AND researchers</td>
+<td>Subject expectations AND researcher bias</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">When Blinding Isn't Possible</p>
+<p>Sometimes blinding is impossible due to the nature of the treatment. For example, you can't hide whether someone is exercising or not, or whether a classroom is using laptops or textbooks. In these cases, researchers should acknowledge this limitation and interpret results carefully.</p>
+</div>
+<h4 id="diagram-blinding-comparison-flowchart">Diagram: Blinding Comparison Flowchart</h4>
+<iframe src="../../sims/blinding-flowchart/main.html" width="100%" height="400px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Blinding Types Flowchart</summary>
+<p>Type: workflow</p>
+<p>Purpose: Show decision process for determining appropriate level of blinding and illustrate information flow in different blinding scenarios</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: differentiate, compare</p>
+<p>Learning Objective: Students will be able to differentiate between single-blind and double-blind experiments and identify which type of blinding is appropriate for different research scenarios.</p>
+<p>Visual Layout: Split view showing three parallel experimental setups
+- Left: No blinding (everyone knows everything)
+- Center: Single-blind (subjects don't know, researchers do)
+- Right: Double-blind (neither knows)</p>
+<p>Elements in each setup:
+- Subject figures (labeled)
+- Researcher figures (labeled)
+- Treatment assignment arrow (visible/hidden based on blinding)
+- "Knowledge bubbles" showing what each party knows
+- Bias risk indicators (high/medium/low)</p>
+<p>Interactive Features:
+- Hover over each setup to see advantages and disadvantages
+- Click "Show Information Flow" to animate what each party knows
+- Toggle examples for each scenario (drug trial, exercise study, therapy study)</p>
+<p>Color coding:
+- "Knows assignment": Red/Orange
+- "Doesn't know": Green
+- Arrows: Sylvia auburn for visible information, gray dotted for hidden</p>
+<p>Implementation: p5.js with hover and toggle interactions
+Canvas size: Responsive, approximately 750x380px</p>
+</details>
+<h2 id="types-of-experimental-designs">Types of Experimental Designs</h2>
+<p>Now that you understand the principles, let's explore different ways to structure experiments. The design you choose depends on your research question, available resources, and the nature of your experimental units.</p>
+<h3 id="completely-randomized-design">Completely Randomized Design</h3>
+<p>A <strong>completely randomized design</strong> is the simplest and most straightforward experimental structure. You take all your experimental units and randomly assign each one to a treatment group. That's it!</p>
+<p>For example, to test three different fertilizers on plant growth:</p>
+<ol>
+<li>Get 60 identical seedlings</li>
+<li>Use a random number generator to assign 20 plants to Fertilizer A, 20 to Fertilizer B, and 20 to Fertilizer C</li>
+<li>Apply treatments identically</li>
+<li>Measure growth after a set period</li>
+<li>Compare results</li>
+</ol>
+<p>The completely randomized design works well when your experimental units are relatively homogeneous (similar to each other). But what if there's substantial variation among your units?</p>
+<h3 id="randomized-block-design">Randomized Block Design</h3>
+<p>A <strong>randomized block design</strong> groups experimental units into blocks based on a characteristic that might affect the response, then randomly assigns treatments within each block.</p>
+<p>"Here's an analogy," Sylvia offers. "Imagine you're testing acorn storage methods, but your acorns come from different tree species. Oak acorns and chestnut acorns might respond differently to storage conditions. So you'd create blocks by species, then randomly assign storage methods within each block."</p>
+<p>Why block? Because it allows you to control for a known source of variability. By ensuring each treatment appears equally in each block, you can separate the effect of the blocking variable from the treatment effect.</p>
+<p><strong>Example:</strong> Testing study techniques (flashcards vs. practice problems) on test scores, blocking by prior math ability:</p>
+<table>
+<thead>
+<tr>
+<th>Block (Prior Ability)</th>
+<th>Treatment 1 (Flashcards)</th>
+<th>Treatment 2 (Practice Problems)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High ability</td>
+<td>10 students randomly assigned</td>
+<td>10 students randomly assigned</td>
+</tr>
+<tr>
+<td>Medium ability</td>
+<td>10 students randomly assigned</td>
+<td>10 students randomly assigned</td>
+</tr>
+<tr>
+<td>Low ability</td>
+<td>10 students randomly assigned</td>
+<td>10 students randomly assigned</td>
+</tr>
+</tbody>
+</table>
+<p>Now any differences in outcomes can't be attributed to prior ability, because each treatment group has equal representation from all ability levels.</p>
+<h3 id="matched-pairs-design">Matched Pairs Design</h3>
+<p>A <strong>matched pairs design</strong> is a special type of randomized block design where each block contains exactly two experimental units that are matched based on relevant characteristics. Then one unit in each pair is randomly assigned to each treatment.</p>
+<p>Matched pairs are especially useful when:</p>
+<ul>
+<li>You have only two treatments to compare</li>
+<li>There's substantial individual variation</li>
+<li>You can find meaningful ways to match units</li>
+</ul>
+<p><strong>Common matched pairs approaches:</strong></p>
+<ol>
+<li><strong>Same person, different times:</strong> Each subject experiences both treatments (with time gap and random order)</li>
+<li><strong>Matched individuals:</strong> Pair similar individuals and assign one to each treatment</li>
+<li><strong>Twins or siblings:</strong> Natural matching based on genetics</li>
+<li><strong>Before/after with crossover:</strong> Subjects switch treatments partway through</li>
+</ol>
+<p>The most common matched pairs design uses each subject as their own control. If you're testing whether caffeine affects reaction time, you might:</p>
+<ol>
+<li>Measure each person's reaction time without caffeine</li>
+<li>Measure the same person's reaction time with caffeine</li>
+<li>Compare the difference for each person</li>
+</ol>
+<p>This eliminates individual differences entirely because each person serves as their own baseline.</p>
+<div class="admonition warning">
+<p class="admonition-title">Order Effects in Matched Pairs</p>
+<p>When the same subject receives both treatments, you must worry about order effects. Maybe people perform better the second time regardless of treatment because they've had practice. Always randomize the order of treatments!</p>
+</div>
+<h4 id="diagram-experimental-design-types-comparison">Diagram: Experimental Design Types Comparison</h4>
+<iframe src="../../sims/experimental-designs-compare/main.html" width="100%" height="550px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Experimental Design Types Comparison MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Allow students to explore and compare the three main experimental designs (completely randomized, randomized block, matched pairs) through interactive visualization</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: compare, differentiate, organize</p>
+<p>Learning Objective: Students will be able to compare the three main experimental designs and analyze which design is most appropriate for different research scenarios.</p>
+<p>Visual Elements:
+- Top section: Design selector (three buttons/tabs)
+- Main area: Visual representation of the selected design
+  - Completely Randomized: Pool of units randomly divided into treatment groups
+  - Randomized Block: Units grouped into blocks, then randomly assigned within blocks
+  - Matched Pairs: Units paired and one from each pair assigned to each treatment
+- Bottom section: Key characteristics and "Best for..." summary</p>
+<p>Data Visibility Requirements:
+- Show the actual units (represented as circles or figures)
+- Color-code treatment assignment
+- For block design, show blocking variable
+- For matched pairs, show pairing connections</p>
+<p>Interactive Controls:
+- Design selector: Completely Randomized | Randomized Block | Matched Pairs
+- "Animate Assignment" button: Shows the random assignment process
+- "Show Advantages" toggle: Reveals when each design is preferred
+- Scenario dropdown: "Drug trial", "Agricultural study", "Educational intervention" to see how design changes</p>
+<p>Default view: Completely Randomized Design</p>
+<p>Color Scheme:
+- Treatment A: Sylvia green (#2E7D32)
+- Treatment B: Sylvia auburn (#B5651D)
+- Block boundaries: Gray dashed lines
+- Matched pair connections: Blue lines
+- Unassigned units: Light gray</p>
+<p>Instructional Rationale: Interactive comparison allows students to directly observe the structural differences between designs and reason about when each is appropriate.</p>
+<p>Implementation: p5.js with tabbed interface and animations
+Canvas size: Responsive, approximately 750x500px</p>
+</details>
+<h2 id="putting-it-all-together-designing-an-experiment">Putting It All Together: Designing an Experiment</h2>
+<p>Let's walk through how to design a complete experiment from scratch. This will help you synthesize all the concepts we've covered.</p>
+<p><strong>Research Question:</strong> Does listening to classical music while studying improve test performance compared to silence?</p>
+<h3 id="step-1-identify-the-components">Step 1: Identify the Components</h3>
+<ul>
+<li><strong>Experimental units:</strong> Students (subjects)</li>
+<li><strong>Factor:</strong> Study environment (music vs. silence)</li>
+<li><strong>Levels:</strong> Classical music, No music (control)</li>
+<li><strong>Treatments:</strong> Studying with classical music, Studying in silence</li>
+<li><strong>Response variable:</strong> Test score</li>
+</ul>
+<h3 id="step-2-choose-a-design">Step 2: Choose a Design</h3>
+<p>We need to decide between:</p>
+<ul>
+<li><strong>Completely randomized:</strong> If students are fairly similar</li>
+<li><strong>Randomized block:</strong> If there's a known variable (like prior GPA) that affects test performance</li>
+<li><strong>Matched pairs:</strong> If we can have each student study both ways (with time gap) or if we can pair students by ability</li>
+</ul>
+<p>Let's say we choose a <strong>randomized block design</strong>, blocking by prior academic performance (high, medium, low GPA).</p>
+<h3 id="step-3-apply-the-three-principles">Step 3: Apply the Three Principles</h3>
+<p><strong>Control:</strong></p>
+<ul>
+<li>Same study material for all participants</li>
+<li>Same amount of study time (30 minutes)</li>
+<li>Same testing environment and test</li>
+<li>Same time of day for all sessions</li>
+<li>If using music, same playlist and volume</li>
+</ul>
+<p><strong>Randomization:</strong></p>
+<ul>
+<li>Within each GPA block, randomly assign half to music and half to silence</li>
+<li>Use a random number generator, not personal choice</li>
+</ul>
+<p><strong>Replication:</strong></p>
+<ul>
+<li>Include at least 20 students per treatment per block</li>
+<li>Total: 120 students minimum (20 x 2 treatments x 3 blocks)</li>
+</ul>
+<h3 id="step-4-consider-blinding">Step 4: Consider Blinding</h3>
+<ul>
+<li>Students can't be blind to whether music is playing (impossible to hide)</li>
+<li>BUT: we can blind the person grading the tests</li>
+<li>We can also avoid telling students the specific hypothesis</li>
+</ul>
+<h3 id="step-5-collect-data-and-analyze">Step 5: Collect Data and Analyze</h3>
+<p>After running the experiment, compare test scores between groups, accounting for the blocking variable.</p>
+<p>Here's a summary of our experimental design:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design type</td>
+<td>Randomized Block</td>
+</tr>
+<tr>
+<td>Blocking variable</td>
+<td>Prior GPA (High, Medium, Low)</td>
+</tr>
+<tr>
+<td>Treatments</td>
+<td>Classical music, Silence</td>
+</tr>
+<tr>
+<td>Sample size</td>
+<td>120 students (20 per cell)</td>
+</tr>
+<tr>
+<td>Blinding</td>
+<td>Single-blind (grader doesn't know group)</td>
+</tr>
+<tr>
+<td>Controls</td>
+<td>Study time, material, testing conditions</td>
+</tr>
+<tr>
+<td>Random assignment</td>
+<td>Random within each block</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-complete-experiment-planning-flowchart">Diagram: Complete Experiment Planning Flowchart</h4>
+<iframe src="../../sims/experiment-planning-flowchart/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Experiment Planning Decision Flowchart</summary>
+<p>Type: workflow</p>
+<p>Purpose: Guide students through the decision-making process when designing an experiment, from research question to final design</p>
+<p>Bloom Level: Create (L6)
+Bloom Verb: design, formulate</p>
+<p>Learning Objective: Students will be able to design a complete experiment by following a structured decision-making process.</p>
+<p>Visual Layout: Flowchart with decision points and process boxes</p>
+<p>Flow Structure:
+1. Start: "Define Research Question"
+   - Output: Identify response variable, factors, levels</p>
+<ol>
+<li>Decision: "Is there significant unit variability?"</li>
+<li>No → Completely Randomized Design</li>
+<li>
+<p>Yes → Continue</p>
+</li>
+<li>
+<p>Decision: "Can you measure the source of variability?"</p>
+</li>
+<li>No → Consider increasing sample size</li>
+<li>
+<p>Yes → Continue</p>
+</li>
+<li>
+<p>Decision: "Comparing exactly 2 treatments?"</p>
+</li>
+<li>Yes → Consider Matched Pairs</li>
+<li>
+<p>No → Randomized Block Design</p>
+</li>
+<li>
+<p>Process: "Apply Three Principles"</p>
+</li>
+<li>Control: List variables to hold constant</li>
+<li>Randomization: Method for random assignment</li>
+<li>
+<p>Replication: Calculate needed sample size</p>
+</li>
+<li>
+<p>Decision: "Is blinding possible?"</p>
+</li>
+<li>Yes → Determine single or double blind</li>
+<li>
+<p>No → Document limitation</p>
+</li>
+<li>
+<p>End: "Final Design Summary"</p>
+</li>
+</ol>
+<p>Interactive Features:
+- Click each node to see detailed explanation and examples
+- Hover for quick tips at each decision point
+- Input your own scenario and follow the flowchart to see recommended design
+- "Show Example" button that walks through the classical music study</p>
+<p>Color Scheme:
+- Decision diamonds: Sylvia auburn (#B5651D)
+- Process rectangles: Sylvia green (#2E7D32)
+- Start/End: Sylvia hazel (#8B7355)
+- Arrows: Dark gray</p>
+<p>Implementation: p5.js or vis-network with interactive node exploration
+Canvas size: Responsive, approximately 700x480px</p>
+</details>
+<h2 id="common-pitfalls-in-experimental-design">Common Pitfalls in Experimental Design</h2>
+<p>Even well-intentioned researchers can make mistakes. Here are some common pitfalls to avoid:</p>
+<h3 id="pitfall-1-confusing-random-sampling-and-random-assignment">Pitfall 1: Confusing Random Sampling and Random Assignment</h3>
+<p>Remember: random sampling helps you <strong>generalize</strong> to a population. Random assignment helps you establish <strong>causation</strong>. Many studies have one but not the other.</p>
+<table>
+<thead>
+<tr>
+<th>Study Characteristic</th>
+<th>Generalization?</th>
+<th>Causation?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Random sample + Random assignment</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Random sample + No random assignment</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Non-random sample + Random assignment</td>
+<td>Limited</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Neither random</td>
+<td>Very limited</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pitfall-2-inadequate-control-group">Pitfall 2: Inadequate Control Group</h3>
+<p>Sometimes researchers use a "no treatment" control when a placebo control would be more appropriate. If subjects know they're getting nothing, the comparison isn't fair due to placebo effects.</p>
+<h3 id="pitfall-3-insufficient-sample-size">Pitfall 3: Insufficient Sample Size</h3>
+<p>Running an experiment with too few subjects means you might miss real effects. It's like trying to hear a whisper in a noisy room. You need enough observations to detect the signal above the noise.</p>
+<h3 id="pitfall-4-ignoring-confounding-variables">Pitfall 4: Ignoring Confounding Variables</h3>
+<p>Even with random assignment, things can go wrong if the experiment isn't run carefully. If one treatment group is always tested in the morning and another in the afternoon, time of day becomes confounded with treatment.</p>
+<h3 id="pitfall-5-demand-characteristics">Pitfall 5: Demand Characteristics</h3>
+<p>When subjects figure out what the experimenter wants, they might unconsciously (or consciously) behave accordingly. Good blinding and careful experimental protocols help prevent this.</p>
+<p>"My biggest mistake?" Sylvia reflects. "Once I didn't randomize which trees I collected acorns from first. Turns out, I was always more thorough in the morning when I had more energy. My data on acorn distribution was totally biased! Lesson learned."</p>
+<h2 id="reading-research-critically">Reading Research Critically</h2>
+<p>One of the most valuable skills you'll gain from this chapter is the ability to critically evaluate research claims. When you read about a study in the news or encounter research in your future studies, ask yourself:</p>
+<p><strong>Key Questions for Evaluating Experiments:</strong></p>
+<ol>
+<li>Was there a control group? What kind?</li>
+<li>Were subjects randomly assigned to treatments?</li>
+<li>Was blinding used? Single or double?</li>
+<li>How large were the sample sizes?</li>
+<li>What variables were controlled?</li>
+<li>What potential confounds might remain?</li>
+<li>Was the study replicated?</li>
+</ol>
+<p>Here's a quick checklist format:</p>
+<ul>
+<li>[ ] Control group present and appropriate</li>
+<li>[ ] Random assignment to treatments</li>
+<li>[ ] Adequate blinding (if possible)</li>
+<li>[ ] Sufficient sample size</li>
+<li>[ ] Major confounds addressed</li>
+<li>[ ] Key variables controlled</li>
+<li>[ ] Results replicated or replicable</li>
+</ul>
+<h2 id="ap-exam-focus-describing-experimental-designs">AP Exam Focus: Describing Experimental Designs</h2>
+<p>On the AP Statistics exam, you'll often need to describe how to design an experiment. Here's a template that will serve you well:</p>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia's Four-Step Experiment Description</p>
+<ol>
+<li><strong>Identify experimental units and treatments</strong> - State what you're experimenting on and what treatments you're comparing</li>
+<li><strong>Describe random assignment</strong> - Explain HOW you'll randomly assign units to treatments (be specific about the mechanism)</li>
+<li><strong>Explain what's being compared</strong> - State the response variable and how you'll compare groups</li>
+<li><strong>Mention controls and blinding</strong> - Describe what variables you're holding constant and whether blinding is used</li>
+</ol>
+</div>
+<p><strong>Example Response:</strong></p>
+<p>"To test whether caffeine improves test scores, randomly assign the 40 student volunteers to two groups of 20 using a random number generator. Group 1 receives a caffeinated beverage; Group 2 receives an identical-looking decaffeinated beverage (placebo). Neither students nor the proctor administering the test know who received caffeine (double-blind). Control for study time, test difficulty, time of day, and testing environment by keeping these constant for all participants. After students study for 30 minutes and take the test, compare the mean test scores between the two groups."</p>
+<h4 id="diagram-random-assignment-simulator">Diagram: Random Assignment Simulator</h4>
+<iframe src="../../sims/random-assignment-simulator/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
+<details>
+<summary>Random Assignment Simulator MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Allow students to practice random assignment by simulating the process of assigning experimental units to treatment groups</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: use, execute, implement</p>
+<p>Learning Objective: Students will be able to execute random assignment using a chance mechanism and verify that the assignment process is truly random.</p>
+<p>Visual Elements:
+- Left panel: Pool of experimental units (represented as numbered circles)
+- Right panel: Treatment group containers (Treatment A, Treatment B, Control)
+- Center: Random number generator display
+- Bottom: Statistics showing current distribution</p>
+<p>Interactive Controls:
+- Number input: "Number of units" (default: 20)
+- Number input: "Number of groups" (default: 2)
+- Button: "Assign One Unit" (step through one at a time)
+- Button: "Assign All" (animate full assignment)
+- Button: "Reset"
+- Toggle: "Show assignment method" (random numbers, coin flip simulation, etc.)</p>
+<p>Behavior:
+- When "Assign One Unit" clicked:
+  1. Highlight next unassigned unit
+  2. Show random number generation
+  3. Animate unit moving to assigned group
+  4. Update group counts</p>
+<ul>
+<li>When "Assign All" clicked:</li>
+<li>
+<p>Rapidly animate all assignments with brief pauses</p>
+</li>
+<li>
+<p>Statistics displayed:</p>
+</li>
+<li>Count in each group</li>
+<li>Percentage in each group</li>
+<li>Whether groups are balanced (within acceptable range)</li>
+</ul>
+<p>Visual Style:
+- Units: Circles with numbers
+- Treatment A: Sylvia green (#2E7D32)
+- Treatment B: Sylvia auburn (#B5651D)
+- Control (if 3 groups): Blue
+- Unassigned: Gray</p>
+<p>Instructional Rationale: Hands-on practice with random assignment helps students understand both the procedure and why it tends to create balanced groups.</p>
+<p>Implementation: p5.js with canvas-based controls
+Canvas size: Responsive, approximately 700x400px</p>
+</details>
+<h2 id="summary-key-takeaways">Summary: Key Takeaways</h2>
+<p>"Time to squirrel away this knowledge!" Sylvia says with a satisfied swish of her tail.</p>
+<p>Let's recap the essential concepts from this chapter:</p>
+<p><strong>Experimental Vocabulary:</strong></p>
+<ul>
+<li><strong>Experimental units</strong> are the entities receiving treatment (subjects when human)</li>
+<li><strong>Treatments</strong> are the experimental conditions we apply</li>
+<li><strong>Factors</strong> are the explanatory variables; <strong>levels</strong> are their specific values</li>
+<li><strong>Placebo</strong> is an inactive treatment; the <strong>placebo effect</strong> is improvement from belief alone</li>
+<li><strong>Control groups</strong> provide a baseline for comparison</li>
+</ul>
+<p><strong>Three Principles of Experimental Design:</strong></p>
+<ul>
+<li><strong>Control:</strong> Hold extraneous variables constant</li>
+<li><strong>Randomization:</strong> Use chance to assign treatments</li>
+<li><strong>Replication:</strong> Use enough experimental units</li>
+</ul>
+<p><strong>Blinding:</strong></p>
+<ul>
+<li><strong>Single-blind:</strong> Subjects don't know their treatment</li>
+<li><strong>Double-blind:</strong> Neither subjects nor researchers know</li>
+</ul>
+<p><strong>Experimental Designs:</strong></p>
+<ul>
+<li><strong>Completely randomized:</strong> Randomly assign all units to treatments</li>
+<li><strong>Randomized block:</strong> Group by a variable, randomize within blocks</li>
+<li><strong>Matched pairs:</strong> Pair similar units, randomize within pairs</li>
+</ul>
+<p>"You've got this," Sylvia encourages. "Every time you see a claim that 'X causes Y,' you now have the tools to ask the right questions. Does the study have a control group? Was there random assignment? That's a superpower right there!"</p>
+<hr />
+<details class="question">
+<summary>Practice Question: Identify the Design</summary>
+<p>A researcher wants to test whether a new algebra tutoring method improves test scores. She recruits 60 students and pairs them by their current math grades, creating 30 pairs. Within each pair, she flips a coin to determine which student gets the new method and which gets traditional tutoring. After 8 weeks, she compares test scores.</p>
+<p>What type of experimental design is this?</p>
+<p><strong>Answer:</strong> This is a <strong>matched pairs design</strong>. Students are paired based on a relevant characteristic (current math grade), and random assignment occurs within each pair. This design controls for prior math ability.</p>
+</details>
+<details class="question">
+<summary>Practice Question: Design Critique</summary>
+<p>A coffee company claims their new blend increases energy levels because 50 volunteers who drank their coffee reported feeling more energetic than before drinking it.</p>
+<p>What are at least two problems with this study design?</p>
+<p><strong>Answer:</strong>
+1. <strong>No control group:</strong> Without a control group (or placebo group drinking decaf that looks identical), we can't distinguish between the coffee's effect and the placebo effect.
+2. <strong>No random assignment:</strong> This appears to be an observational before/after study, not a true experiment.
+3. <strong>Self-reported outcomes:</strong> "Feeling energetic" is subjective and susceptible to expectation bias.
+4. <strong>Volunteers only:</strong> Self-selected participants may differ from the general population.</p>
+</details>
+<hr />
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In the next chapter, we'll dive into the world of random variables and probability distributions. You'll learn how to mathematically model random processes, which is essential for understanding the inferential statistics that come later in the course.</p>
+<p>"The beautiful thing about experiments?" Sylvia muses. "They're how we move from 'I wonder if...' to 'Now I know.' And that's pretty amazing, if you ask me. See you in the next chapter!"</p>
 
 
 

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+  "microsim_name": "household-income-boxplot",
+  "title": "Household Income Boxplot Explorer",
+  "description": "Interactive MicroSim that uses a boxplot to summarize household incomes, highlighting right-skew, inequality, and the difference between mean and median.",
+  "keywords": ["boxplot", "household income", "quartiles", "skewness", "inequality", "AP Statistics"],
+  "subject": "Statistics",
+  "topic": "Numerical Summaries",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Interpret",
+  "learning_objective": "Students will interpret a right-skewed boxplot by identifying the five-number summary and comparing mean and median.",
+  "grade_level": "High School",
+  "duration": "10-15 minutes",
+  "prerequisites": ["Understanding of quartiles", "Basic interpretation of boxplots"],
+  "framework": "Plotly.js",
+  "version": "2.27.0",
+  "canvas_dimensions": {
+    "width": "responsive",
+    "draw_height": 360,
+    "control_height": 230,
+    "total_height": 620
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Households",
+      "min": 20,
+      "max": 200,
+      "default": 60,
+      "step": 1,
+      "description": "Number of households in the sample"
+    },
+    {
+      "type": "slider",
+      "label": "Median income",
+      "min": 35,
+      "max": 140,
+      "default": 65,
+      "step": 1,
+      "description": "Median household income (thousands of dollars)"
+    },
+    {
+      "type": "slider",
+      "label": "Inequality (spread)",
+      "min": 0.25,
+      "max": 0.95,
+      "default": 0.55,
+      "step": 0.01,
+      "description": "Controls right-skew and spread"
+    },
+    {
+      "type": "checkbox",
+      "label": "Add a high-income outlier",
+      "default": true,
+      "description": "Emphasizes long upper whiskers"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show individual households",
+      "default": false,
+      "description": "Display raw income points"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show mean marker",
+      "default": true,
+      "description": "Compare mean to median"
+    },
+    {
+      "type": "button",
+      "label": "New city sample",
+      "description": "Generate a fresh random sample"
+    }
+  ],
+  "creator": "Dan McCreary",
+  "date_created": "2026-02-07",
+  "license": "CC BY-NC-SA 4.0",
+  "language": "en"
+}

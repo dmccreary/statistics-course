@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP statistics designed for college credit.">
+        <meta name="description" content="Learn to calculate z-scores, understand the normal distribution, apply the Empirical Rule, and use normal tables to find probabilities.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>5. Standardization and Normal - AP Statistics</title>
+        <title>Standardization and Normal Distributions - AP Statistics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="5. Standardization and Normal - AP Statistics" >
+        <meta  property="og:title"  content="Standardization and Normal Distributions - AP Statistics" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  property="og:description"  content="Learn to calculate z-scores, understand the normal distribution, apply the Empirical Rule, and use normal tables to find probabilities." >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/05-standardization-and-normal/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="5. Standardization and Normal - AP Statistics" >
+        <meta  name="twitter:title"  content="Standardization and Normal Distributions - AP Statistics" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  name="twitter:description"  content="Learn to calculate z-scores, understand the normal distribution, apply the Empirical Rule, and use normal tables to find probabilities." >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/05-standardization-and-normal/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5. Standardization and Normal
+              Standardization and Normal Distributions
             
           </span>
         </div>
@@ -602,6 +602,417 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-a-universal-language-for-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: A Universal Language for Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#density-curves-smoothing-out-the-histogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Density Curves: Smoothing Out the Histogram
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Density Curves: Smoothing Out the Histogram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#area-under-the-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area Under the Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Area Under the Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-density-curve-area-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Density Curve Area Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#z-scores-the-great-equalizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Z-Scores: The Great Equalizer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Z-Scores: The Great Equalizer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculating-z-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Z-Scores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-z-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting Z-Scores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpreting Z-Scores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-z-score-calculator-and-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Z-Score Calculator and Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standardization-creating-a-common-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standardization: Creating a Common Scale
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Standardization: Creating a Common Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparing-with-z-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing with Z-Scores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-normal-distribution-natures-favorite-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Normal Distribution: Nature's Favorite Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Normal Distribution: Nature's Favorite Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties-of-the-normal-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of the Normal Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties of the Normal Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normal-distribution-parameter-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normal Distribution Parameter Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-empirical-rule-68-95-997-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Empirical Rule (68-95-99.7 Rule)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Empirical Rule (68-95-99.7 Rule)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applying-the-empirical-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applying the Empirical Rule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Applying the Empirical Rule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-empirical-rule-interactive-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Empirical Rule Interactive Demonstration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-standard-normal-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Standard Normal Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Standard Normal Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-normal-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the Normal Table
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-normal-probabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Normal Probabilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Normal Probabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-probability-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Probability Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worked Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Worked Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normal-probability-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normal Probability Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-normal-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Normal Calculations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Normal Calculations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-inverse-normal-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Inverse Normal Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-for-normal-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology for Normal Calculations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessing-normality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessing Normality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessing Normality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-probability-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal Probability Plots
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Normal Probability Plots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normal-probability-plot-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normal Probability Plot Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-is-close-enough-normal" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Is "Close Enough" Normal?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-complete-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Complete Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Complete Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-manufacturing-quality-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Manufacturing Quality Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-comparing-standardized-test-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Comparing Standardized Test Scores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1005,6 +1416,70 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -1097,6 +1572,8 @@
       
         
           
+        
+      
         
       
         
@@ -1317,6 +1794,417 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-a-universal-language-for-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: A Universal Language for Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#density-curves-smoothing-out-the-histogram" class="md-nav__link">
+    <span class="md-ellipsis">
+      Density Curves: Smoothing Out the Histogram
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Density Curves: Smoothing Out the Histogram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#area-under-the-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area Under the Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Area Under the Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-density-curve-area-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Density Curve Area Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#z-scores-the-great-equalizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Z-Scores: The Great Equalizer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Z-Scores: The Great Equalizer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calculating-z-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calculating Z-Scores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interpreting-z-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interpreting Z-Scores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interpreting Z-Scores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-z-score-calculator-and-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Z-Score Calculator and Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standardization-creating-a-common-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standardization: Creating a Common Scale
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Standardization: Creating a Common Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparing-with-z-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing with Z-Scores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-normal-distribution-natures-favorite-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Normal Distribution: Nature's Favorite Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Normal Distribution: Nature's Favorite Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties-of-the-normal-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of the Normal Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties of the Normal Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normal-distribution-parameter-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normal Distribution Parameter Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-empirical-rule-68-95-997-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Empirical Rule (68-95-99.7 Rule)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Empirical Rule (68-95-99.7 Rule)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applying-the-empirical-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applying the Empirical Rule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Applying the Empirical Rule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-empirical-rule-interactive-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Empirical Rule Interactive Demonstration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-standard-normal-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Standard Normal Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Standard Normal Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-normal-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the Normal Table
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-normal-probabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Normal Probabilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Normal Probabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-probability-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Probability Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worked Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Worked Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normal-probability-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normal Probability Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-normal-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Normal Calculations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Normal Calculations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-inverse-normal-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Inverse Normal Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology-for-normal-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology for Normal Calculations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessing-normality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessing Normality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessing Normality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Methods
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normal-probability-plots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Normal Probability Plots
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Normal Probability Plots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normal-probability-plot-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normal Probability Plot Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-is-close-enough-normal" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Is "Close Enough" Normal?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-complete-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Complete Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Complete Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-manufacturing-quality-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Manufacturing Quality Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-comparing-standardized-test-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Comparing Standardized Test Scores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1371,7 +2259,748 @@
 <li><a href="../04-numerical-summaries/">Chapter 4: Numerical Summaries</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-a-universal-language-for-data">Introduction: A Universal Language for Data</h2>
+<p>Imagine you scored 85 on your statistics exam and 78 on your history exam. Which performance was better? At first glance, the statistics score seems higher—but what if the statistics exam had a class average of 90 while the history exam averaged 65? Suddenly, that 78 in history looks pretty impressive!</p>
+<p>This is the fundamental challenge we're solving in this chapter: <strong>how do we compare values from different distributions?</strong> The answer lies in a beautiful mathematical technique called <strong>standardization</strong>, and its partner, the elegant <strong>normal distribution</strong>.</p>
+<p>"My tail's tingling—we're onto something big!" Sylvia adjusts her glasses. "When I was comparing acorn counts from different oak species, I had the same problem. A 'good' harvest from a red oak means something totally different than a 'good' harvest from a white oak. Once I learned about z-scores, everything clicked into place. Trust me, this is one of those superpower skills you'll use constantly."</p>
+<p>By the end of this chapter, you'll be able to:</p>
+<ul>
+<li>Convert any value into a standardized z-score</li>
+<li>Compare values from completely different contexts</li>
+<li>Work with the normal distribution—one of nature's favorite patterns</li>
+<li>Find probabilities using the famous "bell curve"</li>
+<li>Assess whether your data follows a normal distribution</li>
+</ul>
+<p>Let's crack this nut!</p>
+<hr />
+<h2 id="density-curves-smoothing-out-the-histogram">Density Curves: Smoothing Out the Histogram</h2>
+<p>Before we dive into the normal distribution, we need to understand <strong>density curves</strong>. Remember how histograms show the distribution of data using bars? A density curve is like a smoothed-out version of a histogram—an idealized mathematical model of how data is distributed.</p>
+<p>A <strong>density curve</strong> has two key properties:</p>
+<ul>
+<li>It's always on or above the horizontal axis (no negative heights)</li>
+<li>The total area under the curve equals exactly 1 (representing 100% of the data)</li>
+</ul>
+<p>Think of it this way: if a histogram represents how your actual data is distributed, a density curve represents how the <em>population</em> might be distributed if you could collect infinite data. It's a theoretical model, but an incredibly useful one.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Histogram</th>
+<th>Density Curve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Based on</td>
+<td>Actual sample data</td>
+<td>Mathematical model</td>
+</tr>
+<tr>
+<td>Shape</td>
+<td>Bars with widths</td>
+<td>Smooth curve</td>
+</tr>
+<tr>
+<td>Total area</td>
+<td>Depends on bin width</td>
+<td>Always equals 1</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Displaying real data</td>
+<td>Calculating probabilities</td>
+</tr>
+</tbody>
+</table>
+<h3 id="area-under-the-curve">Area Under the Curve</h3>
+<p>Here's where density curves become powerful: the <strong>area under the curve</strong> between any two values represents the proportion (or probability) of observations falling in that range.</p>
+<p>For example, if the area under a density curve between 60 and 80 is 0.45, that means 45% of observations fall between 60 and 80. This connection between area and probability is fundamental to everything we'll do with normal distributions.</p>
+<h4 id="diagram-density-curve-area-explorer">Diagram: Density Curve Area Explorer</h4>
+<iframe src="../../sims/density-curve-area/main.html" height="352px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+<p><a class="md-button md-button--primary" href="../../sims/density-curve-area/main.html">Run MicroSim Fullscreen</a>
+<a class="md-button" href="https://editor.p5js.org/">Edit in p5.js Editor</a></p>
+<details>
+<summary>Interactive Area Under Curve Visualization</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Students will understand that area under a density curve represents probability by shading regions and observing the corresponding proportions (Bloom: Understanding).</p>
+<p>Visual elements:
+- Smooth density curve (normal or other shapes available)
+- Horizontal axis with numerical scale
+- Shaded region between user-selected boundaries
+- Area value displayed as decimal and percentage
+- Reference lines at mean and standard deviation markers</p>
+<p>Interactive controls:
+- Two draggable vertical lines to define the shaded region
+- Dropdown to select curve type (normal, uniform, skewed)
+- Slider to adjust curve parameters (mean, spread)
+- "Show full area = 1" toggle demonstrating total area property
+- Reset button</p>
+<p>Behavior:
+- Area calculation updates in real-time as boundaries change
+- Shaded region fills with semi-transparent color
+- Display shows both exact area and percentage interpretation
+- When boundaries encompass full curve, area displays as 1.00 (100%)</p>
+<p>Canvas size: 700 x 350 pixels, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="z-scores-the-great-equalizer">Z-Scores: The Great Equalizer</h2>
+<p>A <strong>z-score</strong> (also called a standard score) tells you how many standard deviations a value is from the mean. It's the key to standardization—converting values from any distribution into a common scale.</p>
+<p>The z-score formula is elegantly simple:</p>
+<div class="arithmatex">\[
+z = \frac{x - \mu}{\sigma} \quad \text{(for populations)} \quad \text{or} \quad z = \frac{x - \bar{x}}{s} \quad \text{(for samples)}
+\]</div>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\( x \)</span> = the individual value you're standardizing</li>
+<li><span class="arithmatex">\( \mu \)</span> (or <span class="arithmatex">\( \bar{x} \)</span>) = the mean</li>
+<li><span class="arithmatex">\( \sigma \)</span> (or <span class="arithmatex">\( s \)</span>) = the standard deviation</li>
+</ul>
+<p>The result tells you: "This value is <em>z</em> standard deviations away from the mean."</p>
+<h3 id="calculating-z-scores">Calculating Z-Scores</h3>
+<p>Let's work through an example. Suppose exam scores have a mean of 75 and a standard deviation of 8. What's the z-score for a student who scored 91?</p>
+<div class="arithmatex">\[
+z = \frac{91 - 75}{8} = \frac{16}{8} = 2
+\]</div>
+<p>This student's score is <strong>2 standard deviations above the mean</strong>. That's impressive!</p>
+<p>Now let's find the z-score for a student who scored 67:</p>
+<div class="arithmatex">\[
+z = \frac{67 - 75}{8} = \frac{-8}{8} = -1
+\]</div>
+<p>This score is <strong>1 standard deviation below the mean</strong>. The negative sign tells us the value is below average.</p>
+<table>
+<thead>
+<tr>
+<th>Original Score</th>
+<th>Mean</th>
+<th>Std Dev</th>
+<th>Z-Score</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>91</td>
+<td>75</td>
+<td>8</td>
+<td>+2.0</td>
+<td>2 SDs above mean</td>
+</tr>
+<tr>
+<td>75</td>
+<td>75</td>
+<td>8</td>
+<td>0</td>
+<td>Exactly at mean</td>
+</tr>
+<tr>
+<td>67</td>
+<td>75</td>
+<td>8</td>
+<td>-1.0</td>
+<td>1 SD below mean</td>
+</tr>
+<tr>
+<td>83</td>
+<td>75</td>
+<td>8</td>
+<td>+1.0</td>
+<td>1 SD above mean</td>
+</tr>
+<tr>
+<td>59</td>
+<td>75</td>
+<td>8</td>
+<td>-2.0</td>
+<td>2 SDs below mean</td>
+</tr>
+</tbody>
+</table>
+<h3 id="interpreting-z-scores">Interpreting Z-Scores</h3>
+<p>Z-scores have intuitive interpretations:</p>
+<ul>
+<li><strong>z = 0:</strong> The value equals the mean (perfectly average)</li>
+<li><strong>Positive z:</strong> The value is above the mean</li>
+<li><strong>Negative z:</strong> The value is below the mean</li>
+<li><strong>|z| &gt; 2:</strong> The value is somewhat unusual (more than 2 SDs from mean)</li>
+<li><strong>|z| &gt; 3:</strong> The value is quite rare (more than 3 SDs from mean)</li>
+</ul>
+<p>"Here's a pro tip," Sylvia whispers. "When I'm comparing my acorn collections across different seasons, z-scores let me identify my truly exceptional days. Any day with a z-score above 2? That's a day I remember fondly. Below -2? Let's just say I treated myself to extra seeds that evening."</p>
+<h4 id="diagram-z-score-calculator-and-visualizer">Diagram: Z-Score Calculator and Visualizer</h4>
+<iframe src="../../sims/z-score-calculator/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+<p><a class="md-button md-button--primary" href="../../sims/z-score-calculator/main.html">Run MicroSim Fullscreen</a>
+<a class="md-button" href="https://editor.p5js.org/">Edit in p5.js Editor</a></p>
+<details>
+<summary>Interactive Z-Score Calculator</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Students will calculate z-scores from raw data and interpret their meaning on a standardized scale (Bloom: Applying).</p>
+<p>Visual elements:
+- Input fields for: value (x), mean (μ), standard deviation (σ)
+- Step-by-step calculation display showing the formula with values substituted
+- Number line showing original scale on top, z-score scale below
+- Visual indicator connecting the original value to its z-score position
+- Color gradient: red for very negative, white for zero, blue for very positive</p>
+<p>Interactive controls:
+- Text inputs for x, mean, and standard deviation
+- "Calculate" button (or real-time calculation)
+- Preset examples dropdown: "Exam Scores", "Heights", "Temperatures"
+- Toggle to show/hide calculation steps
+- Slider to animate z-score changes as x varies</p>
+<p>Behavior:
+- Z-score updates in real-time as inputs change
+- Formula displays with current values substituted
+- Visual number line updates to show position
+- Interpretation text updates: "This value is [z] standard deviations [above/below] the mean"
+- Warning for unrealistic inputs (negative SD, etc.)</p>
+<p>Canvas size: 750 x 400 pixels, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="standardization-creating-a-common-scale">Standardization: Creating a Common Scale</h2>
+<p><strong>Standardization</strong> is the process of converting all values in a dataset to z-scores. When you standardize a distribution:</p>
+<ul>
+<li>The new mean becomes 0</li>
+<li>The new standard deviation becomes 1</li>
+<li>The shape of the distribution stays exactly the same</li>
+</ul>
+<p>This transformation is incredibly powerful because it puts all data on the same scale, regardless of the original units or spread.</p>
+<h3 id="comparing-with-z-scores">Comparing with Z-Scores</h3>
+<p>Now we can answer our opening question! Let's say your statistics score was 85 (class mean 90, SD 5) and your history score was 78 (class mean 65, SD 10).</p>
+<p><strong>Statistics z-score:</strong>
+[
+z = \frac{85 - 90}{5} = \frac{-5}{5} = -1.0
+]</p>
+<p><strong>History z-score:</strong>
+[
+z = \frac{78 - 65}{10} = \frac{13}{10} = +1.3
+]</p>
+<p>Even though 85 &gt; 78, the z-scores reveal the truth: you performed 1.3 standard deviations <em>above</em> average in history, but 1 standard deviation <em>below</em> average in statistics. Your history performance was actually stronger relative to your classmates!</p>
+<p>This is the power of z-scores: they enable <strong>apples-to-apples comparisons</strong> across completely different contexts.</p>
+<table>
+<thead>
+<tr>
+<th>Subject</th>
+<th>Raw Score</th>
+<th>Class Mean</th>
+<th>Class SD</th>
+<th>Z-Score</th>
+<th>Relative Performance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Statistics</td>
+<td>85</td>
+<td>90</td>
+<td>5</td>
+<td>-1.0</td>
+<td>Below average</td>
+</tr>
+<tr>
+<td>History</td>
+<td>78</td>
+<td>65</td>
+<td>10</td>
+<td>+1.3</td>
+<td>Above average</td>
+</tr>
+</tbody>
+</table>
+<p>"Acorn for your thoughts?" Sylvia asks. "Before z-scores, comparing my spring collection to my fall collection was meaningless—different weather, different tree conditions, different everything. But z-scores showed me that my best <em>relative</em> performance actually came during a drought year when I was 2.5 standard deviations above the seasonal average. Context matters!"</p>
+<hr />
+<h2 id="the-normal-distribution-natures-favorite-curve">The Normal Distribution: Nature's Favorite Curve</h2>
+<p>Now we meet the star of the show: the <strong>normal distribution</strong> (also called the Gaussian distribution or the "bell curve"). This symmetric, mound-shaped curve appears everywhere in nature and statistics:</p>
+<ul>
+<li>Heights and weights of people</li>
+<li>Measurement errors in scientific instruments</li>
+<li>Test scores on well-designed exams</li>
+<li>Blood pressure readings</li>
+<li>Manufacturing tolerances</li>
+</ul>
+<p>The normal distribution is defined by two <strong>parameters</strong>:</p>
+<ul>
+<li><strong>μ (mu):</strong> The mean, which determines the center</li>
+<li><strong>σ (sigma):</strong> The standard deviation, which determines the spread</li>
+</ul>
+<p>These two numbers completely specify a normal distribution. We write "X follows a normal distribution with mean μ and standard deviation σ" as:</p>
+<div class="arithmatex">\[
+X \sim N(\mu, \sigma)
+\]</div>
+<p>For example, if adult male heights are normally distributed with mean 70 inches and standard deviation 3 inches, we write: Heights <span class="arithmatex">\( \sim N(70, 3) \)</span>.</p>
+<h3 id="properties-of-the-normal-curve">Properties of the Normal Curve</h3>
+<p>Every normal distribution shares these characteristics:</p>
+<ul>
+<li><strong>Symmetric</strong> about the mean (left and right sides are mirror images)</li>
+<li><strong>Unimodal</strong> (single peak at the mean)</li>
+<li><strong>Bell-shaped</strong> (highest in the middle, tapering toward the tails)</li>
+<li><strong>Mean = Median = Mode</strong> (all three measures of center are equal)</li>
+<li>The curve extends infinitely in both directions (theoretically)</li>
+<li>Total area under the curve equals 1</li>
+</ul>
+<p>The spread is controlled entirely by σ:</p>
+<ul>
+<li>Larger σ → wider, flatter curve</li>
+<li>Smaller σ → narrower, taller curve</li>
+</ul>
+<h4 id="diagram-normal-distribution-parameter-explorer">Diagram: Normal Distribution Parameter Explorer</h4>
+<iframe src="../../sims/normal-distribution-explorer/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+<p><a class="md-button md-button--primary" href="../../sims/normal-distribution-explorer/main.html">Run MicroSim Fullscreen</a>
+<a class="md-button" href="https://editor.p5js.org/">Edit in p5.js Editor</a></p>
+<details>
+<summary>Interactive Normal Curve Visualization</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Students will understand how the parameters μ and σ affect the shape and position of a normal distribution (Bloom: Understanding, Analyzing).</p>
+<p>Visual elements:
+- Normal curve plotted on coordinate axes
+- Shaded area under the curve
+- Vertical line marking the mean (μ)
+- Horizontal markers showing μ ± σ, μ ± 2σ, μ ± 3σ
+- Current parameter values displayed: μ = __, σ = __
+- Grid lines for reference</p>
+<p>Interactive controls:
+- Slider for mean (μ): range -10 to 10, default 0
+- Slider for standard deviation (σ): range 0.5 to 5, default 1
+- Checkbox: Show μ ± σ markers
+- Checkbox: Show μ ± 2σ markers
+- Checkbox: Show μ ± 3σ markers
+- Button: Reset to standard normal (μ=0, σ=1)
+- Button: Overlay second curve for comparison</p>
+<p>Behavior:
+- Curve updates smoothly as sliders move
+- When σ decreases, curve gets taller and narrower
+- When σ increases, curve gets shorter and wider
+- When μ changes, entire curve slides left or right
+- Overlay mode shows two curves in different colors for comparison</p>
+<p>Canvas size: 750 x 400 pixels, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="the-empirical-rule-68-95-997-rule">The Empirical Rule (68-95-99.7 Rule)</h2>
+<p>For any normal distribution, we know exactly what percentage of data falls within 1, 2, and 3 standard deviations of the mean. This is called the <strong>Empirical Rule</strong> or the <strong>68-95-99.7 Rule</strong>:</p>
+<ul>
+<li><strong>68%</strong> of data falls within 1 standard deviation of the mean: <span class="arithmatex">\( \mu \pm \sigma \)</span></li>
+<li><strong>95%</strong> of data falls within 2 standard deviations of the mean: <span class="arithmatex">\( \mu \pm 2\sigma \)</span></li>
+<li><strong>99.7%</strong> of data falls within 3 standard deviations of the mean: <span class="arithmatex">\( \mu \pm 3\sigma \)</span></li>
+</ul>
+<p>These aren't approximations—for truly normal data, these percentages are exact!</p>
+<table>
+<thead>
+<tr>
+<th>Range</th>
+<th>Percentage</th>
+<th>Remaining in Tails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>μ ± 1σ</td>
+<td>68%</td>
+<td>32% (16% each tail)</td>
+</tr>
+<tr>
+<td>μ ± 2σ</td>
+<td>95%</td>
+<td>5% (2.5% each tail)</td>
+</tr>
+<tr>
+<td>μ ± 3σ</td>
+<td>99.7%</td>
+<td>0.3% (0.15% each tail)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="applying-the-empirical-rule">Applying the Empirical Rule</h3>
+<p><strong>Example:</strong> SAT scores are approximately normal with mean 1060 and standard deviation 195.</p>
+<p>Using the Empirical Rule:</p>
+<ul>
+<li>68% of scores fall between <span class="arithmatex">\( 1060 - 195 = 865 \)</span> and <span class="arithmatex">\( 1060 + 195 = 1255 \)</span></li>
+<li>95% of scores fall between <span class="arithmatex">\( 1060 - 2(195) = 670 \)</span> and <span class="arithmatex">\( 1060 + 2(195) = 1450 \)</span></li>
+<li>99.7% of scores fall between <span class="arithmatex">\( 1060 - 3(195) = 475 \)</span> and <span class="arithmatex">\( 1060 + 3(195) = 1645 \)</span></li>
+</ul>
+<p>What percentage of students score above 1450?</p>
+<p>Since 95% fall between 670 and 1450, the remaining 5% are in the two tails. By symmetry, 2.5% score above 1450.</p>
+<p>"Time to squirrel away a memory trick," Sylvia suggests. "I remember 68-95-99.7 by thinking: 68 is like 'six-eight,' which reminds me of one standard deviation. Then 95 for two, and 99.7 (almost all!) for three. It's not perfect, but it works for me!"</p>
+<h4 id="diagram-empirical-rule-interactive-demonstration">Diagram: Empirical Rule Interactive Demonstration</h4>
+<iframe src="../../sims/empirical-rule/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+<p><a class="md-button md-button--primary" href="../../sims/empirical-rule/main.html">Run MicroSim Fullscreen</a>
+<a class="md-button" href="https://editor.p5js.org/">Edit in p5.js Editor</a></p>
+<details>
+<summary>68-95-99.7 Rule Visualization</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Students will apply the Empirical Rule to find percentages within standard deviation ranges of a normal distribution (Bloom: Applying).</p>
+<p>Visual elements:
+- Normal curve with mean at center
+- Color-coded regions:
+  - Dark green: within 1 SD (68%)
+  - Medium green: between 1 and 2 SDs (additional 27%)
+  - Light green: between 2 and 3 SDs (additional 4.7%)
+  - Very light: beyond 3 SDs (0.3%)
+- Percentage labels in each region
+- Scale showing actual values below, z-scores above</p>
+<p>Interactive controls:
+- Input fields for mean and standard deviation
+- Buttons to highlight: "Within 1 SD", "Within 2 SD", "Within 3 SD"
+- Toggle to show cumulative percentages vs. region percentages
+- "Quiz me" mode: given a range, student guesses the percentage
+- Preset scenarios: SAT scores, heights, temperatures</p>
+<p>Behavior:
+- When SD range is selected, that region pulses and displays percentage
+- Actual values on scale update when mean/SD change
+- Quiz mode: reveal answer after student submits guess
+- Show running score in quiz mode</p>
+<p>Canvas size: 800 x 400 pixels, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="the-standard-normal-distribution">The Standard Normal Distribution</h2>
+<p>The <strong>standard normal distribution</strong> is a special normal distribution with mean 0 and standard deviation 1:</p>
+<div class="arithmatex">\[
+Z \sim N(0, 1)
+\]</div>
+<p>We use the capital letter Z (rather than X) to indicate a standard normal variable. Any normal distribution can be converted to the standard normal by calculating z-scores—this is why z-scores are so powerful!</p>
+<p>The standard normal distribution is our reference. All the tables and technology tools are calibrated to it, so we convert our problems to standard normal form, find the answer, and convert back if needed.</p>
+<h3 id="using-the-normal-table">Using the Normal Table</h3>
+<p>A <strong>normal table</strong> (also called a z-table) gives the area under the standard normal curve to the <em>left</em> of any z-value. This area represents the proportion of observations less than that z-score.</p>
+<p><strong>Reading the table:</strong>
+1. Find your z-score (e.g., z = 1.25)
+2. Look up the row for 1.2 and the column for .05
+3. The table entry is the area to the left of z = 1.25</p>
+<p>For z = 1.25, the table shows approximately 0.8944, meaning 89.44% of values in a standard normal distribution are less than z = 1.25.</p>
+<p><strong>Common z-values to memorize:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Z-Score</th>
+<th>Area to Left</th>
+<th>Area to Right</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-3</td>
+<td>0.0013</td>
+<td>0.9987</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>0.0228</td>
+<td>0.9772</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>0.1587</td>
+<td>0.8413</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0.5000</td>
+<td>0.5000</td>
+</tr>
+<tr>
+<td>+1</td>
+<td>0.8413</td>
+<td>0.1587</td>
+</tr>
+<tr>
+<td>+2</td>
+<td>0.9772</td>
+<td>0.0228</td>
+</tr>
+<tr>
+<td>+3</td>
+<td>0.9987</td>
+<td>0.0013</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="finding-normal-probabilities">Finding Normal Probabilities</h2>
+<p>The process for finding probabilities (areas) under a normal curve follows a consistent pattern:</p>
+<p><strong>Step 1:</strong> Draw and label a normal curve with the given μ and σ</p>
+<p><strong>Step 2:</strong> Mark the value(s) of interest and shade the desired region</p>
+<p><strong>Step 3:</strong> Convert to z-scores using <span class="arithmatex">\( z = \frac{x - \mu}{\sigma} \)</span></p>
+<p><strong>Step 4:</strong> Use a table or technology to find the area</p>
+<p><strong>Step 5:</strong> Interpret in context</p>
+<h3 id="types-of-probability-questions">Types of Probability Questions</h3>
+<p><strong>Type 1: Find P(X &lt; a) — "less than"</strong></p>
+<p>Shade the region to the left of a. The table gives this directly.</p>
+<p><strong>Type 2: Find P(X &gt; a) — "greater than"</strong></p>
+<p>Shade the region to the right of a. Since the table gives left areas:
+[
+P(X &gt; a) = 1 - P(X &lt; a)
+]</p>
+<p><strong>Type 3: Find P(a &lt; X &lt; b) — "between"</strong></p>
+<p>Shade the region between a and b. Find:
+[
+P(a &lt; X &lt; b) = P(X &lt; b) - P(X &lt; a)
+]</p>
+<h3 id="worked-example">Worked Example</h3>
+<p>Adult women's heights are normally distributed with mean 64.5 inches and standard deviation 2.5 inches. What proportion of women are between 62 and 67 inches tall?</p>
+<p><strong>Step 1-2:</strong> Draw the curve, mark 62 and 67, shade between them.</p>
+<p><strong>Step 3:</strong> Convert to z-scores:
+[
+z_{62} = \frac{62 - 64.5}{2.5} = \frac{-2.5}{2.5} = -1.0
+]
+[
+z_{67} = \frac{67 - 64.5}{2.5} = \frac{2.5}{2.5} = +1.0
+]</p>
+<p><strong>Step 4:</strong> Find areas:
+- P(Z &lt; 1.0) = 0.8413
+- P(Z &lt; -1.0) = 0.1587
+- P(-1 &lt; Z &lt; 1) = 0.8413 - 0.1587 = 0.6826</p>
+<p><strong>Step 5:</strong> About <strong>68.26%</strong> of women are between 62 and 67 inches tall.</p>
+<p>(Notice this matches the Empirical Rule: within 1 SD of the mean contains about 68% of the data!)</p>
+<h4 id="diagram-normal-probability-calculator">Diagram: Normal Probability Calculator</h4>
+<iframe src="../../sims/normal-probability-calc/main.html" height="432px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+<p><a class="md-button md-button--primary" href="../../sims/normal-probability-calc/main.html">Run MicroSim Fullscreen</a>
+<a class="md-button" href="https://editor.p5js.org/">Edit in p5.js Editor</a></p>
+<details>
+<summary>Step-by-Step Normal Probability Finder</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Students will calculate probabilities for normal distributions by converting to z-scores and finding areas under the curve (Bloom: Applying, Analyzing).</p>
+<p>Visual elements:
+- Normal curve with adjustable mean and standard deviation
+- Shaded region showing the probability being calculated
+- Display of both original scale and z-score scale
+- Step-by-step solution panel showing:
+  1. Problem setup (μ, σ, target value)
+  2. Z-score calculation with formula
+  3. Table lookup or area calculation
+  4. Final probability with interpretation</p>
+<p>Interactive controls:
+- Input fields for μ (mean) and σ (standard deviation)
+- Input field(s) for boundary values
+- Radio buttons: P(X &lt; a), P(X &gt; a), P(a &lt; X &lt; b)
+- "Solve step by step" button (shows one step at a time)
+- "Show full solution" button
+- "New problem" button generating random scenarios</p>
+<p>Behavior:
+- Curve and shading update as inputs change
+- Each step highlights the relevant calculation
+- Z-score calculation shows formula with values substituted
+- Final answer shown with interpretation sentence
+- Option to generate practice problems</p>
+<p>Canvas size: 850 x 500 pixels, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="inverse-normal-calculations">Inverse Normal Calculations</h2>
+<p>Sometimes we work backwards: instead of finding a probability given a value, we find a value given a probability. These are called <strong>inverse normal calculations</strong>.</p>
+<p><strong>Example:</strong> What height separates the tallest 10% of women from the rest?</p>
+<p>We want to find x such that P(X &gt; x) = 0.10, which means P(X &lt; x) = 0.90.</p>
+<p><strong>Step 1:</strong> Find the z-score with area 0.90 to its left. Looking in the table body for 0.90, we find z ≈ 1.28.</p>
+<p><strong>Step 2:</strong> Convert z back to x:</p>
+<p>Since <span class="arithmatex">\( z = \frac{x - \mu}{\sigma} \)</span>, we can solve for x:
+[
+x = \mu + z \cdot \sigma = 64.5 + (1.28)(2.5) = 64.5 + 3.2 = 67.7 \text{ inches}
+]</p>
+<p>Women 67.7 inches (about 5'8") or taller are in the top 10% for height.</p>
+<h3 id="the-inverse-normal-process">The Inverse Normal Process</h3>
+<ol>
+<li>Identify the probability (area) given in the problem</li>
+<li>Determine whether the area is to the left or right</li>
+<li>If area is to the right, convert: area to left = 1 - area to right</li>
+<li>Find the corresponding z-score from the table (look in the body of the table)</li>
+<li>Convert z to x using: <span class="arithmatex">\( x = \mu + z \cdot \sigma \)</span></li>
+</ol>
+<p><strong>Common inverse problems:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Phrase in Problem</th>
+<th>What to Find</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Top 5%"</td>
+<td>z with area 0.95 to left</td>
+</tr>
+<tr>
+<td>"Bottom 10%"</td>
+<td>z with area 0.10 to left</td>
+</tr>
+<tr>
+<td>"Middle 90%"</td>
+<td>z-values at 0.05 and 0.95</td>
+</tr>
+<tr>
+<td>"Highest 1%"</td>
+<td>z with area 0.99 to left</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="technology-for-normal-calculations">Technology for Normal Calculations</h2>
+<p>While normal tables are important to understand, most real-world calculations use technology. Here's how to use common tools:</p>
+<p><strong>TI-83/84 Calculator:</strong></p>
+<ul>
+<li><code>normalcdf(lower, upper, μ, σ)</code> — finds P(lower &lt; X &lt; upper)</li>
+<li><code>invNorm(area, μ, σ)</code> — finds x-value for given left-tail area</li>
+</ul>
+<p><strong>For P(X &lt; 65) with μ = 70, σ = 5:</strong>
+<code>normalcdf(-1E99, 65, 70, 5)</code> returns 0.1587</p>
+<p><strong>For the value at the 90th percentile:</strong>
+<code>invNorm(0.90, 70, 5)</code> returns 76.41</p>
+<p><strong>Online Tools and Software:</strong></p>
+<p>Most statistical software (R, Python, Excel) has normal distribution functions. The concepts are identical—just the syntax differs.</p>
+<p>"Don't worry if tables feel clunky at first," Sylvia reassures. "I still use my calculator for serious calculations. But understanding the table helps you know what the technology is actually doing. Plus, tables don't need batteries!"</p>
+<hr />
+<h2 id="assessing-normality">Assessing Normality</h2>
+<p>Before using normal distribution methods, we should check whether our data is approximately normal. There are several approaches:</p>
+<h3 id="visual-methods">Visual Methods</h3>
+<p><strong>1. Histogram:</strong> Does it look roughly symmetric and bell-shaped?</p>
+<p><strong>2. Boxplot:</strong> Is the median near the center of the box? Are the whiskers roughly equal length?</p>
+<p><strong>3. Normal Probability Plot:</strong> This is the most reliable visual method.</p>
+<h3 id="normal-probability-plots">Normal Probability Plots</h3>
+<p>A <strong>normal probability plot</strong> (also called a QQ plot) graphs each data value against the z-score it would have if the data were perfectly normal. If the data is normally distributed, the points will fall approximately along a straight line.</p>
+<p><strong>Reading a normal probability plot:</strong></p>
+<ul>
+<li><strong>Points follow a straight line:</strong> Data is approximately normal</li>
+<li><strong>Points curve upward at ends:</strong> Data is right-skewed (heavier right tail)</li>
+<li><strong>Points curve downward at ends:</strong> Data is left-skewed (heavier left tail)</li>
+<li><strong>S-shaped pattern:</strong> Data has lighter tails than normal</li>
+<li><strong>Scattered points:</strong> Data may not follow any standard distribution</li>
+</ul>
+<h4 id="diagram-normal-probability-plot-explorer">Diagram: Normal Probability Plot Explorer</h4>
+<iframe src="../../sims/normal-probability-plot/main.html" height="402px" scrolling="no" style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+<p><a class="md-button md-button--primary" href="../../sims/normal-probability-plot/main.html">Run MicroSim Fullscreen</a>
+<a class="md-button" href="https://editor.p5js.org/">Edit in p5.js Editor</a></p>
+<details>
+<summary>Interactive Normality Assessment Tool</summary>
+<p>Type: MicroSim</p>
+<p>Learning objective: Students will assess whether data follows a normal distribution by interpreting histograms and normal probability plots (Bloom: Analyzing, Evaluating).</p>
+<p>Visual elements:
+- Left panel: Histogram of the dataset
+- Right panel: Normal probability plot (QQ plot)
+- Reference line on QQ plot showing perfect normality
+- Summary statistics displayed: mean, SD, skewness
+- "Normality verdict" indicator</p>
+<p>Interactive controls:
+- Dropdown to select dataset type:
+  - "Approximately Normal"
+  - "Right Skewed"
+  - "Left Skewed"
+  - "Heavy Tails"
+  - "Light Tails"
+  - "Uniform"
+  - "Bimodal"
+- Sample size slider (20 to 200)
+- "Generate new sample" button
+- Toggle: Show/hide reference line
+- Toggle: Show/hide ideal normal overlay on histogram</p>
+<p>Behavior:
+- Both plots update simultaneously when dataset changes
+- For normal data, QQ plot points cluster around the line
+- For skewed data, characteristic curved patterns appear
+- Verdict updates with explanation: "Data appears [normal/non-normal] because..."
+- Multiple samples can be generated to see sampling variation</p>
+<p>Canvas size: 900 x 400 pixels, responsive design
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<h3 id="when-is-close-enough-normal">When Is "Close Enough" Normal?</h3>
+<p>Real data is never <em>perfectly</em> normal, so we look for "approximately normal" patterns:</p>
+<ul>
+<li>Small samples (n &lt; 30): Look for no extreme skewness or outliers</li>
+<li>Moderate samples (30 ≤ n &lt; 100): Mild skewness is acceptable</li>
+<li>Large samples (n ≥ 100): Normal methods are robust even with moderate non-normality</li>
+</ul>
+<p>The Central Limit Theorem (coming in a later chapter!) explains why normal methods work even when individual observations aren't normal, as long as our samples are large enough.</p>
+<hr />
+<h2 id="putting-it-all-together-complete-examples">Putting It All Together: Complete Examples</h2>
+<h3 id="example-1-manufacturing-quality-control">Example 1: Manufacturing Quality Control</h3>
+<p>A machine fills bottles with 16.0 oz of soda. The actual amounts are normally distributed with mean 16.1 oz and standard deviation 0.15 oz.</p>
+<p><strong>a) What percentage of bottles contain less than 16.0 oz?</strong></p>
+<div class="arithmatex">\[
+z = \frac{16.0 - 16.1}{0.15} = \frac{-0.1}{0.15} = -0.67
+\]</div>
+<p>P(Z &lt; -0.67) ≈ 0.2514</p>
+<p>About <strong>25.1%</strong> of bottles are underfilled.</p>
+<p><strong>b) What fill amount separates the lowest 5% of bottles?</strong></p>
+<p>Find z with area 0.05 to left: z ≈ -1.645</p>
+<div class="arithmatex">\[
+x = 16.1 + (-1.645)(0.15) = 16.1 - 0.247 = 15.85 \text{ oz}
+\]</div>
+<p>The lowest 5% of bottles contain less than <strong>15.85 oz</strong>.</p>
+<h3 id="example-2-comparing-standardized-test-scores">Example 2: Comparing Standardized Test Scores</h3>
+<p>Maria scored 680 on the SAT (μ = 1060, σ = 195) and 29 on the ACT (μ = 21, σ = 5). Which score is relatively better?</p>
+<p><strong>SAT z-score:</strong>
+[
+z = \frac{680 - 1060}{195} = \frac{-380}{195} = -1.95
+]</p>
+<p><strong>ACT z-score:</strong>
+[
+z = \frac{29 - 21}{5} = \frac{8}{5} = +1.60
+]</p>
+<p>Maria's ACT score (z = +1.60) is much stronger than her SAT score (z = -1.95). Her ACT performance is 1.6 standard deviations <em>above</em> average, while her SAT is nearly 2 standard deviations <em>below</em> average.</p>
+<hr />
+<h2 id="key-takeaways">Key Takeaways</h2>
+<p>"Time to squirrel away the big ideas!"</p>
+<ul>
+<li>
+<p><strong>Z-scores</strong> measure how many standard deviations a value is from the mean: <span class="arithmatex">\( z = \frac{x - \mu}{\sigma} \)</span></p>
+</li>
+<li>
+<p><strong>Standardization</strong> converts any distribution to a common scale (mean 0, SD 1), enabling meaningful comparisons</p>
+</li>
+<li>
+<p><strong>Density curves</strong> are smooth mathematical models; the area under the curve represents probability</p>
+</li>
+<li>
+<p><strong>Normal distributions</strong> are symmetric, bell-shaped curves defined by μ and σ</p>
+</li>
+<li>
+<p>The <strong>Empirical Rule (68-95-99.7)</strong> gives exact percentages within 1, 2, and 3 standard deviations for normal distributions</p>
+</li>
+<li>
+<p>The <strong>standard normal</strong> (Z ~ N(0,1)) is our reference distribution for calculations</p>
+</li>
+<li>
+<p><strong>Forward problems:</strong> Given x, find probability using <span class="arithmatex">\( z = \frac{x - \mu}{\sigma} \)</span> and look up area</p>
+</li>
+<li>
+<p><strong>Inverse problems:</strong> Given probability, find z from table, then calculate <span class="arithmatex">\( x = \mu + z \cdot \sigma \)</span></p>
+</li>
+<li>
+<p><strong>Normal probability plots</strong> help assess whether data follows a normal distribution—look for points along a straight line</p>
+</li>
+<li>
+<p><strong>Technology</strong> makes calculations faster, but understanding the underlying process is essential</p>
+</li>
+</ul>
+<hr />
+<h2 id="practice-problems">Practice Problems</h2>
+<ol>
+<li>
+<p>The mean score on a psychology exam is 72 with standard deviation 9. Calculate the z-score for a student who scored 63. Interpret this z-score.</p>
+</li>
+<li>
+<p>Adult male heights are normally distributed with μ = 70 inches and σ = 3 inches.</p>
+</li>
+<li>What percentage of men are shorter than 67 inches?</li>
+<li>What percentage are between 67 and 76 inches?</li>
+<li>
+<p>How tall must a man be to be in the top 5%?</p>
+</li>
+<li>
+<p>Two students are comparing their performances. Student A scored 85 on a test with mean 78 and SD 6. Student B scored 92 on a different test with mean 85 and SD 10. Who performed better relative to their class?</p>
+</li>
+<li>
+<p>A normal probability plot of exam scores shows a clear curved pattern—the points bend upward at the right end. What does this tell you about the distribution of scores?</p>
+</li>
+<li>
+<p>Use the Empirical Rule: If IQ scores are normally distributed with mean 100 and SD 15, what percentage of people have IQs between 85 and 130?</p>
+</li>
+</ol>
+<hr />
+<p>Congratulations! You've mastered one of the most important tools in all of statistics. The normal distribution and z-scores will appear again and again—in sampling distributions, confidence intervals, and hypothesis testing. This foundation will serve you well!</p>
+<p>"Now <em>that's</em> a data point worth collecting!" Sylvia beams. "You just learned to speak the universal language of statistics. Whether you're analyzing test scores, heights, or—yes—acorn counts, you've got the tools to make meaningful comparisons. Onward to new adventures!"</p>
 
 
 

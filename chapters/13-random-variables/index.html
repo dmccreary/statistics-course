@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP statistics designed for college credit.">
+        <meta name="description" content="Introduction to random variables, probability distributions, expected value, and the binomial and geometric distributions">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>13. Random Variables - AP Statistics</title>
+        <title>Random Variables - AP Statistics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="13. Random Variables - AP Statistics" >
+        <meta  property="og:title"  content="Random Variables - AP Statistics" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  property="og:description"  content="Introduction to random variables, probability distributions, expected value, and the binomial and geometric distributions" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/13-random-variables/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="13. Random Variables - AP Statistics" >
+        <meta  name="twitter:title"  content="Random Variables - AP Statistics" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP statistics designed for college credit." >
+        <meta  name="twitter:description"  content="Introduction to random variables, probability distributions, expected value, and the binomial and geometric distributions" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/chapters/13-random-variables/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              13. Random Variables
+              Random Variables
             
           </span>
         </div>
@@ -770,6 +770,561 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-putting-numbers-on-chance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Putting Numbers on Chance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-random-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Random Variable?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is a Random Variable?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discrete-vs-continuous-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discrete vs. Continuous Random Variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probability-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probability Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Probability Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-rolling-a-die" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Rolling a Die
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Rolling a Die">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-probability-distribution-bar-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Probability Distribution Bar Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-a-valid-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Makes a Valid Distribution?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practice-valid-or-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice: Valid or Invalid?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-value-the-long-run-average" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expected Value: The Long-Run Average
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expected Value: The Long-Run Average">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-formula-for-expected-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Formula for Expected Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-expected-value-of-a-die-roll" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Expected Value of a Die Roll
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-insurance-premiums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Insurance Premiums
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Insurance Premiums">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-expected-value-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Expected Value Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variance-and-standard-deviation-of-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variance and Standard Deviation of Random Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variance and Standard Deviation of Random Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variance-of-a-random-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variance of a Random Variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-deviation-of-a-random-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Deviation of a Random Variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-calculating-variance-for-a-die-roll" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Calculating Variance for a Die Roll
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforming-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transforming Random Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transforming Random Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-constant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Constant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplying-by-a-constant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplying by a Constant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-linear-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Linear Transformation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining Random Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combining Random Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sum-of-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum of Random Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difference-of-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference of Random Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-deviation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Deviation Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-combining-test-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Combining Test Scores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Combining Test Scores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-combining-random-variables-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Combining Random Variables Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-binomial-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Binomial Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Binomial Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-binomial-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Binomial Setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-binomial-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Binomial Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-binomial-distribution_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Binomial Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-binomial-probability-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Binomial Probability Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-coin-flips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Coin Flips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Coin Flips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-binomial-probability-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Binomial Probability Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomial-mean-and-standard-deviation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binomial Mean and Standard Deviation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-technology-for-binomial-probabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Technology for Binomial Probabilities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-geometric-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Geometric Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Geometric Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-geometric-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Geometric Setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-probability-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Probability Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-first-head" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: First Head
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Mean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Geometric Mean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-geometric-distribution-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Geometric Distribution Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparing-binomial-and-geometric" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing Binomial and Geometric
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-guide-which-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Guide: Which Distribution?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Guide: Which Distribution?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-random-variable-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Random Variable Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1005,6 +1560,70 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -1097,6 +1716,8 @@
       
         
           
+        
+      
         
       
         
@@ -1317,6 +1938,561 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-putting-numbers-on-chance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Putting Numbers on Chance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-random-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Random Variable?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is a Random Variable?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discrete-vs-continuous-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discrete vs. Continuous Random Variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probability-distributions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probability Distributions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Probability Distributions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-rolling-a-die" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Rolling a Die
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Rolling a Die">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-probability-distribution-bar-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Probability Distribution Bar Chart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-a-valid-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Makes a Valid Distribution?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#practice-valid-or-invalid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice: Valid or Invalid?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-value-the-long-run-average" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expected Value: The Long-Run Average
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expected Value: The Long-Run Average">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-formula-for-expected-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Formula for Expected Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-expected-value-of-a-die-roll" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Expected Value of a Die Roll
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-insurance-premiums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Insurance Premiums
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Insurance Premiums">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-expected-value-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Expected Value Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variance-and-standard-deviation-of-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variance and Standard Deviation of Random Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variance and Standard Deviation of Random Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variance-of-a-random-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variance of a Random Variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-deviation-of-a-random-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Deviation of a Random Variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-calculating-variance-for-a-die-roll" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Calculating Variance for a Die Roll
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transforming-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transforming Random Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transforming Random Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-constant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a Constant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplying-by-a-constant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplying by a Constant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-linear-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Linear Transformation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining Random Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combining Random Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sum-of-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum of Random Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difference-of-random-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference of Random Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-deviation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Deviation Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-combining-test-scores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Combining Test Scores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Combining Test Scores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-combining-random-variables-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Combining Random Variables Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-binomial-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Binomial Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Binomial Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-binomial-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Binomial Setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-binomial-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Binomial Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-binomial-distribution_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Binomial Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-binomial-probability-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Binomial Probability Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-coin-flips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Coin Flips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Coin Flips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-binomial-probability-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Binomial Probability Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binomial-mean-and-standard-deviation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binomial Mean and Standard Deviation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-technology-for-binomial-probabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Technology for Binomial Probabilities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-geometric-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Geometric Distribution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Geometric Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-geometric-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Geometric Setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Distribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-probability-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Probability Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-first-head" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: First Head
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Mean
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Geometric Mean">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-geometric-distribution-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Geometric Distribution Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparing-binomial-and-geometric" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing Binomial and Geometric
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-guide-which-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Guide: Which Distribution?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Guide: Which Distribution?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-random-variable-concept-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Random Variable Concept Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1377,7 +2553,952 @@
 <li><a href="../09-probability-fundamentals/">Chapter 9: Probability Fundamentals</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-putting-numbers-on-chance">Introduction: Putting Numbers on Chance</h2>
+<p>Welcome back! Sylvia here, and I have to tell you, this is one of my favorite chapters. Why? Because we're about to take everything you've learned about probability and supercharge it with some seriously powerful mathematical tools.</p>
+<p>Think about it: probability tells us that something is "likely" or "unlikely," but what if we could be more precise? What if we could calculate the <em>average</em> outcome of a random process, or measure how much variability to expect? That's exactly what random variables let us do.</p>
+<p>Here's a real-world example. Imagine you're running a carnival game where players pay $2 to spin a wheel. Sometimes they win $5, sometimes $1, sometimes nothing. How do you know if your game will make money over hundreds of spins? Random variables give you the answer.</p>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia Says</p>
+<p>Random variables are like translating the unpredictable language of chance into the precise language of numbers. Once you've made that translation, a whole world of calculations opens up!</p>
+</div>
+<h2 id="what-is-a-random-variable">What Is a Random Variable?</h2>
+<p>A <strong>random variable</strong> is a variable whose value is determined by the outcome of a random process. It's like a rule that assigns a number to every possible outcome of an experiment.</p>
+<p>Let's make this concrete. When you flip two coins, the possible outcomes are:</p>
+<ul>
+<li>HH (both heads)</li>
+<li>HT (head, then tail)</li>
+<li>TH (tail, then head)</li>
+<li>TT (both tails)</li>
+</ul>
+<p>If we let X = "the number of heads," then X is a random variable that assigns these values:</p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th>Value of X</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HH</td>
+<td>2</td>
+</tr>
+<tr>
+<td>HT</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TH</td>
+<td>1</td>
+</tr>
+<tr>
+<td>TT</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Notice what we've done: we've converted word descriptions of outcomes into numbers. That's the magic of random variables.</p>
+<h3 id="discrete-vs-continuous-random-variables">Discrete vs. Continuous Random Variables</h3>
+<p>Random variables come in two flavors:</p>
+<ul>
+<li><strong>Discrete random variables</strong> take on a countable number of values (like counting things: 0, 1, 2, 3...)</li>
+<li><strong>Continuous random variables</strong> take on any value in an interval (like measuring: 5.2, 5.21, 5.217...)</li>
+</ul>
+<p>In this chapter, we focus on <strong>discrete random variables</strong>. You'll meet continuous random variables when we explore normal distributions more deeply.</p>
+<p>Here are some examples to help you distinguish between them:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of texts you send today</td>
+<td>Discrete</td>
+<td>You count texts (0, 1, 2, ...)</td>
+</tr>
+<tr>
+<td>Time spent studying</td>
+<td>Continuous</td>
+<td>Could be 45.3 minutes, 45.37 minutes, etc.</td>
+</tr>
+<tr>
+<td>Number of heads in 10 coin flips</td>
+<td>Discrete</td>
+<td>You count heads (0, 1, 2, ..., 10)</td>
+</tr>
+<tr>
+<td>Height of a randomly selected student</td>
+<td>Continuous</td>
+<td>Measured values can be infinitely precise</td>
+</tr>
+<tr>
+<td>Number of cars in a parking lot</td>
+<td>Discrete</td>
+<td>You count cars</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="probability-distributions">Probability Distributions</h2>
+<p>A <strong>probability distribution</strong> tells you all possible values of a random variable and how likely each value is. Think of it as a complete picture of what might happen and the chances of each possibility.</p>
+<p>For a discrete random variable, we can display the probability distribution as a table, a graph, or a formula.</p>
+<h3 id="example-rolling-a-die">Example: Rolling a Die</h3>
+<p>Let X = the number showing when you roll a fair six-sided die.</p>
+<table>
+<thead>
+<tr>
+<th>Value of X</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P(X = x)</td>
+<td>1/6</td>
+<td>1/6</td>
+<td>1/6</td>
+<td>1/6</td>
+<td>1/6</td>
+<td>1/6</td>
+</tr>
+</tbody>
+</table>
+<p>Each outcome has equal probability, so this is a <strong>uniform distribution</strong>.</p>
+<h4 id="diagram-probability-distribution-bar-chart">Diagram: Probability Distribution Bar Chart</h4>
+<iframe src="../../sims/probability-distribution-bar/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
+
+<details>
+<summary>Probability Distribution Bar Chart</summary>
+<p>Type: chart</p>
+<p>Purpose: Visualize the probability distribution for rolling a die, showing equal probabilities for each outcome</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Interpret</p>
+<p>Learning Objective: Students will interpret a probability distribution by examining a bar chart where each bar's height represents the probability of that outcome.</p>
+<p>Chart Type: Bar chart with interactive elements</p>
+<p>Visual Elements:
+- X-axis: Values 1, 2, 3, 4, 5, 6
+- Y-axis: Probability from 0 to 0.3 (or fraction scale showing 1/6)
+- Six equal-height bars at height 1/6 (approximately 0.167)
+- Each bar labeled with its probability value
+- Grid lines for easy reading</p>
+<p>Interactive Features:
+- Hover over any bar to see exact probability value
+- Display shows P(X = value) = 1/6 on hover
+- Option to toggle between fraction (1/6) and decimal (0.167) display</p>
+<p>Color Scheme: Use Sylvia's green (--sylvia-green: #2E7D32) for bars</p>
+<p>Canvas Size: Responsive, approximately 600x400px</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h3 id="what-makes-a-valid-distribution">What Makes a Valid Distribution?</h3>
+<p>Not every table of numbers is a valid probability distribution. A distribution is <strong>valid</strong> if and only if:</p>
+<ol>
+<li><strong>Every probability is between 0 and 1:</strong> For all values, <span class="arithmatex">\( 0 \leq P(X = x) \leq 1 \)</span></li>
+<li><strong>The probabilities sum to 1:</strong> <span class="arithmatex">\( \sum P(X = x) = 1 \)</span></li>
+</ol>
+<p>These rules make sense. A probability can't be negative (that would mean something is "less than impossible"), and it can't be greater than 1 (that would mean something is "more than certain"). And since something has to happen, the total probability must equal 1.</p>
+<div class="admonition warning">
+<p class="admonition-title">Check Your Work</p>
+<p>Always verify that your probabilities sum to 1. If they don't, you've made an error somewhere. This is a common mistake on the AP exam!</p>
+</div>
+<h3 id="practice-valid-or-invalid">Practice: Valid or Invalid?</h3>
+<p>Consider this distribution for X:</p>
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P(X = x)</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.2</td>
+<td>0.2</td>
+</tr>
+</tbody>
+</table>
+<p>Is this valid? Let's check:</p>
+<ul>
+<li>All probabilities are between 0 and 1: 0.3, 0.3, 0.2, 0.2 all pass</li>
+<li>Sum: 0.3 + 0.3 + 0.2 + 0.2 = 1.0</li>
+</ul>
+<p>Yes, this is a valid probability distribution.</p>
+<hr />
+<h2 id="expected-value-the-long-run-average">Expected Value: The Long-Run Average</h2>
+<p>Here's where things get really useful. The <strong>expected value</strong> of a random variable is what you'd expect the average outcome to be if you repeated the random process many, many times.</p>
+<p>The notation is <span class="arithmatex">\( E(X) \)</span> or <span class="arithmatex">\( \mu_X \)</span> (read as "mu sub X").</p>
+<h3 id="the-formula-for-expected-value">The Formula for Expected Value</h3>
+<p>For a discrete random variable X with possible values <span class="arithmatex">\( x_1, x_2, ..., x_n \)</span>, the expected value is:</p>
+<div class="arithmatex">\[
+E(X) = \mu_X = \sum x_i \cdot P(X = x_i)
+\]</div>
+<p>In words: multiply each value by its probability, then add them all up.</p>
+<h3 id="example-expected-value-of-a-die-roll">Example: Expected Value of a Die Roll</h3>
+<p>For rolling a fair die:</p>
+<div class="arithmatex">\[
+E(X) = 1 \cdot \frac{1}{6} + 2 \cdot \frac{1}{6} + 3 \cdot \frac{1}{6} + 4 \cdot \frac{1}{6} + 5 \cdot \frac{1}{6} + 6 \cdot \frac{1}{6}
+\]</div>
+<div class="arithmatex">\[
+E(X) = \frac{1 + 2 + 3 + 4 + 5 + 6}{6} = \frac{21}{6} = 3.5
+\]</div>
+<p>Wait, 3.5? But you can't roll a 3.5! That's exactly right. The expected value doesn't have to be a possible outcome. It's the long-run average. If you rolled a die 1,000 times and averaged all your rolls, you'd get something very close to 3.5.</p>
+<div class="admonition note">
+<p class="admonition-title">Acorn for Your Thoughts</p>
+<p>I once tried to figure out how many acorns I'd collect on average each day. Some days were great (12 acorns!), some were terrible (just 2). By calculating the expected value, I knew my long-run average was about 7 acorns per day. That helped me plan my winter storage perfectly!</p>
+</div>
+<h3 id="example-insurance-premiums">Example: Insurance Premiums</h3>
+<p>Insurance companies use expected value constantly. Suppose a company sells a $100,000 life insurance policy to a 30-year-old for $250/year. Based on mortality tables, there's a 0.001 probability this person dies during the year.</p>
+<p>Let X = the company's profit from this policy.</p>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th>X (Profit)</th>
+<th>Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Person lives</td>
+<td>$250</td>
+<td>0.999</td>
+</tr>
+<tr>
+<td>Person dies</td>
+<td>$250 - <span class="arithmatex">\(100,000 = -\)</span>99,750</td>
+<td>0.001</td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[
+E(X) = 250(0.999) + (-99,750)(0.001)
+\]</div>
+<div class="arithmatex">\[
+E(X) = 249.75 - 99.75 = \$150
+\]</div>
+<p>On average, the company profits $150 per policy. With thousands of policies, this adds up significantly!</p>
+<h4 id="diagram-expected-value-calculator">Diagram: Expected Value Calculator</h4>
+<iframe src="../../sims/expected-value-calculator/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
+
+<details>
+<summary>Expected Value Calculator MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Allow students to create custom probability distributions and calculate expected value interactively</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Calculate</p>
+<p>Learning Objective: Students will calculate expected value by entering values and probabilities, observing how the weighted average is computed step-by-step.</p>
+<p>Instructional Rationale: An interactive calculator supports the Apply level by letting students practice the expected value formula with immediate feedback. Students can experiment with different distributions and see how changing probabilities affects the expected value.</p>
+<p>Canvas Layout:
+- Main area: Input table for values and probabilities
+- Side panel: Running calculation display
+- Bottom: Expected value result with visual bar</p>
+<p>Visual Elements:
+- Editable table with columns: Value (x), Probability P(X=x), Contribution (x * P)
+- Start with 4 rows, button to add more (up to 8)
+- Running total of probabilities shown (must equal 1.0)
+- Visual indicator (green checkmark or red X) showing if distribution is valid
+- Bar chart showing the distribution updates in real-time
+- Final expected value displayed prominently</p>
+<p>Interactive Controls:
+- Text inputs for values (numbers)
+- Text inputs for probabilities (0-1)
+- "Add Row" button
+- "Clear All" button
+- "Calculate E(X)" button
+- Toggle between fraction and decimal input</p>
+<p>Default Parameters:
+- Pre-loaded with die roll example: values 1-6, each with probability 1/6</p>
+<p>Behavior:
+- As user enters probabilities, probability sum updates
+- If sum exceeds 1 or any probability is negative, show error
+- Contribution column auto-calculates as user types
+- Expected value shown with calculation breakdown</p>
+<p>Data Visibility:
+- Stage 1: Show input values and probabilities
+- Stage 2: Show each x * P(X=x) contribution
+- Stage 3: Show sum of contributions = E(X)</p>
+<p>Color Scheme: Sylvia's green for valid states, auburn for errors</p>
+<p>Implementation: p5.js with canvas-based input controls</p>
+</details>
+<hr />
+<h2 id="variance-and-standard-deviation-of-random-variables">Variance and Standard Deviation of Random Variables</h2>
+<p>Expected value tells us the center, but we also need to know about spread. How much variability should we expect?</p>
+<h3 id="variance-of-a-random-variable">Variance of a Random Variable</h3>
+<p>The <strong>variance</strong> of X measures the average squared distance from the mean:</p>
+<div class="arithmatex">\[
+Var(X) = \sigma_X^2 = \sum (x_i - \mu_X)^2 \cdot P(X = x_i)
+\]</div>
+<p>There's also a computational formula that's often easier to use:</p>
+<div class="arithmatex">\[
+Var(X) = E(X^2) - [E(X)]^2
+\]</div>
+<p>In words: the variance equals "the expected value of X squared" minus "the expected value of X, quantity squared."</p>
+<h3 id="standard-deviation-of-a-random-variable">Standard Deviation of a Random Variable</h3>
+<p>The <strong>standard deviation</strong> is simply the square root of variance:</p>
+<div class="arithmatex">\[
+\sigma_X = \sqrt{Var(X)}
+\]</div>
+<p>Standard deviation is in the same units as X, which makes it easier to interpret.</p>
+<h3 id="example-calculating-variance-for-a-die-roll">Example: Calculating Variance for a Die Roll</h3>
+<p>We already know <span class="arithmatex">\( E(X) = 3.5 \)</span>. Now let's find <span class="arithmatex">\( E(X^2) \)</span>:</p>
+<div class="arithmatex">\[
+E(X^2) = 1^2 \cdot \frac{1}{6} + 2^2 \cdot \frac{1}{6} + 3^2 \cdot \frac{1}{6} + 4^2 \cdot \frac{1}{6} + 5^2 \cdot \frac{1}{6} + 6^2 \cdot \frac{1}{6}
+\]</div>
+<div class="arithmatex">\[
+E(X^2) = \frac{1 + 4 + 9 + 16 + 25 + 36}{6} = \frac{91}{6} \approx 15.17
+\]</div>
+<div class="arithmatex">\[
+Var(X) = E(X^2) - [E(X)]^2 = 15.17 - (3.5)^2 = 15.17 - 12.25 = 2.92
+\]</div>
+<div class="arithmatex">\[
+\sigma_X = \sqrt{2.92} \approx 1.71
+\]</div>
+<p>This means die rolls typically deviate from the mean of 3.5 by about 1.71 points.</p>
+<hr />
+<h2 id="transforming-random-variables">Transforming Random Variables</h2>
+<p>What happens when we add a constant to a random variable, or multiply it by something? Understanding these <strong>linear transformations</strong> is crucial.</p>
+<h3 id="adding-a-constant">Adding a Constant</h3>
+<p>If we define <span class="arithmatex">\( Y = X + a \)</span> (add a constant a to every value):</p>
+<ul>
+<li><span class="arithmatex">\( E(Y) = E(X) + a \)</span> (the mean shifts by a)</li>
+<li><span class="arithmatex">\( Var(Y) = Var(X) \)</span> (the spread stays the same)</li>
+<li><span class="arithmatex">\( \sigma_Y = \sigma_X \)</span> (standard deviation unchanged)</li>
+</ul>
+<p>Think about it: if everyone in a class gets 5 bonus points on a test, the class average goes up by 5, but the spread of scores doesn't change.</p>
+<h3 id="multiplying-by-a-constant">Multiplying by a Constant</h3>
+<p>If we define <span class="arithmatex">\( Y = bX \)</span> (multiply every value by constant b):</p>
+<ul>
+<li><span class="arithmatex">\( E(Y) = b \cdot E(X) \)</span> (the mean is multiplied by b)</li>
+<li><span class="arithmatex">\( Var(Y) = b^2 \cdot Var(X) \)</span> (variance is multiplied by b squared)</li>
+<li><span class="arithmatex">\( \sigma_Y = |b| \cdot \sigma_X \)</span> (standard deviation is multiplied by |b|)</li>
+</ul>
+<h3 id="general-linear-transformation">General Linear Transformation</h3>
+<p>For <span class="arithmatex">\( Y = a + bX \)</span>:</p>
+<div class="arithmatex">\[
+E(Y) = a + b \cdot E(X)
+\]</div>
+<div class="arithmatex">\[
+\sigma_Y = |b| \cdot \sigma_X
+\]</div>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Effect on Mean</th>
+<th>Effect on SD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add constant a</td>
+<td>Mean + a</td>
+<td>No change</td>
+</tr>
+<tr>
+<td>Multiply by b</td>
+<td>Mean × b</td>
+<td>SD × |b|</td>
+</tr>
+<tr>
+<td>Y = a + bX</td>
+<td>a + b(Mean)</td>
+<td>|b| × SD</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Currency Conversion</p>
+<p>If X is the price in dollars with <span class="arithmatex">\( E(X) = \$50 \)</span> and <span class="arithmatex">\( \sigma_X = \$10 \)</span>, and you convert to euros where Y = 0.85X:</p>
+<ul>
+<li><span class="arithmatex">\( E(Y) = 0.85 \times 50 = 42.50 \)</span> euros</li>
+<li><span class="arithmatex">\( \sigma_Y = 0.85 \times 10 = 8.50 \)</span> euros</li>
+</ul>
+</div>
+<hr />
+<h2 id="combining-random-variables">Combining Random Variables</h2>
+<p>Often we need to work with sums or differences of random variables. This is where things get really interesting!</p>
+<h3 id="sum-of-random-variables">Sum of Random Variables</h3>
+<p>For <span class="arithmatex">\( T = X + Y \)</span>:</p>
+<div class="arithmatex">\[
+E(X + Y) = E(X) + E(Y)
+\]</div>
+<p>The expected value of a sum is always the sum of expected values. This works no matter what!</p>
+<p>But for variance, we need to be careful:</p>
+<div class="arithmatex">\[
+Var(X + Y) = Var(X) + Var(Y) \quad \text{(only if X and Y are independent)}
+\]</div>
+<p>If X and Y are <strong>independent</strong> (knowing one tells you nothing about the other), variances add. If they're dependent, we need more information.</p>
+<h3 id="difference-of-random-variables">Difference of Random Variables</h3>
+<p>For <span class="arithmatex">\( D = X - Y \)</span>:</p>
+<div class="arithmatex">\[
+E(X - Y) = E(X) - E(Y)
+\]</div>
+<p>And here's the surprise for many students:</p>
+<div class="arithmatex">\[
+Var(X - Y) = Var(X) + Var(Y) \quad \text{(if X and Y are independent)}
+\]</div>
+<p>Wait, variances still ADD even when we're subtracting? Yes! Variability comes from both sources, regardless of whether we're adding or subtracting.</p>
+<div class="admonition warning">
+<p class="admonition-title">Common Mistake Alert</p>
+<p>Students often think Var(X - Y) = Var(X) - Var(Y). But that's wrong! Variability doesn't cancel out when you subtract. Variance always adds for independent variables.</p>
+</div>
+<h3 id="standard-deviation-rules">Standard Deviation Rules</h3>
+<p>Since <span class="arithmatex">\( \sigma = \sqrt{Var} \)</span>, and we add variances for independent variables:</p>
+<div class="arithmatex">\[
+\sigma_{X+Y} = \sqrt{\sigma_X^2 + \sigma_Y^2}
+\]</div>
+<div class="arithmatex">\[
+\sigma_{X-Y} = \sqrt{\sigma_X^2 + \sigma_Y^2}
+\]</div>
+<p>Notice these are the same! Standard deviations don't add directly, they add "Pythagorean style" under a square root.</p>
+<h3 id="example-combining-test-scores">Example: Combining Test Scores</h3>
+<p>Suppose scores on Quiz 1 have <span class="arithmatex">\( \mu = 75 \)</span>, <span class="arithmatex">\( \sigma = 10 \)</span>, and Quiz 2 has <span class="arithmatex">\( \mu = 80 \)</span>, <span class="arithmatex">\( \sigma = 12 \)</span>. If the quizzes are independent:</p>
+<p><strong>Total score T = Quiz1 + Quiz2:</strong></p>
+<ul>
+<li><span class="arithmatex">\( E(T) = 75 + 80 = 155 \)</span></li>
+<li><span class="arithmatex">\( Var(T) = 10^2 + 12^2 = 100 + 144 = 244 \)</span></li>
+<li><span class="arithmatex">\( \sigma_T = \sqrt{244} \approx 15.6 \)</span></li>
+</ul>
+<p><strong>Difference D = Quiz2 - Quiz1:</strong></p>
+<ul>
+<li><span class="arithmatex">\( E(D) = 80 - 75 = 5 \)</span></li>
+<li><span class="arithmatex">\( Var(D) = 10^2 + 12^2 = 244 \)</span> (same as for sum!)</li>
+<li><span class="arithmatex">\( \sigma_D = \sqrt{244} \approx 15.6 \)</span></li>
+</ul>
+<h4 id="diagram-combining-random-variables-visualizer">Diagram: Combining Random Variables Visualizer</h4>
+<iframe src="../../sims/combining-random-variables/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
+
+<details>
+<summary>Combining Random Variables Visualizer</summary>
+<p>Type: microsim</p>
+<p>Purpose: Demonstrate how means and variances combine when adding or subtracting independent random variables</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain</p>
+<p>Learning Objective: Students will explain why variances add for both sums and differences of independent random variables, and why standard deviations don't simply add.</p>
+<p>Instructional Rationale: Visual representation with concrete examples helps students overcome the common misconception that Var(X-Y) = Var(X) - Var(Y). The step-by-step display shows exactly how the formulas work.</p>
+<p>Data Visibility Requirements:
+- Stage 1: Display X distribution with mean and SD
+- Stage 2: Display Y distribution with mean and SD
+- Stage 3: Show calculation for E(X+Y) and E(X-Y)
+- Stage 4: Show Var(X) + Var(Y) calculation
+- Stage 5: Show final SD calculation with square root</p>
+<p>Visual Elements:
+- Two normal curve representations for X and Y
+- Sliders to adjust mean and SD of each
+- Toggle switch: "Sum (X+Y)" vs "Difference (X-Y)"
+- Result display showing combined distribution
+- Step-by-step calculation panel</p>
+<p>Interactive Controls:
+- Slider for E(X): range 0-100, default 50
+- Slider for SD(X): range 1-20, default 10
+- Slider for E(Y): range 0-100, default 50
+- Slider for SD(Y): range 1-20, default 10
+- Toggle: Sum / Difference
+- Button: "Show Calculation Steps"</p>
+<p>Behavior:
+- As sliders move, combined distribution updates
+- Calculation shows E(X+Y) = E(X) + E(Y)
+- Variance calculation explicitly shows addition
+- SD calculation shows square root of sum of squared SDs
+- Visual emphasis that SD(X+Y) &lt; SD(X) + SD(Y)</p>
+<p>Color Scheme:
+- X distribution: Sylvia's green
+- Y distribution: Sylvia's auburn
+- Combined: Sylvia's hazel</p>
+<p>Implementation: p5.js with canvas-based sliders and toggle</p>
+</details>
+<hr />
+<h2 id="the-binomial-distribution">The Binomial Distribution</h2>
+<p>Now we're ready for one of the most important distributions in statistics: the <strong>binomial distribution</strong>. You'll use this constantly in AP Statistics and beyond.</p>
+<h3 id="the-binomial-setting">The Binomial Setting</h3>
+<p>A binomial setting has four conditions (remember <strong>BINS</strong>):</p>
+<ol>
+<li><strong>B</strong>inary outcomes: Each trial has exactly two outcomes (success/failure)</li>
+<li><strong>I</strong>ndependent trials: The outcome of one trial doesn't affect others</li>
+<li><strong>N</strong>umber of trials is fixed: We know n ahead of time</li>
+<li><strong>S</strong>ame probability: The probability of success p is constant</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>What It Means</th>
+<th>Example That Fits</th>
+<th>Example That Doesn't</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Binary</td>
+<td>Only 2 outcomes</td>
+<td>Coin flip (H/T)</td>
+<td>Die roll (1,2,3,4,5,6)</td>
+</tr>
+<tr>
+<td>Independent</td>
+<td>Trials don't affect each other</td>
+<td>Multiple coin flips</td>
+<td>Drawing without replacement</td>
+</tr>
+<tr>
+<td>Fixed n</td>
+<td>Know total trials</td>
+<td>Flip exactly 10 coins</td>
+<td>Flip until you get heads</td>
+</tr>
+<tr>
+<td>Same p</td>
+<td>Constant probability</td>
+<td>Fair coin (p=0.5)</td>
+<td>Getting harder as you go</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples-of-binomial-settings">Examples of Binomial Settings</h3>
+<p>These ARE binomial:</p>
+<ul>
+<li>Flip a coin 20 times, count heads</li>
+<li>Survey 100 people, count those who approve (if population is large)</li>
+<li>Answer 15 multiple-choice questions by guessing, count correct</li>
+</ul>
+<p>These are NOT binomial:</p>
+<ul>
+<li>Draw 5 cards without replacement, count aces (not independent)</li>
+<li>Flip until you get 3 heads (n not fixed)</li>
+<li>Shoot free throws until you miss (n not fixed, and maybe p changes as you tire)</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Sylvia's BINS Check</p>
+<p>Before using binomial formulas, always verify all four conditions. I write "BINS" in the margin and check each one. It's saved my bushy tail on many exams!</p>
+</div>
+<h3 id="the-binomial-distribution_1">The Binomial Distribution</h3>
+<p>If X counts the number of successes in n independent trials with success probability p, then X has a <strong>binomial distribution</strong>:</p>
+<div class="arithmatex">\[
+X \sim \text{Binomial}(n, p)
+\]</div>
+<p>The possible values are X = 0, 1, 2, ..., n.</p>
+<h3 id="the-binomial-probability-formula">The Binomial Probability Formula</h3>
+<p>The probability of getting exactly k successes in n trials is:</p>
+<div class="arithmatex">\[
+P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+\]</div>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\( \binom{n}{k} = \frac{n!}{k!(n-k)!} \)</span> is the binomial coefficient ("n choose k")</li>
+<li><span class="arithmatex">\( p^k \)</span> is the probability of k successes</li>
+<li><span class="arithmatex">\( (1-p)^{n-k} \)</span> is the probability of (n-k) failures</li>
+</ul>
+<p>Let's break this down:</p>
+<ul>
+<li><strong><span class="arithmatex">\( \binom{n}{k} \)</span></strong>: How many ways can k successes occur among n trials?</li>
+<li><strong><span class="arithmatex">\( p^k \)</span></strong>: Probability of success happening k times</li>
+<li><strong><span class="arithmatex">\( (1-p)^{n-k} \)</span></strong>: Probability of failure happening (n-k) times</li>
+</ul>
+<h3 id="example-coin-flips">Example: Coin Flips</h3>
+<p>What's the probability of getting exactly 3 heads in 5 coin flips?</p>
+<p>Here <span class="arithmatex">\( n = 5 \)</span>, <span class="arithmatex">\( k = 3 \)</span>, and <span class="arithmatex">\( p = 0.5 \)</span>.</p>
+<div class="arithmatex">\[
+P(X = 3) = \binom{5}{3} (0.5)^3 (0.5)^2
+\]</div>
+<div class="arithmatex">\[
+= 10 \cdot 0.125 \cdot 0.25 = 10 \cdot 0.03125 = 0.3125
+\]</div>
+<p>There's a 31.25% chance of getting exactly 3 heads.</p>
+<h4 id="diagram-binomial-probability-explorer">Diagram: Binomial Probability Explorer</h4>
+<iframe src="../../sims/binomial-probability-explorer/main.html" width="100%" height="600px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
+
+<details>
+<summary>Binomial Probability Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Allow students to explore how n and p affect the shape of the binomial distribution</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Examine</p>
+<p>Learning Objective: Students will analyze how changing the number of trials (n) and probability of success (p) affects the shape, center, and spread of the binomial distribution.</p>
+<p>Instructional Rationale: Parameter exploration supports the Analyze level by helping students discover patterns and relationships. Students can observe that larger n makes the distribution more symmetric and that p determines skewness.</p>
+<p>Canvas Layout:
+- Main area (70%): Bar chart showing P(X = k) for all k from 0 to n
+- Control panel (30%): Sliders and displays</p>
+<p>Visual Elements:
+- Probability histogram with bars for each k value
+- Highlighted bar showing P(X = selected k)
+- Overlay showing mean (vertical line)
+- Display of calculated probabilities P(X = k), P(X &lt;= k), P(X &gt;= k)</p>
+<p>Interactive Controls:
+- Slider for n: range 1-50, default 10
+- Slider for p: range 0-1, step 0.05, default 0.5
+- Slider for k: range 0-n, default 5
+- Checkboxes: Show mean line, Show cumulative region
+- Button: "Calculate P(X = k)"</p>
+<p>Default Parameters:
+- n = 10
+- p = 0.5
+- k = 5</p>
+<p>Behavior:
+- Distribution updates in real-time as n or p changes
+- Mean marker μ = np moves with parameters
+- For k selection, show step-by-step formula calculation
+- Display P(X = k) with full formula breakdown
+- Color region for P(X &lt;= k) or P(X &gt;= k) based on toggle</p>
+<p>Key Insights to Highlight:
+- When p = 0.5, distribution is symmetric
+- When p &lt; 0.5, distribution is right-skewed
+- When p &gt; 0.5, distribution is left-skewed
+- Larger n → more bell-shaped</p>
+<p>Color Scheme:
+- Bars: Sylvia's green with auburn highlight for selected k
+- Mean line: Sylvia's hazel
+- Cumulative region: Light green fill</p>
+<p>Implementation: p5.js with canvas-based sliders, include binomial coefficient calculation display</p>
+<p>Canvas Size: Responsive, minimum 700x500px</p>
+</details>
+<h3 id="binomial-mean-and-standard-deviation">Binomial Mean and Standard Deviation</h3>
+<p>For a binomial distribution with parameters n and p:</p>
+<div class="arithmatex">\[
+\mu_X = np
+\]</div>
+<div class="arithmatex">\[
+\sigma_X = \sqrt{np(1-p)}
+\]</div>
+<p>These formulas are wonderfully simple and very useful!</p>
+<p><strong>Example:</strong> For n = 100 coin flips with p = 0.5:</p>
+<ul>
+<li><span class="arithmatex">\( \mu = 100 \times 0.5 = 50 \)</span> heads expected</li>
+<li><span class="arithmatex">\( \sigma = \sqrt{100 \times 0.5 \times 0.5} = \sqrt{25} = 5 \)</span></li>
+</ul>
+<p>So in 100 flips, we expect about 50 heads, give or take about 5.</p>
+<h3 id="using-technology-for-binomial-probabilities">Using Technology for Binomial Probabilities</h3>
+<p>Calculating binomial probabilities by hand is tedious for large n. Use your calculator!</p>
+<p><strong>TI-83/84:</strong></p>
+<ul>
+<li><strong>binompdf(n, p, k)</strong>: Calculates P(X = k)</li>
+<li><strong>binomcdf(n, p, k)</strong>: Calculates P(X ≤ k)</li>
+</ul>
+<p><strong>Examples with n = 10, p = 0.3:</strong></p>
+<ul>
+<li>P(X = 4): binompdf(10, 0.3, 4) = 0.200</li>
+<li>P(X ≤ 4): binomcdf(10, 0.3, 4) = 0.850</li>
+<li>P(X ≥ 5): 1 - binomcdf(10, 0.3, 4) = 0.150</li>
+</ul>
+<hr />
+<h2 id="the-geometric-distribution">The Geometric Distribution</h2>
+<p>The <strong>geometric distribution</strong> answers a different question: "How many trials until the first success?"</p>
+<h3 id="the-geometric-setting">The Geometric Setting</h3>
+<p>Like the binomial, but with one key difference:</p>
+<ol>
+<li><strong>B</strong>inary outcomes: Each trial has two outcomes (success/failure)</li>
+<li><strong>I</strong>ndependent trials: Trials don't affect each other</li>
+<li><strong>T</strong>rials continue until first success: We keep going until we succeed</li>
+<li><strong>S</strong>ame probability: The probability p is constant</li>
+</ol>
+<p>Notice we don't have a fixed n because we stop when we get our first success.</p>
+<h3 id="geometric-distribution">Geometric Distribution</h3>
+<p>If X = number of trials until first success, then X has a <strong>geometric distribution</strong>:</p>
+<div class="arithmatex">\[
+X \sim \text{Geometric}(p)
+\]</div>
+<p>The possible values are X = 1, 2, 3, ... (infinitely many, but probabilities get tiny)</p>
+<h3 id="geometric-probability-formula">Geometric Probability Formula</h3>
+<div class="arithmatex">\[
+P(X = k) = (1-p)^{k-1} \cdot p
+\]</div>
+<p>This makes sense:</p>
+<ul>
+<li><span class="arithmatex">\( (1-p)^{k-1} \)</span>: Fail (k-1) times</li>
+<li><span class="arithmatex">\( p \)</span>: Then succeed on trial k</li>
+</ul>
+<h3 id="example-first-head">Example: First Head</h3>
+<p>You flip a coin until you get heads. What's P(X = 4), the probability that the first head is on the 4th flip?</p>
+<p>You need: TTTH</p>
+<div class="arithmatex">\[
+P(X = 4) = (0.5)^3 \cdot (0.5) = 0.125 \cdot 0.5 = 0.0625
+\]</div>
+<p>There's a 6.25% chance the first head appears on flip 4.</p>
+<h3 id="geometric-mean">Geometric Mean</h3>
+<p>The expected number of trials until first success is:</p>
+<div class="arithmatex">\[
+\mu_X = \frac{1}{p}
+\]</div>
+<p>This formula is beautifully intuitive. If p = 0.5 (coin flip), you expect 1/0.5 = 2 flips to get your first head. If p = 0.1 (rare event), you expect 1/0.1 = 10 trials.</p>
+<table>
+<thead>
+<tr>
+<th>Probability of Success (p)</th>
+<th>Expected Trials Until Success (1/p)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>0.25</td>
+<td>4</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>10</td>
+</tr>
+<tr>
+<td>0.05</td>
+<td>20</td>
+</tr>
+<tr>
+<td>0.01</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Sylvia's Acorn Hunt</p>
+<p>When I'm searching for the perfect acorn, I might have a 1 in 5 chance (p = 0.2) of finding one under any given tree. On average, I expect to check 1/0.2 = 5 trees before finding my perfect acorn. Some days I get lucky on tree 1; other days it takes 10 or more!</p>
+</div>
+<h4 id="diagram-geometric-distribution-simulator">Diagram: Geometric Distribution Simulator</h4>
+<iframe src="../../sims/geometric-distribution-sim/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
+
+<details>
+<summary>Geometric Distribution Simulator</summary>
+<p>Type: microsim</p>
+<p>Purpose: Simulate trials until first success and build up the geometric distribution empirically</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Demonstrate</p>
+<p>Learning Objective: Students will demonstrate understanding of the geometric distribution by running simulations and comparing empirical results to theoretical probabilities.</p>
+<p>Instructional Rationale: Simulation supports the Apply level by letting students practice concepts through experimentation. Seeing many trials accumulate into the theoretical distribution reinforces the connection between individual trials and probability.</p>
+<p>Canvas Layout:
+- Top: Trial animation area showing sequence of successes/failures
+- Middle: Building histogram of "trials until success"
+- Bottom: Controls and statistics</p>
+<p>Visual Elements:
+- Animated sequence showing S/F outcomes
+- Growing bar chart of trial counts
+- Display of running average vs theoretical mean (1/p)
+- Comparison of empirical vs theoretical P(X = k)</p>
+<p>Interactive Controls:
+- Slider for p: range 0.05-0.95, step 0.05, default 0.3
+- "Run 1 Trial" button
+- "Run 10 Trials" button
+- "Run 100 Trials" button
+- "Reset" button
+- Speed slider for animation</p>
+<p>Default Parameters:
+- p = 0.3
+- Animation speed: Medium</p>
+<p>Behavior:
+- Each trial shows sequence: F, F, F, ..., S (animation)
+- Record number of trials until S
+- Add to histogram
+- Update running average
+- Show theoretical mean line
+- After many trials, empirical distribution matches geometric</p>
+<p>Statistics Display:
+- Total experiments run
+- Empirical mean
+- Theoretical mean (1/p)
+- Empirical P(X = 1), P(X = 2), etc.</p>
+<p>Color Scheme:
+- Success (S): Sylvia's green
+- Failure (F): Sylvia's auburn
+- Bars: Green with intensity based on frequency
+- Theoretical line: Hazel</p>
+<p>Implementation: p5.js with canvas-based buttons and animation</p>
+<p>Canvas Size: Responsive, minimum 650x450px</p>
+</details>
+<h3 id="comparing-binomial-and-geometric">Comparing Binomial and Geometric</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Binomial</th>
+<th>Geometric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Question</td>
+<td>How many successes in n trials?</td>
+<td>How many trials until first success?</td>
+</tr>
+<tr>
+<td>Fixed?</td>
+<td>n is fixed</td>
+<td>n is random</td>
+</tr>
+<tr>
+<td>Random variable</td>
+<td>Number of successes</td>
+<td>Number of trials</td>
+</tr>
+<tr>
+<td>Possible values</td>
+<td>0, 1, 2, ..., n</td>
+<td>1, 2, 3, ... (infinite)</td>
+</tr>
+<tr>
+<td>Mean formula</td>
+<td>μ = np</td>
+<td>μ = 1/p</td>
+</tr>
+<tr>
+<td>When to use</td>
+<td>"Out of n trials, how many..."</td>
+<td>"How long until..."</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Random variables are the bridge between probability and the statistical inference you'll learn soon. Let's recap the key formulas:</p>
+<h3 id="summary-of-formulas">Summary of Formulas</h3>
+<p><strong>Expected Value:</strong>
+[
+E(X) = \sum x_i \cdot P(X = x_i)
+]</p>
+<p><strong>Variance:</strong>
+[
+Var(X) = \sum (x_i - \mu)^2 \cdot P(X = x_i) = E(X^2) - [E(X)]^2
+]</p>
+<p><strong>Linear Transformation (Y = a + bX):</strong>
+[
+E(Y) = a + b \cdot E(X), \quad \sigma_Y = |b| \cdot \sigma_X
+]</p>
+<p><strong>Combining Independent Variables:</strong>
+[
+E(X \pm Y) = E(X) \pm E(Y)
+]
+[
+Var(X \pm Y) = Var(X) + Var(Y) \text{ (both add!)}
+]</p>
+<p><strong>Binomial Distribution (X ~ Binomial(n, p)):</strong>
+[
+P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+]
+[
+\mu = np, \quad \sigma = \sqrt{np(1-p)}
+]</p>
+<p><strong>Geometric Distribution (X ~ Geometric(p)):</strong>
+[
+P(X = k) = (1-p)^{k-1} p
+]
+[
+\mu = \frac{1}{p}
+]</p>
+<h3 id="decision-guide-which-distribution">Decision Guide: Which Distribution?</h3>
+<p>Use this flowchart thinking:</p>
+<ol>
+<li><strong>Are you counting successes in fixed trials?</strong> → Binomial</li>
+<li><strong>Are you counting trials until first success?</strong> → Geometric</li>
+<li><strong>Is it neither of these special cases?</strong> → General discrete distribution (use table)</li>
+</ol>
+<h4 id="diagram-random-variable-concept-map">Diagram: Random Variable Concept Map</h4>
+<iframe src="../../sims/random-variable-concept-map/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
+
+<details>
+<summary>Random Variable Concept Map</summary>
+<p>Type: infographic</p>
+<p>Purpose: Show the relationships between all random variable concepts covered in this chapter</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Organize</p>
+<p>Learning Objective: Students will organize their understanding of random variable concepts by exploring an interactive concept map showing how definitions, formulas, and distributions connect.</p>
+<p>Visual Layout: Network/mind map with "Random Variable" at center</p>
+<p>Main Nodes:
+- Center: Random Variable
+- Level 1: Discrete RV, Probability Distribution, Expected Value, Variance
+- Level 2: Valid Distribution, Calculating E(X), SD of RV, Linear Transformation
+- Level 3: Combining RVs, Binomial Distribution, Geometric Distribution</p>
+<p>Connections with Labels:
+- Random Variable → "has a" → Probability Distribution
+- Probability Distribution → "must be" → Valid Distribution
+- Random Variable → "is summarized by" → Expected Value
+- Random Variable → "has spread" → Variance
+- Variance → "square root gives" → Standard Deviation
+- Expected Value → "changes by" → Linear Transformation
+- Combining RVs → "uses" → Sum/Difference formulas
+- Binomial → "special case of" → Discrete RV
+- Geometric → "special case of" → Discrete RV</p>
+<p>Interactive Features:
+- Hover over any node to see definition/formula
+- Click node to expand details panel
+- Highlight all connected concepts on click
+- Zoom in/out capability
+- Different colors for concept types (definitions, formulas, distributions)</p>
+<p>Color Scheme:
+- Core concepts: Sylvia's green
+- Formulas/calculations: Sylvia's auburn
+- Special distributions: Sylvia's hazel
+- Connections: Light gray with labels</p>
+<p>Implementation: vis-network or p5.js with force-directed layout</p>
+<p>Canvas Size: Responsive, minimum 700x500px</p>
+</details>
+<hr />
+<h2 id="chapter-review">Chapter Review</h2>
+<p>Let's squirrel away the key ideas from this chapter!</p>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<ol>
+<li>
+<p><strong>Random variables</strong> translate random outcomes into numbers, enabling mathematical analysis.</p>
+</li>
+<li>
+<p><strong>Probability distributions</strong> show all possible values and their probabilities. Valid distributions have probabilities between 0 and 1 that sum to 1.</p>
+</li>
+<li>
+<p><strong>Expected value</strong> is the long-run average outcome: <span class="arithmatex">\( E(X) = \sum x \cdot P(X = x) \)</span></p>
+</li>
+<li>
+<p><strong>Variance</strong> measures spread around the mean. Standard deviation is its square root.</p>
+</li>
+<li>
+<p><strong>Linear transformations</strong>: Adding shifts the mean; multiplying scales both mean and SD.</p>
+</li>
+<li>
+<p><strong>Combining independent random variables</strong>: Means add/subtract as expected, but variances ALWAYS add.</p>
+</li>
+<li>
+<p><strong>Binomial distribution</strong> (BINS): Count successes in n trials. Mean = np, SD = √np(1-p).</p>
+</li>
+<li>
+<p><strong>Geometric distribution</strong>: Count trials until first success. Mean = 1/p.</p>
+</li>
+</ol>
+<h3 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h3>
+<ul>
+<li>Thinking expected value must be a possible outcome</li>
+<li>Subtracting variances when combining random variables</li>
+<li>Forgetting to check BINS conditions before using binomial formulas</li>
+<li>Adding standard deviations directly instead of using the square root formula</li>
+<li>Confusing P(X = k) with P(X ≤ k)</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">You've Got This!</p>
+<p>Random variables might seem abstract at first, but they're the foundation for everything coming next: sampling distributions, confidence intervals, and hypothesis tests. You've just learned the language that makes all of that possible. My tail's tingling with excitement for what's ahead!</p>
+</div>
+<hr />
+<details class="question">
+<summary>Practice Problem: Test Your Understanding</summary>
+<p>A basketball player makes 70% of her free throws. She shoots 10 free throws in a game.</p>
+<p>(a) What distribution describes the number of free throws she makes?</p>
+<p>(b) What is the expected number of made free throws?</p>
+<p>(c) What is the probability she makes exactly 8?</p>
+<p>(d) What is the probability she makes at least 8?</p>
+<p><strong>Click to reveal answers:</strong></p>
+<p>(a) Binomial(n=10, p=0.7) - because BINS conditions are met: Binary (make/miss), Independent shots, n=10 fixed, Same probability p=0.7</p>
+<p>(b) E(X) = np = 10(0.7) = 7 made free throws</p>
+<p>(c) P(X = 8) = C(10,8)(0.7)^8(0.3)^2 = 45(0.0576)(0.09) = 0.233 or about 23.3%</p>
+<p>(d) P(X ≥ 8) = P(X=8) + P(X=9) + P(X=10) = 0.233 + 0.121 + 0.028 = 0.382 or about 38.2%</p>
+</details>
 
 
 

@@ -1,0 +1,28 @@
+{
+  "title": "Chapter Content Generation Data",
+  "description": "Data from chapter content generation logs for AP Statistics course",
+  "fields": {
+    "chapter": "Chapter number",
+    "name": "Chapter title",
+    "concepts": "Number of concepts covered",
+    "words": "Word count of generated content",
+    "tokens": "Estimated tokens used during generation",
+    "microsims": "Number of MicroSim specifications created"
+  },
+  "chapters": [
+    { "chapter": 6, "name": "Scatterplots and Association", "concepts": 9, "words": 4880, "tokens": 24500, "microsims": 6 },
+    { "chapter": 7, "name": "Linear Regression", "concepts": 16, "words": 4959, "tokens": 24600, "microsims": 6 },
+    { "chapter": 8, "name": "Causation and Study Design", "concepts": 9, "words": 6069, "tokens": 56500, "microsims": 5 },
+    { "chapter": 9, "name": "Probability Fundamentals", "concepts": 19, "words": 5591, "tokens": 69200, "microsims": 5 },
+    { "chapter": 10, "name": "Conditional Probability and Independence", "concepts": 5, "words": 4683, "tokens": 55700, "microsims": 4 },
+    { "chapter": 11, "name": "Sampling and Bias", "concepts": 19, "words": 4800, "tokens": 24500, "microsims": 6 },
+    { "chapter": 12, "name": "Experimental Design", "concepts": 18, "words": 5858, "tokens": 45500, "microsims": 7 },
+    { "chapter": 13, "name": "Random Variables", "concepts": 23, "words": 5636, "tokens": 38500, "microsims": 6 },
+    { "chapter": 14, "name": "Sampling Distributions", "concepts": 17, "words": 5408, "tokens": 42500, "microsims": 5 },
+    { "chapter": 15, "name": "Confidence Intervals", "concepts": 16, "words": 6109, "tokens": 47500, "microsims": 6 },
+    { "chapter": 16, "name": "Hypothesis Testing", "concepts": 22, "words": 8484, "tokens": 55000, "microsims": 5 },
+    { "chapter": 17, "name": "Inference for Means", "concepts": 18, "words": 7028, "tokens": 25000, "microsims": 6 },
+    { "chapter": 18, "name": "Chi-Square and Regression Inference", "concepts": 22, "words": 6062, "tokens": 45500, "microsims": 6 },
+    { "chapter": 19, "name": "Communication and Synthesis", "concepts": 10, "words": 6356, "tokens": 45000, "microsims": 7 }
+  ]
+}
