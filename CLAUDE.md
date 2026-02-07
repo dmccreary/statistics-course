@@ -151,3 +151,29 @@ palette:
 ```
 
 These are overridden in `docs/css/extra.css` with exact Sylvia hex values for precise color matching.
+
+---
+
+## Math Equation Formatting
+
+Use **backslash delimiters** for LaTeX equations (not dollar signs):
+
+- **Inline math:** `\( equation \)` — for equations within a sentence
+- **Display math:** `\[ equation \]` — for standalone equations on their own line
+
+**Examples:**
+
+Inline: `The mean is calculated as \( \bar{x} = \frac{\sum x_i}{n} \).`
+
+Display:
+```markdown
+The variance formula is:
+
+\[
+s^2 = \frac{\sum(x_i - \bar{x})^2}{n-1}
+\]
+```
+
+**Do NOT use:**
+- Single dollar signs: `$equation$`
+- Double dollar signs: `$$equation$$`

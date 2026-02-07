@@ -65,6 +65,18 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students examine how changing bin width affects histogram appearance, with multiple datasets and display options.
 
+-   **[Household Income Boxplot Explorer](./household-income-boxplot/index.md)**
+
+    ![Household Income Boxplot Explorer](./household-income-boxplot/household-income-boxplot.png)
+
+    Interactive MicroSim that uses a boxplot to summarize household incomes and highlight right-skew.
+
+-   **[Test Scores Boxplot Explorer](./test-scores-boxplot/index.md)**
+
+    ![Test Scores Boxplot Explorer](./test-scores-boxplot/test-scores-boxplot.png)
+
+    Interactive MicroSim that uses boxplots to summarize exam scores and compare two class sections.
+
 -   **[Outlier Detective Game](./outlier-detective/index.md)**
 
     ![Outlier Detective Game](./outlier-detective/outlier-detective.png)

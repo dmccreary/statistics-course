@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Household Income Boxplot Explorer MicroSim using Plotly.js</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="panel controls">
+            <div class="control">
+                <label for="householdCount">Households: <span id="householdCountValue">60</span></label>
+                <input id="householdCount" type="range" min="20" max="200" step="1" value="60">
+            </div>
+            <div class="control">
+                <label for="medianIncome">Median income (thousands): <span id="medianIncomeValue">65</span></label>
+                <input id="medianIncome" type="range" min="35" max="140" step="1" value="65">
+            </div>
+            <div class="control">
+                <label for="inequality">Inequality (spread): <span id="inequalityValue">0.55</span></label>
+                <input id="inequality" type="range" min="0.25" max="0.95" step="0.01" value="0.55">
+            </div>
+            <div class="control">
+                <label><input id="addHighOutlier" type="checkbox" checked> Add a high-income outlier</label>
+                <span class="note">Long whisker = a few very high incomes.</span>
+            </div>
+            <div class="control">
+                <label><input id="showPoints" type="checkbox"> Show individual households</label>
+                <span class="note">See each household income.</span>
+            </div>
+            <div class="control">
+                <label><input id="showMean" type="checkbox" checked> Show mean marker</label>
+                <span class="note">Compare mean vs median.</span>
+            </div>
+            <div class="control actions">
+                <button id="regenerate">New city sample</button>
+                <span class="note">Regenerate a different sample.</span>
+            </div>
+        </div>
+
+        <div id="plot"></div>
+
+        <div class="panel stats">
+            <div>
+                <h3>Five-number summary</h3>
+                <p id="summary"></p>
+            </div>
+            <div>
+                <h3>Center comparison</h3>
+                <p id="center"></p>
+            </div>
+            <div>
+                <h3>Why boxplots rock</h3>
+                <p>Spot skewness with whisker length.</p>
+                <p>Compare median to the mean.</p>
+                <p>See inequality without raw data.</p>
+            </div>
+        </div>
+    </div>
+    <a href=".">Back to Lesson Plan</a>
+</body>
+</html>

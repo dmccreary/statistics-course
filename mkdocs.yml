@@ -42,6 +42,7 @@ nav:
     - Frequency Table Explorer: sims/frequency-table-explorer/index.md
     - Histogram Explorer: sims/histogram-explorer/index.md
     - Interactive Dotplot Builder: sims/interactive-dotplot-builder/index.md
+    - Household Income Boxplot: sims/household-income-boxplot/index.md
     - Outlier Detective Game: sims/outlier-detective/index.md
     - Parameter vs Statistic: sims/parameter-statistic-compare/index.md
     - Pie vs Bar Comparison: sims/pie-vs-bar-comparison/index.md
@@ -51,6 +52,7 @@ nav:
     - Stemplot Constructor: sims/stemplot-constructor/index.md
     - Study Design Concept Map: sims/study-design-map/index.md
     - Symmetric Distribution Identifier: sims/symmetric-distribution/index.md
+    - Test Scores Box Plot: sims/test-scores-boxplot/index.md
     - Two-Way Table Calculator: sims/two-way-table-calculator/index.md
     - Variable Types Concept Map: sims/variable-types-concept-map/index.md
 

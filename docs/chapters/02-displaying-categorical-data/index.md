@@ -70,7 +70,9 @@ Frequencies are helpful, but sometimes raw counts don't tell the whole story. If
 
 **Relative frequency** expresses each category's count as a proportion or percentage of the total. To calculate it, divide each frequency by the total:
 
-$$\text{Relative Frequency} = \frac{\text{Frequency}}{\text{Total}}$$
+\[
+\text{Relative Frequency} = \frac{\text{Frequency}}{\text{Total}}
+\]
 
 Let's add relative frequencies to our season table:
 
@@ -244,7 +246,9 @@ Pie charts emphasize how categories relate to the whole. They work well when:
 
 To create a pie chart, multiply each relative frequency by 360 degrees to find the angle for each wedge:
 
-$$\text{Angle} = \text{Relative Frequency} \times 360°$$
+\[
+\text{Angle} = \text{Relative Frequency} \times 360°
+\]
 
 For our season data:
 

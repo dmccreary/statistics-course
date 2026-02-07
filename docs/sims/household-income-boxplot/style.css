@@ -1,0 +1,106 @@
+:root {
+    --panel-bg: #f7f4ea;
+    --panel-border: #d9c9a7;
+    --accent: #2e7d32;
+    --accent-dark: #1b5e20;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    background: #fffef7;
+    color: #2b2b2b;
+}
+
+.wrap {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.panel {
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px 14px;
+    align-items: end;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="range"] {
+    accent-color: var(--accent);
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: var(--accent-dark);
+}
+
+#plot {
+    width: 100%;
+    min-height: 360px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    background: #fff;
+}
+
+.stats h3 {
+    margin: 0 0 6px 0;
+    font-size: 15px;
+    color: var(--accent-dark);
+}
+
+.stats p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.note {
+    font-size: 13px;
+    color: #4a4a4a;
+}
+
+@media (max-width: 700px) {
+    .wrap {
+        padding: 8px;
+    }
+}
