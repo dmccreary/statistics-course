@@ -62,7 +62,7 @@ Dan holds a B.A. in Physics from Carleton College and an M.S.E.E. from the Unive
 
 His career began at Bell Labs as a VLSI circuit designer, where he collaborated with the original creators of UNIX. At NeXT Computer, he worked alongside Steve Jobs, building a foundation in computing innovation that continues to shape his work today.
 
-Dan's entrepreneurial journey led him to establish a consulting firm that grew to over 75 employees, specializing in scale-out enterprise knowledge graphs, high-performance computing, and advanced databases that augment AI capabilities. During his tenure at UnitedHealth Group's Optum division, he played a key role in building the world's largest healthcare knowledge graph—work that directly informs his current approach to representing educational concepts and their dependencies.
+Dan's entrepreneurial journey led him to establish a consulting firm that grew to over 75 employees. His career has allowed him to work in many area such as scale-out enterprise knowledge graphs, high-performance computing, and advanced databases that augment AI capabilities. During his tenure at UnitedHealth Group's Optum division, he played a key role in building the world's largest healthcare knowledge graph—work that directly informs his current approach to representing educational concepts and their dependencies.
 
 He is the co-author of [Making Sense of NoSQL](https://www.manning.com/books/making-sense-of-nosql) and a frequent contributor to articles helping education leaders understand the strategic implications of accelerating AI technologies. An avid blogger on AI strategy, Dan remains at the forefront of knowledge graphs and generative AI's evolutionary path.
 
