@@ -52,6 +52,53 @@ This intelligent textbook was generated using Claude Code Skills in February 202
 
 — Dan McCreary, February 6th, 2026
 
+---
+
+## About the Author
+
+**Dan McCreary** is an AI education researcher specializing in knowledge representation and the use of learning graphs and large language models to create intelligent textbooks.
+
+Dan holds a B.A. in Physics from Carleton College and an M.S.E.E. from the University of Minnesota. He has also completed 30 of the 33 credits required for his MBA at the University of St. Thomas.
+
+His career began at Bell Labs as a VLSI circuit designer, where he collaborated with the original creators of UNIX. At NeXT Computer, he worked alongside Steve Jobs, building a foundation in computing innovation that continues to shape his work today.
+
+Dan's entrepreneurial journey led him to establish a consulting firm that grew to over 75 employees, specializing in scale-out enterprise knowledge graphs, high-performance computing, and advanced databases that augment AI capabilities. During his tenure at UnitedHealth Group's Optum division, he played a key role in building the world's largest healthcare knowledge graph—work that directly informs his current approach to representing educational concepts and their dependencies.
+
+He is the co-author of [Making Sense of NoSQL](https://www.manning.com/books/making-sense-of-nosql) and a frequent contributor to articles helping education leaders understand the strategic implications of accelerating AI technologies. An avid blogger on AI strategy, Dan remains at the forefront of knowledge graphs and generative AI's evolutionary path.
+
+Dan believes that AI technologies will make high-quality education accessible to everyone on the planet. His superpower of being able to visualize data movement has made it possible for him to ground intelligent books on actionable knowledge representations.  This free, open-source textbook—with its learning graph of 300 interconnected concepts and 100+ interactive MicroSims—represents his commitment to that vision.
+
+---
+
+## How to Cite This Book
+
+If you use this textbook in your teaching, research, or coursework, please cite it using one of the following formats:
+
+**APA (7th Edition)**
+
+> McCreary, D. (2026). *AP Statistics: An interactive intelligent textbook*. https://dmccreary.github.io/statistics-course/
+
+**MLA (9th Edition)**
+
+> McCreary, Dan. *AP Statistics: An Interactive Intelligent Textbook*. 2026, dmccreary.github.io/statistics-course/.
+
+**Chicago (17th Edition)**
+
+> McCreary, Dan. *AP Statistics: An Interactive Intelligent Textbook*. 2026. https://dmccreary.github.io/statistics-course/.
+
+**BibTeX**
+
+```bibtex
+@book{mccreary2026apstats,
+  author    = {McCreary, Dan},
+  title     = {AP Statistics: An Interactive Intelligent Textbook},
+  year      = {2026},
+  publisher = {Self-published},
+  url       = {https://dmccreary.github.io/statistics-course/},
+  note      = {Open-source textbook with interactive MicroSimulations}
+}
+```
+
 ## References
 
 [^1]: College Board. [AP Statistics Exam Data](https://apstudents.collegeboard.org/about-ap-scores/score-distributions). AP Students.

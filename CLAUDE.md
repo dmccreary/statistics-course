@@ -222,3 +222,288 @@ Interactive controls:
 **NOT allowed:**
 - Removing details blocks from chapters
 - Replacing details blocks with just iframes
+
+---
+
+## Project Structure
+
+```
+statistics-course/
+├── docs/
+│   ├── chapters/           # 19 chapters (01-19)
+│   │   └── XX-chapter-name/
+│   │       ├── index.md    # Main chapter content
+│   │       ├── quiz.md     # Multiple choice quiz
+│   │       └── references.md
+│   ├── sims/               # 100+ interactive MicroSims
+│   │   └── sim-name/
+│   │       ├── index.md    # Lesson plan with learning objectives
+│   │       ├── main.html   # Entry point (loads JS)
+│   │       ├── sim-name.js # p5.js implementation
+│   │       └── sim-name.png # Screenshot for gallery
+│   ├── learning-graph/     # Concept dependencies and metrics
+│   ├── css/extra.css       # Sylvia theme overrides
+│   ├── js/                 # MathJax config and extras
+│   └── img/                # Images including Sylvia mascot
+├── mkdocs.yml              # Site configuration and navigation
+└── CLAUDE.md               # This file
+```
+
+---
+
+## MicroSim Technical Patterns
+
+### Standard p5.js Template
+
+```javascript
+// [Title] MicroSim
+// [One-line description]
+// MicroSim template version 2026.02
+
+let containerWidth;
+let canvasWidth = 700;
+let drawHeight = 350;
+let controlHeight = 50;
+let canvasHeight = drawHeight + controlHeight;
+
+let margin = 25;
+let defaultTextSize = 16;
+
+// Sylvia theme colors
+let sylviaGreen = '#2E7D32';
+let sylviaGreenDark = '#1B5E20';
+let sylviaAuburn = '#B5651D';
+let sylviaCream = '#FFF8E1';
+
+function setup() {
+    updateCanvasSize();
+    const canvas = createCanvas(canvasWidth, canvasHeight);
+    canvas.parent(document.querySelector('main'));
+    textSize(defaultTextSize);
+    describe('Description for screen readers', LABEL);
+}
+
+function draw() {
+    updateCanvasSize();
+
+    // Drawing area (light background)
+    fill('aliceblue');
+    stroke('silver');
+    strokeWeight(1);
+    rect(0, 0, canvasWidth, drawHeight);
+
+    // Control area (white background)
+    fill('white');
+    rect(0, drawHeight, canvasWidth, controlHeight);
+
+    // Your visualization code here
+    drawControls();
+}
+
+function drawControls() {
+    // Canvas-based buttons, sliders using rect(), ellipse(), text()
+}
+
+function mousePressed() {
+    // Handle button clicks and slider starts
+}
+
+function mouseDragged() {
+    // Handle slider drags
+}
+
+function mouseReleased() {
+    // Reset drag states
+}
+
+function windowResized() {
+    updateCanvasSize();
+    resizeCanvas(containerWidth, containerHeight);
+    redraw();
+}
+
+function updateCanvasSize() {
+    const container = document.querySelector('main').getBoundingClientRect();
+    containerWidth = Math.floor(container.width);
+    canvasWidth = containerWidth;
+}
+```
+
+### Canvas-Based Controls
+
+**Never use p5.js DOM functions** (`createButton`, `createSlider`, etc.). Always draw controls directly on canvas:
+
+```javascript
+// Button example
+function drawButton(x, y, w, h, label, isActive) {
+    fill(isActive ? sylviaGreen : '#ccc');
+    rect(x, y, w, h, 4);
+    fill('white');
+    textAlign(CENTER, CENTER);
+    text(label, x + w/2, y + h/2);
+}
+
+// Slider example
+function drawSlider(x, y, w, value, min, max) {
+    fill(220);
+    rect(x, y, w, 12, 3);
+    let handleX = map(value, min, max, x, x + w);
+    fill(sylviaGreen);
+    ellipse(handleX, y + 6, 14, 14);
+}
+```
+
+### Standard HTML Wrapper
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>[Title] MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+    <style>
+        body { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
+    </style>
+    <script src="[filename].js"></script>
+</head>
+<body>
+    <main></main>
+    <br/>
+    <a href=".">Back to Lesson Plan</a>
+</body>
+</html>
+```
+
+### MicroSim index.md Template
+
+```markdown
+# [Title]
+
+[2-3 sentence description of what this MicroSim teaches]
+
+<iframe src="./main.html" height="402px" scrolling="no"
+    style="overflow: hidden; width: 100%; border: 2px solid #2E7D32;"></iframe>
+
+[Run Full Screen](./main.html){ .md-button .md-button--primary }
+[Edit in p5.js Web Editor](https://editor.p5js.org/){ .md-button }
+
+## Learning Objectives
+
+- Objective 1 (Bloom level)
+- Objective 2 (Bloom level)
+
+## How to Use
+
+1. Step-by-step instructions
+2. What to observe
+
+## Key Concepts Demonstrated
+
+- Concept 1: explanation
+- Concept 2: explanation
+```
+
+---
+
+## Chapter Content Structure
+
+Each chapter index.md follows this pattern:
+
+1. **YAML frontmatter** - title, description, generator info
+2. **Title (H1)** - matches chapter name
+3. **Summary** - 2-3 sentences overview
+4. **Concepts Covered** - numbered list from learning graph
+5. **Prerequisites** - links to prior chapters
+6. **Introduction** - engaging hook with Sylvia quote
+7. **Main sections** - with H2 headers for each major concept
+8. **Embedded MicroSims** - iframe + details block for each
+9. **Summary** - "Let's squirrel away..." wrap-up
+
+### Iframe Embedding Pattern
+
+```markdown
+#### Diagram: [Descriptive Title]
+
+<iframe src="../../sims/[sim-name]/main.html" height="402px" scrolling="no"
+    style="width:100%; border: 1px solid #2E7D32;"></iframe>
+
+[Run MicroSim Fullscreen](../../sims/[sim-name]/main.html){ .md-button .md-button--primary }
+[Edit in p5.js Editor](https://editor.p5js.org/){ .md-button }
+
+<details markdown="1">
+<summary>Interactive [Short Description]</summary>
+Type: MicroSim
+
+Learning objective: [What students will understand/do] (Bloom: [Level]).
+
+Visual elements:
+- [Element 1]
+- [Element 2]
+
+Interactive controls:
+- [Control 1]
+- [Control 2]
+
+Behavior:
+- [How the sim responds]
+
+Canvas size: 700 x [height] pixels, responsive design
+Implementation: p5.js with canvas-based controls
+</details>
+```
+
+---
+
+## AP Statistics Course Outline
+
+The course has 19 chapters organized into these units:
+
+| Unit | Chapters | Topics |
+|------|----------|--------|
+| Exploring Data | 1-5 | Variables, displays, summaries, normal distribution |
+| Two-Variable Data | 6-8 | Scatterplots, regression, causation |
+| Probability | 9-10 | Rules, conditional probability |
+| Study Design | 11-12 | Sampling, experimental design |
+| Random Variables | 13-14 | Distributions, CLT |
+| Inference | 15-18 | Confidence intervals, hypothesis testing |
+| Synthesis | 19 | Communication, AP exam prep |
+
+The learning graph contains **300 concepts** with dependencies. Each chapter covers ~15-20 concepts.
+
+---
+
+## Common Statistics Formulas
+
+Use backslash delimiters for all LaTeX:
+
+```markdown
+Mean: \( \bar{x} = \frac{\sum x_i}{n} \)
+
+Standard Deviation: \( s = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n-1}} \)
+
+Z-Score: \( z = \frac{x - \mu}{\sigma} \)
+
+Confidence Interval: \( \bar{x} \pm z^* \cdot \frac{s}{\sqrt{n}} \)
+
+Test Statistic: \( z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}} \)
+```
+
+---
+
+## Local Testing
+
+Test MicroSims at: `http://127.0.0.1:8000/statistics-course/sims/[sim-name]/main.html`
+
+The user runs `mkdocs serve` in their terminal. Never start or stop this process.
+
+---
+
+## File Naming Conventions
+
+- **Chapters**: `XX-descriptive-name/` (e.g., `05-standardization-and-normal/`)
+- **MicroSims**: `kebab-case-name/` (e.g., `normal-distribution-explorer/`)
+- **JS files**: Match folder name (e.g., `normal-distribution-explorer.js`)
+- **Screenshots**: Match folder name with `.png` extension
