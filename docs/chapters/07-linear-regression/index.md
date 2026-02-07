@@ -87,35 +87,11 @@ Notice that little hat symbol over the y. It's crucial! Regular \( y \) represen
 
 #### MicroSim: Least Squares Regression Explorer
 
-<details markdown="1">
-<summary>Interactive Least Squares Visualization</summary>
-Type: MicroSim
+<iframe src="../../sims/least-squares-explorer/main.html" height="452px" scrolling="no"></iframe>
 
-Learning objective: Understand (Bloom Level 2) how the least squares method finds the best-fit line by minimizing squared residuals
+[Run the Least Squares Explorer Fullscreen](../../sims/least-squares-explorer/main.html){ .md-button .md-button--primary }
 
-Visual elements:
-- Coordinate plane with grid (400x400 pixels)
-- 8-12 draggable data points displayed as circles
-- Regression line that updates dynamically as points move
-- Vertical lines from each point to regression line (residuals) in light red
-- Squares drawn at each residual to visualize "squared" distances
-- Display of sum of squared residuals, updating in real-time
-
-Interactive controls:
-- Draggable data points (click and drag to reposition)
-- "Reset Points" button to restore default configuration
-- "Random Points" button to generate new dataset
-- Toggle to show/hide residual squares
-
-Behavior:
-- As user drags points, regression line recalculates instantly
-- Sum of squared residuals updates in real-time
-- Residual squares resize dynamically to show their contribution
-- Line always passes through the point \( (\bar{x}, \bar{y}) \)
-
-Canvas size: 500x450, responsive design
-Implementation: p5.js with canvas-based controls
-</details>
+Drag the data points to see how the regression line and sum of squared residuals change in real-time. The semi-transparent squares visualize why we call it "least squares" - the method minimizes the total area of these squares. Notice that the line always passes through the mean point \( (\bar{x}, \bar{y}) \), shown by the dashed crosshairs.
 
 ### Calculating Slope and Intercept
 
@@ -179,6 +155,10 @@ Interpretation: "When study time is zero hours, the predicted exam score is 45 p
 Always ask yourself: "Does x = 0 make sense in this context?" If not, acknowledge that the y-intercept is just the mathematical starting point of your line, not a meaningful prediction.
 
 #### MicroSim: Slope and Intercept Explorer
+
+<iframe src="../../sims/slope-intercept-explorer/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
 
 <details markdown="1">
 <summary>Interactive Slope and Intercept Manipulation</summary>
@@ -300,6 +280,10 @@ Here's a sample calculation table:
 
 #### MicroSim: Residual Calculator
 
+<iframe src="../../sims/residual-calculator/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
+
 <details markdown="1">
 <summary>Interactive Residual Visualization Tool</summary>
 Type: MicroSim
@@ -366,6 +350,10 @@ Both approaches work, but plotting against x-values is most common.
 > 🐿️ *"My tail's tingling—we're onto something important here! A good residual plot should look like static on an old TV—just random noise. If you see a pattern, that pattern is telling you something your line missed!"*
 
 #### MicroSim: Residual Plot Analyzer
+
+<iframe src="../../sims/residual-plot-analyzer/main.html" width="100%" height="402px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
 
 <details markdown="1">
 <summary>Interactive Residual Plot Diagnostic Tool</summary>
@@ -484,6 +472,10 @@ When you find an outlier, investigate it:
 
 #### MicroSim: Influential Points Explorer
 
+<iframe src="../../sims/influential-points-explorer/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
+
 <details markdown="1">
 <summary>Interactive Influential Point Investigation Tool</summary>
 Type: MicroSim
@@ -553,6 +545,10 @@ Results:
 Predicted sales are $247.20.
 
 #### MicroSim: Complete Regression Analysis Tool
+
+<iframe src="../../sims/regression-analysis-tool/main.html" width="100%" height="652px" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Edit this MicroSim in the p5.js Editor](https://editor.p5js.org/)
 
 <details markdown="1">
 <summary>Full Regression Analysis Dashboard</summary>

@@ -51,8 +51,10 @@ nav:
     - Guess the Correlation: sims/guess-correlation/index.md
     - Histogram Explorer: sims/histogram-explorer/index.md
     - Household Income Boxplot: sims/household-income-boxplot/index.md
+    - Influential Points Explorer: sims/influential-points-explorer/index.md
     - Interactive Dotplot Builder: sims/interactive-dotplot-builder/index.md
     - Law of Large Numbers: sims/law-large-numbers/index.md
+    - Least Squares Explorer: sims/least-squares-explorer/index.md
     - Mean as Balance Point: sims/mean-balance-point/index.md
     - Mean vs Median Skewness: sims/mean-median-skewness/index.md
     - Normal Distribution Explorer: sims/normal-distribution-explorer/index.md
@@ -66,7 +68,11 @@ nav:
     - Population and Sample: sims/population-sample-visual/index.md
     - Probability Simulation Lab: sims/probability-simulation-lab/index.md
     - Quartile Visualization: sims/quartile-visualization/index.md
+    - Regression Analysis Tool: sims/regression-analysis-tool/index.md
+    - Residual Calculator: sims/residual-calculator/index.md
+    - Residual Plot Analyzer: sims/residual-plot-analyzer/index.md
     - Skewness Explorer: sims/skewness-explorer/index.md
+    - Slope Intercept Explorer: sims/slope-intercept-explorer/index.md
     - SOCS Description Builder: sims/socs-description-builder/index.md
     - Sample Space Explorer: sims/sample-space-explorer/index.md
     - Scatterplot Builder: sims/scatterplot-builder/index.md

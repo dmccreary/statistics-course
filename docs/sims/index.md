@@ -119,6 +119,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive MicroSim that uses a boxplot to summarize household incomes and highlight right-skew.
 
+-   **[Influential Points Explorer](./influential-points-explorer/index.md)**
+
+    ![Influential Points Explorer](./influential-points-explorer/influential-points-explorer.png)
+
+    Investigate how high-leverage and outlier points affect regression lines by dragging a test point and comparing results with and without it.
+
 -   **[Interactive Dotplot Builder](./interactive-dotplot-builder/index.md)**
 
     ![Interactive Dotplot Builder](./interactive-dotplot-builder/interactive-dotplot-builder.png)
@@ -130,6 +136,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Law of Large Numbers Demonstrator](./law-large-numbers/law-large-numbers.png)
 
     Interactive visualization demonstrating how empirical probability converges to theoretical probability as the number of trials increases.
+
+-   **[Least Squares Explorer](./least-squares-explorer/index.md)**
+
+    ![Least Squares Explorer](./least-squares-explorer/least-squares-explorer.png)
+
+    Interactive visualization showing how the least squares method finds the best-fit regression line by minimizing squared residuals with draggable data points.
 
 -   **[Mean as Balance Point](./mean-balance-point/index.md)**
 
@@ -209,11 +221,35 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive visualization showing how quartiles divide data into four equal parts with color-coded regions and adjustable sample size.
 
+-   **[Regression Analysis Tool](./regression-analysis-tool/index.md)**
+
+    ![Regression Analysis Tool](./regression-analysis-tool/regression-analysis-tool.png)
+
+    Complete regression analysis dashboard with scatterplot, residual plot, statistics panel, and prediction calculator for comprehensive data analysis.
+
+-   **[Residual Calculator](./residual-calculator/index.md)**
+
+    ![Residual Calculator](./residual-calculator/residual-calculator.png)
+
+    Interactive visualization for computing and understanding regression residuals, showing the vertical distance between actual data points and predicted values.
+
+-   **[Residual Plot Analyzer](./residual-plot-analyzer/index.md)**
+
+    ![Residual Plot Analyzer](./residual-plot-analyzer/residual-plot-analyzer.png)
+
+    Side-by-side scatterplot and residual plot display for evaluating whether a linear model is appropriate by analyzing residual patterns.
+
 -   **[Skewness Explorer](./skewness-explorer/index.md)**
 
     ![Skewness Explorer](./skewness-explorer/skewness-explorer.png)
 
     Interactive MicroSim where students classify distributions as symmetric, skewed left, or skewed right by examining histograms with real-world contexts.
+
+-   **[Slope Intercept Explorer](./slope-intercept-explorer/index.md)**
+
+    ![Slope Intercept Explorer](./slope-intercept-explorer/slope-intercept-explorer.png)
+
+    Manipulate slope and y-intercept sliders to see how changes affect the regression line and predictions, with comparison to the best-fit line.
 
 -   **[SOCS Description Builder](./socs-description-builder/index.md)**
 
