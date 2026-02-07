@@ -122,3 +122,36 @@
     right: 8px;
   }
 }
+
+/* Sylvia admonitions - squirrel mascot in upper right corner */
+.admonition.sylvia {
+  position: relative;
+  border-left-color: var(--sylvia-green) !important;
+}
+
+.admonition.sylvia > .admonition-title {
+  background-color: rgba(46, 125, 50, 0.1) !important;
+}
+
+.admonition.sylvia::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/sylvia-192.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+/* Adjust Sylvia icon for smaller screens */
+@media (max-width: 600px) {
+  .admonition.sylvia::after {
+    width: 32px;
+    height: 32px;
+    top: 1px;
+    right: 8px;
+  }
+}

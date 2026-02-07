@@ -8,6 +8,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // Find all admonitions with "Sylvia" or her signature phrases in the title
+    const sylviaPhrases = [
+        "sylvia",
+        "acorn for your thoughts",
+        "let's crack this nut",
+        "squirrel away",
+        "my tail's tingling"
+    ];
+    document.querySelectorAll(".admonition").forEach((admonition) => {
+        const title = admonition.querySelector(".admonition-title");
+        if (title) {
+            const titleText = title.textContent.toLowerCase();
+            if (sylviaPhrases.some(phrase => titleText.includes(phrase))) {
+                admonition.classList.add("sylvia");
+            }
+        }
+    });
+
     // Find all admonitions with the "prompt" class
     document.querySelectorAll(".admonition.prompt").forEach((admonition) => {
         // Create a "Copy" button
