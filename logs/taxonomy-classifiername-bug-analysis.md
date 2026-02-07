@@ -263,4 +263,26 @@ for gid, ginfo in groups.items():
 
 ---
 
+## Important Design Decision: CSV Uses Short IDs
+
+**The CSV file should ALWAYS use short UPPERCASE taxonomy IDs (e.g., "EDA1", "FOUND", "REG").**
+
+Reasons:
+1. **Human editing** - Many users manually edit the CSV file to adjust concept categorizations. Short IDs are much easier to type and read in a spreadsheet.
+2. **Column width** - Short IDs keep the TaxonomyID column narrow and scannable.
+3. **Consistency** - The ID is a stable key; the human-readable name is a display value that can change.
+
+**The mapping works as follows:**
+
+```
+learning-graph.csv          taxonomy-names.json           learning-graph.json
+─────────────────          ───────────────────           ───────────────────
+TaxonomyID: "EDA1"    →    "EDA1": "Exploratory..."  →   classifierName: "Exploratory Data Analysis I"
+TaxonomyID: "FOUND"   →    "FOUND": "Foundation..."  →   classifierName: "Foundation Concepts"
+```
+
+**Never put human-readable names in the CSV TaxonomyID column.** The translation from ID to display name happens during JSON generation via the `taxonomy-names.json` mapping file.
+
+---
+
 *Analysis and fixes by Claude Code - 2026-02-07*
