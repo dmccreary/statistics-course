@@ -3,9 +3,13 @@
 Convert CSV Learning Graph to JSON for vis-network.js
 Converts the concept dependency CSV into the JSON format
 used by the existing graph viewer (vis.js network format).
+
+IMPORTANT: For custom taxonomies, provide taxonomy-names.json to ensure
+human-readable classifierName values in the output. Without this file,
+taxonomy IDs will be used as fallback (which is usually wrong).
 """
 
-VERSION = "0.02"
+VERSION = "0.03"
 
 import csv
 import json
@@ -13,7 +17,8 @@ from typing import Dict, List
 from datetime import datetime
 
 
-def csv_to_json(csv_path: str, json_path: str, color_config: dict = None, metadata: dict = None):
+def csv_to_json(csv_path: str, json_path: str, color_config: dict = None,
+                metadata: dict = None, taxonomy_names: dict = None):
     """
     Convert CSV dependency graph to vis.js JSON format with metadata and groups.
 
@@ -24,6 +29,8 @@ def csv_to_json(csv_path: str, json_path: str, color_config: dict = None, metada
                      If not provided, uses default color scheme.
         metadata: Optional dictionary with metadata fields (title, description, creator, etc.)
                  If not provided, creates minimal metadata.
+        taxonomy_names: Dictionary mapping taxonomy IDs to human-readable names.
+                       STRONGLY RECOMMENDED for custom taxonomies.
     """
     # Default taxonomy group colors for visualization
     # Uses web-safe pastel color names (no hex codes)
@@ -53,10 +60,10 @@ def csv_to_json(csv_path: str, json_path: str, color_config: dict = None, metada
 
     taxonomy_colors = color_config if color_config is not None else default_colors
 
-    # Taxonomy ID to classifier name mapping
+    # Default taxonomy ID to classifier name mapping
     # Supports both text codes (FOUND, DEF, etc.) and numeric IDs (1, 2, etc.)
     # These are the display names (classifierName in schema) for each taxonomy
-    taxonomy_names = {
+    default_taxonomy_names = {
         # Custom taxonomies for intelligent textbook skills course
         'AIFND': 'AI Foundations',
         'SKILL': 'Claude Skills System',
@@ -92,6 +99,11 @@ def csv_to_json(csv_path: str, json_path: str, color_config: dict = None, metada
         '9': 'Miscellaneous Concepts',
         '10': 'Extended Topics',
     }
+
+    # Merge user-provided taxonomy names with defaults (user names take precedence)
+    all_taxonomy_names = default_taxonomy_names.copy()
+    if taxonomy_names:
+        all_taxonomy_names.update(taxonomy_names)
 
     # Read CSV
     nodes = []
@@ -157,11 +169,18 @@ def csv_to_json(csv_path: str, json_path: str, color_config: dict = None, metada
     # Determine which taxonomy IDs are actually used
     used_taxonomies = set(node['group'] for node in nodes)
 
+    # Track taxonomies with missing human-readable names
+    missing_names = []
+
     for tax_id, color in taxonomy_colors.items():
         # Only include groups that are actually used
         if tax_id in used_taxonomies:
             # Get the classifier name for this taxonomy
-            classifier_name = taxonomy_names.get(tax_id, tax_id)
+            classifier_name = all_taxonomy_names.get(tax_id, tax_id)
+
+            # Check if we're falling back to the ID (indicates missing name)
+            if classifier_name == tax_id:
+                missing_names.append(tax_id)
 
             # Determine font color based on background color
             # All pastel colors are light backgrounds, so use black text
@@ -174,6 +193,25 @@ def csv_to_json(csv_path: str, json_path: str, color_config: dict = None, metada
                 'color': color,
                 'font': {
                     'color': font_color
+                }
+            }
+
+    # Handle taxonomies in CSV that aren't in color config
+    for tax_id in used_taxonomies:
+        if tax_id not in groups:
+            classifier_name = all_taxonomy_names.get(tax_id, tax_id)
+            if classifier_name == tax_id:
+                missing_names.append(tax_id)
+
+            # Assign a default color based on position
+            color_index = len(groups) % len(default_colors)
+            color = list(default_colors.values())[color_index]
+
+            groups[tax_id] = {
+                'classifierName': classifier_name,
+                'color': color,
+                'font': {
+                    'color': 'black'
                 }
             }
 
@@ -197,6 +235,18 @@ def csv_to_json(csv_path: str, json_path: str, color_config: dict = None, metada
     print(f"   - {len(foundational_ids)} foundational concepts")
     print(f"\nFoundational concept IDs: {foundational_ids}")
     print(f"Groups: {list(groups.keys())}")
+
+    # IMPORTANT: Warn about missing human-readable names
+    if missing_names:
+        print(f"\n⚠️  WARNING: The following taxonomy IDs are missing human-readable names:")
+        for tax_id in missing_names:
+            print(f"   - '{tax_id}' → classifierName set to '{tax_id}' (should be descriptive)")
+        print(f"\n   To fix: Create taxonomy-names.json with mappings like:")
+        print(f"   {{")
+        for tax_id in missing_names:
+            print(f'     "{tax_id}": "Human Readable Name Here",')
+        print(f"   }}")
+        print(f"\n   Then run: python csv-to-json.py {csv_path} {json_path} [colors.json] [metadata.json] taxonomy-names.json")
 
     return graph_data
 
@@ -227,15 +277,17 @@ if __name__ == "__main__":
 
     # Parse command line arguments
     if len(sys.argv) < 3:
-        print("Usage: python csv-to-json.py <input_csv> <output_json> [color_config.json] [metadata.json]")
+        print(f"csv-to-json.py v{VERSION}")
+        print("\nUsage: python csv-to-json.py <input_csv> <output_json> [color_config.json] [metadata.json] [taxonomy_names.json]")
         print("Looking for CSV column names: ConceptID, ConceptLabel, Dependencies, TaxonomyID")
         print("\nExample:")
         print("   python csv-to-json.py learning-graph.csv learning-graph.json")
+        print("   python csv-to-json.py learning-graph.csv learning-graph.json color-config.json metadata.json taxonomy-names.json")
         print("\nOptional color_config.json format:")
         print(json.dumps({
-            'FOUND': 'red',
-            'CORE': 'yellow',
-            'ADV': 'blue'
+            'FOUND': 'MistyRose',
+            'CORE': 'LightYellow',
+            'ADV': 'PowderBlue'
         }, indent=2))
         print("\nOptional metadata.json format:")
         print(json.dumps({
@@ -243,6 +295,12 @@ if __name__ == "__main__":
             'description': 'A comprehensive learning graph',
             'creator': 'Your Name',
             'license': 'CC BY 4.0'
+        }, indent=2))
+        print("\n⚠️  RECOMMENDED: taxonomy-names.json format (prevents ID-as-name bug):")
+        print(json.dumps({
+            'FOUND': 'Foundation Concepts',
+            'EDA1': 'Exploratory Data Analysis I',
+            'REG': 'Regression & Correlation'
         }, indent=2))
         sys.exit(1)
 
@@ -271,8 +329,20 @@ if __name__ == "__main__":
         except FileNotFoundError:
             print(f"⚠️  Metadata file not found: {metadata_file}, using defaults")
 
-    graph_data = csv_to_json(csv_path, json_path, color_config, metadata)
+    # Load taxonomy names if provided (STRONGLY RECOMMENDED)
+    taxonomy_names = None
+    if len(sys.argv) > 5:
+        names_file = sys.argv[5]
+        try:
+            with open(names_file, 'r', encoding='utf-8') as f:
+                taxonomy_names = json.load(f)
+            print(f"📋 Loaded taxonomy names from: {names_file}")
+        except FileNotFoundError:
+            print(f"⚠️  Taxonomy names file not found: {names_file}")
+            print(f"   This may result in taxonomy IDs being used as display names.")
+
+    graph_data = csv_to_json(csv_path, json_path, color_config, metadata, taxonomy_names)
     create_taxonomy_legend(graph_data['groups'])
 
-    print("\n✅ CSV to JSON format complete.  Ready to use with graph-viewer!")
-    print(f"   Validate with: ./src/schema/validate-learning-graph.sh {json_path}")
+    print("\n✅ CSV to JSON format complete. Ready to use with graph-viewer!")
+    print(f"   Validate with: ./validate-learning-graph.sh {json_path}")
