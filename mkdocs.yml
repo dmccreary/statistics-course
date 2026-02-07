@@ -53,6 +53,7 @@ nav:
     - Study Design Concept Map: sims/study-design-map/index.md
     - Symmetric Distribution Identifier: sims/symmetric-distribution/index.md
     - Test Scores Box Plot: sims/test-scores-boxplot/index.md
+    - Token Prediction: sims/token-prediction/index.md
     - Two-Way Table Calculator: sims/two-way-table-calculator/index.md
     - Variable Types Concept Map: sims/variable-types-concept-map/index.md
 
@@ -69,6 +70,7 @@ nav:
     - Quality Metrics: learning-graph/quality-metrics.md
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Chapter Content Generation: learning-graph/chapter-content-generation-report.md
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md
