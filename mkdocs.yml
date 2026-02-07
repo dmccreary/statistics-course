@@ -217,9 +217,16 @@ nav:
     - Glossary Quality Report: learning-graph/glossary-quality-report.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
     - Quiz Generation Report: learning-graph/quiz-generation-report.md
+    - Book Metrics: learning-graph/book-metrics.md
+    - Chapter Metrics: learning-graph/chapter-metrics.md
+    - Diagram Details: learning-graph/diagram-details.md
+    - Diagram Table: learning-graph/diagram-table.md
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md
+    - Cover Image: prompts/cover.md
+    - Generate Chapter Content: prompts/generate-chapter-content.md
+    - Generate MicroSims: prompts/generate-microsims.md
   
   - Glossary: glossary.md
   - FAQ: faq.md
