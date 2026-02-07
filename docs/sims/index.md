@@ -11,6 +11,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
 <div class="grid cards" markdown>
 
+-   **[Addition Rule Visualizer](./addition-rule-visualizer/index.md)**
+
+    ![Addition Rule Visualizer](./addition-rule-visualizer/addition-rule-visualizer.png)
+
+    Interactive Venn diagram for visualizing and calculating P(A or B) using the addition rule, with support for mutually exclusive events.
+
 -   **[Association Detector Visualization](./association-detector/index.md)**
 
     ![Association Detector Visualization](./association-detector/association-detector.png)
@@ -95,6 +101,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students click on a number line to add data points and construct a dotplot, demonstrating how dotplots visualize quantitative data.
 
+-   **[Law of Large Numbers Demonstrator](./law-large-numbers/index.md)**
+
+    ![Law of Large Numbers Demonstrator](./law-large-numbers/law-large-numbers.png)
+
+    Interactive visualization demonstrating how empirical probability converges to theoretical probability as the number of trials increases.
+
 -   **[Mean as Balance Point](./mean-balance-point/index.md)**
 
     ![Mean as Balance Point](./mean-balance-point/mean-balance-point.png)
@@ -155,6 +167,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim that demonstrates the relationship between a population and a sample by letting students select individuals from a population.
 
+-   **[Probability Simulation Lab](./probability-simulation-lab/index.md)**
+
+    ![Probability Simulation Lab](./probability-simulation-lab/probability-simulation-lab.png)
+
+    Interactive simulation for estimating probabilities through repeated trials, demonstrating how empirical probability converges to theoretical probability.
+
 -   **[Quartile Visualization](./quartile-visualization/index.md)**
 
     ![Quartile Visualization](./quartile-visualization/quartile-visualization.png)
@@ -172,6 +190,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![SOCS Description Builder](./socs-description-builder/socs-description-builder.png)
 
     An interactive MicroSim where students compose complete distribution descriptions using the SOCS framework (Shape, Outliers, Center, Spread).
+
+-   **[Sample Space Explorer](./sample-space-explorer/index.md)**
+
+    ![Sample Space Explorer](./sample-space-explorer/sample-space-explorer.png)
+
+    Interactive visualization for exploring sample spaces of common probability experiments including dice rolls, coin flips, and card draws.
 
 -   **[Standard Deviation Calculator](./std-dev-calculator/index.md)**
 
@@ -214,6 +238,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Variable Types Concept Map](./variable-types-concept-map/variable-types-concept-map.png)
 
     An interactive concept map showing the hierarchy of variable types in statistics, including categorical and quantitative variables.
+
+-   **[Venn Diagram Problem Solver](./venn-diagram-solver/index.md)**
+
+    ![Venn Diagram Problem Solver](./venn-diagram-solver/venn-diagram-solver.png)
+
+    Interactive tool for solving probability problems using Venn diagrams, calculating counts and probabilities for overlapping events.
 
 -   **[Z-Score Calculator](./z-score-calculator/index.md)**
 

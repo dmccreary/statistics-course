@@ -197,6 +197,8 @@ P(\text{even}) = \frac{3}{6} = \frac{1}{2} = 0.5
 
 #### Diagram: Sample Space Explorer
 
+<iframe src="../../sims/sample-space-explorer/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden;"></iframe>
+
 <details markdown="1">
 <summary>Interactive Sample Space Visualization</summary>
 Type: MicroSim
@@ -374,6 +376,8 @@ P(\text{heart or face}) = \frac{13}{52} + \frac{12}{52} - \frac{3}{52} = \frac{2
 
 #### Diagram: Addition Rule Visualizer
 
+<iframe src="../../sims/addition-rule-visualizer/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden;"></iframe>
+
 <details markdown="1">
 <summary>Interactive Addition Rule Calculator</summary>
 Type: MicroSim
@@ -503,6 +507,8 @@ P(Spanish or French) = (13 + 5 + 7)/30 = 25/30 ≈ 0.833
 
 #### Diagram: Venn Diagram Problem Solver
 
+<iframe src="../../sims/venn-diagram-solver/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
 <details markdown="1">
 <summary>Interactive Venn Diagram Tool</summary>
 Type: MicroSim
@@ -598,6 +604,8 @@ A simulation might yield 528 successes out of 1,000 trials, estimating P(at leas
 
 #### Diagram: Probability Simulation Lab
 
+<iframe src="../../sims/probability-simulation-lab/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
 <details markdown="1">
 <summary>Interactive Simulation Tool</summary>
 Type: MicroSim
@@ -672,6 +680,8 @@ This law is why casinos always win in the long run, why insurance companies can 
 "Time to squirrel away this wisdom," Sylvia says sagely. "The Law of Large Numbers is why my long-term foraging strategy works. Some days I find almost nothing; other days I hit the jackpot. But over a whole autumn, my collection consistently matches my probability-based predictions. Short-term chaos, long-term order!"
 
 #### Diagram: Law of Large Numbers Demonstrator
+
+<iframe src="../../sims/law-large-numbers/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Interactive Law of Large Numbers Visualization</summary>

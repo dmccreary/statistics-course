@@ -33,6 +33,7 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - Addition Rule Visualizer: sims/addition-rule-visualizer/index.md
     - Association Detector: sims/association-detector/index.md
     - Association Strength Spectrum: sims/association-strength-spectrum/index.md
     - Bar Graph Builder: sims/bar-graph-builder/index.md
@@ -47,6 +48,7 @@ nav:
     - Histogram Explorer: sims/histogram-explorer/index.md
     - Household Income Boxplot: sims/household-income-boxplot/index.md
     - Interactive Dotplot Builder: sims/interactive-dotplot-builder/index.md
+    - Law of Large Numbers: sims/law-large-numbers/index.md
     - Mean as Balance Point: sims/mean-balance-point/index.md
     - Mean vs Median Skewness: sims/mean-median-skewness/index.md
     - Normal Distribution Explorer: sims/normal-distribution-explorer/index.md
@@ -57,9 +59,11 @@ nav:
     - Parameter vs Statistic: sims/parameter-statistic-compare/index.md
     - Pie vs Bar Comparison: sims/pie-vs-bar-comparison/index.md
     - Population and Sample: sims/population-sample-visual/index.md
+    - Probability Simulation Lab: sims/probability-simulation-lab/index.md
     - Quartile Visualization: sims/quartile-visualization/index.md
     - Skewness Explorer: sims/skewness-explorer/index.md
     - SOCS Description Builder: sims/socs-description-builder/index.md
+    - Sample Space Explorer: sims/sample-space-explorer/index.md
     - Standard Deviation Calculator: sims/std-dev-calculator/index.md
     - Stemplot Constructor: sims/stemplot-constructor/index.md
     - Study Design Concept Map: sims/study-design-map/index.md
@@ -68,6 +72,7 @@ nav:
     - Token Prediction: sims/token-prediction/index.md
     - Two-Way Table Calculator: sims/two-way-table-calculator/index.md
     - Variable Types Concept Map: sims/variable-types-concept-map/index.md
+    - Venn Diagram Problem Solver: sims/venn-diagram-solver/index.md
     - Z-Score Calculator: sims/z-score-calculator/index.md
 
   - Appendices:
