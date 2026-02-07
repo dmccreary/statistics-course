@@ -14,60 +14,79 @@ nav:
     - 1. Introduction to Statistics:
       - Chapter Content: chapters/01-introduction-to-statistics/index.md
       - Quiz: chapters/01-introduction-to-statistics/quiz.md
+      - References: chapters/01-introduction-to-statistics/references.md
     - 2. Displaying Categorical Data:
       - Chapter Content: chapters/02-displaying-categorical-data/index.md
       - Quiz: chapters/02-displaying-categorical-data/quiz.md
+      - References: chapters/02-displaying-categorical-data/references.md
     - 3. Displaying Quantitative Data:
       - Chapter Content: chapters/03-displaying-quantitative-data/index.md
       - Quiz: chapters/03-displaying-quantitative-data/quiz.md
+      - References: chapters/03-displaying-quantitative-data/references.md
     - 4. Numerical Summaries:
       - Chapter Content: chapters/04-numerical-summaries/index.md
       - Quiz: chapters/04-numerical-summaries/quiz.md
+      - References: chapters/04-numerical-summaries/references.md
     - 5. Standardization and Normal:
       - Chapter Content: chapters/05-standardization-and-normal/index.md
       - Quiz: chapters/05-standardization-and-normal/quiz.md
+      - References: chapters/05-standardization-and-normal/references.md
     - 6. Scatterplots and Association:
       - Chapter Content: chapters/06-scatterplots-and-association/index.md
       - Quiz: chapters/06-scatterplots-and-association/quiz.md
+      - References: chapters/06-scatterplots-and-association/references.md
     - 7. Linear Regression:
       - Chapter Content: chapters/07-linear-regression/index.md
       - Quiz: chapters/07-linear-regression/quiz.md
+      - References: chapters/07-linear-regression/references.md
     - 8. Causation and Study Design:
       - Chapter Content: chapters/08-causation-and-study-design/index.md
       - Quiz: chapters/08-causation-and-study-design/quiz.md
+      - References: chapters/08-causation-and-study-design/references.md
     - 9. Probability Fundamentals:
       - Chapter Content: chapters/09-probability-fundamentals/index.md
       - Quiz: chapters/09-probability-fundamentals/quiz.md
+      - References: chapters/09-probability-fundamentals/references.md
     - 10. Conditional Probability:
       - Chapter Content: chapters/10-conditional-probability/index.md
       - Quiz: chapters/10-conditional-probability/quiz.md
+      - References: chapters/10-conditional-probability/references.md
     - 11. Sampling and Bias:
       - Chapter Content: chapters/11-sampling-and-bias/index.md
       - Quiz: chapters/11-sampling-and-bias/quiz.md
+      - References: chapters/11-sampling-and-bias/references.md
     - 12. Experimental Design:
       - Chapter Content: chapters/12-experimental-design/index.md
       - Quiz: chapters/12-experimental-design/quiz.md
+      - References: chapters/12-experimental-design/references.md
     - 13. Random Variables:
       - Chapter Content: chapters/13-random-variables/index.md
       - Quiz: chapters/13-random-variables/quiz.md
+      - References: chapters/13-random-variables/references.md
     - 14. Sampling Distributions:
       - Chapter Content: chapters/14-sampling-distributions/index.md
       - Quiz: chapters/14-sampling-distributions/quiz.md
+      - References: chapters/14-sampling-distributions/references.md
     - 15. Confidence Intervals:
       - Chapter Content: chapters/15-confidence-intervals/index.md
       - Quiz: chapters/15-confidence-intervals/quiz.md
+      - References: chapters/15-confidence-intervals/references.md
     - 16. Hypothesis Testing:
       - Chapter Content: chapters/16-hypothesis-testing/index.md
       - Quiz: chapters/16-hypothesis-testing/quiz.md
+      - References: chapters/16-hypothesis-testing/references.md
     - 17. Inference for Means:
       - Chapter Content: chapters/17-inference-for-means/index.md
       - Quiz: chapters/17-inference-for-means/quiz.md
+      - References: chapters/17-inference-for-means/references.md
     - 18. Chi-Square and Regression Inference:
       - Chapter Content: chapters/18-chi-square-and-regression-inference/index.md
       - Quiz: chapters/18-chi-square-and-regression-inference/quiz.md
+      - References: chapters/18-chi-square-and-regression-inference/references.md
     - 19. Communication and Synthesis:
       - Chapter Content: chapters/19-communication-and-synthesis/index.md
       - Quiz: chapters/19-communication-and-synthesis/quiz.md
+      - References: chapters/19-communication-and-synthesis/references.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md

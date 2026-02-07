@@ -18,11 +18,17 @@ The course is organized into 19 chapters covering 9 major units that align with 
 
 ### Who is Sylvia the Squirrel?
 
+![](./img/sylvia-square-transparent.png){ width="200", align="right" }
+
 Sylvia is your guide through this textbook! She's a friendly red squirrel who discovered statistics while optimizing her acorn collection strategies. She appears throughout to offer encouragement, crack occasional puns, and make abstract concepts feel more concrete—often using acorn-related examples. Her signature phrases include "Let's crack this nut!" when starting a challenging topic.
 
 ### What technology do I need for this course?
 
-You'll need a graphing calculator (TI-83/84 or equivalent) for the AP exam, though many concepts in this course are illustrated through interactive MicroSims that run in your web browser. The simulations help you visualize concepts like sampling distributions and hypothesis testing without needing external software.
+You'll just need a web browser for this course.  If you take the AP test, you will need a graphing 
+calculator (TI-83/84 or equivalent) for the AP exam, though many concepts in this course are 
+illustrated through interactive MicroSims that run in your web browser. The simulations 
+help you visualize concepts like sampling distributions and hypothesis testing without 
+needing external software.
 
 ### How should I use the MicroSims?
 

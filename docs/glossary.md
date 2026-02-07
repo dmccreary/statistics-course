@@ -1396,6 +1396,14 @@ The human experimental units in a study, typically called subjects when human an
 
 A new random variable created by adding the values of two or more random variables, with mean equal to the sum of means.
 
+#### Sylvia the Squirrel
+
+![](./img/sylvia-square-transparent.png){ width="200", align="right" }
+
+Your guide through this textbook! 
+
+Sylvia is a friendly red squirrel who discovered statistics while optimizing her acorn collection strategies. She appears throughout to offer encouragement, crack occasional puns, and make abstract concepts feel more concrete—often using acorn-related examples. Her signature phrases include "Let's crack this nut!" when starting a challenging topic.
+
 #### Symmetric Distribution
 
 A distribution in which the left side is approximately a mirror image of the right side when folded at the center.
