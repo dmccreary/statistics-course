@@ -87,6 +87,8 @@ Notice that little hat symbol over the y. It's crucial! Regular \( y \) represen
 
 #### MicroSim: Least Squares Regression Explorer
 
+<iframe src="../../sims/least-squares-explorer/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden;"></iframe>
+
 <details markdown="1">
 <summary>Interactive Least Squares Visualization</summary>
 Type: MicroSim
@@ -179,6 +181,8 @@ Interpretation: "When study time is zero hours, the predicted exam score is 45 p
 Always ask yourself: "Does x = 0 make sense in this context?" If not, acknowledge that the y-intercept is just the mathematical starting point of your line, not a meaningful prediction.
 
 #### MicroSim: Slope and Intercept Explorer
+
+<iframe src="../../sims/slope-intercept-explorer/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Interactive Slope and Intercept Manipulation</summary>
@@ -300,6 +304,8 @@ Here's a sample calculation table:
 
 #### MicroSim: Residual Calculator
 
+<iframe src="../../sims/residual-calculator/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
 <details markdown="1">
 <summary>Interactive Residual Visualization Tool</summary>
 Type: MicroSim
@@ -366,6 +372,8 @@ Both approaches work, but plotting against x-values is most common.
 > 🐿️ *"My tail's tingling—we're onto something important here! A good residual plot should look like static on an old TV—just random noise. If you see a pattern, that pattern is telling you something your line missed!"*
 
 #### MicroSim: Residual Plot Analyzer
+
+<iframe src="../../sims/residual-plot-analyzer/main.html" width="100%" height="402px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Interactive Residual Plot Diagnostic Tool</summary>
@@ -484,6 +492,8 @@ When you find an outlier, investigate it:
 
 #### MicroSim: Influential Points Explorer
 
+<iframe src="../../sims/influential-points-explorer/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
 <details markdown="1">
 <summary>Interactive Influential Point Investigation Tool</summary>
 Type: MicroSim
@@ -553,6 +563,8 @@ Results:
 Predicted sales are $247.20.
 
 #### MicroSim: Complete Regression Analysis Tool
+
+<iframe src="../../sims/regression-analysis-tool/main.html" width="100%" height="652px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Full Regression Analysis Dashboard</summary>

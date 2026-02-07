@@ -254,6 +254,8 @@ The sample proportion is about 1.94 standard errors below the claimed value. Is 
 
 #### Diagram: Test Statistic Calculator
 
+<iframe src="../../sims/test-statistic-calculator/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
 <details markdown="1">
 <summary>Interactive Test Statistic Calculator</summary>
 Type: MicroSim
@@ -369,6 +371,8 @@ Continuing our satisfaction example where z = -1.94:
 The p-value tells us that if the true satisfaction rate were really 60%, we'd see a sample proportion as extreme as 54% (or more extreme) about 5.2% of the time with a two-sided test.
 
 #### Diagram: P-Value Visualizer
+
+<iframe src="../../sims/p-value-visualizer/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
 <details markdown="1">
 <summary>Interactive P-Value Visualization</summary>
@@ -558,6 +562,8 @@ When p-value \( \geq \alpha \):
 
 #### Diagram: Hypothesis Testing Decision Flowchart
 
+<iframe src="../../sims/hypothesis-testing-flowchart/main.html" width="100%" height="602px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
+
 <details markdown="1">
 <summary>Hypothesis Testing Decision Guide</summary>
 Type: workflow
@@ -665,6 +671,8 @@ The probability \( \beta \) depends on sample size, the true parameter value, an
 "Acorn for your thoughts on this?" Sylvia asks. "In my acorn quality testing, a Type I error means I reject perfectly good acorns thinking they're bad. A Type II error means I keep bad acorns thinking they're good. Both are problems, but depending on the situation, one might be worse than the other!"
 
 #### Diagram: Type I and Type II Error Visualizer
+
+<iframe src="../../sims/type-error-visualizer/main.html" width="100%" height="552px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
 <details markdown="1">
 <summary>Interactive Error Type Demonstration</summary>
@@ -939,6 +947,8 @@ Since p-value (0.0192) < \( \alpha \) (0.05), we reject \( H_0 \).
 "At the 0.05 significance level, there is statistically significant evidence of a difference in pass rates between the traditional and new teaching methods."
 
 #### Diagram: Two-Proportion Test Comparison
+
+<iframe src="../../sims/two-proportion-test/main.html" width="100%" height="602px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
 <details markdown="1">
 <summary>Interactive Two-Proportion Test Calculator</summary>

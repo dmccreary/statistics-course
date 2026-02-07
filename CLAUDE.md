@@ -177,3 +177,48 @@ s^2 = \frac{\sum(x_i - \bar{x})^2}{n-1}
 **Do NOT use:**
 - Single dollar signs: `$equation$`
 - Double dollar signs: `$$equation$$`
+
+---
+
+## MicroSim Specification Blocks
+
+**NEVER delete `<details>` blocks from chapter index.md files.**
+
+Each chapter contains `<details markdown="1">` blocks that document the MicroSim specifications. These blocks serve as metadata mapping learning objectives to the MicroSims that were generated. They are essential for:
+
+- AI tools to understand the relationship between learning objectives and simulations
+- Future regeneration or modification of MicroSims
+- Documentation of Bloom taxonomy levels, visual elements, and interactive controls
+- Traceability between educational goals and implementations
+
+**Structure:**
+```markdown
+#### Diagram: [Title]
+
+<iframe src="../../sims/[name]/main.html" ...></iframe>
+
+<details markdown="1">
+<summary>[Description]</summary>
+Type: MicroSim
+
+Bloom Taxonomy: [Level]
+Learning objective: [Objective text]
+
+Visual elements:
+- [Element 1]
+- [Element 2]
+
+Interactive controls:
+- [Control 1]
+- [Control 2]
+</details>
+```
+
+**Allowed modifications:**
+- Adding CSS rules to make details blocks less prominent (e.g., a compact "Show Spec" button)
+- Updating specification content to match implementation changes
+- Adding new details blocks for new MicroSims
+
+**NOT allowed:**
+- Removing details blocks from chapters
+- Replacing details blocks with just iframes
