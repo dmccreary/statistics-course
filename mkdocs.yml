@@ -11,25 +11,63 @@ nav:
 
   - Chapters:
     - Overview: chapters/index.md
-    - 1. Introduction to Statistics: chapters/01-introduction-to-statistics/index.md
-    - 2. Displaying Categorical Data: chapters/02-displaying-categorical-data/index.md
-    - 3. Displaying Quantitative Data: chapters/03-displaying-quantitative-data/index.md
-    - 4. Numerical Summaries: chapters/04-numerical-summaries/index.md
-    - 5. Standardization and Normal: chapters/05-standardization-and-normal/index.md
-    - 6. Scatterplots and Association: chapters/06-scatterplots-and-association/index.md
-    - 7. Linear Regression: chapters/07-linear-regression/index.md
-    - 8. Causation and Study Design: chapters/08-causation-and-study-design/index.md
-    - 9. Probability Fundamentals: chapters/09-probability-fundamentals/index.md
-    - 10. Conditional Probability: chapters/10-conditional-probability/index.md
-    - 11. Sampling and Bias: chapters/11-sampling-and-bias/index.md
-    - 12. Experimental Design: chapters/12-experimental-design/index.md
-    - 13. Random Variables: chapters/13-random-variables/index.md
-    - 14. Sampling Distributions: chapters/14-sampling-distributions/index.md
-    - 15. Confidence Intervals: chapters/15-confidence-intervals/index.md
-    - 16. Hypothesis Testing: chapters/16-hypothesis-testing/index.md
-    - 17. Inference for Means: chapters/17-inference-for-means/index.md
-    - 18. Chi-Square and Regression Inference: chapters/18-chi-square-and-regression-inference/index.md
-    - 19. Communication and Synthesis: chapters/19-communication-and-synthesis/index.md
+    - 1. Introduction to Statistics:
+      - Chapter Content: chapters/01-introduction-to-statistics/index.md
+      - Quiz: chapters/01-introduction-to-statistics/quiz.md
+    - 2. Displaying Categorical Data:
+      - Chapter Content: chapters/02-displaying-categorical-data/index.md
+      - Quiz: chapters/02-displaying-categorical-data/quiz.md
+    - 3. Displaying Quantitative Data:
+      - Chapter Content: chapters/03-displaying-quantitative-data/index.md
+      - Quiz: chapters/03-displaying-quantitative-data/quiz.md
+    - 4. Numerical Summaries:
+      - Chapter Content: chapters/04-numerical-summaries/index.md
+      - Quiz: chapters/04-numerical-summaries/quiz.md
+    - 5. Standardization and Normal:
+      - Chapter Content: chapters/05-standardization-and-normal/index.md
+      - Quiz: chapters/05-standardization-and-normal/quiz.md
+    - 6. Scatterplots and Association:
+      - Chapter Content: chapters/06-scatterplots-and-association/index.md
+      - Quiz: chapters/06-scatterplots-and-association/quiz.md
+    - 7. Linear Regression:
+      - Chapter Content: chapters/07-linear-regression/index.md
+      - Quiz: chapters/07-linear-regression/quiz.md
+    - 8. Causation and Study Design:
+      - Chapter Content: chapters/08-causation-and-study-design/index.md
+      - Quiz: chapters/08-causation-and-study-design/quiz.md
+    - 9. Probability Fundamentals:
+      - Chapter Content: chapters/09-probability-fundamentals/index.md
+      - Quiz: chapters/09-probability-fundamentals/quiz.md
+    - 10. Conditional Probability:
+      - Chapter Content: chapters/10-conditional-probability/index.md
+      - Quiz: chapters/10-conditional-probability/quiz.md
+    - 11. Sampling and Bias:
+      - Chapter Content: chapters/11-sampling-and-bias/index.md
+      - Quiz: chapters/11-sampling-and-bias/quiz.md
+    - 12. Experimental Design:
+      - Chapter Content: chapters/12-experimental-design/index.md
+      - Quiz: chapters/12-experimental-design/quiz.md
+    - 13. Random Variables:
+      - Chapter Content: chapters/13-random-variables/index.md
+      - Quiz: chapters/13-random-variables/quiz.md
+    - 14. Sampling Distributions:
+      - Chapter Content: chapters/14-sampling-distributions/index.md
+      - Quiz: chapters/14-sampling-distributions/quiz.md
+    - 15. Confidence Intervals:
+      - Chapter Content: chapters/15-confidence-intervals/index.md
+      - Quiz: chapters/15-confidence-intervals/quiz.md
+    - 16. Hypothesis Testing:
+      - Chapter Content: chapters/16-hypothesis-testing/index.md
+      - Quiz: chapters/16-hypothesis-testing/quiz.md
+    - 17. Inference for Means:
+      - Chapter Content: chapters/17-inference-for-means/index.md
+      - Quiz: chapters/17-inference-for-means/quiz.md
+    - 18. Chi-Square and Regression Inference:
+      - Chapter Content: chapters/18-chi-square-and-regression-inference/index.md
+      - Quiz: chapters/18-chi-square-and-regression-inference/quiz.md
+    - 19. Communication and Synthesis:
+      - Chapter Content: chapters/19-communication-and-synthesis/index.md
+      - Quiz: chapters/19-communication-and-synthesis/quiz.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md
@@ -159,6 +197,7 @@ nav:
     - Chapter Content Generation: learning-graph/chapter-content-generation-report.md
     - Glossary Quality Report: learning-graph/glossary-quality-report.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - Quiz Generation Report: learning-graph/quiz-generation-report.md
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md
