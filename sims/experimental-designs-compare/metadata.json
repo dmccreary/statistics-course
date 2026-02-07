@@ -1,0 +1,44 @@
+{
+  "title": "Experimental Designs Comparison",
+  "description": "Interactive comparison of completely randomized, randomized block, and matched pairs experimental designs with animated random assignment visualization.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Experimental Design",
+    "Completely Randomized Design",
+    "Randomized Block Design",
+    "Matched Pairs Design",
+    "Research Methods"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/experimental-designs-compare/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Completely Randomized Design",
+    "Randomized Block Design",
+    "Matched Pairs Design",
+    "Random Assignment",
+    "Blocking"
+  ],
+  "prerequisites": [
+    "Understanding of experimental design",
+    "Knowledge of random assignment",
+    "Concept of confounding variables"
+  ],
+  "library": "p5.js"
+}

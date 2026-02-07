@@ -1,0 +1,44 @@
+{
+  "title": "Test Statistic Calculator",
+  "description": "Interactive calculator for computing z-test statistics in one-proportion hypothesis tests. Students input sample data and hypothesized values to calculate the test statistic with step-by-step visualization and conditions checking.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Hypothesis Testing",
+    "Z-Test",
+    "One-Proportion Test",
+    "Test Statistic",
+    "Standard Error"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/test-statistic-calculator/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Test Statistic",
+    "Z-Score",
+    "Standard Error",
+    "Null Hypothesis",
+    "Sample Proportion",
+    "Large Counts Condition"
+  ],
+  "prerequisites": [
+    "Understanding of proportions",
+    "Z-scores and standard normal distribution",
+    "Null and alternative hypotheses"
+  ],
+  "library": "p5.js"
+}

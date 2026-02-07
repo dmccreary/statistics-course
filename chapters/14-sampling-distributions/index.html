@@ -1410,6 +1410,246 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -2169,41 +2409,6 @@
 <h4 id="diagram-sampling-distribution-concept-visualization">Diagram: Sampling Distribution Concept Visualization</h4>
 <iframe src="../../sims/sampling-distribution-concept/main.html" width="100%" height="550px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Sampling Distribution Concept Visualization</summary>
-<p>Type: microsim</p>
-<p>Learning Objective: Understand (L2) how individual samples combine to form a sampling distribution; explain how the distribution of sample statistics differs from the distribution of individual data points</p>
-<p>Bloom Taxonomy Level: Understand (L2)
-Bloom Taxonomy Verb: explain, demonstrate</p>
-<p>Purpose: Demonstrate visually how taking many samples and calculating a statistic from each creates a predictable sampling distribution, even when individual samples vary</p>
-<p>Canvas layout:
-- Drawing area (full width): Population visualization at top, samples in middle, sampling distribution histogram at bottom</p>
-<p>Visual elements:
-- Top section: A large population represented as colored dots (blue and orange for a proportion, or a distribution for means)
-- Middle section: Animation showing samples being drawn, with sample statistic calculated
-- Bottom section: Histogram building as each sample statistic is added
-- Counter showing number of samples taken
-- Display of current sample statistic</p>
-<p>Interactive controls:
-- Button: "Take 1 Sample" - draws one sample and adds statistic to histogram
-- Button: "Take 10 Samples" - rapidly draws 10 samples
-- Button: "Take 100 Samples" - rapidly draws 100 samples
-- Button: "Reset" - clears the histogram and starts over
-- Slider: Sample size n (10, 25, 50, 100)
-- Display: Mean and standard deviation of the sampling distribution</p>
-<p>Default parameters:
-- Population proportion: 0.6 (or mean = 100, SD = 15 for means)
-- Sample size: 25
-- Animation speed: moderate</p>
-<p>Behavior:
-- When sample is taken, show dots being selected from population
-- Calculate sample statistic and briefly display it
-- Add statistic to histogram with animation
-- Update running mean and SD of sampling distribution
-- As more samples accumulate, show histogram becoming smoother and more normal-shaped</p>
-<p>Instructional Rationale: Step-through demonstration is appropriate because students need to see the process of sampling and statistic calculation repeatedly to understand that the sampling distribution emerges from aggregating many sample statistics. The ability to control pace (1, 10, or 100 samples) lets students observe both individual variation and the overall pattern.</p>
-<p>Implementation: p5.js with responsive canvas sizing</p>
-</details>
 <hr />
 <h2 id="sample-proportion-and-its-sampling-distribution">Sample Proportion and Its Sampling Distribution</h2>
 <p>When we're dealing with categorical data, we often want to estimate the proportion of a population that has a certain characteristic. The <strong>sample proportion</strong>, denoted <span class="arithmatex">\( \hat{p} \)</span> (read as "p-hat"), is calculated as:</p>
@@ -2317,40 +2522,6 @@ Bloom Taxonomy Verb: explain, demonstrate</p>
 <h4 id="diagram-standard-error-and-sample-size-explorer">Diagram: Standard Error and Sample Size Explorer</h4>
 <iframe src="../../sims/standard-error-explorer/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Standard Error and Sample Size Explorer</summary>
-<p>Type: microsim</p>
-<p>Learning Objective: Apply (L3) the relationship between sample size and standard error; demonstrate how increasing sample size reduces the variability of the sampling distribution</p>
-<p>Bloom Taxonomy Level: Apply (L3)
-Bloom Taxonomy Verb: demonstrate, calculate, apply</p>
-<p>Purpose: Allow students to interactively explore how sample size affects the spread of sampling distributions for both proportions and means</p>
-<p>Canvas layout:
-- Left side (60%): Graph showing sampling distribution curve
-- Right side (40%): Control panel and calculations</p>
-<p>Visual elements:
-- Normal curve representing the sampling distribution
-- Shaded region showing one standard error on each side of the mean
-- Numerical display of standard error calculation
-- Formula display with current values substituted</p>
-<p>Interactive controls:
-- Radio buttons: Choose "Proportion" or "Mean"
-- Slider: Sample size n (10 to 500)
-- For Proportion mode: Slider for p (0.1 to 0.9)
-- For Mean mode: Input for population standard deviation sigma (1 to 100)
-- Display: Current standard error with calculation breakdown</p>
-<p>Default parameters:
-- Mode: Proportion
-- p = 0.5
-- n = 50
-- sigma = 15 (for mean mode)</p>
-<p>Behavior:
-- As sample size increases, curve becomes narrower (less spread)
-- Standard error calculation updates in real-time
-- Show the formula with actual numbers substituted
-- Highlight that quadrupling n halves the standard error</p>
-<p>Instructional Rationale: This apply-level simulation lets students manipulate parameters and immediately see the effect on the sampling distribution. The focus on the formula with substituted values helps connect the abstract formula to concrete calculations.</p>
-<p>Implementation: p5.js with responsive canvas sizing</p>
-</details>
 <hr />
 <h2 id="the-central-limit-theorem-the-crown-jewel-of-statistics">The Central Limit Theorem: The Crown Jewel of Statistics</h2>
 <p>And now, my tail is absolutely tingling because we've arrived at the most important theorem in statistics: the <strong>Central Limit Theorem</strong> (CLT).</p>
@@ -2412,50 +2583,6 @@ Bloom Taxonomy Verb: demonstrate, calculate, apply</p>
 <h4 id="diagram-central-limit-theorem-demonstration">Diagram: Central Limit Theorem Demonstration</h4>
 <iframe src="../../sims/clt-demonstration/main.html" width="100%" height="600px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Central Limit Theorem Demonstration</summary>
-<p>Type: microsim</p>
-<p>Learning Objective: Analyze (L4) how the Central Limit Theorem transforms non-normal population distributions into normal sampling distributions as sample size increases; compare sampling distributions across different population shapes</p>
-<p>Bloom Taxonomy Level: Analyze (L4)
-Bloom Taxonomy Verb: compare, examine, differentiate</p>
-<p>Purpose: Provide visual, interactive proof of the Central Limit Theorem by showing how sampling distributions become normal regardless of the population shape</p>
-<p>Canvas layout:
-- Top section (30%): Population distribution display
-- Middle section (50%): Sampling distribution histogram that builds dynamically
-- Bottom section (20%): Controls and statistics</p>
-<p>Visual elements:
-- Population distribution shown as histogram or smooth curve
-- Building histogram of sample means
-- Overlaid normal curve on sampling distribution for comparison
-- Statistics panel showing mean and SD of sampling distribution
-- Comparison of theoretical vs observed values</p>
-<p>Interactive controls:
-- Dropdown: Population shape (Uniform, Skewed Right, Skewed Left, Bimodal, Normal, U-shaped)
-- Slider: Sample size n (1, 2, 5, 10, 25, 50, 100)
-- Button: "Take 1 Sample"
-- Button: "Take 100 Samples"
-- Button: "Take 1000 Samples"
-- Button: "Reset"
-- Toggle: Show/hide normal overlay curve</p>
-<p>Default parameters:
-- Population: Skewed Right
-- Sample size: n = 1
-- Show normal overlay: On</p>
-<p>Behavior:
-- When n = 1, sampling distribution matches population shape
-- As n increases, sampling distribution becomes more bell-shaped
-- Normal overlay helps students see how close to normal the distribution is
-- Display theoretical mean and SD alongside observed values
-- Color coding: population in one color, sampling distribution in another</p>
-<p>Data Visibility Requirements:
-- Stage 1: Show population distribution clearly labeled
-- Stage 2: Show individual sample being drawn (highlight selected values)
-- Stage 3: Show calculation of sample mean for that sample
-- Stage 4: Show sample mean being added to histogram
-- Stage 5: As samples accumulate, show histogram converging to normal</p>
-<p>Instructional Rationale: The power of this simulation is letting students see the CLT in action. Starting with n=1 (where sampling distribution matches population) and gradually increasing n shows the transformation process. The analyze-level objective is supported by comparing different population shapes and sample sizes.</p>
-<p>Implementation: p5.js with responsive canvas sizing; pre-defined population distributions</p>
-</details>
 <h3 id="the-clt-for-proportions">The CLT for Proportions</h3>
 <p>The Central Limit Theorem also applies to sample proportions! When the conditions are met, the sampling distribution of <span class="arithmatex">\( \hat{p} \)</span> is approximately normal with:</p>
 <ul>
@@ -2527,53 +2654,6 @@ z = \frac{0.50 - 0.52}{0.025} = \frac{-0.02}{0.025} = -0.80
 <h4 id="diagram-statistical-inference-workflow">Diagram: Statistical Inference Workflow</h4>
 <iframe src="../../sims/inference-workflow/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Statistical Inference Workflow</summary>
-<p>Type: infographic</p>
-<p>Learning Objective: Understand (L2) how sampling distributions enable statistical inference; explain the connection between sample statistics, sampling distributions, and population parameters</p>
-<p>Bloom Taxonomy Level: Understand (L2)
-Bloom Taxonomy Verb: explain, summarize</p>
-<p>Purpose: Provide a visual roadmap showing how sample data, sampling distributions, and population parameters connect in the inference process</p>
-<p>Layout: Flowchart style with three main stages arranged vertically or horizontally</p>
-<p>Components:
-1. Population box (top or left):
-   - Label: "Population"
-   - Contains parameter symbols (p or mu)
-   - Text: "Unknown - what we want to learn about"
-   - Color: Green (Sylvia's cardigan color)</p>
-<ol>
-<li>Sample box (middle):</li>
-<li>Label: "Sample (n)"</li>
-<li>Shows data collection arrow from population</li>
-<li>Contains statistic symbols (p-hat or x-bar)</li>
-<li>Text: "Observed - what we can measure"</li>
-<li>
-<p>Color: Auburn (Sylvia's fur color)</p>
-</li>
-<li>
-<p>Sampling Distribution box (central, larger):</p>
-</li>
-<li>Shows normal curve</li>
-<li>Labels for mean and standard error</li>
-<li>Text: "Theoretical - describes how statistics vary"</li>
-<li>Connects sample to population via CLT</li>
-<li>
-<p>Color: Light green background</p>
-</li>
-<li>
-<p>Inference arrows:</p>
-</li>
-<li>Confidence Interval arrow: points from sample toward population</li>
-<li>Hypothesis Test arrow: compares sample to claimed population value</li>
-</ol>
-<p>Interactive elements:
-- Hover over each component to reveal detailed explanation
-- Click on "Confidence Interval" to highlight that path
-- Click on "Hypothesis Test" to highlight that path
-- Tooltips explain each concept</p>
-<p>Color scheme: Use Sylvia color palette (green, auburn, cream)</p>
-<p>Implementation: HTML/CSS/JavaScript with SVG elements and interactive hover/click events</p>
-</details>
 <hr />
 <h2 id="sample-size-determination-for-confidence-intervals">Sample Size Determination for Confidence Intervals</h2>
 <p>Looking ahead to confidence intervals (coming up in the next chapter!), the sample size directly affects how precise our estimates can be. The <strong>margin of error</strong> in a confidence interval depends on:</p>
@@ -2665,43 +2745,6 @@ P(Z &lt; -2.00) \approx 0.023
 <h4 id="diagram-light-bulb-sampling-distribution-calculator">Diagram: Light Bulb Sampling Distribution Calculator</h4>
 <iframe src="../../sims/sampling-distribution-calculator/main.html" width="100%" height="520px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Sampling Distribution Calculator</summary>
-<p>Type: microsim</p>
-<p>Learning Objective: Apply (L3) sampling distribution concepts to calculate probabilities; practice using z-scores with sampling distributions</p>
-<p>Bloom Taxonomy Level: Apply (L3)
-Bloom Taxonomy Verb: calculate, solve, apply</p>
-<p>Purpose: Interactive calculator for finding probabilities involving sample means or proportions, with visual feedback</p>
-<p>Canvas layout:
-- Top section (30%): Input parameters
-- Middle section (50%): Normal curve with shaded region
-- Bottom section (20%): Results and calculations</p>
-<p>Visual elements:
-- Normal distribution curve representing the sampling distribution
-- Shaded region showing the probability being calculated
-- Labels for mean and standard error on the curve
-- Step-by-step calculation display</p>
-<p>Interactive controls:
-- Radio buttons: "Sample Mean" or "Sample Proportion"
-- For Mean: Inputs for population mean (mu), population SD (sigma), sample size (n)
-- For Proportion: Inputs for population proportion (p), sample size (n)
-- Dropdown: Probability type (less than, greater than, between)
-- Input fields: Cutoff value(s)
-- Button: "Calculate"</p>
-<p>Default parameters:
-- Mode: Sample Mean
-- mu = 1200
-- sigma = 100
-- n = 64
-- Probability: less than 1175</p>
-<p>Behavior:
-- Display calculation steps: "Step 1: Find standard error", "Step 2: Calculate z-score", "Step 3: Find probability"
-- Show the formula with values substituted
-- Animate the shaded region on the curve
-- Display final probability prominently</p>
-<p>Instructional Rationale: This apply-level tool provides scaffolded practice for probability calculations. Showing each step explicitly helps students learn the process while getting immediate feedback on their understanding.</p>
-<p>Implementation: p5.js with responsive canvas sizing</p>
-</details>
 <hr />
 <h2 id="common-misconceptions-to-avoid">Common Misconceptions to Avoid</h2>
 <p>Before we wrap up, let's address some common mistakes students make with sampling distributions. Even experienced squirrels slip up sometimes!</p>

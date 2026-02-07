@@ -1,0 +1,44 @@
+{
+  "title": "Regression Conditions Checker",
+  "description": "Interactive tool for evaluating LINE conditions for regression inference by analyzing scatterplots, residual plots, and histograms with immediate feedback on condition assessments.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Regression",
+    "Residual Analysis",
+    "Inference Conditions",
+    "Diagnostic Plots"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/regression-conditions-checker/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Evaluate",
+    "Analyze"
+  ],
+  "concepts": [
+    "LINE Conditions",
+    "Linearity",
+    "Independence",
+    "Normality of Residuals",
+    "Equal Variance",
+    "Residual Plots"
+  ],
+  "prerequisites": [
+    "Linear regression basics",
+    "Residual concept",
+    "Normal distribution"
+  ],
+  "library": "p5.js"
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Generalizability Target Diagram",
+  "description": "Interactive concentric circle diagram visualizing levels of generalizability from a specific sample outward to broader populations. Toggle between scenarios to see how sampling method affects how far findings can be extended.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Generalizability",
+    "External Validity",
+    "Sampling",
+    "Research Methods",
+    "Study Limitations"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/generalizability-target/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Evaluate",
+    "Analyze"
+  ],
+  "concepts": [
+    "Generalizability",
+    "External Validity",
+    "Sampling Frame",
+    "Target Population",
+    "Overgeneralization"
+  ],
+  "prerequisites": [
+    "Sampling methods",
+    "Population vs sample concepts",
+    "Basic study design"
+  ],
+  "library": "p5.js"
+}

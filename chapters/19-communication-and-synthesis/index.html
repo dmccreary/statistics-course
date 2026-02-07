@@ -1530,6 +1530,246 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -2421,29 +2661,6 @@
 <h4 id="diagram-statistical-vs-practical-significance-decision-matrix">Diagram: Statistical vs. Practical Significance Decision Matrix</h4>
 <iframe src="../../sims/stat-practical-sig-matrix/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Statistical vs. Practical Significance Decision Matrix</summary>
-<p>Type: infographic</p>
-<p>Bloom Level: Analyze (L4)
-Bloom Verb: Distinguish</p>
-<p>Purpose: Help students distinguish between statistical and practical significance using a 2x2 decision matrix with real-world examples</p>
-<p>Learning Objective: Students will be able to classify study results into one of four categories based on their statistical and practical significance, and explain the implications of each classification.</p>
-<p>Layout: A 2x2 matrix grid in the center with four quadrants</p>
-<p>Matrix Structure:
-- X-axis: "Practically Significant?" (No | Yes)
-- Y-axis: "Statistically Significant?" (Yes on top | No on bottom)</p>
-<p>Quadrant Content:
-- Top-Left (Stat Yes, Practical No): "Trivial Effect" - Example: "Diet pill: 0.5 lb loss, p &lt; 0.001, n=10,000"
-- Top-Right (Stat Yes, Practical Yes): "Meaningful Discovery!" - Example: "New treatment: 40% reduction in symptoms, p = 0.02"
-- Bottom-Left (Stat No, Practical No): "Nothing Here" - Example: "No effect detected, n=50"
-- Bottom-Right (Stat No, Practical Yes): "Need More Data" - Example: "Promising 25% improvement, p = 0.12, n=30"</p>
-<p>Interactive Features:
-- Click each quadrant to reveal detailed explanation
-- Hover over examples to see more context
-- Color coding: Green for top-right (ideal), Yellow for bottom-right (promising), Orange for top-left (misleading), Gray for bottom-left</p>
-<p>Color Scheme: Green (#4CAF50), Yellow (#FFC107), Orange (#FF9800), Gray (#9E9E9E)</p>
-<p>Implementation: HTML/CSS/JavaScript with click and hover interactions</p>
-</details>
 <div class="admonition warning">
 <p class="admonition-title">Common Mistake Alert</p>
 <p>Don't confuse "statistically significant" with "important" or "large." A tiny effect can be statistically significant with a large enough sample, and a large effect might not be statistically significant with a small sample.</p>
@@ -2496,44 +2713,6 @@ d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}
 <h4 id="diagram-effect-size-visualization-microsim">Diagram: Effect Size Visualization MicroSim</h4>
 <iframe src="../../sims/effect-size-visualizer/main.html" width="100%" height="520px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Effect Size Visualization MicroSim</summary>
-<p>Type: microsim</p>
-<p>Bloom Level: Understand (L2)
-Bloom Verb: Compare</p>
-<p>Purpose: Allow students to visually compare two distributions and see how effect size (Cohen's d) relates to the overlap between groups</p>
-<p>Learning Objective: Students will be able to explain what effect size means by manipulating the separation between two distributions and observing changes in both visual overlap and the Cohen's d value.</p>
-<p>Data Visibility Requirements:
-Stage 1: Show two overlapping normal distribution curves with the same mean
-Stage 2: As slider moves, show the second distribution shifting right
-Stage 3: Display Cohen's d calculation with actual values
-Stage 4: Show percentage overlap between distributions
-Stage 5: Label the effect size interpretation (small, medium, large)</p>
-<p>Instructional Rationale: Step-through exploration with visible calculations is appropriate because the Understand objective requires learners to see the connection between the numerical effect size and the visual separation of groups.</p>
-<p>Canvas Layout:
-- Main area: Two overlapping normal curves (different colors)
-- Control panel below the curves
-- Statistics display on the right side</p>
-<p>Visual Elements:
-- Group 1 distribution: Blue filled curve, mean = 100, SD = 15
-- Group 2 distribution: Orange filled curve, mean adjustable, SD = 15
-- Shaded overlap region
-- Vertical lines marking each mean
-- Labels showing mean values</p>
-<p>Interactive Controls:
-- Slider: "Effect Size (Cohen's d)" ranging from 0 to 2.0, step 0.1
-- Display showing: Cohen's d value, percent overlap, interpretation label</p>
-<p>Default Parameters:
-- Both means start at 100 (d = 0)
-- Standard deviation = 15 for both groups
-- Canvas shows x-axis from 40 to 160</p>
-<p>Behavior:
-- Moving slider shifts Group 2 mean: mean_2 = 100 + (d * 15)
-- Overlap region updates in real-time
-- Interpretation label changes: d &lt; 0.3 = "Small", 0.3 &lt;= d &lt; 0.7 = "Medium", d &gt;= 0.7 = "Large"
-- Show calculation breakdown: d = (mean_2 - mean_1) / pooled_SD</p>
-<p>Implementation: p5.js with smooth animation for distribution movement</p>
-</details>
 <h2 id="the-impact-of-sample-size">The Impact of Sample Size</h2>
 <p>Sample size plays a crucial role in what you can detect and conclude. Understanding its effects helps you interpret results wisely and design better studies.</p>
 <p><strong>Larger samples provide:</strong></p>
@@ -2589,49 +2768,6 @@ Stage 5: Label the effect size interpretation (small, medium, large)</p>
 <h4 id="diagram-sample-size-and-margin-of-error-explorer">Diagram: Sample Size and Margin of Error Explorer</h4>
 <iframe src="../../sims/sample-size-margin-error/main.html" width="100%" height="480px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Sample Size and Margin of Error Explorer</summary>
-<p>Type: microsim</p>
-<p>Bloom Level: Apply (L3)
-Bloom Verb: Calculate</p>
-<p>Purpose: Demonstrate the relationship between sample size and margin of error, showing the diminishing returns of larger samples</p>
-<p>Learning Objective: Students will be able to predict how margin of error changes with sample size and calculate the sample size needed for a desired margin of error.</p>
-<p>Data Visibility Requirements:
-Stage 1: Show initial sample size and calculated margin of error
-Stage 2: Display the formula with current values substituted
-Stage 3: Show the resulting confidence interval graphically
-Stage 4: Track changes as user adjusts sample size</p>
-<p>Instructional Rationale: An interactive calculator is appropriate for the Apply level because students need to manipulate inputs and observe outputs to build intuition about the mathematical relationship.</p>
-<p>Canvas Layout:
-- Top section: Formula display with live values
-- Middle: Visual confidence interval representation
-- Bottom: Controls and results display</p>
-<p>Visual Elements:
-- Horizontal bar showing confidence interval centered on sample proportion
-- Margin of error shown as distance from center to edge
-- Curve showing ME vs n relationship
-- Current point highlighted on the curve</p>
-<p>Interactive Controls:
-- Slider: Sample size n (10 to 2000, logarithmic scale)
-- Slider: Sample proportion p-hat (0.1 to 0.9)
-- Dropdown: Confidence level (90%, 95%, 99%)
-- Display: Margin of error, confidence interval bounds</p>
-<p>Default Parameters:
-- n = 100
-- p-hat = 0.5
-- Confidence level = 95%</p>
-<p>Behavior:
-- Formula updates with current values in real-time
-- Confidence interval bar width changes with margin of error
-- Curve plot updates to show current position
-- Display message when sample size is insufficient for normal approximation</p>
-<p>Calculations to Display:
-- z<em> value for selected confidence level
-- Margin of error = z</em> * sqrt(p-hat*(1-p-hat)/n)
-- Lower bound = p-hat - ME
-- Upper bound = p-hat + ME</p>
-<p>Implementation: p5.js with canvas-based controls</p>
-</details>
 <h2 id="recognizing-study-limitations">Recognizing Study Limitations</h2>
 <p>Every study has limitations—and acknowledging them honestly is a sign of good statistical thinking, not weakness. Understanding limitations helps us interpret results appropriately and avoid overgeneralizing our conclusions.</p>
 <p>Common study limitations fall into several categories:</p>
@@ -2721,36 +2857,6 @@ Stage 4: Track changes as user adjusts sample size</p>
 <h4 id="diagram-generalizability-target-diagram">Diagram: Generalizability Target Diagram</h4>
 <iframe src="../../sims/generalizability-target/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Generalizability Target Diagram</summary>
-<p>Type: infographic</p>
-<p>Bloom Level: Evaluate (L5)
-Bloom Verb: Assess</p>
-<p>Purpose: Visualize the levels of generalizability from a specific sample outward to broader populations</p>
-<p>Learning Objective: Students will be able to assess how far beyond their sample they can reasonably generalize their findings based on their sampling method.</p>
-<p>Layout: Concentric circles (target diagram) representing levels of generalization</p>
-<p>Circles (inside to outside):
-1. Center: "Your Sample" (e.g., "50 students in Mr. Johnson's AP Stats class")
-2. Ring 1: "Sampling Frame" (e.g., "Students in local school district")
-3. Ring 2: "Target Population" (e.g., "All AP Statistics students")
-4. Ring 3: "Broader Population" (e.g., "All high school students")
-5. Outer Ring: "Universal Claims" (e.g., "All students everywhere")</p>
-<p>Visual Features:
-- Color gradient from strong (center, green) to weak (outer, red)
-- Arrows showing which rings random sampling allows you to reach
-- Dashed lines indicating uncertain generalization
-- Warning icons at outer rings</p>
-<p>Interactive Features:
-- Click each ring to see examples of valid and invalid generalizations
-- Toggle between different study scenarios to see how generalizability changes
-- Hover for detailed explanations of why each ring is/isn't reachable</p>
-<p>Scenarios to Toggle:
-1. Random sample from district → Can generalize to district
-2. Convenience sample from one class → Can only describe that class
-3. National random sample → Can generalize nationally</p>
-<p>Color Scheme: Green (strong evidence) to Yellow (moderate) to Red (weak/no evidence)</p>
-<p>Implementation: SVG with JavaScript click and hover handlers</p>
-</details>
 <h2 id="writing-effective-statistical-reports">Writing Effective Statistical Reports</h2>
 <p>Being able to write clear statistical reports is one of the most valuable skills you'll develop in this course. Whether you're writing a lab report, a research paper, or an answer on the AP exam, your goal is to communicate your statistical thinking clearly and completely.</p>
 <h3 id="components-of-a-statistical-report">Components of a Statistical Report</h3>
@@ -2838,42 +2944,6 @@ Bloom Verb: Assess</p>
 <h4 id="diagram-audience-communication-matcher">Diagram: Audience Communication Matcher</h4>
 <iframe src="../../sims/audience-communication-matcher/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Audience Communication Matcher</summary>
-<p>Type: microsim</p>
-<p>Bloom Level: Analyze (L4)
-Bloom Verb: Differentiate</p>
-<p>Purpose: Help students learn to tailor statistical communication to different audiences by matching explanations to audiences</p>
-<p>Learning Objective: Students will be able to differentiate between appropriate and inappropriate ways to communicate statistical findings to various audiences.</p>
-<p>Data Visibility Requirements:
-Stage 1: Present a statistical finding (e.g., "Study found p = 0.02 for difference in means")
-Stage 2: Show four different ways to communicate this finding
-Stage 3: Reveal which explanation matches which audience
-Stage 4: Provide feedback on correct/incorrect matches</p>
-<p>Instructional Rationale: A matching/classification activity is appropriate for the Analyze level because students must examine the characteristics of different explanations and determine which fits each audience.</p>
-<p>Canvas Layout:
-- Left side: List of 4 audience types as drop zones
-- Right side: Draggable explanation cards
-- Bottom: Score display and feedback area</p>
-<p>Audiences:
-1. Statistics professor
-2. Business manager
-3. Newspaper reader
-4. AP exam grader</p>
-<p>Example Finding: "A study comparing two teaching methods found a mean difference of 8 points (p = 0.02, 95% CI: 2.1 to 13.9 points)"</p>
-<p>Explanation Cards:
-1. "We rejected H0: μ1 = μ2 at α = 0.05 using a two-sample t-test. The 95% CI for μ1 - μ2 is (2.1, 13.9)."
-2. "Students using the new method scored 8 points higher on average. We're 95% confident the true improvement is between 2 and 14 points."
-3. "New teaching method boosts test scores! Students improved by about 8 points."
-4. "Since p = 0.02 &lt; 0.05, we reject H0 and conclude there is convincing evidence of a difference in mean scores. The new method produced scores averaging 8 points higher."</p>
-<p>Interactive Features:
-- Drag and drop explanation cards to audience drop zones
-- Check button to verify answers
-- Feedback explains why each match is correct or incorrect
-- Score tracking across multiple rounds</p>
-<p>New scenarios generated after each round with different statistical contexts</p>
-<p>Implementation: p5.js with drag-and-drop functionality</p>
-</details>
 <h2 id="the-four-step-process-for-inference">The Four-Step Process for Inference</h2>
 <p>The AP Statistics exam expects you to follow a consistent process when answering inference questions. This <strong>four-step process</strong> ensures you include all required elements and earn full credit.</p>
 <h3 id="the-four-steps">The Four Steps</h3>
@@ -2923,52 +2993,6 @@ Since the p-value (0.198) is greater than α = 0.05, we fail to reject the null 
 <h4 id="diagram-four-step-process-interactive-flowchart">Diagram: Four-Step Process Interactive Flowchart</h4>
 <iframe src="../../sims/four-step-process-flowchart/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Four-Step Process Interactive Flowchart</summary>
-<p>Type: workflow</p>
-<p>Bloom Level: Apply (L3)
-Bloom Verb: Execute</p>
-<p>Purpose: Guide students through the four-step process with prompts and examples for each step</p>
-<p>Learning Objective: Students will be able to execute the complete four-step process for inference problems by following the structured workflow.</p>
-<p>Visual Layout: Vertical flowchart with four main boxes connected by arrows</p>
-<p>Steps with Hover Content:
-1. STATE (Green box)
- - Hover: "Define parameters, state hypotheses (H₀ and Hₐ), or specify confidence level"
- - Checklist: Parameter defined? Hypotheses stated? Procedure named?</p>
-<ol>
-<li>PLAN (Blue box)</li>
-<li>Hover: "Identify procedure and verify conditions"</li>
-<li>Sub-boxes: Random, Independent, Normal</li>
-<li>
-<p>Checklist for each condition with example language</p>
-</li>
-<li>
-<p>DO (Orange box)</p>
-</li>
-<li>Hover: "Perform calculations with all work shown"</li>
-<li>Show formulas for test statistic and p-value</li>
-<li>
-<p>Branching paths for different procedure types</p>
-</li>
-<li>
-<p>CONCLUDE (Purple box)</p>
-</li>
-<li>Hover: "State decision in context of the problem"</li>
-<li>Decision diamond: Is p-value &lt; α?</li>
-<li>Template phrases for each outcome</li>
-</ol>
-<p>Interactive Features:
-- Click each step to expand with detailed guidance
-- Toggle between "Hypothesis Test" and "Confidence Interval" modes
-- Practice mode: Enter values and get feedback on conclusion wording
-- Highlight which conditions apply to different procedures</p>
-<p>Color Scheme: Each step has distinct color for easy reference
-- State: Sylvia Green (#2E7D32)
-- Plan: Blue (#1976D2)
-- Do: Orange (#F57C00)
-- Conclude: Purple (#7B1FA2)</p>
-<p>Implementation: HTML/CSS/JavaScript with expandable sections</p>
-</details>
 <div class="admonition tip">
 <p class="admonition-title">Sylvia's Four-Step Reminder</p>
 <p>"I remember the four steps with the mnemonic: 'Some People Don't Care'—State, Plan, Do, Conclude. But trust me, AP graders DEFINITELY care if you skip a step! My tail gets all puffy just thinking about losing points for forgetting to check conditions."</p>
@@ -3073,62 +3097,6 @@ Bloom Verb: Execute</p>
 <h4 id="diagram-ap-exam-preparation-checklist">Diagram: AP Exam Preparation Checklist</h4>
 <iframe src="../../sims/ap-exam-checklist/main.html" width="100%" height="480px" scrolling="no" style="overflow: hidden; border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>AP Exam Preparation Checklist</summary>
-<p>Type: infographic</p>
-<p>Bloom Level: Remember (L1)
-Bloom Verb: Recall</p>
-<p>Purpose: Provide an interactive checklist of essential formulas, concepts, and strategies for AP exam preparation</p>
-<p>Learning Objective: Students will be able to recall the essential elements needed for AP Statistics success by working through an organized checklist.</p>
-<p>Layout: Categorized accordion-style checklist with progress tracking</p>
-<p>Categories:
-1. Essential Formulas
- - Mean, standard deviation
- - z-score, t-statistic
- - Confidence interval format
- - Margin of error formulas</p>
-<ol>
-<li>Condition Checks (with mnemonics)</li>
-<li>Random (how to verify)</li>
-<li>Independent (10% rule)</li>
-<li>
-<p>Normal (np ≥ 10, n(1-p) ≥ 10, n ≥ 30)</p>
-</li>
-<li>
-<p>Key Phrases to Memorize</p>
-</li>
-<li>Confidence interval interpretation</li>
-<li>Hypothesis test conclusion language</li>
-<li>
-<p>P-value interpretation</p>
-</li>
-<li>
-<p>Calculator Skills</p>
-</li>
-<li>1-PropZTest, 2-PropZTest</li>
-<li>T-Test, 2-SampTTest</li>
-<li>LinRegTTest</li>
-<li>
-<p>normalcdf, invNorm, tcdf, invT</p>
-</li>
-<li>
-<p>Common Mistakes to Avoid</p>
-</li>
-<li>List of frequent errors with correct alternatives</li>
-</ol>
-<p>Interactive Features:
-- Check boxes to track completion
-- Progress bar showing overall readiness
-- Click category to expand/collapse
-- Star items for personal focus areas
-- Export checklist as PDF for offline study</p>
-<p>Visual Style:
-- Clean, organized layout
-- Color-coded categories matching the four-step process colors
-- Check mark animations when completing items
-- Percentage complete displayed prominently</p>
-<p>Implementation: HTML/CSS/JavaScript with localStorage for progress persistence</p>
-</details>
 <h2 id="putting-it-all-together-a-complete-statistical-investigation">Putting It All Together: A Complete Statistical Investigation</h2>
 <p>Let's walk through a complete example that demonstrates everything we've covered in this chapter—and throughout the entire course.</p>
 <p><strong>Scenario</strong>: A school administrator wants to know if a new attendance policy has reduced tardiness. Before the policy, the school recorded an average of 45 tardies per day. After implementing the policy for one semester, a random sample of 40 days showed a mean of 38.2 tardies with a standard deviation of 12.4.</p>

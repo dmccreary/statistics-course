@@ -1,0 +1,3817 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Interactive demonstration showing that the confidence level represents the long-run proportion of intervals that capture the true parameter.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/statistics-course/sims/confidence-level-simulator/">
+      
+      
+        <link rel="prev" href="../combining-random-variables/">
+      
+      
+        <link rel="next" href="../correlation-calculator/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Confidence Level Simulator - AP Statistics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Confidence Level Simulator - AP Statistics" >
+      
+        <meta  property="og:description"  content="Interactive demonstration showing that the confidence level represents the long-run proportion of intervals that capture the true parameter." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/sims/confidence-level-simulator/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/statistics-course/sims/confidence-level-simulator/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Confidence Level Simulator - AP Statistics" >
+      
+        <meta  name="twitter:description"  content="Interactive demonstration showing that the confidence level represents the long-run proportion of intervals that capture the true parameter." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/statistics-course/assets/images/social/sims/confidence-level-simulator/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#confidence-level-simulator" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AP Statistics" class="md-header__button md-logo" aria-label="AP Statistics" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AP Statistics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Confidence Level Simulator
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/statistics-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AP Statistics" class="md-nav__button md-logo" aria-label="AP Statistics" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    AP Statistics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/statistics-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            MicroSims
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../addition-rule-visualizer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Addition Rule Visualizer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../association-detector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Association Detector
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../association-strength-spectrum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Association Strength Spectrum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ap-exam-checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AP Exam Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audience-communication-matcher/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audience Communication Matcher
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bar-graph-builder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bar Graph Builder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bias-variability-target/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bias vs. Variability Target
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binomial-probability-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Binomial Probability Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boxplot-builder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Boxplot Builder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boxplot-comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Boxplot Comparison
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clt-demonstration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Central Limit Theorem Demo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-2-concept-map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 2 Concept Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chi-square-calculation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chi-Square Calculation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chi-square-distribution-shapes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chi-Square Distribution Shapes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ci-construction-walkthrough/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CI Construction Walkthrough
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../combining-random-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Combining Random Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Confidence Level Simulator
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Confidence Level Simulator
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      About This MicroSim
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="About This MicroSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-key-insight" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Key Insight
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Insights
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Insights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-confidence-level-does-not-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Confidence Level Does NOT Mean
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target Audience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classroom-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classroom Activities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Questions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../correlation-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Correlation Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../correlation-pitfalls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Correlation Pitfalls Demo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../correlation-properties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Correlation Properties Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../critical-value-visualizer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Critical Value Visualizer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../density-curve-area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Density Curve Area Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../discrete-continuous-numberline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discrete vs Continuous Number Line
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../distribution-shape-gallery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Distribution Shape Gallery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../effect-size-visualizer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Effect Size Visualizer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../empirical-rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Empirical Rule (68-95-99.7)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expected-value-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Expected Value Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../four-step-process-flowchart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Four-Step Process Flowchart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../frequency-table-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frequency Table Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generalizability-target/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generalizability Target
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../geometric-distribution-sim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geometric Distribution Simulator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gof-test-simulator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GOF Test Simulator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guess-correlation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guess the Correlation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../histogram-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histogram Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../homogeneity-vs-independence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Homogeneity vs Independence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../household-income-boxplot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Household Income Boxplot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hypothesis-testing-flowchart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hypothesis Testing Flowchart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inference-workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inference Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../influential-points-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Influential Points Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interactive-dotplot-builder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interactive Dotplot Builder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../law-large-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Law of Large Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../least-squares-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Least Squares Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mean-balance-point/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mean as Balance Point
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mean-median-skewness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mean vs Median Skewness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../margin-of-error-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Margin of Error Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../normal-distribution-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Distribution Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../normal-probability-calc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Probability Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../normal-probability-plot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Probability Plot Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../one-sample-t-interval/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    One-Sample T-Interval Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outlier-detection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Outlier Detection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../outlier-detective/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Outlier Detective Game
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p-value-visualizer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    P-Value Visualizer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paired-vs-independent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paired vs Independent Data Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parameter-statistic-compare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameter vs Statistic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern-recognition-gallery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pattern Recognition Gallery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pie-vs-bar-comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pie vs Bar Comparison
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../population-sample-visual/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Population and Sample
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../probability-distribution-bar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability Distribution Bar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../point-vs-interval-estimate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Point vs Interval Estimate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../probability-simulation-lab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Probability Simulation Lab
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quartile-visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quartile Visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../question-wording-effects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Question Wording Effects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../random-digit-table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random Digit Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../random-variable-concept-map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random Variable Concept Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regression-analysis-tool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regression Analysis Tool
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regression-conditions-checker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regression Conditions Checker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../residual-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Residual Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../residual-plot-analyzer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Residual Plot Analyzer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skewness-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skewness Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slope-confidence-interval/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slope Confidence Interval
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slope-intercept-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slope Intercept Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slope-sampling-distribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Slope Sampling Distribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../socs-description-builder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SOCS Description Builder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sample-space-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Space Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sample-size-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Size Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sample-size-margin-error/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sample Size Margin Error
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sampling-distribution-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sampling Distribution Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sampling-distribution-concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sampling Distribution Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scatterplot-builder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scatterplot Builder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../std-dev-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standard Deviation Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standard-error-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standard Error Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stat-practical-sig-matrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stat vs Practical Significance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stemplot-constructor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stemplot Constructor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stratified-cluster-compare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stratified vs Cluster Compare
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../study-design-map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Study Design Concept Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../survey-design-checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Survey Design Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../symmetric-distribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symmetric Distribution Identifier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test-scores-boxplot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Scores Box Plot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test-statistic-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Statistic Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../t-critical-value-finder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T Critical Value Finder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../t-procedure-robustness/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T-Procedure Robustness
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../t-vs-normal-comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    T vs Normal Distribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../token-prediction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Token Prediction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../two-proportion-test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Two-Proportion Z-Test
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../two-sample-t-test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Two-Sample T-Test Visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../two-way-table-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Two-Way Table Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type-error-visualizer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Type Error Visualizer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../undercoverage-viz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Undercoverage Visualization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variable-types-concept-map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable Types Concept Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../venn-diagram-solver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Venn Diagram Problem Solver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../z-score-calculator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Z-Score Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendices/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      About This MicroSim
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="About This MicroSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-key-insight" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Key Insight
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Insights
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Insights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-confidence-level-does-not-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Confidence Level Does NOT Mean
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target Audience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classroom-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classroom Activities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Questions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/statistics-course/edit/master/docs/sims/confidence-level-simulator/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="confidence-level-simulator">Confidence Level Simulator</h1>
+<iframe src="main.html" height="502px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a class="md-button md-button--primary" href="main.html">Run the Confidence Level Simulator MicroSim Fullscreen</a></p>
+<p><a class="md-button" href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<h2 id="about-this-microsim">About This MicroSim</h2>
+<p><em>"Acorn for your thoughts?"</em> Sylvia muses. <em>"What does 95% confidence really mean? It's one of the most misunderstood ideas in statistics, so let's see it in action!"</em></p>
+<p>This simulation demonstrates the true meaning of confidence level by generating many confidence intervals and showing what proportion capture the true parameter.</p>
+<h3 id="the-key-insight">The Key Insight</h3>
+<p>A <strong>95% confidence level</strong> means: If we repeated our sampling process many times and built a confidence interval each time, approximately <strong>95% of those intervals would contain the true population parameter</strong>.</p>
+<ul>
+<li>It's about the <strong>reliability of the method</strong>, not any single interval</li>
+<li>Any individual interval either contains the true value or it doesn't</li>
+<li>We can't know which intervals succeed - we can only trust the process</li>
+</ul>
+<h2 id="how-to-use">How to Use</h2>
+<ol>
+<li><strong>Click "Generate 1"</strong> to create one sample and its confidence interval</li>
+<li><strong>Click "Generate 10"</strong> to add 10 samples quickly</li>
+<li><strong>Click "Generate 100"</strong> to see the full pattern with 100 intervals</li>
+<li><strong>Switch confidence levels</strong> (90%, 95%, 99%) to compare capture rates</li>
+<li><strong>Watch the capture rate</strong> approach the expected confidence level</li>
+</ol>
+<h2 id="key-insights">Key Insights</h2>
+<p><em>"My tail's tingling - we're onto something!"</em> Sylvia observes:</p>
+<ul>
+<li><strong>Green intervals</strong> capture the true parameter (the orange vertical line)</li>
+<li><strong>Red intervals</strong> miss the true parameter - these are the unlucky ~5% (at 95% confidence)</li>
+<li>With more samples, the <strong>capture rate converges</strong> to the confidence level</li>
+<li><strong>Higher confidence</strong> = wider intervals = more captured, but less precise</li>
+</ul>
+<h3 id="what-confidence-level-does-not-mean">What Confidence Level Does NOT Mean</h3>
+<table>
+<thead>
+<tr>
+<th>Common Misconception</th>
+<th>Reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"95% chance this interval contains p"</td>
+<td>The interval either does or doesn't - no probability applies</td>
+</tr>
+<tr>
+<td>"95% of the data is in this interval"</td>
+<td>Intervals are about the parameter, not individual data</td>
+</tr>
+<tr>
+<td>"We're 95% sure we're right"</td>
+<td>It's about the method's long-run success rate</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lesson-plan">Lesson Plan</h2>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>By the end of this activity, students will be able to:</p>
+<ol>
+<li>Explain that confidence level refers to the method's long-run success rate</li>
+<li>Predict that approximately C% of C% confidence intervals will capture the true parameter</li>
+<li>Recognize why we cannot assign probability to a single calculated interval</li>
+<li>Compare how different confidence levels affect capture rates and interval widths</li>
+</ol>
+<h3 id="target-audience">Target Audience</h3>
+<ul>
+<li>AP Statistics students (high school)</li>
+<li>Introductory statistics college students</li>
+<li>Anyone learning about statistical inference</li>
+</ul>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>Understanding of confidence intervals</li>
+<li>Concept of population parameter vs. sample statistic</li>
+<li>Basic probability concepts</li>
+</ul>
+<h3 id="classroom-activities">Classroom Activities</h3>
+<p><strong>Activity 1: Prediction and Observation (10 minutes)</strong></p>
+<ol>
+<li>Before simulation: "If we make 100 confidence intervals at 95% confidence, how many should capture the true p?"</li>
+<li>Generate 100 intervals</li>
+<li>Compare prediction to actual count</li>
+<li>Discuss: Why isn't it exactly 95?</li>
+</ol>
+<p><strong>Activity 2: Comparing Confidence Levels (15 minutes)</strong></p>
+<ol>
+<li>Generate 100 intervals at 90% confidence - record capture count</li>
+<li>Reset and generate 100 at 95% confidence - record capture count</li>
+<li>Reset and generate 100 at 99% confidence - record capture count</li>
+<li>Observe: Higher confidence = more captures but wider intervals</li>
+</ol>
+<p><strong>Activity 3: The Single Interval Problem (10 minutes)</strong></p>
+<p>Discussion prompts:
+- After generating just ONE interval (green), ask: "What's the probability this specific interval contains p?"
+- Answer: Either 0% or 100% - we just don't know which!
+- The 95% describes how often the method works, not this particular result</p>
+<p><em>"Don't worry - every statistician drops an acorn sometimes,"</em> Sylvia reassures. <em>"About 5% of our 95% confidence intervals will miss the mark. That's not failure - that's exactly what we expected!"</em></p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>
+<p>A researcher constructs a 95% confidence interval and says "There's a 95% probability that the true mean is in this interval." Is this correct? Explain.</p>
+</li>
+<li>
+<p>If you constructed 200 confidence intervals at 90% confidence, approximately how many would you expect to miss the true parameter?</p>
+</li>
+<li>
+<p>Why do 99% confidence intervals capture the true parameter more often than 90% confidence intervals?</p>
+</li>
+<li>
+<p>After seeing 100 intervals where 93 captured the true parameter (at 95% confidence), a student says "this proves the method doesn't work." How would you respond?</p>
+</li>
+</ol>
+<h2 id="references">References</h2>
+<ul>
+<li>Chapter 15: Confidence Intervals - Concepts: Confidence Level, Interpreting Confidence</li>
+<li><a href="https://en.wikipedia.org/wiki/Confidence_interval">Wikipedia: Confidence interval</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../combining-random-variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Combining Random Variables">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Combining Random Variables
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../correlation-calculator/" class="md-footer__link md-footer__link--next" aria-label="Next: Correlation Calculator">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Correlation Calculator
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

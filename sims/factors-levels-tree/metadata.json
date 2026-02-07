@@ -1,0 +1,42 @@
+{
+  "title": "Factors and Levels Tree",
+  "description": "Interactive tree diagram showing how factors and levels combine to create experimental treatments in a 2-factor experiment design.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Experimental Design",
+    "Factors",
+    "Levels",
+    "Treatments",
+    "Research Methods"
+  ],
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/factors-levels-tree/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "diagram",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Factor",
+    "Levels of a Factor",
+    "Treatment",
+    "Experimental Design",
+    "Multi-factor Experiment"
+  ],
+  "prerequisites": [
+    "Understanding of experimental variables",
+    "Basic experiment concepts"
+  ],
+  "library": "p5.js"
+}

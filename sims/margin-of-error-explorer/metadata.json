@@ -1,0 +1,45 @@
+{
+  "title": "Margin of Error Explorer",
+  "description": "Interactive visualization showing how confidence level, sample size, and sample proportion affect the margin of error and confidence interval width. Students manipulate sliders to see real-time changes in the formula components.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Inference",
+    "Confidence Intervals",
+    "Margin of Error",
+    "Standard Error",
+    "Sample Size"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/margin-of-error-explorer/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Examine"
+  ],
+  "concepts": [
+    "Margin of Error",
+    "Confidence Level",
+    "Standard Error",
+    "CI Width Factors",
+    "Critical Value",
+    "Sample Size Effect"
+  ],
+  "prerequisites": [
+    "Confidence interval basics",
+    "Standard error concept",
+    "Normal distribution"
+  ],
+  "library": "p5.js"
+}

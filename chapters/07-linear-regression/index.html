@@ -1548,6 +1548,246 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -2424,30 +2664,10 @@
 </ul>
 <p>Notice that little hat symbol over the y. It's crucial! Regular <span class="arithmatex">\( y \)</span> represents actual observed values, while <span class="arithmatex">\( \hat{y} \)</span> represents predicted values from your regression line. Keeping these straight will save you many headaches on the AP exam.</p>
 <h4 id="microsim-least-squares-regression-explorer">MicroSim: Least Squares Regression Explorer</h4>
-<details>
-<summary>Interactive Least Squares Visualization</summary>
-<p>Type: MicroSim</p>
-<p>Learning objective: Understand (Bloom Level 2) how the least squares method finds the best-fit line by minimizing squared residuals</p>
-<p>Visual elements:
-- Coordinate plane with grid (400x400 pixels)
-- 8-12 draggable data points displayed as circles
-- Regression line that updates dynamically as points move
-- Vertical lines from each point to regression line (residuals) in light red
-- Squares drawn at each residual to visualize "squared" distances
-- Display of sum of squared residuals, updating in real-time</p>
-<p>Interactive controls:
-- Draggable data points (click and drag to reposition)
-- "Reset Points" button to restore default configuration
-- "Random Points" button to generate new dataset
-- Toggle to show/hide residual squares</p>
-<p>Behavior:
-- As user drags points, regression line recalculates instantly
-- Sum of squared residuals updates in real-time
-- Residual squares resize dynamically to show their contribution
-- Line always passes through the point <span class="arithmatex">\( (\bar{x}, \bar{y}) \)</span></p>
-<p>Canvas size: 500x450, responsive design
-Implementation: p5.js with canvas-based controls</p>
-</details>
+<iframe src="../../sims/least-squares-explorer/main.html" height="452px" scrolling="no"></iframe>
+
+<p><a class="md-button md-button--primary" href="../../sims/least-squares-explorer/main.html">Run the Least Squares Explorer Fullscreen</a></p>
+<p>Drag the data points to see how the regression line and sum of squared residuals change in real-time. The semi-transparent squares visualize why we call it "least squares" - the method minimizes the total area of these squares. Notice that the line always passes through the mean point <span class="arithmatex">\( (\bar{x}, \bar{y}) \)</span>, shown by the dashed crosshairs.</p>
 <h3 id="calculating-slope-and-intercept">Calculating Slope and Intercept</h3>
 <p>While you'll typically use technology to find regression equations, understanding the formulas helps you grasp what's happening:</p>
 <p>The slope <span class="arithmatex">\( b \)</span> is calculated as:</p>
@@ -2508,6 +2728,9 @@ a = \bar{y} - b\bar{x}
 </table>
 <p>Always ask yourself: "Does x = 0 make sense in this context?" If not, acknowledge that the y-intercept is just the mathematical starting point of your line, not a meaningful prediction.</p>
 <h4 id="microsim-slope-and-intercept-explorer">MicroSim: Slope and Intercept Explorer</h4>
+<iframe src="../../sims/slope-intercept-explorer/main.html" width="100%" height="452px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a href="https://editor.p5js.org/">Edit this MicroSim in the p5.js Editor</a></p>
 <details>
 <summary>Interactive Slope and Intercept Manipulation</summary>
 <p>Type: MicroSim</p>
@@ -2654,6 +2877,9 @@ Implementation: p5.js with canvas-based controls</p>
 <p>🐿️ <em>"Here's a fun fact: if you add up all your residuals, they'll equal zero (or really close to zero due to rounding). The least squares line is balanced—the overestimates and underestimates cancel out!"</em></p>
 </blockquote>
 <h4 id="microsim-residual-calculator">MicroSim: Residual Calculator</h4>
+<iframe src="../../sims/residual-calculator/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a href="https://editor.p5js.org/">Edit this MicroSim in the p5.js Editor</a></p>
 <details>
 <summary>Interactive Residual Visualization Tool</summary>
 <p>Type: MicroSim</p>
@@ -2725,6 +2951,9 @@ Implementation: p5.js with canvas-based controls</p>
 <p>🐿️ <em>"My tail's tingling—we're onto something important here! A good residual plot should look like static on an old TV—just random noise. If you see a pattern, that pattern is telling you something your line missed!"</em></p>
 </blockquote>
 <h4 id="microsim-residual-plot-analyzer">MicroSim: Residual Plot Analyzer</h4>
+<iframe src="../../sims/residual-plot-analyzer/main.html" width="100%" height="402px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a href="https://editor.p5js.org/">Edit this MicroSim in the p5.js Editor</a></p>
 <details>
 <summary>Interactive Residual Plot Diagnostic Tool</summary>
 <p>Type: MicroSim</p>
@@ -2866,6 +3095,9 @@ R^2 = r^2
 <p>🐿️ <em>"One year, I recorded a tree that yielded 847 acorns—way more than any other. Turned out it was actually TWO trees whose branches had grown together! That's an outlier worth investigating. Never just delete outliers without understanding why they're unusual."</em></p>
 </blockquote>
 <h4 id="microsim-influential-points-explorer">MicroSim: Influential Points Explorer</h4>
+<iframe src="../../sims/influential-points-explorer/main.html" width="100%" height="502px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a href="https://editor.p5js.org/">Edit this MicroSim in the p5.js Editor</a></p>
 <details>
 <summary>Interactive Influential Point Investigation Tool</summary>
 <p>Type: MicroSim</p>
@@ -2918,6 +3150,9 @@ Implementation: p5.js with canvas-based controls</p>
 \]</div>
 <p>Predicted sales are $247.20.</p>
 <h4 id="microsim-complete-regression-analysis-tool">MicroSim: Complete Regression Analysis Tool</h4>
+<iframe src="../../sims/regression-analysis-tool/main.html" width="100%" height="652px" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a href="https://editor.p5js.org/">Edit this MicroSim in the p5.js Editor</a></p>
 <details>
 <summary>Full Regression Analysis Dashboard</summary>
 <p>Type: MicroSim</p>

@@ -1,0 +1,43 @@
+{
+  "title": "Three Principles of Experimental Design",
+  "description": "Interactive infographic showing Control, Randomization, and Replication as the foundational principles of good experimental design with visual demonstrations.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Experimental Design",
+    "Control",
+    "Randomization",
+    "Replication",
+    "Research Methods"
+  ],
+  "type": "Interactive Infographic",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/three-principles-experiment/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "infographic",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Control",
+    "Randomization",
+    "Random Assignment",
+    "Replication",
+    "Experimental Design Principles"
+  ],
+  "prerequisites": [
+    "Understanding of experiments vs observational studies",
+    "Concept of treatment and control groups"
+  ],
+  "library": "p5.js"
+}

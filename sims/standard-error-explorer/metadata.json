@@ -1,0 +1,44 @@
+{
+  "title": "Standard Error and Sample Size Explorer",
+  "description": "Interactive visualization showing how sample size affects the standard error of sampling distributions for both proportions and means. Students can manipulate sliders to see real-time formula calculations and observe how the sampling distribution curve changes shape.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Standard Error",
+    "Sample Size",
+    "Sampling Distributions",
+    "Statistical Inference"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/standard-error-explorer/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply",
+    "Analyze"
+  ],
+  "concepts": [
+    "Standard Error",
+    "Sample Size",
+    "Sampling Distribution",
+    "Sample Proportion",
+    "Sample Mean",
+    "Variability"
+  ],
+  "prerequisites": [
+    "Sampling distribution concept",
+    "Square root operations",
+    "Basic proportion and mean calculations"
+  ],
+  "library": "p5.js"
+}

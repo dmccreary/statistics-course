@@ -1542,6 +1542,246 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -2459,34 +2699,6 @@
 <h4 id="diagram-factors-and-levels-tree">Diagram: Factors and Levels Tree</h4>
 <iframe src="../../sims/factors-levels-tree/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Factors and Levels Tree Diagram</summary>
-<p>Type: diagram</p>
-<p>Purpose: Visualize how factors and levels combine to create treatments in a 2-factor experiment</p>
-<p>Bloom Level: Understand (L2)
-Bloom Verb: classify, explain</p>
-<p>Learning Objective: Students will be able to explain how factors and levels combine to create distinct treatments in a multi-factor experiment.</p>
-<p>Components to show:
-- Root node: "Experiment: Study Methods"
-- First branch level: Factor 1 (Study Technique) with 3 levels as child nodes
-- Second branch level: Factor 2 (Duration) with 2 levels branching from each technique
-- Leaf nodes: The 6 resulting treatments, each showing the combination</p>
-<p>Visual Layout:
-- Hierarchical tree structure flowing left to right or top to bottom
-- Factor labels on connecting lines
-- Level labels in oval nodes
-- Treatment boxes at the bottom with treatment number and description</p>
-<p>Interactive features:
-- Hover over any treatment box to highlight the path (factors and levels) that created it
-- Click a treatment to see a description of what that experimental condition involves</p>
-<p>Color scheme:
-- Root node: Sylvia green (#2E7D32)
-- Factor 1 nodes: Light blue
-- Factor 2 nodes: Light orange
-- Treatment boxes: Sylvia auburn (#B5651D)</p>
-<p>Implementation: p5.js with interactive hover states
-Canvas size: Responsive, approximately 700x400px</p>
-</details>
 <h2 id="the-placebo-effect-why-we-need-controls">The Placebo Effect: Why We Need Controls</h2>
 <p>Here's a fascinating quirk of human psychology: sometimes people get better just because they <em>believe</em> they're receiving treatment, even when they're not receiving anything at all. This is called the <strong>placebo effect</strong>.</p>
 <p>A <strong>placebo</strong> is an inactive treatment that looks exactly like the real treatment. In drug studies, it might be a sugar pill that looks identical to the medication being tested. In other contexts, it might be a fake procedure or a dummy intervention.</p>
@@ -2511,31 +2723,6 @@ Canvas size: Responsive, approximately 700x400px</p>
 <h4 id="diagram-treatment-vs-control-comparison">Diagram: Treatment vs Control Comparison</h4>
 <iframe src="../../sims/treatment-control-comparison/main.html" width="100%" height="400px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Treatment vs Control Group Comparison</summary>
-<p>Type: microsim</p>
-<p>Purpose: Demonstrate why control groups are necessary by showing the difference between comparing before/after within a group versus comparing treatment to control</p>
-<p>Bloom Level: Understand (L2)
-Bloom Verb: explain, compare</p>
-<p>Learning Objective: Students will be able to explain why comparing treatment and control groups is more reliable than comparing before and after measurements within a single group.</p>
-<p>Data Visibility Requirements:
-  Stage 1: Show a single group's before scores (e.g., test scores around 70)
-  Stage 2: Show the same group's after scores (improved to around 78)
-  Stage 3: Reveal a parallel control group that also improved (from 70 to 76)
-  Stage 4: Show the true treatment effect is only 2 points (78-76), not 8 points</p>
-<p>Visual Elements:
-- Two parallel timelines (Treatment Group and Control Group)
-- Bar charts showing scores at each time point
-- Animated reveal of control group results
-- Calculation showing: True Effect = Treatment Improvement - Control Improvement</p>
-<p>Interactive Controls:
-- Button: "Step Through" to progress through stages
-- Button: "Reset" to start over
-- Toggle: "Show/Hide Confounds" to reveal factors like natural improvement, practice effects</p>
-<p>Instructional Rationale: Step-through with concrete data is appropriate because the Understand/explain objective requires learners to trace the logic of why control groups matter. Showing the reveal progressively helps students experience the "aha" moment.</p>
-<p>Implementation: p5.js with step-through controls
-Canvas size: Responsive, approximately 650x350px</p>
-</details>
 <h2 id="the-three-principles-of-good-experimental-design">The Three Principles of Good Experimental Design</h2>
 <p>Now we arrive at the heart of experimental design. There are three fundamental principles that make experiments valid and trustworthy: <strong>control</strong>, <strong>randomization</strong>, and <strong>replication</strong>. Think of them as the three legs of a stool; remove any one, and your experiment falls over.</p>
 <h3 id="principle-1-control">Principle 1: Control</h3>
@@ -2593,51 +2780,6 @@ Canvas size: Responsive, approximately 650x350px</p>
 <h4 id="diagram-three-principles-of-experimental-design">Diagram: Three Principles of Experimental Design</h4>
 <iframe src="../../sims/three-principles-experiment/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Three Principles of Experimental Design Interactive</summary>
-<p>Type: infographic</p>
-<p>Purpose: Create an interactive visualization showing how control, randomization, and replication work together in experimental design</p>
-<p>Bloom Level: Understand (L2)
-Bloom Verb: explain, summarize</p>
-<p>Learning Objective: Students will be able to summarize the three principles of good experimental design and explain the purpose of each.</p>
-<p>Visual Layout:
-- Three large circular or card-based sections arranged horizontally
-- Each section represents one principle: Control, Randomization, Replication
-- Center area shows a mini experimental setup that changes based on which principle is selected</p>
-<p>Content for each principle:
-1. Control section:
-   - Icon: Lock or equal sign
-   - Definition: "Hold variables constant"
-   - Visual: Side-by-side groups with identical conditions except treatment
-   - Hover reveals: List of variables to control (time, location, instructions, etc.)</p>
-<ol>
-<li>Randomization section:</li>
-<li>Icon: Dice or shuffle symbol</li>
-<li>Definition: "Use chance to assign treatments"</li>
-<li>Visual: Animation of shuffling/random assignment</li>
-<li>
-<p>Hover reveals: "Balances known AND unknown variables"</p>
-</li>
-<li>
-<p>Replication section:</p>
-</li>
-<li>Icon: Multiple figures or stacked symbols</li>
-<li>Definition: "Use enough experimental units"</li>
-<li>Visual: Single unit vs. many units comparison</li>
-<li>Hover reveals: "Reduces impact of individual variation"</li>
-</ol>
-<p>Interactive Features:
-- Click each principle card to see it demonstrated in the central experiment visualization
-- Hover over elements for detailed explanations
-- Toggle showing "What goes wrong without this principle?"</p>
-<p>Color Scheme:
-- Control: Blue
-- Randomization: Sylvia green (#2E7D32)
-- Replication: Sylvia auburn (#B5651D)
-- Background: Sylvia cream (#FFF8E1)</p>
-<p>Implementation: HTML/CSS/JavaScript with SVG icons and p5.js for animations
-Canvas size: Responsive, approximately 800x450px</p>
-</details>
 <h2 id="blinding-protecting-against-bias">Blinding: Protecting Against Bias</h2>
 <p>Even with control groups and random assignment, experiments can be compromised by a subtle form of bias: the expectations of participants and researchers. This is where <strong>blinding</strong> comes in.</p>
 <h3 id="single-blind-experiments">Single-Blind Experiments</h3>
@@ -2686,34 +2828,6 @@ Canvas size: Responsive, approximately 800x450px</p>
 <h4 id="diagram-blinding-comparison-flowchart">Diagram: Blinding Comparison Flowchart</h4>
 <iframe src="../../sims/blinding-flowchart/main.html" width="100%" height="400px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Blinding Types Flowchart</summary>
-<p>Type: workflow</p>
-<p>Purpose: Show decision process for determining appropriate level of blinding and illustrate information flow in different blinding scenarios</p>
-<p>Bloom Level: Analyze (L4)
-Bloom Verb: differentiate, compare</p>
-<p>Learning Objective: Students will be able to differentiate between single-blind and double-blind experiments and identify which type of blinding is appropriate for different research scenarios.</p>
-<p>Visual Layout: Split view showing three parallel experimental setups
-- Left: No blinding (everyone knows everything)
-- Center: Single-blind (subjects don't know, researchers do)
-- Right: Double-blind (neither knows)</p>
-<p>Elements in each setup:
-- Subject figures (labeled)
-- Researcher figures (labeled)
-- Treatment assignment arrow (visible/hidden based on blinding)
-- "Knowledge bubbles" showing what each party knows
-- Bias risk indicators (high/medium/low)</p>
-<p>Interactive Features:
-- Hover over each setup to see advantages and disadvantages
-- Click "Show Information Flow" to animate what each party knows
-- Toggle examples for each scenario (drug trial, exercise study, therapy study)</p>
-<p>Color coding:
-- "Knows assignment": Red/Orange
-- "Doesn't know": Green
-- Arrows: Sylvia auburn for visible information, gray dotted for hidden</p>
-<p>Implementation: p5.js with hover and toggle interactions
-Canvas size: Responsive, approximately 750x380px</p>
-</details>
 <h2 id="types-of-experimental-designs">Types of Experimental Designs</h2>
 <p>Now that you understand the principles, let's explore different ways to structure experiments. The design you choose depends on your research question, available resources, and the nature of your experimental units.</p>
 <h3 id="completely-randomized-design">Completely Randomized Design</h3>
@@ -2788,41 +2902,6 @@ Canvas size: Responsive, approximately 750x380px</p>
 <h4 id="diagram-experimental-design-types-comparison">Diagram: Experimental Design Types Comparison</h4>
 <iframe src="../../sims/experimental-designs-compare/main.html" width="100%" height="550px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Experimental Design Types Comparison MicroSim</summary>
-<p>Type: microsim</p>
-<p>Purpose: Allow students to explore and compare the three main experimental designs (completely randomized, randomized block, matched pairs) through interactive visualization</p>
-<p>Bloom Level: Analyze (L4)
-Bloom Verb: compare, differentiate, organize</p>
-<p>Learning Objective: Students will be able to compare the three main experimental designs and analyze which design is most appropriate for different research scenarios.</p>
-<p>Visual Elements:
-- Top section: Design selector (three buttons/tabs)
-- Main area: Visual representation of the selected design
-  - Completely Randomized: Pool of units randomly divided into treatment groups
-  - Randomized Block: Units grouped into blocks, then randomly assigned within blocks
-  - Matched Pairs: Units paired and one from each pair assigned to each treatment
-- Bottom section: Key characteristics and "Best for..." summary</p>
-<p>Data Visibility Requirements:
-- Show the actual units (represented as circles or figures)
-- Color-code treatment assignment
-- For block design, show blocking variable
-- For matched pairs, show pairing connections</p>
-<p>Interactive Controls:
-- Design selector: Completely Randomized | Randomized Block | Matched Pairs
-- "Animate Assignment" button: Shows the random assignment process
-- "Show Advantages" toggle: Reveals when each design is preferred
-- Scenario dropdown: "Drug trial", "Agricultural study", "Educational intervention" to see how design changes</p>
-<p>Default view: Completely Randomized Design</p>
-<p>Color Scheme:
-- Treatment A: Sylvia green (#2E7D32)
-- Treatment B: Sylvia auburn (#B5651D)
-- Block boundaries: Gray dashed lines
-- Matched pair connections: Blue lines
-- Unassigned units: Light gray</p>
-<p>Instructional Rationale: Interactive comparison allows students to directly observe the structural differences between designs and reason about when each is appropriate.</p>
-<p>Implementation: p5.js with tabbed interface and animations
-Canvas size: Responsive, approximately 750x500px</p>
-</details>
 <h2 id="putting-it-all-together-designing-an-experiment">Putting It All Together: Designing an Experiment</h2>
 <p>Let's walk through how to design a complete experiment from scratch. This will help you synthesize all the concepts we've covered.</p>
 <p><strong>Research Question:</strong> Does listening to classical music while studying improve test performance compared to silence?</p>
@@ -2911,69 +2990,6 @@ Canvas size: Responsive, approximately 750x500px</p>
 <h4 id="diagram-complete-experiment-planning-flowchart">Diagram: Complete Experiment Planning Flowchart</h4>
 <iframe src="../../sims/experiment-planning-flowchart/main.html" width="100%" height="500px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Experiment Planning Decision Flowchart</summary>
-<p>Type: workflow</p>
-<p>Purpose: Guide students through the decision-making process when designing an experiment, from research question to final design</p>
-<p>Bloom Level: Create (L6)
-Bloom Verb: design, formulate</p>
-<p>Learning Objective: Students will be able to design a complete experiment by following a structured decision-making process.</p>
-<p>Visual Layout: Flowchart with decision points and process boxes</p>
-<p>Flow Structure:
-1. Start: "Define Research Question"
-   - Output: Identify response variable, factors, levels</p>
-<ol>
-<li>Decision: "Is there significant unit variability?"</li>
-<li>No → Completely Randomized Design</li>
-<li>
-<p>Yes → Continue</p>
-</li>
-<li>
-<p>Decision: "Can you measure the source of variability?"</p>
-</li>
-<li>No → Consider increasing sample size</li>
-<li>
-<p>Yes → Continue</p>
-</li>
-<li>
-<p>Decision: "Comparing exactly 2 treatments?"</p>
-</li>
-<li>Yes → Consider Matched Pairs</li>
-<li>
-<p>No → Randomized Block Design</p>
-</li>
-<li>
-<p>Process: "Apply Three Principles"</p>
-</li>
-<li>Control: List variables to hold constant</li>
-<li>Randomization: Method for random assignment</li>
-<li>
-<p>Replication: Calculate needed sample size</p>
-</li>
-<li>
-<p>Decision: "Is blinding possible?"</p>
-</li>
-<li>Yes → Determine single or double blind</li>
-<li>
-<p>No → Document limitation</p>
-</li>
-<li>
-<p>End: "Final Design Summary"</p>
-</li>
-</ol>
-<p>Interactive Features:
-- Click each node to see detailed explanation and examples
-- Hover for quick tips at each decision point
-- Input your own scenario and follow the flowchart to see recommended design
-- "Show Example" button that walks through the classical music study</p>
-<p>Color Scheme:
-- Decision diamonds: Sylvia auburn (#B5651D)
-- Process rectangles: Sylvia green (#2E7D32)
-- Start/End: Sylvia hazel (#8B7355)
-- Arrows: Dark gray</p>
-<p>Implementation: p5.js or vis-network with interactive node exploration
-Canvas size: Responsive, approximately 700x480px</p>
-</details>
 <h2 id="common-pitfalls-in-experimental-design">Common Pitfalls in Experimental Design</h2>
 <p>Even well-intentioned researchers can make mistakes. Here are some common pitfalls to avoid:</p>
 <h3 id="pitfall-1-confusing-random-sampling-and-random-assignment">Pitfall 1: Confusing Random Sampling and Random Assignment</h3>
@@ -3056,53 +3072,6 @@ Canvas size: Responsive, approximately 700x480px</p>
 <h4 id="diagram-random-assignment-simulator">Diagram: Random Assignment Simulator</h4>
 <iframe src="../../sims/random-assignment-simulator/main.html" width="100%" height="450px" scrolling="no" style="border: 2px solid #2E7D32; border-radius: 8px;"></iframe>
 
-<details>
-<summary>Random Assignment Simulator MicroSim</summary>
-<p>Type: microsim</p>
-<p>Purpose: Allow students to practice random assignment by simulating the process of assigning experimental units to treatment groups</p>
-<p>Bloom Level: Apply (L3)
-Bloom Verb: use, execute, implement</p>
-<p>Learning Objective: Students will be able to execute random assignment using a chance mechanism and verify that the assignment process is truly random.</p>
-<p>Visual Elements:
-- Left panel: Pool of experimental units (represented as numbered circles)
-- Right panel: Treatment group containers (Treatment A, Treatment B, Control)
-- Center: Random number generator display
-- Bottom: Statistics showing current distribution</p>
-<p>Interactive Controls:
-- Number input: "Number of units" (default: 20)
-- Number input: "Number of groups" (default: 2)
-- Button: "Assign One Unit" (step through one at a time)
-- Button: "Assign All" (animate full assignment)
-- Button: "Reset"
-- Toggle: "Show assignment method" (random numbers, coin flip simulation, etc.)</p>
-<p>Behavior:
-- When "Assign One Unit" clicked:
-  1. Highlight next unassigned unit
-  2. Show random number generation
-  3. Animate unit moving to assigned group
-  4. Update group counts</p>
-<ul>
-<li>When "Assign All" clicked:</li>
-<li>
-<p>Rapidly animate all assignments with brief pauses</p>
-</li>
-<li>
-<p>Statistics displayed:</p>
-</li>
-<li>Count in each group</li>
-<li>Percentage in each group</li>
-<li>Whether groups are balanced (within acceptable range)</li>
-</ul>
-<p>Visual Style:
-- Units: Circles with numbers
-- Treatment A: Sylvia green (#2E7D32)
-- Treatment B: Sylvia auburn (#B5651D)
-- Control (if 3 groups): Blue
-- Unassigned: Gray</p>
-<p>Instructional Rationale: Hands-on practice with random assignment helps students understand both the procedure and why it tends to create balanced groups.</p>
-<p>Implementation: p5.js with canvas-based controls
-Canvas size: Responsive, approximately 700x400px</p>
-</details>
 <h2 id="summary-key-takeaways">Summary: Key Takeaways</h2>
 <p>"Time to squirrel away this knowledge!" Sylvia says with a satisfied swish of her tail.</p>
 <p>Let's recap the essential concepts from this chapter:</p>

@@ -1,0 +1,39 @@
+{
+  "title": "Expected Value Calculator",
+  "description": "Interactive calculator for computing the expected value of discrete random variables, with step-by-step calculation display and real-time validation.",
+  "creator": "Statistics Course Team",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Probability",
+    "Random Variables",
+    "Expected Value"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/expected-value-calculator/",
+  "publisher": "Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Expected Value",
+    "Calculating Expected Value",
+    "Probability Distribution",
+    "Valid Distribution"
+  ],
+  "prerequisites": [
+    "Understanding of probability distributions",
+    "Basic arithmetic with decimals"
+  ],
+  "library": "p5.js"
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Geometric Distribution Simulator",
+  "description": "Interactive simulation that runs trials until first success, building up the geometric distribution empirically and comparing to theoretical probabilities.",
+  "creator": "Statistics Course Team",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Probability",
+    "Geometric Distribution",
+    "Random Variables"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/geometric-distribution-sim/",
+  "publisher": "Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Geometric Setting",
+    "Geometric Distribution",
+    "Geometric Probability",
+    "Geometric Mean"
+  ],
+  "prerequisites": [
+    "Understanding of probability",
+    "Understanding of random variables"
+  ],
+  "library": "p5.js"
+}

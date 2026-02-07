@@ -1,0 +1,43 @@
+{
+  "title": "Blinding Types Flowchart",
+  "description": "Interactive comparison of no blinding, single-blind, and double-blind experimental designs showing information flow and bias risk for each approach.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Experimental Design",
+    "Blinding",
+    "Single-Blind",
+    "Double-Blind",
+    "Research Methods"
+  ],
+  "type": "Interactive Workflow",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/blinding-flowchart/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "workflow",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Blinding",
+    "Single-Blind Experiment",
+    "Double-Blind Experiment",
+    "Researcher Bias",
+    "Placebo Effect"
+  ],
+  "prerequisites": [
+    "Understanding of experimental design basics",
+    "Knowledge of placebo effect"
+  ],
+  "library": "p5.js"
+}

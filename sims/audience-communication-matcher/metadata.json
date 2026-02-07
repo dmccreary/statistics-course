@@ -1,0 +1,44 @@
+{
+  "title": "Audience Communication Matcher",
+  "description": "Interactive drag-and-drop matching game where students learn to tailor statistical explanations to different audiences including professors, managers, newspaper readers, and AP exam graders.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Communication",
+    "Science Writing",
+    "Audience Analysis",
+    "Statistical Reporting",
+    "Data Presentation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/audience-communication-matcher/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Apply"
+  ],
+  "concepts": [
+    "Communicating Results",
+    "Audience Analysis",
+    "Statistical Writing",
+    "Report Formatting",
+    "Technical vs Plain Language"
+  ],
+  "prerequisites": [
+    "Hypothesis testing knowledge",
+    "Confidence interval interpretation",
+    "Basic statistical terminology"
+  ],
+  "library": "p5.js"
+}

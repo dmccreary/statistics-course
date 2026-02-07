@@ -1644,6 +1644,246 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -2696,28 +2936,7 @@
 <h4 id="diagram-probability-distribution-bar-chart">Diagram: Probability Distribution Bar Chart</h4>
 <iframe src="../../sims/probability-distribution-bar/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
 
-<details>
-<summary>Probability Distribution Bar Chart</summary>
-<p>Type: chart</p>
-<p>Purpose: Visualize the probability distribution for rolling a die, showing equal probabilities for each outcome</p>
-<p>Bloom Level: Understand (L2)
-Bloom Verb: Interpret</p>
-<p>Learning Objective: Students will interpret a probability distribution by examining a bar chart where each bar's height represents the probability of that outcome.</p>
-<p>Chart Type: Bar chart with interactive elements</p>
-<p>Visual Elements:
-- X-axis: Values 1, 2, 3, 4, 5, 6
-- Y-axis: Probability from 0 to 0.3 (or fraction scale showing 1/6)
-- Six equal-height bars at height 1/6 (approximately 0.167)
-- Each bar labeled with its probability value
-- Grid lines for easy reading</p>
-<p>Interactive Features:
-- Hover over any bar to see exact probability value
-- Display shows P(X = value) = 1/6 on hover
-- Option to toggle between fraction (1/6) and decimal (0.167) display</p>
-<p>Color Scheme: Use Sylvia's green (--sylvia-green: #2E7D32) for bars</p>
-<p>Canvas Size: Responsive, approximately 600x400px</p>
-<p>Implementation: p5.js with canvas-based controls</p>
-</details>
+<p><a href="../../sims/probability-distribution-bar/">Explore the Probability Distribution Bar Chart MicroSim</a></p>
 <h3 id="what-makes-a-valid-distribution">What Makes a Valid Distribution?</h3>
 <p>Not every table of numbers is a valid probability distribution. A distribution is <strong>valid</strong> if and only if:</p>
 <ol>
@@ -2814,46 +3033,7 @@ E(X) = 249.75 - 99.75 = \$150
 <h4 id="diagram-expected-value-calculator">Diagram: Expected Value Calculator</h4>
 <iframe src="../../sims/expected-value-calculator/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
 
-<details>
-<summary>Expected Value Calculator MicroSim</summary>
-<p>Type: microsim</p>
-<p>Purpose: Allow students to create custom probability distributions and calculate expected value interactively</p>
-<p>Bloom Level: Apply (L3)
-Bloom Verb: Calculate</p>
-<p>Learning Objective: Students will calculate expected value by entering values and probabilities, observing how the weighted average is computed step-by-step.</p>
-<p>Instructional Rationale: An interactive calculator supports the Apply level by letting students practice the expected value formula with immediate feedback. Students can experiment with different distributions and see how changing probabilities affects the expected value.</p>
-<p>Canvas Layout:
-- Main area: Input table for values and probabilities
-- Side panel: Running calculation display
-- Bottom: Expected value result with visual bar</p>
-<p>Visual Elements:
-- Editable table with columns: Value (x), Probability P(X=x), Contribution (x * P)
-- Start with 4 rows, button to add more (up to 8)
-- Running total of probabilities shown (must equal 1.0)
-- Visual indicator (green checkmark or red X) showing if distribution is valid
-- Bar chart showing the distribution updates in real-time
-- Final expected value displayed prominently</p>
-<p>Interactive Controls:
-- Text inputs for values (numbers)
-- Text inputs for probabilities (0-1)
-- "Add Row" button
-- "Clear All" button
-- "Calculate E(X)" button
-- Toggle between fraction and decimal input</p>
-<p>Default Parameters:
-- Pre-loaded with die roll example: values 1-6, each with probability 1/6</p>
-<p>Behavior:
-- As user enters probabilities, probability sum updates
-- If sum exceeds 1 or any probability is negative, show error
-- Contribution column auto-calculates as user types
-- Expected value shown with calculation breakdown</p>
-<p>Data Visibility:
-- Stage 1: Show input values and probabilities
-- Stage 2: Show each x * P(X=x) contribution
-- Stage 3: Show sum of contributions = E(X)</p>
-<p>Color Scheme: Sylvia's green for valid states, auburn for errors</p>
-<p>Implementation: p5.js with canvas-based input controls</p>
-</details>
+<p><a href="../../sims/expected-value-calculator/">Explore the Expected Value Calculator MicroSim</a></p>
 <hr />
 <h2 id="variance-and-standard-deviation-of-random-variables">Variance and Standard Deviation of Random Variables</h2>
 <p>Expected value tells us the center, but we also need to know about spread. How much variability should we expect?</p>
@@ -3002,45 +3182,7 @@ Var(X - Y) = Var(X) + Var(Y) \quad \text{(if X and Y are independent)}
 <h4 id="diagram-combining-random-variables-visualizer">Diagram: Combining Random Variables Visualizer</h4>
 <iframe src="../../sims/combining-random-variables/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
 
-<details>
-<summary>Combining Random Variables Visualizer</summary>
-<p>Type: microsim</p>
-<p>Purpose: Demonstrate how means and variances combine when adding or subtracting independent random variables</p>
-<p>Bloom Level: Understand (L2)
-Bloom Verb: Explain</p>
-<p>Learning Objective: Students will explain why variances add for both sums and differences of independent random variables, and why standard deviations don't simply add.</p>
-<p>Instructional Rationale: Visual representation with concrete examples helps students overcome the common misconception that Var(X-Y) = Var(X) - Var(Y). The step-by-step display shows exactly how the formulas work.</p>
-<p>Data Visibility Requirements:
-- Stage 1: Display X distribution with mean and SD
-- Stage 2: Display Y distribution with mean and SD
-- Stage 3: Show calculation for E(X+Y) and E(X-Y)
-- Stage 4: Show Var(X) + Var(Y) calculation
-- Stage 5: Show final SD calculation with square root</p>
-<p>Visual Elements:
-- Two normal curve representations for X and Y
-- Sliders to adjust mean and SD of each
-- Toggle switch: "Sum (X+Y)" vs "Difference (X-Y)"
-- Result display showing combined distribution
-- Step-by-step calculation panel</p>
-<p>Interactive Controls:
-- Slider for E(X): range 0-100, default 50
-- Slider for SD(X): range 1-20, default 10
-- Slider for E(Y): range 0-100, default 50
-- Slider for SD(Y): range 1-20, default 10
-- Toggle: Sum / Difference
-- Button: "Show Calculation Steps"</p>
-<p>Behavior:
-- As sliders move, combined distribution updates
-- Calculation shows E(X+Y) = E(X) + E(Y)
-- Variance calculation explicitly shows addition
-- SD calculation shows square root of sum of squared SDs
-- Visual emphasis that SD(X+Y) &lt; SD(X) + SD(Y)</p>
-<p>Color Scheme:
-- X distribution: Sylvia's green
-- Y distribution: Sylvia's auburn
-- Combined: Sylvia's hazel</p>
-<p>Implementation: p5.js with canvas-based sliders and toggle</p>
-</details>
+<p><a href="../../sims/combining-random-variables/">Explore the Combining Random Variables Visualizer MicroSim</a></p>
 <hr />
 <h2 id="the-binomial-distribution">The Binomial Distribution</h2>
 <p>Now we're ready for one of the most important distributions in statistics: the <strong>binomial distribution</strong>. You'll use this constantly in AP Statistics and beyond.</p>
@@ -3141,50 +3283,7 @@ P(X = 3) = \binom{5}{3} (0.5)^3 (0.5)^2
 <h4 id="diagram-binomial-probability-explorer">Diagram: Binomial Probability Explorer</h4>
 <iframe src="../../sims/binomial-probability-explorer/main.html" width="100%" height="600px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
 
-<details>
-<summary>Binomial Probability Explorer MicroSim</summary>
-<p>Type: microsim</p>
-<p>Purpose: Allow students to explore how n and p affect the shape of the binomial distribution</p>
-<p>Bloom Level: Analyze (L4)
-Bloom Verb: Examine</p>
-<p>Learning Objective: Students will analyze how changing the number of trials (n) and probability of success (p) affects the shape, center, and spread of the binomial distribution.</p>
-<p>Instructional Rationale: Parameter exploration supports the Analyze level by helping students discover patterns and relationships. Students can observe that larger n makes the distribution more symmetric and that p determines skewness.</p>
-<p>Canvas Layout:
-- Main area (70%): Bar chart showing P(X = k) for all k from 0 to n
-- Control panel (30%): Sliders and displays</p>
-<p>Visual Elements:
-- Probability histogram with bars for each k value
-- Highlighted bar showing P(X = selected k)
-- Overlay showing mean (vertical line)
-- Display of calculated probabilities P(X = k), P(X &lt;= k), P(X &gt;= k)</p>
-<p>Interactive Controls:
-- Slider for n: range 1-50, default 10
-- Slider for p: range 0-1, step 0.05, default 0.5
-- Slider for k: range 0-n, default 5
-- Checkboxes: Show mean line, Show cumulative region
-- Button: "Calculate P(X = k)"</p>
-<p>Default Parameters:
-- n = 10
-- p = 0.5
-- k = 5</p>
-<p>Behavior:
-- Distribution updates in real-time as n or p changes
-- Mean marker μ = np moves with parameters
-- For k selection, show step-by-step formula calculation
-- Display P(X = k) with full formula breakdown
-- Color region for P(X &lt;= k) or P(X &gt;= k) based on toggle</p>
-<p>Key Insights to Highlight:
-- When p = 0.5, distribution is symmetric
-- When p &lt; 0.5, distribution is right-skewed
-- When p &gt; 0.5, distribution is left-skewed
-- Larger n → more bell-shaped</p>
-<p>Color Scheme:
-- Bars: Sylvia's green with auburn highlight for selected k
-- Mean line: Sylvia's hazel
-- Cumulative region: Light green fill</p>
-<p>Implementation: p5.js with canvas-based sliders, include binomial coefficient calculation display</p>
-<p>Canvas Size: Responsive, minimum 700x500px</p>
-</details>
+<p><a href="../../sims/binomial-probability-explorer/">Explore the Binomial Probability Explorer MicroSim</a></p>
 <h3 id="binomial-mean-and-standard-deviation">Binomial Mean and Standard Deviation</h3>
 <p>For a binomial distribution with parameters n and p:</p>
 <div class="arithmatex">\[
@@ -3290,53 +3389,7 @@ P(X = 4) = (0.5)^3 \cdot (0.5) = 0.125 \cdot 0.5 = 0.0625
 <h4 id="diagram-geometric-distribution-simulator">Diagram: Geometric Distribution Simulator</h4>
 <iframe src="../../sims/geometric-distribution-sim/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
 
-<details>
-<summary>Geometric Distribution Simulator</summary>
-<p>Type: microsim</p>
-<p>Purpose: Simulate trials until first success and build up the geometric distribution empirically</p>
-<p>Bloom Level: Apply (L3)
-Bloom Verb: Demonstrate</p>
-<p>Learning Objective: Students will demonstrate understanding of the geometric distribution by running simulations and comparing empirical results to theoretical probabilities.</p>
-<p>Instructional Rationale: Simulation supports the Apply level by letting students practice concepts through experimentation. Seeing many trials accumulate into the theoretical distribution reinforces the connection between individual trials and probability.</p>
-<p>Canvas Layout:
-- Top: Trial animation area showing sequence of successes/failures
-- Middle: Building histogram of "trials until success"
-- Bottom: Controls and statistics</p>
-<p>Visual Elements:
-- Animated sequence showing S/F outcomes
-- Growing bar chart of trial counts
-- Display of running average vs theoretical mean (1/p)
-- Comparison of empirical vs theoretical P(X = k)</p>
-<p>Interactive Controls:
-- Slider for p: range 0.05-0.95, step 0.05, default 0.3
-- "Run 1 Trial" button
-- "Run 10 Trials" button
-- "Run 100 Trials" button
-- "Reset" button
-- Speed slider for animation</p>
-<p>Default Parameters:
-- p = 0.3
-- Animation speed: Medium</p>
-<p>Behavior:
-- Each trial shows sequence: F, F, F, ..., S (animation)
-- Record number of trials until S
-- Add to histogram
-- Update running average
-- Show theoretical mean line
-- After many trials, empirical distribution matches geometric</p>
-<p>Statistics Display:
-- Total experiments run
-- Empirical mean
-- Theoretical mean (1/p)
-- Empirical P(X = 1), P(X = 2), etc.</p>
-<p>Color Scheme:
-- Success (S): Sylvia's green
-- Failure (F): Sylvia's auburn
-- Bars: Green with intensity based on frequency
-- Theoretical line: Hazel</p>
-<p>Implementation: p5.js with canvas-based buttons and animation</p>
-<p>Canvas Size: Responsive, minimum 650x450px</p>
-</details>
+<p><a href="../../sims/geometric-distribution-sim/">Explore the Geometric Distribution Simulator MicroSim</a></p>
 <h3 id="comparing-binomial-and-geometric">Comparing Binomial and Geometric</h3>
 <table>
 <thead>
@@ -3426,43 +3479,7 @@ P(X = k) = (1-p)^{k-1} p
 <h4 id="diagram-random-variable-concept-map">Diagram: Random Variable Concept Map</h4>
 <iframe src="../../sims/random-variable-concept-map/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden; border: 2px solid var(--sylvia-green); border-radius: 8px;"></iframe>
 
-<details>
-<summary>Random Variable Concept Map</summary>
-<p>Type: infographic</p>
-<p>Purpose: Show the relationships between all random variable concepts covered in this chapter</p>
-<p>Bloom Level: Analyze (L4)
-Bloom Verb: Organize</p>
-<p>Learning Objective: Students will organize their understanding of random variable concepts by exploring an interactive concept map showing how definitions, formulas, and distributions connect.</p>
-<p>Visual Layout: Network/mind map with "Random Variable" at center</p>
-<p>Main Nodes:
-- Center: Random Variable
-- Level 1: Discrete RV, Probability Distribution, Expected Value, Variance
-- Level 2: Valid Distribution, Calculating E(X), SD of RV, Linear Transformation
-- Level 3: Combining RVs, Binomial Distribution, Geometric Distribution</p>
-<p>Connections with Labels:
-- Random Variable → "has a" → Probability Distribution
-- Probability Distribution → "must be" → Valid Distribution
-- Random Variable → "is summarized by" → Expected Value
-- Random Variable → "has spread" → Variance
-- Variance → "square root gives" → Standard Deviation
-- Expected Value → "changes by" → Linear Transformation
-- Combining RVs → "uses" → Sum/Difference formulas
-- Binomial → "special case of" → Discrete RV
-- Geometric → "special case of" → Discrete RV</p>
-<p>Interactive Features:
-- Hover over any node to see definition/formula
-- Click node to expand details panel
-- Highlight all connected concepts on click
-- Zoom in/out capability
-- Different colors for concept types (definitions, formulas, distributions)</p>
-<p>Color Scheme:
-- Core concepts: Sylvia's green
-- Formulas/calculations: Sylvia's auburn
-- Special distributions: Sylvia's hazel
-- Connections: Light gray with labels</p>
-<p>Implementation: vis-network or p5.js with force-directed layout</p>
-<p>Canvas Size: Responsive, minimum 700x500px</p>
-</details>
+<p><a href="../../sims/random-variable-concept-map/">Explore the Random Variable Concept Map MicroSim</a></p>
 <hr />
 <h2 id="chapter-review">Chapter Review</h2>
 <p>Let's squirrel away the key ideas from this chapter!</p>

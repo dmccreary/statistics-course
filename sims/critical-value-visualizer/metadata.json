@@ -1,0 +1,45 @@
+{
+  "title": "Critical Value Visualizer",
+  "description": "Interactive visualization showing how z* critical values correspond to areas under the standard normal curve. Students explore how different confidence levels determine the critical values used in confidence interval construction.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": [
+    "Statistics",
+    "Inference",
+    "Confidence Intervals",
+    "Critical Values",
+    "Normal Distribution",
+    "Z-scores"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/critical-value-visualizer/",
+  "publisher": "AP Statistics Course",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Remember",
+    "Identify"
+  ],
+  "concepts": [
+    "Critical Value",
+    "Z Critical Values",
+    "Confidence Level",
+    "Standard Normal Distribution",
+    "Alpha Level",
+    "Tail Area"
+  ],
+  "prerequisites": [
+    "Standard normal distribution",
+    "Area under curves",
+    "Z-scores"
+  ],
+  "library": "p5.js"
+}
