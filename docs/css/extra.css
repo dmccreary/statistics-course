@@ -1,3 +1,45 @@
+/* ============================================
+   Sylvia the Statistical Squirrel Color Theme
+   ============================================
+   Primary: Forest Green (cardigan) - #2E7D32
+   Secondary: Warm Auburn (fur) - #B5651D
+   Accent: Cream (belly) - #FFF8E1
+   Hazel: #8B7355 (eyes/glasses)
+   ============================================ */
+
+:root {
+  --sylvia-green: #2E7D32;
+  --sylvia-green-dark: #1B5E20;
+  --sylvia-green-light: #4CAF50;
+  --sylvia-auburn: #B5651D;
+  --sylvia-auburn-dark: #8B4513;
+  --sylvia-auburn-light: #CD853F;
+  --sylvia-cream: #FFF8E1;
+  --sylvia-hazel: #8B7355;
+}
+
+/* Override Material theme primary color for exact Sylvia green */
+[data-md-color-primary="green"] {
+  --md-primary-fg-color: var(--sylvia-green);
+  --md-primary-fg-color--light: var(--sylvia-green-light);
+  --md-primary-fg-color--dark: var(--sylvia-green-dark);
+}
+
+/* Override accent for exact Sylvia auburn */
+[data-md-color-accent="amber"] {
+  --md-accent-fg-color: var(--sylvia-auburn);
+  --md-accent-fg-color--transparent: rgba(181, 101, 29, 0.1);
+}
+
+/* Links use Sylvia's auburn fur color */
+.md-typeset a {
+  color: var(--sylvia-auburn);
+}
+
+.md-typeset a:hover {
+  color: var(--sylvia-auburn-dark);
+}
+
 .md-header__button.md-logo {
     margin: 0;
     padding: 0;
@@ -14,10 +56,10 @@
     overflow: hidden;
   }
 
-  /* Iframe styles */
+  /* Iframe styles - Sylvia's green cardigan border */
   iframe {
     width: 100%;
-    border: solid 2px blue;
+    border: solid 2px var(--sylvia-green);
   }
 
   /* if a div with <div class="upper-alpha"> wraps a list, then number A.B.C.D etc */
@@ -35,7 +77,7 @@
   position: absolute;
   top: 4px;
   right: 6px;
-  background-color: #0056d6;
+  background-color: var(--sylvia-green);
   color: white;
   border: none;
   border-radius: 5px;
@@ -45,7 +87,7 @@
 }
 
 .admonition.prompt .copy-button:hover {
-  background-color: #0041a4; /* Darker blue on hover */
+  background-color: var(--sylvia-green-dark);
 }
 
 /* Delta Moment admonitions - triangular robot mascot icon */

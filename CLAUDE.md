@@ -107,3 +107,47 @@ For illustrations, Sylvia should appear:
 - **Consistent:** Same glasses, cardigan, satchel across all appearances
 - **Scaled appropriately:** Small enough for margins, larger for chapter openers
 - **In context:** Sometimes shown with acorns, charts, data visualizations, or sitting on a bell curve
+
+---
+
+## Sylvia Color Theme
+
+The site's color palette is derived from Sylvia's appearance to create a warm, cohesive visual identity.
+
+### CSS Variables
+
+```css
+:root {
+  --sylvia-green: #2E7D32;        /* Cardigan - primary */
+  --sylvia-green-dark: #1B5E20;   /* Cardigan shadow */
+  --sylvia-green-light: #4CAF50;  /* Cardigan highlight */
+  --sylvia-auburn: #B5651D;       /* Fur - accent */
+  --sylvia-auburn-dark: #8B4513;  /* Fur shadow */
+  --sylvia-auburn-light: #CD853F; /* Fur highlight */
+  --sylvia-cream: #FFF8E1;        /* Belly - backgrounds */
+  --sylvia-hazel: #8B7355;        /* Eyes/glasses - decorative */
+}
+```
+
+### Color Usage
+
+| Element | Color | Source |
+|---------|-------|--------|
+| Header/navigation | `--sylvia-green` | Green cardigan |
+| Links | `--sylvia-auburn` | Auburn fur |
+| Link hover | `--sylvia-auburn-dark` | Fur shadow |
+| Buttons | `--sylvia-green` | Green cardigan |
+| Iframe borders | `--sylvia-green` | Green cardigan |
+| Backgrounds (optional) | `--sylvia-cream` | Cream belly |
+| Decorative accents | `--sylvia-hazel` | Hazel eyes |
+
+### MkDocs Material Palette
+
+In `mkdocs.yml`:
+```yaml
+palette:
+  primary: 'green'
+  accent: 'amber'
+```
+
+These are overridden in `docs/css/extra.css` with exact Sylvia hex values for precise color matching.

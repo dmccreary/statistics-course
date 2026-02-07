@@ -82,8 +82,8 @@ theme:
   logo: img/logo-192.png
   favicon: img/favicon.ico
   palette:
-    primary: 'blue'
-    accent: 'white'
+    primary: 'green'
+    accent: 'amber'
   include_sidebar: true
   features:
     - content.code.copy
