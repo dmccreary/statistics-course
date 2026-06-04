@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "my tail's tingling"
     ];
     document.querySelectorAll(".admonition").forEach((admonition) => {
+        // Skip dedicated mascot-* admonitions — they render their own
+        // floated mascot image inline and must not get the corner icon.
+        if (Array.from(admonition.classList).some(c => c.startsWith("mascot-"))) {
+            return;
+        }
         const title = admonition.querySelector(".admonition-title");
         if (title) {
             const titleText = title.textContent.toLowerCase();
