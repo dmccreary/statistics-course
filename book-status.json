@@ -1,0 +1,869 @@
+{
+  "project": {
+    "title": "AP Statistics",
+    "subtitle": "Auto-scanned intelligent textbook",
+    "author": "Dan McCreary",
+    "costPerMTokens": 15,
+    "sessionBudget": {
+      "pro": 900000,
+      "max": 3500000
+    }
+  },
+  "sections": {
+    "scaffold": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "course-description": {
+      "status": "published",
+      "tokensTarget": 4000,
+      "tokensDone": 1059
+    },
+    "learning-graph": {
+      "status": "published",
+      "tokensTarget": 20000,
+      "tokensDone": 20000
+    },
+    "chapter-structure": {
+      "status": "published",
+      "tokensTarget": 15000,
+      "tokensDone": 15000
+    },
+    "chapter-content": {
+      "countLabel": "19 chapters",
+      "children": [
+        {
+          "n": 1,
+          "title": "Introduction to Statistics",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 2,
+          "title": "Displaying Categorical Data",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 3,
+          "title": "Displaying Quantitative Data",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 4,
+          "title": "Numerical Summaries",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 5,
+          "title": "Standardization and Normal Distributions",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 6,
+          "title": "Scatterplots and Association",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 7,
+          "title": "Linear Regression",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 8,
+          "title": "Causation and Study Design",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 9,
+          "title": "Probability Fundamentals",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 10,
+          "title": "Conditional Probability and Independence",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 11,
+          "title": "Sampling and Bias",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 12,
+          "title": "Experimental Design",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 13,
+          "title": "Random Variables",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 14,
+          "title": "Sampling Distributions",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 15,
+          "title": "Confidence Intervals",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 16,
+          "title": "Hypothesis Testing",
+          "status": "published",
+          "tokens": 11332
+        },
+        {
+          "n": 17,
+          "title": "Inference for Means",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 18,
+          "title": "Chi-Square and Regression Inference",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 19,
+          "title": "Communication and Synthesis",
+          "status": "published",
+          "tokens": 10000
+        }
+      ]
+    },
+    "chapter-images": {
+      "status": "not-started",
+      "tokensTarget": 8000,
+      "tokensDone": 0
+    },
+    "microsims": {
+      "countLabel": "111 simulations",
+      "children": [
+        {
+          "n": 1,
+          "title": "Addition Rule Visualizer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 2,
+          "title": "AP Exam Preparation Checklist",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 3,
+          "title": "Association Detector Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 4,
+          "title": "Strength of Association Spectrum",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 5,
+          "title": "Audience Communication Matcher",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 6,
+          "title": "Bar Graph Builder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 7,
+          "title": "Bias vs. Variability Target Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 8,
+          "title": "Binomial Probability Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 9,
+          "title": "Blinding Types Flowchart",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 10,
+          "title": "Boxplot Builder",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 11,
+          "title": "Boxplot Comparison",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 12,
+          "title": "Chapter 2 Concept Map: Displaying Categorical Data",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 13,
+          "title": "Chi-Square Calculation Step-by-Step",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 14,
+          "title": "Chi-Square Distribution Shapes",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 15,
+          "title": "CI Construction Walkthrough",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 16,
+          "title": "Central Limit Theorem Demonstration",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 17,
+          "title": "Combining Random Variables Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 18,
+          "title": "Confidence Level Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 19,
+          "title": "Correlation Calculator",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 20,
+          "title": "Correlation Pitfalls",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 21,
+          "title": "Correlation Properties",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 22,
+          "title": "Critical Value Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 23,
+          "title": "Density Curve Area",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 24,
+          "title": "Discrete vs Continuous Number Line",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 25,
+          "title": "Distribution Shape Gallery",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 26,
+          "title": "Effect Size Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 27,
+          "title": "Empirical Rule",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 28,
+          "title": "Expected Value Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 29,
+          "title": "Experiment Planning Flowchart",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 30,
+          "title": "Experimental Designs Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 31,
+          "title": "Factors and Levels Tree",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 32,
+          "title": "Four-Step Process Interactive Flowchart",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 33,
+          "title": "Frequency Table Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 34,
+          "title": "Generalizability Target Diagram",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 35,
+          "title": "Geometric Distribution Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 36,
+          "title": "Goodness-of-Fit Test Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 37,
+          "title": "Graph Viewer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 38,
+          "title": "Guess Correlation",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 39,
+          "title": "Interactive Histogram Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 40,
+          "title": "Homogeneity vs Independence Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 41,
+          "title": "Household Income Boxplot Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 42,
+          "title": "Hypothesis Testing Decision Flowchart",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 43,
+          "title": "Statistical Inference Workflow",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 44,
+          "title": "Influential Points Explorer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 45,
+          "title": "Interactive Dotplot Builder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 46,
+          "title": "Law Large Numbers",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 47,
+          "title": "Least Squares Explorer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 48,
+          "title": "Margin of Error Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 49,
+          "title": "Mean as Balance Point",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 50,
+          "title": "Mean Median Skewness",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 51,
+          "title": "Normal Distribution Explorer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 52,
+          "title": "Normal Probability Calc",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 53,
+          "title": "Normal Probability Plot",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 54,
+          "title": "One-Sample T-Interval Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 55,
+          "title": "Outlier Detection",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 56,
+          "title": "Outlier Detective Game",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 57,
+          "title": "P-Value Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 58,
+          "title": "Paired vs Independent Data Decision Guide",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 59,
+          "title": "Parameter vs Statistic Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 60,
+          "title": "Pattern Recognition Gallery",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 61,
+          "title": "Pie Chart vs Bar Graph Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 62,
+          "title": "Point Estimate vs Interval Estimate Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 63,
+          "title": "Population and Sample Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 64,
+          "title": "Probability Distribution Bar Chart",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 65,
+          "title": "Probability Simulation Lab",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 66,
+          "title": "Quartile Visualization",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 67,
+          "title": "Question Wording Effects Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 68,
+          "title": "Random Assignment Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 69,
+          "title": "Random Digit Table Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 70,
+          "title": "Random Variable Concept Map",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 71,
+          "title": "Regression Analysis Tool",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 72,
+          "title": "Regression Conditions Checker",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 73,
+          "title": "Residual Calculator",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 74,
+          "title": "Residual Plot Analyzer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 75,
+          "title": "Sample Size Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 76,
+          "title": "Sample Size and Margin of Error Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 77,
+          "title": "Sample Space Explorer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 78,
+          "title": "Sampling Distribution Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 79,
+          "title": "Sampling Distribution Concept Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 80,
+          "title": "Scatterplot Builder",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 81,
+          "title": "Skewness Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 82,
+          "title": "Slope Confidence Interval",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 83,
+          "title": "Slope Intercept Explorer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 84,
+          "title": "Slope Sampling Distribution",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 85,
+          "title": "SOCS Description Builder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 86,
+          "title": "Standard Deviation Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 87,
+          "title": "Standard Error and Sample Size Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 88,
+          "title": "Statistical vs Practical Significance Decision Matrix",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 89,
+          "title": "Std Dev Calculator",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 90,
+          "title": "Stemplot Constructor",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 91,
+          "title": "Stratified vs. Cluster Sampling Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 92,
+          "title": "Study Design Concept Map",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 93,
+          "title": "Survey Design Checklist Interactive",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 94,
+          "title": "Symmetric Distribution Identifier",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 95,
+          "title": "Interactive T Critical Value Finder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 96,
+          "title": "T-Procedure Robustness Exploration",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 97,
+          "title": "T-Distribution vs Normal Distribution Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 98,
+          "title": "Test Scores Boxplot Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 99,
+          "title": "Test Statistic Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 100,
+          "title": "Three Principles of Experimental Design",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 101,
+          "title": "Token Prediction",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 102,
+          "title": "Treatment vs Control Comparison",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 103,
+          "title": "Two-Proportion Z-Test Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 104,
+          "title": "Two-Sample T-Test Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 105,
+          "title": "Two-Way Table Distribution Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 106,
+          "title": "Type I and Type II Error Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 107,
+          "title": "Undercoverage Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 108,
+          "title": "Variable Types Concept Map",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 109,
+          "title": "Venn Diagram Solver",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 110,
+          "title": "Task Graph Viewer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 111,
+          "title": "Z Score Calculator",
+          "status": "drafted",
+          "tokens": 5000
+        }
+      ]
+    },
+    "glossary": {
+      "status": "published",
+      "tokensTarget": 15000,
+      "tokensDone": 12853
+    },
+    "faq": {
+      "status": "published",
+      "tokensTarget": 12000,
+      "tokensDone": 6270
+    },
+    "quiz": {
+      "status": "published",
+      "tokensTarget": 30000,
+      "tokensDone": 28925
+    },
+    "reference": {
+      "status": "published",
+      "tokensTarget": 20000,
+      "tokensDone": 8525
+    },
+    "teachers-guide": {
+      "status": "not-started",
+      "tokensTarget": 15000,
+      "tokensDone": 0
+    },
+    "book-metrics": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "publish": {
+      "status": "not-started",
+      "tokensTarget": 10000,
+      "tokensDone": 0
+    },
+    "stories": {
+      "status": "not-started",
+      "tokensTarget": 30000,
+      "tokensDone": 0
+    }
+  }
+}
