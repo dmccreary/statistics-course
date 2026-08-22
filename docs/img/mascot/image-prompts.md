@@ -46,12 +46,12 @@ empty (transparent) space on all sides.
 4. After saving, trim transparent padding so Sylvia displays at full size in the 90px admonition slot:
 
    ```bash
-   python ~/Documents/ws/claude-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/neutral.png
-   python ~/Documents/ws/claude-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/thinking.png
-   python ~/Documents/ws/claude-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/tip.png
-   python ~/Documents/ws/claude-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/warning.png
-   python ~/Documents/ws/claude-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/encouraging.png
-   python ~/Documents/ws/claude-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/celebration.png
+   python ~/Documents/ws/ibook-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/neutral.png
+   python ~/Documents/ws/ibook-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/thinking.png
+   python ~/Documents/ws/ibook-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/tip.png
+   python ~/Documents/ws/ibook-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/warning.png
+   python ~/Documents/ws/ibook-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/encouraging.png
+   python ~/Documents/ws/ibook-skills/src/image-utils/trim-padding-from-image.py docs/img/mascot/celebration.png
    ```
 
    (`welcome.png` is already the reference — leave it as-is or re-trim if needed.)
