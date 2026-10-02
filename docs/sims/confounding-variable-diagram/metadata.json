@@ -1,0 +1,82 @@
+{
+  "title": "Confounding Variable Visualizer",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Confounding Variable",
+    "Identifying Confounding",
+    "Lurking Variable",
+    "Correlation vs Causation"
+  ],
+  "description": "Interactive causal diagram and simulated scatterplot showing how a confounding variable creates an apparent relationship between X and Y, and what remains when the confounder is held constant.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/confounding-variable-diagram/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Confounding Variable Visualizer",
+    "learningObjectives": [
+      "Analyze how a variable associated with both X and Y creates an alternative explanation for an observed association (Analyze)",
+      "Compare the observed relationship with the relationship that remains after the confounder is held constant (Analyze)",
+      "Explain why a confounder must be associated with both the explanatory and the response variable (Understand)"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "bloomVerb": "analyze",
+    "concepts": [
+      "Confounding Variable",
+      "Identifying Confounding",
+      "Lurking Variable",
+      "Correlation vs Causation"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Scatterplots, correlation, and least-squares slope (Chapters 6 and 7)",
+      "Lurking variables"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 530
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "Is the third variable related to both X and Y?",
+      "How much of the relationship remains when the confounder is held constant?"
+    ],
+    "commonMisconceptions": [
+      "Any lurking variable is automatically a confounder, even if it is unrelated to X",
+      "Finding a confounder means X has no effect on Y at all",
+      "A larger sample removes confounding"
+    ],
+    "assessmentOpportunities": [
+      "Student states both requirements for a confounder and demonstrates each with the sliders",
+      "Student correctly predicts the direction of change in slope before clicking Hold C Constant",
+      "Student explains the difference between the observed slope and the direct effect in context"
+    ]
+  },
+  "chapter": "08-causation-and-study-design",
+  "chapterTitle": "Chapter 8: Causation and Study Design"
+}

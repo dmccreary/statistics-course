@@ -43,6 +43,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     An interactive MicroSim where students construct bar graphs from categorical data by entering category names and frequencies, with options for vertical/horizontal orientation.
 
+-   **[Bayes' Theorem Visualizer](./bayes-theorem-visualizer/index.md)**
+
+    ![Bayes' Theorem Visualizer](./bayes-theorem-visualizer/bayes-theorem-visualizer.png)
+
+    Icon array and tree diagram of 1,000 people showing how the base rate, sensitivity, and specificity of a test determine the probability of disease given a positive result.
+
 -   **[Bias vs. Variability Target](./bias-variability-target/index.md)**
 
     ![Bias vs. Variability Target](./bias-variability-target/bias-variability-target.png)
@@ -95,9 +101,27 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive visualization showing how means and variances combine when adding or subtracting independent random variables, demonstrating that variances always add.
 
+-   **[Conditional Probability Calculator](./conditional-probability-calculator/index.md)**
+
+    ![Conditional Probability Calculator](./conditional-probability-calculator/conditional-probability-calculator.png)
+
+    Enter probabilities or counts for A, B, and A and B to see the conditional probability formula applied step by step, with a proportional Venn diagram.
+
+-   **[Conditional Probability Two-Way Table Explorer](./conditional-probability-table/index.md)**
+
+    ![Conditional Probability Two-Way Table Explorer](./conditional-probability-table/conditional-probability-table.png)
+
+    Click a row or column of a two-way table to choose the given condition, then click an outcome to see the conditional probability calculated from the counts.
+
 -   **[Confidence Level Simulator](./confidence-level-simulator/index.md)**
 
     Interactive demonstration showing that the confidence level represents the long-run proportion of intervals that capture the true parameter through repeated sampling.
+
+-   **[Confounding Variable Visualizer](./confounding-variable-diagram/index.md)**
+
+    ![Confounding Variable Visualizer](./confounding-variable-diagram/confounding-variable-diagram.png)
+
+    Interactive causal diagram and simulated scatterplot showing how a confounding variable creates an apparent relationship between X and Y, and what remains when the confounder is held constant.
 
 -   **[Correlation Calculator](./correlation-calculator/index.md)**
 
@@ -116,6 +140,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Correlation Properties Explorer](./correlation-properties/correlation-properties.png)
 
     Explore correlation properties by dragging points, toggling outliers, swapping axes, and changing units to see how the correlation coefficient responds.
+
+-   **[Correlation vs Causation Scenarios](./correlation-causation-scenarios/index.md)**
+
+    ![Correlation vs Causation Scenarios](./correlation-causation-scenarios/correlation-causation-scenarios.png)
+
+    Classification practice where students decide whether a real-world correlation is best explained by X causing Y, Y causing X, or a third variable causing both.
 
 -   **[Critical Value Visualizer](./critical-value-visualizer/index.md)**
 
@@ -373,6 +403,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive concept map showing relationships between all random variable concepts including probability distributions, expected value, variance, and binomial/geometric distributions.
 
+-   **[Randomization Balance Simulator](./randomization-balance-sim/index.md)**
+
+    ![Randomization Balance Simulator](./randomization-balance-sim/randomization-balance-sim.png)
+
+    Simulation that randomly assigns subjects to treatment and control groups and shows how chance balances visible characteristics and a hidden variable, especially with larger samples.
+
 -   **[Regression Analysis Tool](./regression-analysis-tool/index.md)**
 
     ![Regression Analysis Tool](./regression-analysis-tool/regression-analysis-tool.png)
@@ -394,6 +430,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
     ![Residual Plot Analyzer](./residual-plot-analyzer/residual-plot-analyzer.png)
 
     Side-by-side scatterplot and residual plot display for evaluating whether a linear model is appropriate by analyzing residual patterns.
+
+-   **[Simpson's Paradox Explorer](./simpsons-paradox-explorer/index.md)**
+
+    ![Simpson's Paradox Explorer](./simpsons-paradox-explorer/simpsons-paradox-explorer.png)
+
+    Bar chart explorer that compares combined success rates with rates separated by subgroup so students can see when and why Simpson's Paradox reverses a conclusion.
 
 -   **[Skewness Explorer](./skewness-explorer/index.md)**
 
@@ -481,6 +523,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 
     Interactive concept map showing how foundational statistics concepts connect in the context of a real research study about sleep and academic performance.
 
+-   **[Study Type Comparison Tool](./study-type-comparison/index.md)**
+
+    ![Study Type Comparison Tool](./study-type-comparison/study-type-comparison.png)
+
+    Students classify study descriptions as observational studies or experiments, check key design features, and compare what each design can conclude.
+
 -   **[Survey Design Checklist](./survey-design-checklist/index.md)**
 
     ![Survey Design Checklist](./survey-design-checklist/survey-design-checklist.png)
@@ -512,6 +560,12 @@ Interactive Micro Simulations to help students learn statistics fundamentals thr
 -   **[Treatment Control Comparison](./treatment-control-comparison/index.md)**
 
     Step-through visualization demonstrating why control groups are essential for valid conclusions in experimental research.
+
+-   **[Interactive Tree Diagram Builder](./tree-diagram-builder/index.md)**
+
+    ![Interactive Tree Diagram Builder](./tree-diagram-builder/tree-diagram-builder.png)
+
+    Build a probability tree by editing branch probabilities, then multiply along paths to get joint probabilities and reverse the condition.
 
 -   **[T Critical Value Finder](./t-critical-value-finder/index.md)**
 

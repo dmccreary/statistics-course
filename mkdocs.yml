@@ -97,6 +97,7 @@ nav:
     - AP Exam Checklist: sims/ap-exam-checklist/index.md
     - Audience Communication Matcher: sims/audience-communication-matcher/index.md
     - Bar Graph Builder: sims/bar-graph-builder/index.md
+    - Bayes' Theorem Visualizer: sims/bayes-theorem-visualizer/index.md
     - Bias vs. Variability Target: sims/bias-variability-target/index.md
     - Binomial Probability Explorer: sims/binomial-probability-explorer/index.md
     - Blinding Flowchart: sims/blinding-flowchart/index.md
@@ -108,10 +109,14 @@ nav:
     - Chi-Square Distribution Shapes: sims/chi-square-distribution-shapes/index.md
     - CI Construction Walkthrough: sims/ci-construction-walkthrough/index.md
     - Combining Random Variables: sims/combining-random-variables/index.md
+    - Conditional Probability Calculator: sims/conditional-probability-calculator/index.md
+    - Conditional Probability Two-Way Table Explorer: sims/conditional-probability-table/index.md
     - Confidence Level Simulator: sims/confidence-level-simulator/index.md
+    - Confounding Variable Visualizer: sims/confounding-variable-diagram/index.md
     - Correlation Calculator: sims/correlation-calculator/index.md
     - Correlation Pitfalls Demo: sims/correlation-pitfalls/index.md
     - Correlation Properties Explorer: sims/correlation-properties/index.md
+    - Correlation vs Causation Scenarios: sims/correlation-causation-scenarios/index.md
     - Critical Value Visualizer: sims/critical-value-visualizer/index.md
     - Density Curve Area Explorer: sims/density-curve-area/index.md
     - Discrete vs Continuous Number Line: sims/discrete-continuous-numberline/index.md
@@ -160,10 +165,12 @@ nav:
     - Random Assignment Simulator: sims/random-assignment-simulator/index.md
     - Random Digit Table: sims/random-digit-table/index.md
     - Random Variable Concept Map: sims/random-variable-concept-map/index.md
+    - Randomization Balance Simulator: sims/randomization-balance-sim/index.md
     - Regression Analysis Tool: sims/regression-analysis-tool/index.md
     - Regression Conditions Checker: sims/regression-conditions-checker/index.md
     - Residual Calculator: sims/residual-calculator/index.md
     - Residual Plot Analyzer: sims/residual-plot-analyzer/index.md
+    - Simpson's Paradox Explorer: sims/simpsons-paradox-explorer/index.md
     - Skewness Explorer: sims/skewness-explorer/index.md
     - Slope Confidence Interval: sims/slope-confidence-interval/index.md
     - Slope Intercept Explorer: sims/slope-intercept-explorer/index.md
@@ -181,6 +188,7 @@ nav:
     - Stemplot Constructor: sims/stemplot-constructor/index.md
     - Stratified vs Cluster Compare: sims/stratified-cluster-compare/index.md
     - Study Design Concept Map: sims/study-design-map/index.md
+    - Study Type Comparison Tool: sims/study-type-comparison/index.md
     - Survey Design Checklist: sims/survey-design-checklist/index.md
     - Symmetric Distribution Identifier: sims/symmetric-distribution/index.md
     - Test Scores Box Plot: sims/test-scores-boxplot/index.md
@@ -192,6 +200,7 @@ nav:
     - T vs Normal Distribution: sims/t-vs-normal-comparison/index.md
     - Token Prediction: sims/token-prediction/index.md
     - Treatment Control Comparison: sims/treatment-control-comparison/index.md
+    - Tree Diagram Builder: sims/tree-diagram-builder/index.md
     - Two-Proportion Z-Test: sims/two-proportion-test/index.md
     - Two-Sample T-Test Visualization: sims/two-sample-t-test/index.md
     - Two-Way Table Calculator: sims/two-way-table-calculator/index.md

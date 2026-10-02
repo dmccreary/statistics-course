@@ -1,0 +1,82 @@
+{
+  "title": "Correlation vs Causation Scenarios",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Correlation vs Causation",
+    "Causation",
+    "Lurking Variable",
+    "Reverse Causation"
+  ],
+  "description": "Classification practice where students decide whether a real-world correlation is best explained by X causing Y, Y causing X, or a third variable causing both.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/correlation-causation-scenarios/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Correlation vs Causation Scenarios",
+    "learningObjectives": [
+      "Classify a correlation as direct causation, reverse causation, or the result of a third variable (Apply)",
+      "Identify a plausible lurking variable that could cause both variables in an association (Apply)",
+      "Explain why an observed correlation alone does not justify a causal claim (Understand)"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "bloomVerb": "classify",
+    "concepts": [
+      "Correlation vs Causation",
+      "Causation",
+      "Lurking Variable",
+      "Reverse Causation"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Scatterplots and correlation (Chapter 6)",
+      "Explanatory and response variables"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 540
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "What else could explain why these two variables move together?",
+      "Which variable comes first in time?"
+    ],
+    "commonMisconceptions": [
+      "A strong correlation proves that one variable causes the other",
+      "The variable named first must be the cause",
+      "A third variable means the two variables are not really correlated"
+    ],
+    "assessmentOpportunities": [
+      "First-try score of at least 10 out of 13",
+      "Student can name the third variable before clicking Reveal Answer",
+      "Student writes a new scenario and correctly identifies its causal structure"
+    ]
+  },
+  "chapter": "08-causation-and-study-design",
+  "chapterTitle": "Chapter 8: Causation and Study Design"
+}

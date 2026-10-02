@@ -1,0 +1,82 @@
+{
+  "title": "Conditional Probability Calculator",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Conditional Probability",
+    "Conditional Probability Formula",
+    "General Multiplication Rule",
+    "Venn Diagram"
+  ],
+  "description": "Enter probabilities or counts for A, B, and A and B to see the conditional probability formula applied step by step, with a proportional Venn diagram.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/conditional-probability-calculator/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Conditional Probability Calculator",
+    "learningObjectives": [
+      "Calculate P(A | B) and P(B | A) from P(A and B) and the probability of the given event (Apply)",
+      "Use counts from a two-way table to calculate a conditional probability (Apply)",
+      "Recognize invalid inputs, such as P(A and B) greater than P(B) (Understand)"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "bloomVerb": "calculate",
+    "concepts": [
+      "Conditional Probability",
+      "Conditional Probability Formula",
+      "General Multiplication Rule",
+      "Venn Diagram"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Basic probability rules and the meaning of \"A and B\" (Chapter 9)",
+      "Venn diagrams"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 516
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "Which event is the new sample space?",
+      "What do the numerator and denominator count?"
+    ],
+    "commonMisconceptions": [
+      "P(A | B) is found by dividing by P(A)",
+      "P(A | B) and P(B | A) are interchangeable",
+      "A conditional probability can be larger than 1"
+    ],
+    "assessmentOpportunities": [
+      "Student computes a conditional probability by hand and verifies it with the calculator",
+      "Student explains each of the three steps in words",
+      "Student predicts which of P(A | B) and P(B | A) is larger from the Venn diagram"
+    ]
+  },
+  "chapter": "10-conditional-probability",
+  "chapterTitle": "Chapter 10: Conditional Probability"
+}

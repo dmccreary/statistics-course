@@ -86,7 +86,7 @@ These examples are absurd, which makes the lesson obvious. But in real research,
 
 #### Diagram: Correlation vs Causation Scenarios
 
-<iframe src="../../sims/correlation-causation-scenarios/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/correlation-causation-scenarios/main.html" width="100%" height="542px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Correlation vs Causation Scenarios Interactive</summary>
@@ -160,7 +160,7 @@ In this case, the effect of coffee and the effect of smoking are **confounded**â
 
 #### Diagram: Confounding Variable Visualizer
 
-<iframe src="../../sims/confounding-variable-diagram/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/confounding-variable-diagram/main.html" width="100%" height="532px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Confounding Variable Visualizer</summary>
@@ -283,7 +283,7 @@ The lurking variable here is case severity, which affects both the hospital choi
 
 #### Diagram: Simpson's Paradox Explorer
 
-<iframe src="../../sims/simpsons-paradox-explorer/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/simpsons-paradox-explorer/main.html" width="100%" height="564px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Simpson's Paradox Explorer</summary>
@@ -388,7 +388,7 @@ Because of random assignment, any difference in test scores can be attributed to
 
 #### Diagram: Study Type Comparison Tool
 
-<iframe src="../../sims/study-type-comparison/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/study-type-comparison/main.html" width="100%" height="532px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Study Type Comparison Tool</summary>
@@ -480,7 +480,7 @@ Of course, random assignment doesn't guarantee perfectly balanced groups. By cha
 
 #### Diagram: Randomization Balance Simulator
 
-<iframe src="../../sims/randomization-balance-sim/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/randomization-balance-sim/main.html" width="100%" height="534px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Randomization Balance Simulator</summary>

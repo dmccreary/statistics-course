@@ -96,7 +96,7 @@ Look at that difference! The overall probability of being alert is 52.5%, but kn
 
 #### Diagram: Conditional Probability Two-Way Table Explorer
 
-<iframe src="../../sims/conditional-probability-table/main.html" width="100%" height="500px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/conditional-probability-table/main.html" width="100%" height="492px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Conditional Probability Two-Way Table Explorer</summary>
@@ -232,7 +232,7 @@ The unconditional probability of rain is only 41%, but knowing it's cloudy incre
 
 #### Diagram: Conditional Probability Calculator
 
-<iframe src="../../sims/conditional-probability-calculator/main.html" width="100%" height="450px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/conditional-probability-calculator/main.html" width="100%" height="518px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Conditional Probability Calculator</summary>
@@ -378,7 +378,7 @@ Tree diagrams make the logic visible. You can see exactly how probabilities flow
 
 #### Diagram: Interactive Tree Diagram Builder
 
-<iframe src="../../sims/tree-diagram-builder/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/tree-diagram-builder/main.html" width="100%" height="532px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Interactive Tree Diagram Builder</summary>
@@ -513,7 +513,7 @@ The false positives swamp the true positives because there are so many more heal
 
 #### Diagram: Bayes' Theorem Visualizer
 
-<iframe src="../../sims/bayes-theorem-visualizer/main.html" width="100%" height="550px" scrolling="no" style="overflow: hidden;"></iframe>
+<iframe src="../../sims/bayes-theorem-visualizer/main.html" width="100%" height="532px" scrolling="no" style="overflow: hidden;"></iframe>
 
 <details markdown="1">
 <summary>Bayes' Theorem Visualizer</summary>

@@ -1,0 +1,82 @@
+{
+  "title": "Simpson's Paradox Explorer",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Simpson's Paradox",
+    "Lurking Variable",
+    "Conditional Proportions",
+    "Aggregated Data"
+  ],
+  "description": "Bar chart explorer that compares combined success rates with rates separated by subgroup so students can see when and why Simpson's Paradox reverses a conclusion.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/simpsons-paradox-explorer/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Simpson's Paradox Explorer",
+    "learningObjectives": [
+      "Evaluate combined and subgroup comparisons to decide whether Simpson's Paradox is present (Evaluate)",
+      "Determine which analysis is more appropriate when a lurking variable affects both group membership and the outcome (Evaluate)",
+      "Explain how unequal subgroup sizes can reverse a comparison when data are aggregated (Analyze)"
+    ],
+    "bloomsTaxonomy": "Evaluate",
+    "bloomVerb": "evaluate",
+    "concepts": [
+      "Simpson's Paradox",
+      "Lurking Variable",
+      "Conditional Proportions",
+      "Aggregated Data"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Two-way tables and conditional proportions (Chapter 2)",
+      "Lurking variables"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 562
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "Do the two groups have the same mix of subgroups?",
+      "Which comparison answers the question you care about?"
+    ],
+    "commonMisconceptions": [
+      "The combined data are always more trustworthy because the sample is larger",
+      "Simpson's Paradox means one of the calculations is wrong",
+      "The paradox can occur even when both groups have the same mix of subgroups"
+    ],
+    "assessmentOpportunities": [
+      "Student correctly computes a combined rate from the subgroup counts",
+      "Student identifies the lurking variable and explains its link to both group and outcome",
+      "Student constructs a new set of slider values that produces the paradox"
+    ]
+  },
+  "chapter": "08-causation-and-study-design",
+  "chapterTitle": "Chapter 8: Causation and Study Design"
+}

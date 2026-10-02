@@ -1,0 +1,82 @@
+{
+  "title": "Interactive Tree Diagram Builder",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Tree Diagram",
+    "General Multiplication Rule",
+    "Conditional Probability",
+    "Joint Probability"
+  ],
+  "description": "Build a probability tree by editing branch probabilities, then multiply along paths to get joint probabilities and reverse the condition.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/tree-diagram-builder/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Interactive Tree Diagram Builder",
+    "learningObjectives": [
+      "Construct a two-level tree diagram with probabilities that sum to 1 at each branch point (Apply)",
+      "Calculate joint probabilities by multiplying along paths and total probabilities by adding paths (Apply)",
+      "Use a tree diagram to find a reversed conditional probability such as P(Disease | Positive) (Apply)"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "bloomVerb": "construct",
+    "concepts": [
+      "Tree Diagram",
+      "General Multiplication Rule",
+      "Conditional Probability",
+      "Joint Probability"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Conditional probability notation",
+      "The general multiplication rule"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 530
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "What do you multiply along a path?",
+      "Which paths lead to the same outcome?"
+    ],
+    "commonMisconceptions": [
+      "Second-level branches show joint probabilities rather than conditional probabilities",
+      "Probabilities along a path should be added",
+      "The end-point probabilities do not need to sum to 1"
+    ],
+    "assessmentOpportunities": [
+      "Student builds a valid tree for a new word problem",
+      "Student computes all joint probabilities and confirms that they sum to 1",
+      "Student uses the tree to find a reversed conditional probability and explains each step"
+    ]
+  },
+  "chapter": "10-conditional-probability",
+  "chapterTitle": "Chapter 10: Conditional Probability"
+}
