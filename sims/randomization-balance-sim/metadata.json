@@ -1,0 +1,85 @@
+{
+  "title": "Randomization Balance Simulator",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Experiment",
+    "Random Assignment",
+    "Confounding Variable",
+    "Lurking Variable",
+    "Sample Size"
+  ],
+  "description": "Simulation that randomly assigns subjects to treatment and control groups and shows how chance balances visible characteristics and a hidden variable, especially with larger samples.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/randomization-balance-sim/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Randomization Balance Simulator",
+    "learningObjectives": [
+      "Apply random assignment to form treatment and control groups and compare their composition (Apply)",
+      "Describe how the balance between randomly assigned groups improves as the sample size increases (Understand)",
+      "Explain why random assignment balances unknown variables as well as known ones (Understand)"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "bloomVerb": "apply",
+    "concepts": [
+      "Experiment",
+      "Random Assignment",
+      "Confounding Variable",
+      "Lurking Variable",
+      "Sample Size"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Experiments and control groups",
+      "Confounding variables",
+      "Percentages"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 532
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "How similar are the two groups before the treatment begins?",
+      "What happens to the gaps as the sample size grows?"
+    ],
+    "commonMisconceptions": [
+      "Random assignment guarantees identical groups",
+      "A lopsided random split means the randomization was done incorrectly",
+      "Researchers should rearrange the groups by hand until they look balanced"
+    ],
+    "assessmentOpportunities": [
+      "Student reports the typical gap for at least three sample sizes and describes the trend",
+      "Student explains that the gaps center on zero, so neither group is systematically favored",
+      "Student explains why randomization handles unmeasured variables"
+    ]
+  },
+  "chapter": "08-causation-and-study-design",
+  "chapterTitle": "Chapter 8: Causation and Study Design"
+}

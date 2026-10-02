@@ -1,0 +1,82 @@
+{
+  "title": "Conditional Probability Two-Way Table Explorer",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Conditional Probability",
+    "Two-Way Table",
+    "Independence",
+    "Sample Space"
+  ],
+  "description": "Click a row or column of a two-way table to choose the given condition, then click an outcome to see the conditional probability calculated from the counts.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/conditional-probability-table/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Conditional Probability Two-Way Table Explorer",
+    "learningObjectives": [
+      "Calculate a conditional probability from a two-way table by identifying the restricted sample space (Apply)",
+      "Distinguish P(A | B) from P(B | A) by choosing different conditions in the same table (Analyze)",
+      "Compare conditional and unconditional probabilities to judge whether two events are independent (Analyze)"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "bloomVerb": "calculate",
+    "concepts": [
+      "Conditional Probability",
+      "Two-Way Table",
+      "Independence",
+      "Sample Space"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Two-way tables (Chapter 2)",
+      "Basic probability rules (Chapter 9)"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 490
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "Which cases are left once the condition is known?",
+      "Does knowing the condition change the probability?"
+    ],
+    "commonMisconceptions": [
+      "The grand total is always the denominator",
+      "P(A | B) and P(B | A) are the same number",
+      "Events are independent whenever both can happen together"
+    ],
+    "assessmentOpportunities": [
+      "Student calculates four conditional probabilities from a new table without the MicroSim",
+      "Student states in words what the denominator represents",
+      "Student decides whether two events are independent and justifies the decision with two probabilities"
+    ]
+  },
+  "chapter": "10-conditional-probability",
+  "chapterTitle": "Chapter 10: Conditional Probability"
+}

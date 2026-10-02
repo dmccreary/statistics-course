@@ -40,5 +40,8 @@
     "Population vs sample",
     "Basic probability"
   ],
-  "library": "p5.js"
+  "library": "p5.js",
+  "search": {
+    "showcase": true
+  }
 }

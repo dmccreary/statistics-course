@@ -1,0 +1,84 @@
+{
+  "title": "Study Type Comparison Tool",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Observational Study",
+    "Experiment",
+    "Comparing Studies",
+    "Random Assignment",
+    "Causation"
+  ],
+  "description": "Students classify study descriptions as observational studies or experiments, check key design features, and compare what each design can conclude.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/study-type-comparison/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Study Type Comparison Tool",
+    "learningObjectives": [
+      "Analyze a study description to classify it as an observational study or an experiment (Analyze)",
+      "Identify the design features that determine the classification: imposed treatment, random assignment, comparison groups (Analyze)",
+      "Evaluate whether a study supports a claim of association only or of cause and effect (Evaluate)"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "bloomVerb": "classify",
+    "concepts": [
+      "Observational Study",
+      "Experiment",
+      "Comparing Studies",
+      "Random Assignment",
+      "Causation"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Explanatory and response variables",
+      "Lurking and confounding variables"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 530
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "Did the researchers decide who received the treatment?",
+      "Could the groups differ in ways other than the treatment?"
+    ],
+    "commonMisconceptions": [
+      "Any study that compares two groups is an experiment",
+      "A large observational study can prove causation",
+      "Experiments are always the better choice, even when assigning the treatment would be unethical"
+    ],
+    "assessmentOpportunities": [
+      "Score of at least 10 out of 12 on classification",
+      "Student justifies each classification by naming who assigned the treatment",
+      "Student writes an appropriately worded conclusion (\"is associated with\" versus \"causes\") for a new study"
+    ]
+  },
+  "chapter": "08-causation-and-study-design",
+  "chapterTitle": "Chapter 8: Causation and Study Design"
+}

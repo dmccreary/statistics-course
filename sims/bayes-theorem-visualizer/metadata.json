@@ -1,0 +1,86 @@
+{
+  "title": "Bayes' Theorem Visualizer",
+  "creator": "Dan McCreary",
+  "subject": [
+    "Statistics",
+    "AP Statistics",
+    "Bayes' Theorem",
+    "Conditional Probability",
+    "Base Rate",
+    "Sensitivity",
+    "Specificity",
+    "Tree Diagram"
+  ],
+  "description": "Icon array and tree diagram of 1,000 people showing how the base rate, sensitivity, and specificity of a test determine the probability of disease given a positive result.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/statistics-course/sims/bayes-theorem-visualizer/",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Statistics",
+    "topic": "Bayes' Theorem Visualizer",
+    "learningObjectives": [
+      "Analyze how the prior probability, sensitivity, and specificity affect P(Disease | Positive) (Analyze)",
+      "Apply Bayes' theorem to calculate a posterior probability from its three inputs (Apply)",
+      "Explain base rate neglect using counts of true positives and false positives (Understand)"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "bloomVerb": "analyze",
+    "concepts": [
+      "Bayes' Theorem",
+      "Conditional Probability",
+      "Base Rate",
+      "Sensitivity",
+      "Specificity",
+      "Tree Diagram"
+    ],
+    "duration": "15-25 minutes",
+    "prerequisites": [
+      "Conditional probability and the general multiplication rule",
+      "Tree diagrams"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 530
+    },
+    "responsive": true,
+    "controls": "canvas-based (no DOM controls)",
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with immediate feedback",
+    "keyQuestions": [
+      "How many positive tests come from people who are healthy?",
+      "What happens to the answer as the disease becomes more common?"
+    ],
+    "commonMisconceptions": [
+      "P(Disease | Positive) equals the sensitivity of the test",
+      "A highly accurate test cannot produce mostly false positives",
+      "The base rate does not matter once you have a test result"
+    ],
+    "assessmentOpportunities": [
+      "Student computes P(Disease | Positive) by hand for a new set of values and checks it with the MicroSim",
+      "Student explains the result using counts out of 1,000 people",
+      "Student identifies base rate neglect in a news story or advertisement"
+    ]
+  },
+  "chapter": "10-conditional-probability",
+  "chapterTitle": "Chapter 10: Conditional Probability"
+}
