@@ -41,5 +41,8 @@
     "Normal distribution basics",
     "Histograms"
   ],
-  "library": "p5.js"
+  "library": "p5.js",
+  "search": {
+    "showcase": true
+  }
 }
