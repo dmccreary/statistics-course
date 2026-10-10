@@ -1,7 +1,7 @@
 {
   "title": "Standard Deviation Visualization",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "AP Statistics",
   "description": "Interactive MicroSim for standard deviation visualization",
   "date": "2026-02-26",
   "educational": {
@@ -11,7 +11,7 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Statistics",
     "topic": "Standard Deviation Visualization",
     "learningObjectives": [
       "TODO: Add learning objectives"
